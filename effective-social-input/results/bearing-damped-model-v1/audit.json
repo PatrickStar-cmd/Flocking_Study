@@ -1,0 +1,61 @@
+{
+  "createdAt": "2026-09-09 21:52:08",
+  "sourceDirectory": "results/bearing-high-rate-v1",
+  "sourceSeeds": [
+    138,
+    139,
+    140,
+    141
+  ],
+  "trainSeeds": [
+    138,
+    139
+  ],
+  "evaluationSeeds": [
+    140,
+    141
+  ],
+  "qCandidates": [
+    1E-6,
+    1E-5,
+    0.0001,
+    0.001
+  ],
+  "tauCandidates": [1, 3, 10, 30, 60, "Inf"],
+  "R": 0.0001,
+  "dt": 0.3,
+  "starts": [
+    6001,
+    6801,
+    7601
+  ],
+  "horizonSteps": [
+    10,
+    34,
+    100,
+    200,
+    400
+  ],
+  "selectionT": [
+    3,
+    10.2,
+    30
+  ],
+  "selectedDampedQ": 1E-5,
+  "selectedDampedTau": 10,
+  "selectedCVQ": 1E-6,
+  "matlabVersion": "24.2.0.2712019 (R2024b)",
+  "sourceSha256": {
+    "reference-138.mat": "44267115D1B7193405FE7CCD6EF6DAD8B9C43E090F6C513448818652A1A4E24F",
+    "reference-139.mat": "020E1A0CA608A47C21812B1EFF3F76B916AB447E8D72590F7DD1C48819721251",
+    "reference-140.mat": "F3884F90AE88C8A1B642145B184655F650B407A476F19D1EB7060FE8900CCE06",
+    "reference-141.mat": "4807A8F8D0AC6F99F5AB74B3BB6ED76DDF3E5753E3E9B6D637AA161222451133",
+    "selection.json": "2EE20C567F008CE958F1063CAF4B0082B21610990699E00A8FA69FCFA5947E78"
+  },
+  "codeSha256": {
+    "bearingTrackStep.m": "EDF48BBE5BBCB30E09D6F93422FAD9C281BD95B58B67C038BDEB66D0B4C4D4C7",
+    "bearingTrackStepGaussMarkov.m": "F38CA97E47DCAE9FBB7B9BC23A6AFFFC347ED9AECE26FD783C537499D9B00C6F",
+    "compareBearingPredictionModels.m": "581F9EE15FD567745E107CEB21C85C780C21B023983A34C9E4B0FD7D2501D13F",
+    "testBearingTrackGaussMarkov.m": "26A1641E862EB65BB51FB7CA7113505F88062DD54648E76E6EE89DE063D6FEB7"
+  }
+}

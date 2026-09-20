@@ -1,0 +1,8 @@
+N,policy,strengthMode,kStarEmpirical,kStarIsotonic,kStarWilsonLower95
+20,all,original,19,19,NaN
+20,balanced,fixed-total,13,NaN,NaN
+20,balanced,original,NaN,NaN,NaN
+20,nearest,fixed-total,13,15,NaN
+20,nearest,original,NaN,NaN,NaN
+20,random,fixed-total,8,11,NaN
+20,random,original,16,16,NaN

@@ -1,0 +1,45 @@
+{
+  "createdAt": "2026-09-09 22:05:44",
+  "purpose": "Paired checkpoint causal pilot without prediction",
+  "seeds": [
+    136,
+    137
+  ],
+  "seedStatus": "Previously used; exploratory only",
+  "N": 20,
+  "k": 15,
+  "hiddenCount": 7,
+  "distanceWeightMode": "equal",
+  "strengthMode": "original",
+  "bearingMeasurementStd": 0.01,
+  "checkpointSteps": 6000,
+  "warmupSteps": 200,
+  "durationSteps": [
+    10,
+    34,
+    100
+  ],
+  "T": [
+    3,
+    10.2,
+    30
+  ],
+  "recoverySteps": 300,
+  "postSteps": 100,
+  "branchSteps": 600,
+  "matlabVersion": "24.2.0.2712019 (R2024b)",
+  "sourceSha256": {
+    "checkpoint-136.mat": "2812A01B2962953B2A79E4351779B46EFE19F3A70F1D05819165F64BC05C9C09",
+    "checkpoint-137.mat": "8846EA041EE298C63385B920296B2ED0E05D1BE7D1CA4D48F2A463CCC3662821"
+  },
+  "codeSha256": {
+    "defaultEffectiveInputConfig.m": "E4B8E6E42B614D12CEAEB0A5865A0B6C836B34D6C28E468E6FCBAB6F42E618FB",
+    "simulateEffectiveSocialInput.m": "5BE96150E46C3DA53D38BF1E433F612217A9C1E7FA7001D2A402B4C379F9E8F0",
+    "testCheckpointFork.m": "F21DEB75A9A9BB1901D483A38373B40F6E108E65F6F145220B9F94291E8BBF28",
+    "runCheckpointInterventionPilot.m": "E9811762114E58FF3293D224F4D95087086904820D1D482423A1FB81F2E9993C",
+    "plotCheckpointInterventionPilot.m": "4FE6F434ACED3946BED766F40FA15E5754E4E357049A15ACE0798D0EC1589A25"
+  },
+  "resultSha256": {
+    "results.csv": "85D8FE10BF2261A4846740E6AC8FC9F1E49E3AD4DB1683D32AEA621EE3FD2D96"
+  }
+}

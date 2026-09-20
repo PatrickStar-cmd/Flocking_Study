@@ -1,0 +1,18 @@
+# MATLAB autosave and temporary files
+*.asv
+*.autosave
+
+# Local simulation state and checkpoints
+effective-social-input/results/**/*.mat
+effective-social-input/results/**/checkpoints/
+
+# Temporary document-review artifacts
+/tmp/
+/tmp_v*.txt
+
+# Editor and operating-system files
+.DS_Store
+Thumbs.db
+desktop.ini
+*.swp
+*~

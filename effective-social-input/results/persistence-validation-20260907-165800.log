@@ -1,0 +1,8 @@
+    seed      policy      strengthMode     k     evaluationSteps    sustainedSuccessFraction    persistence90    firstFailureStep    longestFailureSteps    failureRuns    recoveryRuns    meanGO     meanLO     meanPairDistanceNorm
+    ____    __________    _____________    __    _______________    ________________________    _____________    ________________    ___________________    ___________    ____________    _______    _______    ____________________
+
+     40     "all"         "original"       19         2000                    0.104                 false                1                   867                 4              3          0.36304    0.51815           0.2312       
+     40     "balanced"    "fixed-total"    15         2000                        1                 true               NaN                     0                 0              0          0.92993    0.95332          0.06323       
+     40     "random"      "fixed-total"     7         2000                   0.5545                 false              346                   829                 6              6          0.53525    0.73384          0.21698       
+     40     "random"      "fixed-total"    15         2000                   0.7745                 false              329                   183                 6              6          0.57369    0.69716          0.19828       
+

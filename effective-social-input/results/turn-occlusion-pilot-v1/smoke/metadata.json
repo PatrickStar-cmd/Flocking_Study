@@ -1,0 +1,37 @@
+{
+  "profile": "smoke",
+  "seeds": [
+    201,
+    202
+  ],
+  "N": 20,
+  "M": 100,
+  "k": 15,
+  "leaders": [
+    1,
+    2,
+    3
+  ],
+  "hiddenCounts": 11,
+  "T": [
+    3,
+    10.2
+  ],
+  "dt": 0.3,
+  "turnRate": 0.025,
+  "turnCueAmplitude": 0.08,
+  "modes": [
+    "none",
+    "hold",
+    "mean",
+    "kalman",
+    "kalman-gm"
+  ],
+  "warmupSteps": 200,
+  "postSteps": 100,
+  "preTurnSteps": 20,
+  "turnStartBeforeOcclusion": 6,
+  "recoverySteps": 300,
+  "measurementStd": 0.01,
+  "note": "Controlled leader-turn intervention; relative degradation is absolute deviation from paired no-occlusion turn control normalized by control magnitude."
+}

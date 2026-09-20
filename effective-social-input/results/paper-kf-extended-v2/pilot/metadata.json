@@ -1,0 +1,54 @@
+{
+  "profile": "pilot",
+  "N": 20,
+  "M": 100,
+  "dt": 0.3,
+  "speedScale": 0.05,
+  "sigma_s": 0.4,
+  "seeds": [
+    201,
+    202,
+    203,
+    204,
+    205,
+    206
+  ],
+  "hiddenCounts": [
+    7,
+    11,
+    13
+  ],
+  "neighborCount": 15,
+  "durationSteps": [
+    10,
+    20,
+    34,
+    60,
+    100
+  ],
+  "T": [
+    3,
+    6,
+    10.2,
+    18,
+    30
+  ],
+  "modes": [
+    "none",
+    "hold",
+    "mean",
+    "kalman",
+    "kalman-gm"
+  ],
+  "warmupSteps": 200,
+  "postSteps": 100,
+  "recoverySteps": 300,
+  "measurementStd": 0.01,
+  "bearingProcessNoise": 0.0001,
+  "bearingGaussMarkovProcessNoise": 1E-5,
+  "bearingVelocityTau": 10,
+  "bearingObservationVariance": 0.0001,
+  "predictionMaxAge": 120,
+  "predictionMaxVariance": 1,
+  "note": "Paired checkpoint-fork exploratory simulation with new seeds; no threshold tuning."
+}

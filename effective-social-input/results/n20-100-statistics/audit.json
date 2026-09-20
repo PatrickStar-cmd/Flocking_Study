@@ -1,0 +1,32 @@
+{
+  "source": "D:\\Work\\Study\\UESTC\u8d44\u6599\u5b58\u6863\\\u8bfe\u7a0b\\\u901a\u5173\u9879\u76ee\\coding\\effective-social-input\\results\\effective-input-n20-100.csv",
+  "sha256": "3c3afc4c504fe2e0779fd7599913d11f906bd311d6b3a56d6dc9a57260b189f4",
+  "rawRows": 12700,
+  "identicalDuplicatesRemoved": 600,
+  "uniqueRows": 12100,
+  "groups": 121,
+  "seedsPerGroup": 100,
+  "baselineMarginalLimits": [
+    0.3224604022490738,
+    0.5292991243106876,
+    0.2476611560303056
+  ],
+  "scales": [
+    0.35000340262012875,
+    0.26758170435197737,
+    0.0920101501906446
+  ],
+  "jointScoreCutoff": -0.19261979211281868,
+  "effectiveJointLimits": [
+    0.25504281959760544,
+    0.477757592045216,
+    0.2653841320322968
+  ],
+  "bootstrapSeed": 20260907,
+  "limitations": [
+    "Wilson intervals condition on a threshold estimated from these same seeds; they do not include calibration uncertainty or multiple comparisons.",
+    "Bootstrap resamples seeds and recalibrates; conditional quantiles omit replicates with no crossing and are not a simultaneous confidence set.",
+    "Isotonic fits assume monotonic success, which is not guaranteed by neural dynamics.",
+    "Time-averaged CSV cannot establish sustained success, collisions or failure times."
+  ]
+}

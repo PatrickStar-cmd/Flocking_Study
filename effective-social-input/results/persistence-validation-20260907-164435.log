@@ -1,0 +1,6 @@
+{在不同结构体之间进行下标赋值。
+
+出错 runPersistenceValidation (第 55 行)
+        seedRows(end + 1) = row; %#ok<AGROW>
+        ^^^^^^^^^^^^^^^^^
+} 

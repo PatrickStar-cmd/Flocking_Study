@@ -1,0 +1,8 @@
+policy,strengthMode,empirical,isotonic,wilsonLower95,bootstrapReplicates,bootstrapNoCrossingFraction,conditionalBootstrapP025,conditionalBootstrapP975
+all,original,19,19,,1000,0.0,19.0,19.0
+balanced,fixed-total,12,12,,1000,0.0,10.0,19.0
+balanced,original,18,18,,1000,0.0,17.0,19.0
+nearest,fixed-total,16,16,,1000,0.0,13.0,18.0
+nearest,original,17,19,,1000,0.0,17.0,19.0
+random,fixed-total,4,7,,1000,0.0,3.0,19.0
+random,original,17,17,,1000,0.0,15.0,19.0

@@ -1,0 +1,32 @@
+[
+  {
+    "Algorithm": "SHA256",
+    "Hash": "C865B1227C4B0F4BEC70639EC8898CE36989E95955814370A634BED6B480FB05",
+    "Path": "D:\\Work\\Study\\UESTC资料存档\\课程\\通关项目\\coding\\effective-social-input\\runTimeSeriesValidation.m"
+  },
+  {
+    "Algorithm": "SHA256",
+    "Hash": "A4B40A57800283D15C55D6E7A49D8B40FBCD1E22F7DDEEBB4A6F8F1C329320AD",
+    "Path": "D:\\Work\\Study\\UESTC资料存档\\课程\\通关项目\\coding\\effective-social-input\\blockTimeMetrics.m"
+  },
+  {
+    "Algorithm": "SHA256",
+    "Hash": "EEED67144E018EC8978D9A223802D8AD865CDEF43BF42BACA1BB4E697E0768E3",
+    "Path": "D:\\Work\\Study\\UESTC资料存档\\课程\\通关项目\\coding\\effective-social-input\\testBlockTimeMetrics.m"
+  },
+  {
+    "Algorithm": "SHA256",
+    "Hash": "8DE7CCB48E76AC40FD8AE9D5B9EDE877CBE379851BBEEDAFEC700DDFE6B76D32",
+    "Path": "D:\\Work\\Study\\UESTC资料存档\\课程\\通关项目\\coding\\effective-social-input\\simulateEffectiveSocialInput.m"
+  },
+  {
+    "Algorithm": "SHA256",
+    "Hash": "B41A31FCFB429B66365C5DD7AA480D40946E7B71012A1B76A17FA60B909B21DF",
+    "Path": "D:\\Work\\Study\\UESTC资料存档\\课程\\通关项目\\coding\\effective-social-input\\defaultEffectiveInputConfig.m"
+  },
+  {
+    "Algorithm": "SHA256",
+    "Hash": "7F100BB34DEAA668EDC8FEF394BBC11E156E258C5DE21BAFECF3C5180EF05DD0",
+    "Path": "D:\\Work\\Study\\UESTC资料存档\\课程\\通关项目\\coding\\effective-social-input\\buildRingConnectivity.m"
+  }
+]

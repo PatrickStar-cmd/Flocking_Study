@@ -1,0 +1,8 @@
+    seed      policy      strengthMode     k     pointFraction    block100_90    block100_95    block300_90    block300_95    longestFailureSteps    summaryGO    summaryLO    summaryPairDistance
+    ____    __________    _____________    __    _____________    ___________    ___________    ___________    ___________    ___________________    _________    _________    ___________________
+
+     50     "all"         "original"       19            1           true           true           true           true                  0             0.59849      0.78049           0.19491      
+     50     "random"      "fixed-total"     7            1           true           true           true           true                  0             0.90258       0.9447          0.019449      
+     50     "random"      "fixed-total"    15        0.858           false          false          false          false               214             0.60742      0.72245           0.13763      
+     50     "balanced"    "fixed-total"    15        0.508           false          false          false          false               598             0.47181      0.70649           0.15402      
+
