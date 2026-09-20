@@ -1,0 +1,809 @@
+\documentclass[UTF8,fontset=windows,11pt]{ctexart}
+\usepackage[a4paper,margin=2.35cm]{geometry}
+\usepackage{amsmath,amssymb,bm,mathtools}
+\usepackage{booktabs,longtable,array}
+\usepackage{graphicx}
+\graphicspath{{../coding/effective-social-input/results/paper-kf-extended-v3/full/}%
+{../coding/effective-social-input/results/paper-simulation-figures/}%
+{../coding/effective-social-input/results/mainstream-model-comparison/}%
+{../coding/effective-social-input/results/turn-occlusion-pilot-v1/full/}%
+{../coding/effective-social-input/results/turn-occlusion-pilot-v1/smoke/}}
+\usepackage{xcolor}
+\usepackage{enumitem}
+\usepackage{algorithm}
+\usepackage{algpseudocode}
+\usepackage{amsthm}
+\usepackage{caption}
+\usepackage{hyperref}
+\usepackage{microtype}
+\newcommand{\upcite}[1]{\textsuperscript{\cite{#1}}}
+\floatname{algorithm}{算法}
+\newtheorem{theorem}{定理}[section]
+\algrenewcommand\algorithmicrequire{\textbf{输入：}}
+\algrenewcommand\algorithmicensure{\textbf{输出：}}
+\algrenewcommand\algorithmicfor{\textbf{对于}}
+\algrenewcommand\algorithmicdo{\textbf{执行}}
+\algrenewcommand\algorithmicend{\textbf{结束}}
+\algrenewcommand\algorithmicreturn{\textbf{返回}}
+\hypersetup{colorlinks=true,linkcolor=black,citecolor=black,urlcolor=blue,
+ pdftitle={间歇方位观测下异中心神经场集群运动的Kalman预测补偿方法},
+ pdfsubject={异中心神经场集群运动与Kalman预测补偿},
+ pdfkeywords={异中心表征；环形吸引子；集群运动；间歇观测；Kalman滤波},
+ bookmarksnumbered=true}
+\setlength{\parindent}{2em}
+\setlength{\parskip}{0.25em}
+\linespread{1.18}
+\setlength{\emergencystretch}{1em}
+\title{\bfseries 间歇方位观测下异中心神经场集群运动的\newline Kalman预测补偿方法}
+\author{}
+\date{}
+\begin{document}
+\maketitle
+
+\begin{abstract}
+异中心（allocentric）环形吸引子模型能够仅依靠邻居方位输入产生集群有序运动，但其性能依赖连续且可靠的社会感知。当局部遮挡或通信中断导致邻居方位观测间歇缺失时，神经场输入会减少或发生方向偏差，进而引起活动峰扩散、运动方向失序和集群结构退化。本文首先在 Salahshour 与 Couzin 的异中心神经场 flocking 模型基础上，分析社会输入数量、输入幅值和方向覆盖对集群运动的影响；随后针对当前模型仅具有方位观测的特点，建立方位—方位角速度二状态 Kalman 预测器，在观测缺失期间外推已跟踪邻居的方位，并将预测协方差通过周期核卷积传递至神经场输入。本文推导了连续缺失期间方位协方差的增长规律、圆周方向信息的衰减规律以及条件均方输入重建性质，明确了该方法的适用条件和局限。实验比较新鲜观测删除、最后方位保持、Kalman均值预测和协方差感知预测，并使用全新种子的配对闭环实验评估遮挡强度和持续时间的影响。为避免在已经收敛的直线运动状态下删除冗余邻居而低估预测价值，进一步设置遮挡前受控转向实验，并以相对无遮挡控制的退化量作为主响应。结果表明，在固定身份、等权、原始单边增益条件下，Kalman补偿能够降低连续缺失造成的相对性能偏差；阻尼角速度KF还可进一步降低隐藏边的方位预测误差。
+\end{abstract}
+
+\noindent\textbf{关键词：} 异中心表征；环形吸引子；集群运动；间歇观测；Kalman滤波；方位预测；不确定性传播
+
+\section{引言}
+
+无人集群通过多个自主个体的局部感知、相互协同和分布式决策，能够完成单体平台难以承担的大范围、长时程和高风险任务。在灾害监测与应急搜救中，多无人机集群可在有限视场和避障约束下完成协同覆盖与目标搜寻\upcite{Bai2024}；在林下环境巡检与农业作业中，分布式集群控制能够提高复杂环境中的队形保持和环境适应能力\upcite{Boldrer2026}；在通信中继等场景中，个体通信障碍会直接影响集群凝聚和任务执行\upcite{LiFlocking2024}，而间歇采样和通信条件下的协调控制则是维持区域覆盖与群体协同的关键\upcite{Ge2025Coordination}。因此，无人集群在上述领域具有重要应用价值。
+
+现有多智能体协同控制方法大致可分为集中式控制、领航者--跟随者控制、行为法与虚拟结构控制，以及分布式一致性、优化与集群控制。集中式控制便于获得全局协调结果，但通信和计算负担大且存在单点失效风险；领航者--跟随者控制结构简单，但依赖领航者可靠性；行为法和虚拟结构控制能够描述局部行为或维持队形，但参数调节或结构适应性通常受限；分布式一致性方法仅依靠局部交互即可获得良好的可扩展性和鲁棒性\upcite{OlfatiSaber2006}，却更易受感知退化、通信受限和拓扑变化影响。为提升不确定环境下的适应性，相关研究进一步采用不确定性感知的分布式集群控制和预测控制，但此类方法通常依赖距离、位置或完整状态信息。
+
+仿生 flocking 因仅依赖局部邻居信息即可产生群体有序运动、适应动态环境和规模扩展，成为无人集群分布式控制的重要范式。其早期研究通过局部对齐、吸引和排斥规则揭示了自驱动粒子的有序相变\upcite{Vicsek1995}；随后，flocking 被推广到连续时间多智能体系统，并通过一致性理论建立了分布式队形控制方法\upcite{OlfatiSaber2006}。在此基础上，异中心神经场 flocking 将邻居方位编码为世界参考系中的活动峰，使群体方向不再依赖统一的机体参考系\upcite{Salahshour2025}。然而，该模型对社会感知的连续性要求及其在间歇方位观测下的输入重构问题仍未得到系统解决。
+
+然而，异中心神经场 flocking 的理想动力学通常假定邻居社会输入连续、可靠且无延迟，实际系统中的遮挡、有限视场、链路中断和测量噪声会造成方位漏检或长时间缺失。直接删除输入会削弱群体方向信息；观测缺失后继续使用最后一次方位，会让神经场持续接收已经过期的方向信息，形成“幽灵邻居输入”，从而使活动峰扩散、方向表征失同步，并引起全局有序度（global order, GO）和局部有序度（local order, LO）退化。现有 Kalman 滤波和纯方位跟踪方法主要恢复位置、速度或一般状态，难以直接满足仅方位观测下周期神经场输入的建模要求，因此需要针对神经场输入构造专用的方位预测与不确定性传播接口。
+
+将 Kalman 预测与异中心神经场直接结合仍存在三个待解决的科学问题：其一，仅方位观测不能直接恢复邻居距离和二维位置，需要构造与局部角运动一致的因果预测状态；其二，滤波器协方差不能仅停留在估计误差内部，需要建立其到圆周神经场输入的可解释映射，并量化连续缺失期间方向信息的保持能力；其三，闭环收益容易与“保留最后一次方位”或单纯删除输入的效果混淆，需要可辨识困难场景的配对实验来分离轨迹记忆、均值外推和不确定性传播的作用。因此，本文将创新工作分为框架、理论和仿真三个层次。
+
+本文围绕以下问题展开：
+\begin{enumerate}[label=(\arabic*)]
+  \item 在异中心神经场模型中，社会输入数量、总幅值和方向覆盖如何影响持续集群运动？
+  \item 瞬时漏检与连续观测缺失是否会产生不同的失稳过程？
+  \item 方位 Kalman 预测及其协方差传播能否在有限缺失窗口内延缓集群退化，并减少对新鲜社会输入的需求？
+\end{enumerate}
+
+本文的创新点分为以下三个层次：
+\begin{enumerate}[label=(\arabic*)]
+  \item 框架层创新：建立间歇仅方位观测下 Kalman 预测与异中心神经场的耦合框架。该框架不假设可以恢复邻居的二维位置或速度，而是以方位--方位角速度二状态为预测对象，将方位预测均值与后验协方差同时转化为神经场的周期社会输入，从而在观测缺失期间维持已跟踪邻居的方向表征。
+  \item 理论层创新：解决仅方位状态建模和不确定性向周期神经场映射两个核心理论问题。本文建立局部展开角与圆周方位的统一递推，并推导连续缺失下方位方差的时间增长规律、圆周方向谐波的保留比例、方向信息保持时域以及协方差卷积输入的条件均方最优性和误差界，说明协方差卷积如何抑制过期方向信息并拓宽方向核，同时明确其成立条件与适用边界。
+  \item 仿真层创新：针对直线收敛状态下已有航向惯性可能掩盖观测退化、预测增益又容易与 hold-last 的轨迹记忆混淆的问题，设计包含 fresh-drop、hold-last、KF-mean、KF-uncertainty 和 KF-GM-uncertainty 的配对闭环实验，并增加遮挡前受控转向场景。配对统计能够分解轨迹记忆、均值外推和协方差传播的作用，受控转向场景能够放大连续缺失导致的退化；实验结果最终明确了 Kalman 补偿在群体有序度、凝聚结构和方位预测方面的有效窗口，同时表明协方差卷积不能替代概率校准，也不能被视为碰撞安全保证。
+\end{enumerate}
+
+\clearpage
+
+\section{问题描述}
+
+\subsection{问题描述}
+
+考虑 $N$ 个智能体在边长 $L$ 的二维周期区域内运动。每个智能体 $i$ 具有物理状态
+\begin{equation}
+ (q_i(k),\phi_i(k)),
+\end{equation}
+其中 $q_i(k)=[x_i(k),y_i(k)]^\top$ 是位置，$\phi_i(k)$ 是世界坐标系中的自身朝向。每个智能体同时维护一个包含 $M$ 个方向单元的环形神经场状态 $u_i(k)\in\mathbb R^M$ 和固定方向偏好
+\begin{equation}
+ \alpha_m=\frac{2\pi m}{M}+\phi_{i,0},\qquad m=0,\ldots,M-1,
+\end{equation}
+其中 $\phi_{i,0}$ 是初始化方向偏移。该表示是异中心的，即神经元方向固定在共同世界坐标系中，不随智能体自身朝向旋转。
+
+智能体不能直接获得邻居位置，也不具有距离传感器。对于每条有向邻居边 $(i,j)$，传感器可能输出机体坐标系中的方位
+\begin{equation}
+ z^b_{ij}(k)=
+ \operatorname{wrap}\left(\theta_{ij}(k)-\phi_i(k)+\nu_{ij}(k)\right),
+\end{equation}
+其中 $\theta_{ij}(k)$ 是邻居的世界方位，$\nu_{ij}(k)\sim\mathcal N(0,R)$ 是测量噪声。定义观测指示量
+\begin{equation}
+ \delta_{ij}(k)=
+ \begin{cases}
+ 1, & \text{第 $k$ 步获得邻居 $j$ 的新鲜方位},\\
+ 0, & \text{观测缺失或通信中断}.
+ \end{cases}
+\end{equation}
+已知自身朝向时，可将测量转换到世界坐标系：
+\begin{equation}
+ z_{ij}(k)=\operatorname{wrap}(z^b_{ij}(k)+\phi_i(k)).
+\end{equation}
+
+本文的问题可以描述为：在只具有间歇方位观测的条件下\upcite{Xiourouppa2025}，构造一个因果预测与输入重建接口，使神经场在观测缺失期间仍能获得尽可能接近原始社会输入的方向信息，从而维持群体有序运动、凝聚结构和转向跟随能力，而控制器不得读取邻居的真实位置、真实方位或距离。
+
+该问题的输入和输出如图~\ref{tab:problem_io} 所示。
+
+\begin{table}[htbp]
+ \centering
+ \small
+ \caption{问题描述中的控制器输入与输出}
+ \label{tab:problem_io}
+ \begin{tabular}{>{\raggedright\arraybackslash}p{0.16\linewidth}
+                 >{\raggedright\arraybackslash}p{0.37\linewidth}
+                 >{\raggedright\arraybackslash}p{0.35\linewidth}}
+ \toprule
+ 层级 & 输入 & 输出\\
+ \midrule
+ 传感器层 &
+ 自身朝向 $\phi_i(k)$；已关联邻居编号 $j$；新鲜方位 $z_{ij}(k)$；观测指示量 $\delta_{ij}(k)$ &
+ 经过噪声和遮挡处理后的方位观测\\
+ 预测层 &
+ 当前边历史观测 $z_{ij}(0:k)$；上一步估计 $\hat x_{ij}(k-1)$ 和协方差 $P_{ij}(k-1)$ &
+ 预测方位均值 $\mu_{ij}(k)$；方位方差 $V_{ij}(k)$；轨迹有效指示量 $m_{ij}(k)$\\
+ 神经场层 &
+ 神经元方向 $\alpha_m$；神经场状态 $u_i(k)$；预测方位及方差 &
+ 外部社会输入 $I_i(k)$；更新后的神经活动 $u_i(k+1)$\\
+ 运动层 &
+ 正神经活动 $a_{im}(k)$；速度尺度 $v_s$ &
+ 运动速度 $v_i(k)$；更新位置 $q_i(k+1)$\\
+ \bottomrule
+ \end{tabular}
+\end{table}
+
+令 $\mathcal Z_i(0:k)=\{(j,z_{ij}(t),\delta_{ij}(t)):t\le k\}$ 表示智能体 $i$ 截至第 $k$ 步的全部可用观测历史。控制器的目标可以写为
+\begin{equation}
+ \min_{\Pi}\ \mathbb E\left[
+ \left\|I_i^{\mathrm{true}}(k)-\Pi(\mathcal Z_i(0:k),u_i(k);\Theta)\right\|_2^2
+ \right],
+\end{equation}
+其中 $\Pi$ 是满足因果性约束的预测输入重建接口，$\Theta$ 是滤波器参数，$I_i^{\mathrm{true}}$ 是如果所有邻居方位均新鲜时原模型将获得的社会输入。除输入重建误差外，闭环性能还由 GO、LO、凝聚距离、转向跟随误差和恢复时间评价。
+
+本文进一步假设：
+
+\begin{enumerate}[label=(\arabic*)]
+ \item 邻居编号已经正确关联，不考虑错误匹配和轨迹交换；
+ \item 自身朝向 $\phi_i(k)$ 已知，不考虑自身朝向估计误差；
+ \item 传感器只提供方位，不提供距离，因此不允许使用二维位置—速度滤波器；
+ \item 预测接口只能使用截至当前时刻的历史观测，不能使用仿真环境中的未来状态或隐藏真值。
+\end{enumerate}
+
+\subsection{原始异中心神经场模型的求解}
+
+原始模型假定邻居社会输入连续可得，并使用全邻居交互。对每个智能体 $i$，其社会邻居集合固定为
+\begin{equation}
+ \mathcal B_i=\{j\in\{1,\ldots,N\}:j\ne i\}.
+\end{equation}
+对邻居 $j$，采用周期区域中的最小镜像差分
+\begin{equation}
+ r_{ij}(k)=q_j(k)-q_i(k)-L\operatorname{round}\left(\frac{q_j(k)-q_i(k)}{L}\right).
+\end{equation}
+其真实世界方位为
+\begin{equation}
+ \theta_{ij}(k)=\operatorname{atan2}(r_{ij,y}(k),r_{ij,x}(k)).
+\end{equation}
+定义圆周角距离
+\begin{equation}
+ d_{\mathbb S^1}(a,b)=\left|\operatorname{wrap}(a-b)\right|,
+\quad \operatorname{wrap}(x)=\operatorname{mod}(x+\pi,2\pi)-\pi.
+\end{equation}
+
+原始社会输入为
+\begin{equation}
+ I^{\mathrm{soc}}_{im}(k)=h_0\sum_{j\in\mathcal B_i}
+ g_\sigma\left(\alpha_m-\theta_{ij}(k)\right),
+ \quad h_0=\frac{h_t}{N},
+\end{equation}
+其中
+\begin{equation}
+ g_\sigma(x)=\exp\left[-\frac{d_{\mathbb S^1}^2(x,0)}{2\sigma_s^2}\right].
+\end{equation}
+这里 $\mathcal B_i$ 是固定全邻居集合。实际幅值总和为 $(N-1)h_t/N$。
+
+环形连接矩阵与神经场更新分别为
+\begin{equation}
+ W_{mn}=\cos\left[\pi\left(\frac{d_{mn}}{\pi}\right)^\zeta\right],
+\end{equation}
+\begin{equation}
+ u_i(k+1)=u_i(k)+\Delta t\left[-u_i(k)+\frac{1}{M}W\tanh(\beta u_i(k))-h_b\bm 1+I_i(k)\right].
+\end{equation}
+神经场内部使用未截断的 $\tanh$。运动解码时定义正活动
+\begin{equation}
+ a_{im}(k)=\max\{\tanh(\beta u_{im}(k)),0\},
+\end{equation}
+并令
+\begin{equation}
+ c_i(k)=\sum_{m=0}^{M-1}a_{im}(k)e^{\mathrm i\alpha_m},
+\quad
+ v_i(k)=v_s[\Re c_i(k),\Im c_i(k)]^\top,
+\end{equation}
+\begin{equation}
+ q_i(k+1)=\operatorname{mod}(q_i(k)+\Delta t v_i(k),L).
+\end{equation}
+因此 $v_s$ 是速度尺度而不是恒定速度。单环活动集中度定义为
+\begin{equation}
+ \kappa_i(k)=\frac{|c_i(k)|}{\sum_m a_{im}(k)+\varepsilon}.
+\end{equation}
+
+上述环形连接与活动峰动力学与头方向细胞群的空间朝向表征\upcite{Zhang1996}相一致。自适应环形吸引子模型进一步表明，外部线索可调制以自我为中心的方向编码\upcite{Chen2026}；从连续神经动力学角度，相关研究讨论了预测性神经网络动力学\upcite{Ao2021}，人脑自然导航实验也为周期方向表征提供了神经罗盘证据\upcite{Lu2025}。
+
+原始异中心神经场模型的完整求解流程见算法~\ref{alg:original_model}。
+
+\begin{algorithm}[htbp]
+ \caption{原始异中心神经场集群运动}
+ \label{alg:original_model}
+ \begin{algorithmic}[1]
+ \Require 模型参数 $N,M,L,\Delta t,v_s,\beta,\sigma_s,h_t,h_b,\zeta$
+ \Require 初始状态 $q_i(0)$、$\phi_i(0)$、$u_i(0)$，或用于随机初始化的随机种子
+ \Ensure 轨迹 $\{q_i(k)\}_{i=1,k=0}^{N,K}$、神经状态 $\{u_i(k)\}_{i=1,k=0}^{N,K}$ 和社会输入历史 $\{I_i(k)\}$
+ \State 初始化
+ $q_i(0)\sim\mathcal U([0,L)^2)$，
+ $\phi_i(0)\sim\mathcal U(0,2\pi)$，
+ $u_i(0)=0.1\epsilon_i$，
+ $\epsilon_i\sim\mathcal N(0,I_M)$
+ \State 设置 $\alpha_m=2\pi m/M+\phi_i(0)$，并在后续时刻保持固定
+ \For{$k=0,1,\ldots,K-1$}
+  \For{所有 $i=1,2,\ldots,N$，并行}
+   \State $\mathcal B_i\leftarrow\{j:j\ne i\}$
+   \For{$j\in\mathcal B_i$}
+    \State 计算周期差分 $r_{ij}(k)$ 和世界方位 $\theta_{ij}(k)$
+    \State 将邻居方位累加到圆周高斯输入 $I^{\mathrm{soc}}_{im}(k)$
+   \EndFor
+   \State $I_i(k)\leftarrow I^{\mathrm{soc}}_{i}(k)$
+   \State $u_i(k+1)\leftarrow
+   u_i(k)+\Delta t\left[-u_i(k)+\frac{1}{M}W\tanh(\beta u_i(k))-h_b\mathbf 1+I_i(k)\right]$
+   \State 计算正活动 $a_{im}(k)$ 和复数合矢量 $c_i(k)$
+   \State 解码速度 $v_i(k)=v_s[\Re c_i(k),\Im c_i(k)]^\top$
+  \EndFor
+  \For{所有 $i=1,2,\ldots,N$，并行}
+   \State 更新位置 $q_i(k+1)=\operatorname{mod}(q_i(k)+\Delta t v_i(k),L)$
+  \EndFor
+ \EndFor
+ \State \Return $\{q_i(k)\}$、$\{u_i(k)\}$、$\{I_i(k)\}$
+ \end{algorithmic}
+\end{algorithm}
+
+算法~\ref{alg:original_model} 对应原始模型的全邻居版本，其中所有个体均使用同一时刻的位置计算输入，并在该时间步结束时同步更新。GO、LO、凝聚距离和活动集中度等指标不参与状态更新，而是由返回的轨迹和神经状态离线计算。
+
+需要注意的是，上述模型采用全邻居、等权交互，而真实群体中的邻居选择可能受视觉线索\upcite{Krongauz2024}、注意力机制\upcite{Li2024}和选择性交互\upcite{Xue2025}影响。本文暂不建模这些机制，而以固定全邻居输入隔离间歇观测对 flocking 的影响。
+
+\subsection{原始模型在间歇观测下需要解决的问题}
+
+原始模型的求解依赖一个强假设：$\mathcal B_i(k)$ 中每个邻居的真实方位 $\theta_{ij}(k)$ 在每一步都可获得。当遮挡或通信中断发生时，该假设不再成立，主要体现在以下几个方面。
+
+\paragraph{社会输入缺失}
+若直接删除缺失邻居，则
+\begin{equation}
+ I_i^{\mathrm{drop}}(k)=
+ h_0\sum_{j\in\mathcal B_i(k)}\delta_{ij}(k)
+ g_\sigma(\alpha_m-\theta_{ij}(k)).
+\end{equation}
+输入总量和方位覆盖同时下降。缺失邻居越多，神经场活动峰越弱，甚至可能被剩余邻居方向主导。
+
+\paragraph{过期方位造成错误峰}
+若保持最后一次观测方位，则输入幅值可以维持，但方向可能已经过期：
+\begin{equation}
+ \hat\theta_{ij}(k)=z_{ij}(k_{\mathrm{last}}),
+\quad k-k_{\mathrm{last}}>0.
+\end{equation}
+在群体转向时，过期方位会把神经活动峰持续固定在旧方向，形成“幽灵邻居输入”，使个体无法及时跟随方向变化。
+
+\paragraph{只有方位观测，不能直接估计位置和速度}
+传感器不提供距离，因此不能使用二维位置—速度 Kalman 滤波器直接恢复邻居状态。可观测的局部模型只能建立在方位及其时间变化率上。连续不同时刻的方位观测可以识别局部角速度，但单次方位观测不能直接识别角速度。
+
+\paragraph{轨迹生命周期和数据关联问题}
+遮挡期间必须区分“暂时没有观测但目标仍可能存在”和“目标已经离开或轨迹失效”。如果轨迹无限保留，会累积错误预测；如果过早删除，重新出现时又需要重新初始化。因此需要观测年龄、预测方差和有效集合 $m_{ij}(k)$ 的管理机制。分布式多传感器多目标滤波为间歇观测下的轨迹维持提供了参考\upcite{Qi2024}；对于纯方位目标，交互式多模型与无迹信息滤波可用于处理轨迹存在性和跟踪不确定性\upcite{Pan2026}。
+
+\paragraph{评价指标可能掩盖退化}
+当群体已经进入直线运动时，即使删除部分邻居输入，群体也可能依靠既有航向惯性维持较高 GO。因此，仅报告直线运动下的 GO 不足以评估预测补偿。需要构造遮挡前受控转向实验，并报告相对无遮挡控制的 GO、LO、凝聚距离和恢复误差。
+
+\paragraph{安全约束不在原始模型中}
+原始异中心神经场模型没有显式分离、排斥或碰撞屏障项。即使 Kalman 改善了有序度和凝聚恢复，也不能自动获得安全保证。因此本文将最小距离和危险接近比例作为独立的风险诊断指标，而不将有序度改善解释为碰撞安全改善。
+
+\section{间歇方位观测下的Kalman预测与神经场输入补偿}
+
+邻居方位观测的间歇缺失会减少神经场的社会输入，并改变其方向结构。为在有限缺失窗口内延续已观测邻居的方向信息，本文建立由方位状态估计、缺失期间预测和神经场输入重建组成的补偿方法。每个智能体独立维护其已跟踪邻居的方位--方位角速度状态：观测到达时执行 Kalman 更新，观测缺失时保留模型预测，并将预测均值及协方差映射为神经场的周期方向输入。
+
+\subsection{方法概述与观测模型}
+设 $\delta_{ij}(k)\in\{0,1\}$ 表示观测是否新鲜到达。若传感器在机体坐标系中输出方位，且自身世界朝向 $\phi_i(k)$ 已知，则
+\begin{equation}
+ z^b_{ij}(k)=\operatorname{wrap}(\theta_{ij}(k)-\phi_i(k)+\nu_{ij}(k)),
+\end{equation}
+\begin{equation}
+ z_{ij}(k)=\operatorname{wrap}(z^b_{ij}(k)+\phi_i(k)),
+ \quad \nu_{ij}(k)\sim\mathcal N(0,R).
+\end{equation}
+仅当 $\delta_{ij}(k)=1$ 时执行测量更新。本文假设邻居目标编号正确，尚不处理数据关联错误和自身朝向误差。
+
+\subsection{方位状态预测与测量更新}
+\subsubsection{方位--方位角速度状态与阻尼扩展}
+由于没有距离观测，定义局部展开角状态
+\begin{equation}
+ x_{ij}(k)=\begin{bmatrix}\vartheta_{ij}(k)\\ \omega_{ij}(k)\end{bmatrix},
+ \quad \theta_{ij}(k)=\operatorname{wrap}(\vartheta_{ij}(k)),
+\end{equation}
+其中 $\vartheta_{ij}(k)$ 是局部展开角，$\theta_{ij}(k)$ 是其对应的圆周方位，$\omega_{ij}(k)$ 是邻居相对于观测者的方位角速度，并非邻居自身航向的角速度。基础模型采用局部常角速度假设
+\begin{equation}
+ x_{ij}(k+1)=F x_{ij}(k)+w_{ij}(k),
+ \quad F=\begin{bmatrix}1&\Delta t\\0&1\end{bmatrix},
+\end{equation}
+\begin{equation}
+ Q=q_\omega\begin{bmatrix}(\Delta t)^3/3&(\Delta t)^2/2\\(\Delta t)^2/2&\Delta t\end{bmatrix},
+ \quad z_{ij}(k)=Hx_{ij}(k)+\nu_{ij}(k),\quad H=\begin{bmatrix}1&0\end{bmatrix}.
+\end{equation}
+为提高长时间缺失下的外推稳定性，进一步采用阻尼角速度模型作为扩展。令
+$\rho=\exp(-\Delta t/\tau)$，其中 $\tau$ 为角速度相关时间，则
+\begin{equation}
+ x_{ij}(k+1)=F_{\mathrm{GM}}x_{ij}(k)+w_{ij}(k),
+ \quad
+ F_{\mathrm{GM}}=\begin{bmatrix}1&\tau(1-\rho)\\0&\rho\end{bmatrix},
+\end{equation}
+\begin{equation}
+ Q_{\mathrm{GM}}=q_\omega
+ \begin{bmatrix}
+ \tau^2\Delta t-\tau^3\left(2(1-\rho)-\frac{1-\rho^2}{2}\right)
+ & \frac{\tau^2(1-\rho)^2}{2}\\[2mm]
+ \frac{\tau^2(1-\rho)^2}{2}
+ & \frac{\tau(1-\rho^2)}{2}
+ \end{bmatrix}.
+\end{equation}
+当 $\tau\to\infty$ 时，该模型退化为常角速度模型；当 $\tau$ 较小时，角速度预测向零衰减，从而降低长时间外推对过期角速度的依赖。上述模型只预测方位，不恢复邻居的二维位置或速度。当过程模型参数或噪声比例难以准确给定、且模型失配主要来自参数比例时，可采用自适应 Kalman 滤波思想在线调整噪声强度\upcite{Ge2025}。
+
+\subsubsection{初始化、预测与更新}
+首次收到目标观测时初始化
+\begin{equation}
+ \hat x_{ij}(k)=\begin{bmatrix}z_{ij}(k)\\0\end{bmatrix},
+ \quad P_{ij}(k)=\operatorname{diag}(R,P_{\omega,0}).
+\end{equation}
+对已初始化轨迹先执行
+\begin{equation}
+ \hat x^-_{ij}(k)=F\hat x_{ij}(k-1),\qquad
+ P^-_{ij}(k)=FP_{ij}(k-1)F^\top+Q.
+\end{equation}
+当 $\delta_{ij}(k)=1$ 时，计算圆周创新
+\begin{equation}
+ e_{ij}(k)=\operatorname{wrap}\left(z_{ij}(k)-H\hat x^-_{ij}(k)\right),
+\end{equation}
+\begin{equation}
+ S_{ij}=HP^-_{ij}H^\top+R,\quad K_{ij}=P^-_{ij}H^\top S_{ij}^{-1},
+\end{equation}
+\begin{equation}
+ \hat x_{ij}(k)=\hat x^-_{ij}(k)+K_{ij}e_{ij}(k),
+\end{equation}
+\begin{equation}
+ P_{ij}(k)=(I-K_{ij}H)P^-_{ij}(k)(I-K_{ij}H)^\top+K_{ij}RK_{ij}^\top.
+\end{equation}
+对于少量异常方位观测，还可借鉴最大似然最大相关熵准则抑制非高斯重尾噪声对状态更新的影响\upcite{ZhangBearing2025}；本文主实验仍采用高斯测量模型，以便与原始神经场输入保持一致。
+
+当 $\delta_{ij}(k)=0$ 时跳过更新，仅保留预测值。记观测年龄为 $a_{ij}(k)$，成功更新时置零，连续缺失时每步增加 $\Delta t$。当 $a_{ij}(k)>\tau_{\max}$ 时删除轨迹，后续重新获得观测时重新初始化。记轨迹有效标记为 $m_{ij}(k)\in\{0,1\}$，其中观测指示量 $\delta_{ij}(k)$ 控制是否执行测量更新，$m_{ij}(k)$ 控制是否向神经场注入该邻居的方向输入。这种在随机丢包期间保留预测、恢复后重新利用轨迹的处理与网络化系统中的丢包补偿思想一致\upcite{Yu2024}。在分布式实现中，还可采用自适应通信策略降低信息交换需求\upcite{Selvi2025}，或在随机通信协议下通过一致性滤波保持节点估计一致\upcite{Zhou2025}；融合多源测量协方差能够进一步提高共同估计精度\upcite{Yang2025}。
+
+观测矩阵为
+\begin{equation}
+ \mathcal O=\begin{bmatrix}H\\HF\end{bmatrix}=\begin{bmatrix}1&0\\1&\Delta t\end{bmatrix}.
+\end{equation}
+当 $\Delta t\ne0$ 时 $\det(\mathcal O)=\Delta t\ne0$，说明连续不同时间的方位观测可识别局部二状态模型；单次方位观测不能直接识别角速度。若方位观测与状态之间的关系出现更强非线性，可进一步采用无迹 Kalman 滤波类方法处理均值与协方差的非线性传播\upcite{Rong2024}。
+
+\subsection{不确定性感知神经场输入}
+
+\subsubsection{预测均值输入}
+定义
+\begin{equation}
+ \mu_{ij}(k)=H\hat x_{ij}(k),\quad V_{ij}(k)=HP_{ij}(k)H^\top.
+\end{equation}
+若轨迹已经初始化且未过期，记 $m_{ij}(k)=1$，否则为零。最小预测均值输入为
+\begin{equation}
+ I^{\mathrm{mean}}_{im}(k)=h_0\sum_jm_{ij}(k)
+ g_\sigma(\alpha_m-\mu_{ij}(k)),
+\end{equation}
+其中 $g_\sigma$ 为式（4）中的圆周高斯核。需要区分：$\delta_{ij}$ 控制是否更新滤波器，$m_{ij}$ 控制预测轨迹是否继续注入神经场。
+
+\subsubsection{协方差传播与周期卷积}
+在局部高斯假设下，方位后验为 wrapped normal 分布
+\begin{equation}
+ \Theta_{ij}(k)\mid\mathcal Y_{i,k}\sim\mathrm{WN}(\mu_{ij}(k),V_{ij}(k)).
+\end{equation}
+将社会输入定义为方位核的条件期望：
+\begin{equation}
+ \bar g_\sigma(x;V)=\int_{-\pi}^{\pi}g_\sigma(x-\epsilon)p_{\mathrm{WN}}(\epsilon;0,V)\,d\epsilon,
+\end{equation}
+\begin{equation}
+ I^{\mathrm{unc}}_{im}(k)=h_0\sum_jm_{ij}(k)\bar g_\sigma(\alpha_m-\mu_{ij}(k);V_{ij}(k)).
+\end{equation}
+
+令
+\begin{equation}
+ c_n=\frac{1}{2\pi}\int_{-\pi}^{\pi}g_\sigma(x)e^{-\mathrm inx}\,dx,
+\end{equation}
+则周期卷积的 Fourier 形式为
+\begin{equation}
+ \bar g_\sigma(x;V)=\sum_{n=-\infty}^{\infty}c_n e^{-n^2V/2}e^{\mathrm inx}.
+\end{equation}
+因此第 $n$ 阶方向信息保留比例为 $e^{-n^2V/2}$，一阶方向信息保留比例为
+\begin{equation}
+ \gamma(V)=e^{-V/2}.
+\end{equation}
+当 $V$ 增大时，输入方向结构变宽并趋向均匀背景；由于零阶 Fourier 分量保持不变，不能简单地说不确定性使总输入消失。
+
+在方位分布足够集中时，可采用便于实现的局部高斯近似
+\begin{equation}
+ \bar g_\sigma(x;V)\approx
+ \sqrt{\frac{\sigma_s^2}{\sigma_s^2+V}}
+ \exp\left[-\frac{\operatorname{wrap}(x)^2}{2(\sigma_s^2+V)}\right].
+\end{equation}
+该式只适用于小方差和单一展开分支；大方差情形应使用周期积分或 Fourier 形式。
+
+\subsection{算法流程与伪代码}
+
+每个时间步首先接收并转换方位观测，然后对各邻居轨迹进行初始化、预测或测量更新。经过有效性检查后，轨迹的预测均值和协方差被映射为社会输入，最后驱动原神经场与运动模型。各智能体使用同一时刻的状态同步推进，避免顺序更新产生额外的信息差异。
+
+\begin{algorithm}[htbp]
+ \caption{间歇方位观测下的Kalman预测与神经场输入补偿}
+ \label{alg:kalman_compensation}
+ \scriptsize
+ \begin{algorithmic}[1]
+ \Require 时间步长 $\Delta t$、测量噪声方差 $R$、初始角速度方差 $P_{\omega,0}$
+ \Require 状态模型 $\mathrm{model}\in\{\mathrm{CV},\mathrm{GM}\}$、输入模式 $\mathrm{mode}\in\{\mathrm{mean},\mathrm{uncertainty}\}$
+ \Require 过程噪声参数 $q_\omega$、相关时间 $\tau$、轨迹生命周期 $\tau_{\max}$
+ \Require 方向单元 $\alpha_m$、核宽度 $\sigma_s$、单边输入幅值 $h_0$ 及原神经场参数
+ \Ensure 轨迹集合 $\mathcal T_i$、社会输入 $I_i(k)$ 和同步更新的神经场与运动状态
+ \State 初始化所有轨迹集合 $\mathcal T_i\leftarrow\varnothing$
+ \State 根据 $\mathrm{model}$ 构造状态矩阵 $F$ 与过程噪声协方差 $Q$
+ \If{$\mathrm{mode}=\mathrm{uncertainty}$}
+  \State 预计算方向核 Fourier 系数 $c_0,\ldots,c_{N_F}$
+ \EndIf
+ \end{algorithmic}
+\end{algorithm}
+\clearpage
+
+\begin{algorithm}[htbp]
+ \ContinuedFloat
+ \caption{（续）：输入构造及闭环推进}
+ \scriptsize
+ \begin{algorithmic}
+ \For{每个时间步 $k$}
+  \State 从同一时刻的系统状态获取所有新鲜方位观测
+  \For{每个智能体 $i$}
+   \State $I_i(k)\leftarrow\mathbf 0$；$\mathcal J_i\leftarrow$ 已维护轨迹与当前观测邻居身份之并集
+   \For{每个 $j\in\mathcal J_i$}
+    \If{$\delta_{ij}(k)=1$}
+     \State 将机体系观测转换为世界方位 $z_{ij}(k)$
+    \EndIf
+    \If{$j\notin\mathcal T_i$}
+     \If{$\delta_{ij}(k)=0$}
+      \State 跳过该邻居
+     \Else
+      \State $\hat x_{ij}\leftarrow[z_{ij}(k),0]^\top$；$P_{ij}\leftarrow\operatorname{diag}(R,P_{\omega,0})$；$a_{ij}\leftarrow0$
+      \State 将 $j$ 加入 $\mathcal T_i$
+     \EndIf
+    \Else
+     \State $\hat x^-_{ij}\leftarrow F\hat x_{ij}$；$P^-_{ij}\leftarrow FP_{ij}F^\top+Q$
+     \If{$\delta_{ij}(k)=1$}
+      \State $e_{ij}\leftarrow\operatorname{wrap}(z_{ij}(k)-H\hat x^-_{ij})$
+      \State $S_{ij}\leftarrow HP^-_{ij}H^\top+R$；$K_{ij}\leftarrow P^-_{ij}H^\top S_{ij}^{-1}$
+      \State $\hat x_{ij}\leftarrow\hat x^-_{ij}+K_{ij}e_{ij}$；$a_{ij}\leftarrow0$
+      \State $P_{ij}\leftarrow(I_2-K_{ij}H)P^-_{ij}(I_2-K_{ij}H)^\top+K_{ij}RK_{ij}^\top$
+     \Else
+      \State $\hat x_{ij}\leftarrow\hat x^-_{ij}$；$P_{ij}\leftarrow P^-_{ij}$；$a_{ij}\leftarrow a_{ij}+\Delta t$
+     \EndIf
+     \If{$a_{ij}>\tau_{\max}$}
+      \State 从 $\mathcal T_i$ 删除 $j$ 并跳过该邻居
+     \EndIf
+     \State $\mu_{ij}\leftarrow H\hat x_{ij}$；$V_{ij}\leftarrow HP_{ij}H^\top$
+     \For{每个方向单元 $m$}
+      \State $x\leftarrow\operatorname{wrap}(\alpha_m-\mu_{ij})$
+      \If{$\mathrm{mode}=\mathrm{mean}$}
+       \State $b\leftarrow\exp[-x^2/(2\sigma_s^2)]$
+      \Else
+       \State $b\leftarrow c_0+\sum_{n=1}^{N_F}2c_n\exp(-n^2V_{ij}/2)\cos(nx)$
+      \EndIf
+      \State $I_{im}(k)\leftarrow I_{im}(k)+h_0b$
+     \EndFor
+    \EndIf
+   \EndFor
+   \State 将 $I_i(k)$ 代入原模型总输入并按相同时间索引推进神经场、解码速度和更新位置
+  \EndFor
+  \State 进入下一个时间步
+ \EndFor
+ \State \Return $\{q_i(k)\}$、$\{u_i(k)\}$、$\{I_i(k)\}$
+ \end{algorithmic}
+\end{algorithm}
+\clearpage
+
+通过状态模型与输入模式的组合，可得到三种预测补偿方法：KF-mean 使用常角速度模型的预测均值方向核；KF-uncertainty 使用常角速度模型的协方差卷积方向核；KF-GM-uncertainty 使用阻尼角速度模型和协方差卷积方向核。fresh-drop 与 hold-last 作为实验基线，分别使用当前新鲜方位与最后一次观测方位，不需要执行上述 Kalman 递推。
+
+\section{间歇方位观测下的预测补偿理论分析}
+
+本章在局部线性高斯方位模型下，将协方差传播与圆周核卷积联系起来，给出方向信息衰减规律，并进一步说明协方差感知输入在给定后验模型下的条件均方最优性。上述结论分别用于解释预测补偿的时间限制和协方差进入神经场的数学依据。
+
+\subsection{基本假设与连续缺失下的方差传播}
+设最后一次更新后的协方差为
+\begin{equation}
+ P_0=\begin{bmatrix}p_{11}&p_{12}\\p_{12}&p_{22}\end{bmatrix}.
+\end{equation}
+间歇观测下 Kalman 滤波的协方差增长与估计稳定性已有一般性理论分析\upcite{Sinopoli2004}。本节进一步把该协方差传播与圆周神经场输入联系起来。
+
+连续 $b$ 步缺失，令 $T=b\Delta t$，则
+\begin{equation}
+ P(T)=F_TP_0F_T^\top+q_\omega\begin{bmatrix}T^3/3&T^2/2\\T^2/2&T\end{bmatrix},
+ \quad F_T=\begin{bmatrix}1&T\\0&1\end{bmatrix},
+\end{equation}
+从而
+\begin{equation}
+ \boxed{V(T)=p_{11}+2Tp_{12}+T^2p_{22}+q_\omega T^3/3.}
+\end{equation}
+式中，$p_{11}$、$p_{12}$ 和 $p_{22}$ 是最后一次更新后协方差矩阵的元素，$T=b\Delta t$ 是连续缺失时长，$q_\omega$ 是角加速度噪声谱强度。该式由协方差递推和连续白角加速度噪声积分直接得到。由于交叉项 $p_{12}$ 可能为负，$V(T)$ 不一定在每一个短时间步都单调增大；保守上界可写为
+\begin{equation}
+ V(T)\le p_{11}+2T|p_{12}|+T^2p_{22}+q_\omega T^3/3.
+\end{equation}
+
+\subsection{方向信息保持时域}
+若要求一阶方向信息至少保留 $\gamma_{\min}$，则由式（\theequation）可得充分条件
+\begin{equation}
+ V(T)\le -2\ln\gamma_{\min}.
+\end{equation}
+该条件定义的是预测方向信息保持窗口，不是集群安全时间或全局稳定时间。它依赖后验协方差、过程噪声和指定的容许信息损失比例。
+
+\subsection{协方差感知输入的条件均方最优性}
+对相同的已跟踪邻居集合，定义理想社会输入向量 $J_i$，其中 $\mathcal Y_i$ 表示智能体 $i$ 的可用观测历史。若所采用的方位后验模型为 wrapped normal 分布，则协方差卷积输入满足 $\bar J_i=\mathbb E[J_i\mid\mathcal Y_i]$。任意基于相同观测历史的估计 $\widetilde J_i$ 有
+\begin{equation}
+ \mathbb E[\|J_i-\widetilde J_i\|_2^2\mid\mathcal Y_i]
+ =\mathbb E[\|J_i-\bar J_i\|_2^2\mid\mathcal Y_i]
+ +\|\bar J_i-\widetilde J_i\|_2^2.
+\end{equation}
+因此，周期卷积输入在所采用后验模型下最小化社会输入重建的条件均方误差。该结论只针对相同轨迹、相同观测历史和相同已跟踪邻居集合，不能直接推出更高的 GO 或更低的危险接近时间占比。
+
+\subsection{均值代入输入误差界}
+当 $0<\sigma_s\le\pi$ 时，圆周核满足 Lipschitz 界
+\begin{equation}
+ |g_\sigma(\alpha-\mu)-g_\sigma(\alpha-\theta)|
+ \le \frac{e^{-1/2}}{\sigma_s}d_{\mathbb S^1}(\mu,\theta).
+\end{equation}
+因此，对于相同已跟踪集合，均值代入输入的条件期望误差满足
+\begin{equation}
+ \mathbb E\left[\|I^{\mathrm{mean}}_i-I^{\mathrm{true}}_i\|_\infty\mid\mathcal Y_i\right]
+ \le h_0\frac{e^{-1/2}}{\sigma_s}\sum_j\sqrt{V_{ij}}.
+\end{equation}
+该式说明方位协方差越大，均值输入与真实输入之间的可控误差上界越宽；若存在从未跟踪的真实邻居，还需额外加入其未建模输入项。
+
+\subsection{理论结果的作用与适用边界}
+
+上述结果把协方差传播、圆周 Fourier 分析和条件期望投影用于方位预测与神经场输入之间的接口。前者支持按不确定性设定预测信息保持窗口，后者支持将协方差作为输入核展宽的依据，而不仅用于滤波器内部更新。
+
+两项结论均需在其模型条件下解释。常角速度模型失配、局部角度分支失效或协方差校准不足时，计算得到的 $V$ 未必反映真实误差，方向信息窗口和均方最优性也不构成真实系统的无条件保证。对于阻尼角速度预测器，只要所采用的方位后验仍为包裹正态分布，方向谐波衰减和条件均方最优性仍然适用，但方差必须由阻尼模型的协方差递推计算。社会输入重建误差经过非线性神经场与运动闭环后，也不必然转化为更高的群体有序度或更小的凝聚距离偏差。
+
+\section{仿真实验与结果}
+
+\subsection{实验设置}
+
+仿真采用 $N=20$、$M=100$、$\Delta t=0.3$、$v_s=0.05$、$\beta=1000$ 和 $\sigma_s=0.4$，周期方形区域边长 $L=1000$。闭环补偿实验采用完整检查点分叉：无遮挡控制和全部遮挡分支从同一位置、航向、神经活动、神经元偏好方向、固定邻居身份及预生成观测噪声流开始。记固定循环有向邻居边数为 $n_e$，实验中取 $n_e=15$，不访问仿真距离进行选邻。
+
+\begin{table}[htbp]
+ \centering
+ \small
+ \caption{扩展配对闭环实验参数}
+ \label{tab:simulation_setup}
+ \begin{tabular}{ll}
+ \toprule
+ 参数 & 设置\\
+ \midrule
+ 个体数、神经元数 & $N=20$，$M=100$\\
+ 时间步长、速度尺度 & $\Delta t=0.3$，$v_s=0.05$\\
+ 神经参数 & $\beta=1000$，$\sigma_s=0.4$，$L=1000$\\
+ 固定邻居边数 & $n_e=15$\\
+ 隐藏边数 & $7/15$、$11/15$、$13/15$\\
+ 连续遮挡时长 & $T=\{3,6,10.2,18,30,60\}$\\
+ 独立随机种子 & $201$--$230$\\
+ 测量噪声标准差 & $0.01$ rad\\
+ 常角速度 KF & $q_\omega=10^{-4}$，$R=10^{-4}$\\
+ 阻尼角速度 KF & $q_\omega=10^{-5}$，$\tau=10$，$R=10^{-4}$\\
+ 滤波初始化 & $P_0=\operatorname{diag}(R,1)$\\
+轨迹截止 & $\tau_{\max}=120$，$P_{11,\max}=1\ \mathrm{rad}^2$\\
+评价窗口 & 遮挡期；遮挡后前 100 步；恢复仿真 300 步\\
+受控转向设置 & 3 个领航个体；遮挡前 20 步开始转向；转向角速度 $0.025$ rad/模型时间\\
+相对退化指标 & 相对无遮挡控制的 GO、LO 和凝聚距离绝对偏差\\
+ \bottomrule
+ \end{tabular}
+\end{table}
+
+表~\ref{tab:simulation_setup} 中，$T$ 为连续遮挡时长，$q_\omega$ 为角加速度噪声谱强度，$\tau$ 为阻尼模型相关时间，$R$ 为方位测量方差，$P_0$ 为初始化协方差，$\tau_{\max}$ 为观测年龄上限，$P_{11,\max}$ 为方位方差轨迹截止阈值。本节区分四类证据：社会输入机制图使用种子 1--100 的独立机制扫描；预测校准诊断使用种子 138--139 进行参数选择、140--141 进行开发评估；无受控转向的扩展闭环实验和受控转向实验均使用种子 201--230，其中受控转向结果为完整的 $30$ 个种子、$2700$ 条配对闭环记录。主流模型比较仅作为不同传感信息条件下的辅助参考，不与仅方位闭环结果合并统计。
+
+比较五种方法：\textit{fresh-drop} 在缺失时删除外部方位输入；\textit{hold-last} 保持最后一次观测方位；\textit{KF-mean} 使用常角速度 Kalman 预测均值；\textit{KF-uncertainty} 使用常角速度 Kalman 均值和协方差卷积；\textit{KF-GM-uncertainty} 使用阻尼角速度 Kalman 模型和协方差卷积。后文分别将 KF-uncertainty 和 KF-GM-uncertainty 简称为 KF-unc 和 KF-GM。所有方法都保留神经场内部状态，因此 fresh-drop 只表示无外部方位轨迹记忆，不表示完全无记忆。每种条件包含 30 个种子，共 2700 条配对闭环结果。
+
+\subsection{社会输入机制的基准影响}
+
+图~\ref{fig:input_mechanism} 同时给出输入幅值、角度覆盖、输入集中度、GO、LO 和凝聚距离。随机选邻并采用原始单邻居幅值时，增加 $n_e$ 会同时提高输入幅值和方向采样密度，使 GO、LO 上升并减小凝聚距离。固定总幅值后，输入幅值基本保持不变，但角度覆盖和输入集中度仍随选邻策略变化；因此减少邻居的主要代价表现为方向信息不足。该结果支持将输入幅值和方位结构作为两个相互耦合但可区分的因素，也说明遮挡补偿不能只通过维持输入质量解释。
+
+\begin{figure}[htbp]
+ \centering
+ \includegraphics[width=0.96\linewidth]{fig1_input_mechanism.png}
+ \caption{邻居数量、输入幅值和方位选择策略的机制分解（N=20，种子 1--100）。}
+ \label{fig:input_mechanism}
+\end{figure}
+
+\subsection{连续缺失下的协方差与方位预测}
+
+连续缺失期间，常角速度模型的方位协方差按
+\begin{equation}
+ V(T)=p_{11}+2Tp_{12}+T^2p_{22}+q_\omega T^3/3
+\end{equation}
+增长。周期卷积对第 $n$ 阶方向谐波的衰减为 $\exp(-n^2V/2)$，因此协方差卷积不会删除预测输入，而是随着缺失时间增加展宽方向核并抑制高阶方向结构。图~\ref{fig:uncertainty_diagnostics} 的上排给出该解析性质，下排给出离线预测误差和 95\% 经验覆盖率。覆盖率在较长遮挡下明显低于名义值，说明当前协方差仍偏乐观；均值预测改善不能替代不确定性校准。该结果也限定了后续闭环解释：协方差卷积的收益应理解为对过期方向输入的抑制，而不是已经校准的概率保证。
+
+\begin{figure}[htbp]
+ \centering
+ \includegraphics[width=0.98\linewidth]{kf-uncertainty-diagnostics.png}
+ \caption{方位预测诊断。上排为解析协方差与方向信息保持；下排为离线均值误差和 95\% 经验覆盖率（种子 138--141）。}
+ \label{fig:uncertainty_diagnostics}
+\end{figure}
+
+图~\ref{fig:predict_error} 进一步给出隐藏边上的平均方位预测误差。相较 hold-last，阻尼角速度 KF-GM-uncertainty 在 $T\ge 6$ 时将预测误差降低约 $13\%$--$19\%$，配对 bootstrap 区间不跨零；在 $T=60$ 时仍降低约 $9\%$--$10\%$。$T=3$ 时均值降低约 $11\%$--$13\%$，但在两种较强遮挡条件下区间略跨零，因此只视为方向一致的短期改善。常角速度 KF 在短时遮挡中与 hold-last 接近，在中等和长时间缺失中才逐渐表现出均值预测优势。
+
+\begin{figure}[htbp]
+ \centering
+ \includegraphics[width=0.96\linewidth]{kf-prediction-error.png}
+ \caption{隐藏有向边上的方位预测误差。误差仅用于诊断，不进入控制器。}
+ \label{fig:predict_error}
+\end{figure}
+
+\subsection{闭环补偿结果}
+
+为避免长遮挡下轨迹分叉导致 GO 符号偶然变化，主响应采用相对无遮挡控制的绝对偏差。记 $\mathcal K_o$ 为一次连续遮挡覆盖的时间步集合，遮挡期 GO 偏差定义为
+\begin{equation}
+ D_{\mathrm{GO}}=\frac{1}{|\mathcal K_o|}\sum_{k\in\mathcal K_o}
+ \left|GO_{\mathrm{control}}(k)-GO_{\mathrm{method}}(k)\right|,
+\end{equation}
+遮挡后凝聚距离偏差采用相同定义。配对改善量由同一随机种子的方法差值与 fresh-drop 损失计算，区间由 5000 次 bootstrap 重采样得到。
+
+表~\ref{tab:kf_go} 和表~\ref{tab:kf_pair} 分别给出隐藏 $11/15$ 条输入时 GO 偏差与遮挡后凝聚距离偏差的配对改善。百分比相对 fresh-drop 计算，同时列出 hold-last，以避免把保留最后一次方位本身带来的收益误归因于 Kalman 外推。表中所有相对 fresh-drop 的 95\% bootstrap 区间均不跨零。
+
+\begin{table}[htbp]
+ \centering
+ \small
+ \caption{隐藏 $11/15$ 条输入时 GO 偏差相对 fresh-drop 的降低比例}
+ \label{tab:kf_go}
+ \begin{tabular}{lcccc}
+ \toprule
+ $T$ & hold-last & KF-mean & KF-uncertainty & KF-GM-uncertainty\\
+ \midrule
+ 3.0 & 81.6\% & 86.4\% & 86.2\% & 86.5\%\\
+ 6.0 & 75.0\% & 82.3\% & 82.3\% & 83.3\%\\
+ 10.2 & 68.6\% & 77.9\% & 77.0\% & 79.5\%\\
+ 18.0 & 63.5\% & 71.5\% & 67.7\% & 72.7\%\\
+ 30.0 & 58.2\% & 63.1\% & 52.6\% & 62.6\%\\
+ 60.0 & 47.9\% & 46.9\% & 33.7\% & 46.4\%\\
+ \bottomrule
+ \end{tabular}
+\end{table}
+
+\begin{table}[htbp]
+ \centering
+ \small
+ \caption{隐藏 $11/15$ 条输入时遮挡后距离偏差相对 fresh-drop 的降低比例}
+ \label{tab:kf_pair}
+ \begin{tabular}{lcccc}
+ \toprule
+ $T$ & hold-last & KF-mean & KF-uncertainty & KF-GM-uncertainty\\
+ \midrule
+ 3.0 & 89.3\% & 89.7\% & 89.8\% & 91.3\%\\
+ 6.0 & 85.5\% & 89.7\% & 89.4\% & 91.2\%\\
+ 10.2 & 79.3\% & 89.0\% & 86.5\% & 87.0\%\\
+ 18.0 & 70.1\% & 88.1\% & 83.4\% & 80.1\%\\
+ 30.0 & 59.0\% & 85.6\% & 79.5\% & 71.5\%\\
+ 60.0 & 40.2\% & 59.0\% & 64.0\% & 55.3\%\\
+ \bottomrule
+ \end{tabular}
+\end{table}
+
+hold-last 在短中时遮挡中已经解释了大部分偏差降低。Kalman 的额外价值并非在所有指标和时间尺度上都一致：在表~\ref{tab:kf_go} 的代表性条件下，$T\le30$ 时 KF-mean 和 KF-GM 的 GO 偏差低于 hold-last；$T=60$ 时，两者的均值略高于 hold-last，不能宣称长时间 GO 保持仍优于简单保持。相比之下，KF-uncertainty 对遮挡后距离偏差的改善更稳定，在 $T=60$ 时相对 fresh-drop 降低约 $64\%$，也明显高于 hold-last 的 $40.2\%$。这体现了协方差卷积的主要作用：抑制过期方向输入对神经场峰值的错误强化，而不是在所有指标上无条件优于其他方法。
+
+\begin{figure}[htbp]
+ \centering
+ \includegraphics[width=0.98\linewidth]{kf-performance-summary.png}
+ \caption{不同遮挡强度和时长下的绝对 GO 偏差与遮挡后距离偏差。误差线为种子间近似 95\% 置信区间。}
+ \label{fig:kf_performance}
+\end{figure}
+
+图~\ref{fig:kf_vs_hold} 直接给出各 Kalman 方法相对 hold-last 的配对差值。负值表示相对 hold-last 降低偏差。该图用于区分“保留旧方位已带来的收益”和“Kalman 外推或协方差卷积额外带来的收益”：短时遮挡中多数 Kalman 增量很小，中时遮挡中 KF-mean 和 KF-GM 对 GO 有可见增益，而 KF-uncertainty 的优势主要体现在长时间遮挡后的凝聚结构。
+
+\begin{figure}[htbp]
+ \centering
+ \includegraphics[width=0.98\linewidth]{kf-versus-hold.png}
+ \caption{Kalman 方法相对 hold-last 的配对差值。横轴为遮挡时长，负值表示偏差低于 hold-last。}
+ \label{fig:kf_vs_hold}
+\end{figure}
+
+\subsection{遮挡前受控转向与相对退化指标}
+
+仅在已经形成一致直线运动后开始遮挡，会使没有预测器的模型仍能依靠已有航向惯性维持较高 GO，因而不能充分检验预测补偿。为此，本文增加受控转向干预。首先从同一无遮挡检查点分叉；在遮挡开始前 $20$ 步（$6$ 个模型时间单位），仅对编号为 $1$--$3$ 的领航个体施加弱的异中心旋转方向输入，领航方向以 $0.025$ rad/模型时间的角速度缓慢变化。遮挡在第 $201$ 步开始，期间领航个体继续转向；其余个体没有额外转向命令，只能通过邻居方位输入跟随。这样，Kalman 轨迹在遮挡前能够接收连续变化的方位观测并估计方位角速度，而遮挡开始时跟随者尚未完全收敛到新的共同方向。
+
+受控转向实验仍比较 fresh-drop、hold-last、KF-mean、KF-uncertainty 和 KF-GM-uncertainty。每个方法与同一转向任务下的无遮挡控制轨迹配对。除绝对 GO、LO 和凝聚距离外，定义相对退化指标
+\begin{equation}
+ D_{\mathrm{GO}}^{\mathrm{rel}}=
+ \frac{\operatorname{mean}_{k\in\mathcal K_o}
+ |GO_{\mathrm{method}}(k)-GO_{\mathrm{control}}(k)|}
+ {\operatorname{mean}_{k\in\mathcal K_o}|GO_{\mathrm{control}}(k)|},
+\end{equation}
+并以相同方式定义 $D_{\mathrm{LO}}^{\mathrm{rel}}$ 和遮挡后凝聚距离相对偏差 $D_{\mathrm{pair}}^{\mathrm{rel}}$。这些指标比较的是观测缺失造成的相对退化，而不是不同模型本来具有的绝对性能差异。
+
+图~\ref{fig:turn_timeline} 给出干预时序。图~\ref{fig:turn_relative} 给出完整 $30$ 个种子在 $11/15$ 条有向边隐藏条件下的统计结果。以 $T=3$ 和 $T=10.2$ 为例，fresh-drop 的相对 GO 退化分别为 $0.99\%$ 和 $2.82\%$，KF-GM-uncertainty 分别为 $0.13\%$ 和 $0.45\%$；对应的遮挡后相对凝聚距离偏差分别为 $0.127\%$ 和 $0.605\%$，KF-GM-uncertainty 分别降至 $0.0085\%$ 和 $0.090\%$。完整矩阵表明，遮挡前转向确实放大了无预测补偿分支的退化，而 Kalman 分支在 GO 和凝聚结构指标上均保持较低偏差；误差线为 $30$ 个种子间的近似 $95\%$ 置信区间。
+
+\begin{figure}[htbp]
+ \centering
+ \includegraphics[width=0.82\linewidth]{intervention-timeline.png}
+ \caption{受控转向实验时序：遮挡前先开始领航转向，随后进入连续遮挡和恢复窗口。}
+ \label{fig:turn_timeline}
+\end{figure}
+
+\begin{figure}[htbp]
+ \centering
+ \includegraphics[width=0.98\linewidth]{relative-degradation.png}
+ \caption{受控转向下相对无遮挡控制的退化（完整 $30$ 个种子）。误差线为种子间近似 $95\%$ 置信区间。}
+ \label{fig:turn_relative}
+\end{figure}
+
+\subsection{与主流集群模型的参考比较}
+
+表~\ref{tab:mainstream} 给出 $T=30$、隐藏 $7/15$ 条输入时与 Vicsek、Boids 和 Olfati--Saber 型模型的辅助比较。其中，Vicsek 型模型源于自驱动粒子模型\upcite{Vicsek1995}，其宏观集体运动机制可进一步参见相关综述\upcite{Vicsek2012}；Olfati--Saber 型模型采用连续时间一致性框架和势函数构造 flocking 控制\upcite{OlfatiSaber2006}。主流模型使用邻居航向或相对位置，本文方法只使用方位观测，因此该比较用于说明额外状态信息带来的性能上界和代价，而不是同传感器条件下的算法排序。需要特别指出，这一辅助比较不包含与本文等价的方位预测器；若遮挡发生在已经充分收敛的直线运动阶段，主流模型仍可能依靠剩余可见邻居和自身状态维持较高 GO。因此，本文不使用该图单独证明 Kalman 的遮挡收益，Kalman 的因果效果以受控转向配对实验为主要证据。
+
+\begin{table}[htbp]
+ \centering
+ \small
+ \caption{与主流集群模型的参考比较（种子 101--105，$T=30$）}
+ \label{tab:mainstream}
+ \begin{tabular}{lrrrr}
+ \toprule
+ 模型 & 遮挡期 GO & GO 损失 & 最小距离$/L$ & 危险接近时间占比\\
+ \midrule
+ 本文 KF-uncertainty & 0.729 & $-0.0014$ & 0.00056 & 0.872\\
+ Vicsek（邻居航向） & 1.000 & 0 & 0.00760 & 0.800\\
+ Boids（位置+航向） & 0.975 & 0.0038 & 0.00773 & 0.064\\
+ Olfati--Saber 型（位置+航向） & 0.911 & 0.0368 & 0.00764 & 0.031\\
+ \bottomrule
+ \end{tabular}
+\end{table}
+
+图~\ref{fig:mainstream} 和表~\ref{tab:mainstream} 仅说明不同感知条件下的性能--代价差异：本文方法在只使用方位观测时仍能维持可用的群体有序运动，并保持较低转向控制量；Boids 和 Olfati--Saber 型基线由于使用相对位置并含有排斥或势函数项，在安全距离方面更有优势。不过，原异中心神经场模型没有显式避撞屏障，本文方法的最近距离和危险接近时间占比并不优于这些基线。因此，本文不能被视为安全控制器，最小距离只能作为风险诊断指标。
+
+图~\ref{fig:mainstream} 和表~\ref{tab:mainstream} 中，记 $d_{\min}$ 为最小个体间距离，$d_{\mathrm{safe}}$ 为危险接近诊断阈值，$R_{\mathrm{dp}}$ 为最小距离不超过 $d_{\mathrm{safe}}$ 的时间步比例。上述诊断量不进入控制器，也不构成碰撞安全保证。
+
+\begin{figure}[htbp]
+ \centering
+ \includegraphics[width=0.96\linewidth]{mainstream-comparison.png}
+ \caption{与主流集群模型的参考比较。危险接近采用仿真距离阈值，不等同于具有明确物理半径的碰撞。}
+ \label{fig:mainstream}
+\end{figure}
+
+\subsection{结果边界}
+
+上述闭环结果说明 Kalman 补偿在给定固定拓扑和参数下能够显著减缓连续缺失引起的性能退化，但仍存在明确边界。第一，协方差卷积的条件均方最优性依赖于给定后验模型，当前预测器的方差校准尚未完成，名义覆盖率不能等同于真实预测可靠性。第二，阻尼角速度模型参数来自前期离线开发，闭环实验没有在这些新种子上重新调参。第三，控制器没有邻居存在概率和数据关联机制，错误预测可能形成幽灵邻居输入。第四，当前实验采用固定身份和脚本化连续遮挡，尚未覆盖真实几何遮挡、动态邻居集合和周期最近像切换。第五，模型没有显式碰撞屏障，因此补偿收益不能扩展为安全保证。
+
+\section{讨论}
+
+本文方法的有效性具有明确边界。第一，方位—角速度 KF 只适用于局部连续角度分支；长时间观测中断、快速转弯和周期边界最近镜像切换会造成模型失配。第二，协方差卷积降低的是方向结构，不会自动恢复从未观测到的邻居，也不能保证有效交互图保持连通。第三，当前实验中的最近邻（nearest）和方位平衡（balanced）策略使用了仿真距离，只能作为机制对照，不能作为仅方位传感器控制器。第四，本文保留原模型的神经活动合矢量运动规则，没有加入显式碰撞屏障函数，因此最小距离只能作为评价指标，不能宣称具有严格碰撞安全保证。第五，本文先采用从 KF 到神经场的单向接口；神经场意图反向调节 KF 预测噪声的双向耦合可以作为后续工作，但需要独立的闭环推导和仿真验证。
+
+从更广的群体运动建模看，流体耦合等机制会进一步改变群体组织方式\upcite{Mao2025}，本文的方位输入模型尚未覆盖这类耦合效应。参数不确定性下的预测控制可通过灵敏度分析显式约束风险和性能退化\upcite{Belvedere2025}，可作为后续将预测误差纳入安全约束的参考。对于分布式部署，还需考虑恶意节点引起的估计偏差\upcite{An2024}以及多跳通信带来的拓扑和资源约束\upcite{Gao2024}。
+
+\section{结论}
+
+本文提出了一个面向间歇方位观测的异中心神经场 Kalman 预测补偿框架。该框架从原始异中心 flocking 模型出发，先分析有效社会输入的数量、幅值和方向结构，再使用方位—方位角速度 Kalman 滤波器在观测缺失期间预测已跟踪邻居的方位，并将预测协方差通过圆周核卷积传递给神经场。理论分析表明，连续缺失会导致方位协方差按时间累积，圆周方向的高阶结构按 $e^{-n^2V/2}$ 衰减；在给定后验模型下，协方差卷积输入具有条件均方最优的输入重建性质。
+
+本文的结果表明，在固定身份、等权输入和遮挡强度可受控的配对实验中，Kalman 预测补偿相对 fresh-drop 显著降低了连续缺失造成的 GO 偏差和遮挡后凝聚距离偏差，并随着遮挡时间增加形成逐步缩短但仍清晰的收益窗口。KF-GM-uncertainty 进一步提高了隐藏边的方位预测精度。本文不将 Kalman 预测解释为普遍稳定性保证，也不把任何单一邻居数量写成普适阈值；预测协方差校准、邻居存在概率、真实几何遮挡和碰撞约束仍是后续工作。
+
+\begin{thebibliography}{30}
+\bibitem{Bai2024} C. Bai, P. Yan, H. Piao, W. Pan, and J. Guo, ``Learning-based multi-UAV flocking control with limited visual field and instinctive repulsion,'' \emph{IEEE Transactions on Cybernetics}, vol. 54, no. 1, pp. 462--475, 2024, doi: 10.1109/TCYB.2023.3246985.
+\bibitem{Boldrer2026} M. Boldrer, V. Kratky, V. Walter, and M. Saska, ``Distributed Lloyd-based algorithm for uncertainty-aware multi-robot under-canopy flocking,'' \emph{IEEE Robotics and Automation Letters}, vol. 11, no. 5, pp. 5526--5533, 2026, doi: 10.1109/LRA.2026.3673985.
+\bibitem{LiFlocking2024} C. Li, Y. Yang, T.-Y. Huang, and X.-B. Chen, ``An improved flocking control algorithm to solve the effect of individual communication barriers on flocking cohesion in multi-agent systems,'' \emph{Engineering Applications of Artificial Intelligence}, vol. 137, art. 109110, 2024, doi: 10.1016/j.engappai.2024.109110.
+\bibitem{Ge2025Coordination} X. Ge, Q.-L. Han, X.-M. Zhang, D. Ding, and B. Ning, ``Distributed coordination control of multi-agent systems under intermittent sampling and communication: a comprehensive survey,'' \emph{Science China Information Sciences}, vol. 68, no. 5, art. 151201, 2025, doi: 10.1007/s11432-024-4355-1.
+\bibitem{OlfatiSaber2006} R. Olfati-Saber, ``Flocking for multi-agent dynamic systems: algorithms and theory,'' \emph{IEEE Transactions on Automatic Control}, vol. 51, no. 3, pp. 401--420, 2006, doi: 10.1109/TAC.2005.864190.
+\bibitem{Vicsek1995} T. Vicsek, A. Czirók, E. Ben-Jacob, I. Cohen, and O. Shochet, ``Novel type of phase transition in a system of self-driven particles,'' \emph{Physical Review Letters}, vol. 75, no. 6, pp. 1226--1229, 1995, doi: 10.1103/PhysRevLett.75.1226.
+\bibitem{Salahshour2025} M. Salahshour and I. D. Couzin, ``Allocentric flocking,'' \emph{Nature Communications}, vol. 16, art. 9051, 2025, doi: 10.1038/s41467-025-64676-5.
+\bibitem{Xiourouppa2025} A. H. Xiourouppa, D. Mikhin, M. Humphries, and J. Maclean, ``Theoretical insights for bearings-only tracking in log-polar coordinates,'' \emph{IEEE Transactions on Aerospace and Electronic Systems}, vol. 61, no. 4, pp. 8534--8545, 2025, doi: 10.1109/TAES.2025.3547317.
+\bibitem{Zhang1996} K. Zhang, ``Representation of spatial orientation by the intrinsic dynamics of the head-direction cell ensemble: a theory,'' \emph{The Journal of Neuroscience}, vol. 16, no. 6, pp. 2112--2126, 1996, doi: 10.1523/JNEUROSCI.16-06-02112.1996.
+\bibitem{Chen2026} Z. Chen, H. Wang, J. Li, G. Li, and S. Wang, ``Egocentric head direction encoding and perception model based on an adaptive ring attractor network,'' \emph{IEEE Transactions on Neural Networks and Learning Systems}, vol. 37, no. 8, pp. 3900--3912, 2026, doi: 10.1109/TNNLS.2026.3656687.
+\bibitem{Ao2021} P. Ao, ``Towards predictive neural network dynamical theory,'' \emph{Physics of Life Reviews}, vol. 36, pp. 30--32, 2021, doi: 10.1016/j.plrev.2020.08.006.
+\bibitem{Lu2025} Z. Lu, J. B. Julian, G. K. Aguirre, and R. A. Epstein, ``A neural compass in the human brain during naturalistic virtual navigation,'' \emph{The Journal of Neuroscience}, vol. 45, no. 34, art. e1765242025, 2025, doi: 10.1523/JNEUROSCI.1765-24.2025.
+\bibitem{Krongauz2024} D. L. Krongauz, A. Ayali, and G. A. Kaminka, ``Vision-based collective motion: a locust-inspired reductionist model,'' \emph{PLOS Computational Biology}, vol. 20, no. 1, art. e1011796, 2024, doi: 10.1371/journal.pcbi.1011796.
+\bibitem{Li2024} K. Li, L. Li, R. Gross, and S. Zhao, ``A collective perception model for neighbor selection in groups based on visual attention mechanisms,'' \emph{New Journal of Physics}, vol. 26, no. 1, art. 012001, 2024, doi: 10.1088/1367-2630/ad1b81.
+\bibitem{Xue2025} K. Xue, D. Kong, P. Wang, Z. Xu, and Z. Huang, ``Attention-based selective interaction model for self-organized collective motion,'' \emph{Chaos, Solitons \& Fractals}, vol. 201, art. 117320, 2025, doi: 10.1016/j.chaos.2025.117320.
+\bibitem{Qi2024} J. Qi, Z. Zhang, J. Yu, X. Dong, Q. Li, and H. Jiang, ``Time-varying group formation tracking control for multi-agent systems using distributed multi-sensor multi-target filtering with intermittent observations,'' \emph{International Journal of Robust and Nonlinear Control}, vol. 34, no. 17, pp. 11681--11704, 2024, doi: 10.1002/rnc.7587.
+\bibitem{Pan2026} Y. Pan, T. Chen, Q. Qi, H. Tian, and W. Kong, ``Bearing-only target tracking for multi-UUV via IMM-UIF with initial filter value correction,'' \emph{Ocean Engineering}, vol. 356, art. 125347, 2026, doi: 10.1016/j.oceaneng.2026.125347.
+\bibitem{Ge2025} Q. Ge, Y. Li, Y. Wang, X. Hu, H. Li, and C. Sun, ``Adaptive Kalman filtering based on model parameter ratios,'' \emph{IEEE Transactions on Automatic Control}, vol. 69, no. 9, pp. 6230--6237, 2024, doi: 10.1109/TAC.2024.3376306.
+\bibitem{ZhangBearing2025} K. Zhang, H. Wang, W. Chen, J. Ren, N. Luo, and Z. Lu, ``Multiplatform bearing-only target tracking algorithm based on maximum likelihood maximum correntropy Kalman filter,'' \emph{IEEE Sensors Journal}, vol. 25, no. 7, pp. 11366--11377, 2025, doi: 10.1109/JSEN.2025.3529771.
+\bibitem{Yu2024} Q. Yu, Z. Fan, X. Bu, and Z. Hou, ``Event-triggered based predictive iterative learning control with random packet loss compensation for nonlinear networked systems,'' \emph{ISA Transactions}, vol. 148, pp. 169--181, 2024, doi: 10.1016/j.isatra.2024.03.001.
+\bibitem{Selvi2025} D. Selvi and G. Battistelli, ``Distributed Kalman filtering with adaptive communication,'' \emph{IEEE Control Systems Letters}, vol. 9, pp. 15--20, 2025, doi: 10.1109/LCSYS.2025.3550401.
+\bibitem{Zhou2025} H. Zhou and S. Sun, ``Distributed extended Kalman consensus filtering for multi-sensor networked nonlinear systems under stochastic communication protocol,'' \emph{IEEE Transactions on Signal Processing}, vol. 73, pp. 3629--3640, 2025, doi: 10.1109/TSP.2025.3599848.
+\bibitem{Yang2025} T. Yang, J. Qian, Z. Duan, and Z. Sun, ``Distributed Kalman filter with ultimately accurate fused measurement covariance,'' \emph{IEEE Transactions on Automatic Control}, vol. 70, no. 10, pp. 6449--6464, 2025, doi: 10.1109/TAC.2025.3557365.
+\bibitem{Rong2024} D. Rong and Y. Wang, ``An adaptive spatial target tracking method based on unscented Kalman filter,'' \emph{Sensors}, vol. 24, no. 18, art. 6094, 2024, doi: 10.3390/s24186094.
+\bibitem{Sinopoli2004} B. Sinopoli, L. Schenato, M. Franceschetti, K. Poolla, M. I. Jordan, and S. S. Sastry, ``Kalman filtering with intermittent observations,'' \emph{IEEE Transactions on Automatic Control}, vol. 49, no. 9, pp. 1453--1464, 2004, doi: 10.1109/TAC.2004.834121.
+\bibitem{Vicsek2012} T. Vicsek and A. Zafeiris, ``Collective motion,'' \emph{Physics Reports}, vol. 517, no. 3--4, pp. 71--140, 2012, doi: 10.1016/j.physrep.2012.03.004.
+\bibitem{Mao2025} X. Mao, J. Wang, X. Mao, and J. Deng, ``A hybrid numerical model for the collective motion of fish groups,'' \emph{Journal of Fluid Mechanics}, vol. 1009, art. A26, 2025, doi: 10.1017/jfm.2025.216.
+\bibitem{Belvedere2025} T. Belvedere, M. Cognetti, G. Oriolo, and P. R. Giordano, ``Sensitivity-aware model predictive control for robots with parametric uncertainty,'' \emph{IEEE Transactions on Robotics}, vol. 41, pp. 3039--3058, 2025, doi: 10.1109/TRO.2025.3554415.
+\bibitem{An2024} L. An and G.-H. Yang, ``Mean-square exponential convergence for Byzantine-resilient distributed state estimation,'' \emph{Automatica}, vol. 163, art. 111592, 2024, doi: 10.1016/j.automatica.2024.111592.
+\bibitem{Gao2024} R. Gao, G.-H. Yang, and S. Wasly, ``Resilient distributed state estimation with multi-hop communication,'' \emph{Automatica}, vol. 168, art. 111823, 2024, doi: 10.1016/j.automatica.2024.111823.
+\end{thebibliography}
+\end{document}
