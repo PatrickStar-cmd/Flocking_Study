@@ -1,0 +1,479 @@
+\documentclass[UTF8,fontset=windows,11pt]{ctexart}
+\usepackage[a4paper,margin=2.35cm]{geometry}
+\usepackage{amsmath,amssymb,amsthm,bm,mathtools}
+\usepackage{xcolor}
+\usepackage{hyperref}
+\usepackage{microtype}
+\hypersetup{colorlinks=true,linkcolor=black,citecolor=black,urlcolor=blue}
+\setlength{\parindent}{2em}
+\setlength{\parskip}{0.25em}
+\linespread{1.18}
+\setlength{\emergencystretch}{1em}
+\newtheoremstyle{cnplain}{0.6em}{0.4em}{\normalfont}{2em}{\bfseries}{。}{0.5em}{}
+\theoremstyle{cnplain}
+\newtheorem{theorem}{定理}[section]
+\newtheorem{proposition}[theorem]{命题}
+\newtheorem{lemma}[theorem]{引理}
+\newtheorem{corollary}[theorem]{推论}
+\newtheorem{definition}[theorem]{定义}
+\renewcommand{\proofname}{证明}
+\numberwithin{equation}{section}
+\newcommand{\Sone}{\mathbb S^1}
+\newcommand{\Ttwo}{\mathbb T^2}
+\newcommand{\E}{\mathbb E}
+\newcommand{\R}{\mathbb R}
+
+\begin{document}
+\setcounter{section}{4}
+\section{预测不确定性与神经场输入的理论性质}
+
+间歇方位观测下的异中心神经场需要同时处理方向估计、预测不确定性和社会输入缺失。为刻画这些因素之间的关系，本章以方位后验、周期社会输入和神经场状态为理论对象，建立一条可检验的误差传播链：
+\[
+\text{方位后验}\;\longrightarrow\;\text{社会输入误差}\;\longrightarrow\;\text{神经场状态误差}\;\longrightarrow\;\text{速度与位置偏差}.
+\]
+
+理论分析包含四个相互衔接的层次：首先证明协方差感知输入在相同有效轨迹集合上的条件均方最优性，并量化只使用预测均值所产生的额外重建风险；其次区分完整邻居集合与有效轨迹集合，分解方向预测误差、漏邻居误差和错误关联误差；随后将连续缺失期间的方位方差传播转化为周期方向谐波衰减和方向信息保持窗口；最后在神经场推进映射满足局部 Lipschitz 条件时，给出社会输入扰动到神经场状态、速度解码和位置偏差的有限时间传播界。上述结论分别描述输入重建、方向信息保持和有限时间状态偏差，不将局部输入最优性等同于全局闭环稳定性。
+
+\subsection{理论对象、符号与适用条件}
+
+考虑智能体 $i$ 在时刻 $k$ 的观测历史 $\mathcal Y_i(k)$。记原始模型中的有向邻居集合为 $\mathcal B_i(k)$，由历史观测确定、已经初始化且尚未过期的有效轨迹集合为
+\[
+\mathcal S_i(k)\subseteq\mathcal B_i(k).
+\]
+前者表示参考社会输入可能包含的全部邻居，后者表示当前预测器实际可以继续维护的轨迹。理论分析必须区分这两个集合：协方差感知输入只能重建 $\mathcal S_i(k)$ 内的邻居，不能自动恢复从未初始化或已经删除的邻居。
+
+对环形神经场的方向单元 $\alpha_m$，定义周期方位核
+\begin{equation}
+ g_\sigma(x)=\exp\!\left[-\frac{\operatorname{wrap}(x)^2}{2\sigma_s^2}\right],
+ \qquad
+ \operatorname{wrap}(x)=\operatorname{mod}(x+\pi,2\pi)-\pi .
+ \label{eq:v2_kernel}
+\end{equation}
+其中 $0<\sigma_s\leq\pi$。圆周距离记为
+\begin{equation}
+ d_{\Sone}(a,b)=|\operatorname{wrap}(a-b)|.
+ \label{eq:v2_circle_distance}
+\end{equation}
+
+对 $j\in\mathcal B_i(k)$，令 $\Theta_{ij}(k)\in\Sone$ 表示真实世界方位；对 $j\in\mathcal S_i(k)$，方位预测器给出预测均值 $\mu_{ij}(k)$ 和方位方差 $V_{ij}(k)$。在当前观测历史条件下，假定有效轨迹的方位边缘后验满足
+\begin{equation}
+ \Theta_{ij}\mid\mathcal Y_i\sim\operatorname{WN}(\mu_{ij},V_{ij}),
+ \qquad j\in\mathcal S_i,
+ \label{eq:v2_wn_assumption}
+\end{equation}
+其中 $\operatorname{WN}$ 表示包裹正态分布。不同邻居之间不要求条件独立，因为本章的条件期望和误差分解只使用线性性与三角不等式。该假设还要求局部展开角分支在当前时间窗口内有效、邻居身份已经正确关联，且轨迹仍满足生命周期和有效性规则。
+
+定义有效轨迹集合上的理想社会输入
+\begin{equation}
+ J_{im}^{(\mathcal S)}=h_0\sum_{j\in\mathcal S_i}g_\sigma(\alpha_m-\Theta_{ij}),
+ \qquad
+ J_i^{(\mathcal S)}=[J_{i0}^{(\mathcal S)},\ldots,J_{i,M-1}^{(\mathcal S)}]^{\top}.
+ \label{eq:v2_tracked_ideal}
+\end{equation}
+完整邻居集合上的新鲜参考输入定义为
+\begin{equation}
+ J_{im}^{(\mathcal B)}=h_0\sum_{j\in\mathcal B_i}g_\sigma(\alpha_m-\Theta_{ij}),
+ \qquad
+ J_i^{(\mathcal B)}=[J_{i0}^{(\mathcal B)},\ldots,J_{i,M-1}^{(\mathcal B)}]^{\top}.
+ \label{eq:v2_full_ideal}
+\end{equation}
+显然，$J_i^{(\mathcal B)}$ 与 $J_i^{(\mathcal S)}$ 只有在当前有效轨迹集合覆盖全部参考邻居时才一致。
+
+令
+\begin{equation}
+ \bar g_\sigma(x;V)=\int_{-\pi}^{\pi}g_\sigma(x-\epsilon)
+ p_{\operatorname{WN}}(\epsilon;0,V)\,\mathrm d\epsilon,
+ \label{eq:v2_conv_kernel}
+\end{equation}
+并定义协方差感知输入
+\begin{equation}
+ \bar J_{im}^{(\mathcal S)}=h_0\sum_{j\in\mathcal S_i}
+ \bar g_\sigma(\alpha_m-\mu_{ij};V_{ij}),
+ \qquad
+ \bar J_i^{(\mathcal S)}=[\bar J_{i0}^{(\mathcal S)},\ldots,\bar J_{i,M-1}^{(\mathcal S)}]^{\top}.
+ \label{eq:v2_unc_input}
+\end{equation}
+
+\subsection{协方差感知输入的条件均方最优性}
+
+\begin{theorem}[有效轨迹集合上的条件均方最优性]
+\label{thm:v2_mmse}
+在式\eqref{eq:v2_wn_assumption}的后验模型、相同有效轨迹集合 $\mathcal S_i$ 和给定观测历史 $\mathcal Y_i$ 下，式\eqref{eq:v2_unc_input}满足
+\begin{equation}
+ \bar J_i^{(\mathcal S)}=\E[J_i^{(\mathcal S)}\mid\mathcal Y_i].
+ \label{eq:v2_conditional_mean}
+\end{equation}
+因此，对任意仅依赖 $\mathcal Y_i$ 且具有有限二阶矩的输入估计 $\widetilde J_i$，有
+\begin{equation}
+ \begin{aligned}
+ \E[\|J_i^{(\mathcal S)}-\widetilde J_i\|_2^2\mid\mathcal Y_i]
+ ={}&\E[\|J_i^{(\mathcal S)}-\bar J_i^{(\mathcal S)}\|_2^2\mid\mathcal Y_i]\\
+ &+\|\bar J_i^{(\mathcal S)}-\widetilde J_i\|_2^2.
+ \end{aligned}
+ \label{eq:v2_orthogonal_projection}
+\end{equation}
+故协方差感知输入在该估计类中唯一地最小化有效轨迹集合上的理想社会输入条件均方重建误差，除去概率为零的等价情形。
+\end{theorem}
+
+\begin{proof}
+对任意方向单元 $\alpha_m$，由条件期望线性性和式\eqref{eq:v2_wn_assumption}，有
+\begin{equation}
+ \begin{aligned}
+ \E[J_{im}^{(\mathcal S)}\mid\mathcal Y_i]
+ &=h_0\sum_{j\in\mathcal S_i}
+ \E[g_\sigma(\alpha_m-\Theta_{ij})\mid\mathcal Y_i]\\
+ &=h_0\sum_{j\in\mathcal S_i}
+ \bar g_\sigma(\alpha_m-\mu_{ij};V_{ij})
+ =\bar J_{im}^{(\mathcal S)}.
+ \end{aligned}
+ \label{eq:v2_component_expectation}
+\end{equation}
+逐分量成立即得式\eqref{eq:v2_conditional_mean}。再将误差分解为
+\begin{equation}
+ J_i^{(\mathcal S)}-\widetilde J_i
+ =\bigl(J_i^{(\mathcal S)}-\bar J_i^{(\mathcal S)}\bigr)
+ +\bigl(\bar J_i^{(\mathcal S)}-\widetilde J_i\bigr).
+ \label{eq:v2_error_decomposition}
+\end{equation}
+第二项由 $\mathcal Y_i$ 确定，且第一项的条件均值为零，因此平方展开后的交叉项条件期望为零，得到式\eqref{eq:v2_orthogonal_projection}。
+\end{proof}
+
+定理\ref{thm:v2_mmse}不是 Kalman 滤波器递推本身的新最优性，而是一个针对异中心神经场输入接口的投影结论：当预测器提供方位后验时，把后验分布作用于方向核所得的输入，正是有效轨迹集合上理想社会输入的条件期望。因此，协方差不再只是滤波器内部的诊断量，而成为神经场输入构造的一部分。
+
+\subsection{均值输入的额外重建风险}
+
+KF-mean 只把预测均值代入方向核：
+\begin{equation}
+ J_{im}^{\mathrm{mean}}=h_0\sum_{j\in\mathcal S_i}
+ g_\sigma(\alpha_m-\mu_{ij}).
+ \label{eq:v2_mean_input}
+\end{equation}
+
+\begin{corollary}[忽略方位协方差的额外风险]
+\label{cor:v2_mean_risk}
+在定理\ref{thm:v2_mmse}的条件下，KF-mean 相对于协方差感知输入增加的条件均方重建风险为
+\begin{equation}
+ \E[\|J_i^{(\mathcal S)}-J_i^{\mathrm{mean}}\|_2^2\mid\mathcal Y_i]
+ -\E[\|J_i^{(\mathcal S)}-\bar J_i^{(\mathcal S)}\|_2^2\mid\mathcal Y_i]
+ =\|\bar J_i^{(\mathcal S)}-J_i^{\mathrm{mean}}\|_2^2\ge0.
+ \label{eq:v2_mean_risk_gap}
+\end{equation}
+当所有 $V_{ij}\to0$ 时，$\bar J_i^{(\mathcal S)}$ 与 $J_i^{\mathrm{mean}}$ 趋于一致；在非零方差下，二者一般不一致。
+\end{corollary}
+
+\begin{proof}
+在式\eqref{eq:v2_orthogonal_projection}中取 $\widetilde J_i=J_i^{\mathrm{mean}}$ 即得。
+\end{proof}
+
+对 $0<\sigma_s\le\pi$，周期核关于圆周距离满足 Lipschitz 界
+\begin{equation}
+ |g_\sigma(a)-g_\sigma(b)|
+ \le L_\sigma d_{\Sone}(a,b),
+ \qquad L_\sigma=\frac{e^{-1/2}}{\sigma_s}.
+ \label{eq:v2_lipschitz_kernel}
+\end{equation}
+在局部展开角分支有效且 $\E[d_{\Sone}(\mu_{ij},\Theta_{ij})^2\mid\mathcal Y_i]\le V_{ij}$ 时，有
+\begin{equation}
+ \E[\|J_i^{\mathrm{mean}}-J_i^{(\mathcal S)}\|_\infty\mid\mathcal Y_i]
+ \le h_0L_\sigma\sum_{j\in\mathcal S_i}\sqrt{V_{ij}}.
+ \label{eq:v2_mean_bound}
+\end{equation}
+该界不包含漏掉邻居或错误关联造成的误差，因而只描述已跟踪集合内的均值预测风险。
+
+\subsection{完整社会输入的误差分解}
+
+\begin{proposition}[预测误差与漏邻居误差的分解]
+\label{prop:v2_full_decomposition}
+令 $\mathcal S_i\subseteq\mathcal B_i$，则有
+\begin{equation}
+ J_i^{(\mathcal B)}-\bar J_i^{(\mathcal S)}
+ =\bigl(J_i^{(\mathcal S)}-\bar J_i^{(\mathcal S)}\bigr)
+ +J_i^{(\mathcal B\setminus\mathcal S)}.
+ \label{eq:v2_full_decomposition}
+\end{equation}
+进一步，在 $0\le g_\sigma\le1$ 时，满足
+\begin{equation}
+ \|J_i^{(\mathcal B)}-\bar J_i^{(\mathcal S)}\|_\infty
+ \le
+ \|J_i^{(\mathcal S)}-\bar J_i^{(\mathcal S)}\|_\infty
+ +h_0|\mathcal B_i\setminus\mathcal S_i|.
+ \label{eq:v2_full_bound}
+\end{equation}
+若再满足式\eqref{eq:v2_mean_bound}的条件，则由条件 Jensen 不等式和三角不等式，
+\begin{equation}
+ \begin{aligned}
+ &\E[\|J_i^{(\mathcal S)}-\bar J_i^{(\mathcal S)}\|_\infty\mid\mathcal Y_i]\\
+ &\quad\le
+ 2\E[\|J_i^{(\mathcal S)}-J_i^{\mathrm{mean}}\|_\infty\mid\mathcal Y_i]
+ \le2h_0L_\sigma\sum_{j\in\mathcal S_i}\sqrt{V_{ij}}.
+ \end{aligned}
+ \label{eq:v2_unc_absolute_bound}
+\end{equation}
+进而有
+\begin{equation}
+ \E[\|J_i^{(\mathcal B)}-\bar J_i^{(\mathcal S)}\|_\infty\mid\mathcal Y_i]
+ \le h_0\left(
+ 2L_\sigma\sum_{j\in\mathcal S_i}\sqrt{V_{ij}}
+ +|\mathcal B_i\setminus\mathcal S_i|
+ \right).
+ \label{eq:v2_total_input_bound}
+\end{equation}
+\end{proposition}
+
+\begin{proof}
+将式\eqref{eq:v2_tracked_ideal}和式\eqref{eq:v2_full_ideal}按集合 $\mathcal S_i$ 与 $\mathcal B_i\setminus\mathcal S_i$ 拆分即可得到式\eqref{eq:v2_full_decomposition}。由于 $g_\sigma$ 与 $\bar g_\sigma$ 的值均不超过 1，遗漏集合对每一个方向单元的输入幅值不超过 $h_0|\mathcal B_i\setminus\mathcal S_i|$，再使用三角不等式得到式\eqref{eq:v2_full_bound}。另一方面，$\bar J_i^{(\mathcal S)}=\E[J_i^{(\mathcal S)}\mid\mathcal Y_i]$，故
+\[
+ \|J_i^{\mathrm{mean}}-\bar J_i^{(\mathcal S)}\|_\infty
+ \le\E[\|J_i^{\mathrm{mean}}-J_i^{(\mathcal S)}\|_\infty\mid\mathcal Y_i].
+\]
+将其与三角不等式及式\eqref{eq:v2_mean_bound}结合，得到式\eqref{eq:v2_unc_absolute_bound}；最后代入式\eqref{eq:v2_full_bound}得到式\eqref{eq:v2_total_input_bound}。
+\end{proof}
+
+命题\ref{prop:v2_full_decomposition}区分了两种不同失效机制：第一项是已经建立轨迹但预测不准，第二项是邻居没有进入有效轨迹集合。协方差卷积只能降低第一项中的方向重建风险，不能凭空恢复第二项。因此，协方差感知输入的条件均方最优性不能被解释为完整邻居集合上的无条件最优性。
+
+若需要描述错误数据关联，可另定义错误轨迹集合 $\mathcal A_i$，并将其输入作为第三项加入式\eqref{eq:v2_full_decomposition}。本章不对该项建立概率模型，只保留其作为模型适用边界。
+
+\subsection{方向谐波衰减与信息保持窗口}
+
+令原方向核的 Fourier 系数为
+\begin{equation}
+ c_n=\frac{1}{2\pi}\int_{-\pi}^{\pi}g_\sigma(x)e^{-\mathrm inx}\,\mathrm dx .
+ \label{eq:v2_fourier_coeff}
+\end{equation}
+由于 wrapped normal 的第 $n$ 阶特征函数为 $\exp(-n^2V/2)$，周期卷积核的系数为
+\begin{equation}
+ c_n(V)=c_n\exp\left(-\frac{n^2V}{2}\right).
+ \label{eq:v2_harmonic_decay}
+\end{equation}
+因此一阶方向信息的保留比例为
+\begin{equation}
+ \gamma_1(V)=\exp(-V/2).
+ \label{eq:v2_first_harmonic}
+\end{equation}
+
+在常角速度模型下，设最后一次观测更新后的协方差为
+\begin{equation}
+ P_0=\begin{bmatrix}p_{11}&p_{12}\\p_{12}&p_{22}\end{bmatrix}.
+ \label{eq:v2_p0}
+\end{equation}
+连续缺失 $T=b\Delta t$ 后，方位预测方差为
+\begin{equation}
+ V(T)=p_{11}+2Tp_{12}+T^2p_{22}+\frac{q_\omega T^3}{3}.
+ \label{eq:v2_vt}
+\end{equation}
+
+\begin{corollary}[一阶方向信息保持窗口]
+\label{cor:v2_direction_window}
+给定一阶方向信息的最低保留比例 $\gamma_{\min}\in(0,1)$，令
+\begin{equation}
+ V_{\max}=-2\ln\gamma_{\min}.
+ \label{eq:v2_vmax}
+\end{equation}
+则理论方向信息窗口定义为
+\begin{equation}
+ T_\gamma=\sup\left\{T\ge0:
+ V(s)\le V_{\max},\ \forall s\in[0,T]\right\}.
+ \label{eq:v2_tgamma}
+\end{equation}
+在 $[0,T_\gamma]$ 内有 $\gamma_1(s)\ge\gamma_{\min}$。当 $p_{12}<0$ 时，$V(s)$ 在极短时间内可能不单调，因此必须检查整个区间而不能只检查终点。
+\end{corollary}
+
+\begin{proof}
+由式\eqref{eq:v2_first_harmonic}，$\gamma_1(s)\ge\gamma_{\min}$ 当且仅当 $V(s)\le-2\ln\gamma_{\min}=V_{\max}$。对所有 $s\in[0,T]$同时要求该条件，即得到式\eqref{eq:v2_tgamma}。
+\end{proof}
+
+若只需要单调的保守上界，可使用
+\begin{equation}
+ \overline V(T)=p_{11}+2T|p_{12}|+T^2p_{22}+\frac{q_\omega T^3}{3},
+ \qquad V(T)\le\overline V(T),
+ \label{eq:v2_vupper}
+\end{equation}
+并以 $\overline V(T)=V_{\max}$ 的最小正根定义保守窗口。该窗口是单条已跟踪邻居的方向信息窗口，不是集群稳定时间、碰撞安全时间或邻居存在时间。
+
+\subsection{神经场的有限时间输入—状态误差界}
+
+为刻画社会输入误差对神经场动力学的影响，定义神经场的无输入推进映射
+\begin{equation}
+ f(u)=-u+\frac{1}{M}W\tanh(\beta u)-h_b\bm 1,
+ \qquad
+ \Phi(u)=u+\Delta t f(u).
+ \label{eq:v2_field_map}
+\end{equation}
+由于逐分量的 $\tanh(\beta u)$ 是 $\beta$-Lipschitz，推进映射在全空间上可取保守常数
+\begin{equation}
+ L_\Phi^{\mathrm{glob}}
+ =|1-\Delta t|+\frac{\Delta t\beta}{M}\|W\|_2.
+ \label{eq:v2_global_lipschitz}
+\end{equation}
+若已知两条轨迹均落在状态区域 $\mathcal U$，则还可以通过 Jacobian 得到更紧的局部常数
+\begin{equation}
+ L_\Phi(\mathcal U)=
+ \sup_{u\in\mathcal U}
+ \left\|(1-\Delta t)I_M+
+ \frac{\Delta t\beta}{M}W
+ \operatorname{diag}\!\left(\operatorname{sech}^2(\beta u)\right)
+ \right\|_2.
+ \label{eq:v2_local_lipschitz}
+\end{equation}
+全局常数适合给出无需轨迹信息的保守界；局部常数可利用神经元已经进入饱和区时 $\operatorname{sech}^2(\beta u)$ 较小的事实，但必须由给定状态区域或保存轨迹独立验证。
+考虑从同一检查点开始的两条轨迹：fresh 轨迹使用 $J_i^{(\mathcal B)}$，预测轨迹使用 $\widehat J_i$。令
+\begin{equation}
+ e_{u,i}(k)=u_i^{\mathrm{pred}}(k)-u_i^{\mathrm{fresh}}(k),
+ \qquad
+ \Delta I_i(k)=\widehat J_i(k)-J_i^{(\mathcal B)}(k).
+ \label{eq:v2_state_error}
+\end{equation}
+
+\begin{theorem}[神经场状态的有限时间输入—状态误差界]
+\label{thm:v2_field_bound}
+设两条轨迹在区间 $k\in\{k_0,\ldots,k_0+H\}$ 内均落在状态区域 $\mathcal U$，且神经场推进映射满足
+\begin{equation}
+ \|\Phi(u)-\Phi(v)\|_2\le L_\Phi\|u-v\|_2,
+ \qquad u,v\in\mathcal U.
+ \label{eq:v2_lipschitz_phi}
+\end{equation}
+则对任意 $\ell\in\{0,\ldots,H\}$，有
+\begin{equation}
+ \|e_{u,i}(k_0+\ell)\|_2
+ \le L_\Phi^\ell\|e_{u,i}(k_0)\|_2
+ +\Delta t\sum_{r=0}^{\ell-1}
+ L_\Phi^{\ell-1-r}\|\Delta I_i(k_0+r)\|_2.
+ \label{eq:v2_field_finite_bound}
+\end{equation}
+特别地，当两条轨迹从同一检查点分叉，即 $e_{u,i}(k_0)=0$，状态偏差完全由输入误差传播项决定。若进一步有 $L_\Phi<1$ 且 $\|\Delta I_i(k)\|_2\le\varepsilon_I$，则
+\begin{equation}
+ \|e_{u,i}(k_0+\ell)\|_2
+ \le
+ \frac{\Delta t(1-L_\Phi^\ell)}{1-L_\Phi}\varepsilon_I
+ \le\frac{\Delta t}{1-L_\Phi}\varepsilon_I.
+ \label{eq:v2_field_contracting_bound}
+\end{equation}
+\end{theorem}
+
+\begin{proof}
+由两条神经场递推式相减，得到
+\begin{equation}
+ e_{u,i}(k+1)=\Phi(u_i^{\mathrm{pred}}(k))-
+ \Phi(u_i^{\mathrm{fresh}}(k))+\Delta t\Delta I_i(k).
+ \end{equation}
+对上式应用式\eqref{eq:v2_lipschitz_phi}和三角不等式，得到
+\begin{equation}
+ \|e_{u,i}(k+1)\|_2
+ \le L_\Phi\|e_{u,i}(k)\|_2+\Delta t\|\Delta I_i(k)\|_2.
+\end{equation}
+反复递推即得式\eqref{eq:v2_field_finite_bound}。当 $L_\Phi<1$ 时，对等比和求和即可得到式\eqref{eq:v2_field_contracting_bound}。
+\end{proof}
+
+条件\eqref{eq:v2_lipschitz_phi}是局部状态区域条件，不等价于当前神经场参数在全空间上的全局收缩性。特别是 $\beta$ 较大时，不能未经验证就令 $L_\Phi<1$。因此论文中的严谨结论应分为两层：无收缩假设时使用有限时间界\eqref{eq:v2_field_finite_bound}；只有在给定状态区域的局部收缩条件被单独验证后，才使用有界式\eqref{eq:v2_field_contracting_bound}。
+
+将命题\ref{prop:v2_full_decomposition}代入定理\ref{thm:v2_field_bound}，可得遮挡期间神经场状态偏差由两部分组成：已跟踪邻居的方向预测误差，以及被遗漏邻居带来的输入缺口。该分解解释了为什么协方差卷积可以减小过期方向输入的重建风险，却不能替代邻居存在性判断或数据关联机制。
+
+\subsection{速度解码与位置偏差的有限时间界}
+
+神经场输出的正活动为
+\begin{equation}
+ a_{im}=\max\{\tanh(\beta u_{im}),0\},
+ \qquad
+ c_i=\sum_{m=0}^{M-1}a_{im}e^{\mathrm i\alpha_m},
+ \qquad
+ v_i=v_s[\Re c_i,\Im c_i]^{\top}.
+ \label{eq:v2_velocity_decode}
+\end{equation}
+
+\begin{lemma}[神经场状态到速度的 Lipschitz 界]
+\label{lem:v2_velocity_bound}
+对任意两个神经场状态 $u$ 和 $v$，有
+\begin{equation}
+ \|v(u)-v(v)\|_2
+ \le v_s\beta\sqrt M\|u-v\|_2.
+ \label{eq:v2_velocity_bound}
+\end{equation}
+\end{lemma}
+
+\begin{proof}
+函数 $x\mapsto\max\{\tanh(\beta x),0\}$ 是 $\beta$-Lipschitz，因此正活动向量满足
+\(\|a(u)-a(v)\|_2\le\beta\|u-v\|_2\)。复数合矢量是 $M$ 个单位模方向向量的线性组合，故
+\(\|c(u)-c(v)\|_2\le\sqrt M\|a(u)-a(v)\|_2\)。乘以速度尺度 $v_s$ 即得式\eqref{eq:v2_velocity_bound}。
+\end{proof}
+
+令 $d_{\Ttwo}$ 表示二维周期区域上的最小镜像距离。由于周期取模映射在该距离下不扩张，两条轨迹满足
+\begin{equation}
+ d_{\Ttwo}(q_i^{\mathrm{pred}}(k+1),q_i^{\mathrm{fresh}}(k+1))
+ \le d_{\Ttwo}(q_i^{\mathrm{pred}}(k),q_i^{\mathrm{fresh}}(k))
+ +\Delta t\|v_i^{\mathrm{pred}}(k)-v_i^{\mathrm{fresh}}(k)\|_2.
+ \label{eq:v2_position_step}
+\end{equation}
+结合引理\ref{lem:v2_velocity_bound}和定理\ref{thm:v2_field_bound}，从同一检查点开始的有限时间位置偏差满足
+\begin{equation}
+ \begin{aligned}
+ d_{\Ttwo}(q_i^{\mathrm{pred}}(k_0+\ell),q_i^{\mathrm{fresh}}(k_0+\ell))
+ \le{}&v_s\beta\sqrt M\Delta t\\
+ &\times\sum_{r=0}^{\ell-1}\|e_{u,i}(k_0+r)\|_2.
+ \end{aligned}
+ \label{eq:v2_position_bound}
+\end{equation}
+该式是个体有限时间位置偏差界，不是集群 GO、LO 或碰撞概率的直接上界。后者还需要对速度归一化、个体间耦合和危险距离阈值增加额外假设，因此本章不将式\eqref{eq:v2_position_bound}扩展为闭环安全定理。
+
+\subsection{三类条件有效窗口}
+
+为避免把单一方向指标误称为集群稳定时间，本章区分三类窗口。
+
+\begin{definition}[方向信息窗口]
+\label{def:v2_direction_window}
+给定 $\gamma_{\min}$，式\eqref{eq:v2_tgamma}定义的一阶谐波保留窗口称为方向信息窗口 $T_\gamma$。
+\end{definition}
+
+\begin{definition}[社会输入误差窗口]
+\label{def:v2_input_window}
+给定输入容许误差 $\varepsilon_I$，定义
+\begin{equation}
+ T_I(\varepsilon_I)=\sup\left\{T\ge0:
+ \sup_{0\le s\le T}\mathcal E_I(s)\le\varepsilon_I\right\},
+ \label{eq:v2_input_window}
+\end{equation}
+其中 $\mathcal E_I(s)$ 可以取式\eqref{eq:v2_total_input_bound}右侧的条件期望上界，或由校准后的预测误差模型给出。
+\end{definition}
+
+\begin{definition}[神经场状态窗口]
+\label{def:v2_field_window}
+给定神经场状态容许误差 $\varepsilon_u$，定义
+\begin{equation}
+ T_u(\varepsilon_u)=\sup\left\{T\ge0:
+ \sup_{0\le s\le T}\mathcal E_u(s)\le\varepsilon_u\right\},
+ \label{eq:v2_field_window}
+\end{equation}
+其中 $\mathcal E_u(s)$ 由式\eqref{eq:v2_field_finite_bound}计算。
+\end{definition}
+
+实际预测器的可用窗口还受到轨迹年龄截止和方位方差截止约束。因此可定义条件可用窗口
+\begin{equation}
+ T_{\mathrm{usable}}
+ =\min\left\{T_\gamma,
+ T_I(\varepsilon_I),
+ T_u(\varepsilon_u),
+ \tau_{\max}\right\}.
+ \label{eq:v2_usable_window}
+\end{equation}
+式\eqref{eq:v2_usable_window}不是普适的遮挡阈值，而是依赖 $N$、神经场参数、输入制度、有效轨迹集合、$q_\omega$、$R$、初始协方差和误差容许值的条件函数。它的作用是把算法中的 $\tau_{\max}$ 和 $P_{11,\max}$ 与理论误差尺度联系起来，而不是替代独立的闭环实验。
+
+\subsection{理论结果的验证方式与边界}
+
+本章理论至少需要通过以下三类检查验证。第一，在已保存方位轨迹上比较实测方位误差、$V(T)$ 和 $\gamma_1(T)$，检查理论趋势是否成立。第二，在相同观测历史下计算 KF-mean 与 KF-uncertainty 的社会输入均方误差，检查式\eqref{eq:v2_mean_risk_gap}给出的风险差方向。第三，在完整检查点分叉实验中记录神经场状态差、速度差和位置差，检查式\eqref{eq:v2_field_finite_bound}是否成为保守但有效的上界。
+
+上述理论仍有明确边界：
+\begin{enumerate}
+ \item wrapped normal 只描述单峰、局部连续的方位后验，不能覆盖任意大方差、多峰后验和长时间周期分支切换；
+ \item 条件均方最优性只针对相同有效轨迹集合，不能解决邻居存在性和错误数据关联；
+ \item 方向信息窗口只描述周期输入的一阶谐波，不是 GO、LO、凝聚或碰撞安全窗口；
+ \item 有限时间神经场界需要局部 Lipschitz 条件，不能直接升级为全局闭环稳定性证明；
+ \item 协方差校准不足时，理论 $V(T)$ 仍可能低估真实方位误差；
+ \item 位置界只描述同一检查点分叉后的个体轨迹偏差，不能替代群体层面的统计实验。
+\end{enumerate}
+
+\subsection{本章理论贡献总结}
+
+本章的理论贡献可以概括为四个层次。第一，在给定 wrapped normal 方位后验和相同有效轨迹集合的条件下，证明协方差感知周期卷积输入是理想社会输入的条件均方最优估计，并量化 KF-mean 忽略协方差造成的额外重建风险。第二，将连续缺失期间的方位方差传播转化为周期方向谐波衰减，定义可计算的一阶方向信息窗口。第三，区分有效轨迹内的预测误差与完整邻居集合相对于有效轨迹集合的输入缺口，给出完整社会输入误差的可计算分解。第四，在局部 Lipschitz 条件下给出社会输入误差到神经场状态、速度解码和有限时间位置偏差的传播界，从而形成一条不把输入重建最优性冒充为闭环稳定性的理论链条。
+
+因此，本章的创新对象不是 Kalman 经典递推本身，而是“仅方位预测后验到异中心环形神经场输入及其有限时间扰动传播的理论接口”。下一章应分别验证：方位误差是否随理论方差增长、协方差感知输入是否降低有效轨迹集合上的重建风险、漏邻居项是否解释 fresh-drop 的输入缺口，以及理论窗口是否能够预测受控转向实验中的相对退化趋势。
+
+\end{document}
