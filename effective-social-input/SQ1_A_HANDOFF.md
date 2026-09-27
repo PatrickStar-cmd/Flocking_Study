@@ -3,11 +3,17 @@
 ## 1. 交接状态
 
 - 负责人：Hao_L（A）
-- 任务分支：`feature/sq1-e1-handoff`
-- 代码基点：`YCwork@71583f9`
+- 交付分支：`Hao_L`
+- 代码基点：`Hao_L@acca624`
 - 交接类型：E1 局部机制阶段性交付
 - 证据等级：确定性、探索性开发证据
 - 结果目录：`effective-social-input/results/sq1-local-v1/`
+
+GitHub 入口：
+
+- [Flocking_Study 仓库（Hao_L）](https://github.com/PatrickStar-cmd/Flocking_Study/tree/Hao_L)
+- [effective-social-input 目录（Hao_L）](https://github.com/PatrickStar-cmd/Flocking_Study/tree/Hao_L/effective-social-input)
+- [本交接说明 SQ1_A_HANDOFF.md](https://github.com/PatrickStar-cmd/Flocking_Study/blob/Hao_L/effective-social-input/SQ1_A_HANDOFF.md)
 
 本交付可以作为 B 的 E2 无遮挡群体实验和 C 的 E3 缺失设计/统计分析的输入层基础。它不代表科学问题一的群体实验、独立验证或确认性结论已经完成。
 
@@ -60,22 +66,22 @@ I(\alpha_m,t)=\sum_j w_j(t)\exp\!\left[-\frac{d_c(\alpha_m,\theta_j(t))^2}{2\sig
 
 ### 3.1 模型和代码
 
-- `SQ1_LOCAL_INPUT_MODEL.md`：公式、假设、指标、局部神经场更新和证据边界。
-- `localSocialInputMetrics.m`：单时刻输入场与指标计算。
-- `replayLocalSocialInput.m`：固定神经初态的单体神经场回放。
-- `runSq1LocalE1.m`：生成 E1 的 9 个确定性案例。
-- `testLocalSocialInput.m`：E1 软件契约测试。
-- `plotSq1LocalE1.m`：重建机制图。
+- [SQ1_LOCAL_INPUT_MODEL.md](https://github.com/PatrickStar-cmd/Flocking_Study/blob/Hao_L/effective-social-input/SQ1_LOCAL_INPUT_MODEL.md)：公式、假设、指标、局部神经场更新和证据边界。
+- [localSocialInputMetrics.m](https://github.com/PatrickStar-cmd/Flocking_Study/blob/Hao_L/effective-social-input/localSocialInputMetrics.m)：单时刻输入场与指标计算。
+- [replayLocalSocialInput.m](https://github.com/PatrickStar-cmd/Flocking_Study/blob/Hao_L/effective-social-input/replayLocalSocialInput.m)：固定神经初态的单体神经场回放。
+- [runSq1LocalE1.m](https://github.com/PatrickStar-cmd/Flocking_Study/blob/Hao_L/effective-social-input/runSq1LocalE1.m)：生成 E1 的 9 个确定性案例。
+- [testLocalSocialInput.m](https://github.com/PatrickStar-cmd/Flocking_Study/blob/Hao_L/effective-social-input/testLocalSocialInput.m)：E1 软件契约测试。
+- [plotSq1LocalE1.m](https://github.com/PatrickStar-cmd/Flocking_Study/blob/Hao_L/effective-social-input/plotSq1LocalE1.m)：重建机制图。
 
 ### 3.2 已生成结果
 
-`results/sq1-local-v1/` 包含：
+[`results/sq1-local-v1/`](https://github.com/PatrickStar-cmd/Flocking_Study/tree/Hao_L/effective-social-input/results/sq1-local-v1) 包含：
 
-- `summary.csv`：9 个案例的汇总指标；
-- `e1-results.mat`：完整回放结果、逐步输入、神经状态和配置；
-- `e1-mechanism.png`：输入积分、方位集中度、场峰值和 fresh/hold 解码方向图；
-- `README.md`：结果说明；
-- `audit.json`：参数、代码哈希和输出清单。
+- [summary.csv](https://github.com/PatrickStar-cmd/Flocking_Study/blob/Hao_L/effective-social-input/results/sq1-local-v1/summary.csv)：9 个案例的汇总指标；
+- [e1-results.mat](https://github.com/PatrickStar-cmd/Flocking_Study/blob/Hao_L/effective-social-input/results/sq1-local-v1/e1-results.mat)：完整回放结果、逐步输入、神经状态和配置；
+- [e1-mechanism.png](https://github.com/PatrickStar-cmd/Flocking_Study/blob/Hao_L/effective-social-input/results/sq1-local-v1/e1-mechanism.png)：输入积分、方位集中度、场峰值和 fresh/hold 解码方向图；
+- [README.md](https://github.com/PatrickStar-cmd/Flocking_Study/blob/Hao_L/effective-social-input/results/sq1-local-v1/README.md)：结果说明；
+- [audit.json](https://github.com/PatrickStar-cmd/Flocking_Study/blob/Hao_L/effective-social-input/results/sq1-local-v1/audit.json)：参数、代码哈希和输出清单。
 
 历史结果目录没有被覆盖。
 
