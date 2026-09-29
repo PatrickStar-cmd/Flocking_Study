@@ -1,0 +1,30 @@
+{
+  "source_B_commit": "63d56b51cb74bca509b0fb7dc29d1d5997d3a1ae",
+  "source_B_sha256": "5f6d5588f6313673de4d4b5de5c21f2eef0c0c55176d6e722ff52be8beee7b64",
+  "remote_ref_snapshot": {
+    "origin/Hao_L": "992e71aba3b26896335b52a3182cf01cfd542a9d",
+    "origin/WHQ_work": "63d56b51cb74bca509b0fb7dc29d1d5997d3a1ae",
+    "origin/YCwork": "71583f9c6fae635e78a9aa4f2cc8934128748bd9",
+    "origin/docs/collaboration-framework": "c58acaa16f6d3bcaaefa7a392d670a14e2c94c00",
+    "origin/feature/sq1-e1-handoff": "98950b72f6b4a82a0117e4a258ca0b7875bd6bf9",
+    "origin/main": "92b8b78cd0752dc91fc96d40f18e5af0a09c953c"
+  },
+  "original_rows": 480,
+  "named_run_keys": 280,
+  "canonical_run_keys": 240,
+  "canonical_configs": 12,
+  "csv_file_versions_inspected": 123,
+  "csv_file_versions_with_seed_column": 103,
+  "observed_seed_count": 171,
+  "observed_seed_ranges": "1-141, 201-230",
+  "coverage_limit": "Committed remote CSV explicit seed columns only. Binary-only results, script defaults/plans, JSON-only provenance, unpushed/ignored files and unshared runs are not cleared. Absence is not proof of freshness. No new seeds reserved.",
+  "checks": "PASS: source identity, full row mapping, equivalent metrics identical, 12x20 canonical keys, explicit seed parsing, B seed coverage",
+  "outputs": {
+    "B_E2_CANONICAL_RUNS.csv": "2dbd2a5b5c2fea742965623f8b5407fa8029e8a4a695eb808911c1f5c7e5f83b",
+    "B_E2_CONDITION_MAP.csv": "d22fb22fa2410f1557c1ffd74339d0ae6eb369f0859e637aab360a6121ef6aab",
+    "B_E2_CONFIG_CATALOG.csv": "bf2a0773feb18e56190075c081e26f14903c13d6308a75a77ff8478944cad69c",
+    "SOURCE_DATASET_INVENTORY.csv": "269b26832b8efa28daab89ae681b11f5986322bbdcc8ed2b0bae93427269f784",
+    "SQ1_SEED_LEDGER.csv": "574b70b41abe7569cf96c51bcd3611efa3c2492dd8830c0ee4a30d2462fe4bc3",
+    "SQ1_SEED_USAGE.csv": "e3e98f2a0e188647f9bb4b4008a38712d02a44b736583c9dfa56e16c968965bb"
+  }
+}

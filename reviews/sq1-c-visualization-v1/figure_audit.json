@@ -1,0 +1,18 @@
+{
+  "source_commit": "63d56b5",
+  "evidence": "exploratory visualization; no new simulation",
+  "inputs": {
+    "reviews\\sq1-c-paired-analysis-v1\\paired_effects.csv": "ea4b1cb144f8464be9f06dca092310119fcd4d479f9be9d58cac811f43d92076",
+    "reviews\\sq1-c-paired-analysis-v1\\paired_seed_differences.csv": "9ecea48b55e2e7c3fd803e874722d7a9dfd44f48290d6b181760f54937ed86b1",
+    "reviews\\sq1-c-condition-ledger-v1\\B_E2_CANONICAL_RUNS.csv": "2dbd2a5b5c2fea742965623f8b5407fa8029e8a4a695eb808911c1f5c7e5f83b"
+  },
+  "figures": {
+    "01_strength_effects.png": "4b0d6c0c71f0e2947ca9d265933973591c9525dc6f5b577313b518c83c5d00cb",
+    "02_neighbor_response.png": "6810d8286ff7624e0ec2147b0b3f7b36461857538221e91ba3185881b6d883c4",
+    "03_policy_effects.png": "3860ba8fc20f458352282f4e90add9539233f9a2113d05e53bf04f8737a9284f",
+    "01_strength_effects.svg": "b038d58bd687b940b9d4c1c1ba57453e8ee3c9acc71c6624330179c24c729b6c",
+    "02_neighbor_response.svg": "4dcb7d4cf1a6d96cf28a6d27ddc0f472dbe25a79318fd22866b0083f79df91d9",
+    "03_policy_effects.svg": "63895b017546d2dc91ff9fc300be60ba4a6744b02acfb84dfdaf3b93e30f3f9f"
+  },
+  "checks": "MATLAB assertions passed; three PNGs visually inspected; footer overlap corrected"
+}

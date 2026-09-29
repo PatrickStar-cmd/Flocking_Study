@@ -1,0 +1,44 @@
+{
+  "source_commit": "0036487818d891c23d357f7af49030f323f4c9af",
+  "evidence": "software/data consistency audit; source experiments exploratory",
+  "mapping_rows": 480,
+  "canonical_rows": 240,
+  "alias_comparisons": 240,
+  "config_counts": {
+    "C01": 20,
+    "C02": 20,
+    "C03": 20,
+    "C04": 20,
+    "C05": 20,
+    "C06": 20,
+    "C07": 20,
+    "C08": 20,
+    "C09": 20,
+    "C10": 20,
+    "C11": 20,
+    "C12": 20
+  },
+  "labels_per_canonical_run": {
+    "2": 80,
+    "4": 40,
+    "1": 100,
+    "3": 20
+  },
+  "inputs": {
+    "reviews/sq1-c-condition-ledger-v1/B_E2_CONDITION_MAP.csv": "d22fb22fa2410f1557c1ffd74339d0ae6eb369f0859e637aab360a6121ef6aab",
+    "reviews/sq1-c-condition-ledger-v1/B_E2_CANONICAL_RUNS.csv": "2dbd2a5b5c2fea742965623f8b5407fa8029e8a4a695eb808911c1f5c7e5f83b",
+    "reviews/sq1-whq-update-0036487/source_audit.json": "a589e843fc9d0b9b4160ee8615c576613bbc766815dfa20460c7d48db69a1f56",
+    "reviews/sq1-whq-update-0036487/source/run_B_1_03_summary_results/B_E2_runs.csv": "5f6d5588f6313673de4d4b5de5c21f2eef0c0c55176d6e722ff52be8beee7b64"
+  },
+  "outputs": {
+    "RAW_FILE_MAP.csv": "6fa6f46d242c77bbd463d2af5f78defba73f6d65164f3c03bde70e99e1a4c004",
+    "CANONICAL_RAW_INDEX.csv": "266d1974c93e44bb1f8ee8c5b1365e6183a27a447586d907d60c70b80c7572a1",
+    "alias_checks.json": "f57f70fecfc2fe1e2780fd6c52bb820f1b5115316dc83cb9730c7dd6a4718386"
+  },
+  "scripts": {
+    "build_raw_index.py": "4dd3678df68fd8a6494c9f3f78d7f0f63260e0f72dbd99ee451564efaaafc83a",
+    "verify_aliases.m": "cd44e54538bc4c82f188c0cc1b7145e1a6a38db9f33ff0f134a287c1074d4616"
+  },
+  "payload_exact": true,
+  "normalized_config_exact": true
+}

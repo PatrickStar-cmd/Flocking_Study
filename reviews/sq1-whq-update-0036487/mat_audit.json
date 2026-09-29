@@ -1,0 +1,3428 @@
+{
+  "matlabVersion": "24.2.0.2712019 (R2024b)",
+  "rawCount": 480,
+  "verifiedTimeSeriesValues": 4.608E+7,
+  "csvMetricNames": [
+    "meanGO",
+    "meanLO",
+    "meanPairDistanceNorm",
+    "meanNearestDistanceNorm",
+    "meanInputAmplitude",
+    "meanActiveNeighbors",
+    "meanAngularCoverage",
+    "meanInputConcentration",
+    "meanFieldPeak",
+    "meanBumpConcentration",
+    "meanSpeed",
+    "meanInputMass"
+  ],
+  "maxCsvMeanErrors": [
+    4.9960036108132044E-16,
+    5.5511151231257827E-16,
+    4.9960036108132044E-16,
+    4.9960036108132044E-16,
+    4.4408920985006262E-16,
+    0,
+    4.9960036108132044E-16,
+    4.9960036108132044E-16,
+    4.9960036108132044E-16,
+    5.5511151231257827E-16,
+    4.8849813083506888E-15,
+    3.6082248300317588E-16
+  ],
+  "maxSummaryError": 0,
+  "maxIndependentPairDistanceError": 6.6613381477509392E-16,
+  "distanceFramesChecked": 38400,
+  "maxAmplitudeError": 1.3877787807814457E-16,
+  "maxActiveCountError": 0,
+  "timeSeriesFields": [
+    "globalOrder",
+    "localOrder",
+    "meanPairDistanceNorm",
+    "meanNearestDistanceNorm",
+    "meanInputAmplitude",
+    "meanVisibleNeighbors",
+    "meanActiveNeighbors",
+    "meanAngularCoverage",
+    "meanInputConcentration",
+    "meanFieldPeak",
+    "meanBumpConcentration",
+    "meanSpeed",
+    "meanInputMass",
+    "meanDistanceWeight"
+  ],
+  "topLevelFields": [
+    "config",
+    "summary",
+    "timeSeries",
+    "trajectory",
+    "finalPosition",
+    "finalHeadings",
+    "finalNeuralState",
+    "finalPreferredDirections",
+    "meanAdjacency"
+  ],
+  "rawChecks": [
+    {
+      "file": "E1_strength_policy_fixed-total_random_k19_seed1.mat",
+      "seed": 1,
+      "steps": 8000,
+      "burnIn": 6000,
+      "trajectoryFrames": 81
+    },
+    {
+      "file": "E1_strength_policy_fixed-total_random_k19_seed10.mat",
+      "seed": 10,
+      "steps": 8000,
+      "burnIn": 6000,
+      "trajectoryFrames": 81
+    },
+    {
+      "file": "E1_strength_policy_fixed-total_random_k19_seed11.mat",
+      "seed": 11,
+      "steps": 8000,
+      "burnIn": 6000,
+      "trajectoryFrames": 81
+    },
+    {
+      "file": "E1_strength_policy_fixed-total_random_k19_seed12.mat",
+      "seed": 12,
+      "steps": 8000,
+      "burnIn": 6000,
+      "trajectoryFrames": 81
+    },
+    {
+      "file": "E1_strength_policy_fixed-total_random_k19_seed13.mat",
+      "seed": 13,
+      "steps": 8000,
+      "burnIn": 6000,
+      "trajectoryFrames": 81
+    },
+    {
+      "file": "E1_strength_policy_fixed-total_random_k19_seed14.mat",
+      "seed": 14,
+      "steps": 8000,
+      "burnIn": 6000,
+      "trajectoryFrames": 81
+    },
+    {
+      "file": "E1_strength_policy_fixed-total_random_k19_seed15.mat",
+      "seed": 15,
+      "steps": 8000,
+      "burnIn": 6000,
+      "trajectoryFrames": 81
+    },
+    {
+      "file": "E1_strength_policy_fixed-total_random_k19_seed16.mat",
+      "seed": 16,
+      "steps": 8000,
+      "burnIn": 6000,
+      "trajectoryFrames": 81
+    },
+    {
+      "file": "E1_strength_policy_fixed-total_random_k19_seed17.mat",
+      "seed": 17,
+      "steps": 8000,
+      "burnIn": 6000,
+      "trajectoryFrames": 81
+    },
+    {
+      "file": "E1_strength_policy_fixed-total_random_k19_seed18.mat",
+      "seed": 18,
+      "steps": 8000,
+      "burnIn": 6000,
+      "trajectoryFrames": 81
+    },
+    {
+      "file": "E1_strength_policy_fixed-total_random_k19_seed19.mat",
+      "seed": 19,
+      "steps": 8000,
+      "burnIn": 6000,
+      "trajectoryFrames": 81
+    },
+    {
+      "file": "E1_strength_policy_fixed-total_random_k19_seed2.mat",
+      "seed": 2,
+      "steps": 8000,
+      "burnIn": 6000,
+      "trajectoryFrames": 81
+    },
+    {
+      "file": "E1_strength_policy_fixed-total_random_k19_seed20.mat",
+      "seed": 20,
+      "steps": 8000,
+      "burnIn": 6000,
+      "trajectoryFrames": 81
+    },
+    {
+      "file": "E1_strength_policy_fixed-total_random_k19_seed3.mat",
+      "seed": 3,
+      "steps": 8000,
+      "burnIn": 6000,
+      "trajectoryFrames": 81
+    },
+    {
+      "file": "E1_strength_policy_fixed-total_random_k19_seed4.mat",
+      "seed": 4,
+      "steps": 8000,
+      "burnIn": 6000,
+      "trajectoryFrames": 81
+    },
+    {
+      "file": "E1_strength_policy_fixed-total_random_k19_seed5.mat",
+      "seed": 5,
+      "steps": 8000,
+      "burnIn": 6000,
+      "trajectoryFrames": 81
+    },
+    {
+      "file": "E1_strength_policy_fixed-total_random_k19_seed6.mat",
+      "seed": 6,
+      "steps": 8000,
+      "burnIn": 6000,
+      "trajectoryFrames": 81
+    },
+    {
+      "file": "E1_strength_policy_fixed-total_random_k19_seed7.mat",
+      "seed": 7,
+      "steps": 8000,
+      "burnIn": 6000,
+      "trajectoryFrames": 81
+    },
+    {
+      "file": "E1_strength_policy_fixed-total_random_k19_seed8.mat",
+      "seed": 8,
+      "steps": 8000,
+      "burnIn": 6000,
+      "trajectoryFrames": 81
+    },
+    {
+      "file": "E1_strength_policy_fixed-total_random_k19_seed9.mat",
+      "seed": 9,
+      "steps": 8000,
+      "burnIn": 6000,
+      "trajectoryFrames": 81
+    },
+    {
+      "file": "E1_strength_policy_fixed-total_random_k2_seed1.mat",
+      "seed": 1,
+      "steps": 8000,
+      "burnIn": 6000,
+      "trajectoryFrames": 81
+    },
+    {
+      "file": "E1_strength_policy_fixed-total_random_k2_seed10.mat",
+      "seed": 10,
+      "steps": 8000,
+      "burnIn": 6000,
+      "trajectoryFrames": 81
+    },
+    {
+      "file": "E1_strength_policy_fixed-total_random_k2_seed11.mat",
+      "seed": 11,
+      "steps": 8000,
+      "burnIn": 6000,
+      "trajectoryFrames": 81
+    },
+    {
+      "file": "E1_strength_policy_fixed-total_random_k2_seed12.mat",
+      "seed": 12,
+      "steps": 8000,
+      "burnIn": 6000,
+      "trajectoryFrames": 81
+    },
+    {
+      "file": "E1_strength_policy_fixed-total_random_k2_seed13.mat",
+      "seed": 13,
+      "steps": 8000,
+      "burnIn": 6000,
+      "trajectoryFrames": 81
+    },
+    {
+      "file": "E1_strength_policy_fixed-total_random_k2_seed14.mat",
+      "seed": 14,
+      "steps": 8000,
+      "burnIn": 6000,
+      "trajectoryFrames": 81
+    },
+    {
+      "file": "E1_strength_policy_fixed-total_random_k2_seed15.mat",
+      "seed": 15,
+      "steps": 8000,
+      "burnIn": 6000,
+      "trajectoryFrames": 81
+    },
+    {
+      "file": "E1_strength_policy_fixed-total_random_k2_seed16.mat",
+      "seed": 16,
+      "steps": 8000,
+      "burnIn": 6000,
+      "trajectoryFrames": 81
+    },
+    {
+      "file": "E1_strength_policy_fixed-total_random_k2_seed17.mat",
+      "seed": 17,
+      "steps": 8000,
+      "burnIn": 6000,
+      "trajectoryFrames": 81
+    },
+    {
+      "file": "E1_strength_policy_fixed-total_random_k2_seed18.mat",
+      "seed": 18,
+      "steps": 8000,
+      "burnIn": 6000,
+      "trajectoryFrames": 81
+    },
+    {
+      "file": "E1_strength_policy_fixed-total_random_k2_seed19.mat",
+      "seed": 19,
+      "steps": 8000,
+      "burnIn": 6000,
+      "trajectoryFrames": 81
+    },
+    {
+      "file": "E1_strength_policy_fixed-total_random_k2_seed2.mat",
+      "seed": 2,
+      "steps": 8000,
+      "burnIn": 6000,
+      "trajectoryFrames": 81
+    },
+    {
+      "file": "E1_strength_policy_fixed-total_random_k2_seed20.mat",
+      "seed": 20,
+      "steps": 8000,
+      "burnIn": 6000,
+      "trajectoryFrames": 81
+    },
+    {
+      "file": "E1_strength_policy_fixed-total_random_k2_seed3.mat",
+      "seed": 3,
+      "steps": 8000,
+      "burnIn": 6000,
+      "trajectoryFrames": 81
+    },
+    {
+      "file": "E1_strength_policy_fixed-total_random_k2_seed4.mat",
+      "seed": 4,
+      "steps": 8000,
+      "burnIn": 6000,
+      "trajectoryFrames": 81
+    },
+    {
+      "file": "E1_strength_policy_fixed-total_random_k2_seed5.mat",
+      "seed": 5,
+      "steps": 8000,
+      "burnIn": 6000,
+      "trajectoryFrames": 81
+    },
+    {
+      "file": "E1_strength_policy_fixed-total_random_k2_seed6.mat",
+      "seed": 6,
+      "steps": 8000,
+      "burnIn": 6000,
+      "trajectoryFrames": 81
+    },
+    {
+      "file": "E1_strength_policy_fixed-total_random_k2_seed7.mat",
+      "seed": 7,
+      "steps": 8000,
+      "burnIn": 6000,
+      "trajectoryFrames": 81
+    },
+    {
+      "file": "E1_strength_policy_fixed-total_random_k2_seed8.mat",
+      "seed": 8,
+      "steps": 8000,
+      "burnIn": 6000,
+      "trajectoryFrames": 81
+    },
+    {
+      "file": "E1_strength_policy_fixed-total_random_k2_seed9.mat",
+      "seed": 9,
+      "steps": 8000,
+      "burnIn": 6000,
+      "trajectoryFrames": 81
+    },
+    {
+      "file": "E1_strength_policy_fixed-total_random_k8_seed1.mat",
+      "seed": 1,
+      "steps": 8000,
+      "burnIn": 6000,
+      "trajectoryFrames": 81
+    },
+    {
+      "file": "E1_strength_policy_fixed-total_random_k8_seed10.mat",
+      "seed": 10,
+      "steps": 8000,
+      "burnIn": 6000,
+      "trajectoryFrames": 81
+    },
+    {
+      "file": "E1_strength_policy_fixed-total_random_k8_seed11.mat",
+      "seed": 11,
+      "steps": 8000,
+      "burnIn": 6000,
+      "trajectoryFrames": 81
+    },
+    {
+      "file": "E1_strength_policy_fixed-total_random_k8_seed12.mat",
+      "seed": 12,
+      "steps": 8000,
+      "burnIn": 6000,
+      "trajectoryFrames": 81
+    },
+    {
+      "file": "E1_strength_policy_fixed-total_random_k8_seed13.mat",
+      "seed": 13,
+      "steps": 8000,
+      "burnIn": 6000,
+      "trajectoryFrames": 81
+    },
+    {
+      "file": "E1_strength_policy_fixed-total_random_k8_seed14.mat",
+      "seed": 14,
+      "steps": 8000,
+      "burnIn": 6000,
+      "trajectoryFrames": 81
+    },
+    {
+      "file": "E1_strength_policy_fixed-total_random_k8_seed15.mat",
+      "seed": 15,
+      "steps": 8000,
+      "burnIn": 6000,
+      "trajectoryFrames": 81
+    },
+    {
+      "file": "E1_strength_policy_fixed-total_random_k8_seed16.mat",
+      "seed": 16,
+      "steps": 8000,
+      "burnIn": 6000,
+      "trajectoryFrames": 81
+    },
+    {
+      "file": "E1_strength_policy_fixed-total_random_k8_seed17.mat",
+      "seed": 17,
+      "steps": 8000,
+      "burnIn": 6000,
+      "trajectoryFrames": 81
+    },
+    {
+      "file": "E1_strength_policy_fixed-total_random_k8_seed18.mat",
+      "seed": 18,
+      "steps": 8000,
+      "burnIn": 6000,
+      "trajectoryFrames": 81
+    },
+    {
+      "file": "E1_strength_policy_fixed-total_random_k8_seed19.mat",
+      "seed": 19,
+      "steps": 8000,
+      "burnIn": 6000,
+      "trajectoryFrames": 81
+    },
+    {
+      "file": "E1_strength_policy_fixed-total_random_k8_seed2.mat",
+      "seed": 2,
+      "steps": 8000,
+      "burnIn": 6000,
+      "trajectoryFrames": 81
+    },
+    {
+      "file": "E1_strength_policy_fixed-total_random_k8_seed20.mat",
+      "seed": 20,
+      "steps": 8000,
+      "burnIn": 6000,
+      "trajectoryFrames": 81
+    },
+    {
+      "file": "E1_strength_policy_fixed-total_random_k8_seed3.mat",
+      "seed": 3,
+      "steps": 8000,
+      "burnIn": 6000,
+      "trajectoryFrames": 81
+    },
+    {
+      "file": "E1_strength_policy_fixed-total_random_k8_seed4.mat",
+      "seed": 4,
+      "steps": 8000,
+      "burnIn": 6000,
+      "trajectoryFrames": 81
+    },
+    {
+      "file": "E1_strength_policy_fixed-total_random_k8_seed5.mat",
+      "seed": 5,
+      "steps": 8000,
+      "burnIn": 6000,
+      "trajectoryFrames": 81
+    },
+    {
+      "file": "E1_strength_policy_fixed-total_random_k8_seed6.mat",
+      "seed": 6,
+      "steps": 8000,
+      "burnIn": 6000,
+      "trajectoryFrames": 81
+    },
+    {
+      "file": "E1_strength_policy_fixed-total_random_k8_seed7.mat",
+      "seed": 7,
+      "steps": 8000,
+      "burnIn": 6000,
+      "trajectoryFrames": 81
+    },
+    {
+      "file": "E1_strength_policy_fixed-total_random_k8_seed8.mat",
+      "seed": 8,
+      "steps": 8000,
+      "burnIn": 6000,
+      "trajectoryFrames": 81
+    },
+    {
+      "file": "E1_strength_policy_fixed-total_random_k8_seed9.mat",
+      "seed": 9,
+      "steps": 8000,
+      "burnIn": 6000,
+      "trajectoryFrames": 81
+    },
+    {
+      "file": "E1_strength_policy_original_random_k19_seed1.mat",
+      "seed": 1,
+      "steps": 8000,
+      "burnIn": 6000,
+      "trajectoryFrames": 81
+    },
+    {
+      "file": "E1_strength_policy_original_random_k19_seed10.mat",
+      "seed": 10,
+      "steps": 8000,
+      "burnIn": 6000,
+      "trajectoryFrames": 81
+    },
+    {
+      "file": "E1_strength_policy_original_random_k19_seed11.mat",
+      "seed": 11,
+      "steps": 8000,
+      "burnIn": 6000,
+      "trajectoryFrames": 81
+    },
+    {
+      "file": "E1_strength_policy_original_random_k19_seed12.mat",
+      "seed": 12,
+      "steps": 8000,
+      "burnIn": 6000,
+      "trajectoryFrames": 81
+    },
+    {
+      "file": "E1_strength_policy_original_random_k19_seed13.mat",
+      "seed": 13,
+      "steps": 8000,
+      "burnIn": 6000,
+      "trajectoryFrames": 81
+    },
+    {
+      "file": "E1_strength_policy_original_random_k19_seed14.mat",
+      "seed": 14,
+      "steps": 8000,
+      "burnIn": 6000,
+      "trajectoryFrames": 81
+    },
+    {
+      "file": "E1_strength_policy_original_random_k19_seed15.mat",
+      "seed": 15,
+      "steps": 8000,
+      "burnIn": 6000,
+      "trajectoryFrames": 81
+    },
+    {
+      "file": "E1_strength_policy_original_random_k19_seed16.mat",
+      "seed": 16,
+      "steps": 8000,
+      "burnIn": 6000,
+      "trajectoryFrames": 81
+    },
+    {
+      "file": "E1_strength_policy_original_random_k19_seed17.mat",
+      "seed": 17,
+      "steps": 8000,
+      "burnIn": 6000,
+      "trajectoryFrames": 81
+    },
+    {
+      "file": "E1_strength_policy_original_random_k19_seed18.mat",
+      "seed": 18,
+      "steps": 8000,
+      "burnIn": 6000,
+      "trajectoryFrames": 81
+    },
+    {
+      "file": "E1_strength_policy_original_random_k19_seed19.mat",
+      "seed": 19,
+      "steps": 8000,
+      "burnIn": 6000,
+      "trajectoryFrames": 81
+    },
+    {
+      "file": "E1_strength_policy_original_random_k19_seed2.mat",
+      "seed": 2,
+      "steps": 8000,
+      "burnIn": 6000,
+      "trajectoryFrames": 81
+    },
+    {
+      "file": "E1_strength_policy_original_random_k19_seed20.mat",
+      "seed": 20,
+      "steps": 8000,
+      "burnIn": 6000,
+      "trajectoryFrames": 81
+    },
+    {
+      "file": "E1_strength_policy_original_random_k19_seed3.mat",
+      "seed": 3,
+      "steps": 8000,
+      "burnIn": 6000,
+      "trajectoryFrames": 81
+    },
+    {
+      "file": "E1_strength_policy_original_random_k19_seed4.mat",
+      "seed": 4,
+      "steps": 8000,
+      "burnIn": 6000,
+      "trajectoryFrames": 81
+    },
+    {
+      "file": "E1_strength_policy_original_random_k19_seed5.mat",
+      "seed": 5,
+      "steps": 8000,
+      "burnIn": 6000,
+      "trajectoryFrames": 81
+    },
+    {
+      "file": "E1_strength_policy_original_random_k19_seed6.mat",
+      "seed": 6,
+      "steps": 8000,
+      "burnIn": 6000,
+      "trajectoryFrames": 81
+    },
+    {
+      "file": "E1_strength_policy_original_random_k19_seed7.mat",
+      "seed": 7,
+      "steps": 8000,
+      "burnIn": 6000,
+      "trajectoryFrames": 81
+    },
+    {
+      "file": "E1_strength_policy_original_random_k19_seed8.mat",
+      "seed": 8,
+      "steps": 8000,
+      "burnIn": 6000,
+      "trajectoryFrames": 81
+    },
+    {
+      "file": "E1_strength_policy_original_random_k19_seed9.mat",
+      "seed": 9,
+      "steps": 8000,
+      "burnIn": 6000,
+      "trajectoryFrames": 81
+    },
+    {
+      "file": "E1_strength_policy_original_random_k2_seed1.mat",
+      "seed": 1,
+      "steps": 8000,
+      "burnIn": 6000,
+      "trajectoryFrames": 81
+    },
+    {
+      "file": "E1_strength_policy_original_random_k2_seed10.mat",
+      "seed": 10,
+      "steps": 8000,
+      "burnIn": 6000,
+      "trajectoryFrames": 81
+    },
+    {
+      "file": "E1_strength_policy_original_random_k2_seed11.mat",
+      "seed": 11,
+      "steps": 8000,
+      "burnIn": 6000,
+      "trajectoryFrames": 81
+    },
+    {
+      "file": "E1_strength_policy_original_random_k2_seed12.mat",
+      "seed": 12,
+      "steps": 8000,
+      "burnIn": 6000,
+      "trajectoryFrames": 81
+    },
+    {
+      "file": "E1_strength_policy_original_random_k2_seed13.mat",
+      "seed": 13,
+      "steps": 8000,
+      "burnIn": 6000,
+      "trajectoryFrames": 81
+    },
+    {
+      "file": "E1_strength_policy_original_random_k2_seed14.mat",
+      "seed": 14,
+      "steps": 8000,
+      "burnIn": 6000,
+      "trajectoryFrames": 81
+    },
+    {
+      "file": "E1_strength_policy_original_random_k2_seed15.mat",
+      "seed": 15,
+      "steps": 8000,
+      "burnIn": 6000,
+      "trajectoryFrames": 81
+    },
+    {
+      "file": "E1_strength_policy_original_random_k2_seed16.mat",
+      "seed": 16,
+      "steps": 8000,
+      "burnIn": 6000,
+      "trajectoryFrames": 81
+    },
+    {
+      "file": "E1_strength_policy_original_random_k2_seed17.mat",
+      "seed": 17,
+      "steps": 8000,
+      "burnIn": 6000,
+      "trajectoryFrames": 81
+    },
+    {
+      "file": "E1_strength_policy_original_random_k2_seed18.mat",
+      "seed": 18,
+      "steps": 8000,
+      "burnIn": 6000,
+      "trajectoryFrames": 81
+    },
+    {
+      "file": "E1_strength_policy_original_random_k2_seed19.mat",
+      "seed": 19,
+      "steps": 8000,
+      "burnIn": 6000,
+      "trajectoryFrames": 81
+    },
+    {
+      "file": "E1_strength_policy_original_random_k2_seed2.mat",
+      "seed": 2,
+      "steps": 8000,
+      "burnIn": 6000,
+      "trajectoryFrames": 81
+    },
+    {
+      "file": "E1_strength_policy_original_random_k2_seed20.mat",
+      "seed": 20,
+      "steps": 8000,
+      "burnIn": 6000,
+      "trajectoryFrames": 81
+    },
+    {
+      "file": "E1_strength_policy_original_random_k2_seed3.mat",
+      "seed": 3,
+      "steps": 8000,
+      "burnIn": 6000,
+      "trajectoryFrames": 81
+    },
+    {
+      "file": "E1_strength_policy_original_random_k2_seed4.mat",
+      "seed": 4,
+      "steps": 8000,
+      "burnIn": 6000,
+      "trajectoryFrames": 81
+    },
+    {
+      "file": "E1_strength_policy_original_random_k2_seed5.mat",
+      "seed": 5,
+      "steps": 8000,
+      "burnIn": 6000,
+      "trajectoryFrames": 81
+    },
+    {
+      "file": "E1_strength_policy_original_random_k2_seed6.mat",
+      "seed": 6,
+      "steps": 8000,
+      "burnIn": 6000,
+      "trajectoryFrames": 81
+    },
+    {
+      "file": "E1_strength_policy_original_random_k2_seed7.mat",
+      "seed": 7,
+      "steps": 8000,
+      "burnIn": 6000,
+      "trajectoryFrames": 81
+    },
+    {
+      "file": "E1_strength_policy_original_random_k2_seed8.mat",
+      "seed": 8,
+      "steps": 8000,
+      "burnIn": 6000,
+      "trajectoryFrames": 81
+    },
+    {
+      "file": "E1_strength_policy_original_random_k2_seed9.mat",
+      "seed": 9,
+      "steps": 8000,
+      "burnIn": 6000,
+      "trajectoryFrames": 81
+    },
+    {
+      "file": "E1_strength_policy_original_random_k8_seed1.mat",
+      "seed": 1,
+      "steps": 8000,
+      "burnIn": 6000,
+      "trajectoryFrames": 81
+    },
+    {
+      "file": "E1_strength_policy_original_random_k8_seed10.mat",
+      "seed": 10,
+      "steps": 8000,
+      "burnIn": 6000,
+      "trajectoryFrames": 81
+    },
+    {
+      "file": "E1_strength_policy_original_random_k8_seed11.mat",
+      "seed": 11,
+      "steps": 8000,
+      "burnIn": 6000,
+      "trajectoryFrames": 81
+    },
+    {
+      "file": "E1_strength_policy_original_random_k8_seed12.mat",
+      "seed": 12,
+      "steps": 8000,
+      "burnIn": 6000,
+      "trajectoryFrames": 81
+    },
+    {
+      "file": "E1_strength_policy_original_random_k8_seed13.mat",
+      "seed": 13,
+      "steps": 8000,
+      "burnIn": 6000,
+      "trajectoryFrames": 81
+    },
+    {
+      "file": "E1_strength_policy_original_random_k8_seed14.mat",
+      "seed": 14,
+      "steps": 8000,
+      "burnIn": 6000,
+      "trajectoryFrames": 81
+    },
+    {
+      "file": "E1_strength_policy_original_random_k8_seed15.mat",
+      "seed": 15,
+      "steps": 8000,
+      "burnIn": 6000,
+      "trajectoryFrames": 81
+    },
+    {
+      "file": "E1_strength_policy_original_random_k8_seed16.mat",
+      "seed": 16,
+      "steps": 8000,
+      "burnIn": 6000,
+      "trajectoryFrames": 81
+    },
+    {
+      "file": "E1_strength_policy_original_random_k8_seed17.mat",
+      "seed": 17,
+      "steps": 8000,
+      "burnIn": 6000,
+      "trajectoryFrames": 81
+    },
+    {
+      "file": "E1_strength_policy_original_random_k8_seed18.mat",
+      "seed": 18,
+      "steps": 8000,
+      "burnIn": 6000,
+      "trajectoryFrames": 81
+    },
+    {
+      "file": "E1_strength_policy_original_random_k8_seed19.mat",
+      "seed": 19,
+      "steps": 8000,
+      "burnIn": 6000,
+      "trajectoryFrames": 81
+    },
+    {
+      "file": "E1_strength_policy_original_random_k8_seed2.mat",
+      "seed": 2,
+      "steps": 8000,
+      "burnIn": 6000,
+      "trajectoryFrames": 81
+    },
+    {
+      "file": "E1_strength_policy_original_random_k8_seed20.mat",
+      "seed": 20,
+      "steps": 8000,
+      "burnIn": 6000,
+      "trajectoryFrames": 81
+    },
+    {
+      "file": "E1_strength_policy_original_random_k8_seed3.mat",
+      "seed": 3,
+      "steps": 8000,
+      "burnIn": 6000,
+      "trajectoryFrames": 81
+    },
+    {
+      "file": "E1_strength_policy_original_random_k8_seed4.mat",
+      "seed": 4,
+      "steps": 8000,
+      "burnIn": 6000,
+      "trajectoryFrames": 81
+    },
+    {
+      "file": "E1_strength_policy_original_random_k8_seed5.mat",
+      "seed": 5,
+      "steps": 8000,
+      "burnIn": 6000,
+      "trajectoryFrames": 81
+    },
+    {
+      "file": "E1_strength_policy_original_random_k8_seed6.mat",
+      "seed": 6,
+      "steps": 8000,
+      "burnIn": 6000,
+      "trajectoryFrames": 81
+    },
+    {
+      "file": "E1_strength_policy_original_random_k8_seed7.mat",
+      "seed": 7,
+      "steps": 8000,
+      "burnIn": 6000,
+      "trajectoryFrames": 81
+    },
+    {
+      "file": "E1_strength_policy_original_random_k8_seed8.mat",
+      "seed": 8,
+      "steps": 8000,
+      "burnIn": 6000,
+      "trajectoryFrames": 81
+    },
+    {
+      "file": "E1_strength_policy_original_random_k8_seed9.mat",
+      "seed": 9,
+      "steps": 8000,
+      "burnIn": 6000,
+      "trajectoryFrames": 81
+    },
+    {
+      "file": "E2_neighbor_count_fixed-total_random_k12_seed1.mat",
+      "seed": 1,
+      "steps": 8000,
+      "burnIn": 6000,
+      "trajectoryFrames": 81
+    },
+    {
+      "file": "E2_neighbor_count_fixed-total_random_k12_seed10.mat",
+      "seed": 10,
+      "steps": 8000,
+      "burnIn": 6000,
+      "trajectoryFrames": 81
+    },
+    {
+      "file": "E2_neighbor_count_fixed-total_random_k12_seed11.mat",
+      "seed": 11,
+      "steps": 8000,
+      "burnIn": 6000,
+      "trajectoryFrames": 81
+    },
+    {
+      "file": "E2_neighbor_count_fixed-total_random_k12_seed12.mat",
+      "seed": 12,
+      "steps": 8000,
+      "burnIn": 6000,
+      "trajectoryFrames": 81
+    },
+    {
+      "file": "E2_neighbor_count_fixed-total_random_k12_seed13.mat",
+      "seed": 13,
+      "steps": 8000,
+      "burnIn": 6000,
+      "trajectoryFrames": 81
+    },
+    {
+      "file": "E2_neighbor_count_fixed-total_random_k12_seed14.mat",
+      "seed": 14,
+      "steps": 8000,
+      "burnIn": 6000,
+      "trajectoryFrames": 81
+    },
+    {
+      "file": "E2_neighbor_count_fixed-total_random_k12_seed15.mat",
+      "seed": 15,
+      "steps": 8000,
+      "burnIn": 6000,
+      "trajectoryFrames": 81
+    },
+    {
+      "file": "E2_neighbor_count_fixed-total_random_k12_seed16.mat",
+      "seed": 16,
+      "steps": 8000,
+      "burnIn": 6000,
+      "trajectoryFrames": 81
+    },
+    {
+      "file": "E2_neighbor_count_fixed-total_random_k12_seed17.mat",
+      "seed": 17,
+      "steps": 8000,
+      "burnIn": 6000,
+      "trajectoryFrames": 81
+    },
+    {
+      "file": "E2_neighbor_count_fixed-total_random_k12_seed18.mat",
+      "seed": 18,
+      "steps": 8000,
+      "burnIn": 6000,
+      "trajectoryFrames": 81
+    },
+    {
+      "file": "E2_neighbor_count_fixed-total_random_k12_seed19.mat",
+      "seed": 19,
+      "steps": 8000,
+      "burnIn": 6000,
+      "trajectoryFrames": 81
+    },
+    {
+      "file": "E2_neighbor_count_fixed-total_random_k12_seed2.mat",
+      "seed": 2,
+      "steps": 8000,
+      "burnIn": 6000,
+      "trajectoryFrames": 81
+    },
+    {
+      "file": "E2_neighbor_count_fixed-total_random_k12_seed20.mat",
+      "seed": 20,
+      "steps": 8000,
+      "burnIn": 6000,
+      "trajectoryFrames": 81
+    },
+    {
+      "file": "E2_neighbor_count_fixed-total_random_k12_seed3.mat",
+      "seed": 3,
+      "steps": 8000,
+      "burnIn": 6000,
+      "trajectoryFrames": 81
+    },
+    {
+      "file": "E2_neighbor_count_fixed-total_random_k12_seed4.mat",
+      "seed": 4,
+      "steps": 8000,
+      "burnIn": 6000,
+      "trajectoryFrames": 81
+    },
+    {
+      "file": "E2_neighbor_count_fixed-total_random_k12_seed5.mat",
+      "seed": 5,
+      "steps": 8000,
+      "burnIn": 6000,
+      "trajectoryFrames": 81
+    },
+    {
+      "file": "E2_neighbor_count_fixed-total_random_k12_seed6.mat",
+      "seed": 6,
+      "steps": 8000,
+      "burnIn": 6000,
+      "trajectoryFrames": 81
+    },
+    {
+      "file": "E2_neighbor_count_fixed-total_random_k12_seed7.mat",
+      "seed": 7,
+      "steps": 8000,
+      "burnIn": 6000,
+      "trajectoryFrames": 81
+    },
+    {
+      "file": "E2_neighbor_count_fixed-total_random_k12_seed8.mat",
+      "seed": 8,
+      "steps": 8000,
+      "burnIn": 6000,
+      "trajectoryFrames": 81
+    },
+    {
+      "file": "E2_neighbor_count_fixed-total_random_k12_seed9.mat",
+      "seed": 9,
+      "steps": 8000,
+      "burnIn": 6000,
+      "trajectoryFrames": 81
+    },
+    {
+      "file": "E2_neighbor_count_fixed-total_random_k19_seed1.mat",
+      "seed": 1,
+      "steps": 8000,
+      "burnIn": 6000,
+      "trajectoryFrames": 81
+    },
+    {
+      "file": "E2_neighbor_count_fixed-total_random_k19_seed10.mat",
+      "seed": 10,
+      "steps": 8000,
+      "burnIn": 6000,
+      "trajectoryFrames": 81
+    },
+    {
+      "file": "E2_neighbor_count_fixed-total_random_k19_seed11.mat",
+      "seed": 11,
+      "steps": 8000,
+      "burnIn": 6000,
+      "trajectoryFrames": 81
+    },
+    {
+      "file": "E2_neighbor_count_fixed-total_random_k19_seed12.mat",
+      "seed": 12,
+      "steps": 8000,
+      "burnIn": 6000,
+      "trajectoryFrames": 81
+    },
+    {
+      "file": "E2_neighbor_count_fixed-total_random_k19_seed13.mat",
+      "seed": 13,
+      "steps": 8000,
+      "burnIn": 6000,
+      "trajectoryFrames": 81
+    },
+    {
+      "file": "E2_neighbor_count_fixed-total_random_k19_seed14.mat",
+      "seed": 14,
+      "steps": 8000,
+      "burnIn": 6000,
+      "trajectoryFrames": 81
+    },
+    {
+      "file": "E2_neighbor_count_fixed-total_random_k19_seed15.mat",
+      "seed": 15,
+      "steps": 8000,
+      "burnIn": 6000,
+      "trajectoryFrames": 81
+    },
+    {
+      "file": "E2_neighbor_count_fixed-total_random_k19_seed16.mat",
+      "seed": 16,
+      "steps": 8000,
+      "burnIn": 6000,
+      "trajectoryFrames": 81
+    },
+    {
+      "file": "E2_neighbor_count_fixed-total_random_k19_seed17.mat",
+      "seed": 17,
+      "steps": 8000,
+      "burnIn": 6000,
+      "trajectoryFrames": 81
+    },
+    {
+      "file": "E2_neighbor_count_fixed-total_random_k19_seed18.mat",
+      "seed": 18,
+      "steps": 8000,
+      "burnIn": 6000,
+      "trajectoryFrames": 81
+    },
+    {
+      "file": "E2_neighbor_count_fixed-total_random_k19_seed19.mat",
+      "seed": 19,
+      "steps": 8000,
+      "burnIn": 6000,
+      "trajectoryFrames": 81
+    },
+    {
+      "file": "E2_neighbor_count_fixed-total_random_k19_seed2.mat",
+      "seed": 2,
+      "steps": 8000,
+      "burnIn": 6000,
+      "trajectoryFrames": 81
+    },
+    {
+      "file": "E2_neighbor_count_fixed-total_random_k19_seed20.mat",
+      "seed": 20,
+      "steps": 8000,
+      "burnIn": 6000,
+      "trajectoryFrames": 81
+    },
+    {
+      "file": "E2_neighbor_count_fixed-total_random_k19_seed3.mat",
+      "seed": 3,
+      "steps": 8000,
+      "burnIn": 6000,
+      "trajectoryFrames": 81
+    },
+    {
+      "file": "E2_neighbor_count_fixed-total_random_k19_seed4.mat",
+      "seed": 4,
+      "steps": 8000,
+      "burnIn": 6000,
+      "trajectoryFrames": 81
+    },
+    {
+      "file": "E2_neighbor_count_fixed-total_random_k19_seed5.mat",
+      "seed": 5,
+      "steps": 8000,
+      "burnIn": 6000,
+      "trajectoryFrames": 81
+    },
+    {
+      "file": "E2_neighbor_count_fixed-total_random_k19_seed6.mat",
+      "seed": 6,
+      "steps": 8000,
+      "burnIn": 6000,
+      "trajectoryFrames": 81
+    },
+    {
+      "file": "E2_neighbor_count_fixed-total_random_k19_seed7.mat",
+      "seed": 7,
+      "steps": 8000,
+      "burnIn": 6000,
+      "trajectoryFrames": 81
+    },
+    {
+      "file": "E2_neighbor_count_fixed-total_random_k19_seed8.mat",
+      "seed": 8,
+      "steps": 8000,
+      "burnIn": 6000,
+      "trajectoryFrames": 81
+    },
+    {
+      "file": "E2_neighbor_count_fixed-total_random_k19_seed9.mat",
+      "seed": 9,
+      "steps": 8000,
+      "burnIn": 6000,
+      "trajectoryFrames": 81
+    },
+    {
+      "file": "E2_neighbor_count_fixed-total_random_k2_seed1.mat",
+      "seed": 1,
+      "steps": 8000,
+      "burnIn": 6000,
+      "trajectoryFrames": 81
+    },
+    {
+      "file": "E2_neighbor_count_fixed-total_random_k2_seed10.mat",
+      "seed": 10,
+      "steps": 8000,
+      "burnIn": 6000,
+      "trajectoryFrames": 81
+    },
+    {
+      "file": "E2_neighbor_count_fixed-total_random_k2_seed11.mat",
+      "seed": 11,
+      "steps": 8000,
+      "burnIn": 6000,
+      "trajectoryFrames": 81
+    },
+    {
+      "file": "E2_neighbor_count_fixed-total_random_k2_seed12.mat",
+      "seed": 12,
+      "steps": 8000,
+      "burnIn": 6000,
+      "trajectoryFrames": 81
+    },
+    {
+      "file": "E2_neighbor_count_fixed-total_random_k2_seed13.mat",
+      "seed": 13,
+      "steps": 8000,
+      "burnIn": 6000,
+      "trajectoryFrames": 81
+    },
+    {
+      "file": "E2_neighbor_count_fixed-total_random_k2_seed14.mat",
+      "seed": 14,
+      "steps": 8000,
+      "burnIn": 6000,
+      "trajectoryFrames": 81
+    },
+    {
+      "file": "E2_neighbor_count_fixed-total_random_k2_seed15.mat",
+      "seed": 15,
+      "steps": 8000,
+      "burnIn": 6000,
+      "trajectoryFrames": 81
+    },
+    {
+      "file": "E2_neighbor_count_fixed-total_random_k2_seed16.mat",
+      "seed": 16,
+      "steps": 8000,
+      "burnIn": 6000,
+      "trajectoryFrames": 81
+    },
+    {
+      "file": "E2_neighbor_count_fixed-total_random_k2_seed17.mat",
+      "seed": 17,
+      "steps": 8000,
+      "burnIn": 6000,
+      "trajectoryFrames": 81
+    },
+    {
+      "file": "E2_neighbor_count_fixed-total_random_k2_seed18.mat",
+      "seed": 18,
+      "steps": 8000,
+      "burnIn": 6000,
+      "trajectoryFrames": 81
+    },
+    {
+      "file": "E2_neighbor_count_fixed-total_random_k2_seed19.mat",
+      "seed": 19,
+      "steps": 8000,
+      "burnIn": 6000,
+      "trajectoryFrames": 81
+    },
+    {
+      "file": "E2_neighbor_count_fixed-total_random_k2_seed2.mat",
+      "seed": 2,
+      "steps": 8000,
+      "burnIn": 6000,
+      "trajectoryFrames": 81
+    },
+    {
+      "file": "E2_neighbor_count_fixed-total_random_k2_seed20.mat",
+      "seed": 20,
+      "steps": 8000,
+      "burnIn": 6000,
+      "trajectoryFrames": 81
+    },
+    {
+      "file": "E2_neighbor_count_fixed-total_random_k2_seed3.mat",
+      "seed": 3,
+      "steps": 8000,
+      "burnIn": 6000,
+      "trajectoryFrames": 81
+    },
+    {
+      "file": "E2_neighbor_count_fixed-total_random_k2_seed4.mat",
+      "seed": 4,
+      "steps": 8000,
+      "burnIn": 6000,
+      "trajectoryFrames": 81
+    },
+    {
+      "file": "E2_neighbor_count_fixed-total_random_k2_seed5.mat",
+      "seed": 5,
+      "steps": 8000,
+      "burnIn": 6000,
+      "trajectoryFrames": 81
+    },
+    {
+      "file": "E2_neighbor_count_fixed-total_random_k2_seed6.mat",
+      "seed": 6,
+      "steps": 8000,
+      "burnIn": 6000,
+      "trajectoryFrames": 81
+    },
+    {
+      "file": "E2_neighbor_count_fixed-total_random_k2_seed7.mat",
+      "seed": 7,
+      "steps": 8000,
+      "burnIn": 6000,
+      "trajectoryFrames": 81
+    },
+    {
+      "file": "E2_neighbor_count_fixed-total_random_k2_seed8.mat",
+      "seed": 8,
+      "steps": 8000,
+      "burnIn": 6000,
+      "trajectoryFrames": 81
+    },
+    {
+      "file": "E2_neighbor_count_fixed-total_random_k2_seed9.mat",
+      "seed": 9,
+      "steps": 8000,
+      "burnIn": 6000,
+      "trajectoryFrames": 81
+    },
+    {
+      "file": "E2_neighbor_count_fixed-total_random_k4_seed1.mat",
+      "seed": 1,
+      "steps": 8000,
+      "burnIn": 6000,
+      "trajectoryFrames": 81
+    },
+    {
+      "file": "E2_neighbor_count_fixed-total_random_k4_seed10.mat",
+      "seed": 10,
+      "steps": 8000,
+      "burnIn": 6000,
+      "trajectoryFrames": 81
+    },
+    {
+      "file": "E2_neighbor_count_fixed-total_random_k4_seed11.mat",
+      "seed": 11,
+      "steps": 8000,
+      "burnIn": 6000,
+      "trajectoryFrames": 81
+    },
+    {
+      "file": "E2_neighbor_count_fixed-total_random_k4_seed12.mat",
+      "seed": 12,
+      "steps": 8000,
+      "burnIn": 6000,
+      "trajectoryFrames": 81
+    },
+    {
+      "file": "E2_neighbor_count_fixed-total_random_k4_seed13.mat",
+      "seed": 13,
+      "steps": 8000,
+      "burnIn": 6000,
+      "trajectoryFrames": 81
+    },
+    {
+      "file": "E2_neighbor_count_fixed-total_random_k4_seed14.mat",
+      "seed": 14,
+      "steps": 8000,
+      "burnIn": 6000,
+      "trajectoryFrames": 81
+    },
+    {
+      "file": "E2_neighbor_count_fixed-total_random_k4_seed15.mat",
+      "seed": 15,
+      "steps": 8000,
+      "burnIn": 6000,
+      "trajectoryFrames": 81
+    },
+    {
+      "file": "E2_neighbor_count_fixed-total_random_k4_seed16.mat",
+      "seed": 16,
+      "steps": 8000,
+      "burnIn": 6000,
+      "trajectoryFrames": 81
+    },
+    {
+      "file": "E2_neighbor_count_fixed-total_random_k4_seed17.mat",
+      "seed": 17,
+      "steps": 8000,
+      "burnIn": 6000,
+      "trajectoryFrames": 81
+    },
+    {
+      "file": "E2_neighbor_count_fixed-total_random_k4_seed18.mat",
+      "seed": 18,
+      "steps": 8000,
+      "burnIn": 6000,
+      "trajectoryFrames": 81
+    },
+    {
+      "file": "E2_neighbor_count_fixed-total_random_k4_seed19.mat",
+      "seed": 19,
+      "steps": 8000,
+      "burnIn": 6000,
+      "trajectoryFrames": 81
+    },
+    {
+      "file": "E2_neighbor_count_fixed-total_random_k4_seed2.mat",
+      "seed": 2,
+      "steps": 8000,
+      "burnIn": 6000,
+      "trajectoryFrames": 81
+    },
+    {
+      "file": "E2_neighbor_count_fixed-total_random_k4_seed20.mat",
+      "seed": 20,
+      "steps": 8000,
+      "burnIn": 6000,
+      "trajectoryFrames": 81
+    },
+    {
+      "file": "E2_neighbor_count_fixed-total_random_k4_seed3.mat",
+      "seed": 3,
+      "steps": 8000,
+      "burnIn": 6000,
+      "trajectoryFrames": 81
+    },
+    {
+      "file": "E2_neighbor_count_fixed-total_random_k4_seed4.mat",
+      "seed": 4,
+      "steps": 8000,
+      "burnIn": 6000,
+      "trajectoryFrames": 81
+    },
+    {
+      "file": "E2_neighbor_count_fixed-total_random_k4_seed5.mat",
+      "seed": 5,
+      "steps": 8000,
+      "burnIn": 6000,
+      "trajectoryFrames": 81
+    },
+    {
+      "file": "E2_neighbor_count_fixed-total_random_k4_seed6.mat",
+      "seed": 6,
+      "steps": 8000,
+      "burnIn": 6000,
+      "trajectoryFrames": 81
+    },
+    {
+      "file": "E2_neighbor_count_fixed-total_random_k4_seed7.mat",
+      "seed": 7,
+      "steps": 8000,
+      "burnIn": 6000,
+      "trajectoryFrames": 81
+    },
+    {
+      "file": "E2_neighbor_count_fixed-total_random_k4_seed8.mat",
+      "seed": 8,
+      "steps": 8000,
+      "burnIn": 6000,
+      "trajectoryFrames": 81
+    },
+    {
+      "file": "E2_neighbor_count_fixed-total_random_k4_seed9.mat",
+      "seed": 9,
+      "steps": 8000,
+      "burnIn": 6000,
+      "trajectoryFrames": 81
+    },
+    {
+      "file": "E2_neighbor_count_fixed-total_random_k8_seed1.mat",
+      "seed": 1,
+      "steps": 8000,
+      "burnIn": 6000,
+      "trajectoryFrames": 81
+    },
+    {
+      "file": "E2_neighbor_count_fixed-total_random_k8_seed10.mat",
+      "seed": 10,
+      "steps": 8000,
+      "burnIn": 6000,
+      "trajectoryFrames": 81
+    },
+    {
+      "file": "E2_neighbor_count_fixed-total_random_k8_seed11.mat",
+      "seed": 11,
+      "steps": 8000,
+      "burnIn": 6000,
+      "trajectoryFrames": 81
+    },
+    {
+      "file": "E2_neighbor_count_fixed-total_random_k8_seed12.mat",
+      "seed": 12,
+      "steps": 8000,
+      "burnIn": 6000,
+      "trajectoryFrames": 81
+    },
+    {
+      "file": "E2_neighbor_count_fixed-total_random_k8_seed13.mat",
+      "seed": 13,
+      "steps": 8000,
+      "burnIn": 6000,
+      "trajectoryFrames": 81
+    },
+    {
+      "file": "E2_neighbor_count_fixed-total_random_k8_seed14.mat",
+      "seed": 14,
+      "steps": 8000,
+      "burnIn": 6000,
+      "trajectoryFrames": 81
+    },
+    {
+      "file": "E2_neighbor_count_fixed-total_random_k8_seed15.mat",
+      "seed": 15,
+      "steps": 8000,
+      "burnIn": 6000,
+      "trajectoryFrames": 81
+    },
+    {
+      "file": "E2_neighbor_count_fixed-total_random_k8_seed16.mat",
+      "seed": 16,
+      "steps": 8000,
+      "burnIn": 6000,
+      "trajectoryFrames": 81
+    },
+    {
+      "file": "E2_neighbor_count_fixed-total_random_k8_seed17.mat",
+      "seed": 17,
+      "steps": 8000,
+      "burnIn": 6000,
+      "trajectoryFrames": 81
+    },
+    {
+      "file": "E2_neighbor_count_fixed-total_random_k8_seed18.mat",
+      "seed": 18,
+      "steps": 8000,
+      "burnIn": 6000,
+      "trajectoryFrames": 81
+    },
+    {
+      "file": "E2_neighbor_count_fixed-total_random_k8_seed19.mat",
+      "seed": 19,
+      "steps": 8000,
+      "burnIn": 6000,
+      "trajectoryFrames": 81
+    },
+    {
+      "file": "E2_neighbor_count_fixed-total_random_k8_seed2.mat",
+      "seed": 2,
+      "steps": 8000,
+      "burnIn": 6000,
+      "trajectoryFrames": 81
+    },
+    {
+      "file": "E2_neighbor_count_fixed-total_random_k8_seed20.mat",
+      "seed": 20,
+      "steps": 8000,
+      "burnIn": 6000,
+      "trajectoryFrames": 81
+    },
+    {
+      "file": "E2_neighbor_count_fixed-total_random_k8_seed3.mat",
+      "seed": 3,
+      "steps": 8000,
+      "burnIn": 6000,
+      "trajectoryFrames": 81
+    },
+    {
+      "file": "E2_neighbor_count_fixed-total_random_k8_seed4.mat",
+      "seed": 4,
+      "steps": 8000,
+      "burnIn": 6000,
+      "trajectoryFrames": 81
+    },
+    {
+      "file": "E2_neighbor_count_fixed-total_random_k8_seed5.mat",
+      "seed": 5,
+      "steps": 8000,
+      "burnIn": 6000,
+      "trajectoryFrames": 81
+    },
+    {
+      "file": "E2_neighbor_count_fixed-total_random_k8_seed6.mat",
+      "seed": 6,
+      "steps": 8000,
+      "burnIn": 6000,
+      "trajectoryFrames": 81
+    },
+    {
+      "file": "E2_neighbor_count_fixed-total_random_k8_seed7.mat",
+      "seed": 7,
+      "steps": 8000,
+      "burnIn": 6000,
+      "trajectoryFrames": 81
+    },
+    {
+      "file": "E2_neighbor_count_fixed-total_random_k8_seed8.mat",
+      "seed": 8,
+      "steps": 8000,
+      "burnIn": 6000,
+      "trajectoryFrames": 81
+    },
+    {
+      "file": "E2_neighbor_count_fixed-total_random_k8_seed9.mat",
+      "seed": 9,
+      "steps": 8000,
+      "burnIn": 6000,
+      "trajectoryFrames": 81
+    },
+    {
+      "file": "E2_neighbor_count_original_random_k12_seed1.mat",
+      "seed": 1,
+      "steps": 8000,
+      "burnIn": 6000,
+      "trajectoryFrames": 81
+    },
+    {
+      "file": "E2_neighbor_count_original_random_k12_seed10.mat",
+      "seed": 10,
+      "steps": 8000,
+      "burnIn": 6000,
+      "trajectoryFrames": 81
+    },
+    {
+      "file": "E2_neighbor_count_original_random_k12_seed11.mat",
+      "seed": 11,
+      "steps": 8000,
+      "burnIn": 6000,
+      "trajectoryFrames": 81
+    },
+    {
+      "file": "E2_neighbor_count_original_random_k12_seed12.mat",
+      "seed": 12,
+      "steps": 8000,
+      "burnIn": 6000,
+      "trajectoryFrames": 81
+    },
+    {
+      "file": "E2_neighbor_count_original_random_k12_seed13.mat",
+      "seed": 13,
+      "steps": 8000,
+      "burnIn": 6000,
+      "trajectoryFrames": 81
+    },
+    {
+      "file": "E2_neighbor_count_original_random_k12_seed14.mat",
+      "seed": 14,
+      "steps": 8000,
+      "burnIn": 6000,
+      "trajectoryFrames": 81
+    },
+    {
+      "file": "E2_neighbor_count_original_random_k12_seed15.mat",
+      "seed": 15,
+      "steps": 8000,
+      "burnIn": 6000,
+      "trajectoryFrames": 81
+    },
+    {
+      "file": "E2_neighbor_count_original_random_k12_seed16.mat",
+      "seed": 16,
+      "steps": 8000,
+      "burnIn": 6000,
+      "trajectoryFrames": 81
+    },
+    {
+      "file": "E2_neighbor_count_original_random_k12_seed17.mat",
+      "seed": 17,
+      "steps": 8000,
+      "burnIn": 6000,
+      "trajectoryFrames": 81
+    },
+    {
+      "file": "E2_neighbor_count_original_random_k12_seed18.mat",
+      "seed": 18,
+      "steps": 8000,
+      "burnIn": 6000,
+      "trajectoryFrames": 81
+    },
+    {
+      "file": "E2_neighbor_count_original_random_k12_seed19.mat",
+      "seed": 19,
+      "steps": 8000,
+      "burnIn": 6000,
+      "trajectoryFrames": 81
+    },
+    {
+      "file": "E2_neighbor_count_original_random_k12_seed2.mat",
+      "seed": 2,
+      "steps": 8000,
+      "burnIn": 6000,
+      "trajectoryFrames": 81
+    },
+    {
+      "file": "E2_neighbor_count_original_random_k12_seed20.mat",
+      "seed": 20,
+      "steps": 8000,
+      "burnIn": 6000,
+      "trajectoryFrames": 81
+    },
+    {
+      "file": "E2_neighbor_count_original_random_k12_seed3.mat",
+      "seed": 3,
+      "steps": 8000,
+      "burnIn": 6000,
+      "trajectoryFrames": 81
+    },
+    {
+      "file": "E2_neighbor_count_original_random_k12_seed4.mat",
+      "seed": 4,
+      "steps": 8000,
+      "burnIn": 6000,
+      "trajectoryFrames": 81
+    },
+    {
+      "file": "E2_neighbor_count_original_random_k12_seed5.mat",
+      "seed": 5,
+      "steps": 8000,
+      "burnIn": 6000,
+      "trajectoryFrames": 81
+    },
+    {
+      "file": "E2_neighbor_count_original_random_k12_seed6.mat",
+      "seed": 6,
+      "steps": 8000,
+      "burnIn": 6000,
+      "trajectoryFrames": 81
+    },
+    {
+      "file": "E2_neighbor_count_original_random_k12_seed7.mat",
+      "seed": 7,
+      "steps": 8000,
+      "burnIn": 6000,
+      "trajectoryFrames": 81
+    },
+    {
+      "file": "E2_neighbor_count_original_random_k12_seed8.mat",
+      "seed": 8,
+      "steps": 8000,
+      "burnIn": 6000,
+      "trajectoryFrames": 81
+    },
+    {
+      "file": "E2_neighbor_count_original_random_k12_seed9.mat",
+      "seed": 9,
+      "steps": 8000,
+      "burnIn": 6000,
+      "trajectoryFrames": 81
+    },
+    {
+      "file": "E2_neighbor_count_original_random_k19_seed1.mat",
+      "seed": 1,
+      "steps": 8000,
+      "burnIn": 6000,
+      "trajectoryFrames": 81
+    },
+    {
+      "file": "E2_neighbor_count_original_random_k19_seed10.mat",
+      "seed": 10,
+      "steps": 8000,
+      "burnIn": 6000,
+      "trajectoryFrames": 81
+    },
+    {
+      "file": "E2_neighbor_count_original_random_k19_seed11.mat",
+      "seed": 11,
+      "steps": 8000,
+      "burnIn": 6000,
+      "trajectoryFrames": 81
+    },
+    {
+      "file": "E2_neighbor_count_original_random_k19_seed12.mat",
+      "seed": 12,
+      "steps": 8000,
+      "burnIn": 6000,
+      "trajectoryFrames": 81
+    },
+    {
+      "file": "E2_neighbor_count_original_random_k19_seed13.mat",
+      "seed": 13,
+      "steps": 8000,
+      "burnIn": 6000,
+      "trajectoryFrames": 81
+    },
+    {
+      "file": "E2_neighbor_count_original_random_k19_seed14.mat",
+      "seed": 14,
+      "steps": 8000,
+      "burnIn": 6000,
+      "trajectoryFrames": 81
+    },
+    {
+      "file": "E2_neighbor_count_original_random_k19_seed15.mat",
+      "seed": 15,
+      "steps": 8000,
+      "burnIn": 6000,
+      "trajectoryFrames": 81
+    },
+    {
+      "file": "E2_neighbor_count_original_random_k19_seed16.mat",
+      "seed": 16,
+      "steps": 8000,
+      "burnIn": 6000,
+      "trajectoryFrames": 81
+    },
+    {
+      "file": "E2_neighbor_count_original_random_k19_seed17.mat",
+      "seed": 17,
+      "steps": 8000,
+      "burnIn": 6000,
+      "trajectoryFrames": 81
+    },
+    {
+      "file": "E2_neighbor_count_original_random_k19_seed18.mat",
+      "seed": 18,
+      "steps": 8000,
+      "burnIn": 6000,
+      "trajectoryFrames": 81
+    },
+    {
+      "file": "E2_neighbor_count_original_random_k19_seed19.mat",
+      "seed": 19,
+      "steps": 8000,
+      "burnIn": 6000,
+      "trajectoryFrames": 81
+    },
+    {
+      "file": "E2_neighbor_count_original_random_k19_seed2.mat",
+      "seed": 2,
+      "steps": 8000,
+      "burnIn": 6000,
+      "trajectoryFrames": 81
+    },
+    {
+      "file": "E2_neighbor_count_original_random_k19_seed20.mat",
+      "seed": 20,
+      "steps": 8000,
+      "burnIn": 6000,
+      "trajectoryFrames": 81
+    },
+    {
+      "file": "E2_neighbor_count_original_random_k19_seed3.mat",
+      "seed": 3,
+      "steps": 8000,
+      "burnIn": 6000,
+      "trajectoryFrames": 81
+    },
+    {
+      "file": "E2_neighbor_count_original_random_k19_seed4.mat",
+      "seed": 4,
+      "steps": 8000,
+      "burnIn": 6000,
+      "trajectoryFrames": 81
+    },
+    {
+      "file": "E2_neighbor_count_original_random_k19_seed5.mat",
+      "seed": 5,
+      "steps": 8000,
+      "burnIn": 6000,
+      "trajectoryFrames": 81
+    },
+    {
+      "file": "E2_neighbor_count_original_random_k19_seed6.mat",
+      "seed": 6,
+      "steps": 8000,
+      "burnIn": 6000,
+      "trajectoryFrames": 81
+    },
+    {
+      "file": "E2_neighbor_count_original_random_k19_seed7.mat",
+      "seed": 7,
+      "steps": 8000,
+      "burnIn": 6000,
+      "trajectoryFrames": 81
+    },
+    {
+      "file": "E2_neighbor_count_original_random_k19_seed8.mat",
+      "seed": 8,
+      "steps": 8000,
+      "burnIn": 6000,
+      "trajectoryFrames": 81
+    },
+    {
+      "file": "E2_neighbor_count_original_random_k19_seed9.mat",
+      "seed": 9,
+      "steps": 8000,
+      "burnIn": 6000,
+      "trajectoryFrames": 81
+    },
+    {
+      "file": "E2_neighbor_count_original_random_k2_seed1.mat",
+      "seed": 1,
+      "steps": 8000,
+      "burnIn": 6000,
+      "trajectoryFrames": 81
+    },
+    {
+      "file": "E2_neighbor_count_original_random_k2_seed10.mat",
+      "seed": 10,
+      "steps": 8000,
+      "burnIn": 6000,
+      "trajectoryFrames": 81
+    },
+    {
+      "file": "E2_neighbor_count_original_random_k2_seed11.mat",
+      "seed": 11,
+      "steps": 8000,
+      "burnIn": 6000,
+      "trajectoryFrames": 81
+    },
+    {
+      "file": "E2_neighbor_count_original_random_k2_seed12.mat",
+      "seed": 12,
+      "steps": 8000,
+      "burnIn": 6000,
+      "trajectoryFrames": 81
+    },
+    {
+      "file": "E2_neighbor_count_original_random_k2_seed13.mat",
+      "seed": 13,
+      "steps": 8000,
+      "burnIn": 6000,
+      "trajectoryFrames": 81
+    },
+    {
+      "file": "E2_neighbor_count_original_random_k2_seed14.mat",
+      "seed": 14,
+      "steps": 8000,
+      "burnIn": 6000,
+      "trajectoryFrames": 81
+    },
+    {
+      "file": "E2_neighbor_count_original_random_k2_seed15.mat",
+      "seed": 15,
+      "steps": 8000,
+      "burnIn": 6000,
+      "trajectoryFrames": 81
+    },
+    {
+      "file": "E2_neighbor_count_original_random_k2_seed16.mat",
+      "seed": 16,
+      "steps": 8000,
+      "burnIn": 6000,
+      "trajectoryFrames": 81
+    },
+    {
+      "file": "E2_neighbor_count_original_random_k2_seed17.mat",
+      "seed": 17,
+      "steps": 8000,
+      "burnIn": 6000,
+      "trajectoryFrames": 81
+    },
+    {
+      "file": "E2_neighbor_count_original_random_k2_seed18.mat",
+      "seed": 18,
+      "steps": 8000,
+      "burnIn": 6000,
+      "trajectoryFrames": 81
+    },
+    {
+      "file": "E2_neighbor_count_original_random_k2_seed19.mat",
+      "seed": 19,
+      "steps": 8000,
+      "burnIn": 6000,
+      "trajectoryFrames": 81
+    },
+    {
+      "file": "E2_neighbor_count_original_random_k2_seed2.mat",
+      "seed": 2,
+      "steps": 8000,
+      "burnIn": 6000,
+      "trajectoryFrames": 81
+    },
+    {
+      "file": "E2_neighbor_count_original_random_k2_seed20.mat",
+      "seed": 20,
+      "steps": 8000,
+      "burnIn": 6000,
+      "trajectoryFrames": 81
+    },
+    {
+      "file": "E2_neighbor_count_original_random_k2_seed3.mat",
+      "seed": 3,
+      "steps": 8000,
+      "burnIn": 6000,
+      "trajectoryFrames": 81
+    },
+    {
+      "file": "E2_neighbor_count_original_random_k2_seed4.mat",
+      "seed": 4,
+      "steps": 8000,
+      "burnIn": 6000,
+      "trajectoryFrames": 81
+    },
+    {
+      "file": "E2_neighbor_count_original_random_k2_seed5.mat",
+      "seed": 5,
+      "steps": 8000,
+      "burnIn": 6000,
+      "trajectoryFrames": 81
+    },
+    {
+      "file": "E2_neighbor_count_original_random_k2_seed6.mat",
+      "seed": 6,
+      "steps": 8000,
+      "burnIn": 6000,
+      "trajectoryFrames": 81
+    },
+    {
+      "file": "E2_neighbor_count_original_random_k2_seed7.mat",
+      "seed": 7,
+      "steps": 8000,
+      "burnIn": 6000,
+      "trajectoryFrames": 81
+    },
+    {
+      "file": "E2_neighbor_count_original_random_k2_seed8.mat",
+      "seed": 8,
+      "steps": 8000,
+      "burnIn": 6000,
+      "trajectoryFrames": 81
+    },
+    {
+      "file": "E2_neighbor_count_original_random_k2_seed9.mat",
+      "seed": 9,
+      "steps": 8000,
+      "burnIn": 6000,
+      "trajectoryFrames": 81
+    },
+    {
+      "file": "E2_neighbor_count_original_random_k4_seed1.mat",
+      "seed": 1,
+      "steps": 8000,
+      "burnIn": 6000,
+      "trajectoryFrames": 81
+    },
+    {
+      "file": "E2_neighbor_count_original_random_k4_seed10.mat",
+      "seed": 10,
+      "steps": 8000,
+      "burnIn": 6000,
+      "trajectoryFrames": 81
+    },
+    {
+      "file": "E2_neighbor_count_original_random_k4_seed11.mat",
+      "seed": 11,
+      "steps": 8000,
+      "burnIn": 6000,
+      "trajectoryFrames": 81
+    },
+    {
+      "file": "E2_neighbor_count_original_random_k4_seed12.mat",
+      "seed": 12,
+      "steps": 8000,
+      "burnIn": 6000,
+      "trajectoryFrames": 81
+    },
+    {
+      "file": "E2_neighbor_count_original_random_k4_seed13.mat",
+      "seed": 13,
+      "steps": 8000,
+      "burnIn": 6000,
+      "trajectoryFrames": 81
+    },
+    {
+      "file": "E2_neighbor_count_original_random_k4_seed14.mat",
+      "seed": 14,
+      "steps": 8000,
+      "burnIn": 6000,
+      "trajectoryFrames": 81
+    },
+    {
+      "file": "E2_neighbor_count_original_random_k4_seed15.mat",
+      "seed": 15,
+      "steps": 8000,
+      "burnIn": 6000,
+      "trajectoryFrames": 81
+    },
+    {
+      "file": "E2_neighbor_count_original_random_k4_seed16.mat",
+      "seed": 16,
+      "steps": 8000,
+      "burnIn": 6000,
+      "trajectoryFrames": 81
+    },
+    {
+      "file": "E2_neighbor_count_original_random_k4_seed17.mat",
+      "seed": 17,
+      "steps": 8000,
+      "burnIn": 6000,
+      "trajectoryFrames": 81
+    },
+    {
+      "file": "E2_neighbor_count_original_random_k4_seed18.mat",
+      "seed": 18,
+      "steps": 8000,
+      "burnIn": 6000,
+      "trajectoryFrames": 81
+    },
+    {
+      "file": "E2_neighbor_count_original_random_k4_seed19.mat",
+      "seed": 19,
+      "steps": 8000,
+      "burnIn": 6000,
+      "trajectoryFrames": 81
+    },
+    {
+      "file": "E2_neighbor_count_original_random_k4_seed2.mat",
+      "seed": 2,
+      "steps": 8000,
+      "burnIn": 6000,
+      "trajectoryFrames": 81
+    },
+    {
+      "file": "E2_neighbor_count_original_random_k4_seed20.mat",
+      "seed": 20,
+      "steps": 8000,
+      "burnIn": 6000,
+      "trajectoryFrames": 81
+    },
+    {
+      "file": "E2_neighbor_count_original_random_k4_seed3.mat",
+      "seed": 3,
+      "steps": 8000,
+      "burnIn": 6000,
+      "trajectoryFrames": 81
+    },
+    {
+      "file": "E2_neighbor_count_original_random_k4_seed4.mat",
+      "seed": 4,
+      "steps": 8000,
+      "burnIn": 6000,
+      "trajectoryFrames": 81
+    },
+    {
+      "file": "E2_neighbor_count_original_random_k4_seed5.mat",
+      "seed": 5,
+      "steps": 8000,
+      "burnIn": 6000,
+      "trajectoryFrames": 81
+    },
+    {
+      "file": "E2_neighbor_count_original_random_k4_seed6.mat",
+      "seed": 6,
+      "steps": 8000,
+      "burnIn": 6000,
+      "trajectoryFrames": 81
+    },
+    {
+      "file": "E2_neighbor_count_original_random_k4_seed7.mat",
+      "seed": 7,
+      "steps": 8000,
+      "burnIn": 6000,
+      "trajectoryFrames": 81
+    },
+    {
+      "file": "E2_neighbor_count_original_random_k4_seed8.mat",
+      "seed": 8,
+      "steps": 8000,
+      "burnIn": 6000,
+      "trajectoryFrames": 81
+    },
+    {
+      "file": "E2_neighbor_count_original_random_k4_seed9.mat",
+      "seed": 9,
+      "steps": 8000,
+      "burnIn": 6000,
+      "trajectoryFrames": 81
+    },
+    {
+      "file": "E2_neighbor_count_original_random_k8_seed1.mat",
+      "seed": 1,
+      "steps": 8000,
+      "burnIn": 6000,
+      "trajectoryFrames": 81
+    },
+    {
+      "file": "E2_neighbor_count_original_random_k8_seed10.mat",
+      "seed": 10,
+      "steps": 8000,
+      "burnIn": 6000,
+      "trajectoryFrames": 81
+    },
+    {
+      "file": "E2_neighbor_count_original_random_k8_seed11.mat",
+      "seed": 11,
+      "steps": 8000,
+      "burnIn": 6000,
+      "trajectoryFrames": 81
+    },
+    {
+      "file": "E2_neighbor_count_original_random_k8_seed12.mat",
+      "seed": 12,
+      "steps": 8000,
+      "burnIn": 6000,
+      "trajectoryFrames": 81
+    },
+    {
+      "file": "E2_neighbor_count_original_random_k8_seed13.mat",
+      "seed": 13,
+      "steps": 8000,
+      "burnIn": 6000,
+      "trajectoryFrames": 81
+    },
+    {
+      "file": "E2_neighbor_count_original_random_k8_seed14.mat",
+      "seed": 14,
+      "steps": 8000,
+      "burnIn": 6000,
+      "trajectoryFrames": 81
+    },
+    {
+      "file": "E2_neighbor_count_original_random_k8_seed15.mat",
+      "seed": 15,
+      "steps": 8000,
+      "burnIn": 6000,
+      "trajectoryFrames": 81
+    },
+    {
+      "file": "E2_neighbor_count_original_random_k8_seed16.mat",
+      "seed": 16,
+      "steps": 8000,
+      "burnIn": 6000,
+      "trajectoryFrames": 81
+    },
+    {
+      "file": "E2_neighbor_count_original_random_k8_seed17.mat",
+      "seed": 17,
+      "steps": 8000,
+      "burnIn": 6000,
+      "trajectoryFrames": 81
+    },
+    {
+      "file": "E2_neighbor_count_original_random_k8_seed18.mat",
+      "seed": 18,
+      "steps": 8000,
+      "burnIn": 6000,
+      "trajectoryFrames": 81
+    },
+    {
+      "file": "E2_neighbor_count_original_random_k8_seed19.mat",
+      "seed": 19,
+      "steps": 8000,
+      "burnIn": 6000,
+      "trajectoryFrames": 81
+    },
+    {
+      "file": "E2_neighbor_count_original_random_k8_seed2.mat",
+      "seed": 2,
+      "steps": 8000,
+      "burnIn": 6000,
+      "trajectoryFrames": 81
+    },
+    {
+      "file": "E2_neighbor_count_original_random_k8_seed20.mat",
+      "seed": 20,
+      "steps": 8000,
+      "burnIn": 6000,
+      "trajectoryFrames": 81
+    },
+    {
+      "file": "E2_neighbor_count_original_random_k8_seed3.mat",
+      "seed": 3,
+      "steps": 8000,
+      "burnIn": 6000,
+      "trajectoryFrames": 81
+    },
+    {
+      "file": "E2_neighbor_count_original_random_k8_seed4.mat",
+      "seed": 4,
+      "steps": 8000,
+      "burnIn": 6000,
+      "trajectoryFrames": 81
+    },
+    {
+      "file": "E2_neighbor_count_original_random_k8_seed5.mat",
+      "seed": 5,
+      "steps": 8000,
+      "burnIn": 6000,
+      "trajectoryFrames": 81
+    },
+    {
+      "file": "E2_neighbor_count_original_random_k8_seed6.mat",
+      "seed": 6,
+      "steps": 8000,
+      "burnIn": 6000,
+      "trajectoryFrames": 81
+    },
+    {
+      "file": "E2_neighbor_count_original_random_k8_seed7.mat",
+      "seed": 7,
+      "steps": 8000,
+      "burnIn": 6000,
+      "trajectoryFrames": 81
+    },
+    {
+      "file": "E2_neighbor_count_original_random_k8_seed8.mat",
+      "seed": 8,
+      "steps": 8000,
+      "burnIn": 6000,
+      "trajectoryFrames": 81
+    },
+    {
+      "file": "E2_neighbor_count_original_random_k8_seed9.mat",
+      "seed": 9,
+      "steps": 8000,
+      "burnIn": 6000,
+      "trajectoryFrames": 81
+    },
+    {
+      "file": "E3_angular_structure_fixed-total_angle-concentrated_k8_seed1.mat",
+      "seed": 1,
+      "steps": 8000,
+      "burnIn": 6000,
+      "trajectoryFrames": 81
+    },
+    {
+      "file": "E3_angular_structure_fixed-total_angle-concentrated_k8_seed10.mat",
+      "seed": 10,
+      "steps": 8000,
+      "burnIn": 6000,
+      "trajectoryFrames": 81
+    },
+    {
+      "file": "E3_angular_structure_fixed-total_angle-concentrated_k8_seed11.mat",
+      "seed": 11,
+      "steps": 8000,
+      "burnIn": 6000,
+      "trajectoryFrames": 81
+    },
+    {
+      "file": "E3_angular_structure_fixed-total_angle-concentrated_k8_seed12.mat",
+      "seed": 12,
+      "steps": 8000,
+      "burnIn": 6000,
+      "trajectoryFrames": 81
+    },
+    {
+      "file": "E3_angular_structure_fixed-total_angle-concentrated_k8_seed13.mat",
+      "seed": 13,
+      "steps": 8000,
+      "burnIn": 6000,
+      "trajectoryFrames": 81
+    },
+    {
+      "file": "E3_angular_structure_fixed-total_angle-concentrated_k8_seed14.mat",
+      "seed": 14,
+      "steps": 8000,
+      "burnIn": 6000,
+      "trajectoryFrames": 81
+    },
+    {
+      "file": "E3_angular_structure_fixed-total_angle-concentrated_k8_seed15.mat",
+      "seed": 15,
+      "steps": 8000,
+      "burnIn": 6000,
+      "trajectoryFrames": 81
+    },
+    {
+      "file": "E3_angular_structure_fixed-total_angle-concentrated_k8_seed16.mat",
+      "seed": 16,
+      "steps": 8000,
+      "burnIn": 6000,
+      "trajectoryFrames": 81
+    },
+    {
+      "file": "E3_angular_structure_fixed-total_angle-concentrated_k8_seed17.mat",
+      "seed": 17,
+      "steps": 8000,
+      "burnIn": 6000,
+      "trajectoryFrames": 81
+    },
+    {
+      "file": "E3_angular_structure_fixed-total_angle-concentrated_k8_seed18.mat",
+      "seed": 18,
+      "steps": 8000,
+      "burnIn": 6000,
+      "trajectoryFrames": 81
+    },
+    {
+      "file": "E3_angular_structure_fixed-total_angle-concentrated_k8_seed19.mat",
+      "seed": 19,
+      "steps": 8000,
+      "burnIn": 6000,
+      "trajectoryFrames": 81
+    },
+    {
+      "file": "E3_angular_structure_fixed-total_angle-concentrated_k8_seed2.mat",
+      "seed": 2,
+      "steps": 8000,
+      "burnIn": 6000,
+      "trajectoryFrames": 81
+    },
+    {
+      "file": "E3_angular_structure_fixed-total_angle-concentrated_k8_seed20.mat",
+      "seed": 20,
+      "steps": 8000,
+      "burnIn": 6000,
+      "trajectoryFrames": 81
+    },
+    {
+      "file": "E3_angular_structure_fixed-total_angle-concentrated_k8_seed3.mat",
+      "seed": 3,
+      "steps": 8000,
+      "burnIn": 6000,
+      "trajectoryFrames": 81
+    },
+    {
+      "file": "E3_angular_structure_fixed-total_angle-concentrated_k8_seed4.mat",
+      "seed": 4,
+      "steps": 8000,
+      "burnIn": 6000,
+      "trajectoryFrames": 81
+    },
+    {
+      "file": "E3_angular_structure_fixed-total_angle-concentrated_k8_seed5.mat",
+      "seed": 5,
+      "steps": 8000,
+      "burnIn": 6000,
+      "trajectoryFrames": 81
+    },
+    {
+      "file": "E3_angular_structure_fixed-total_angle-concentrated_k8_seed6.mat",
+      "seed": 6,
+      "steps": 8000,
+      "burnIn": 6000,
+      "trajectoryFrames": 81
+    },
+    {
+      "file": "E3_angular_structure_fixed-total_angle-concentrated_k8_seed7.mat",
+      "seed": 7,
+      "steps": 8000,
+      "burnIn": 6000,
+      "trajectoryFrames": 81
+    },
+    {
+      "file": "E3_angular_structure_fixed-total_angle-concentrated_k8_seed8.mat",
+      "seed": 8,
+      "steps": 8000,
+      "burnIn": 6000,
+      "trajectoryFrames": 81
+    },
+    {
+      "file": "E3_angular_structure_fixed-total_angle-concentrated_k8_seed9.mat",
+      "seed": 9,
+      "steps": 8000,
+      "burnIn": 6000,
+      "trajectoryFrames": 81
+    },
+    {
+      "file": "E3_angular_structure_fixed-total_angle-dispersed_k8_seed1.mat",
+      "seed": 1,
+      "steps": 8000,
+      "burnIn": 6000,
+      "trajectoryFrames": 81
+    },
+    {
+      "file": "E3_angular_structure_fixed-total_angle-dispersed_k8_seed10.mat",
+      "seed": 10,
+      "steps": 8000,
+      "burnIn": 6000,
+      "trajectoryFrames": 81
+    },
+    {
+      "file": "E3_angular_structure_fixed-total_angle-dispersed_k8_seed11.mat",
+      "seed": 11,
+      "steps": 8000,
+      "burnIn": 6000,
+      "trajectoryFrames": 81
+    },
+    {
+      "file": "E3_angular_structure_fixed-total_angle-dispersed_k8_seed12.mat",
+      "seed": 12,
+      "steps": 8000,
+      "burnIn": 6000,
+      "trajectoryFrames": 81
+    },
+    {
+      "file": "E3_angular_structure_fixed-total_angle-dispersed_k8_seed13.mat",
+      "seed": 13,
+      "steps": 8000,
+      "burnIn": 6000,
+      "trajectoryFrames": 81
+    },
+    {
+      "file": "E3_angular_structure_fixed-total_angle-dispersed_k8_seed14.mat",
+      "seed": 14,
+      "steps": 8000,
+      "burnIn": 6000,
+      "trajectoryFrames": 81
+    },
+    {
+      "file": "E3_angular_structure_fixed-total_angle-dispersed_k8_seed15.mat",
+      "seed": 15,
+      "steps": 8000,
+      "burnIn": 6000,
+      "trajectoryFrames": 81
+    },
+    {
+      "file": "E3_angular_structure_fixed-total_angle-dispersed_k8_seed16.mat",
+      "seed": 16,
+      "steps": 8000,
+      "burnIn": 6000,
+      "trajectoryFrames": 81
+    },
+    {
+      "file": "E3_angular_structure_fixed-total_angle-dispersed_k8_seed17.mat",
+      "seed": 17,
+      "steps": 8000,
+      "burnIn": 6000,
+      "trajectoryFrames": 81
+    },
+    {
+      "file": "E3_angular_structure_fixed-total_angle-dispersed_k8_seed18.mat",
+      "seed": 18,
+      "steps": 8000,
+      "burnIn": 6000,
+      "trajectoryFrames": 81
+    },
+    {
+      "file": "E3_angular_structure_fixed-total_angle-dispersed_k8_seed19.mat",
+      "seed": 19,
+      "steps": 8000,
+      "burnIn": 6000,
+      "trajectoryFrames": 81
+    },
+    {
+      "file": "E3_angular_structure_fixed-total_angle-dispersed_k8_seed2.mat",
+      "seed": 2,
+      "steps": 8000,
+      "burnIn": 6000,
+      "trajectoryFrames": 81
+    },
+    {
+      "file": "E3_angular_structure_fixed-total_angle-dispersed_k8_seed20.mat",
+      "seed": 20,
+      "steps": 8000,
+      "burnIn": 6000,
+      "trajectoryFrames": 81
+    },
+    {
+      "file": "E3_angular_structure_fixed-total_angle-dispersed_k8_seed3.mat",
+      "seed": 3,
+      "steps": 8000,
+      "burnIn": 6000,
+      "trajectoryFrames": 81
+    },
+    {
+      "file": "E3_angular_structure_fixed-total_angle-dispersed_k8_seed4.mat",
+      "seed": 4,
+      "steps": 8000,
+      "burnIn": 6000,
+      "trajectoryFrames": 81
+    },
+    {
+      "file": "E3_angular_structure_fixed-total_angle-dispersed_k8_seed5.mat",
+      "seed": 5,
+      "steps": 8000,
+      "burnIn": 6000,
+      "trajectoryFrames": 81
+    },
+    {
+      "file": "E3_angular_structure_fixed-total_angle-dispersed_k8_seed6.mat",
+      "seed": 6,
+      "steps": 8000,
+      "burnIn": 6000,
+      "trajectoryFrames": 81
+    },
+    {
+      "file": "E3_angular_structure_fixed-total_angle-dispersed_k8_seed7.mat",
+      "seed": 7,
+      "steps": 8000,
+      "burnIn": 6000,
+      "trajectoryFrames": 81
+    },
+    {
+      "file": "E3_angular_structure_fixed-total_angle-dispersed_k8_seed8.mat",
+      "seed": 8,
+      "steps": 8000,
+      "burnIn": 6000,
+      "trajectoryFrames": 81
+    },
+    {
+      "file": "E3_angular_structure_fixed-total_angle-dispersed_k8_seed9.mat",
+      "seed": 9,
+      "steps": 8000,
+      "burnIn": 6000,
+      "trajectoryFrames": 81
+    },
+    {
+      "file": "E3_angular_structure_fixed-total_random_k8_seed1.mat",
+      "seed": 1,
+      "steps": 8000,
+      "burnIn": 6000,
+      "trajectoryFrames": 81
+    },
+    {
+      "file": "E3_angular_structure_fixed-total_random_k8_seed10.mat",
+      "seed": 10,
+      "steps": 8000,
+      "burnIn": 6000,
+      "trajectoryFrames": 81
+    },
+    {
+      "file": "E3_angular_structure_fixed-total_random_k8_seed11.mat",
+      "seed": 11,
+      "steps": 8000,
+      "burnIn": 6000,
+      "trajectoryFrames": 81
+    },
+    {
+      "file": "E3_angular_structure_fixed-total_random_k8_seed12.mat",
+      "seed": 12,
+      "steps": 8000,
+      "burnIn": 6000,
+      "trajectoryFrames": 81
+    },
+    {
+      "file": "E3_angular_structure_fixed-total_random_k8_seed13.mat",
+      "seed": 13,
+      "steps": 8000,
+      "burnIn": 6000,
+      "trajectoryFrames": 81
+    },
+    {
+      "file": "E3_angular_structure_fixed-total_random_k8_seed14.mat",
+      "seed": 14,
+      "steps": 8000,
+      "burnIn": 6000,
+      "trajectoryFrames": 81
+    },
+    {
+      "file": "E3_angular_structure_fixed-total_random_k8_seed15.mat",
+      "seed": 15,
+      "steps": 8000,
+      "burnIn": 6000,
+      "trajectoryFrames": 81
+    },
+    {
+      "file": "E3_angular_structure_fixed-total_random_k8_seed16.mat",
+      "seed": 16,
+      "steps": 8000,
+      "burnIn": 6000,
+      "trajectoryFrames": 81
+    },
+    {
+      "file": "E3_angular_structure_fixed-total_random_k8_seed17.mat",
+      "seed": 17,
+      "steps": 8000,
+      "burnIn": 6000,
+      "trajectoryFrames": 81
+    },
+    {
+      "file": "E3_angular_structure_fixed-total_random_k8_seed18.mat",
+      "seed": 18,
+      "steps": 8000,
+      "burnIn": 6000,
+      "trajectoryFrames": 81
+    },
+    {
+      "file": "E3_angular_structure_fixed-total_random_k8_seed19.mat",
+      "seed": 19,
+      "steps": 8000,
+      "burnIn": 6000,
+      "trajectoryFrames": 81
+    },
+    {
+      "file": "E3_angular_structure_fixed-total_random_k8_seed2.mat",
+      "seed": 2,
+      "steps": 8000,
+      "burnIn": 6000,
+      "trajectoryFrames": 81
+    },
+    {
+      "file": "E3_angular_structure_fixed-total_random_k8_seed20.mat",
+      "seed": 20,
+      "steps": 8000,
+      "burnIn": 6000,
+      "trajectoryFrames": 81
+    },
+    {
+      "file": "E3_angular_structure_fixed-total_random_k8_seed3.mat",
+      "seed": 3,
+      "steps": 8000,
+      "burnIn": 6000,
+      "trajectoryFrames": 81
+    },
+    {
+      "file": "E3_angular_structure_fixed-total_random_k8_seed4.mat",
+      "seed": 4,
+      "steps": 8000,
+      "burnIn": 6000,
+      "trajectoryFrames": 81
+    },
+    {
+      "file": "E3_angular_structure_fixed-total_random_k8_seed5.mat",
+      "seed": 5,
+      "steps": 8000,
+      "burnIn": 6000,
+      "trajectoryFrames": 81
+    },
+    {
+      "file": "E3_angular_structure_fixed-total_random_k8_seed6.mat",
+      "seed": 6,
+      "steps": 8000,
+      "burnIn": 6000,
+      "trajectoryFrames": 81
+    },
+    {
+      "file": "E3_angular_structure_fixed-total_random_k8_seed7.mat",
+      "seed": 7,
+      "steps": 8000,
+      "burnIn": 6000,
+      "trajectoryFrames": 81
+    },
+    {
+      "file": "E3_angular_structure_fixed-total_random_k8_seed8.mat",
+      "seed": 8,
+      "steps": 8000,
+      "burnIn": 6000,
+      "trajectoryFrames": 81
+    },
+    {
+      "file": "E3_angular_structure_fixed-total_random_k8_seed9.mat",
+      "seed": 9,
+      "steps": 8000,
+      "burnIn": 6000,
+      "trajectoryFrames": 81
+    },
+    {
+      "file": "E4_selection_strategy_fixed-total_angle-concentrated_k8_seed1.mat",
+      "seed": 1,
+      "steps": 8000,
+      "burnIn": 6000,
+      "trajectoryFrames": 81
+    },
+    {
+      "file": "E4_selection_strategy_fixed-total_angle-concentrated_k8_seed10.mat",
+      "seed": 10,
+      "steps": 8000,
+      "burnIn": 6000,
+      "trajectoryFrames": 81
+    },
+    {
+      "file": "E4_selection_strategy_fixed-total_angle-concentrated_k8_seed11.mat",
+      "seed": 11,
+      "steps": 8000,
+      "burnIn": 6000,
+      "trajectoryFrames": 81
+    },
+    {
+      "file": "E4_selection_strategy_fixed-total_angle-concentrated_k8_seed12.mat",
+      "seed": 12,
+      "steps": 8000,
+      "burnIn": 6000,
+      "trajectoryFrames": 81
+    },
+    {
+      "file": "E4_selection_strategy_fixed-total_angle-concentrated_k8_seed13.mat",
+      "seed": 13,
+      "steps": 8000,
+      "burnIn": 6000,
+      "trajectoryFrames": 81
+    },
+    {
+      "file": "E4_selection_strategy_fixed-total_angle-concentrated_k8_seed14.mat",
+      "seed": 14,
+      "steps": 8000,
+      "burnIn": 6000,
+      "trajectoryFrames": 81
+    },
+    {
+      "file": "E4_selection_strategy_fixed-total_angle-concentrated_k8_seed15.mat",
+      "seed": 15,
+      "steps": 8000,
+      "burnIn": 6000,
+      "trajectoryFrames": 81
+    },
+    {
+      "file": "E4_selection_strategy_fixed-total_angle-concentrated_k8_seed16.mat",
+      "seed": 16,
+      "steps": 8000,
+      "burnIn": 6000,
+      "trajectoryFrames": 81
+    },
+    {
+      "file": "E4_selection_strategy_fixed-total_angle-concentrated_k8_seed17.mat",
+      "seed": 17,
+      "steps": 8000,
+      "burnIn": 6000,
+      "trajectoryFrames": 81
+    },
+    {
+      "file": "E4_selection_strategy_fixed-total_angle-concentrated_k8_seed18.mat",
+      "seed": 18,
+      "steps": 8000,
+      "burnIn": 6000,
+      "trajectoryFrames": 81
+    },
+    {
+      "file": "E4_selection_strategy_fixed-total_angle-concentrated_k8_seed19.mat",
+      "seed": 19,
+      "steps": 8000,
+      "burnIn": 6000,
+      "trajectoryFrames": 81
+    },
+    {
+      "file": "E4_selection_strategy_fixed-total_angle-concentrated_k8_seed2.mat",
+      "seed": 2,
+      "steps": 8000,
+      "burnIn": 6000,
+      "trajectoryFrames": 81
+    },
+    {
+      "file": "E4_selection_strategy_fixed-total_angle-concentrated_k8_seed20.mat",
+      "seed": 20,
+      "steps": 8000,
+      "burnIn": 6000,
+      "trajectoryFrames": 81
+    },
+    {
+      "file": "E4_selection_strategy_fixed-total_angle-concentrated_k8_seed3.mat",
+      "seed": 3,
+      "steps": 8000,
+      "burnIn": 6000,
+      "trajectoryFrames": 81
+    },
+    {
+      "file": "E4_selection_strategy_fixed-total_angle-concentrated_k8_seed4.mat",
+      "seed": 4,
+      "steps": 8000,
+      "burnIn": 6000,
+      "trajectoryFrames": 81
+    },
+    {
+      "file": "E4_selection_strategy_fixed-total_angle-concentrated_k8_seed5.mat",
+      "seed": 5,
+      "steps": 8000,
+      "burnIn": 6000,
+      "trajectoryFrames": 81
+    },
+    {
+      "file": "E4_selection_strategy_fixed-total_angle-concentrated_k8_seed6.mat",
+      "seed": 6,
+      "steps": 8000,
+      "burnIn": 6000,
+      "trajectoryFrames": 81
+    },
+    {
+      "file": "E4_selection_strategy_fixed-total_angle-concentrated_k8_seed7.mat",
+      "seed": 7,
+      "steps": 8000,
+      "burnIn": 6000,
+      "trajectoryFrames": 81
+    },
+    {
+      "file": "E4_selection_strategy_fixed-total_angle-concentrated_k8_seed8.mat",
+      "seed": 8,
+      "steps": 8000,
+      "burnIn": 6000,
+      "trajectoryFrames": 81
+    },
+    {
+      "file": "E4_selection_strategy_fixed-total_angle-concentrated_k8_seed9.mat",
+      "seed": 9,
+      "steps": 8000,
+      "burnIn": 6000,
+      "trajectoryFrames": 81
+    },
+    {
+      "file": "E4_selection_strategy_fixed-total_angle-dispersed_k8_seed1.mat",
+      "seed": 1,
+      "steps": 8000,
+      "burnIn": 6000,
+      "trajectoryFrames": 81
+    },
+    {
+      "file": "E4_selection_strategy_fixed-total_angle-dispersed_k8_seed10.mat",
+      "seed": 10,
+      "steps": 8000,
+      "burnIn": 6000,
+      "trajectoryFrames": 81
+    },
+    {
+      "file": "E4_selection_strategy_fixed-total_angle-dispersed_k8_seed11.mat",
+      "seed": 11,
+      "steps": 8000,
+      "burnIn": 6000,
+      "trajectoryFrames": 81
+    },
+    {
+      "file": "E4_selection_strategy_fixed-total_angle-dispersed_k8_seed12.mat",
+      "seed": 12,
+      "steps": 8000,
+      "burnIn": 6000,
+      "trajectoryFrames": 81
+    },
+    {
+      "file": "E4_selection_strategy_fixed-total_angle-dispersed_k8_seed13.mat",
+      "seed": 13,
+      "steps": 8000,
+      "burnIn": 6000,
+      "trajectoryFrames": 81
+    },
+    {
+      "file": "E4_selection_strategy_fixed-total_angle-dispersed_k8_seed14.mat",
+      "seed": 14,
+      "steps": 8000,
+      "burnIn": 6000,
+      "trajectoryFrames": 81
+    },
+    {
+      "file": "E4_selection_strategy_fixed-total_angle-dispersed_k8_seed15.mat",
+      "seed": 15,
+      "steps": 8000,
+      "burnIn": 6000,
+      "trajectoryFrames": 81
+    },
+    {
+      "file": "E4_selection_strategy_fixed-total_angle-dispersed_k8_seed16.mat",
+      "seed": 16,
+      "steps": 8000,
+      "burnIn": 6000,
+      "trajectoryFrames": 81
+    },
+    {
+      "file": "E4_selection_strategy_fixed-total_angle-dispersed_k8_seed17.mat",
+      "seed": 17,
+      "steps": 8000,
+      "burnIn": 6000,
+      "trajectoryFrames": 81
+    },
+    {
+      "file": "E4_selection_strategy_fixed-total_angle-dispersed_k8_seed18.mat",
+      "seed": 18,
+      "steps": 8000,
+      "burnIn": 6000,
+      "trajectoryFrames": 81
+    },
+    {
+      "file": "E4_selection_strategy_fixed-total_angle-dispersed_k8_seed19.mat",
+      "seed": 19,
+      "steps": 8000,
+      "burnIn": 6000,
+      "trajectoryFrames": 81
+    },
+    {
+      "file": "E4_selection_strategy_fixed-total_angle-dispersed_k8_seed2.mat",
+      "seed": 2,
+      "steps": 8000,
+      "burnIn": 6000,
+      "trajectoryFrames": 81
+    },
+    {
+      "file": "E4_selection_strategy_fixed-total_angle-dispersed_k8_seed20.mat",
+      "seed": 20,
+      "steps": 8000,
+      "burnIn": 6000,
+      "trajectoryFrames": 81
+    },
+    {
+      "file": "E4_selection_strategy_fixed-total_angle-dispersed_k8_seed3.mat",
+      "seed": 3,
+      "steps": 8000,
+      "burnIn": 6000,
+      "trajectoryFrames": 81
+    },
+    {
+      "file": "E4_selection_strategy_fixed-total_angle-dispersed_k8_seed4.mat",
+      "seed": 4,
+      "steps": 8000,
+      "burnIn": 6000,
+      "trajectoryFrames": 81
+    },
+    {
+      "file": "E4_selection_strategy_fixed-total_angle-dispersed_k8_seed5.mat",
+      "seed": 5,
+      "steps": 8000,
+      "burnIn": 6000,
+      "trajectoryFrames": 81
+    },
+    {
+      "file": "E4_selection_strategy_fixed-total_angle-dispersed_k8_seed6.mat",
+      "seed": 6,
+      "steps": 8000,
+      "burnIn": 6000,
+      "trajectoryFrames": 81
+    },
+    {
+      "file": "E4_selection_strategy_fixed-total_angle-dispersed_k8_seed7.mat",
+      "seed": 7,
+      "steps": 8000,
+      "burnIn": 6000,
+      "trajectoryFrames": 81
+    },
+    {
+      "file": "E4_selection_strategy_fixed-total_angle-dispersed_k8_seed8.mat",
+      "seed": 8,
+      "steps": 8000,
+      "burnIn": 6000,
+      "trajectoryFrames": 81
+    },
+    {
+      "file": "E4_selection_strategy_fixed-total_angle-dispersed_k8_seed9.mat",
+      "seed": 9,
+      "steps": 8000,
+      "burnIn": 6000,
+      "trajectoryFrames": 81
+    },
+    {
+      "file": "E4_selection_strategy_fixed-total_balanced_k8_seed1.mat",
+      "seed": 1,
+      "steps": 8000,
+      "burnIn": 6000,
+      "trajectoryFrames": 81
+    },
+    {
+      "file": "E4_selection_strategy_fixed-total_balanced_k8_seed10.mat",
+      "seed": 10,
+      "steps": 8000,
+      "burnIn": 6000,
+      "trajectoryFrames": 81
+    },
+    {
+      "file": "E4_selection_strategy_fixed-total_balanced_k8_seed11.mat",
+      "seed": 11,
+      "steps": 8000,
+      "burnIn": 6000,
+      "trajectoryFrames": 81
+    },
+    {
+      "file": "E4_selection_strategy_fixed-total_balanced_k8_seed12.mat",
+      "seed": 12,
+      "steps": 8000,
+      "burnIn": 6000,
+      "trajectoryFrames": 81
+    },
+    {
+      "file": "E4_selection_strategy_fixed-total_balanced_k8_seed13.mat",
+      "seed": 13,
+      "steps": 8000,
+      "burnIn": 6000,
+      "trajectoryFrames": 81
+    },
+    {
+      "file": "E4_selection_strategy_fixed-total_balanced_k8_seed14.mat",
+      "seed": 14,
+      "steps": 8000,
+      "burnIn": 6000,
+      "trajectoryFrames": 81
+    },
+    {
+      "file": "E4_selection_strategy_fixed-total_balanced_k8_seed15.mat",
+      "seed": 15,
+      "steps": 8000,
+      "burnIn": 6000,
+      "trajectoryFrames": 81
+    },
+    {
+      "file": "E4_selection_strategy_fixed-total_balanced_k8_seed16.mat",
+      "seed": 16,
+      "steps": 8000,
+      "burnIn": 6000,
+      "trajectoryFrames": 81
+    },
+    {
+      "file": "E4_selection_strategy_fixed-total_balanced_k8_seed17.mat",
+      "seed": 17,
+      "steps": 8000,
+      "burnIn": 6000,
+      "trajectoryFrames": 81
+    },
+    {
+      "file": "E4_selection_strategy_fixed-total_balanced_k8_seed18.mat",
+      "seed": 18,
+      "steps": 8000,
+      "burnIn": 6000,
+      "trajectoryFrames": 81
+    },
+    {
+      "file": "E4_selection_strategy_fixed-total_balanced_k8_seed19.mat",
+      "seed": 19,
+      "steps": 8000,
+      "burnIn": 6000,
+      "trajectoryFrames": 81
+    },
+    {
+      "file": "E4_selection_strategy_fixed-total_balanced_k8_seed2.mat",
+      "seed": 2,
+      "steps": 8000,
+      "burnIn": 6000,
+      "trajectoryFrames": 81
+    },
+    {
+      "file": "E4_selection_strategy_fixed-total_balanced_k8_seed20.mat",
+      "seed": 20,
+      "steps": 8000,
+      "burnIn": 6000,
+      "trajectoryFrames": 81
+    },
+    {
+      "file": "E4_selection_strategy_fixed-total_balanced_k8_seed3.mat",
+      "seed": 3,
+      "steps": 8000,
+      "burnIn": 6000,
+      "trajectoryFrames": 81
+    },
+    {
+      "file": "E4_selection_strategy_fixed-total_balanced_k8_seed4.mat",
+      "seed": 4,
+      "steps": 8000,
+      "burnIn": 6000,
+      "trajectoryFrames": 81
+    },
+    {
+      "file": "E4_selection_strategy_fixed-total_balanced_k8_seed5.mat",
+      "seed": 5,
+      "steps": 8000,
+      "burnIn": 6000,
+      "trajectoryFrames": 81
+    },
+    {
+      "file": "E4_selection_strategy_fixed-total_balanced_k8_seed6.mat",
+      "seed": 6,
+      "steps": 8000,
+      "burnIn": 6000,
+      "trajectoryFrames": 81
+    },
+    {
+      "file": "E4_selection_strategy_fixed-total_balanced_k8_seed7.mat",
+      "seed": 7,
+      "steps": 8000,
+      "burnIn": 6000,
+      "trajectoryFrames": 81
+    },
+    {
+      "file": "E4_selection_strategy_fixed-total_balanced_k8_seed8.mat",
+      "seed": 8,
+      "steps": 8000,
+      "burnIn": 6000,
+      "trajectoryFrames": 81
+    },
+    {
+      "file": "E4_selection_strategy_fixed-total_balanced_k8_seed9.mat",
+      "seed": 9,
+      "steps": 8000,
+      "burnIn": 6000,
+      "trajectoryFrames": 81
+    },
+    {
+      "file": "E4_selection_strategy_fixed-total_nearest_k8_seed1.mat",
+      "seed": 1,
+      "steps": 8000,
+      "burnIn": 6000,
+      "trajectoryFrames": 81
+    },
+    {
+      "file": "E4_selection_strategy_fixed-total_nearest_k8_seed10.mat",
+      "seed": 10,
+      "steps": 8000,
+      "burnIn": 6000,
+      "trajectoryFrames": 81
+    },
+    {
+      "file": "E4_selection_strategy_fixed-total_nearest_k8_seed11.mat",
+      "seed": 11,
+      "steps": 8000,
+      "burnIn": 6000,
+      "trajectoryFrames": 81
+    },
+    {
+      "file": "E4_selection_strategy_fixed-total_nearest_k8_seed12.mat",
+      "seed": 12,
+      "steps": 8000,
+      "burnIn": 6000,
+      "trajectoryFrames": 81
+    },
+    {
+      "file": "E4_selection_strategy_fixed-total_nearest_k8_seed13.mat",
+      "seed": 13,
+      "steps": 8000,
+      "burnIn": 6000,
+      "trajectoryFrames": 81
+    },
+    {
+      "file": "E4_selection_strategy_fixed-total_nearest_k8_seed14.mat",
+      "seed": 14,
+      "steps": 8000,
+      "burnIn": 6000,
+      "trajectoryFrames": 81
+    },
+    {
+      "file": "E4_selection_strategy_fixed-total_nearest_k8_seed15.mat",
+      "seed": 15,
+      "steps": 8000,
+      "burnIn": 6000,
+      "trajectoryFrames": 81
+    },
+    {
+      "file": "E4_selection_strategy_fixed-total_nearest_k8_seed16.mat",
+      "seed": 16,
+      "steps": 8000,
+      "burnIn": 6000,
+      "trajectoryFrames": 81
+    },
+    {
+      "file": "E4_selection_strategy_fixed-total_nearest_k8_seed17.mat",
+      "seed": 17,
+      "steps": 8000,
+      "burnIn": 6000,
+      "trajectoryFrames": 81
+    },
+    {
+      "file": "E4_selection_strategy_fixed-total_nearest_k8_seed18.mat",
+      "seed": 18,
+      "steps": 8000,
+      "burnIn": 6000,
+      "trajectoryFrames": 81
+    },
+    {
+      "file": "E4_selection_strategy_fixed-total_nearest_k8_seed19.mat",
+      "seed": 19,
+      "steps": 8000,
+      "burnIn": 6000,
+      "trajectoryFrames": 81
+    },
+    {
+      "file": "E4_selection_strategy_fixed-total_nearest_k8_seed2.mat",
+      "seed": 2,
+      "steps": 8000,
+      "burnIn": 6000,
+      "trajectoryFrames": 81
+    },
+    {
+      "file": "E4_selection_strategy_fixed-total_nearest_k8_seed20.mat",
+      "seed": 20,
+      "steps": 8000,
+      "burnIn": 6000,
+      "trajectoryFrames": 81
+    },
+    {
+      "file": "E4_selection_strategy_fixed-total_nearest_k8_seed3.mat",
+      "seed": 3,
+      "steps": 8000,
+      "burnIn": 6000,
+      "trajectoryFrames": 81
+    },
+    {
+      "file": "E4_selection_strategy_fixed-total_nearest_k8_seed4.mat",
+      "seed": 4,
+      "steps": 8000,
+      "burnIn": 6000,
+      "trajectoryFrames": 81
+    },
+    {
+      "file": "E4_selection_strategy_fixed-total_nearest_k8_seed5.mat",
+      "seed": 5,
+      "steps": 8000,
+      "burnIn": 6000,
+      "trajectoryFrames": 81
+    },
+    {
+      "file": "E4_selection_strategy_fixed-total_nearest_k8_seed6.mat",
+      "seed": 6,
+      "steps": 8000,
+      "burnIn": 6000,
+      "trajectoryFrames": 81
+    },
+    {
+      "file": "E4_selection_strategy_fixed-total_nearest_k8_seed7.mat",
+      "seed": 7,
+      "steps": 8000,
+      "burnIn": 6000,
+      "trajectoryFrames": 81
+    },
+    {
+      "file": "E4_selection_strategy_fixed-total_nearest_k8_seed8.mat",
+      "seed": 8,
+      "steps": 8000,
+      "burnIn": 6000,
+      "trajectoryFrames": 81
+    },
+    {
+      "file": "E4_selection_strategy_fixed-total_nearest_k8_seed9.mat",
+      "seed": 9,
+      "steps": 8000,
+      "burnIn": 6000,
+      "trajectoryFrames": 81
+    },
+    {
+      "file": "E4_selection_strategy_fixed-total_random_k8_seed1.mat",
+      "seed": 1,
+      "steps": 8000,
+      "burnIn": 6000,
+      "trajectoryFrames": 81
+    },
+    {
+      "file": "E4_selection_strategy_fixed-total_random_k8_seed10.mat",
+      "seed": 10,
+      "steps": 8000,
+      "burnIn": 6000,
+      "trajectoryFrames": 81
+    },
+    {
+      "file": "E4_selection_strategy_fixed-total_random_k8_seed11.mat",
+      "seed": 11,
+      "steps": 8000,
+      "burnIn": 6000,
+      "trajectoryFrames": 81
+    },
+    {
+      "file": "E4_selection_strategy_fixed-total_random_k8_seed12.mat",
+      "seed": 12,
+      "steps": 8000,
+      "burnIn": 6000,
+      "trajectoryFrames": 81
+    },
+    {
+      "file": "E4_selection_strategy_fixed-total_random_k8_seed13.mat",
+      "seed": 13,
+      "steps": 8000,
+      "burnIn": 6000,
+      "trajectoryFrames": 81
+    },
+    {
+      "file": "E4_selection_strategy_fixed-total_random_k8_seed14.mat",
+      "seed": 14,
+      "steps": 8000,
+      "burnIn": 6000,
+      "trajectoryFrames": 81
+    },
+    {
+      "file": "E4_selection_strategy_fixed-total_random_k8_seed15.mat",
+      "seed": 15,
+      "steps": 8000,
+      "burnIn": 6000,
+      "trajectoryFrames": 81
+    },
+    {
+      "file": "E4_selection_strategy_fixed-total_random_k8_seed16.mat",
+      "seed": 16,
+      "steps": 8000,
+      "burnIn": 6000,
+      "trajectoryFrames": 81
+    },
+    {
+      "file": "E4_selection_strategy_fixed-total_random_k8_seed17.mat",
+      "seed": 17,
+      "steps": 8000,
+      "burnIn": 6000,
+      "trajectoryFrames": 81
+    },
+    {
+      "file": "E4_selection_strategy_fixed-total_random_k8_seed18.mat",
+      "seed": 18,
+      "steps": 8000,
+      "burnIn": 6000,
+      "trajectoryFrames": 81
+    },
+    {
+      "file": "E4_selection_strategy_fixed-total_random_k8_seed19.mat",
+      "seed": 19,
+      "steps": 8000,
+      "burnIn": 6000,
+      "trajectoryFrames": 81
+    },
+    {
+      "file": "E4_selection_strategy_fixed-total_random_k8_seed2.mat",
+      "seed": 2,
+      "steps": 8000,
+      "burnIn": 6000,
+      "trajectoryFrames": 81
+    },
+    {
+      "file": "E4_selection_strategy_fixed-total_random_k8_seed20.mat",
+      "seed": 20,
+      "steps": 8000,
+      "burnIn": 6000,
+      "trajectoryFrames": 81
+    },
+    {
+      "file": "E4_selection_strategy_fixed-total_random_k8_seed3.mat",
+      "seed": 3,
+      "steps": 8000,
+      "burnIn": 6000,
+      "trajectoryFrames": 81
+    },
+    {
+      "file": "E4_selection_strategy_fixed-total_random_k8_seed4.mat",
+      "seed": 4,
+      "steps": 8000,
+      "burnIn": 6000,
+      "trajectoryFrames": 81
+    },
+    {
+      "file": "E4_selection_strategy_fixed-total_random_k8_seed5.mat",
+      "seed": 5,
+      "steps": 8000,
+      "burnIn": 6000,
+      "trajectoryFrames": 81
+    },
+    {
+      "file": "E4_selection_strategy_fixed-total_random_k8_seed6.mat",
+      "seed": 6,
+      "steps": 8000,
+      "burnIn": 6000,
+      "trajectoryFrames": 81
+    },
+    {
+      "file": "E4_selection_strategy_fixed-total_random_k8_seed7.mat",
+      "seed": 7,
+      "steps": 8000,
+      "burnIn": 6000,
+      "trajectoryFrames": 81
+    },
+    {
+      "file": "E4_selection_strategy_fixed-total_random_k8_seed8.mat",
+      "seed": 8,
+      "steps": 8000,
+      "burnIn": 6000,
+      "trajectoryFrames": 81
+    },
+    {
+      "file": "E4_selection_strategy_fixed-total_random_k8_seed9.mat",
+      "seed": 9,
+      "steps": 8000,
+      "burnIn": 6000,
+      "trajectoryFrames": 81
+    }
+  ],
+  "csvMatSummaryMaxGOError": 4.9960036108132044E-16
+}

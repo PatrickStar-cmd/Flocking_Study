@@ -1,0 +1,5 @@
+# Reconstructible snapshots from pinned WHQ commits; keep local copies.
+/sq1-b-e2-63d56b5/source/
+/sq1-whq-update-0036487/source/
+/sq1-whq-update-0036487/raw/
+**/__pycache__/
