@@ -1,0 +1,26 @@
+来源：C:\Users\WHQ\Studying\大三上学期\无人机群\9.28周\run_B_1\chunks_20260929 输出：C:\Users\WHQ\Studying\大三上学期\无人机群\9.28周\run_B_1\raw_25MB_split_20260929 每个原始 raw 文件夹拆为4个子文件夹，每个子文件夹20个文件。 每个子文件夹同时生成同名 ZIP 压缩包。 限制：ZIP 文件大小不超过25 MB。 创建时间：2026-09-29 19:09:09
+
+run_B_1_04_raw_01_part_01 | 文件数=20 | ZIP=11.03 MB | PASS
+run_B_1_04_raw_01_part_02 | 文件数=20 | ZIP=11.39 MB | PASS
+run_B_1_04_raw_01_part_03 | 文件数=20 | ZIP=11.29 MB | PASS
+run_B_1_04_raw_01_part_04 | 文件数=20 | ZIP=11.03 MB | PASS
+run_B_1_04_raw_02_part_01 | 文件数=20 | ZIP=6.96 MB | PASS
+run_B_1_04_raw_02_part_02 | 文件数=20 | ZIP=10.37 MB | PASS
+run_B_1_04_raw_02_part_03 | 文件数=20 | ZIP=11.23 MB | PASS
+run_B_1_04_raw_02_part_04 | 文件数=20 | ZIP=11.03 MB | PASS
+run_B_1_04_raw_03_part_01 | 文件数=20 | ZIP=11.39 MB | PASS
+run_B_1_04_raw_03_part_02 | 文件数=20 | ZIP=11.34 MB | PASS
+run_B_1_04_raw_03_part_03 | 文件数=20 | ZIP=11.29 MB | PASS
+run_B_1_04_raw_03_part_04 | 文件数=20 | ZIP=11 MB | PASS
+run_B_1_04_raw_04_part_01 | 文件数=20 | ZIP=11.03 MB | PASS
+run_B_1_04_raw_04_part_02 | 文件数=20 | ZIP=6.96 MB | PASS
+run_B_1_04_raw_04_part_03 | 文件数=20 | ZIP=10.48 MB | PASS
+run_B_1_04_raw_04_part_04 | 文件数=20 | ZIP=10.37 MB | PASS
+run_B_1_04_raw_05_part_01 | 文件数=20 | ZIP=11.02 MB | PASS
+run_B_1_04_raw_05_part_02 | 文件数=20 | ZIP=11.07 MB | PASS
+run_B_1_04_raw_05_part_03 | 文件数=20 | ZIP=11.29 MB | PASS
+run_B_1_04_raw_05_part_04 | 文件数=20 | ZIP=11.02 MB | PASS
+run_B_1_04_raw_06_part_01 | 文件数=20 | ZIP=11.07 MB | PASS
+run_B_1_04_raw_06_part_02 | 文件数=20 | ZIP=11.07 MB | PASS
+run_B_1_04_raw_06_part_03 | 文件数=20 | ZIP=11.23 MB | PASS
+run_B_1_04_raw_06_part_04 | 文件数=20 | ZIP=11.29 MB | PASS
