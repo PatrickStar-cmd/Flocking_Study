@@ -1,0 +1,123 @@
+{
+  "experiment": "SQ1 E2 unobstructed group experiments",
+  "status": "exploratory",
+  "generatedAt": "2026-09-29",
+  "workingDirectory": "C:\\Users\\WHQ\\Studying\\大三上学期\\无人机群\\9.28周",
+  "sourceModel": "Salahshour and Couzin (2025) allocentric flocking implementation",
+  "NAgents": 20,
+  "NNeurons": 100,
+  "NSteps": 8000,
+  "burnIn": 6000,
+  "recordStride": 100,
+  "seeds": [
+    1,
+    2,
+    3,
+    4,
+    5,
+    6,
+    7,
+    8,
+    9,
+    10,
+    11,
+    12,
+    13,
+    14,
+    15,
+    16,
+    17,
+    18,
+    19,
+    20
+  ],
+  "nRuns": 480,
+  "nGroups": 24,
+  "experiments": {
+    "E1_strength_policy": 120,
+    "E2_neighbor_count": 200,
+    "E3_angular_structure": 60,
+    "E4_selection_strategy": 100
+  },
+  "observationModel": {
+    "visibilityMode": "ideal",
+    "occlusionEnabled": false,
+    "predictionMode": "none",
+    "distanceWeightMode": "equal"
+  },
+  "inputPolicies": [
+    "original",
+    "fixed-total"
+  ],
+  "neighborCounts": [
+    2,
+    4,
+    8,
+    12,
+    19
+  ],
+  "metrics": [
+    "meanGO",
+    "meanLO",
+    "meanPairDistanceNorm",
+    "meanNearestDistanceNorm",
+    "meanInputAmplitude",
+    "meanActiveNeighbors",
+    "meanAngularCoverage",
+    "meanInputConcentration",
+    "meanFieldPeak",
+    "meanBumpConcentration",
+    "meanSpeed",
+    "meanInputMass",
+    "socialUnionLccFraction",
+    "socialAlgebraicConnectivity"
+  ],
+  "statistics": {
+    "groupSummary": "mean, sample SD, normal-approximation 95% CI",
+    "unit": "independent simulation seed",
+    "interpretation": "exploratory only"
+  },
+  "limitations": [
+    "No occlusion, missing observations, KF, or prediction compensation.",
+    "Seeds 1-20 are exploratory and are not an independent held-out validation set.",
+    "angle-dispersed and balanced must be checked before claiming distinct selection strategies.",
+    "The runner currently needs a portability review before repository submission."
+  ],
+  "files": [
+    {
+      "path": "README.md",
+      "bytes": 3347,
+      "sha256": "2203ba7f9db842c8c2b656064d6941ba7ea5b1df09e66aa3c92692d1491b54ea"
+    },
+    {
+      "path": "B_E2_RESULT_EXPLANATION.md",
+      "bytes": 2987,
+      "sha256": "27c2646722b783a9e61bd0f0fd660e36c1c8120da07a8d71a2fd419b151dd945"
+    },
+    {
+      "path": "run_B_E2_experiments.m",
+      "bytes": 4622,
+      "sha256": "377f10d5578d17802b90cd8acd4defd167d9c89d677dcc9c9ab6ffb10dda66ad"
+    },
+    {
+      "path": "simulateBGroupE2.m",
+      "bytes": 21774,
+      "sha256": "e1368e4db219127ef9c725764c686dcb11d86dde4d97ff53d62f17033265a3b8"
+    },
+    {
+      "path": "results/B_E2_runs.csv",
+      "bytes": 125715,
+      "sha256": "5f6d5588f6313673de4d4b5de5c21f2eef0c0c55176d6e722ff52be8beee7b64"
+    },
+    {
+      "path": "results/B_E2_runs.mat",
+      "bytes": 23159,
+      "sha256": "eb4dac29a4dd270e21f2870752fe988d8bd8dd635a1a53b4450b2c6e6fc71f7c"
+    },
+    {
+      "path": "results/B_E2_grouped_summary.csv",
+      "bytes": 17456,
+      "sha256": "a8d3e9f828694c88c52c7f9c3b553ed09339666b095be35c64328c188f033351"
+    }
+  ]
+}
