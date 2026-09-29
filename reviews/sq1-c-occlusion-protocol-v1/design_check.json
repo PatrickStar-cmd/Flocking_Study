@@ -1,0 +1,74 @@
+{
+  "status": "PASS design arithmetic only; no simulator test executed",
+  "proposal_not_execution": true,
+  "per_seed_trajectories": 28,
+  "pilot_trajectories": 112,
+  "minimum_t0_test_trajectories": 16,
+  "candidate_hidden_subsets_per_agent": 70,
+  "time_intervals": [
+    {
+      "d": 10,
+      "T": 3,
+      "event": [
+        201,
+        210
+      ],
+      "restore": 211,
+      "primary_post": [
+        211,
+        310
+      ],
+      "extended_post": [
+        211,
+        510
+      ]
+    },
+    {
+      "d": 34,
+      "T": 10.2,
+      "event": [
+        201,
+        234
+      ],
+      "restore": 235,
+      "primary_post": [
+        235,
+        334
+      ],
+      "extended_post": [
+        235,
+        534
+      ]
+    },
+    {
+      "d": 100,
+      "T": 30,
+      "event": [
+        201,
+        300
+      ],
+      "restore": 301,
+      "primary_post": [
+        301,
+        400
+      ],
+      "extended_post": [
+        301,
+        600
+      ]
+    }
+  ],
+  "expected_amplitudes": {
+    "fresh": 0.228,
+    "drop": 0.114,
+    "drop_normalized": 0.228,
+    "hold": 0.228
+  },
+  "source_hashes": {
+    "ACCEPTANCE.md": "1f98ee679d51fa11c8d88086ca31627a9448cad0593c5372f5670a8a643e20ae",
+    "check_design.py": "30d74c3eaf5f09a802056fa0a7974f6eb09822c87761b7bb88b2010c7c0645f9",
+    "DATA_CONTRACT.md": "ca643d75b4380587739fc6d1553dbdbaf8b50b90db8fa06efd1467964c1508b1",
+    "protocol.json": "415de9652b3f2711819c5369bd2deac3d0af8d0a10341dac0947ba81c0f74499",
+    "PROTOCOL.md": "74140ec109b1a6d61ffe058247b37aa6eefd76fc5437389545233c1118b9dd07"
+  }
+}

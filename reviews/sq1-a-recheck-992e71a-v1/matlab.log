@@ -1,0 +1,2 @@
+PASS testLocalSocialInput
+PASS: A test, 9 saved replays, independent kernel error 2.78e-17. Diagnostics: opposed hasDirection=1; empty vectors=0; common prefix=0.
