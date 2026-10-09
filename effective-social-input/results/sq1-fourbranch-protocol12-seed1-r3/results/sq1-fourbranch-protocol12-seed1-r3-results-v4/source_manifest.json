@@ -1,0 +1,285 @@
+{
+  "sourceFiles": [
+    {
+      "relativePath": "angularSetMetrics.m",
+      "actualPath": "C:\\Users\\WHQ\\Studying\\大三上学期\\无人机群\\10.9周\\sq1-fourbranch-protocol12-seed1-r3\\angularSetMetrics.m",
+      "SHA256": "876904e465a28ca445ee8e01f3eef649d54fe98de07b57d58c7953152634b30f",
+      "bytes": 398
+    },
+    {
+      "relativePath": "buildFreshOracle.m",
+      "actualPath": "C:\\Users\\WHQ\\Studying\\大三上学期\\无人机群\\10.9周\\sq1-fourbranch-protocol12-seed1-r3\\buildFreshOracle.m",
+      "SHA256": "99b3eed91a48a05cb43d75b848ddab25d223a2071a20e9a37aaddc7f48e07c6c",
+      "bytes": 401
+    },
+    {
+      "relativePath": "buildReferenceReplay.m",
+      "actualPath": "C:\\Users\\WHQ\\Studying\\大三上学期\\无人机群\\10.9周\\sq1-fourbranch-protocol12-seed1-r3\\buildReferenceReplay.m",
+      "SHA256": "413394a4afe48b5dbade70ce1f971be4a9c8381b17cc93a117ef078d70930456",
+      "bytes": 1305
+    },
+    {
+      "relativePath": "buildRingConnectivity.m",
+      "actualPath": "C:\\Users\\WHQ\\Studying\\大三上学期\\无人机群\\10.9周\\sq1-fourbranch-protocol12-seed1-r3\\buildRingConnectivity.m",
+      "SHA256": "7f100bb34deaa668edc8fef394bbc11e156e258c5de21bafecf3c5180ef05dd0",
+      "bytes": 443
+    },
+    {
+      "relativePath": "buildSourceManifest.m",
+      "actualPath": "C:\\Users\\WHQ\\Studying\\大三上学期\\无人机群\\10.9周\\sq1-fourbranch-protocol12-seed1-r3\\buildSourceManifest.m",
+      "SHA256": "6d57502bdb72354481a6149970058bb598b1f634984e52c37f1d9f0c919f1632",
+      "bytes": 1208
+    },
+    {
+      "relativePath": "checkpointToStart.m",
+      "actualPath": "C:\\Users\\WHQ\\Studying\\大三上学期\\无人机群\\10.9周\\sq1-fourbranch-protocol12-seed1-r3\\checkpointToStart.m",
+      "SHA256": "945c277a6d93e8387a319e4a778b3a475ed1337938825c6be147f5e620788f27",
+      "bytes": 513
+    },
+    {
+      "relativePath": "compareSegments.m",
+      "actualPath": "C:\\Users\\WHQ\\Studying\\大三上学期\\无人机群\\10.9周\\sq1-fourbranch-protocol12-seed1-r3\\compareSegments.m",
+      "SHA256": "2273b841be1c3eae2095e63ffca5d1753bcae3b6e940b386cf412d1bdada7a38",
+      "bytes": 1517
+    },
+    {
+      "relativePath": "controllerInputFromObservation.m",
+      "actualPath": "C:\\Users\\WHQ\\Studying\\大三上学期\\无人机群\\10.9周\\sq1-fourbranch-protocol12-seed1-r3\\controllerInputFromObservation.m",
+      "SHA256": "7cf751dbc97c4b78579f3dd3899abdf91a4ac7d91cd8b7f599863cb3e191077f",
+      "bytes": 2927
+    },
+    {
+      "relativePath": "createOutputDirectory.m",
+      "actualPath": "C:\\Users\\WHQ\\Studying\\大三上学期\\无人机群\\10.9周\\sq1-fourbranch-protocol12-seed1-r3\\createOutputDirectory.m",
+      "SHA256": "ee5246743c8353e976b628042772629824904340986d58f917e9654c3809ca12",
+      "bytes": 214
+    },
+    {
+      "relativePath": "decodeNeuralActivity.m",
+      "actualPath": "C:\\Users\\WHQ\\Studying\\大三上学期\\无人机群\\10.9周\\sq1-fourbranch-protocol12-seed1-r3\\decodeNeuralActivity.m",
+      "SHA256": "74a25a6ae4fe85077d5fc6378950b030b21d352c9921a6ed7d35921827650cf4",
+      "bytes": 509
+    },
+    {
+      "relativePath": "defaultFourBranchConfig.m",
+      "actualPath": "C:\\Users\\WHQ\\Studying\\大三上学期\\无人机群\\10.9周\\sq1-fourbranch-protocol12-seed1-r3\\defaultFourBranchConfig.m",
+      "SHA256": "36cef66b884a27f31fabffd9cfb26c0867ace8db173cef218452ae16c3847e58",
+      "bytes": 773
+    },
+    {
+      "relativePath": "fileSHA256.m",
+      "actualPath": "C:\\Users\\WHQ\\Studying\\大三上学期\\无人机群\\10.9周\\sq1-fourbranch-protocol12-seed1-r3\\fileSHA256.m",
+      "SHA256": "cda3311446c37db694dd46c7e037cb31ca8f9723cde99155280cbd304b13e0d3",
+      "bytes": 303
+    },
+    {
+      "relativePath": "finalizePackage.m",
+      "actualPath": "C:\\Users\\WHQ\\Studying\\大三上学期\\无人机群\\10.9周\\sq1-fourbranch-protocol12-seed1-r3\\finalizePackage.m",
+      "SHA256": "0b22f88151242eec9d0bbfb3f0da079e96fd8acb0769f8f053dbde2ae9ad75b1",
+      "bytes": 3267
+    },
+    {
+      "relativePath": "fixedTargetIds.m",
+      "actualPath": "C:\\Users\\WHQ\\Studying\\大三上学期\\无人机群\\10.9周\\sq1-fourbranch-protocol12-seed1-r3\\fixedTargetIds.m",
+      "SHA256": "820bd764b9688968d67eda0ae4182fc88adcc35122863f3607ac1988737fee88",
+      "bytes": 223
+    },
+    {
+      "relativePath": "fourBranchInputStep.m",
+      "actualPath": "C:\\Users\\WHQ\\Studying\\大三上学期\\无人机群\\10.9周\\sq1-fourbranch-protocol12-seed1-r3\\fourBranchInputStep.m",
+      "SHA256": "9e806116a115b93384017dc42cb7b7466cac7370b49054a5dcd84d36a7fbf88f",
+      "bytes": 824
+    },
+    {
+      "relativePath": "generateSummary.m",
+      "actualPath": "C:\\Users\\WHQ\\Studying\\大三上学期\\无人机群\\10.9周\\sq1-fourbranch-protocol12-seed1-r3\\generateSummary.m",
+      "SHA256": "853a8cf4617a657625e34874d37addfd62222ace2d951784d6ca517933dc300d",
+      "bytes": 2043
+    },
+    {
+      "relativePath": "initializeCoreState.m",
+      "actualPath": "C:\\Users\\WHQ\\Studying\\大三上学期\\无人机群\\10.9周\\sq1-fourbranch-protocol12-seed1-r3\\initializeCoreState.m",
+      "SHA256": "e9dbf3f9f4ae13e676ea117db765d239b9657b08b32bf1c7a3dedba701fce7b3",
+      "bytes": 498
+    },
+    {
+      "relativePath": "initializeInputState.m",
+      "actualPath": "C:\\Users\\WHQ\\Studying\\大三上学期\\无人机群\\10.9周\\sq1-fourbranch-protocol12-seed1-r3\\initializeInputState.m",
+      "SHA256": "cb45dfb4982c2818578fe5f914c4df17dc2ebb29ad3be33440543780b1a6ca37",
+      "bytes": 336
+    },
+    {
+      "relativePath": "load_pilot_example.m",
+      "actualPath": "C:\\Users\\WHQ\\Studying\\大三上学期\\无人机群\\10.9周\\sq1-fourbranch-protocol12-seed1-r3\\load_pilot_example.m",
+      "SHA256": "9338ea354bd7e669055d08976364ad862462522d12da365c0b58aa314b977f07",
+      "bytes": 1357
+    },
+    {
+      "relativePath": "makeProtocolMasks.m",
+      "actualPath": "C:\\Users\\WHQ\\Studying\\大三上学期\\无人机群\\10.9周\\sq1-fourbranch-protocol12-seed1-r3\\makeProtocolMasks.m",
+      "SHA256": "93cb63001024155641a60240d0914bb5a9ad31e5c6398237f51f721b0bec1167",
+      "bytes": 1652
+    },
+    {
+      "relativePath": "resumeProtocolFromCheckpoint.m",
+      "actualPath": "C:\\Users\\WHQ\\Studying\\大三上学期\\无人机群\\10.9周\\sq1-fourbranch-protocol12-seed1-r3\\resumeProtocolFromCheckpoint.m",
+      "SHA256": "ae06c897d1c3857f79d6f68f96cbb1045cb640dda6be0fa612447a7a0f497567",
+      "bytes": 283
+    },
+    {
+      "relativePath": "run_protocol12_seed1_r3.m",
+      "actualPath": "C:\\Users\\WHQ\\Studying\\大三上学期\\无人机群\\10.9周\\sq1-fourbranch-protocol12-seed1-r3\\run_protocol12_seed1_r3.m",
+      "SHA256": "b9408c97b3f13171e726ef2e925e7910e4fd30214b52e0e5f2881aa169bc3483",
+      "bytes": 4546
+    },
+    {
+      "relativePath": "run_tests.m",
+      "actualPath": "C:\\Users\\WHQ\\Studying\\大三上学期\\无人机群\\10.9周\\sq1-fourbranch-protocol12-seed1-r3\\run_tests.m",
+      "SHA256": "091aed9b5c53a2417668d793f936ba46c6a5ae3f61e9262e21150a8a1b30b3ac",
+      "bytes": 1478
+    },
+    {
+      "relativePath": "sensorObservation.m",
+      "actualPath": "C:\\Users\\WHQ\\Studying\\大三上学期\\无人机群\\10.9周\\sq1-fourbranch-protocol12-seed1-r3\\sensorObservation.m",
+      "SHA256": "151aeaf1241a646f45bbddc050f248948d5b115d98714cbedc1d47fd4f5ed4b0",
+      "bytes": 981
+    },
+    {
+      "relativePath": "simulateProtocolSegment.m",
+      "actualPath": "C:\\Users\\WHQ\\Studying\\大三上学期\\无人机群\\10.9周\\sq1-fourbranch-protocol12-seed1-r3\\simulateProtocolSegment.m",
+      "SHA256": "f5da48b377bd483f55a59c305456f5d258d839a31bbc091abaa40bfc74b14fa2",
+      "bytes": 5904
+    },
+    {
+      "relativePath": "writeJson.m",
+      "actualPath": "C:\\Users\\WHQ\\Studying\\大三上学期\\无人机群\\10.9周\\sq1-fourbranch-protocol12-seed1-r3\\writeJson.m",
+      "SHA256": "6b76204a0be3b2355601a4a0c5712ac9fdb81a26afdf577184422a8b1d9f212b",
+      "bytes": 170
+    },
+    {
+      "relativePath": "tests/protocolAssertions.m",
+      "actualPath": "C:\\Users\\WHQ\\Studying\\大三上学期\\无人机群\\10.9周\\sq1-fourbranch-protocol12-seed1-r3\\tests\\protocolAssertions.m",
+      "SHA256": "17d8723bfc693a066d1ddd829c48ea84090773a8b327a1f00cffcfd6b22bc067",
+      "bytes": 22437
+    },
+    {
+      "relativePath": "sources/A/SQ1_A_HANDOFF.md",
+      "actualPath": "C:\\Users\\WHQ\\Studying\\大三上学期\\无人机群\\10.9周\\sq1-fourbranch-protocol12-seed1-r3\\sources\\A\\SQ1_A_HANDOFF.md",
+      "SHA256": "db954d275a316e95aacd2bd45de24b15f5213771c88a149683e9d49f78a28114",
+      "bytes": 8045
+    },
+    {
+      "relativePath": "sources/A/SQ1_LOCAL_INPUT_MODEL.md",
+      "actualPath": "C:\\Users\\WHQ\\Studying\\大三上学期\\无人机群\\10.9周\\sq1-fourbranch-protocol12-seed1-r3\\sources\\A\\SQ1_LOCAL_INPUT_MODEL.md",
+      "SHA256": "613fb313b78796905956c69d562331361d736e5ffdc436d860ef7f2bef6ccfe1",
+      "bytes": 3412
+    },
+    {
+      "relativePath": "sources/A/buildRingConnectivity.m",
+      "actualPath": "C:\\Users\\WHQ\\Studying\\大三上学期\\无人机群\\10.9周\\sq1-fourbranch-protocol12-seed1-r3\\sources\\A\\buildRingConnectivity.m",
+      "SHA256": "7f100bb34deaa668edc8fef394bbc11e156e258c5de21bafecf3c5180ef05dd0",
+      "bytes": 443
+    },
+    {
+      "relativePath": "sources/A/localSocialInputMetrics.m",
+      "actualPath": "C:\\Users\\WHQ\\Studying\\大三上学期\\无人机群\\10.9周\\sq1-fourbranch-protocol12-seed1-r3\\sources\\A\\localSocialInputMetrics.m",
+      "SHA256": "fddb044fefb98e11daba1cf63f3de4b35e92a14dc99da556914b03cb48aebd25",
+      "bytes": 2128
+    },
+    {
+      "relativePath": "sources/A/plotSq1LocalE1.m",
+      "actualPath": "C:\\Users\\WHQ\\Studying\\大三上学期\\无人机群\\10.9周\\sq1-fourbranch-protocol12-seed1-r3\\sources\\A\\plotSq1LocalE1.m",
+      "SHA256": "9aaad3b2b1c642576166d49cf71875e344effde63ff47d2f77eaae44dfe5c501",
+      "bytes": 1210
+    },
+    {
+      "relativePath": "sources/A/replayLocalSocialInput.m",
+      "actualPath": "C:\\Users\\WHQ\\Studying\\大三上学期\\无人机群\\10.9周\\sq1-fourbranch-protocol12-seed1-r3\\sources\\A\\replayLocalSocialInput.m",
+      "SHA256": "8d35f0a33728b00eecc9ae75b218b99c6b056d8e55f7af51488b129ecead6b9f",
+      "bytes": 2718
+    },
+    {
+      "relativePath": "sources/A/runSq1LocalE1.m",
+      "actualPath": "C:\\Users\\WHQ\\Studying\\大三上学期\\无人机群\\10.9周\\sq1-fourbranch-protocol12-seed1-r3\\sources\\A\\runSq1LocalE1.m",
+      "SHA256": "e6f0ff9df974fc6a27966e3289ea8daeddee0d386640a7fa8ba380df5504bb3a",
+      "bytes": 3480
+    },
+    {
+      "relativePath": "sources/A/testLocalSocialInput.m",
+      "actualPath": "C:\\Users\\WHQ\\Studying\\大三上学期\\无人机群\\10.9周\\sq1-fourbranch-protocol12-seed1-r3\\sources\\A\\testLocalSocialInput.m",
+      "SHA256": "03a4b1e71821fdef713316d56dc286c63a109b374f7ea603c676551d8ad5fed8",
+      "bytes": 1555
+    },
+    {
+      "relativePath": "sources/legacy/simulateCollectiveFlockingNeuralField.m",
+      "actualPath": "C:\\Users\\WHQ\\Studying\\大三上学期\\无人机群\\10.9周\\sq1-fourbranch-protocol12-seed1-r3\\sources\\legacy\\simulateCollectiveFlockingNeuralField.m",
+      "SHA256": "a6f71c26850470a2df022274f1a3dd8e7054492dfe54945bb7c114e0e4cda476",
+      "bytes": 3452
+    },
+    {
+      "relativePath": "sources/legacy/simulateProtocolSegment_r2.m",
+      "actualPath": "C:\\Users\\WHQ\\Studying\\大三上学期\\无人机群\\10.9周\\sq1-fourbranch-protocol12-seed1-r3\\sources\\legacy\\simulateProtocolSegment_r2.m",
+      "SHA256": "695ab343ab59c6fe1181197f866f14a856e6892a07b66037841981efbe5c861d",
+      "bytes": 5354
+    },
+    {
+      "relativePath": "sources/protocol/ACCEPTANCE.md",
+      "actualPath": "C:\\Users\\WHQ\\Studying\\大三上学期\\无人机群\\10.9周\\sq1-fourbranch-protocol12-seed1-r3\\sources\\protocol\\ACCEPTANCE.md",
+      "SHA256": "f1d8f61a99e9d3fd5bec3124d8df603809ec72d23e2c767486fd7141bb1162cc",
+      "bytes": 3370
+    },
+    {
+      "relativePath": "sources/protocol/A_B_INPUT_INTERFACE.md",
+      "actualPath": "C:\\Users\\WHQ\\Studying\\大三上学期\\无人机群\\10.9周\\sq1-fourbranch-protocol12-seed1-r3\\sources\\protocol\\A_B_INPUT_INTERFACE.md",
+      "SHA256": "95325203759985def70c3dcd3bdd8dabea01991138c7d4d3e284e9c09e83323e",
+      "bytes": 3324
+    },
+    {
+      "relativePath": "sources/protocol/B_DELIVERY_CHECKLIST.md",
+      "actualPath": "C:\\Users\\WHQ\\Studying\\大三上学期\\无人机群\\10.9周\\sq1-fourbranch-protocol12-seed1-r3\\sources\\protocol\\B_DELIVERY_CHECKLIST.md",
+      "SHA256": "553bba0e864198889384f4061e12c5924aef5e11e5a1a324ab3068699a1e05da",
+      "bytes": 7503
+    },
+    {
+      "relativePath": "sources/protocol/DATA_CONTRACT.md",
+      "actualPath": "C:\\Users\\WHQ\\Studying\\大三上学期\\无人机群\\10.9周\\sq1-fourbranch-protocol12-seed1-r3\\sources\\protocol\\DATA_CONTRACT.md",
+      "SHA256": "8622bc2e1cb784a2b21558a87f9575e37e374260506feb4d0703dec192737fe6",
+      "bytes": 3805
+    },
+    {
+      "relativePath": "sources/protocol/EXECUTION_ORDER.md",
+      "actualPath": "C:\\Users\\WHQ\\Studying\\大三上学期\\无人机群\\10.9周\\sq1-fourbranch-protocol12-seed1-r3\\sources\\protocol\\EXECUTION_ORDER.md",
+      "SHA256": "5d87f7138b8fac5d576aec7af111be2805c76b3c7f422ffbce7ef510d9fec1e5",
+      "bytes": 3540
+    },
+    {
+      "relativePath": "sources/protocol/PROTOCOL.md",
+      "actualPath": "C:\\Users\\WHQ\\Studying\\大三上学期\\无人机群\\10.9周\\sq1-fourbranch-protocol12-seed1-r3\\sources\\protocol\\PROTOCOL.md",
+      "SHA256": "dd58d80b5b3740b5c39e56fcf394d662729b95c84a4404ece7017ec64ebfa1ad",
+      "bytes": 16298
+    }
+  ],
+  "protocolCommit": "1e11d64 (protocol freeze); snapshot YCwork@b869447b29a99fbcbafb610ad69b36a8122739f5",
+  "ACommit": "992e71aba3b26896335b52a3182cf01cfd542a9d",
+  "protocolSHA": "dd58d80b5b3740b5c39e56fcf394d662729b95c84a4404ece7017ec64ebfa1ad",
+  "configSHA": "36cef66b884a27f31fabffd9cfb26c0867ace8db173cef218452ae16c3847e58",
+  "implementationVersion": "r3 source SHA256 manifest; local files, no Git commit claimed",
+  "loadedDependencies": {
+    "simulateProtocolSegment": {
+      "path": "C:\\Users\\WHQ\\Studying\\大三上学期\\无人机群\\10.9周\\sq1-fourbranch-protocol12-seed1-r3\\simulateProtocolSegment.m",
+      "SHA256": "f5da48b377bd483f55a59c305456f5d258d839a31bbc091abaa40bfc74b14fa2"
+    },
+    "controllerInputFromObservation": {
+      "path": "C:\\Users\\WHQ\\Studying\\大三上学期\\无人机群\\10.9周\\sq1-fourbranch-protocol12-seed1-r3\\controllerInputFromObservation.m",
+      "SHA256": "7cf751dbc97c4b78579f3dd3899abdf91a4ac7d91cd8b7f599863cb3e191077f"
+    },
+    "buildRingConnectivity": {
+      "path": "C:\\Users\\WHQ\\Studying\\大三上学期\\无人机群\\10.9周\\sq1-fourbranch-protocol12-seed1-r3\\buildRingConnectivity.m",
+      "SHA256": "7f100bb34deaa668edc8fef394bbc11e156e258c5de21bafecf3c5180ef05dd0"
+    },
+    "localSocialInputMetrics": {
+      "path": "C:\\Users\\WHQ\\Studying\\大三上学期\\无人机群\\10.9周\\sq1-fourbranch-protocol12-seed1-r3\\sources\\A\\localSocialInputMetrics.m",
+      "SHA256": "fddb044fefb98e11daba1cf63f3de4b35e92a14dc99da556914b03cb48aebd25"
+    }
+  }
+}

@@ -1,0 +1,9 @@
+{
+  "peak_memory_measured": false,
+  "peak_memory_bytes": null,
+  "reason": "Peak process memory was not instrumented during the MATLAB run",
+  "proposed_worker_count": 0,
+  "scheduling": "serial; formal-batch performance not validated",
+  "t0_completed": 4,
+  "t0_not_run": 76
+}

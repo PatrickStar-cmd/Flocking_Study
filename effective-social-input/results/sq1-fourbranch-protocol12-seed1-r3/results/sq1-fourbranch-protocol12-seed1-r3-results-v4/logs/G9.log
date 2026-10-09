@@ -1,0 +1,4 @@
+G9 actual execution start: 2026-10-09 18:00:12; MATLAB 9.14.0.2206163 (R2023a)
+70 unique lexicographic actual-ID tuples, independent reproducible MT19937 uniform candidate draws, fixed-seed uniformity check, extrema, actualID tie, rotation and +/-pi wrap invariance; global RNG unaffected by masks.
+maxDiff=0 count=70060 tolerance=9.9999999999999998e-13
+G9 PASS at 2026-10-09 18:00:12

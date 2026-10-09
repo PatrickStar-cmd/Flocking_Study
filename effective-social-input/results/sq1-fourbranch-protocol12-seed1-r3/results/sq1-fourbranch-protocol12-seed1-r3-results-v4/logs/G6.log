@@ -1,0 +1,4 @@
+G6 actual execution start: 2026-10-09 18:00:10; MATLAB 9.14.0.2206163 (R2023a)
+Main per-agent amplitude and k0/k1/k4/k8, h0/hk/intermediate, all missing, zero weights in all four modes with missing edges, and hold with no cache.
+maxDiff=0 count=41 tolerance=9.9999999999999998e-13
+G6 PASS at 2026-10-09 18:00:11

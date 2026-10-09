@@ -1,0 +1,4 @@
+G5 actual execution start: 2026-10-09 18:00:09; MATLAB 9.14.0.2206163 (R2023a)
+All saved common-prefix fields including u and cache are exactly equal; mask is frozen using step6200-start geometry.
+maxDiff=0 count=600 tolerance=0
+G5 PASS at 2026-10-09 18:00:10

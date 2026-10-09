@@ -1,0 +1,8 @@
+G4 actual execution start: 2026-10-09 17:59:15; MATLAB 9.14.0.2206163 (R2023a)
+G4 fresh: uninterrupted6600/cp6000/cp6200/saved-run exact equality
+G4 drop: uninterrupted6600/cp6000/cp6200/saved-run exact equality
+G4 drop-normalized: uninterrupted6600/cp6000/cp6200/saved-run exact equality
+G4 hold: uninterrupted6600/cp6000/cp6200/saved-run exact equality
+All four modes run uninterrupted from initialization to 6600 in this MATLAB session; both scalar checkpoints resume exactly; every data field, per-step u, static alpha, cache/age, final RNG and driverIndex are compared.
+maxDiff=0 count=8 tolerance=0
+G4 PASS at 2026-10-09 18:00:09
