@@ -1,0 +1,75 @@
+MATLAB 24.2.0.2712019 (R2024b); seed1 N20 M100 k8 h4 random d34
+Uninterrupted 0 -> 6600 reference (recording 6001 -> 6600).
+Branch fresh from cp6000.
+Branch drop from cp6000.
+Branch drop-normalized from cp6000.
+Branch hold from cp6000.
+T=0 four branch test data.
+Fresh-reference same-state replay.
+Run G1-G15 assertions.
+G1 actual execution start: 2026-10-09 18:40:49; MATLAB 24.2.0.2712019 (R2024b)
+Original unmodified author core, equivalent all-neighbor topology, two inhibition values; per-step position/u/heading. Heading threshold restored to original 1e-9; no fixed-k versus old dynamic topology comparison.
+maxDiff=1.7763568394002505e-15 count=18 tolerance=9.9999999999999998e-13
+G1 PASS at 2026-10-09 18:40:49
+G2 actual execution start: 2026-10-09 18:40:49; MATLAB 24.2.0.2712019 (R2024b)
+Every saved step/branch uses the same eight unique cyclic IDs and no self edge.
+maxDiff=0 count=48000 tolerance=0
+G2 PASS at 2026-10-09 18:40:50
+G3 actual execution start: 2026-10-09 18:40:50; MATLAB 24.2.0.2712019 (R2024b)
+Exact equality of all exported steps, 601 frames including u/alpha, final cache and RNG; d0 does not enable a mask.
+maxDiff=0 count=1800 tolerance=0
+G3 PASS at 2026-10-09 18:40:51
+G4 actual execution start: 2026-10-09 18:40:51; MATLAB 24.2.0.2712019 (R2024b)
+G4 fresh: uninterrupted6600/cp6000/cp6200/saved-run exact equality
+G4 drop: uninterrupted6600/cp6000/cp6200/saved-run exact equality
+G4 drop-normalized: uninterrupted6600/cp6000/cp6200/saved-run exact equality
+G4 hold: uninterrupted6600/cp6000/cp6200/saved-run exact equality
+All four modes run uninterrupted from initialization to 6600 in this MATLAB session; both scalar checkpoints resume exactly; every data field, per-step u, static alpha, cache/age, final RNG and driverIndex are compared.
+maxDiff=0 count=8 tolerance=0
+G4 PASS at 2026-10-09 18:41:49
+G5 actual execution start: 2026-10-09 18:41:49; MATLAB 24.2.0.2712019 (R2024b)
+All saved common-prefix fields including u and cache are exactly equal; mask is frozen using step6200-start geometry.
+maxDiff=0 count=600 tolerance=0
+G5 PASS at 2026-10-09 18:41:50
+G6 actual execution start: 2026-10-09 18:41:50; MATLAB 24.2.0.2712019 (R2024b)
+Main per-agent amplitude and k0/k1/k4/k8, h0/hk/intermediate, all missing, zero weights in all four modes with missing edges, and hold with no cache.
+maxDiff=0 count=41 tolerance=9.9999999999999998e-13
+G6 PASS at 2026-10-09 18:41:51
+G7 actual execution start: 2026-10-09 18:41:51; MATLAB 24.2.0.2712019 (R2024b)
+d0/1/10/34/100 input and dynamic phase boundaries; explicit absolute6211 d10 recovery and w0 restoration.
+maxDiff=0 count=6 tolerance=0
+G7 PASS at 2026-10-09 18:41:52
+G8 actual execution start: 2026-10-09 18:41:52; MATLAB 24.2.0.2712019 (R2024b)
+Every hidden hold edge retains last legal step6200-start bearing, age0.3 through10.2, no expiry, recovery resets to0.
+maxDiff=0 count=2720 tolerance=9.9999999999999998e-13
+G8 PASS at 2026-10-09 18:41:52
+G9 actual execution start: 2026-10-09 18:41:52; MATLAB 24.2.0.2712019 (R2024b)
+70 unique lexicographic actual-ID tuples, independent reproducible MT19937 uniform candidate draws, fixed-seed uniformity check, extrema, actualID tie, rotation and +/-pi wrap invariance; global RNG unaffected by masks.
+maxDiff=0 count=70060 tolerance=9.9999999999999998e-13
+G9 PASS at 2026-10-09 18:41:52
+G10 actual execution start: 2026-10-09 18:41:52; MATLAB 24.2.0.2712019 (R2024b)
+Fixed legal observations/cache/alpha; hidden diagnostic truth changed without controller access. All nonfresh output/cache fields exactly unchanged; offline truth oracle changes. Public signature excludes position/truth.
+maxDiff=0 count=3 tolerance=0
+G10 PASS at 2026-10-09 18:41:52
+G11 actual execution start: 2026-10-09 18:41:52; MATLAB 24.2.0.2712019 (R2024b)
+Single direction, opposing double peak, uniform angles and empty input; R1/R2/gap/direction flags; ln4/ln8 unnormalized label weight entropy.
+maxDiff=0 count=5 tolerance=9.9999999999999998e-13
+G11 PASS at 2026-10-09 18:41:52
+G12 actual execution start: 2026-10-09 18:41:52; MATLAB 24.2.0.2712019 (R2024b)
+Two distinct oracle types, common-state prefix/h0 equality, normalized A equality with unequal field structure, and branch-own oracle reconstruction.
+maxDiff=0 count=27 tolerance=0
+G12 PASS at 2026-10-09 18:41:56
+G13 actual execution start: 2026-10-09 18:41:56; MATLAB 24.2.0.2712019 (R2024b)
+Saved single-run MAT/keys/600steps/601frames, source hashes, missing fields and hidden NaN checked; CSV regenerated; all2400 saved steps independently recompute periodic pair distance, GO, nearest5+self LO and A; 480 agent-step cases independently reconstruct Gaussian field, Mass and moments.
+maxDiff=3.6343324183452097e-14 count=2400 tolerance=9.9999999999999998e-13
+G13 PASS at 2026-10-09 18:42:00
+G14 actual execution start: 2026-10-09 18:42:00; MATLAB 24.2.0.2712019 (R2024b)
+Clean MATLAB search path runs short end-to-end; existing output rejected before writes, MAT hash unchanged; deliberate invalid mask failure retained in failure_logs (expected negative test).
+maxDiff=0 count=3 tolerance=0
+G14 PASS at 2026-10-09 18:42:03
+G15 actual execution start: 2026-10-09 18:42:03; MATLAB 24.2.0.2712019 (R2024b)
+Pinned A@992e71a and independent scalar Gaussian formula on actual shifted alpha grids and +/-pi; label split field/neural equivalence; uniform and zero neural activity flags. Empty/zero/hidden/no-cache and ln4/ln8 cases are also asserted in G6/G10/G11, invoked by the same suite.
+maxDiff=8.3266726846886741e-17 count=63 tolerance=9.9999999999999998e-13
+G15 PASS at 2026-10-09 18:42:03
+Finished: 15 PASS, 0 FAIL, 0 NOT_RUN.
+C independent software recheck generated in a new directory: D:\Work\Study\UESTC资料存档\课程\通关项目\coding\reviews\sq1-b-r3-audit-v1\source\results\C_recheck_20261009

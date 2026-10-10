@@ -1,0 +1,148 @@
+{
+  "modes": [
+    {
+      "mode": "fresh",
+      "steps": 600,
+      "frames": 601,
+      "cp6000Scalar": true,
+      "cp6200Scalar": true,
+      "maskDiagnosticsCount": 20,
+      "commonPositionExact": true,
+      "commonUExact": true,
+      "Aevent": 0.228,
+      "entropyEvent": 2.0794415416798357,
+      "phaseCorrect": true,
+      "maxPairError": 5.5511151231257827E-17,
+      "maxGOError": 2.5635743527985255E-14,
+      "maxLOError": 4.4408920985006262E-15,
+      "maxFieldError": 8.3266726846886741E-17,
+      "maxMomentError": 0,
+      "maxSelfL2Error": 0,
+      "maxSummaryError": 3.3306690738754696E-16,
+      "maxHoldCacheError": 0,
+      "primaryDistance": 0
+    },
+    {
+      "mode": "drop",
+      "steps": 600,
+      "frames": 601,
+      "cp6000Scalar": true,
+      "cp6200Scalar": true,
+      "maskDiagnosticsCount": 20,
+      "commonPositionExact": true,
+      "commonUExact": true,
+      "Aevent": 0.114,
+      "entropyEvent": 1.3862943611198906,
+      "phaseCorrect": true,
+      "maxPairError": 5.5511151231257827E-17,
+      "maxGOError": 2.642894583737565E-14,
+      "maxLOError": 3.8857805861880479E-15,
+      "maxFieldError": 8.3266726846886741E-17,
+      "maxMomentError": 0,
+      "maxSelfL2Error": 0,
+      "maxSummaryError": 1.1102230246251565E-16,
+      "maxHoldCacheError": 0,
+      "primaryDistance": 0.0021121831068589524
+    },
+    {
+      "mode": "drop-normalized",
+      "steps": 600,
+      "frames": 601,
+      "cp6000Scalar": true,
+      "cp6200Scalar": true,
+      "maskDiagnosticsCount": 20,
+      "commonPositionExact": true,
+      "commonUExact": true,
+      "Aevent": 0.228,
+      "entropyEvent": 1.3862943611198906,
+      "phaseCorrect": true,
+      "maxPairError": 5.5511151231257827E-17,
+      "maxGOError": 2.7824964554667986E-14,
+      "maxLOError": 4.4408920985006262E-15,
+      "maxFieldError": 8.3266726846886741E-17,
+      "maxMomentError": 0,
+      "maxSelfL2Error": 0,
+      "maxSummaryError": 4.4408920985006262E-16,
+      "maxHoldCacheError": 0,
+      "primaryDistance": -0.00060380649681148336
+    },
+    {
+      "mode": "hold",
+      "steps": 600,
+      "frames": 601,
+      "cp6000Scalar": true,
+      "cp6200Scalar": true,
+      "maskDiagnosticsCount": 20,
+      "commonPositionExact": true,
+      "commonUExact": true,
+      "Aevent": 0.228,
+      "entropyEvent": 2.0794415416798357,
+      "phaseCorrect": true,
+      "maxPairError": 6.9388939039072284E-17,
+      "maxGOError": 2.7033930649622562E-14,
+      "maxLOError": 4.7739590058881731E-15,
+      "maxFieldError": 8.3266726846886741E-17,
+      "maxMomentError": 0,
+      "maxSelfL2Error": 0,
+      "maxSummaryError": 4.4408920985006262E-16,
+      "maxHoldCacheError": 0,
+      "primaryDistance": 0.00099321521156285446
+    }
+  ],
+  "sameState": [
+    {
+      "mode": "fresh",
+      "maxL2RecomputeError": 0,
+      "commonPrefixExact": true,
+      "meanEventL2": 0
+    },
+    {
+      "mode": "drop",
+      "maxL2RecomputeError": 0,
+      "commonPrefixExact": true,
+      "meanEventL2": 0.5198950171221981
+    },
+    {
+      "mode": "drop-normalized",
+      "maxL2RecomputeError": 0,
+      "commonPrefixExact": true,
+      "meanEventL2": 0.19698148866011703
+    },
+    {
+      "mode": "hold",
+      "maxL2RecomputeError": 0,
+      "commonPrefixExact": true,
+      "meanEventL2": 0.094249822103570052
+    }
+  ],
+  "T0": [
+    {
+      "mode": "fresh",
+      "dataExact": true,
+      "stateExact": true,
+      "cacheExact": true,
+      "rngExact": true
+    },
+    {
+      "mode": "drop",
+      "dataExact": true,
+      "stateExact": true,
+      "cacheExact": true,
+      "rngExact": true
+    },
+    {
+      "mode": "drop-normalized",
+      "dataExact": true,
+      "stateExact": true,
+      "cacheExact": true,
+      "rngExact": true
+    },
+    {
+      "mode": "hold",
+      "dataExact": true,
+      "stateExact": true,
+      "cacheExact": true,
+      "rngExact": true
+    }
+  ]
+}

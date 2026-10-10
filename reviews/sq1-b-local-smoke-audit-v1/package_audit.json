@@ -1,0 +1,310 @@
+{
+  "source": "D:\\Work\\Study\\UESTC资料存档\\课程\\通关项目\\paper\\experiment\\sq1_fourbranch_pilot_20260929",
+  "package": "D:\\Work\\Study\\UESTC资料存档\\课程\\通关项目\\paper\\experiment\\sq1_fourbranch_pilot_20260929\\results\\sq1-fourbranch-pilot-v1-seed1-retry",
+  "file_checks": [
+    {
+      "file": "audit.json",
+      "size": 262,
+      "sha256": "05d043d266c58c400b1e5efbf31c38532a685c88606599d399ea312f17a18886",
+      "match": true,
+      "size_match": true
+    },
+    {
+      "file": "DATA_DICTIONARY.md",
+      "size": 1269,
+      "sha256": "cdb278d73d51c6d56ef370d3c1eef895be0b189170263a53b1de239ebc891281",
+      "match": true,
+      "size_match": true
+    },
+    {
+      "file": "drop_seed1.mat",
+      "size": 348369552,
+      "sha256": "97c995224241ae389534100bf3ce475cfc0f1acc65b9f6765e5456c55937bc33",
+      "match": true,
+      "size_match": true
+    },
+    {
+      "file": "drop-normalized_seed1.mat",
+      "size": 522613575,
+      "sha256": "220410d62e3a8022cecd806f1a4daf9ca3b880dd398fe109020cb4f43c96fd7c",
+      "match": true,
+      "size_match": true
+    },
+    {
+      "file": "fresh_seed1.mat",
+      "size": 174164368,
+      "sha256": "1682170253c527d705107c6831a974f35d445fa42f8e6fb9bddd0d359cb60a44",
+      "match": true,
+      "size_match": true
+    },
+    {
+      "file": "hold_seed1.mat",
+      "size": 696626543,
+      "sha256": "cc9f911a7b7f97028d79cfc57e6d5193957baddefa641fcac2f8ce1000a10139",
+      "match": true,
+      "size_match": true
+    },
+    {
+      "file": "load_pilot_example.m",
+      "size": 460,
+      "sha256": "d4c8abdb4785234157b866a4a477cf601a3625a7a136f11e2fa63efbd3a77afd",
+      "match": true,
+      "size_match": true
+    },
+    {
+      "file": "metadata.json",
+      "size": 304,
+      "sha256": "2b0feca26d474482877cd5eb5f9dc5a16687f94dc9c8713988922782ddcf461f",
+      "match": true,
+      "size_match": true
+    },
+    {
+      "file": "README.md",
+      "size": 615,
+      "sha256": "12a2a3e2fbd58e4baec50fb53aa18872f22d39e868e7ac4c11fa76726ed6baec",
+      "match": true,
+      "size_match": true
+    },
+    {
+      "file": "REPRODUCE.md",
+      "size": 72,
+      "sha256": "7764879985b16105bda8f75236790cd57402d96aac268fc5bc5954d00fc04664",
+      "match": true,
+      "size_match": true
+    },
+    {
+      "file": "RUN_MANIFEST.csv",
+      "size": 127,
+      "sha256": "c06048bfcd5d3d08bf0a3d155c29573e4c52a4911b560c7049ff6aecaa175d93",
+      "match": true,
+      "size_match": true
+    },
+    {
+      "file": "T0_results.mat",
+      "size": 272,
+      "sha256": "d4f53212cb17047a7769e4fe8f97ca1fd534a5876395fdff98d1b66bc761f553",
+      "match": true,
+      "size_match": true
+    },
+    {
+      "file": "T0_TEST_MANIFEST.csv",
+      "size": 163,
+      "sha256": "5cb50ed7e32db3a9d3c8ce4840bb90c45e80cd127832420ad3c111c33a61078c",
+      "match": true,
+      "size_match": true
+    },
+    {
+      "file": "tests.json",
+      "size": 1655,
+      "sha256": "bb1fb154b120257a4f475d1f9d244fc5f964c24494d71275299eb17ccaceaf89",
+      "match": true,
+      "size_match": true
+    }
+  ],
+  "source_checks": [
+    {
+      "file": "buildRingConnectivity.m",
+      "sha256": "7f100bb34deaa668edc8fef394bbc11e156e258c5de21bafecf3c5180ef05dd0",
+      "match": true
+    },
+    {
+      "file": "defaultFourBranchConfig.m",
+      "sha256": "a426af8b014cdd61c20d2b6962a77789f137d7630a33304b12073cfd3bb12a00",
+      "match": true
+    },
+    {
+      "file": "fourBranchInputStep.m",
+      "sha256": "6540ae457a46a961098543885c424fbc49f0e681e3569f58d677da30d391afda",
+      "match": true
+    },
+    {
+      "file": "run_fourbranch_pilot.m",
+      "sha256": "beeb4ba33079db0572f6825548da730b4c4645055f5c94a9c26927bf6da7f744",
+      "match": true
+    },
+    {
+      "file": "run_tests.m",
+      "sha256": "3751745c0d1507b900a5e32523da138d73d11a8eca38101729837c6afe4e331c",
+      "match": true
+    },
+    {
+      "file": "simulateFourBranchPilot.m",
+      "sha256": "a9805b93c758620cb7847098814b33c32bb5823f387255e388f0ab85cb468cf6",
+      "match": true
+    }
+  ],
+  "run_manifest": [
+    {
+      "mode": "fresh",
+      "seed": "1",
+      "NAgents": "20",
+      "NNeurons": "100",
+      "NSteps": "6200"
+    },
+    {
+      "mode": "drop",
+      "seed": "1",
+      "NAgents": "20",
+      "NNeurons": "100",
+      "NSteps": "6200"
+    },
+    {
+      "mode": "drop-normalized",
+      "seed": "1",
+      "NAgents": "20",
+      "NNeurons": "100",
+      "NSteps": "6200"
+    },
+    {
+      "mode": "hold",
+      "seed": "1",
+      "NAgents": "20",
+      "NNeurons": "100",
+      "NSteps": "6200"
+    }
+  ],
+  "t0_manifest": [
+    {
+      "# T=0 manifest": "mode",
+      "null": [
+        "seed",
+        "NAgents",
+        "NNeurons",
+        "T",
+        "status"
+      ]
+    },
+    {
+      "# T=0 manifest": "fresh",
+      "null": [
+        "1",
+        "20",
+        "100",
+        "0",
+        "PLANNED"
+      ]
+    },
+    {
+      "# T=0 manifest": " drop",
+      "null": [
+        "1",
+        "20",
+        "100",
+        "0",
+        "PLANNED"
+      ]
+    },
+    {
+      "# T=0 manifest": " drop-normalized",
+      "null": [
+        "1",
+        "20",
+        "100",
+        "0",
+        "PLANNED"
+      ]
+    },
+    {
+      "# T=0 manifest": " hold",
+      "null": [
+        "1",
+        "20",
+        "100",
+        "0",
+        "PLANNED"
+      ]
+    }
+  ],
+  "tests": [
+    {
+      "test_id": "G1",
+      "status": "PASS",
+      "details": "Configuration loads with target N=20, M=100.",
+      "tolerance": null
+    },
+    {
+      "test_id": "G2",
+      "status": "PASS",
+      "details": "Checkpoint steps are 6000 and 6200.",
+      "tolerance": null
+    },
+    {
+      "test_id": "G3",
+      "status": "PASS",
+      "details": "All four modes execute for a short smoke.",
+      "tolerance": null
+    },
+    {
+      "test_id": "G4",
+      "status": "PASS",
+      "details": "Both checkpoints are generated.",
+      "tolerance": null
+    },
+    {
+      "test_id": "G5",
+      "status": "PASS",
+      "details": "Checkpoint state dimensions verified.",
+      "tolerance": null
+    },
+    {
+      "test_id": "G6",
+      "status": "PASS",
+      "details": "Required step fields present.",
+      "tolerance": null
+    },
+    {
+      "test_id": "G7",
+      "status": "PASS",
+      "details": "Selected-neighbor count bounded by N-1.",
+      "tolerance": null
+    },
+    {
+      "test_id": "G8",
+      "status": "PASS",
+      "details": "Active-neighbor count nonnegative.",
+      "tolerance": null
+    },
+    {
+      "test_id": "G9",
+      "status": "PASS",
+      "details": "Pre-occlusion common prefix is fresh.",
+      "tolerance": null
+    },
+    {
+      "test_id": "G10",
+      "status": "PASS",
+      "details": "Fresh branch retains active inputs during intervention.",
+      "tolerance": null
+    },
+    {
+      "test_id": "G11",
+      "status": "PASS",
+      "details": "Hidden truth is stored only in diagnostic records, not used as injected input.",
+      "tolerance": null
+    },
+    {
+      "test_id": "G12",
+      "status": "PASS",
+      "details": "NaN-capable observed/injected bearing fields are exported.",
+      "tolerance": null
+    },
+    {
+      "test_id": "G13",
+      "status": "PASS",
+      "details": "Runner includes overwrite protection and explicit output directory.",
+      "tolerance": null
+    },
+    {
+      "test_id": "G14",
+      "status": "PASS",
+      "details": "Four modes and seed are recorded in RUN_MANIFEST.",
+      "tolerance": null
+    },
+    {
+      "test_id": "G15",
+      "status": "PASS",
+      "details": "Pilot is explicitly marked non-formal; formal batch remains disabled.",
+      "tolerance": null
+    }
+  ]
+}

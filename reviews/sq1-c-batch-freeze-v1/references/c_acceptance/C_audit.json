@@ -1,0 +1,17 @@
+{
+  "matlabVersion": "24.2.0.2712019 (R2024b)",
+  "workerCount": 0,
+  "execution": "serial",
+  "command": "restoredefaultpath; addpath(package_root); run_protocol12_seed1_r3('C_recheck_20261009')",
+  "startTime": "2026-10-09 18:40:07",
+  "endTime": "2026-10-09 18:42:03",
+  "wallSeconds": 116.0252338,
+  "branchSeconds": [
+    3.0388841,
+    2.8339646,
+    2.9886002,
+    2.9383904
+  ],
+  "actualRoot": "D:\\Work\\Study\\UESTC资料存档\\课程\\通关项目\\coding\\reviews\\sq1-b-r3-audit-v1\\source",
+  "overwriteProtection": true
+}

@@ -1,0 +1,377 @@
+{
+  "status": "PASS",
+  "date": "2026-10-10",
+  "evidence_type": "publication_validation",
+  "published_files": 73,
+  "selected_bytes_excluding_record": 1491351,
+  "reader_links_checked": 48,
+  "freeze_hashes_match": true,
+  "main_keys": 560,
+  "T0_keys": 80,
+  "r3_delivery_hash_matches": 96,
+  "r3_independent_tests": "15 PASS",
+  "raw_binaries_staged": 0,
+  "full_batch_allowed": false,
+  "inventory": [
+    {
+      "path": "reviews/B_HANDOFF.md",
+      "sha256": "bd2d09a1e764413fa7a5651952ee3697fe31724efb3cf67ce3979993b2576c71",
+      "bytes": 4344
+    },
+    {
+      "path": "reviews/README.md",
+      "sha256": "be31de9c37aa35bb1ecba792461c91a3b063769358cfd011eff1e624e9ef29be",
+      "bytes": 5200
+    },
+    {
+      "path": "reviews/sq1-b-local-smoke-audit-v1/B_REQUIRED_FIXES.md",
+      "sha256": "40aba5ff6315042715f77e2cae5b59b6acc9e8066391bd455f11a2e61ae118b9",
+      "bytes": 10272
+    },
+    {
+      "path": "reviews/sq1-b-local-smoke-audit-v1/REVIEW.md",
+      "sha256": "6fc4e98f0d67ba36b9bf49b83445394b14d8f7b924d266fd076b44d5616662ec",
+      "bytes": 8319
+    },
+    {
+      "path": "reviews/sq1-b-local-smoke-audit-v1/audit_mat.m",
+      "sha256": "90879bee777666327f47af1941b506000dd4be373bb9999976fa4ac2f7ebc43c",
+      "bytes": 3955
+    },
+    {
+      "path": "reviews/sq1-b-local-smoke-audit-v1/check_package.py",
+      "sha256": "726c27e60a3a79a3c57d9616299b9284f2587209e557f0ddcb4c29ac2bc2ebee",
+      "bytes": 1668
+    },
+    {
+      "path": "reviews/sq1-b-local-smoke-audit-v1/mat_audit.json",
+      "sha256": "af3ab1da77eff263f0dc6c8af9646a9dab22f5aeaa4b222f977164c4ec06586b",
+      "bytes": 13984
+    },
+    {
+      "path": "reviews/sq1-b-local-smoke-audit-v1/matlab.log",
+      "sha256": "9b8e1c460080e8e7ae1fcc337dfee447f2967a9c22740a8eb9a001575ee2d7f3",
+      "bytes": 127
+    },
+    {
+      "path": "reviews/sq1-b-local-smoke-audit-v1/matlab_final.log",
+      "sha256": "9b8e1c460080e8e7ae1fcc337dfee447f2967a9c22740a8eb9a001575ee2d7f3",
+      "bytes": 127
+    },
+    {
+      "path": "reviews/sq1-b-local-smoke-audit-v1/package_audit.json",
+      "sha256": "282853e1f07d67fe9fe48c2b8478724dbadd13acd2d3ff70ec7b19c039ab718d",
+      "bytes": 7939
+    },
+    {
+      "path": "reviews/sq1-b-r2-audit-v1/B_NEXT_TASKS.md",
+      "sha256": "0d1a3c3315333bdcc28dba39fe9ba0d6a1adea3e766831c77ea2f70f48095c8e",
+      "bytes": 6796
+    },
+    {
+      "path": "reviews/sq1-b-r2-audit-v1/REVIEW.md",
+      "sha256": "071cb820ad95edae61a38f57100042feb7015273aa05fc1f478d5f9e4bd93c90",
+      "bytes": 8865
+    },
+    {
+      "path": "reviews/sq1-b-r2-audit-v1/audit_r2.m",
+      "sha256": "8bcea601a2f502ceaecd45e5854b71fdbf19e2444285af87c1315de6b265b9fb",
+      "bytes": 9596
+    },
+    {
+      "path": "reviews/sq1-b-r2-audit-v1/check_package.py",
+      "sha256": "19520e6863cd7a160864c2a892315b51522362ba0298906c4839f09460ed6843",
+      "bytes": 1735
+    },
+    {
+      "path": "reviews/sq1-b-r2-audit-v1/mat_audit.json",
+      "sha256": "0d7619622554e994003e4ba9de407796aee97786f9492ebb4a0277846efd8070",
+      "bytes": 8120
+    },
+    {
+      "path": "reviews/sq1-b-r2-audit-v1/matlab.log",
+      "sha256": "46d16b286997b4246c78239b4314fa47b943a598bc2b96c2fabdc4eaa19f97b8",
+      "bytes": 363
+    },
+    {
+      "path": "reviews/sq1-b-r2-audit-v1/matlab_final.log",
+      "sha256": "c3978f8682a10b9dccdcb82a5fff333df825125431da4393fe973aa1420c692c",
+      "bytes": 128
+    },
+    {
+      "path": "reviews/sq1-b-r2-audit-v1/matlab_retry.log",
+      "sha256": "c3978f8682a10b9dccdcb82a5fff333df825125431da4393fe973aa1420c692c",
+      "bytes": 128
+    },
+    {
+      "path": "reviews/sq1-b-r2-audit-v1/package_audit.json",
+      "sha256": "c11355913ce03a062aa0c41e19e01e6106f0405976e036c9acdc265af849caf2",
+      "bytes": 5834
+    },
+    {
+      "path": "reviews/sq1-b-r3-audit-v1/.gitignore",
+      "sha256": "5c9af37a51722d2379e1b97c313bdd2434b64643e0db386439f6db5ef462b014",
+      "bytes": 21
+    },
+    {
+      "path": "reviews/sq1-b-r3-audit-v1/B_NEXT_TASKS.md",
+      "sha256": "81d415d967e0816736215ebec10f0d2fc0b8258839c01f4367f09086a282af85",
+      "bytes": 4496
+    },
+    {
+      "path": "reviews/sq1-b-r3-audit-v1/C_T0_maxdiff.csv",
+      "sha256": "e6c8737c7ed889305f1060b3ac2e0e75349d9521c1eb1097f93bc1c55496d4c7",
+      "bytes": 69
+    },
+    {
+      "path": "reviews/sq1-b-r3-audit-v1/C_audit.json",
+      "sha256": "53d28fb183606a70ad297e5dbe1c3d6376fec209be418e69e1793ca492d6b26a",
+      "bytes": 539
+    },
+    {
+      "path": "reviews/sq1-b-r3-audit-v1/C_matlab.log",
+      "sha256": "31c2388c7c748e6d8c7121dded9d4d60d8339227ea3a784b27953ecd8c8ec9b0",
+      "bytes": 5782
+    },
+    {
+      "path": "reviews/sq1-b-r3-audit-v1/C_metadata.json",
+      "sha256": "7270ee136ee9e254edd018f875e439837436b0673351fa8ba47c8e10cf2c0cd9",
+      "bytes": 344
+    },
+    {
+      "path": "reviews/sq1-b-r3-audit-v1/C_resume_check.csv",
+      "sha256": "01c6c2e8ddb4e050167fca9bbbb5dc58c130c7e8c2c59996c559ef6c1abeb1c2",
+      "bytes": 271
+    },
+    {
+      "path": "reviews/sq1-b-r3-audit-v1/C_summary.csv",
+      "sha256": "0d9e5a9722fbe8528256a6d8b5dd54e429578d8655f25e75f483b9abacb1c6f2",
+      "bytes": 6003
+    },
+    {
+      "path": "reviews/sq1-b-r3-audit-v1/C_tests.json",
+      "sha256": "4a3d54953179645095a442614beb3aaac587c2576eb58a6e9bc47bfaef56153b",
+      "bytes": 19000
+    },
+    {
+      "path": "reviews/sq1-b-r3-audit-v1/C_weight_contract.csv",
+      "sha256": "b986ab45da8d3f10f9db0429c73517c69a1b6075b0b96296f50acbdef9d3fd00",
+      "bytes": 92
+    },
+    {
+      "path": "reviews/sq1-b-r3-audit-v1/REVIEW.md",
+      "sha256": "c38f2d33eb98ee51632c8cb53cf79b366bc6d731b2bfe91ab846c8abbe8e5b73",
+      "bytes": 7706
+    },
+    {
+      "path": "reviews/sq1-b-r3-audit-v1/audit_delivery.py",
+      "sha256": "f4332e902ca7c0dbb7eada809228bbdc8cb74443f9af8167ac2ef1b97b1cfafa",
+      "bytes": 2444
+    },
+    {
+      "path": "reviews/sq1-b-r3-audit-v1/audit_saved_mat.m",
+      "sha256": "79a409366b3be27a4db799c9f55e14c4975e34ae5ffe41ecc04e34ec2376e5f9",
+      "bytes": 4767
+    },
+    {
+      "path": "reviews/sq1-b-r3-audit-v1/delivery_audit.json",
+      "sha256": "cb9b650d40da81938fb558a88666ebc7110dd259b1cf8a7a9633d053cc98d9ba",
+      "bytes": 8502
+    },
+    {
+      "path": "reviews/sq1-b-r3-audit-v1/fetch_lfs_media.py",
+      "sha256": "089108e7b58ca92228ea36981877dd0c6ba1e7e8e10ef4de3a371b600ef2ed41",
+      "bytes": 1423
+    },
+    {
+      "path": "reviews/sq1-b-r3-audit-v1/fetch_package.py",
+      "sha256": "327943f797d28ad6c53865e9fe1978b623203565ea2783c22898260f8c533d33",
+      "bytes": 2438
+    },
+    {
+      "path": "reviews/sq1-b-r3-audit-v1/lfs_pending.json",
+      "sha256": "45c0b1c9eca729ed6b01eeaa03b39405c485031509ce8b47e255a50ac49bb421",
+      "bytes": 1891
+    },
+    {
+      "path": "reviews/sq1-b-r3-audit-v1/media_download.json",
+      "sha256": "1f5e2002abf99a4997f2aad90da300139448f7cdd85eb644aaa0162be08d83c2",
+      "bytes": 888
+    },
+    {
+      "path": "reviews/sq1-b-r3-audit-v1/reproduce_r3.m",
+      "sha256": "cf6ab7a0aab747e766c7874e50e90d5fce804e34785fafff063eaa4736b4afd2",
+      "bytes": 523
+    },
+    {
+      "path": "reviews/sq1-b-r3-audit-v1/saved_mat.log",
+      "sha256": "ce0123f681c812c5fffc8abbd549c8232fc70c79d605841827f0f157d45a6774",
+      "bytes": 140
+    },
+    {
+      "path": "reviews/sq1-b-r3-audit-v1/saved_mat_audit.json",
+      "sha256": "1fa1a913cb6aeb202543801c5dda9acc19acf0086cd8685bdd7ad91dc59f6b08",
+      "bytes": 3890
+    },
+    {
+      "path": "reviews/sq1-b-r3-audit-v1/source_audit.json",
+      "sha256": "7af4f84ecf6782b031dc9ca9bc05f09c18dc3055f938c9c0af38982193325420",
+      "bytes": 33928
+    },
+    {
+      "path": "reviews/sq1-c-batch-freeze-v1/ADAPTER_CHECK.json",
+      "sha256": "28d0c2d422a3c15e00440c4c204c4ee4580ed1d47bff430c22db360a74ea04cb",
+      "bytes": 1691
+    },
+    {
+      "path": "reviews/sq1-c-batch-freeze-v1/BATCH_ACCEPTANCE.md",
+      "sha256": "0c96b8476f8af71120f0f162e02600108d0e975231e92ec18b58e96f1b44a946",
+      "bytes": 5832
+    },
+    {
+      "path": "reviews/sq1-c-batch-freeze-v1/B_HANDOFF.md",
+      "sha256": "1d7b7c80366e9bc457f56383bf0ff8ba35b8f6c30cca7ace71cfd26aa589208a",
+      "bytes": 4343
+    },
+    {
+      "path": "reviews/sq1-c-batch-freeze-v1/README.md",
+      "sha256": "6b14b99114813ad286654314fe7a6b8b5e3ea13db36c99de9ee05a6b4cc5889a",
+      "bytes": 5351
+    },
+    {
+      "path": "reviews/sq1-c-batch-freeze-v1/RUN_BINDINGS.json",
+      "sha256": "6283e0917c45d38352bdb45a18fa96adf1005ce685f6b61c7c45989ad5137992",
+      "bytes": 919043
+    },
+    {
+      "path": "reviews/sq1-c-batch-freeze-v1/SHA256SUMS.json",
+      "sha256": "78cbbeb620b05161200dc9e00af0a20e372438c2e87d1f247f5316d2da31a05f",
+      "bytes": 4579
+    },
+    {
+      "path": "reviews/sq1-c-batch-freeze-v1/SOURCE_LOCK.json",
+      "sha256": "e6679408b50620383876b473c973c0839f062489ed23ec75ee4276b3b655b4fe",
+      "bytes": 12648
+    },
+    {
+      "path": "reviews/sq1-c-batch-freeze-v1/T0_BINDINGS.json",
+      "sha256": "94dd7d7feea18eb35eceff9e727c1c9b36310b782076425696b1f96f5129b5d3",
+      "bytes": 109499
+    },
+    {
+      "path": "reviews/sq1-c-batch-freeze-v1/VALIDATION.json",
+      "sha256": "b3f009f1cd4314d99d755f86892755f4d4eabd148536c996e3ff3ada31451f1b",
+      "bytes": 828
+    },
+    {
+      "path": "reviews/sq1-c-batch-freeze-v1/execution_config.json",
+      "sha256": "ce332ad6d9660f6146269e9b1c1ed27e71f119620664520444a28162e21a1681",
+      "bytes": 5800
+    },
+    {
+      "path": "reviews/sq1-c-batch-freeze-v1/prepare_freeze.py",
+      "sha256": "69d518c47729ec46247e6abd0063c480c33ea72edd842e521a5344853251b153",
+      "bytes": 12969
+    },
+    {
+      "path": "reviews/sq1-c-batch-freeze-v1/references/c_acceptance/B_NEXT_TASKS.md",
+      "sha256": "81d415d967e0816736215ebec10f0d2fc0b8258839c01f4367f09086a282af85",
+      "bytes": 4496
+    },
+    {
+      "path": "reviews/sq1-c-batch-freeze-v1/references/c_acceptance/C_audit.json",
+      "sha256": "53d28fb183606a70ad297e5dbe1c3d6376fec209be418e69e1793ca492d6b26a",
+      "bytes": 539
+    },
+    {
+      "path": "reviews/sq1-c-batch-freeze-v1/references/c_acceptance/C_matlab.log",
+      "sha256": "31c2388c7c748e6d8c7121dded9d4d60d8339227ea3a784b27953ecd8c8ec9b0",
+      "bytes": 5782
+    },
+    {
+      "path": "reviews/sq1-c-batch-freeze-v1/references/c_acceptance/C_tests.json",
+      "sha256": "4a3d54953179645095a442614beb3aaac587c2576eb58a6e9bc47bfaef56153b",
+      "bytes": 19000
+    },
+    {
+      "path": "reviews/sq1-c-batch-freeze-v1/references/c_acceptance/REVIEW.md",
+      "sha256": "c38f2d33eb98ee51632c8cb53cf79b366bc6d731b2bfe91ab846c8abbe8e5b73",
+      "bytes": 7706
+    },
+    {
+      "path": "reviews/sq1-c-batch-freeze-v1/references/c_acceptance/delivery_audit.json",
+      "sha256": "cb9b650d40da81938fb558a88666ebc7110dd259b1cf8a7a9633d053cc98d9ba",
+      "bytes": 8502
+    },
+    {
+      "path": "reviews/sq1-c-batch-freeze-v1/references/c_acceptance/saved_mat_audit.json",
+      "sha256": "1fa1a913cb6aeb202543801c5dda9acc19acf0086cd8685bdd7ad91dc59f6b08",
+      "bytes": 3890
+    },
+    {
+      "path": "reviews/sq1-c-batch-freeze-v1/references/c_acceptance/source_audit.json",
+      "sha256": "7af4f84ecf6782b031dc9ca9bc05f09c18dc3055f938c9c0af38982193325420",
+      "bytes": 33928
+    },
+    {
+      "path": "reviews/sq1-c-batch-freeze-v1/references/protocol/ACCEPTANCE.md",
+      "sha256": "f1d8f61a99e9d3fd5bec3124d8df603809ec72d23e2c767486fd7141bb1162cc",
+      "bytes": 3370
+    },
+    {
+      "path": "reviews/sq1-c-batch-freeze-v1/references/protocol/A_B_INPUT_INTERFACE.md",
+      "sha256": "95325203759985def70c3dcd3bdd8dabea01991138c7d4d3e284e9c09e83323e",
+      "bytes": 3324
+    },
+    {
+      "path": "reviews/sq1-c-batch-freeze-v1/references/protocol/B_DELIVERY_CHECKLIST.md",
+      "sha256": "553bba0e864198889384f4061e12c5924aef5e11e5a1a324ab3068699a1e05da",
+      "bytes": 7503
+    },
+    {
+      "path": "reviews/sq1-c-batch-freeze-v1/references/protocol/DATA_CONTRACT.md",
+      "sha256": "8622bc2e1cb784a2b21558a87f9575e37e374260506feb4d0703dec192737fe6",
+      "bytes": 3805
+    },
+    {
+      "path": "reviews/sq1-c-batch-freeze-v1/references/protocol/EXECUTION_ORDER.md",
+      "sha256": "5d87f7138b8fac5d576aec7af111be2805c76b3c7f422ffbce7ef510d9fec1e5",
+      "bytes": 3540
+    },
+    {
+      "path": "reviews/sq1-c-batch-freeze-v1/references/protocol/PROTOCOL.md",
+      "sha256": "dd58d80b5b3740b5c39e56fcf394d662729b95c84a4404ece7017ec64ebfa1ad",
+      "bytes": 16298
+    },
+    {
+      "path": "reviews/sq1-c-batch-freeze-v1/references/protocol/RUN_MANIFEST.csv",
+      "sha256": "ff5ef9d5c25e415cbd23a65a3e296ea3c590a42a6d6f323c2f5f801a2299337a",
+      "bytes": 55654
+    },
+    {
+      "path": "reviews/sq1-c-batch-freeze-v1/references/protocol/T0_TEST_MANIFEST.csv",
+      "sha256": "4b1563e38c2806c4103978a37b4474d4c20156bf3ec129a526956c028b5ae6e3",
+      "bytes": 7510
+    },
+    {
+      "path": "reviews/sq1-c-batch-freeze-v1/references/protocol/protocol.json",
+      "sha256": "0bace91fabbfde9493324906d8839f4382e14a94f803d77d9713f6a5d9e09d4f",
+      "bytes": 2498
+    },
+    {
+      "path": "reviews/sq1-c-batch-freeze-v1/validate_freeze.py",
+      "sha256": "4d426ca8221769ca1cffa1ccdc2ab3c87912f84c152579e61db870fd458de54e",
+      "bytes": 10236
+    },
+    {
+      "path": "reviews/sq1-publication-20261010-v1/README.md",
+      "sha256": "2b2f43d240d0ed4b2a3a1bfba812e2b82245a3b1436b541c9c820ff715ef5a15",
+      "bytes": 3925
+    },
+    {
+      "path": "reviews/sq1-publication-20261010-v1/verify_publication.py",
+      "sha256": "5a0d572881ecd456cb53b0e31e94179e3da3de1fcefd30230e4eab87174939d5",
+      "bytes": 4605
+    }
+  ]
+}

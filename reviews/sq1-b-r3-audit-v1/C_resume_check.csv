@@ -1,0 +1,9 @@
+mode,checkpointStep,maxDiff,mismatchCount,fieldsCompared,maskDiagnosticsCount
+fresh,6000,0,0,70,20
+fresh,6200,0,0,70,20
+drop,6000,0,0,70,20
+drop,6200,0,0,70,20
+drop-normalized,6000,0,0,70,20
+drop-normalized,6200,0,0,70,20
+hold,6000,0,0,70,20
+hold,6200,0,0,70,20

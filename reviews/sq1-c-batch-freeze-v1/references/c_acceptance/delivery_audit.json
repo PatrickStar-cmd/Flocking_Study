@@ -1,0 +1,406 @@
+{
+  "source_checks": [
+    {
+      "path": "angularSetMetrics.m",
+      "match": true
+    },
+    {
+      "path": "buildFreshOracle.m",
+      "match": true
+    },
+    {
+      "path": "buildReferenceReplay.m",
+      "match": true
+    },
+    {
+      "path": "buildRingConnectivity.m",
+      "match": true
+    },
+    {
+      "path": "buildSourceManifest.m",
+      "match": true
+    },
+    {
+      "path": "checkpointToStart.m",
+      "match": true
+    },
+    {
+      "path": "compareSegments.m",
+      "match": true
+    },
+    {
+      "path": "controllerInputFromObservation.m",
+      "match": true
+    },
+    {
+      "path": "createOutputDirectory.m",
+      "match": true
+    },
+    {
+      "path": "decodeNeuralActivity.m",
+      "match": true
+    },
+    {
+      "path": "defaultFourBranchConfig.m",
+      "match": true
+    },
+    {
+      "path": "fileSHA256.m",
+      "match": true
+    },
+    {
+      "path": "finalizePackage.m",
+      "match": true
+    },
+    {
+      "path": "fixedTargetIds.m",
+      "match": true
+    },
+    {
+      "path": "fourBranchInputStep.m",
+      "match": true
+    },
+    {
+      "path": "generateSummary.m",
+      "match": true
+    },
+    {
+      "path": "initializeCoreState.m",
+      "match": true
+    },
+    {
+      "path": "initializeInputState.m",
+      "match": true
+    },
+    {
+      "path": "load_pilot_example.m",
+      "match": true
+    },
+    {
+      "path": "makeProtocolMasks.m",
+      "match": true
+    },
+    {
+      "path": "resumeProtocolFromCheckpoint.m",
+      "match": true
+    },
+    {
+      "path": "run_protocol12_seed1_r3.m",
+      "match": true
+    },
+    {
+      "path": "run_tests.m",
+      "match": true
+    },
+    {
+      "path": "sensorObservation.m",
+      "match": true
+    },
+    {
+      "path": "simulateProtocolSegment.m",
+      "match": true
+    },
+    {
+      "path": "writeJson.m",
+      "match": true
+    },
+    {
+      "path": "tests/protocolAssertions.m",
+      "match": true
+    },
+    {
+      "path": "sources/A/SQ1_A_HANDOFF.md",
+      "match": true
+    },
+    {
+      "path": "sources/A/SQ1_LOCAL_INPUT_MODEL.md",
+      "match": true
+    },
+    {
+      "path": "sources/A/buildRingConnectivity.m",
+      "match": true
+    },
+    {
+      "path": "sources/A/localSocialInputMetrics.m",
+      "match": true
+    },
+    {
+      "path": "sources/A/plotSq1LocalE1.m",
+      "match": true
+    },
+    {
+      "path": "sources/A/replayLocalSocialInput.m",
+      "match": true
+    },
+    {
+      "path": "sources/A/runSq1LocalE1.m",
+      "match": true
+    },
+    {
+      "path": "sources/A/testLocalSocialInput.m",
+      "match": true
+    },
+    {
+      "path": "sources/legacy/simulateCollectiveFlockingNeuralField.m",
+      "match": true
+    },
+    {
+      "path": "sources/legacy/simulateProtocolSegment_r2.m",
+      "match": true
+    },
+    {
+      "path": "sources/protocol/ACCEPTANCE.md",
+      "match": true
+    },
+    {
+      "path": "sources/protocol/A_B_INPUT_INTERFACE.md",
+      "match": true
+    },
+    {
+      "path": "sources/protocol/B_DELIVERY_CHECKLIST.md",
+      "match": true
+    },
+    {
+      "path": "sources/protocol/DATA_CONTRACT.md",
+      "match": true
+    },
+    {
+      "path": "sources/protocol/EXECUTION_ORDER.md",
+      "match": true
+    },
+    {
+      "path": "sources/protocol/PROTOCOL.md",
+      "match": true
+    }
+  ],
+  "snapshot_checks": [
+    {
+      "path": "buildRingConnectivity.m",
+      "type": "A",
+      "match": true
+    },
+    {
+      "path": "localSocialInputMetrics.m",
+      "type": "A",
+      "match": true
+    },
+    {
+      "path": "plotSq1LocalE1.m",
+      "type": "A",
+      "match": true
+    },
+    {
+      "path": "replayLocalSocialInput.m",
+      "type": "A",
+      "match": true
+    },
+    {
+      "path": "runSq1LocalE1.m",
+      "type": "A",
+      "match": true
+    },
+    {
+      "path": "SQ1_A_HANDOFF.md",
+      "type": "A",
+      "match": true
+    },
+    {
+      "path": "SQ1_LOCAL_INPUT_MODEL.md",
+      "type": "A",
+      "match": true
+    },
+    {
+      "path": "testLocalSocialInput.m",
+      "type": "A",
+      "match": true
+    },
+    {
+      "path": "ACCEPTANCE.md",
+      "type": "protocol",
+      "match": true
+    },
+    {
+      "path": "A_B_INPUT_INTERFACE.md",
+      "type": "protocol",
+      "match": true
+    },
+    {
+      "path": "B_DELIVERY_CHECKLIST.md",
+      "type": "protocol",
+      "match": true
+    },
+    {
+      "path": "DATA_CONTRACT.md",
+      "type": "protocol",
+      "match": true
+    },
+    {
+      "path": "EXECUTION_ORDER.md",
+      "type": "protocol",
+      "match": true
+    },
+    {
+      "path": "PROTOCOL.md",
+      "type": "protocol",
+      "match": true
+    },
+    {
+      "path": "simulateCollectiveFlockingNeuralField.m",
+      "type": "original",
+      "match": true
+    }
+  ],
+  "test_log_checks": [
+    {
+      "test_id": "G1",
+      "status": "PASS",
+      "log_exists": true,
+      "reports_pass": true
+    },
+    {
+      "test_id": "G2",
+      "status": "PASS",
+      "log_exists": true,
+      "reports_pass": true
+    },
+    {
+      "test_id": "G3",
+      "status": "PASS",
+      "log_exists": true,
+      "reports_pass": true
+    },
+    {
+      "test_id": "G4",
+      "status": "PASS",
+      "log_exists": true,
+      "reports_pass": true
+    },
+    {
+      "test_id": "G5",
+      "status": "PASS",
+      "log_exists": true,
+      "reports_pass": true
+    },
+    {
+      "test_id": "G6",
+      "status": "PASS",
+      "log_exists": true,
+      "reports_pass": true
+    },
+    {
+      "test_id": "G7",
+      "status": "PASS",
+      "log_exists": true,
+      "reports_pass": true
+    },
+    {
+      "test_id": "G8",
+      "status": "PASS",
+      "log_exists": true,
+      "reports_pass": true
+    },
+    {
+      "test_id": "G9",
+      "status": "PASS",
+      "log_exists": true,
+      "reports_pass": true
+    },
+    {
+      "test_id": "G10",
+      "status": "PASS",
+      "log_exists": true,
+      "reports_pass": true
+    },
+    {
+      "test_id": "G11",
+      "status": "PASS",
+      "log_exists": true,
+      "reports_pass": true
+    },
+    {
+      "test_id": "G12",
+      "status": "PASS",
+      "log_exists": true,
+      "reports_pass": true
+    },
+    {
+      "test_id": "G13",
+      "status": "PASS",
+      "log_exists": true,
+      "reports_pass": true
+    },
+    {
+      "test_id": "G14",
+      "status": "PASS",
+      "log_exists": true,
+      "reports_pass": true
+    },
+    {
+      "test_id": "G15",
+      "status": "PASS",
+      "log_exists": true,
+      "reports_pass": true
+    }
+  ],
+  "T0": {
+    "planned": 80,
+    "completed": 4,
+    "not_run": 76
+  },
+  "runs": [
+    {
+      "run_id": "fresh_seed1_random_d34",
+      "seed": "1",
+      "mode": "fresh",
+      "mask_rule": "random",
+      "duration_steps": "34",
+      "reference_id": "fresh_seed1",
+      "checkpoint_id": "seed1_step6000",
+      "file_path": "fresh_seed1.mat",
+      "status": "COMPLETED",
+      "error_reason": "",
+      "is_shared_reference": "1"
+    },
+    {
+      "run_id": "drop_seed1_random_d34",
+      "seed": "1",
+      "mode": "drop",
+      "mask_rule": "random",
+      "duration_steps": "34",
+      "reference_id": "fresh_seed1",
+      "checkpoint_id": "seed1_step6000",
+      "file_path": "drop_seed1.mat",
+      "status": "COMPLETED",
+      "error_reason": "",
+      "is_shared_reference": "0"
+    },
+    {
+      "run_id": "drop-normalized_seed1_random_d34",
+      "seed": "1",
+      "mode": "drop-normalized",
+      "mask_rule": "random",
+      "duration_steps": "34",
+      "reference_id": "fresh_seed1",
+      "checkpoint_id": "seed1_step6000",
+      "file_path": "drop-normalized_seed1.mat",
+      "status": "COMPLETED",
+      "error_reason": "",
+      "is_shared_reference": "0"
+    },
+    {
+      "run_id": "hold_seed1_random_d34",
+      "seed": "1",
+      "mode": "hold",
+      "mask_rule": "random",
+      "duration_steps": "34",
+      "reference_id": "fresh_seed1",
+      "checkpoint_id": "seed1_step6000",
+      "file_path": "hold_seed1.mat",
+      "status": "COMPLETED",
+      "error_reason": "",
+      "is_shared_reference": "0"
+    }
+  ],
+  "protocol_hash_matches": true,
+  "config_hash_matches": true
+}

@@ -1,0 +1,10 @@
+{
+  "protocol_version": "1.2",
+  "status": "GENERATED_PENDING_C_REVIEW",
+  "formalBatchAllowed": false,
+  "seed": 1,
+  "protocolSHA": "dd58d80b5b3740b5c39e56fcf394d662729b95c84a4404ece7017ec64ebfa1ad",
+  "configSHA": "36cef66b884a27f31fabffd9cfb26c0867ace8db173cef218452ae16c3847e58",
+  "shared_reference": "fresh_seed1",
+  "failedTests": []
+}
