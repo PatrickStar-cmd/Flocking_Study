@@ -1,0 +1,11 @@
+{
+  "run_id": "fresh_seed1_A228",
+  "seed": 1,
+  "A0": 0.228,
+  "h": 0,
+  "structure": "reference",
+  "mode": "fresh",
+  "file": "references/fresh_seed1_A228.mat",
+  "elapsedSeconds": 15.8983255,
+  "status": "COMPLETE"
+}

@@ -1,0 +1,11 @@
+test,status,maxDifference,detail
+vectorized_KF_matches_scalar,PASS,4.44089209850063e-16,Executed assertions
+circular_angle_and_PSD,PASS,0,Executed assertions
+T0_five_methods,PASS,0,Executed assertions
+h0_five_methods,PASS,0,Executed assertions
+checkpoint_resume,PASS,0,Executed assertions
+hidden_truth_interface,PASS,0,Controller has no truth/position argument; rejects finite hidden measurements
+weight_and_recovery_contract,PASS,0,Executed assertions
+h8_no_fresh_boundary,PASS,0,Executed assertions
+A0_zero_boundary,PASS,0,Executed assertions
+legacy_r3_core_parity,PASS,0,Executed assertions

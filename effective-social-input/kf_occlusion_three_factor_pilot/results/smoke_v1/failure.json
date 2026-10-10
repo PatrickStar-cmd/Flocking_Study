@@ -1,0 +1,16 @@
+{
+  "status": "FAILED",
+  "message": "在不同结构体之间进行下标赋值。\n\n出错 run_kf_prediction_diagnostics (第 44 行)\n    rows(r)=row;\n\n出错 run_kf_occlusion_pilot (第 42 行)\n                [diagnostic,dr]=run_kf_prediction_diagnostics(fresh,cp,c,cond);",
+  "elapsedSeconds": 31.2637132,
+  "lastManifest": {
+    "run_id": "fresh_seed1_A228",
+    "seed": 1,
+    "A0": 0.228,
+    "h": 0,
+    "structure": "reference",
+    "mode": "fresh",
+    "file": "references/fresh_seed1_A228.mat",
+    "elapsedSeconds": 15.8983255,
+    "status": "COMPLETE"
+  }
+}

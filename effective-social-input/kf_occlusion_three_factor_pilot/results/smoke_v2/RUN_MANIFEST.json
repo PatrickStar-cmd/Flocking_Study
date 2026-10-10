@@ -1,0 +1,57 @@
+[
+  {
+    "run_id": "fresh_seed1_A228",
+    "seed": 1,
+    "A0": 0.228,
+    "h": 0,
+    "structure": "reference",
+    "mode": "fresh",
+    "file": "references/fresh_seed1_A228.mat",
+    "elapsedSeconds": 16.1067684,
+    "status": "COMPLETE"
+  },
+  {
+    "run_id": "seed1_h4_random_A228_drop",
+    "seed": 1,
+    "A0": 0.228,
+    "h": 4,
+    "structure": "random",
+    "mode": "drop",
+    "file": "conditions/seed1_h4_random_A228/drop.mat",
+    "elapsedSeconds": 4.3738885,
+    "status": "COMPLETE"
+  },
+  {
+    "run_id": "seed1_h4_random_A228_drop-normalized",
+    "seed": 1,
+    "A0": 0.228,
+    "h": 4,
+    "structure": "random",
+    "mode": "drop-normalized",
+    "file": "conditions/seed1_h4_random_A228/drop-normalized.mat",
+    "elapsedSeconds": 3.9704221,
+    "status": "COMPLETE"
+  },
+  {
+    "run_id": "seed1_h4_random_A228_hold",
+    "seed": 1,
+    "A0": 0.228,
+    "h": 4,
+    "structure": "random",
+    "mode": "hold",
+    "file": "conditions/seed1_h4_random_A228/hold.mat",
+    "elapsedSeconds": 3.94074,
+    "status": "COMPLETE"
+  },
+  {
+    "run_id": "seed1_h4_random_A228_KF-mean",
+    "seed": 1,
+    "A0": 0.228,
+    "h": 4,
+    "structure": "random",
+    "mode": "KF-mean",
+    "file": "conditions/seed1_h4_random_A228/KF-mean.mat",
+    "elapsedSeconds": 3.9022654,
+    "status": "COMPLETE"
+  }
+]

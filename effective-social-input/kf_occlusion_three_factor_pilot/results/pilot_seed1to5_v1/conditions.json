@@ -1,0 +1,51 @@
+[
+  {
+    "id": "h2_random_A228",
+    "h": 2,
+    "A0": 0.228,
+    "label": "random",
+    "maskRule": "random"
+  },
+  {
+    "id": "h4_random_A228",
+    "h": 4,
+    "A0": 0.228,
+    "label": "random",
+    "maskRule": "random"
+  },
+  {
+    "id": "h6_random_A228",
+    "h": 6,
+    "A0": 0.228,
+    "label": "random",
+    "maskRule": "random"
+  },
+  {
+    "id": "h4_concentrated_A228",
+    "h": 4,
+    "A0": 0.228,
+    "label": "concentrated",
+    "maskRule": "max_hidden_R1"
+  },
+  {
+    "id": "h4_dispersed_A228",
+    "h": 4,
+    "A0": 0.228,
+    "label": "dispersed",
+    "maskRule": "min_hidden_R1"
+  },
+  {
+    "id": "h4_random_A114",
+    "h": 4,
+    "A0": 0.114,
+    "label": "random",
+    "maskRule": "random"
+  },
+  {
+    "id": "h4_random_A456",
+    "h": 4,
+    "A0": 0.456,
+    "label": "random",
+    "maskRule": "random"
+  }
+]

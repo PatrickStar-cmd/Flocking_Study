@@ -1,0 +1,6 @@
+run_id,seed,A0,h,structure,mode,file,elapsedSeconds,status
+fresh_seed1_A228,1,0.228,0,reference,fresh,references/fresh_seed1_A228.mat,16.1067684,COMPLETE
+seed1_h4_random_A228_drop,1,0.228,4,random,drop,conditions/seed1_h4_random_A228/drop.mat,4.3738885,COMPLETE
+seed1_h4_random_A228_drop-normalized,1,0.228,4,random,drop-normalized,conditions/seed1_h4_random_A228/drop-normalized.mat,3.9704221,COMPLETE
+seed1_h4_random_A228_hold,1,0.228,4,random,hold,conditions/seed1_h4_random_A228/hold.mat,3.94074,COMPLETE
+seed1_h4_random_A228_KF-mean,1,0.228,4,random,KF-mean,conditions/seed1_h4_random_A228/KF-mean.mat,3.9022654,COMPLETE

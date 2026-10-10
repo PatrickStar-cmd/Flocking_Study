@@ -1,0 +1,16 @@
+vectorized_KF_matches_scalar: PASS (max diff 4.44e-16)
+circular_angle_and_PSD: PASS (max diff 0)
+T0_five_methods: PASS (max diff 0)
+h0_five_methods: PASS (max diff 0)
+checkpoint_resume: PASS (max diff 0)
+hidden_truth_interface: PASS (max diff 0)
+weight_and_recovery_contract: FAIL (max diff 0)
+h8_no_fresh_boundary: PASS (max diff 0)
+A0_zero_boundary: PASS (max diff 0)
+legacy_r3_core_parity: PASS (max diff 0)
+{错误使用 assert
+Software checks failed; inspect preserved log
+
+出错 run_software_checks (第 105 行)
+assert(all(strcmp({report.status},'PASS')),'KF:SoftwareGate','Software checks failed; inspect preserved log');
+} 

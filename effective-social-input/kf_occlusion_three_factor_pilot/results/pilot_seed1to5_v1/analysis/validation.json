@@ -1,0 +1,18 @@
+{
+  "status": "PASS",
+  "trajectoryCount": 155,
+  "uniqueConditions": 7,
+  "independentSeedCount": 5,
+  "rawSummaryRows": 700,
+  "branchDataContractChecks": 140,
+  "sameStateChecks": 175,
+  "offlineDiagnosticChecks": 105,
+  "maxRecomputeDifference": 1.0769163338864018e-14,
+  "bootstrap": {
+    "unit": "seed",
+    "draws": 5000,
+    "seed": 20261010,
+    "sharedDrawIndices": true
+  },
+  "exclusions": "none"
+}

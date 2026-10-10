@@ -1,0 +1,4 @@
+# Full trajectories and checkpoints remain local; regenerate with MATLAB.
+*.mat
+__pycache__/
+*.pyc

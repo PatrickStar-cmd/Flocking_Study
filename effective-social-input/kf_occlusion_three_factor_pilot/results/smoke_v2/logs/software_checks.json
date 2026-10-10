@@ -1,0 +1,62 @@
+[
+  {
+    "test": "vectorized_KF_matches_scalar",
+    "status": "PASS",
+    "maxDifference": 4.4408920985006262E-16,
+    "detail": "Executed assertions"
+  },
+  {
+    "test": "circular_angle_and_PSD",
+    "status": "PASS",
+    "maxDifference": 0,
+    "detail": "Executed assertions"
+  },
+  {
+    "test": "T0_five_methods",
+    "status": "PASS",
+    "maxDifference": 0,
+    "detail": "Executed assertions"
+  },
+  {
+    "test": "h0_five_methods",
+    "status": "PASS",
+    "maxDifference": 0,
+    "detail": "Executed assertions"
+  },
+  {
+    "test": "checkpoint_resume",
+    "status": "PASS",
+    "maxDifference": 0,
+    "detail": "Executed assertions"
+  },
+  {
+    "test": "hidden_truth_interface",
+    "status": "PASS",
+    "maxDifference": 0,
+    "detail": "Controller has no truth/position argument; rejects finite hidden measurements"
+  },
+  {
+    "test": "weight_and_recovery_contract",
+    "status": "PASS",
+    "maxDifference": 0,
+    "detail": "Executed assertions"
+  },
+  {
+    "test": "h8_no_fresh_boundary",
+    "status": "PASS",
+    "maxDifference": 0,
+    "detail": "Executed assertions"
+  },
+  {
+    "test": "A0_zero_boundary",
+    "status": "PASS",
+    "maxDifference": 0,
+    "detail": "Executed assertions"
+  },
+  {
+    "test": "legacy_r3_core_parity",
+    "status": "PASS",
+    "maxDifference": 0,
+    "detail": "Executed assertions"
+  }
+]

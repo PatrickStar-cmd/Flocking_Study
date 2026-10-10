@@ -1,0 +1,20 @@
+Start 2026-10-10 19:53:53; MATLAB 9.14.0.2206163 (R2023a); profile smoke
+vectorized_KF_matches_scalar: PASS (max diff 4.44e-16)
+circular_angle_and_PSD: PASS (max diff 0)
+T0_five_methods: PASS (max diff 0)
+h0_five_methods: PASS (max diff 0)
+checkpoint_resume: PASS (max diff 0)
+hidden_truth_interface: PASS (max diff 0)
+weight_and_recovery_contract: PASS (max diff 0)
+h8_no_fresh_boundary: PASS (max diff 0)
+A0_zero_boundary: PASS (max diff 0)
+legacy_r3_core_parity: PASS (max diff 0)
+Reference seed1 A0 0.228: 0 -> 6600
+Offline + same-state seed1_h4_random_A228
+在不同结构体之间进行下标赋值。
+
+出错 run_kf_prediction_diagnostics (第 44 行)
+    rows(r)=row;
+
+出错 run_kf_occlusion_pilot (第 42 行)
+                [diagnostic,dr]=run_kf_prediction_diagnostics(fresh,cp,c,cond);

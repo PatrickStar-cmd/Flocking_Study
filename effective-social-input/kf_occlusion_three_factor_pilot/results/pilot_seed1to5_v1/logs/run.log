@@ -1,0 +1,202 @@
+Start 2026-10-10 19:57:17; MATLAB 9.14.0.2206163 (R2023a); profile pilot
+vectorized_KF_matches_scalar: PASS (max diff 4.44e-16)
+circular_angle_and_PSD: PASS (max diff 0)
+T0_five_methods: PASS (max diff 0)
+h0_five_methods: PASS (max diff 0)
+checkpoint_resume: PASS (max diff 0)
+hidden_truth_interface: PASS (max diff 0)
+weight_and_recovery_contract: PASS (max diff 0)
+h8_no_fresh_boundary: PASS (max diff 0)
+A0_zero_boundary: PASS (max diff 0)
+legacy_r3_core_parity: PASS (max diff 0)
+Reference seed1 A0 0.114: 0 -> 6600
+Offline + same-state seed1_h4_random_A114
+Closed-loop seed1_h4_random_A114_drop
+Closed-loop seed1_h4_random_A114_drop-normalized
+Closed-loop seed1_h4_random_A114_hold
+Closed-loop seed1_h4_random_A114_KF-mean
+Reference seed1 A0 0.228: 0 -> 6600
+Offline + same-state seed1_h2_random_A228
+Closed-loop seed1_h2_random_A228_drop
+Closed-loop seed1_h2_random_A228_drop-normalized
+Closed-loop seed1_h2_random_A228_hold
+Closed-loop seed1_h2_random_A228_KF-mean
+Offline + same-state seed1_h4_random_A228
+Closed-loop seed1_h4_random_A228_drop
+Closed-loop seed1_h4_random_A228_drop-normalized
+Closed-loop seed1_h4_random_A228_hold
+Closed-loop seed1_h4_random_A228_KF-mean
+Offline + same-state seed1_h6_random_A228
+Closed-loop seed1_h6_random_A228_drop
+Closed-loop seed1_h6_random_A228_drop-normalized
+Closed-loop seed1_h6_random_A228_hold
+Closed-loop seed1_h6_random_A228_KF-mean
+Offline + same-state seed1_h4_concentrated_A228
+Closed-loop seed1_h4_concentrated_A228_drop
+Closed-loop seed1_h4_concentrated_A228_drop-normalized
+Closed-loop seed1_h4_concentrated_A228_hold
+Closed-loop seed1_h4_concentrated_A228_KF-mean
+Offline + same-state seed1_h4_dispersed_A228
+Closed-loop seed1_h4_dispersed_A228_drop
+Closed-loop seed1_h4_dispersed_A228_drop-normalized
+Closed-loop seed1_h4_dispersed_A228_hold
+Closed-loop seed1_h4_dispersed_A228_KF-mean
+Reference seed1 A0 0.456: 0 -> 6600
+Offline + same-state seed1_h4_random_A456
+Closed-loop seed1_h4_random_A456_drop
+Closed-loop seed1_h4_random_A456_drop-normalized
+Closed-loop seed1_h4_random_A456_hold
+Closed-loop seed1_h4_random_A456_KF-mean
+Reference seed2 A0 0.114: 0 -> 6600
+Offline + same-state seed2_h4_random_A114
+Closed-loop seed2_h4_random_A114_drop
+Closed-loop seed2_h4_random_A114_drop-normalized
+Closed-loop seed2_h4_random_A114_hold
+Closed-loop seed2_h4_random_A114_KF-mean
+Reference seed2 A0 0.228: 0 -> 6600
+Offline + same-state seed2_h2_random_A228
+Closed-loop seed2_h2_random_A228_drop
+Closed-loop seed2_h2_random_A228_drop-normalized
+Closed-loop seed2_h2_random_A228_hold
+Closed-loop seed2_h2_random_A228_KF-mean
+Offline + same-state seed2_h4_random_A228
+Closed-loop seed2_h4_random_A228_drop
+Closed-loop seed2_h4_random_A228_drop-normalized
+Closed-loop seed2_h4_random_A228_hold
+Closed-loop seed2_h4_random_A228_KF-mean
+Offline + same-state seed2_h6_random_A228
+Closed-loop seed2_h6_random_A228_drop
+Closed-loop seed2_h6_random_A228_drop-normalized
+Closed-loop seed2_h6_random_A228_hold
+Closed-loop seed2_h6_random_A228_KF-mean
+Offline + same-state seed2_h4_concentrated_A228
+Closed-loop seed2_h4_concentrated_A228_drop
+Closed-loop seed2_h4_concentrated_A228_drop-normalized
+Closed-loop seed2_h4_concentrated_A228_hold
+Closed-loop seed2_h4_concentrated_A228_KF-mean
+Offline + same-state seed2_h4_dispersed_A228
+Closed-loop seed2_h4_dispersed_A228_drop
+Closed-loop seed2_h4_dispersed_A228_drop-normalized
+Closed-loop seed2_h4_dispersed_A228_hold
+Closed-loop seed2_h4_dispersed_A228_KF-mean
+Reference seed2 A0 0.456: 0 -> 6600
+Offline + same-state seed2_h4_random_A456
+Closed-loop seed2_h4_random_A456_drop
+Closed-loop seed2_h4_random_A456_drop-normalized
+Closed-loop seed2_h4_random_A456_hold
+Closed-loop seed2_h4_random_A456_KF-mean
+Reference seed3 A0 0.114: 0 -> 6600
+Offline + same-state seed3_h4_random_A114
+Closed-loop seed3_h4_random_A114_drop
+Closed-loop seed3_h4_random_A114_drop-normalized
+Closed-loop seed3_h4_random_A114_hold
+Closed-loop seed3_h4_random_A114_KF-mean
+Reference seed3 A0 0.228: 0 -> 6600
+Offline + same-state seed3_h2_random_A228
+Closed-loop seed3_h2_random_A228_drop
+Closed-loop seed3_h2_random_A228_drop-normalized
+Closed-loop seed3_h2_random_A228_hold
+Closed-loop seed3_h2_random_A228_KF-mean
+Offline + same-state seed3_h4_random_A228
+Closed-loop seed3_h4_random_A228_drop
+Closed-loop seed3_h4_random_A228_drop-normalized
+Closed-loop seed3_h4_random_A228_hold
+Closed-loop seed3_h4_random_A228_KF-mean
+Offline + same-state seed3_h6_random_A228
+Closed-loop seed3_h6_random_A228_drop
+Closed-loop seed3_h6_random_A228_drop-normalized
+Closed-loop seed3_h6_random_A228_hold
+Closed-loop seed3_h6_random_A228_KF-mean
+Offline + same-state seed3_h4_concentrated_A228
+Closed-loop seed3_h4_concentrated_A228_drop
+Closed-loop seed3_h4_concentrated_A228_drop-normalized
+Closed-loop seed3_h4_concentrated_A228_hold
+Closed-loop seed3_h4_concentrated_A228_KF-mean
+Offline + same-state seed3_h4_dispersed_A228
+Closed-loop seed3_h4_dispersed_A228_drop
+Closed-loop seed3_h4_dispersed_A228_drop-normalized
+Closed-loop seed3_h4_dispersed_A228_hold
+Closed-loop seed3_h4_dispersed_A228_KF-mean
+Reference seed3 A0 0.456: 0 -> 6600
+Offline + same-state seed3_h4_random_A456
+Closed-loop seed3_h4_random_A456_drop
+Closed-loop seed3_h4_random_A456_drop-normalized
+Closed-loop seed3_h4_random_A456_hold
+Closed-loop seed3_h4_random_A456_KF-mean
+Reference seed4 A0 0.114: 0 -> 6600
+Offline + same-state seed4_h4_random_A114
+Closed-loop seed4_h4_random_A114_drop
+Closed-loop seed4_h4_random_A114_drop-normalized
+Closed-loop seed4_h4_random_A114_hold
+Closed-loop seed4_h4_random_A114_KF-mean
+Reference seed4 A0 0.228: 0 -> 6600
+Offline + same-state seed4_h2_random_A228
+Closed-loop seed4_h2_random_A228_drop
+Closed-loop seed4_h2_random_A228_drop-normalized
+Closed-loop seed4_h2_random_A228_hold
+Closed-loop seed4_h2_random_A228_KF-mean
+Offline + same-state seed4_h4_random_A228
+Closed-loop seed4_h4_random_A228_drop
+Closed-loop seed4_h4_random_A228_drop-normalized
+Closed-loop seed4_h4_random_A228_hold
+Closed-loop seed4_h4_random_A228_KF-mean
+Offline + same-state seed4_h6_random_A228
+Closed-loop seed4_h6_random_A228_drop
+Closed-loop seed4_h6_random_A228_drop-normalized
+Closed-loop seed4_h6_random_A228_hold
+Closed-loop seed4_h6_random_A228_KF-mean
+Offline + same-state seed4_h4_concentrated_A228
+Closed-loop seed4_h4_concentrated_A228_drop
+Closed-loop seed4_h4_concentrated_A228_drop-normalized
+Closed-loop seed4_h4_concentrated_A228_hold
+Closed-loop seed4_h4_concentrated_A228_KF-mean
+Offline + same-state seed4_h4_dispersed_A228
+Closed-loop seed4_h4_dispersed_A228_drop
+Closed-loop seed4_h4_dispersed_A228_drop-normalized
+Closed-loop seed4_h4_dispersed_A228_hold
+Closed-loop seed4_h4_dispersed_A228_KF-mean
+Reference seed4 A0 0.456: 0 -> 6600
+Offline + same-state seed4_h4_random_A456
+Closed-loop seed4_h4_random_A456_drop
+Closed-loop seed4_h4_random_A456_drop-normalized
+Closed-loop seed4_h4_random_A456_hold
+Closed-loop seed4_h4_random_A456_KF-mean
+Reference seed5 A0 0.114: 0 -> 6600
+Offline + same-state seed5_h4_random_A114
+Closed-loop seed5_h4_random_A114_drop
+Closed-loop seed5_h4_random_A114_drop-normalized
+Closed-loop seed5_h4_random_A114_hold
+Closed-loop seed5_h4_random_A114_KF-mean
+Reference seed5 A0 0.228: 0 -> 6600
+Offline + same-state seed5_h2_random_A228
+Closed-loop seed5_h2_random_A228_drop
+Closed-loop seed5_h2_random_A228_drop-normalized
+Closed-loop seed5_h2_random_A228_hold
+Closed-loop seed5_h2_random_A228_KF-mean
+Offline + same-state seed5_h4_random_A228
+Closed-loop seed5_h4_random_A228_drop
+Closed-loop seed5_h4_random_A228_drop-normalized
+Closed-loop seed5_h4_random_A228_hold
+Closed-loop seed5_h4_random_A228_KF-mean
+Offline + same-state seed5_h6_random_A228
+Closed-loop seed5_h6_random_A228_drop
+Closed-loop seed5_h6_random_A228_drop-normalized
+Closed-loop seed5_h6_random_A228_hold
+Closed-loop seed5_h6_random_A228_KF-mean
+Offline + same-state seed5_h4_concentrated_A228
+Closed-loop seed5_h4_concentrated_A228_drop
+Closed-loop seed5_h4_concentrated_A228_drop-normalized
+Closed-loop seed5_h4_concentrated_A228_hold
+Closed-loop seed5_h4_concentrated_A228_KF-mean
+Offline + same-state seed5_h4_dispersed_A228
+Closed-loop seed5_h4_dispersed_A228_drop
+Closed-loop seed5_h4_dispersed_A228_drop-normalized
+Closed-loop seed5_h4_dispersed_A228_hold
+Closed-loop seed5_h4_dispersed_A228_KF-mean
+Reference seed5 A0 0.456: 0 -> 6600
+Offline + same-state seed5_h4_random_A456
+Closed-loop seed5_h4_random_A456_drop
+Closed-loop seed5_h4_random_A456_drop-normalized
+Closed-loop seed5_h4_random_A456_hold
+Closed-loop seed5_h4_random_A456_KF-mean
+COMPLETE: 155 trajectories; 1060.6 seconds
