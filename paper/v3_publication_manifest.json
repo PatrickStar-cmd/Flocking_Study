@@ -1,0 +1,84 @@
+{
+  "version": "v3",
+  "date": "2026-10-11",
+  "pdf_pages": 39,
+  "source_tex_sha256": "116f752bdb5b31b6ec159a6a0c9a9b06c980fd81847e03e0ac99f52ec4a14e5d",
+  "source_pdf_sha256": "cd51aae05da68f90019e2bfad7c33660bfd64383bee01ed37e524da5897a4c83",
+  "publication_tex_sha256": "ec112b2758408609a131183d91e35ee309238ed355e462598407824bf72622e9",
+  "publication_pdf_sha256": "cd51aae05da68f90019e2bfad7c33660bfd64383bee01ed37e524da5897a4c83",
+  "source_change": "Only graphicspath replaced with figures/v3/; scientific body unchanged.",
+  "challenge2_source_branch": "WHQ_work",
+  "challenge2_source_commit": "43de90921180c4bffdf05e8ca65a21b4cce5501a",
+  "evidence": "Challenge 2: five-seed development set, 155 unique trajectories; CSV-level independent checks.",
+  "independent_statistics": {
+    "center_rmse_reduction_percent": 26.4,
+    "center_input_field_error_reduction_percent": 61.8
+  },
+  "figures": [
+    {
+      "path": "paper/figures/v3/fig01_count_strength.pdf",
+      "source": "effective-social-input/results/sq1-exponential-input-v1-r2/figures-v3/fig01_count_strength.pdf",
+      "sha256": "1a3dce2c952bf95914f7c216476c41097563487a0819649f2127587d63223e31"
+    },
+    {
+      "path": "paper/figures/v3/fig02_bearing_structure.pdf",
+      "source": "effective-social-input/results/sq1-exponential-input-v1-r2/figures-v3/fig02_bearing_structure.pdf",
+      "sha256": "e306d2247e905641afbe030e08d67cd49f179f6aa54d1e2a02aa7362beb2a3d9"
+    },
+    {
+      "path": "paper/figures/v3/fig03_random_response.pdf",
+      "source": "effective-social-input/results/sq1-exponential-input-v1-r2/figures-v3/fig03_random_response.pdf",
+      "sha256": "704548f2991eed9a447bd8245cbcd66c42cbaede00e79a5eda040ace39517a75"
+    },
+    {
+      "path": "paper/figures/v3/fig1_input_mechanism.png",
+      "source": "effective-social-input/results/paper-simulation-figures/fig1_input_mechanism.png",
+      "sha256": "e855130adc98445568167d18b5e620d6b3cee9f3aec81fe3cf4840f7cc4ce455"
+    },
+    {
+      "path": "paper/figures/v3/kf-uncertainty-diagnostics.png",
+      "source": "effective-social-input/results/paper-simulation-figures/kf-uncertainty-diagnostics.png",
+      "sha256": "eae3d86ac5d70631ae69437552d3a2fb94f7c34c19e1473b42b826ad1d34a9ca"
+    },
+    {
+      "path": "paper/figures/v3/kf-prediction-error.png",
+      "source": "effective-social-input/results/paper-kf-extended-v3/full/kf-prediction-error.png",
+      "sha256": "34acff03212c515877f062926207918c9af3d6e48fdf83c14ca260c59c97cea2"
+    },
+    {
+      "path": "paper/figures/v3/fig04_kf_prediction.pdf",
+      "source": "reviews/whq-c2-paper-v3-20261011/figures/fig04_kf_prediction.pdf",
+      "sha256": "929579a877c537624a17350125a0f06056dd10403d438bf3d9b78b5ef1080d7e"
+    },
+    {
+      "path": "paper/figures/v3/fig05_kf_input_response.pdf",
+      "source": "reviews/whq-c2-paper-v3-20261011/figures/fig05_kf_input_response.pdf",
+      "sha256": "e412078d6dbff91b6d9295925f4c1da521ad97ea6608af279abf57429152748f"
+    },
+    {
+      "path": "paper/figures/v3/kf-performance-summary.png",
+      "source": "effective-social-input/results/paper-kf-extended-v3/full/kf-performance-summary.png",
+      "sha256": "eded574034617c97ddbe11a1e411a205e548f7d27412bbc07a114540ba074020"
+    },
+    {
+      "path": "paper/figures/v3/kf-versus-hold.png",
+      "source": "effective-social-input/results/paper-kf-extended-v3/full/kf-versus-hold.png",
+      "sha256": "93dcaa96bae345d87a1d1d01fed8bf48a4ae58f39d4de65a26d32efd5a1356c2"
+    },
+    {
+      "path": "paper/figures/v3/intervention-timeline.png",
+      "source": "effective-social-input/results/turn-occlusion-pilot-v1/full/intervention-timeline.png",
+      "sha256": "2ef047c7be61d61c67ed0ebbf618aa209eed8ef4ee355844415c629daa8056e0"
+    },
+    {
+      "path": "paper/figures/v3/relative-degradation.png",
+      "source": "effective-social-input/results/turn-occlusion-pilot-v1/full/relative-degradation.png",
+      "sha256": "592e6aa70799a4dd4f51f5cda68e78d14d9ce43a454ede48e45ca9850eea18da"
+    },
+    {
+      "path": "paper/figures/v3/mainstream-comparison.png",
+      "source": "effective-social-input/results/mainstream-model-comparison/mainstream-comparison.png",
+      "sha256": "8d657cccbd7c3726c46c00409f72177df4f2f67b21184ae7a0d8bada63c2fa7f"
+    }
+  ]
+}
