@@ -1,0 +1,77 @@
+{
+  "version": "v4",
+  "date": "2026-10-13",
+  "pdf_pages": 32,
+  "figure_count": 12,
+  "table_count": 8,
+  "manuscript_source": "Reviewed v4; local paper directory and repository copies identical.",
+  "review_sha256": "3e3ec7e31fe377b846f648476f60bfc8ec76b5f219904ee2fb9961deae206ea4",
+  "evidence": "manuscript correction and independent audit of existing exploratory/development CSVs; no new simulation",
+  "limitations": [
+    "Only a Chinese general IEEE-direction review layout; no journal-specific submission template or English translation.",
+    "Independent statistical audit uses summary CSVs; original pilot MAT files are absent.",
+    "Missing confirmatory experiments, calibration and ablations are disclosed, not fabricated."
+  ],
+  "files": [
+    {
+      "path": "paper/README_v4.md",
+      "sha256": "d2d0bec3fe21073fca04bb5b624f768d82378bd32c73d0a0c090f0873c9f93b5"
+    },
+    {
+      "path": "paper/figures/v4/fig01_count_strength.pdf",
+      "sha256": "1a3dce2c952bf95914f7c216476c41097563487a0819649f2127587d63223e31"
+    },
+    {
+      "path": "paper/figures/v4/fig02_bearing_structure.pdf",
+      "sha256": "e306d2247e905641afbe030e08d67cd49f179f6aa54d1e2a02aa7362beb2a3d9"
+    },
+    {
+      "path": "paper/figures/v4/fig03_random_response.pdf",
+      "sha256": "704548f2991eed9a447bd8245cbcd66c42cbaede00e79a5eda040ace39517a75"
+    },
+    {
+      "path": "paper/figures/v4/fig04_kf_prediction.pdf",
+      "sha256": "929579a877c537624a17350125a0f06056dd10403d438bf3d9b78b5ef1080d7e"
+    },
+    {
+      "path": "paper/figures/v4/fig05_kf_input_response.pdf",
+      "sha256": "e412078d6dbff91b6d9295925f4c1da521ad97ea6608af279abf57429152748f"
+    },
+    {
+      "path": "paper/figures/v4/fig1_input_mechanism.png",
+      "sha256": "e855130adc98445568167d18b5e620d6b3cee9f3aec81fe3cf4840f7cc4ce455"
+    },
+    {
+      "path": "paper/figures/v4/intervention-timeline.png",
+      "sha256": "2ef047c7be61d61c67ed0ebbf618aa209eed8ef4ee355844415c629daa8056e0"
+    },
+    {
+      "path": "paper/figures/v4/kf-performance-summary.png",
+      "sha256": "eded574034617c97ddbe11a1e411a205e548f7d27412bbc07a114540ba074020"
+    },
+    {
+      "path": "paper/figures/v4/kf-prediction-error-v4.pdf",
+      "sha256": "c93c43cbbf8a2778d6d164cf7a452e693a58f34bbdbc7c8505913077a1da6567"
+    },
+    {
+      "path": "paper/figures/v4/kf-uncertainty-diagnostics.png",
+      "sha256": "eae3d86ac5d70631ae69437552d3a2fb94f7c34c19e1473b42b826ad1d34a9ca"
+    },
+    {
+      "path": "paper/figures/v4/kf-versus-hold.png",
+      "sha256": "93dcaa96bae345d87a1d1d01fed8bf48a4ae58f39d4de65a26d32efd5a1356c2"
+    },
+    {
+      "path": "paper/figures/v4/relative-degradation.png",
+      "sha256": "592e6aa70799a4dd4f51f5cda68e78d14d9ce43a454ede48e45ca9850eea18da"
+    },
+    {
+      "path": "paper/论文初稿_KF预测补偿_v4.tex",
+      "sha256": "94382c8c8255a9b8f11a0834d3fcf0d9329439fd54b20206a9b8790a9d0ae6e0"
+    },
+    {
+      "path": "paper/论文草稿_KF预测补偿_v4.pdf",
+      "sha256": "2da4a5e4ec1f85c96d9addca08a0112620713b41dbc440a6e08324826f1777e3"
+    }
+  ]
+}
