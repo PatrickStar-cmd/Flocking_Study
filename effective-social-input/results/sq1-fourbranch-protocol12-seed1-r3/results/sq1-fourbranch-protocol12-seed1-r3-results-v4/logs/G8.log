@@ -1,0 +1,4 @@
+G8 actual execution start: 2026-10-09 18:00:12; MATLAB 9.14.0.2206163 (R2023a)
+Every hidden hold edge retains last legal step6200-start bearing, age0.3 through10.2, no expiry, recovery resets to0.
+maxDiff=0 count=2720 tolerance=9.9999999999999998e-13
+G8 PASS at 2026-10-09 18:00:12

@@ -1,0 +1,10 @@
+{
+  "command": "./complete_delivery.ps1 -OutputName sq1-fourbranch-protocol12-seed1-r3-results-v4",
+  "script_sha256": "16d24359e6297105b1b1701334824fb83bc33d8d401b3d42fdb35bfe39b6eb3e",
+  "source_manifest_sha256": "ef778daf6bc99b42de82bef64e5ca4d7d546c91e8900562734a4a8f9521942ad",
+  "implementation_commit": null,
+  "implementation_identity": "Frozen source file SHA256 manifest; local package not committed or pushed",
+  "start_time": "2026-10-09T18:01:48.5307631+08:00",
+  "end_time": "2026-10-09T18:01:48.5925339+08:00",
+  "scope": "Add pending T0 statuses, resource limitations, document copies and delivery audit; MAT and test evidence unchanged"
+}

@@ -1,0 +1,4 @@
+G13 actual execution start: 2026-10-09 18:00:17; MATLAB 9.14.0.2206163 (R2023a)
+Saved single-run MAT/keys/600steps/601frames, source hashes, missing fields and hidden NaN checked; CSV regenerated; all2400 saved steps independently recompute periodic pair distance, GO, nearest5+self LO and A; 480 agent-step cases independently reconstruct Gaussian field, Mass and moments.
+maxDiff=2.7744733593904058e-14 count=2400 tolerance=9.9999999999999998e-13
+G13 PASS at 2026-10-09 18:00:22

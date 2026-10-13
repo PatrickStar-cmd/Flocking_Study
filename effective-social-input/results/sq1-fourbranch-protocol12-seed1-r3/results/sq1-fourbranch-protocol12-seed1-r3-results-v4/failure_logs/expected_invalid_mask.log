@@ -1,0 +1,11 @@
+错误使用 makeProtocolMasks
+Unknown mask rule.
+
+出错 protocolAssertions (第 301 行)
+    try, makeProtocolMasks(s.position,c); catch ME
+
+出错 run_tests (第 14 行)
+        r=protocolAssertions(id,outDir);
+
+出错 run_protocol12_seed1_r3 (第 54 行)
+    fprintf('Run G1-G15 assertions.\n'); report=run_tests(outDir);

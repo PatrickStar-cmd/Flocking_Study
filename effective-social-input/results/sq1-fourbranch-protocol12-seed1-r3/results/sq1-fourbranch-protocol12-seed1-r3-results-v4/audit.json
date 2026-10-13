@@ -1,0 +1,17 @@
+{
+  "matlabVersion": "9.14.0.2206163 (R2023a)",
+  "workerCount": 0,
+  "execution": "serial",
+  "command": "restoredefaultpath; addpath(package_root); run_protocol12_seed1_r3('sq1-fourbranch-protocol12-seed1-r3-results-v4')",
+  "startTime": "2026-10-09 17:58:30",
+  "endTime": "2026-10-09 18:00:25",
+  "wallSeconds": 114.9772813,
+  "branchSeconds": [
+    3.0205386,
+    2.9813543,
+    3.003931,
+    3.1202429
+  ],
+  "actualRoot": "C:\\Users\\WHQ\\Studying\\大三上学期\\无人机群\\10.9周\\sq1-fourbranch-protocol12-seed1-r3",
+  "overwriteProtection": true
+}

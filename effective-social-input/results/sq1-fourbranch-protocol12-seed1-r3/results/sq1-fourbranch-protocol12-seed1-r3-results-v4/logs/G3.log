@@ -1,0 +1,4 @@
+G3 actual execution start: 2026-10-09 17:59:15; MATLAB 9.14.0.2206163 (R2023a)
+Exact equality of all exported steps, 601 frames including u/alpha, final cache and RNG; d0 does not enable a mask.
+maxDiff=0 count=1800 tolerance=0
+G3 PASS at 2026-10-09 17:59:15

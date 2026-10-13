@@ -1,0 +1,5 @@
+run_id,seed,mode,mask_rule,duration_steps,reference_id,checkpoint_id,file_path,status,error_reason,is_shared_reference
+fresh_seed1_random_d34,1,fresh,random,34,fresh_seed1,seed1_step6000,fresh_seed1.mat,COMPLETED,,1
+drop_seed1_random_d34,1,drop,random,34,fresh_seed1,seed1_step6000,drop_seed1.mat,COMPLETED,,0
+drop-normalized_seed1_random_d34,1,drop-normalized,random,34,fresh_seed1,seed1_step6000,drop-normalized_seed1.mat,COMPLETED,,0
+hold_seed1_random_d34,1,hold,random,34,fresh_seed1,seed1_step6000,hold_seed1.mat,COMPLETED,,0
