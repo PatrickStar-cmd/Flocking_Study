@@ -1,0 +1,4 @@
+# Preserve audited experiment bytes across platforms, including CRLF JSON/CSV.
+/effective-social-input/challenge2-informed-turn-v1/** -text whitespace=cr-at-eol
+/effective-social-input/results/challenge2-informed-turn-v1-20261014/** -text whitespace=cr-at-eol
+/effective-social-input/replication-protocols/20261014-informed-turn-n20-t18/** -text whitespace=cr-at-eol

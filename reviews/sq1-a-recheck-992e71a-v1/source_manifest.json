@@ -1,0 +1,102 @@
+{
+  "commit": "992e71aba3b26896335b52a3182cf01cfd542a9d",
+  "files": [
+    {
+      "path": "effective-social-input/SQ1_A_HANDOFF.md",
+      "sha256": "db954d275a316e95aacd2bd45de24b15f5213771c88a149683e9d49f78a28114",
+      "bytes": 8045
+    },
+    {
+      "path": "effective-social-input/SQ1_LOCAL_INPUT_MODEL.md",
+      "sha256": "613fb313b78796905956c69d562331361d736e5ffdc436d860ef7f2bef6ccfe1",
+      "bytes": 3412
+    },
+    {
+      "path": "effective-social-input/localSocialInputMetrics.m",
+      "sha256": "fddb044fefb98e11daba1cf63f3de4b35e92a14dc99da556914b03cb48aebd25",
+      "bytes": 2128
+    },
+    {
+      "path": "effective-social-input/plotSq1LocalE1.m",
+      "sha256": "9aaad3b2b1c642576166d49cf71875e344effde63ff47d2f77eaae44dfe5c501",
+      "bytes": 1210
+    },
+    {
+      "path": "effective-social-input/replayLocalSocialInput.m",
+      "sha256": "8d35f0a33728b00eecc9ae75b218b99c6b056d8e55f7af51488b129ecead6b9f",
+      "bytes": 2718
+    },
+    {
+      "path": "effective-social-input/results/sq1-local-v1/README.md",
+      "sha256": "b471ecd9485aec147a0d370a1e3c9ed0561e3eda2bb519b8a51dc2e7b63dad9b",
+      "bytes": 807
+    },
+    {
+      "path": "effective-social-input/results/sq1-local-v1/audit.json",
+      "sha256": "46d0bc101fca5968d05b03d603e2663a0f5dd8955b66df7f7546268f5be32a91",
+      "bytes": 1383
+    },
+    {
+      "path": "effective-social-input/results/sq1-local-v1/e1-mechanism.png",
+      "sha256": "5c335843c5ecfbff5c4db1f862a346fb4234fff60603784cfa43c0ff1dfeb85e",
+      "bytes": 77243
+    },
+    {
+      "path": "effective-social-input/results/sq1-local-v1/e1-results.mat",
+      "sha256": "2579694631a768588e12630a789681332233c61ed9234edd585ffc1f339c2e48",
+      "bytes": 701528
+    },
+    {
+      "path": "effective-social-input/results/sq1-local-v1/summary.csv",
+      "sha256": "7d1ca5d4da6e411fbfd1b2b48b2f4ffb41cef40ca3828740cf82fbc163a7db9f",
+      "bytes": 1531
+    },
+    {
+      "path": "effective-social-input/runSq1LocalE1.m",
+      "sha256": "e6f0ff9df974fc6a27966e3289ea8daeddee0d386640a7fa8ba380df5504bb3a",
+      "bytes": 3480
+    },
+    {
+      "path": "effective-social-input/testLocalSocialInput.m",
+      "sha256": "03a4b1e71821fdef713316d56dc286c63a109b374f7ea603c676551d8ad5fed8",
+      "bytes": 1555
+    },
+    {
+      "path": "effective-social-input/buildRingConnectivity.m",
+      "sha256": "7f100bb34deaa668edc8fef394bbc11e156e258c5de21bafecf3c5180ef05dd0",
+      "bytes": 443
+    }
+  ],
+  "published_code_hash_checks": {
+    "SQ1_LOCAL_INPUT_MODEL.md": {
+      "exact": true,
+      "lf_normalized": true
+    },
+    "localSocialInputMetrics.m": {
+      "exact": true,
+      "lf_normalized": true
+    },
+    "replayLocalSocialInput.m": {
+      "exact": true,
+      "lf_normalized": true
+    },
+    "runSq1LocalE1.m": {
+      "exact": true,
+      "lf_normalized": true
+    },
+    "testLocalSocialInput.m": {
+      "exact": true,
+      "lf_normalized": true
+    },
+    "plotSq1LocalE1.m": {
+      "exact": true,
+      "lf_normalized": true
+    },
+    "buildRingConnectivity.m": {
+      "exact": false,
+      "lf_normalized": false
+    }
+  },
+  "published_audit_commit": "71583f9c6fae635e78a9aa4f2cc8934128748bd9",
+  "published_audit_branch": "feature/sq1-local-input"
+}

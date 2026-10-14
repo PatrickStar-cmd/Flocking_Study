@@ -1,0 +1,14 @@
+{
+  "visual_review": "All 11 PNG figures inspected; labels, axes, legends and footnotes readable.",
+  "independent_method": "PowerShell Import-Csv; recompute treatment minus reference, then average 20 seeds per window",
+  "contrast": "policy_balanced",
+  "metric": "meanPairDistanceNorm",
+  "n_early": 20,
+  "n_late": 20,
+  "early_mean": 0.053919459042536,
+  "late_mean": -0.014462381140696748,
+  "late_minus_early": -0.06838184018323275,
+  "git_diff_check": "passed; no tracked changes; new review files remain untracked",
+  "simulation_executed": false,
+  "evidence": "exploratory"
+}

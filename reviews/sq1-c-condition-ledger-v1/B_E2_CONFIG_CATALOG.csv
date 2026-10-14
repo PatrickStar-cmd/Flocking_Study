@@ -1,0 +1,13 @@
+﻿canonical_config_id,strength,policy,k,expected_total_weight,source_row_count,unique_seed_count,seeds,experiment_aliases,policy_aliases,selection_information,selection_timing,evidence
+C01,fixed-total,angle-concentrated,8,0.228,40,20,1-20,E3_angular_structure;E4_selection_strategy,angle-concentrated,no distance used for selection,reselected every simulation step,exploratory/development; previously used seeds
+C02,fixed-total,balanced,8,0.228,60,20,1-20,E3_angular_structure;E4_selection_strategy,angle-dispersed;balanced,distance-assisted,reselected every simulation step,exploratory/development; previously used seeds
+C03,fixed-total,nearest,8,0.228,20,20,1-20,E4_selection_strategy,nearest,distance-assisted,reselected every simulation step,exploratory/development; previously used seeds
+C04,fixed-total,random,2,0.228,40,20,1-20,E1_strength_policy;E2_neighbor_count,random,no distance used for selection,reselected every simulation step,exploratory/development; previously used seeds
+C05,fixed-total,random,4,0.228,20,20,1-20,E2_neighbor_count,random,no distance used for selection,reselected every simulation step,exploratory/development; previously used seeds
+C06,fixed-total,random,8,0.228,80,20,1-20,E1_strength_policy;E2_neighbor_count;E3_angular_structure;E4_selection_strategy,random,no distance used for selection,reselected every simulation step,exploratory/development; previously used seeds
+C07,fixed-total,random,12,0.228,20,20,1-20,E2_neighbor_count,random,no distance used for selection,reselected every simulation step,exploratory/development; previously used seeds
+C08,full-equivalent,all,19,0.228,80,20,1-20,E1_strength_policy;E2_neighbor_count,random,no distance used for selection,all neighbors,exploratory/development; previously used seeds
+C09,original,random,2,0.024,40,20,1-20,E1_strength_policy;E2_neighbor_count,random,no distance used for selection,reselected every simulation step,exploratory/development; previously used seeds
+C10,original,random,4,0.048,20,20,1-20,E2_neighbor_count,random,no distance used for selection,reselected every simulation step,exploratory/development; previously used seeds
+C11,original,random,8,0.096,40,20,1-20,E1_strength_policy;E2_neighbor_count,random,no distance used for selection,reselected every simulation step,exploratory/development; previously used seeds
+C12,original,random,12,0.14400000000000002,20,20,1-20,E2_neighbor_count,random,no distance used for selection,reselected every simulation step,exploratory/development; previously used seeds

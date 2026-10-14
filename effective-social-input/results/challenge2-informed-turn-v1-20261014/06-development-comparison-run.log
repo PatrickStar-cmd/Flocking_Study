@@ -1,0 +1,7 @@
+PASS: 51-edge cut; 249 fresh edges; hidden truth isolation; kernel mass; posterior S quadrature; uninitialized/cutoff/reacquisition
+RUN 06-development-comparison seed 2026101401
+PASS prefix and T=0 checks 2026101401
+RUN 06-development-comparison seed 2026101402
+PASS prefix and T=0 checks 2026101402
+RUN 06-development-comparison seed 2026101403
+PASS prefix and T=0 checks 2026101403

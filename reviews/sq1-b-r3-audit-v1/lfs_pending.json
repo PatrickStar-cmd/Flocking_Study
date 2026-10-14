@@ -1,0 +1,37 @@
+[
+  {
+    "path": "effective-social-input/results/sq1-fourbranch-protocol12-seed1-r3/results/sq1-fourbranch-protocol12-seed1-r3-results-v4/T0_results.mat",
+    "oid": "9af3c63d28f3a41b391397f1ab60dc3fd7fd5597d6ed50a9c482def544d39299",
+    "size": 135571736
+  },
+  {
+    "path": "effective-social-input/results/sq1-fourbranch-protocol12-seed1-r3/results/sq1-fourbranch-protocol12-seed1-r3-results-v4/continuous_reference.mat",
+    "oid": "9dbd12c0714058a464080d0357681c55384f2158572ba716f10d7869bd69cbd4",
+    "size": 34883380
+  },
+  {
+    "path": "effective-social-input/results/sq1-fourbranch-protocol12-seed1-r3/results/sq1-fourbranch-protocol12-seed1-r3-results-v4/drop-normalized_seed1.mat",
+    "oid": "6c478e55d1b931f7946e97be645241a4eaffaa52a9f4a652353635f9ad116c58",
+    "size": 35440720
+  },
+  {
+    "path": "effective-social-input/results/sq1-fourbranch-protocol12-seed1-r3/results/sq1-fourbranch-protocol12-seed1-r3-results-v4/drop_seed1.mat",
+    "oid": "e0fd22536bc2220984a85e3571d062d39c30cb9c456426d5a1a872ee7386d2c6",
+    "size": 35423036
+  },
+  {
+    "path": "effective-social-input/results/sq1-fourbranch-protocol12-seed1-r3/results/sq1-fourbranch-protocol12-seed1-r3-results-v4/fresh_seed1.mat",
+    "oid": "a79373dd7c14bfe1147f445b0bfb65c8d818b7d2151f277f8c39a1ec09c0a55d",
+    "size": 35449875
+  },
+  {
+    "path": "effective-social-input/results/sq1-fourbranch-protocol12-seed1-r3/results/sq1-fourbranch-protocol12-seed1-r3-results-v4/hold_seed1.mat",
+    "oid": "be26d5fde0e953acfce58eb5878d50dc0127353b1e604cebac8156dcd73871cd",
+    "size": 35417460
+  },
+  {
+    "path": "effective-social-input/results/sq1-fourbranch-protocol12-seed1-r3/results/sq1-fourbranch-protocol12-seed1-r3-results-v4/reference_same_state_replay.mat",
+    "oid": "c4af8fb9e28762d6cd994238c7ce02411b05a3a33513605ae1d66148e533eb2b",
+    "size": 40068553
+  }
+]

@@ -1,0 +1,15 @@
+{
+  "passed": true,
+  "raw_runs": 12,
+  "state_samples_checked": 732,
+  "prefix_noise_checks": 6,
+  "independent_paired_means": 3,
+  "summary_unique_rows": 6,
+  "max_abs_errors": {
+    "GO": 4.440892098500626e-16,
+    "LO": 4.440892098500626e-16,
+    "fixed5_distance": 1.0658141036401503e-14,
+    "follower_turn_error_deg": 3.552713678800501e-14,
+    "S_oracle": 1.3877787807814457e-16
+  }
+}

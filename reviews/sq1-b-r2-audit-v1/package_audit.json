@@ -1,0 +1,210 @@
+{
+  "source": "D:\\Work\\Study\\UESTC资料存档\\课程\\通关项目\\WHQ\\sq1-fourbranch-protocol12-seed1-r2",
+  "package": "D:\\Work\\Study\\UESTC资料存档\\课程\\通关项目\\WHQ\\sq1-fourbranch-protocol12-seed1-r2\\results\\sq1-fourbranch-protocol12-seed1-r2-results-v3",
+  "file_checks": [
+    {
+      "file": "audit.json",
+      "sha256": "7dfdcbb9cd1c3fb12cf089d8497b9012ce3a3b94e7b3e454f2892befdc0c5c88",
+      "match": true,
+      "size_match": true
+    },
+    {
+      "file": "DATA_DICTIONARY.md",
+      "sha256": "e97ad66a4aa92ae90f32621ea533ab2b345970fc583a20ca5e50e9947ecaf61a",
+      "match": true,
+      "size_match": true
+    },
+    {
+      "file": "drop_seed1.mat",
+      "sha256": "d45d1e5a56274982079561bbd06c90374fac096b4f04ee52a9b49c735e689e64",
+      "match": true,
+      "size_match": true
+    },
+    {
+      "file": "drop-normalized_seed1.mat",
+      "sha256": "7bb2eebf5ac92a2848fce770d80127aad2ca7825efbdb267949cf2cedbc7443e",
+      "match": true,
+      "size_match": true
+    },
+    {
+      "file": "fresh_seed1.mat",
+      "sha256": "75230a5217d02ef4d292d1391222c5f4627576a39f60c00abe6e96dec1d693e6",
+      "match": true,
+      "size_match": true
+    },
+    {
+      "file": "hold_seed1.mat",
+      "sha256": "9cbd29edf7cceee3a11fc68e732f013ea51df124d8833d7c72971a8c4ad832af",
+      "match": true,
+      "size_match": true
+    },
+    {
+      "file": "load_pilot_example.m",
+      "sha256": "b4f367c18c2e01ba81d25959dbe49cf1923a9b06210205c3940c051566f5c96f",
+      "match": true,
+      "size_match": true
+    },
+    {
+      "file": "metadata.json",
+      "sha256": "d6af37ec87f7b6e421e2c11ed2b478be325d0b0ddc7c5046c27900c6040ff16d",
+      "match": true,
+      "size_match": true
+    },
+    {
+      "file": "README.md",
+      "sha256": "42185cac3a37e601297452f46b6b05fa267432aadc6c65bc3f9fb1bc0b0f10fe",
+      "match": true,
+      "size_match": true
+    },
+    {
+      "file": "resume_check.csv",
+      "sha256": "5384c2efa8eb4e7f5d8be15a286cb96fd5e1e5ee1d32325d646c7bdff1d5799e",
+      "match": true,
+      "size_match": true
+    },
+    {
+      "file": "RUN_MANIFEST.csv",
+      "sha256": "252ef0d68022db72ffdfad034c08f8dc043c30f117168e0850572de4a0b26e0e",
+      "match": true,
+      "size_match": true
+    },
+    {
+      "file": "summary.csv",
+      "sha256": "82d5681740d9f557e913a97728b2654958ba48af468e3f8785cefb618a888296",
+      "match": true,
+      "size_match": true
+    },
+    {
+      "file": "T0_results.mat",
+      "sha256": "203faaa3d758195d68c2ab4a9dd77b68ff238a931b2a3c4532d6780c26f04fb1",
+      "match": true,
+      "size_match": true
+    },
+    {
+      "file": "T0_TEST_MANIFEST.csv",
+      "sha256": "5fb4faa64eac317af3b460be063718752dd76d3c21f072fc5ea6d4171c96022f",
+      "match": true,
+      "size_match": true
+    },
+    {
+      "file": "tests.json",
+      "sha256": "081b1a7693619bee2c71218f437e566f7ef66718b2316212a2f76e5b279888f6",
+      "match": true,
+      "size_match": true
+    }
+  ],
+  "source_hashes": [
+    {
+      "file": "buildRingConnectivity.m",
+      "sha256": "7f100bb34deaa668edc8fef394bbc11e156e258c5de21bafecf3c5180ef05dd0"
+    },
+    {
+      "file": "defaultFourBranchConfig.m",
+      "sha256": "47aecbb3359c17e07eff57fe22f0da2c6242d833f8badc77044949ba3992330a"
+    },
+    {
+      "file": "fourBranchInputStep.m",
+      "sha256": "87a9deb29e36d2729ea28fca49f300ddd8a2c719e6c8acdae619bb1d6c6fdf27"
+    },
+    {
+      "file": "initializeCoreState.m",
+      "sha256": "e9dbf3f9f4ae13e676ea117db765d239b9657b08b32bf1c7a3dedba701fce7b3"
+    },
+    {
+      "file": "resumeProtocolFromCheckpoint.m",
+      "sha256": "7f12119b6a9cef308fd2ba452186562874847d8f2f13ef494a90667b9fd6fac3"
+    },
+    {
+      "file": "run_protocol12_seed1_r2.m",
+      "sha256": "a4b61b1eb163033b0283ff587174e56b26ddb536e0b71148f9e7408b382bd633"
+    },
+    {
+      "file": "run_tests.m",
+      "sha256": "bafc0e31743d23b991c1e73c01d876c8f28c11f8bd3be06caaf978a925e31f73"
+    },
+    {
+      "file": "simulateProtocolSegment.m",
+      "sha256": "695ab343ab59c6fe1181197f866f14a856e6892a07b66037841981efbe5c861d"
+    }
+  ],
+  "test_count": 15,
+  "declared_pass": 15,
+  "local_test_logs": [],
+  "run_manifest": [
+    {
+      "mode": "fresh",
+      "seed": "1",
+      "NAgents": "20",
+      "NNeurons": "100",
+      "k": "8",
+      "h": "4",
+      "duration_steps": "34",
+      "status": "fresh"
+    },
+    {
+      "mode": "drop",
+      "seed": "1",
+      "NAgents": "20",
+      "NNeurons": "100",
+      "k": "8",
+      "h": "4",
+      "duration_steps": "34",
+      "status": "drop"
+    },
+    {
+      "mode": "drop-normalized",
+      "seed": "1",
+      "NAgents": "20",
+      "NNeurons": "100",
+      "k": "8",
+      "h": "4",
+      "duration_steps": "34",
+      "status": "drop-normalized"
+    },
+    {
+      "mode": "hold",
+      "seed": "1",
+      "NAgents": "20",
+      "NNeurons": "100",
+      "k": "8",
+      "h": "4",
+      "duration_steps": "34",
+      "status": "hold"
+    }
+  ],
+  "t0_manifest": [
+    {
+      "mode": "fresh",
+      "seed": "1",
+      "NAgents": "20",
+      "NNeurons": "100",
+      "duration_steps": "0",
+      "status": "COMPLETED"
+    },
+    {
+      "mode": "drop",
+      "seed": "1",
+      "NAgents": "20",
+      "NNeurons": "100",
+      "duration_steps": "0",
+      "status": "COMPLETED"
+    },
+    {
+      "mode": "drop-normalized",
+      "seed": "1",
+      "NAgents": "20",
+      "NNeurons": "100",
+      "duration_steps": "0",
+      "status": "COMPLETED"
+    },
+    {
+      "mode": "hold",
+      "seed": "1",
+      "NAgents": "20",
+      "NNeurons": "100",
+      "duration_steps": "0",
+      "status": "COMPLETED"
+    }
+  ],
+  "unhashed_files": []
+}

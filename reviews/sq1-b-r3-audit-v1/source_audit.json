@@ -1,0 +1,1099 @@
+{
+  "commit": "54fb85d91151e0b28e8e570318b4a9937d6a0425",
+  "files": [
+    {
+      "path": "DATA_DICTIONARY.md",
+      "sha256": "da80d27b0c3bb08272335024cb3491c41ed77d47b0b8a8f6574e7f9a2b3c1915",
+      "size": 5615,
+      "lfs": null
+    },
+    {
+      "path": "FIXES.md",
+      "sha256": "f587c13e7155375723b527982435a60339da15a5c137ee78ce54fa5a015513ba",
+      "size": 1860,
+      "lfs": null
+    },
+    {
+      "path": "GITHUB_DELIVERY.md",
+      "sha256": "39371a7679561295ae8ba359f5bed195589aae8708ccc66c6cd0c97a3555dad5",
+      "size": 1948,
+      "lfs": null
+    },
+    {
+      "path": "R3_STATUS.md",
+      "sha256": "f2845ac48ab4efb2ed808a4467b1a1da9a5721b8d9eb1debcf6ccfa515dd6a11",
+      "size": 3994,
+      "lfs": null
+    },
+    {
+      "path": "README.md",
+      "sha256": "d303b500fc6f49c8a9b07d0a7ae11a342826e97b309be6cb260070ca4b07f8cd",
+      "size": 2458,
+      "lfs": null
+    },
+    {
+      "path": "SHA256SUMS.csv",
+      "sha256": "9850ae285d074e860992fd06f5f7d3f5186c581686df04e6bb2517111912bc2a",
+      "size": 11977,
+      "lfs": null
+    },
+    {
+      "path": "angularSetMetrics.m",
+      "sha256": "876904e465a28ca445ee8e01f3eef649d54fe98de07b57d58c7953152634b30f",
+      "size": 398,
+      "lfs": null
+    },
+    {
+      "path": "buildFreshOracle.m",
+      "sha256": "99b3eed91a48a05cb43d75b848ddab25d223a2071a20e9a37aaddc7f48e07c6c",
+      "size": 401,
+      "lfs": null
+    },
+    {
+      "path": "buildReferenceReplay.m",
+      "sha256": "413394a4afe48b5dbade70ce1f971be4a9c8381b17cc93a117ef078d70930456",
+      "size": 1305,
+      "lfs": null
+    },
+    {
+      "path": "buildRingConnectivity.m",
+      "sha256": "7f100bb34deaa668edc8fef394bbc11e156e258c5de21bafecf3c5180ef05dd0",
+      "size": 443,
+      "lfs": null
+    },
+    {
+      "path": "buildSourceManifest.m",
+      "sha256": "6d57502bdb72354481a6149970058bb598b1f634984e52c37f1d9f0c919f1632",
+      "size": 1208,
+      "lfs": null
+    },
+    {
+      "path": "checkpointToStart.m",
+      "sha256": "945c277a6d93e8387a319e4a778b3a475ed1337938825c6be147f5e620788f27",
+      "size": 513,
+      "lfs": null
+    },
+    {
+      "path": "compareSegments.m",
+      "sha256": "2273b841be1c3eae2095e63ffca5d1753bcae3b6e940b386cf412d1bdada7a38",
+      "size": 1517,
+      "lfs": null
+    },
+    {
+      "path": "complete_delivery.ps1",
+      "sha256": "16d24359e6297105b1b1701334824fb83bc33d8d401b3d42fdb35bfe39b6eb3e",
+      "size": 2459,
+      "lfs": null
+    },
+    {
+      "path": "controllerInputFromObservation.m",
+      "sha256": "7cf751dbc97c4b78579f3dd3899abdf91a4ac7d91cd8b7f599863cb3e191077f",
+      "size": 2927,
+      "lfs": null
+    },
+    {
+      "path": "createOutputDirectory.m",
+      "sha256": "ee5246743c8353e976b628042772629824904340986d58f917e9654c3809ca12",
+      "size": 214,
+      "lfs": null
+    },
+    {
+      "path": "decodeNeuralActivity.m",
+      "sha256": "74a25a6ae4fe85077d5fc6378950b030b21d352c9921a6ed7d35921827650cf4",
+      "size": 509,
+      "lfs": null
+    },
+    {
+      "path": "defaultFourBranchConfig.m",
+      "sha256": "36cef66b884a27f31fabffd9cfb26c0867ace8db173cef218452ae16c3847e58",
+      "size": 773,
+      "lfs": null
+    },
+    {
+      "path": "fileSHA256.m",
+      "sha256": "cda3311446c37db694dd46c7e037cb31ca8f9723cde99155280cbd304b13e0d3",
+      "size": 303,
+      "lfs": null
+    },
+    {
+      "path": "finalizePackage.m",
+      "sha256": "0b22f88151242eec9d0bbfb3f0da079e96fd8acb0769f8f053dbde2ae9ad75b1",
+      "size": 3267,
+      "lfs": null
+    },
+    {
+      "path": "fixedTargetIds.m",
+      "sha256": "820bd764b9688968d67eda0ae4182fc88adcc35122863f3607ac1988737fee88",
+      "size": 223,
+      "lfs": null
+    },
+    {
+      "path": "fourBranchInputStep.m",
+      "sha256": "9e806116a115b93384017dc42cb7b7466cac7370b49054a5dcd84d36a7fbf88f",
+      "size": 824,
+      "lfs": null
+    },
+    {
+      "path": "generateSummary.m",
+      "sha256": "853a8cf4617a657625e34874d37addfd62222ace2d951784d6ca517933dc300d",
+      "size": 2043,
+      "lfs": null
+    },
+    {
+      "path": "hash_package.ps1",
+      "sha256": "f75d548d06bc9ecca5e49937caf4f4fb6a746153c9ef9ced6da311a3b2a1707b",
+      "size": 1548,
+      "lfs": null
+    },
+    {
+      "path": "initializeCoreState.m",
+      "sha256": "e9dbf3f9f4ae13e676ea117db765d239b9657b08b32bf1c7a3dedba701fce7b3",
+      "size": 498,
+      "lfs": null
+    },
+    {
+      "path": "initializeInputState.m",
+      "sha256": "cb45dfb4982c2818578fe5f914c4df17dc2ebb29ad3be33440543780b1a6ca37",
+      "size": 336,
+      "lfs": null
+    },
+    {
+      "path": "load_pilot_example.m",
+      "sha256": "9338ea354bd7e669055d08976364ad862462522d12da365c0b58aa314b977f07",
+      "size": 1357,
+      "lfs": null
+    },
+    {
+      "path": "makeProtocolMasks.m",
+      "sha256": "93cb63001024155641a60240d0914bb5a9ad31e5c6398237f51f721b0bec1167",
+      "size": 1652,
+      "lfs": null
+    },
+    {
+      "path": "results/sq1-fourbranch-protocol12-seed1-r3-results-v4/DATA_DICTIONARY.md",
+      "sha256": "da80d27b0c3bb08272335024cb3491c41ed77d47b0b8a8f6574e7f9a2b3c1915",
+      "size": 5615,
+      "lfs": null
+    },
+    {
+      "path": "results/sq1-fourbranch-protocol12-seed1-r3-results-v4/FIXES.md",
+      "sha256": "f587c13e7155375723b527982435a60339da15a5c137ee78ce54fa5a015513ba",
+      "size": 1860,
+      "lfs": null
+    },
+    {
+      "path": "results/sq1-fourbranch-protocol12-seed1-r3-results-v4/R3_STATUS.md",
+      "sha256": "f2845ac48ab4efb2ed808a4467b1a1da9a5721b8d9eb1debcf6ccfa515dd6a11",
+      "size": 3994,
+      "lfs": null
+    },
+    {
+      "path": "results/sq1-fourbranch-protocol12-seed1-r3-results-v4/README.md",
+      "sha256": "d303b500fc6f49c8a9b07d0a7ae11a342826e97b309be6cb260070ca4b07f8cd",
+      "size": 2458,
+      "lfs": null
+    },
+    {
+      "path": "results/sq1-fourbranch-protocol12-seed1-r3-results-v4/RUN_MANIFEST.csv",
+      "sha256": "19dd71a3688f7ab848f27828362da5332f5db65e1995b02cb43366350e551819",
+      "size": 536,
+      "lfs": null
+    },
+    {
+      "path": "results/sq1-fourbranch-protocol12-seed1-r3-results-v4/T0_TEST_MANIFEST.csv",
+      "sha256": "d3e35a9ee9d53881370829a0e8f0d60d40caf8a4495e83250d4069cb98971762",
+      "size": 12959,
+      "lfs": null
+    },
+    {
+      "path": "results/sq1-fourbranch-protocol12-seed1-r3-results-v4/T0_maxdiff.csv",
+      "sha256": "e6c8737c7ed889305f1060b3ac2e0e75349d9521c1eb1097f93bc1c55496d4c7",
+      "size": 69,
+      "lfs": null
+    },
+    {
+      "path": "results/sq1-fourbranch-protocol12-seed1-r3-results-v4/T0_results.mat",
+      "sha256": "9af3c63d28f3a41b391397f1ab60dc3fd7fd5597d6ed50a9c482def544d39299",
+      "size": 135571736,
+      "lfs": {
+        "oid": "9af3c63d28f3a41b391397f1ab60dc3fd7fd5597d6ed50a9c482def544d39299",
+        "size": 135571736
+      }
+    },
+    {
+      "path": "results/sq1-fourbranch-protocol12-seed1-r3-results-v4/audit.json",
+      "sha256": "9bb18c3a61b85c370d6d1ae3157c15ac7759f5b4017d990e93a0dc26baa38558",
+      "size": 565,
+      "lfs": null
+    },
+    {
+      "path": "results/sq1-fourbranch-protocol12-seed1-r3-results-v4/checkpoints.mat",
+      "sha256": "2781839efacaec427a4a21b08b5efb728b614b1caa58d1b6b4982815efb50ee9",
+      "size": 527327,
+      "lfs": {
+        "oid": "2781839efacaec427a4a21b08b5efb728b614b1caa58d1b6b4982815efb50ee9",
+        "size": 527327
+      }
+    },
+    {
+      "path": "results/sq1-fourbranch-protocol12-seed1-r3-results-v4/config.json",
+      "sha256": "c6f6a5a6dcfc0ed9f5de0a6f9451b05a0cd99164cec0790c31460bcd87e1ca88",
+      "size": 702,
+      "lfs": null
+    },
+    {
+      "path": "results/sq1-fourbranch-protocol12-seed1-r3-results-v4/continuous_reference.mat",
+      "sha256": "9dbd12c0714058a464080d0357681c55384f2158572ba716f10d7869bd69cbd4",
+      "size": 34883380,
+      "lfs": {
+        "oid": "9dbd12c0714058a464080d0357681c55384f2158572ba716f10d7869bd69cbd4",
+        "size": 34883380
+      }
+    },
+    {
+      "path": "results/sq1-fourbranch-protocol12-seed1-r3-results-v4/delivery_audit.json",
+      "sha256": "f4d992683e897246f72299f91d7d85f6e5e1a78fc0deb3b6192753a1bb82891d",
+      "size": 666,
+      "lfs": null
+    },
+    {
+      "path": "results/sq1-fourbranch-protocol12-seed1-r3-results-v4/drop-normalized_seed1.mat",
+      "sha256": "6c478e55d1b931f7946e97be645241a4eaffaa52a9f4a652353635f9ad116c58",
+      "size": 35440720,
+      "lfs": {
+        "oid": "6c478e55d1b931f7946e97be645241a4eaffaa52a9f4a652353635f9ad116c58",
+        "size": 35440720
+      }
+    },
+    {
+      "path": "results/sq1-fourbranch-protocol12-seed1-r3-results-v4/drop_seed1.mat",
+      "sha256": "e0fd22536bc2220984a85e3571d062d39c30cb9c456426d5a1a872ee7386d2c6",
+      "size": 35423036,
+      "lfs": {
+        "oid": "e0fd22536bc2220984a85e3571d062d39c30cb9c456426d5a1a872ee7386d2c6",
+        "size": 35423036
+      }
+    },
+    {
+      "path": "results/sq1-fourbranch-protocol12-seed1-r3-results-v4/failure_logs/expected_invalid_mask.log",
+      "sha256": "5893c66392d7f0b2de161d34f72b3db53cb7a7041aa946dabebb60ed2a38623e",
+      "size": 326,
+      "lfs": null
+    },
+    {
+      "path": "results/sq1-fourbranch-protocol12-seed1-r3-results-v4/fresh_seed1.mat",
+      "sha256": "a79373dd7c14bfe1147f445b0bfb65c8d818b7d2151f277f8c39a1ec09c0a55d",
+      "size": 35449875,
+      "lfs": {
+        "oid": "a79373dd7c14bfe1147f445b0bfb65c8d818b7d2151f277f8c39a1ec09c0a55d",
+        "size": 35449875
+      }
+    },
+    {
+      "path": "results/sq1-fourbranch-protocol12-seed1-r3-results-v4/hold_seed1.mat",
+      "sha256": "be26d5fde0e953acfce58eb5878d50dc0127353b1e604cebac8156dcd73871cd",
+      "size": 35417460,
+      "lfs": {
+        "oid": "be26d5fde0e953acfce58eb5878d50dc0127353b1e604cebac8156dcd73871cd",
+        "size": 35417460
+      }
+    },
+    {
+      "path": "results/sq1-fourbranch-protocol12-seed1-r3-results-v4/load_pilot_example.m",
+      "sha256": "9338ea354bd7e669055d08976364ad862462522d12da365c0b58aa314b977f07",
+      "size": 1357,
+      "lfs": null
+    },
+    {
+      "path": "results/sq1-fourbranch-protocol12-seed1-r3-results-v4/logs/G1.log",
+      "sha256": "408c8ca85787b85a0380f7a136eba81e0a2d1a8d18b9544204759cefb1bb22d9",
+      "size": 398,
+      "lfs": null
+    },
+    {
+      "path": "results/sq1-fourbranch-protocol12-seed1-r3-results-v4/logs/G10.log",
+      "sha256": "d4e7a28731331a5f68a0598252718e6e7c785350c91af90109f35e27f1dda3f7",
+      "size": 363,
+      "lfs": null
+    },
+    {
+      "path": "results/sq1-fourbranch-protocol12-seed1-r3-results-v4/logs/G11.log",
+      "sha256": "9f51017599d1dba4b4b6182be9e48dcb480c7b295f1bcb9a3a0b3793a0f27a02",
+      "size": 305,
+      "lfs": null
+    },
+    {
+      "path": "results/sq1-fourbranch-protocol12-seed1-r3-results-v4/logs/G12.log",
+      "sha256": "1eb686f8dfb7856b78c7fbd898239d1581f26fd9314a793adbb811ba53cfdf53",
+      "size": 293,
+      "lfs": null
+    },
+    {
+      "path": "results/sq1-fourbranch-protocol12-seed1-r3-results-v4/logs/G13.log",
+      "sha256": "d385131cccb8abc2fb22178e3f92f250e751fc3efba418f73db11ace12cbfda0",
+      "size": 481,
+      "lfs": null
+    },
+    {
+      "path": "results/sq1-fourbranch-protocol12-seed1-r3-results-v4/logs/G14.log",
+      "sha256": "c37d47aa5a74e66c1688a2e0c11f034f2a0518c9a0ce0447ebbe50c21aea6c6f",
+      "size": 886,
+      "lfs": null
+    },
+    {
+      "path": "results/sq1-fourbranch-protocol12-seed1-r3-results-v4/logs/G15.log",
+      "sha256": "45915d1ee422dd1bf5239ec7b7d74da8e5e9ef0f5b30c0c3a2c530b0b625a7d3",
+      "size": 466,
+      "lfs": null
+    },
+    {
+      "path": "results/sq1-fourbranch-protocol12-seed1-r3-results-v4/logs/G2.log",
+      "sha256": "b9bcfb6e196cf77d31d85cbbdfe5e96554e899ecc053aa5369a5bf444cd55816",
+      "size": 224,
+      "lfs": null
+    },
+    {
+      "path": "results/sq1-fourbranch-protocol12-seed1-r3-results-v4/logs/G3.log",
+      "sha256": "87416551c9a1804de256419e9dd613067659a6c7e55cf0aed4c5c8fba5eaa98d",
+      "size": 259,
+      "lfs": null
+    },
+    {
+      "path": "results/sq1-fourbranch-protocol12-seed1-r3-results-v4/logs/G4.log",
+      "sha256": "3bc8713a1978583de211bf2efb3a31192d10ade56e70de07f5ad8c7e3043dd73",
+      "size": 636,
+      "lfs": null
+    },
+    {
+      "path": "results/sq1-fourbranch-protocol12-seed1-r3-results-v4/logs/G5.log",
+      "sha256": "d38ac7c3292d9f8c4aee01111d1eac5cc6493325b6625827d3a5f89fd006de58",
+      "size": 260,
+      "lfs": null
+    },
+    {
+      "path": "results/sq1-fourbranch-protocol12-seed1-r3-results-v4/logs/G6.log",
+      "sha256": "ffc70c205f3b649b2f29d1e17aa3b4cc1cca6689bc3890b6ac358b3a114743c6",
+      "size": 312,
+      "lfs": null
+    },
+    {
+      "path": "results/sq1-fourbranch-protocol12-seed1-r3-results-v4/logs/G7.log",
+      "sha256": "43e08b42f669f46dee85ebfd04a69c4849e8d3554119d45dbad42df263f21393",
+      "size": 246,
+      "lfs": null
+    },
+    {
+      "path": "results/sq1-fourbranch-protocol12-seed1-r3-results-v4/logs/G8.log",
+      "sha256": "e07c3c4031f6e65535b315808c506e52e1c96a39a055d2b968b44db6e94f669e",
+      "size": 282,
+      "lfs": null
+    },
+    {
+      "path": "results/sq1-fourbranch-protocol12-seed1-r3-results-v4/logs/G9.log",
+      "sha256": "4c26f1a2d170e12f8471f5143699c02e977a4031da6643d5273658c9defcd493",
+      "size": 385,
+      "lfs": null
+    },
+    {
+      "path": "results/sq1-fourbranch-protocol12-seed1-r3-results-v4/logs/mask_uniformity.json",
+      "sha256": "1b677e1e9f7633a6830c9f2642306e7dba0bbcdd57ebce99a94cf1b432f9c68e",
+      "size": 778,
+      "lfs": null
+    },
+    {
+      "path": "results/sq1-fourbranch-protocol12-seed1-r3-results-v4/logs/run.log",
+      "sha256": "3f2b7652fd56c9dfdf8f90f687cc16a0104acc85eded0383969b84d05ab95567",
+      "size": 359,
+      "lfs": null
+    },
+    {
+      "path": "results/sq1-fourbranch-protocol12-seed1-r3-results-v4/metadata.json",
+      "sha256": "7270ee136ee9e254edd018f875e439837436b0673351fa8ba47c8e10cf2c0cd9",
+      "size": 344,
+      "lfs": null
+    },
+    {
+      "path": "results/sq1-fourbranch-protocol12-seed1-r3-results-v4/postprocess_audit.json",
+      "sha256": "3bf3a6606dc4dd73c0ab1b40b953902c80438dfc91bd495b36a788d08213ed07",
+      "size": 406,
+      "lfs": null
+    },
+    {
+      "path": "results/sq1-fourbranch-protocol12-seed1-r3-results-v4/r2_r3_comparison.csv",
+      "sha256": "6c195c605e0a0d21878b21ef98e7b5ae4f775e85bb87e1dbbb2a56d181915d15",
+      "size": 2425,
+      "lfs": null
+    },
+    {
+      "path": "results/sq1-fourbranch-protocol12-seed1-r3-results-v4/reference_replay_summary.csv",
+      "sha256": "19edac6e6bed2391d4a7c8c7102e149cace7e7f08b518c97b6c61e88c1c848ea",
+      "size": 393,
+      "lfs": null
+    },
+    {
+      "path": "results/sq1-fourbranch-protocol12-seed1-r3-results-v4/reference_same_state_replay.mat",
+      "sha256": "c4af8fb9e28762d6cd994238c7ce02411b05a3a33513605ae1d66148e533eb2b",
+      "size": 40068553,
+      "lfs": {
+        "oid": "c4af8fb9e28762d6cd994238c7ce02411b05a3a33513605ae1d66148e533eb2b",
+        "size": 40068553
+      }
+    },
+    {
+      "path": "results/sq1-fourbranch-protocol12-seed1-r3-results-v4/resource_and_batch_status.json",
+      "sha256": "be31ce88151250b213e4270a2d9c669aa1e476d07652319037c76c71acfa8ee5",
+      "size": 289,
+      "lfs": null
+    },
+    {
+      "path": "results/sq1-fourbranch-protocol12-seed1-r3-results-v4/resume_check.csv",
+      "sha256": "01c6c2e8ddb4e050167fca9bbbb5dc58c130c7e8c2c59996c559ef6c1abeb1c2",
+      "size": 271,
+      "lfs": null
+    },
+    {
+      "path": "results/sq1-fourbranch-protocol12-seed1-r3-results-v4/source_manifest.json",
+      "sha256": "ef778daf6bc99b42de82bef64e5ca4d7d546c91e8900562734a4a8f9521942ad",
+      "size": 15360,
+      "lfs": null
+    },
+    {
+      "path": "results/sq1-fourbranch-protocol12-seed1-r3-results-v4/summary.csv",
+      "sha256": "d0981c541c3733dd439fa7385be2e26c2111cc1dded37e9a3be5f403de5a9ed6",
+      "size": 5993,
+      "lfs": null
+    },
+    {
+      "path": "results/sq1-fourbranch-protocol12-seed1-r3-results-v4/tests.json",
+      "sha256": "410a471a71c588ca9e46808de5e7ceb447b39ad6c786372732a6643935ac3732",
+      "size": 19002,
+      "lfs": null
+    },
+    {
+      "path": "results/sq1-fourbranch-protocol12-seed1-r3-results-v4/weight_contract.csv",
+      "sha256": "b986ab45da8d3f10f9db0429c73517c69a1b6075b0b96296f50acbdef9d3fd00",
+      "size": 92,
+      "lfs": null
+    },
+    {
+      "path": "resumeProtocolFromCheckpoint.m",
+      "sha256": "ae06c897d1c3857f79d6f68f96cbb1045cb640dda6be0fa612447a7a0f497567",
+      "size": 283,
+      "lfs": null
+    },
+    {
+      "path": "run_protocol12_seed1_r3.m",
+      "sha256": "b9408c97b3f13171e726ef2e925e7910e4fd30214b52e0e5f2881aa169bc3483",
+      "size": 4546,
+      "lfs": null
+    },
+    {
+      "path": "run_tests.m",
+      "sha256": "091aed9b5c53a2417668d793f936ba46c6a5ae3f61e9262e21150a8a1b30b3ac",
+      "size": 1478,
+      "lfs": null
+    },
+    {
+      "path": "sensorObservation.m",
+      "sha256": "151aeaf1241a646f45bbddc050f248948d5b115d98714cbedc1d47fd4f5ed4b0",
+      "size": 981,
+      "lfs": null
+    },
+    {
+      "path": "simulateProtocolSegment.m",
+      "sha256": "f5da48b377bd483f55a59c305456f5d258d839a31bbc091abaa40bfc74b14fa2",
+      "size": 5904,
+      "lfs": null
+    },
+    {
+      "path": "sources/A/SQ1_A_HANDOFF.md",
+      "sha256": "db954d275a316e95aacd2bd45de24b15f5213771c88a149683e9d49f78a28114",
+      "size": 8045,
+      "lfs": null
+    },
+    {
+      "path": "sources/A/SQ1_LOCAL_INPUT_MODEL.md",
+      "sha256": "613fb313b78796905956c69d562331361d736e5ffdc436d860ef7f2bef6ccfe1",
+      "size": 3412,
+      "lfs": null
+    },
+    {
+      "path": "sources/A/buildRingConnectivity.m",
+      "sha256": "7f100bb34deaa668edc8fef394bbc11e156e258c5de21bafecf3c5180ef05dd0",
+      "size": 443,
+      "lfs": null
+    },
+    {
+      "path": "sources/A/localSocialInputMetrics.m",
+      "sha256": "fddb044fefb98e11daba1cf63f3de4b35e92a14dc99da556914b03cb48aebd25",
+      "size": 2128,
+      "lfs": null
+    },
+    {
+      "path": "sources/A/plotSq1LocalE1.m",
+      "sha256": "9aaad3b2b1c642576166d49cf71875e344effde63ff47d2f77eaae44dfe5c501",
+      "size": 1210,
+      "lfs": null
+    },
+    {
+      "path": "sources/A/replayLocalSocialInput.m",
+      "sha256": "8d35f0a33728b00eecc9ae75b218b99c6b056d8e55f7af51488b129ecead6b9f",
+      "size": 2718,
+      "lfs": null
+    },
+    {
+      "path": "sources/A/runSq1LocalE1.m",
+      "sha256": "e6f0ff9df974fc6a27966e3289ea8daeddee0d386640a7fa8ba380df5504bb3a",
+      "size": 3480,
+      "lfs": null
+    },
+    {
+      "path": "sources/A/testLocalSocialInput.m",
+      "sha256": "03a4b1e71821fdef713316d56dc286c63a109b374f7ea603c676551d8ad5fed8",
+      "size": 1555,
+      "lfs": null
+    },
+    {
+      "path": "sources/legacy/simulateCollectiveFlockingNeuralField.m",
+      "sha256": "a6f71c26850470a2df022274f1a3dd8e7054492dfe54945bb7c114e0e4cda476",
+      "size": 3452,
+      "lfs": null
+    },
+    {
+      "path": "sources/legacy/simulateProtocolSegment_r2.m",
+      "sha256": "695ab343ab59c6fe1181197f866f14a856e6892a07b66037841981efbe5c861d",
+      "size": 5354,
+      "lfs": null
+    },
+    {
+      "path": "sources/protocol/ACCEPTANCE.md",
+      "sha256": "f1d8f61a99e9d3fd5bec3124d8df603809ec72d23e2c767486fd7141bb1162cc",
+      "size": 3370,
+      "lfs": null
+    },
+    {
+      "path": "sources/protocol/A_B_INPUT_INTERFACE.md",
+      "sha256": "95325203759985def70c3dcd3bdd8dabea01991138c7d4d3e284e9c09e83323e",
+      "size": 3324,
+      "lfs": null
+    },
+    {
+      "path": "sources/protocol/B_DELIVERY_CHECKLIST.md",
+      "sha256": "553bba0e864198889384f4061e12c5924aef5e11e5a1a324ab3068699a1e05da",
+      "size": 7503,
+      "lfs": null
+    },
+    {
+      "path": "sources/protocol/DATA_CONTRACT.md",
+      "sha256": "8622bc2e1cb784a2b21558a87f9575e37e374260506feb4d0703dec192737fe6",
+      "size": 3805,
+      "lfs": null
+    },
+    {
+      "path": "sources/protocol/EXECUTION_ORDER.md",
+      "sha256": "5d87f7138b8fac5d576aec7af111be2805c76b3c7f422ffbce7ef510d9fec1e5",
+      "size": 3540,
+      "lfs": null
+    },
+    {
+      "path": "sources/protocol/PROTOCOL.md",
+      "sha256": "dd58d80b5b3740b5c39e56fcf394d662729b95c84a4404ece7017ec64ebfa1ad",
+      "size": 16298,
+      "lfs": null
+    },
+    {
+      "path": "tests/protocolAssertions.m",
+      "sha256": "17d8723bfc693a066d1ddd829c48ea84090773a8b327a1f00cffcfd6b22bc067",
+      "size": 22437,
+      "lfs": null
+    },
+    {
+      "path": "writeJson.m",
+      "sha256": "6b76204a0be3b2355601a4a0c5712ac9fdb81a26afdf577184422a8b1d9f212b",
+      "size": 170,
+      "lfs": null
+    }
+  ],
+  "delivery_hash_checks": [
+    {
+      "file": "angularSetMetrics.m",
+      "hash_match": true,
+      "size_match": true
+    },
+    {
+      "file": "buildFreshOracle.m",
+      "hash_match": true,
+      "size_match": true
+    },
+    {
+      "file": "buildReferenceReplay.m",
+      "hash_match": true,
+      "size_match": true
+    },
+    {
+      "file": "buildRingConnectivity.m",
+      "hash_match": true,
+      "size_match": true
+    },
+    {
+      "file": "buildSourceManifest.m",
+      "hash_match": true,
+      "size_match": true
+    },
+    {
+      "file": "checkpointToStart.m",
+      "hash_match": true,
+      "size_match": true
+    },
+    {
+      "file": "compareSegments.m",
+      "hash_match": true,
+      "size_match": true
+    },
+    {
+      "file": "complete_delivery.ps1",
+      "hash_match": true,
+      "size_match": true
+    },
+    {
+      "file": "controllerInputFromObservation.m",
+      "hash_match": true,
+      "size_match": true
+    },
+    {
+      "file": "createOutputDirectory.m",
+      "hash_match": true,
+      "size_match": true
+    },
+    {
+      "file": "DATA_DICTIONARY.md",
+      "hash_match": true,
+      "size_match": true
+    },
+    {
+      "file": "decodeNeuralActivity.m",
+      "hash_match": true,
+      "size_match": true
+    },
+    {
+      "file": "defaultFourBranchConfig.m",
+      "hash_match": true,
+      "size_match": true
+    },
+    {
+      "file": "fileSHA256.m",
+      "hash_match": true,
+      "size_match": true
+    },
+    {
+      "file": "finalizePackage.m",
+      "hash_match": true,
+      "size_match": true
+    },
+    {
+      "file": "fixedTargetIds.m",
+      "hash_match": true,
+      "size_match": true
+    },
+    {
+      "file": "FIXES.md",
+      "hash_match": true,
+      "size_match": true
+    },
+    {
+      "file": "fourBranchInputStep.m",
+      "hash_match": true,
+      "size_match": true
+    },
+    {
+      "file": "generateSummary.m",
+      "hash_match": true,
+      "size_match": true
+    },
+    {
+      "file": "hash_package.ps1",
+      "hash_match": true,
+      "size_match": true
+    },
+    {
+      "file": "initializeCoreState.m",
+      "hash_match": true,
+      "size_match": true
+    },
+    {
+      "file": "initializeInputState.m",
+      "hash_match": true,
+      "size_match": true
+    },
+    {
+      "file": "load_pilot_example.m",
+      "hash_match": true,
+      "size_match": true
+    },
+    {
+      "file": "makeProtocolMasks.m",
+      "hash_match": true,
+      "size_match": true
+    },
+    {
+      "file": "R3_STATUS.md",
+      "hash_match": true,
+      "size_match": true
+    },
+    {
+      "file": "README.md",
+      "hash_match": true,
+      "size_match": true
+    },
+    {
+      "file": "results/sq1-fourbranch-protocol12-seed1-r3-results-v4/audit.json",
+      "hash_match": true,
+      "size_match": true
+    },
+    {
+      "file": "results/sq1-fourbranch-protocol12-seed1-r3-results-v4/checkpoints.mat",
+      "hash_match": true,
+      "size_match": true
+    },
+    {
+      "file": "results/sq1-fourbranch-protocol12-seed1-r3-results-v4/config.json",
+      "hash_match": true,
+      "size_match": true
+    },
+    {
+      "file": "results/sq1-fourbranch-protocol12-seed1-r3-results-v4/continuous_reference.mat",
+      "hash_match": true,
+      "size_match": true
+    },
+    {
+      "file": "results/sq1-fourbranch-protocol12-seed1-r3-results-v4/DATA_DICTIONARY.md",
+      "hash_match": true,
+      "size_match": true
+    },
+    {
+      "file": "results/sq1-fourbranch-protocol12-seed1-r3-results-v4/delivery_audit.json",
+      "hash_match": true,
+      "size_match": true
+    },
+    {
+      "file": "results/sq1-fourbranch-protocol12-seed1-r3-results-v4/drop_seed1.mat",
+      "hash_match": true,
+      "size_match": true
+    },
+    {
+      "file": "results/sq1-fourbranch-protocol12-seed1-r3-results-v4/drop-normalized_seed1.mat",
+      "hash_match": true,
+      "size_match": true
+    },
+    {
+      "file": "results/sq1-fourbranch-protocol12-seed1-r3-results-v4/failure_logs/expected_invalid_mask.log",
+      "hash_match": true,
+      "size_match": true
+    },
+    {
+      "file": "results/sq1-fourbranch-protocol12-seed1-r3-results-v4/FIXES.md",
+      "hash_match": true,
+      "size_match": true
+    },
+    {
+      "file": "results/sq1-fourbranch-protocol12-seed1-r3-results-v4/fresh_seed1.mat",
+      "hash_match": true,
+      "size_match": true
+    },
+    {
+      "file": "results/sq1-fourbranch-protocol12-seed1-r3-results-v4/hold_seed1.mat",
+      "hash_match": true,
+      "size_match": true
+    },
+    {
+      "file": "results/sq1-fourbranch-protocol12-seed1-r3-results-v4/load_pilot_example.m",
+      "hash_match": true,
+      "size_match": true
+    },
+    {
+      "file": "results/sq1-fourbranch-protocol12-seed1-r3-results-v4/logs/G1.log",
+      "hash_match": true,
+      "size_match": true
+    },
+    {
+      "file": "results/sq1-fourbranch-protocol12-seed1-r3-results-v4/logs/G10.log",
+      "hash_match": true,
+      "size_match": true
+    },
+    {
+      "file": "results/sq1-fourbranch-protocol12-seed1-r3-results-v4/logs/G11.log",
+      "hash_match": true,
+      "size_match": true
+    },
+    {
+      "file": "results/sq1-fourbranch-protocol12-seed1-r3-results-v4/logs/G12.log",
+      "hash_match": true,
+      "size_match": true
+    },
+    {
+      "file": "results/sq1-fourbranch-protocol12-seed1-r3-results-v4/logs/G13.log",
+      "hash_match": true,
+      "size_match": true
+    },
+    {
+      "file": "results/sq1-fourbranch-protocol12-seed1-r3-results-v4/logs/G14.log",
+      "hash_match": true,
+      "size_match": true
+    },
+    {
+      "file": "results/sq1-fourbranch-protocol12-seed1-r3-results-v4/logs/G15.log",
+      "hash_match": true,
+      "size_match": true
+    },
+    {
+      "file": "results/sq1-fourbranch-protocol12-seed1-r3-results-v4/logs/G2.log",
+      "hash_match": true,
+      "size_match": true
+    },
+    {
+      "file": "results/sq1-fourbranch-protocol12-seed1-r3-results-v4/logs/G3.log",
+      "hash_match": true,
+      "size_match": true
+    },
+    {
+      "file": "results/sq1-fourbranch-protocol12-seed1-r3-results-v4/logs/G4.log",
+      "hash_match": true,
+      "size_match": true
+    },
+    {
+      "file": "results/sq1-fourbranch-protocol12-seed1-r3-results-v4/logs/G5.log",
+      "hash_match": true,
+      "size_match": true
+    },
+    {
+      "file": "results/sq1-fourbranch-protocol12-seed1-r3-results-v4/logs/G6.log",
+      "hash_match": true,
+      "size_match": true
+    },
+    {
+      "file": "results/sq1-fourbranch-protocol12-seed1-r3-results-v4/logs/G7.log",
+      "hash_match": true,
+      "size_match": true
+    },
+    {
+      "file": "results/sq1-fourbranch-protocol12-seed1-r3-results-v4/logs/G8.log",
+      "hash_match": true,
+      "size_match": true
+    },
+    {
+      "file": "results/sq1-fourbranch-protocol12-seed1-r3-results-v4/logs/G9.log",
+      "hash_match": true,
+      "size_match": true
+    },
+    {
+      "file": "results/sq1-fourbranch-protocol12-seed1-r3-results-v4/logs/mask_uniformity.json",
+      "hash_match": true,
+      "size_match": true
+    },
+    {
+      "file": "results/sq1-fourbranch-protocol12-seed1-r3-results-v4/logs/run.log",
+      "hash_match": true,
+      "size_match": true
+    },
+    {
+      "file": "results/sq1-fourbranch-protocol12-seed1-r3-results-v4/metadata.json",
+      "hash_match": true,
+      "size_match": true
+    },
+    {
+      "file": "results/sq1-fourbranch-protocol12-seed1-r3-results-v4/postprocess_audit.json",
+      "hash_match": true,
+      "size_match": true
+    },
+    {
+      "file": "results/sq1-fourbranch-protocol12-seed1-r3-results-v4/r2_r3_comparison.csv",
+      "hash_match": true,
+      "size_match": true
+    },
+    {
+      "file": "results/sq1-fourbranch-protocol12-seed1-r3-results-v4/R3_STATUS.md",
+      "hash_match": true,
+      "size_match": true
+    },
+    {
+      "file": "results/sq1-fourbranch-protocol12-seed1-r3-results-v4/README.md",
+      "hash_match": true,
+      "size_match": true
+    },
+    {
+      "file": "results/sq1-fourbranch-protocol12-seed1-r3-results-v4/reference_replay_summary.csv",
+      "hash_match": true,
+      "size_match": true
+    },
+    {
+      "file": "results/sq1-fourbranch-protocol12-seed1-r3-results-v4/reference_same_state_replay.mat",
+      "hash_match": true,
+      "size_match": true
+    },
+    {
+      "file": "results/sq1-fourbranch-protocol12-seed1-r3-results-v4/resource_and_batch_status.json",
+      "hash_match": true,
+      "size_match": true
+    },
+    {
+      "file": "results/sq1-fourbranch-protocol12-seed1-r3-results-v4/resume_check.csv",
+      "hash_match": true,
+      "size_match": true
+    },
+    {
+      "file": "results/sq1-fourbranch-protocol12-seed1-r3-results-v4/RUN_MANIFEST.csv",
+      "hash_match": true,
+      "size_match": true
+    },
+    {
+      "file": "results/sq1-fourbranch-protocol12-seed1-r3-results-v4/source_manifest.json",
+      "hash_match": true,
+      "size_match": true
+    },
+    {
+      "file": "results/sq1-fourbranch-protocol12-seed1-r3-results-v4/summary.csv",
+      "hash_match": true,
+      "size_match": true
+    },
+    {
+      "file": "results/sq1-fourbranch-protocol12-seed1-r3-results-v4/T0_maxdiff.csv",
+      "hash_match": true,
+      "size_match": true
+    },
+    {
+      "file": "results/sq1-fourbranch-protocol12-seed1-r3-results-v4/T0_results.mat",
+      "hash_match": true,
+      "size_match": true
+    },
+    {
+      "file": "results/sq1-fourbranch-protocol12-seed1-r3-results-v4/T0_TEST_MANIFEST.csv",
+      "hash_match": true,
+      "size_match": true
+    },
+    {
+      "file": "results/sq1-fourbranch-protocol12-seed1-r3-results-v4/tests.json",
+      "hash_match": true,
+      "size_match": true
+    },
+    {
+      "file": "results/sq1-fourbranch-protocol12-seed1-r3-results-v4/weight_contract.csv",
+      "hash_match": true,
+      "size_match": true
+    },
+    {
+      "file": "resumeProtocolFromCheckpoint.m",
+      "hash_match": true,
+      "size_match": true
+    },
+    {
+      "file": "run_protocol12_seed1_r3.m",
+      "hash_match": true,
+      "size_match": true
+    },
+    {
+      "file": "run_tests.m",
+      "hash_match": true,
+      "size_match": true
+    },
+    {
+      "file": "sensorObservation.m",
+      "hash_match": true,
+      "size_match": true
+    },
+    {
+      "file": "simulateProtocolSegment.m",
+      "hash_match": true,
+      "size_match": true
+    },
+    {
+      "file": "sources/A/buildRingConnectivity.m",
+      "hash_match": true,
+      "size_match": true
+    },
+    {
+      "file": "sources/A/localSocialInputMetrics.m",
+      "hash_match": true,
+      "size_match": true
+    },
+    {
+      "file": "sources/A/plotSq1LocalE1.m",
+      "hash_match": true,
+      "size_match": true
+    },
+    {
+      "file": "sources/A/replayLocalSocialInput.m",
+      "hash_match": true,
+      "size_match": true
+    },
+    {
+      "file": "sources/A/runSq1LocalE1.m",
+      "hash_match": true,
+      "size_match": true
+    },
+    {
+      "file": "sources/A/SQ1_A_HANDOFF.md",
+      "hash_match": true,
+      "size_match": true
+    },
+    {
+      "file": "sources/A/SQ1_LOCAL_INPUT_MODEL.md",
+      "hash_match": true,
+      "size_match": true
+    },
+    {
+      "file": "sources/A/testLocalSocialInput.m",
+      "hash_match": true,
+      "size_match": true
+    },
+    {
+      "file": "sources/legacy/simulateCollectiveFlockingNeuralField.m",
+      "hash_match": true,
+      "size_match": true
+    },
+    {
+      "file": "sources/legacy/simulateProtocolSegment_r2.m",
+      "hash_match": true,
+      "size_match": true
+    },
+    {
+      "file": "sources/protocol/A_B_INPUT_INTERFACE.md",
+      "hash_match": true,
+      "size_match": true
+    },
+    {
+      "file": "sources/protocol/ACCEPTANCE.md",
+      "hash_match": true,
+      "size_match": true
+    },
+    {
+      "file": "sources/protocol/B_DELIVERY_CHECKLIST.md",
+      "hash_match": true,
+      "size_match": true
+    },
+    {
+      "file": "sources/protocol/DATA_CONTRACT.md",
+      "hash_match": true,
+      "size_match": true
+    },
+    {
+      "file": "sources/protocol/EXECUTION_ORDER.md",
+      "hash_match": true,
+      "size_match": true
+    },
+    {
+      "file": "sources/protocol/PROTOCOL.md",
+      "hash_match": true,
+      "size_match": true
+    },
+    {
+      "file": "tests/protocolAssertions.m",
+      "hash_match": true,
+      "size_match": true
+    },
+    {
+      "file": "writeJson.m",
+      "hash_match": true,
+      "size_match": true
+    }
+  ]
+}

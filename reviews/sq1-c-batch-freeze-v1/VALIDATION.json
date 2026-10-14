@@ -1,0 +1,29 @@
+{
+  "status": "PASS",
+  "date": "2026-10-09",
+  "evidence_type": "execution_design_validation",
+  "independent_counts": {
+    "main_runs": 560,
+    "T0_runs": 80,
+    "fresh_references": 20,
+    "nonfresh_runs": 540,
+    "required_nonfresh_window_rows": 2160,
+    "primary_nonfresh_rows": 540,
+    "logical_checkpoints": 40,
+    "mask_sets": 60,
+    "same_state_replay_contexts": 180
+  },
+  "hashed_files_checked": 27,
+  "pinned_sources_checked": 43,
+  "core_files_locked": 15,
+  "seed1_software_gates": "15 PASS",
+  "negative_controls": {
+    "duplicate_key": "EXPECTED_REJECTION",
+    "wrong_pairing": "EXPECTED_REJECTION",
+    "off_by_one": "EXPECTED_REJECTION",
+    "changed_amplitude": "EXPECTED_REJECTION",
+    "missing_condition": "EXPECTED_REJECTION"
+  },
+  "simulations_started": false,
+  "full_batch_allowed": false
+}

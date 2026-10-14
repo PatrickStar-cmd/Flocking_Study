@@ -1,0 +1,9 @@
+{
+  "matlabVersion": "24.2.0.2712019 (R2024b)",
+  "canonicalRuns": 240,
+  "maxOldSummaryError": 5.5511151231257827E-16,
+  "runWindowRows": 2160,
+  "pairWindowRows": 1980,
+  "figures": 11,
+  "noSmoothing": true
+}

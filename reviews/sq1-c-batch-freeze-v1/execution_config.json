@@ -1,0 +1,229 @@
+{
+  "schema": "sq1-batch-execution-freeze-1",
+  "freeze_id": "sq1-c-batch-freeze-v1",
+  "date": "2026-10-09",
+  "owner": "杨骋",
+  "implementation_owner": "王浩权",
+  "protocol_revision": "1.2",
+  "evidence_type": "development_exploratory",
+  "state": "DESIGN_FROZEN_BATCH_ADAPTER_PENDING",
+  "accepted_implementation_commit": "54fb85d91151e0b28e8e570318b4a9937d6a0425",
+  "batch_adapter_commit": null,
+  "authorization": {
+    "seed1_software_accepted": true,
+    "batch_adapter_check_allowed": true,
+    "full_batch_allowed": false,
+    "release_requires": [
+      "adapter_commit_pinned",
+      "source_hashes_checked",
+      "seed1_28_main_and_4_T0_accepted",
+      "environment_and_resources_recorded"
+    ],
+    "reason": "Base software accepted; multi-condition adapter has not yet been delivered."
+  },
+  "base_matlab_config": {
+    "NAgents": 20,
+    "NNeurons": 100,
+    "NSteps": 6600,
+    "dt": 0.3,
+    "arenaSize": 1000,
+    "speedScale": 0.05,
+    "beta": 1000,
+    "globalInhibition": 0,
+    "connectivityExponent": 0.5,
+    "receptiveFieldWidth": 0.4,
+    "allocentric": true,
+    "k": 8,
+    "neighborCount": 8,
+    "h": 4,
+    "A0": 0.228,
+    "w0": 0.0285,
+    "checkpointSteps": [
+      6000,
+      6200
+    ],
+    "maskReadyStep": 6200,
+    "occlusionStartStep": 6201,
+    "recordStride": 1,
+    "recordFromStep": 6000,
+    "protocolVersion": "1.2",
+    "headingThreshold": 1e-09,
+    "initialXY": [],
+    "initialHeadings": [],
+    "initialNeuralState": []
+  },
+  "sensing": {
+    "bearing_noise_std": 0,
+    "distance_weight": "equal",
+    "turn_cue": false,
+    "hold_age_limit": null,
+    "predictor": null
+  },
+  "design": {
+    "seeds": [
+      1,
+      2,
+      3,
+      4,
+      5,
+      6,
+      7,
+      8,
+      9,
+      10,
+      11,
+      12,
+      13,
+      14,
+      15,
+      16,
+      17,
+      18,
+      19,
+      20
+    ],
+    "mask_rules": [
+      "random",
+      "max_hidden_R1",
+      "min_hidden_R1"
+    ],
+    "mask_display_names": {
+      "random": "random",
+      "max_hidden_R1": "concentrated",
+      "min_hidden_R1": "dispersed"
+    },
+    "duration_steps": [
+      10,
+      34,
+      100
+    ],
+    "modes": [
+      "fresh",
+      "drop",
+      "drop-normalized",
+      "hold"
+    ],
+    "mask_stream": {
+      "algorithm": "mt19937ar",
+      "seed_formula": "100000 + simulation_seed"
+    },
+    "target_rule": "cyclic_fixed_ids_from_initialization",
+    "mask_geometry_step": 6200,
+    "mask_geometry_time": "step_start_last_legal_observation",
+    "mask_geometry_source": "checkpoint6200.lastBearing or saved start-of-step6200 position",
+    "mask_geometry_forbidden": "checkpoint6200 end-of-step position used as a new observation"
+  },
+  "counts": {
+    "seeds": 20,
+    "main_runs": 560,
+    "fresh_references": 20,
+    "nonfresh_runs": 540,
+    "T0_runs": 80,
+    "main_runs_per_seed": 28,
+    "T0_runs_per_seed": 4,
+    "logical_checkpoints": 40,
+    "mask_sets": 60,
+    "same_state_replay_contexts": 180,
+    "required_nonfresh_window_rows": 2160,
+    "primary_nonfresh_rows": 540
+  },
+  "files": {
+    "main_manifest": "references/protocol/RUN_MANIFEST.csv",
+    "T0_manifest": "references/protocol/T0_TEST_MANIFEST.csv",
+    "main_bindings": "RUN_BINDINGS.json",
+    "T0_bindings": "T0_BINDINGS.json",
+    "source_lock": "SOURCE_LOCK.json",
+    "adapter_check": "ADAPTER_CHECK.json"
+  },
+  "summary": {
+    "key": [
+      "run_id",
+      "comparison_mask_rule",
+      "comparison_duration_steps",
+      "window"
+    ],
+    "required_modes": [
+      "drop",
+      "drop-normalized",
+      "hold"
+    ],
+    "fresh_reference_window": "Use the comparison duration, never fresh duration=0, to align windows.",
+    "optional_fresh_context_rows": 720,
+    "optional_fresh_rows_are_independent_runs": false,
+    "primary_endpoint": "pairDistanceIncrease in recovery100",
+    "pairDistanceIncrease": "mean(D_branch-D_fresh); normalized by arenaSize",
+    "GOLoss": "mean(GO_fresh-GO_branch)",
+    "LOLoss": "mean(LO_fresh-LO_branch)",
+    "contrasts": [
+      "drop-normalized minus drop",
+      "hold minus drop-normalized"
+    ]
+  },
+  "statistics": {
+    "resampling_unit": "seed_complete_paired_block",
+    "bootstrap_replicates": 20000,
+    "bootstrap_seed": 20260929,
+    "shared_resample_indices": true,
+    "interval": "linear_percentile_95",
+    "multiple_comparison_adjustment": false,
+    "report": [
+      "per-seed",
+      "mean",
+      "median",
+      "range",
+      "paired_bootstrap_interval"
+    ],
+    "scientific_success_threshold": null
+  },
+  "scheduler": {
+    "unit": "seed",
+    "order": [
+      1,
+      2,
+      3,
+      4,
+      5,
+      6,
+      7,
+      8,
+      9,
+      10,
+      11,
+      12,
+      13,
+      14,
+      15,
+      16,
+      17,
+      18,
+      19,
+      20
+    ],
+    "execution": "serial",
+    "workerCount": 0,
+    "parallel_release": "Only after measured memory and schedule/RNG equivalence are recorded.",
+    "T0_before_nonfresh_forks": true,
+    "fresh_runs_once_per_seed": true,
+    "prefix_steps_reused": 200,
+    "fork_steps": 400,
+    "assemble_steps": 600,
+    "technical_failure_action": "stop and preserve logs/partial data; no silent exclusions",
+    "bad_scientific_effect_is_technical_failure": false
+  },
+  "output_policy": {
+    "new_directory_required": true,
+    "root": "effective-social-input/results/",
+    "adapter_name_pattern": "sq1-fourbranch-batch-adapter-v1-<run_id>",
+    "main_name_pattern": "sq1-fourbranch-pilot-v1-<run_id>",
+    "overwrite_allowed": false,
+    "reuse_r3_smoke_by_default": false,
+    "resume": "Only complete tasks with matching release/config/source/checkpoint/data hashes; append a new execution log.",
+    "state_values": [
+      "PLANNED",
+      "RUNNING",
+      "GENERATED_PENDING_REVIEW",
+      "ACCEPTED",
+      "FAILED"
+    ]
+  }
+}

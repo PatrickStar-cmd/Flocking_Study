@@ -1,0 +1,5 @@
+mode,expectedA,maxDiff
+fresh,0.228,0
+drop,0.114,0
+drop-normalized,0.228,0
+hold,0.228,0

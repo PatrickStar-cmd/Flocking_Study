@@ -1,0 +1,76 @@
+{
+  "matlabVersion": "24.2.0.2712019 (R2024b)",
+  "testLocalSocialInputPassed": true,
+  "caseCount": 9,
+  "caseChecks": [
+    {
+      "name": "strength-scale-0.5",
+      "seriesError": 0,
+      "inputError": 0,
+      "stateError": 0
+    },
+    {
+      "name": "strength-scale-1.0",
+      "seriesError": 0,
+      "inputError": 0,
+      "stateError": 0
+    },
+    {
+      "name": "strength-scale-2.0",
+      "seriesError": 0,
+      "inputError": 0,
+      "stateError": 0
+    },
+    {
+      "name": "structure-concentrated",
+      "seriesError": 0,
+      "inputError": 0,
+      "stateError": 0
+    },
+    {
+      "name": "structure-bimodal",
+      "seriesError": 0,
+      "inputError": 0,
+      "stateError": 0
+    },
+    {
+      "name": "structure-dispersed",
+      "seriesError": 0,
+      "inputError": 0,
+      "stateError": 0
+    },
+    {
+      "name": "label-split-equivalent",
+      "seriesError": 0,
+      "inputError": 0,
+      "stateError": 0
+    },
+    {
+      "name": "fresh-bearing",
+      "seriesError": 0,
+      "inputError": 0,
+      "stateError": 0
+    },
+    {
+      "name": "hold-last-bearing",
+      "seriesError": 0,
+      "inputError": 0,
+      "stateError": 0
+    }
+  ],
+  "independentShiftedGridError": 2.7755575615628914E-17,
+  "weightSum": 0.22799999999999998,
+  "concentratedEntropy": 1.3862943611198906,
+  "spreadEntropy": 1.3862943611198906,
+  "concentratedR1": 1,
+  "spreadR1": 7.2045298981875386E-17,
+  "opposedR1": 6.123233995736766E-17,
+  "opposedHasDirection": true,
+  "emptyVectorsSupported": false,
+  "emptyVectorError": "输入 应为 向量。",
+  "freshHoldFirst39ExactlyEqual": false,
+  "freshHoldFirstValueDifference": 0.975,
+  "holdEntireScheduleConstant": true,
+  "dispersedBumpConcentration": 2.9966061412380322E-17,
+  "dispersedDecodedDirection": 2.5908478649846525
+}

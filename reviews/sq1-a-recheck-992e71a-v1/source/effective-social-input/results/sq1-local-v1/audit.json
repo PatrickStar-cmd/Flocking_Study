@@ -1,0 +1,34 @@
+{
+  "schemaVersion": 1,
+  "generatedAt": "2026-09-27T13:33:51.0295230Z",
+  "gitCommit": "71583f9c6fae635e78a9aa4f2cc8934128748bd9",
+  "branch": "feature/sq1-local-input",
+  "sourceSHA256": {
+    "SQ1_LOCAL_INPUT_MODEL.md": "613FB313B78796905956C69D562331361D736E5FFDC436D860EF7F2BEF6CCFE1",
+    "localSocialInputMetrics.m": "FDDB044FEFB98E11DABA1CF63F3DE4B35E92A14DC99DA556914B03CB48AEBD25",
+    "replayLocalSocialInput.m": "8D35F0A33728B00EECC9AE75B218B99C6B056D8E55F7AF51488B129ECEAD6B9F",
+    "runSq1LocalE1.m": "E6F0FF9DF974FC6A27966E3289EA8DAEDDEE0D386640A7FA8BA380DF5504BB3A",
+    "testLocalSocialInput.m": "03A4B1E71821FDEF713316D56DC286C63A109B374F7EA603C676551D8AD5FED8",
+    "plotSq1LocalE1.m": "9AAAD3B2B1C642576166D49CF71875E344EFFDE63FF47D2F77EAAE44DFE5C501",
+    "buildRingConnectivity.m": "D0AE1F35A77FD9603B7CF975686E297317D66D884FE902EC8A2205D699BAB85E"
+  },
+  "parameters": {
+    "NNeurons": 100,
+    "NSteps": 120,
+    "dt": 0.3,
+    "beta": 1000,
+    "globalInhibition": 0,
+    "receptiveFieldWidth": 0.4,
+    "connectivityExponent": 0.5,
+    "initialNeuralState": "zeros",
+    "randomSeed": "none; deterministic prescribed bearings",
+    "cases": 9
+  },
+  "outputs": [
+    "summary.csv",
+    "e1-results.mat",
+    "e1-mechanism.png",
+    "README.md"
+  ],
+  "evidence": "Exploratory local mechanism development evidence; no group threshold or stability claim."
+}

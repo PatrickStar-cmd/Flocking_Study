@@ -1,0 +1,9 @@
+{在不同结构体之间进行下标赋值。
+
+出错 inspect_mat_artifacts (第 17 行)
+    checks(end+1)=c; %#ok<SAGROW>
+    ^^^^^^^^^^^^^
+出错 run (第 112 行)
+evalin('caller', strcat(scriptStem, ';'));
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+} 

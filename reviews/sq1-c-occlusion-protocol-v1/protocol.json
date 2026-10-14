@@ -1,0 +1,46 @@
+{
+  "protocol_id": "sq1-fourbranch-pilot-v1",
+  "revision": "1.2",
+  "a_reference": {
+    "branch": "Hao_L",
+    "commit": "992e71aba3b26896335b52a3182cf01cfd542a9d",
+    "interface_contract": "A_B_INPUT_INTERFACE.md",
+    "audit": "../sq1-a-recheck-992e71a-v1/local_recheck.json",
+    "saved_replays_exact": 9,
+    "requires_B_adapter_acceptance": true,
+    "historical_dependency_hash_gap": "buildRingConnectivity.m"
+  },
+  "acceptance_gate_count": 15,
+  "status": "design_set_20_development_seeds_pending_implementation_acceptance",
+  "user_confirmed": {"fixed_target_identity": true, "bearing_measurement_std": 0},
+  "pending_user_decision": null,
+  "scale_decision": "User requested a less conservative first round; C selected 20 development seeds at k=8, hidden_count=4. Not a verbatim user-specified sample size.",
+  "proposal": {
+    "N": 20, "M": 100, "dt": 0.3, "arena_size": 1000,
+    "k": 8, "hidden_count": 4, "simulation_seeds": [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20],
+    "seed_status": "previously_used_development_seeds",
+    "baseline_total_weight": 0.228, "ht": 0.24,
+    "beta": 1000, "sigma": 0.4, "speed_scale": 0.05,
+    "connectivity_exponent": 0.5, "global_inhibition": 0,
+    "allocentric": true, "distance_weight": "equal", "turn_cue": false,
+    "target_rule": "cyclic_fixed_ids_from_initialization",
+    "mask_rules": ["random", "max_hidden_R1", "min_hidden_R1"],
+    "mask_stream": {"algorithm": "mt19937ar", "seed_formula": "100000 + simulation_seed"},
+    "modes": ["fresh", "drop", "drop-normalized", "hold"],
+    "duration_steps": [10, 34, 100], "duration_time": [3, 10.2, 30],
+    "checkpoint_steps": 6000, "common_prefix_steps": 200,
+    "event_start_local_step": 201, "branch_steps": 600,
+    "primary_post_steps": 100, "extended_post_steps": 300,
+    "primary_endpoint": "mean normalized pair distance increase over fresh during first 100 restored steps",
+    "pilot_statistics": "per-seed values, mean, median, range; paired seed bootstrap 20000 replicates, shared draws, seed 20260929, linear percentile 95% intervals, unadjusted exploratory",
+    "hold_age_limit": "disabled",
+    "full_missing_normalized_action": "zero_input_with_unavailable_flag"
+  },
+  "execution": {
+    "allowed": false,
+    "implementation_commit": null,
+    "acceptance_log": null,
+    "run_manifest": "RUN_MANIFEST.csv",
+    "reason": "Design and run keys set; B implementation commit and acceptance evidence pending. No simulation started."
+  }
+}

@@ -1,0 +1,5 @@
+PASS: equal and exponential distance weights
+PASS: exact equal-mode regression, fixed mass, zero neighbors, periodic distance
+PASS: wrapped innovation, PSD, hidden-state isolation, schedule, no-event equality
+PASS: circular mass conservation, peak reduction, covariance cutoff
+PASS: MATLAB reference exported; existing occlusion regression passed.

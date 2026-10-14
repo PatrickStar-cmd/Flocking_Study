@@ -1,0 +1,77 @@
+{
+  "status": "PASS design arithmetic only; no simulator test executed",
+  "proposal_not_execution": true,
+  "per_seed_trajectories": 28,
+  "pilot_trajectories": 560,
+  "minimum_t0_test_trajectories": 80,
+  "candidate_hidden_subsets_per_agent": 70,
+  "time_intervals": [
+    {
+      "d": 10,
+      "T": 3,
+      "event": [
+        201,
+        210
+      ],
+      "restore": 211,
+      "primary_post": [
+        211,
+        310
+      ],
+      "extended_post": [
+        211,
+        510
+      ]
+    },
+    {
+      "d": 34,
+      "T": 10.2,
+      "event": [
+        201,
+        234
+      ],
+      "restore": 235,
+      "primary_post": [
+        235,
+        334
+      ],
+      "extended_post": [
+        235,
+        534
+      ]
+    },
+    {
+      "d": 100,
+      "T": 30,
+      "event": [
+        201,
+        300
+      ],
+      "restore": 301,
+      "primary_post": [
+        301,
+        400
+      ],
+      "extended_post": [
+        301,
+        600
+      ]
+    }
+  ],
+  "expected_amplitudes": {
+    "fresh": 0.228,
+    "drop": 0.114,
+    "drop_normalized": 0.228,
+    "hold": 0.228
+  },
+  "source_hashes": {
+    "ACCEPTANCE.md": "1f98ee679d51fa11c8d88086ca31627a9448cad0593c5372f5670a8a643e20ae",
+    "check_design.py": "4b33d381733d72019a61b60fe30a4685e028d0bce3a1276aad9d4b37b13d82b3",
+    "DATA_CONTRACT.md": "ca643d75b4380587739fc6d1553dbdbaf8b50b90db8fa06efd1467964c1508b1",
+    "EXECUTION_ORDER.md": "1dae358c0b66f6ab758de1cc59c2a77d8b9e2da13edfd8f5649acc60274f262c",
+    "protocol.json": "26fe953268c180c5fd5e6fff9163378ef1432806d10da9446e02198f09e3736d",
+    "PROTOCOL.md": "af57c63dbd6d5b77f36ffc0daed8a0447a7fb3cf00e05bbf1a5882e2994e63fc",
+    "RUN_MANIFEST.csv": "ff5ef9d5c25e415cbd23a65a3e296ea3c590a42a6d6f323c2f5f801a2299337a",
+    "T0_TEST_MANIFEST.csv": "4b1563e38c2806c4103978a37b4474d4c20156bf3ec129a526956c028b5ae6e3"
+  }
+}

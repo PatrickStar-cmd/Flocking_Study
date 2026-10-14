@@ -1,0 +1,2405 @@
+{
+  "source_commit": "63d56b51cb74bca509b0fb7dc29d1d5997d3a1ae",
+  "downloaded_files": 105,
+  "B_directory_files": 57,
+  "rows": 480,
+  "groups_with_experiment_labels": 24,
+  "seeds": [
+    1,
+    2,
+    3,
+    4,
+    5,
+    6,
+    7,
+    8,
+    9,
+    10,
+    11,
+    12,
+    13,
+    14,
+    15,
+    16,
+    17,
+    18,
+    19,
+    20
+  ],
+  "unique_keys_without_experiment": 280,
+  "unique_keys_after_known_algorithm_equivalences": 240,
+  "duplicate_config_groups": [
+    {
+      "key": [
+        "original",
+        "random",
+        "2",
+        "1"
+      ],
+      "occurrences": 2,
+      "experiments": [
+        "E1_strength_policy",
+        "E2_neighbor_count"
+      ],
+      "metrics_identical": true
+    },
+    {
+      "key": [
+        "original",
+        "random",
+        "2",
+        "2"
+      ],
+      "occurrences": 2,
+      "experiments": [
+        "E1_strength_policy",
+        "E2_neighbor_count"
+      ],
+      "metrics_identical": true
+    },
+    {
+      "key": [
+        "original",
+        "random",
+        "2",
+        "3"
+      ],
+      "occurrences": 2,
+      "experiments": [
+        "E1_strength_policy",
+        "E2_neighbor_count"
+      ],
+      "metrics_identical": true
+    },
+    {
+      "key": [
+        "original",
+        "random",
+        "2",
+        "4"
+      ],
+      "occurrences": 2,
+      "experiments": [
+        "E1_strength_policy",
+        "E2_neighbor_count"
+      ],
+      "metrics_identical": true
+    },
+    {
+      "key": [
+        "original",
+        "random",
+        "2",
+        "5"
+      ],
+      "occurrences": 2,
+      "experiments": [
+        "E1_strength_policy",
+        "E2_neighbor_count"
+      ],
+      "metrics_identical": true
+    },
+    {
+      "key": [
+        "original",
+        "random",
+        "2",
+        "6"
+      ],
+      "occurrences": 2,
+      "experiments": [
+        "E1_strength_policy",
+        "E2_neighbor_count"
+      ],
+      "metrics_identical": true
+    },
+    {
+      "key": [
+        "original",
+        "random",
+        "2",
+        "7"
+      ],
+      "occurrences": 2,
+      "experiments": [
+        "E1_strength_policy",
+        "E2_neighbor_count"
+      ],
+      "metrics_identical": true
+    },
+    {
+      "key": [
+        "original",
+        "random",
+        "2",
+        "8"
+      ],
+      "occurrences": 2,
+      "experiments": [
+        "E1_strength_policy",
+        "E2_neighbor_count"
+      ],
+      "metrics_identical": true
+    },
+    {
+      "key": [
+        "original",
+        "random",
+        "2",
+        "9"
+      ],
+      "occurrences": 2,
+      "experiments": [
+        "E1_strength_policy",
+        "E2_neighbor_count"
+      ],
+      "metrics_identical": true
+    },
+    {
+      "key": [
+        "original",
+        "random",
+        "2",
+        "10"
+      ],
+      "occurrences": 2,
+      "experiments": [
+        "E1_strength_policy",
+        "E2_neighbor_count"
+      ],
+      "metrics_identical": true
+    },
+    {
+      "key": [
+        "original",
+        "random",
+        "2",
+        "11"
+      ],
+      "occurrences": 2,
+      "experiments": [
+        "E1_strength_policy",
+        "E2_neighbor_count"
+      ],
+      "metrics_identical": true
+    },
+    {
+      "key": [
+        "original",
+        "random",
+        "2",
+        "12"
+      ],
+      "occurrences": 2,
+      "experiments": [
+        "E1_strength_policy",
+        "E2_neighbor_count"
+      ],
+      "metrics_identical": true
+    },
+    {
+      "key": [
+        "original",
+        "random",
+        "2",
+        "13"
+      ],
+      "occurrences": 2,
+      "experiments": [
+        "E1_strength_policy",
+        "E2_neighbor_count"
+      ],
+      "metrics_identical": true
+    },
+    {
+      "key": [
+        "original",
+        "random",
+        "2",
+        "14"
+      ],
+      "occurrences": 2,
+      "experiments": [
+        "E1_strength_policy",
+        "E2_neighbor_count"
+      ],
+      "metrics_identical": true
+    },
+    {
+      "key": [
+        "original",
+        "random",
+        "2",
+        "15"
+      ],
+      "occurrences": 2,
+      "experiments": [
+        "E1_strength_policy",
+        "E2_neighbor_count"
+      ],
+      "metrics_identical": true
+    },
+    {
+      "key": [
+        "original",
+        "random",
+        "2",
+        "16"
+      ],
+      "occurrences": 2,
+      "experiments": [
+        "E1_strength_policy",
+        "E2_neighbor_count"
+      ],
+      "metrics_identical": true
+    },
+    {
+      "key": [
+        "original",
+        "random",
+        "2",
+        "17"
+      ],
+      "occurrences": 2,
+      "experiments": [
+        "E1_strength_policy",
+        "E2_neighbor_count"
+      ],
+      "metrics_identical": true
+    },
+    {
+      "key": [
+        "original",
+        "random",
+        "2",
+        "18"
+      ],
+      "occurrences": 2,
+      "experiments": [
+        "E1_strength_policy",
+        "E2_neighbor_count"
+      ],
+      "metrics_identical": true
+    },
+    {
+      "key": [
+        "original",
+        "random",
+        "2",
+        "19"
+      ],
+      "occurrences": 2,
+      "experiments": [
+        "E1_strength_policy",
+        "E2_neighbor_count"
+      ],
+      "metrics_identical": true
+    },
+    {
+      "key": [
+        "original",
+        "random",
+        "2",
+        "20"
+      ],
+      "occurrences": 2,
+      "experiments": [
+        "E1_strength_policy",
+        "E2_neighbor_count"
+      ],
+      "metrics_identical": true
+    },
+    {
+      "key": [
+        "original",
+        "random",
+        "8",
+        "1"
+      ],
+      "occurrences": 2,
+      "experiments": [
+        "E1_strength_policy",
+        "E2_neighbor_count"
+      ],
+      "metrics_identical": true
+    },
+    {
+      "key": [
+        "original",
+        "random",
+        "8",
+        "2"
+      ],
+      "occurrences": 2,
+      "experiments": [
+        "E1_strength_policy",
+        "E2_neighbor_count"
+      ],
+      "metrics_identical": true
+    },
+    {
+      "key": [
+        "original",
+        "random",
+        "8",
+        "3"
+      ],
+      "occurrences": 2,
+      "experiments": [
+        "E1_strength_policy",
+        "E2_neighbor_count"
+      ],
+      "metrics_identical": true
+    },
+    {
+      "key": [
+        "original",
+        "random",
+        "8",
+        "4"
+      ],
+      "occurrences": 2,
+      "experiments": [
+        "E1_strength_policy",
+        "E2_neighbor_count"
+      ],
+      "metrics_identical": true
+    },
+    {
+      "key": [
+        "original",
+        "random",
+        "8",
+        "5"
+      ],
+      "occurrences": 2,
+      "experiments": [
+        "E1_strength_policy",
+        "E2_neighbor_count"
+      ],
+      "metrics_identical": true
+    },
+    {
+      "key": [
+        "original",
+        "random",
+        "8",
+        "6"
+      ],
+      "occurrences": 2,
+      "experiments": [
+        "E1_strength_policy",
+        "E2_neighbor_count"
+      ],
+      "metrics_identical": true
+    },
+    {
+      "key": [
+        "original",
+        "random",
+        "8",
+        "7"
+      ],
+      "occurrences": 2,
+      "experiments": [
+        "E1_strength_policy",
+        "E2_neighbor_count"
+      ],
+      "metrics_identical": true
+    },
+    {
+      "key": [
+        "original",
+        "random",
+        "8",
+        "8"
+      ],
+      "occurrences": 2,
+      "experiments": [
+        "E1_strength_policy",
+        "E2_neighbor_count"
+      ],
+      "metrics_identical": true
+    },
+    {
+      "key": [
+        "original",
+        "random",
+        "8",
+        "9"
+      ],
+      "occurrences": 2,
+      "experiments": [
+        "E1_strength_policy",
+        "E2_neighbor_count"
+      ],
+      "metrics_identical": true
+    },
+    {
+      "key": [
+        "original",
+        "random",
+        "8",
+        "10"
+      ],
+      "occurrences": 2,
+      "experiments": [
+        "E1_strength_policy",
+        "E2_neighbor_count"
+      ],
+      "metrics_identical": true
+    },
+    {
+      "key": [
+        "original",
+        "random",
+        "8",
+        "11"
+      ],
+      "occurrences": 2,
+      "experiments": [
+        "E1_strength_policy",
+        "E2_neighbor_count"
+      ],
+      "metrics_identical": true
+    },
+    {
+      "key": [
+        "original",
+        "random",
+        "8",
+        "12"
+      ],
+      "occurrences": 2,
+      "experiments": [
+        "E1_strength_policy",
+        "E2_neighbor_count"
+      ],
+      "metrics_identical": true
+    },
+    {
+      "key": [
+        "original",
+        "random",
+        "8",
+        "13"
+      ],
+      "occurrences": 2,
+      "experiments": [
+        "E1_strength_policy",
+        "E2_neighbor_count"
+      ],
+      "metrics_identical": true
+    },
+    {
+      "key": [
+        "original",
+        "random",
+        "8",
+        "14"
+      ],
+      "occurrences": 2,
+      "experiments": [
+        "E1_strength_policy",
+        "E2_neighbor_count"
+      ],
+      "metrics_identical": true
+    },
+    {
+      "key": [
+        "original",
+        "random",
+        "8",
+        "15"
+      ],
+      "occurrences": 2,
+      "experiments": [
+        "E1_strength_policy",
+        "E2_neighbor_count"
+      ],
+      "metrics_identical": true
+    },
+    {
+      "key": [
+        "original",
+        "random",
+        "8",
+        "16"
+      ],
+      "occurrences": 2,
+      "experiments": [
+        "E1_strength_policy",
+        "E2_neighbor_count"
+      ],
+      "metrics_identical": true
+    },
+    {
+      "key": [
+        "original",
+        "random",
+        "8",
+        "17"
+      ],
+      "occurrences": 2,
+      "experiments": [
+        "E1_strength_policy",
+        "E2_neighbor_count"
+      ],
+      "metrics_identical": true
+    },
+    {
+      "key": [
+        "original",
+        "random",
+        "8",
+        "18"
+      ],
+      "occurrences": 2,
+      "experiments": [
+        "E1_strength_policy",
+        "E2_neighbor_count"
+      ],
+      "metrics_identical": true
+    },
+    {
+      "key": [
+        "original",
+        "random",
+        "8",
+        "19"
+      ],
+      "occurrences": 2,
+      "experiments": [
+        "E1_strength_policy",
+        "E2_neighbor_count"
+      ],
+      "metrics_identical": true
+    },
+    {
+      "key": [
+        "original",
+        "random",
+        "8",
+        "20"
+      ],
+      "occurrences": 2,
+      "experiments": [
+        "E1_strength_policy",
+        "E2_neighbor_count"
+      ],
+      "metrics_identical": true
+    },
+    {
+      "key": [
+        "original",
+        "random",
+        "19",
+        "1"
+      ],
+      "occurrences": 2,
+      "experiments": [
+        "E1_strength_policy",
+        "E2_neighbor_count"
+      ],
+      "metrics_identical": true
+    },
+    {
+      "key": [
+        "original",
+        "random",
+        "19",
+        "2"
+      ],
+      "occurrences": 2,
+      "experiments": [
+        "E1_strength_policy",
+        "E2_neighbor_count"
+      ],
+      "metrics_identical": true
+    },
+    {
+      "key": [
+        "original",
+        "random",
+        "19",
+        "3"
+      ],
+      "occurrences": 2,
+      "experiments": [
+        "E1_strength_policy",
+        "E2_neighbor_count"
+      ],
+      "metrics_identical": true
+    },
+    {
+      "key": [
+        "original",
+        "random",
+        "19",
+        "4"
+      ],
+      "occurrences": 2,
+      "experiments": [
+        "E1_strength_policy",
+        "E2_neighbor_count"
+      ],
+      "metrics_identical": true
+    },
+    {
+      "key": [
+        "original",
+        "random",
+        "19",
+        "5"
+      ],
+      "occurrences": 2,
+      "experiments": [
+        "E1_strength_policy",
+        "E2_neighbor_count"
+      ],
+      "metrics_identical": true
+    },
+    {
+      "key": [
+        "original",
+        "random",
+        "19",
+        "6"
+      ],
+      "occurrences": 2,
+      "experiments": [
+        "E1_strength_policy",
+        "E2_neighbor_count"
+      ],
+      "metrics_identical": true
+    },
+    {
+      "key": [
+        "original",
+        "random",
+        "19",
+        "7"
+      ],
+      "occurrences": 2,
+      "experiments": [
+        "E1_strength_policy",
+        "E2_neighbor_count"
+      ],
+      "metrics_identical": true
+    },
+    {
+      "key": [
+        "original",
+        "random",
+        "19",
+        "8"
+      ],
+      "occurrences": 2,
+      "experiments": [
+        "E1_strength_policy",
+        "E2_neighbor_count"
+      ],
+      "metrics_identical": true
+    },
+    {
+      "key": [
+        "original",
+        "random",
+        "19",
+        "9"
+      ],
+      "occurrences": 2,
+      "experiments": [
+        "E1_strength_policy",
+        "E2_neighbor_count"
+      ],
+      "metrics_identical": true
+    },
+    {
+      "key": [
+        "original",
+        "random",
+        "19",
+        "10"
+      ],
+      "occurrences": 2,
+      "experiments": [
+        "E1_strength_policy",
+        "E2_neighbor_count"
+      ],
+      "metrics_identical": true
+    },
+    {
+      "key": [
+        "original",
+        "random",
+        "19",
+        "11"
+      ],
+      "occurrences": 2,
+      "experiments": [
+        "E1_strength_policy",
+        "E2_neighbor_count"
+      ],
+      "metrics_identical": true
+    },
+    {
+      "key": [
+        "original",
+        "random",
+        "19",
+        "12"
+      ],
+      "occurrences": 2,
+      "experiments": [
+        "E1_strength_policy",
+        "E2_neighbor_count"
+      ],
+      "metrics_identical": true
+    },
+    {
+      "key": [
+        "original",
+        "random",
+        "19",
+        "13"
+      ],
+      "occurrences": 2,
+      "experiments": [
+        "E1_strength_policy",
+        "E2_neighbor_count"
+      ],
+      "metrics_identical": true
+    },
+    {
+      "key": [
+        "original",
+        "random",
+        "19",
+        "14"
+      ],
+      "occurrences": 2,
+      "experiments": [
+        "E1_strength_policy",
+        "E2_neighbor_count"
+      ],
+      "metrics_identical": true
+    },
+    {
+      "key": [
+        "original",
+        "random",
+        "19",
+        "15"
+      ],
+      "occurrences": 2,
+      "experiments": [
+        "E1_strength_policy",
+        "E2_neighbor_count"
+      ],
+      "metrics_identical": true
+    },
+    {
+      "key": [
+        "original",
+        "random",
+        "19",
+        "16"
+      ],
+      "occurrences": 2,
+      "experiments": [
+        "E1_strength_policy",
+        "E2_neighbor_count"
+      ],
+      "metrics_identical": true
+    },
+    {
+      "key": [
+        "original",
+        "random",
+        "19",
+        "17"
+      ],
+      "occurrences": 2,
+      "experiments": [
+        "E1_strength_policy",
+        "E2_neighbor_count"
+      ],
+      "metrics_identical": true
+    },
+    {
+      "key": [
+        "original",
+        "random",
+        "19",
+        "18"
+      ],
+      "occurrences": 2,
+      "experiments": [
+        "E1_strength_policy",
+        "E2_neighbor_count"
+      ],
+      "metrics_identical": true
+    },
+    {
+      "key": [
+        "original",
+        "random",
+        "19",
+        "19"
+      ],
+      "occurrences": 2,
+      "experiments": [
+        "E1_strength_policy",
+        "E2_neighbor_count"
+      ],
+      "metrics_identical": true
+    },
+    {
+      "key": [
+        "original",
+        "random",
+        "19",
+        "20"
+      ],
+      "occurrences": 2,
+      "experiments": [
+        "E1_strength_policy",
+        "E2_neighbor_count"
+      ],
+      "metrics_identical": true
+    },
+    {
+      "key": [
+        "fixed-total",
+        "random",
+        "2",
+        "1"
+      ],
+      "occurrences": 2,
+      "experiments": [
+        "E1_strength_policy",
+        "E2_neighbor_count"
+      ],
+      "metrics_identical": true
+    },
+    {
+      "key": [
+        "fixed-total",
+        "random",
+        "2",
+        "2"
+      ],
+      "occurrences": 2,
+      "experiments": [
+        "E1_strength_policy",
+        "E2_neighbor_count"
+      ],
+      "metrics_identical": true
+    },
+    {
+      "key": [
+        "fixed-total",
+        "random",
+        "2",
+        "3"
+      ],
+      "occurrences": 2,
+      "experiments": [
+        "E1_strength_policy",
+        "E2_neighbor_count"
+      ],
+      "metrics_identical": true
+    },
+    {
+      "key": [
+        "fixed-total",
+        "random",
+        "2",
+        "4"
+      ],
+      "occurrences": 2,
+      "experiments": [
+        "E1_strength_policy",
+        "E2_neighbor_count"
+      ],
+      "metrics_identical": true
+    },
+    {
+      "key": [
+        "fixed-total",
+        "random",
+        "2",
+        "5"
+      ],
+      "occurrences": 2,
+      "experiments": [
+        "E1_strength_policy",
+        "E2_neighbor_count"
+      ],
+      "metrics_identical": true
+    },
+    {
+      "key": [
+        "fixed-total",
+        "random",
+        "2",
+        "6"
+      ],
+      "occurrences": 2,
+      "experiments": [
+        "E1_strength_policy",
+        "E2_neighbor_count"
+      ],
+      "metrics_identical": true
+    },
+    {
+      "key": [
+        "fixed-total",
+        "random",
+        "2",
+        "7"
+      ],
+      "occurrences": 2,
+      "experiments": [
+        "E1_strength_policy",
+        "E2_neighbor_count"
+      ],
+      "metrics_identical": true
+    },
+    {
+      "key": [
+        "fixed-total",
+        "random",
+        "2",
+        "8"
+      ],
+      "occurrences": 2,
+      "experiments": [
+        "E1_strength_policy",
+        "E2_neighbor_count"
+      ],
+      "metrics_identical": true
+    },
+    {
+      "key": [
+        "fixed-total",
+        "random",
+        "2",
+        "9"
+      ],
+      "occurrences": 2,
+      "experiments": [
+        "E1_strength_policy",
+        "E2_neighbor_count"
+      ],
+      "metrics_identical": true
+    },
+    {
+      "key": [
+        "fixed-total",
+        "random",
+        "2",
+        "10"
+      ],
+      "occurrences": 2,
+      "experiments": [
+        "E1_strength_policy",
+        "E2_neighbor_count"
+      ],
+      "metrics_identical": true
+    },
+    {
+      "key": [
+        "fixed-total",
+        "random",
+        "2",
+        "11"
+      ],
+      "occurrences": 2,
+      "experiments": [
+        "E1_strength_policy",
+        "E2_neighbor_count"
+      ],
+      "metrics_identical": true
+    },
+    {
+      "key": [
+        "fixed-total",
+        "random",
+        "2",
+        "12"
+      ],
+      "occurrences": 2,
+      "experiments": [
+        "E1_strength_policy",
+        "E2_neighbor_count"
+      ],
+      "metrics_identical": true
+    },
+    {
+      "key": [
+        "fixed-total",
+        "random",
+        "2",
+        "13"
+      ],
+      "occurrences": 2,
+      "experiments": [
+        "E1_strength_policy",
+        "E2_neighbor_count"
+      ],
+      "metrics_identical": true
+    },
+    {
+      "key": [
+        "fixed-total",
+        "random",
+        "2",
+        "14"
+      ],
+      "occurrences": 2,
+      "experiments": [
+        "E1_strength_policy",
+        "E2_neighbor_count"
+      ],
+      "metrics_identical": true
+    },
+    {
+      "key": [
+        "fixed-total",
+        "random",
+        "2",
+        "15"
+      ],
+      "occurrences": 2,
+      "experiments": [
+        "E1_strength_policy",
+        "E2_neighbor_count"
+      ],
+      "metrics_identical": true
+    },
+    {
+      "key": [
+        "fixed-total",
+        "random",
+        "2",
+        "16"
+      ],
+      "occurrences": 2,
+      "experiments": [
+        "E1_strength_policy",
+        "E2_neighbor_count"
+      ],
+      "metrics_identical": true
+    },
+    {
+      "key": [
+        "fixed-total",
+        "random",
+        "2",
+        "17"
+      ],
+      "occurrences": 2,
+      "experiments": [
+        "E1_strength_policy",
+        "E2_neighbor_count"
+      ],
+      "metrics_identical": true
+    },
+    {
+      "key": [
+        "fixed-total",
+        "random",
+        "2",
+        "18"
+      ],
+      "occurrences": 2,
+      "experiments": [
+        "E1_strength_policy",
+        "E2_neighbor_count"
+      ],
+      "metrics_identical": true
+    },
+    {
+      "key": [
+        "fixed-total",
+        "random",
+        "2",
+        "19"
+      ],
+      "occurrences": 2,
+      "experiments": [
+        "E1_strength_policy",
+        "E2_neighbor_count"
+      ],
+      "metrics_identical": true
+    },
+    {
+      "key": [
+        "fixed-total",
+        "random",
+        "2",
+        "20"
+      ],
+      "occurrences": 2,
+      "experiments": [
+        "E1_strength_policy",
+        "E2_neighbor_count"
+      ],
+      "metrics_identical": true
+    },
+    {
+      "key": [
+        "fixed-total",
+        "random",
+        "8",
+        "1"
+      ],
+      "occurrences": 4,
+      "experiments": [
+        "E1_strength_policy",
+        "E2_neighbor_count",
+        "E3_angular_structure",
+        "E4_selection_strategy"
+      ],
+      "metrics_identical": true
+    },
+    {
+      "key": [
+        "fixed-total",
+        "random",
+        "8",
+        "2"
+      ],
+      "occurrences": 4,
+      "experiments": [
+        "E1_strength_policy",
+        "E2_neighbor_count",
+        "E3_angular_structure",
+        "E4_selection_strategy"
+      ],
+      "metrics_identical": true
+    },
+    {
+      "key": [
+        "fixed-total",
+        "random",
+        "8",
+        "3"
+      ],
+      "occurrences": 4,
+      "experiments": [
+        "E1_strength_policy",
+        "E2_neighbor_count",
+        "E3_angular_structure",
+        "E4_selection_strategy"
+      ],
+      "metrics_identical": true
+    },
+    {
+      "key": [
+        "fixed-total",
+        "random",
+        "8",
+        "4"
+      ],
+      "occurrences": 4,
+      "experiments": [
+        "E1_strength_policy",
+        "E2_neighbor_count",
+        "E3_angular_structure",
+        "E4_selection_strategy"
+      ],
+      "metrics_identical": true
+    },
+    {
+      "key": [
+        "fixed-total",
+        "random",
+        "8",
+        "5"
+      ],
+      "occurrences": 4,
+      "experiments": [
+        "E1_strength_policy",
+        "E2_neighbor_count",
+        "E3_angular_structure",
+        "E4_selection_strategy"
+      ],
+      "metrics_identical": true
+    },
+    {
+      "key": [
+        "fixed-total",
+        "random",
+        "8",
+        "6"
+      ],
+      "occurrences": 4,
+      "experiments": [
+        "E1_strength_policy",
+        "E2_neighbor_count",
+        "E3_angular_structure",
+        "E4_selection_strategy"
+      ],
+      "metrics_identical": true
+    },
+    {
+      "key": [
+        "fixed-total",
+        "random",
+        "8",
+        "7"
+      ],
+      "occurrences": 4,
+      "experiments": [
+        "E1_strength_policy",
+        "E2_neighbor_count",
+        "E3_angular_structure",
+        "E4_selection_strategy"
+      ],
+      "metrics_identical": true
+    },
+    {
+      "key": [
+        "fixed-total",
+        "random",
+        "8",
+        "8"
+      ],
+      "occurrences": 4,
+      "experiments": [
+        "E1_strength_policy",
+        "E2_neighbor_count",
+        "E3_angular_structure",
+        "E4_selection_strategy"
+      ],
+      "metrics_identical": true
+    },
+    {
+      "key": [
+        "fixed-total",
+        "random",
+        "8",
+        "9"
+      ],
+      "occurrences": 4,
+      "experiments": [
+        "E1_strength_policy",
+        "E2_neighbor_count",
+        "E3_angular_structure",
+        "E4_selection_strategy"
+      ],
+      "metrics_identical": true
+    },
+    {
+      "key": [
+        "fixed-total",
+        "random",
+        "8",
+        "10"
+      ],
+      "occurrences": 4,
+      "experiments": [
+        "E1_strength_policy",
+        "E2_neighbor_count",
+        "E3_angular_structure",
+        "E4_selection_strategy"
+      ],
+      "metrics_identical": true
+    },
+    {
+      "key": [
+        "fixed-total",
+        "random",
+        "8",
+        "11"
+      ],
+      "occurrences": 4,
+      "experiments": [
+        "E1_strength_policy",
+        "E2_neighbor_count",
+        "E3_angular_structure",
+        "E4_selection_strategy"
+      ],
+      "metrics_identical": true
+    },
+    {
+      "key": [
+        "fixed-total",
+        "random",
+        "8",
+        "12"
+      ],
+      "occurrences": 4,
+      "experiments": [
+        "E1_strength_policy",
+        "E2_neighbor_count",
+        "E3_angular_structure",
+        "E4_selection_strategy"
+      ],
+      "metrics_identical": true
+    },
+    {
+      "key": [
+        "fixed-total",
+        "random",
+        "8",
+        "13"
+      ],
+      "occurrences": 4,
+      "experiments": [
+        "E1_strength_policy",
+        "E2_neighbor_count",
+        "E3_angular_structure",
+        "E4_selection_strategy"
+      ],
+      "metrics_identical": true
+    },
+    {
+      "key": [
+        "fixed-total",
+        "random",
+        "8",
+        "14"
+      ],
+      "occurrences": 4,
+      "experiments": [
+        "E1_strength_policy",
+        "E2_neighbor_count",
+        "E3_angular_structure",
+        "E4_selection_strategy"
+      ],
+      "metrics_identical": true
+    },
+    {
+      "key": [
+        "fixed-total",
+        "random",
+        "8",
+        "15"
+      ],
+      "occurrences": 4,
+      "experiments": [
+        "E1_strength_policy",
+        "E2_neighbor_count",
+        "E3_angular_structure",
+        "E4_selection_strategy"
+      ],
+      "metrics_identical": true
+    },
+    {
+      "key": [
+        "fixed-total",
+        "random",
+        "8",
+        "16"
+      ],
+      "occurrences": 4,
+      "experiments": [
+        "E1_strength_policy",
+        "E2_neighbor_count",
+        "E3_angular_structure",
+        "E4_selection_strategy"
+      ],
+      "metrics_identical": true
+    },
+    {
+      "key": [
+        "fixed-total",
+        "random",
+        "8",
+        "17"
+      ],
+      "occurrences": 4,
+      "experiments": [
+        "E1_strength_policy",
+        "E2_neighbor_count",
+        "E3_angular_structure",
+        "E4_selection_strategy"
+      ],
+      "metrics_identical": true
+    },
+    {
+      "key": [
+        "fixed-total",
+        "random",
+        "8",
+        "18"
+      ],
+      "occurrences": 4,
+      "experiments": [
+        "E1_strength_policy",
+        "E2_neighbor_count",
+        "E3_angular_structure",
+        "E4_selection_strategy"
+      ],
+      "metrics_identical": true
+    },
+    {
+      "key": [
+        "fixed-total",
+        "random",
+        "8",
+        "19"
+      ],
+      "occurrences": 4,
+      "experiments": [
+        "E1_strength_policy",
+        "E2_neighbor_count",
+        "E3_angular_structure",
+        "E4_selection_strategy"
+      ],
+      "metrics_identical": true
+    },
+    {
+      "key": [
+        "fixed-total",
+        "random",
+        "8",
+        "20"
+      ],
+      "occurrences": 4,
+      "experiments": [
+        "E1_strength_policy",
+        "E2_neighbor_count",
+        "E3_angular_structure",
+        "E4_selection_strategy"
+      ],
+      "metrics_identical": true
+    },
+    {
+      "key": [
+        "fixed-total",
+        "random",
+        "19",
+        "1"
+      ],
+      "occurrences": 2,
+      "experiments": [
+        "E1_strength_policy",
+        "E2_neighbor_count"
+      ],
+      "metrics_identical": true
+    },
+    {
+      "key": [
+        "fixed-total",
+        "random",
+        "19",
+        "2"
+      ],
+      "occurrences": 2,
+      "experiments": [
+        "E1_strength_policy",
+        "E2_neighbor_count"
+      ],
+      "metrics_identical": true
+    },
+    {
+      "key": [
+        "fixed-total",
+        "random",
+        "19",
+        "3"
+      ],
+      "occurrences": 2,
+      "experiments": [
+        "E1_strength_policy",
+        "E2_neighbor_count"
+      ],
+      "metrics_identical": true
+    },
+    {
+      "key": [
+        "fixed-total",
+        "random",
+        "19",
+        "4"
+      ],
+      "occurrences": 2,
+      "experiments": [
+        "E1_strength_policy",
+        "E2_neighbor_count"
+      ],
+      "metrics_identical": true
+    },
+    {
+      "key": [
+        "fixed-total",
+        "random",
+        "19",
+        "5"
+      ],
+      "occurrences": 2,
+      "experiments": [
+        "E1_strength_policy",
+        "E2_neighbor_count"
+      ],
+      "metrics_identical": true
+    },
+    {
+      "key": [
+        "fixed-total",
+        "random",
+        "19",
+        "6"
+      ],
+      "occurrences": 2,
+      "experiments": [
+        "E1_strength_policy",
+        "E2_neighbor_count"
+      ],
+      "metrics_identical": true
+    },
+    {
+      "key": [
+        "fixed-total",
+        "random",
+        "19",
+        "7"
+      ],
+      "occurrences": 2,
+      "experiments": [
+        "E1_strength_policy",
+        "E2_neighbor_count"
+      ],
+      "metrics_identical": true
+    },
+    {
+      "key": [
+        "fixed-total",
+        "random",
+        "19",
+        "8"
+      ],
+      "occurrences": 2,
+      "experiments": [
+        "E1_strength_policy",
+        "E2_neighbor_count"
+      ],
+      "metrics_identical": true
+    },
+    {
+      "key": [
+        "fixed-total",
+        "random",
+        "19",
+        "9"
+      ],
+      "occurrences": 2,
+      "experiments": [
+        "E1_strength_policy",
+        "E2_neighbor_count"
+      ],
+      "metrics_identical": true
+    },
+    {
+      "key": [
+        "fixed-total",
+        "random",
+        "19",
+        "10"
+      ],
+      "occurrences": 2,
+      "experiments": [
+        "E1_strength_policy",
+        "E2_neighbor_count"
+      ],
+      "metrics_identical": true
+    },
+    {
+      "key": [
+        "fixed-total",
+        "random",
+        "19",
+        "11"
+      ],
+      "occurrences": 2,
+      "experiments": [
+        "E1_strength_policy",
+        "E2_neighbor_count"
+      ],
+      "metrics_identical": true
+    },
+    {
+      "key": [
+        "fixed-total",
+        "random",
+        "19",
+        "12"
+      ],
+      "occurrences": 2,
+      "experiments": [
+        "E1_strength_policy",
+        "E2_neighbor_count"
+      ],
+      "metrics_identical": true
+    },
+    {
+      "key": [
+        "fixed-total",
+        "random",
+        "19",
+        "13"
+      ],
+      "occurrences": 2,
+      "experiments": [
+        "E1_strength_policy",
+        "E2_neighbor_count"
+      ],
+      "metrics_identical": true
+    },
+    {
+      "key": [
+        "fixed-total",
+        "random",
+        "19",
+        "14"
+      ],
+      "occurrences": 2,
+      "experiments": [
+        "E1_strength_policy",
+        "E2_neighbor_count"
+      ],
+      "metrics_identical": true
+    },
+    {
+      "key": [
+        "fixed-total",
+        "random",
+        "19",
+        "15"
+      ],
+      "occurrences": 2,
+      "experiments": [
+        "E1_strength_policy",
+        "E2_neighbor_count"
+      ],
+      "metrics_identical": true
+    },
+    {
+      "key": [
+        "fixed-total",
+        "random",
+        "19",
+        "16"
+      ],
+      "occurrences": 2,
+      "experiments": [
+        "E1_strength_policy",
+        "E2_neighbor_count"
+      ],
+      "metrics_identical": true
+    },
+    {
+      "key": [
+        "fixed-total",
+        "random",
+        "19",
+        "17"
+      ],
+      "occurrences": 2,
+      "experiments": [
+        "E1_strength_policy",
+        "E2_neighbor_count"
+      ],
+      "metrics_identical": true
+    },
+    {
+      "key": [
+        "fixed-total",
+        "random",
+        "19",
+        "18"
+      ],
+      "occurrences": 2,
+      "experiments": [
+        "E1_strength_policy",
+        "E2_neighbor_count"
+      ],
+      "metrics_identical": true
+    },
+    {
+      "key": [
+        "fixed-total",
+        "random",
+        "19",
+        "19"
+      ],
+      "occurrences": 2,
+      "experiments": [
+        "E1_strength_policy",
+        "E2_neighbor_count"
+      ],
+      "metrics_identical": true
+    },
+    {
+      "key": [
+        "fixed-total",
+        "random",
+        "19",
+        "20"
+      ],
+      "occurrences": 2,
+      "experiments": [
+        "E1_strength_policy",
+        "E2_neighbor_count"
+      ],
+      "metrics_identical": true
+    },
+    {
+      "key": [
+        "fixed-total",
+        "angle-concentrated",
+        "8",
+        "1"
+      ],
+      "occurrences": 2,
+      "experiments": [
+        "E3_angular_structure",
+        "E4_selection_strategy"
+      ],
+      "metrics_identical": true
+    },
+    {
+      "key": [
+        "fixed-total",
+        "angle-concentrated",
+        "8",
+        "2"
+      ],
+      "occurrences": 2,
+      "experiments": [
+        "E3_angular_structure",
+        "E4_selection_strategy"
+      ],
+      "metrics_identical": true
+    },
+    {
+      "key": [
+        "fixed-total",
+        "angle-concentrated",
+        "8",
+        "3"
+      ],
+      "occurrences": 2,
+      "experiments": [
+        "E3_angular_structure",
+        "E4_selection_strategy"
+      ],
+      "metrics_identical": true
+    },
+    {
+      "key": [
+        "fixed-total",
+        "angle-concentrated",
+        "8",
+        "4"
+      ],
+      "occurrences": 2,
+      "experiments": [
+        "E3_angular_structure",
+        "E4_selection_strategy"
+      ],
+      "metrics_identical": true
+    },
+    {
+      "key": [
+        "fixed-total",
+        "angle-concentrated",
+        "8",
+        "5"
+      ],
+      "occurrences": 2,
+      "experiments": [
+        "E3_angular_structure",
+        "E4_selection_strategy"
+      ],
+      "metrics_identical": true
+    },
+    {
+      "key": [
+        "fixed-total",
+        "angle-concentrated",
+        "8",
+        "6"
+      ],
+      "occurrences": 2,
+      "experiments": [
+        "E3_angular_structure",
+        "E4_selection_strategy"
+      ],
+      "metrics_identical": true
+    },
+    {
+      "key": [
+        "fixed-total",
+        "angle-concentrated",
+        "8",
+        "7"
+      ],
+      "occurrences": 2,
+      "experiments": [
+        "E3_angular_structure",
+        "E4_selection_strategy"
+      ],
+      "metrics_identical": true
+    },
+    {
+      "key": [
+        "fixed-total",
+        "angle-concentrated",
+        "8",
+        "8"
+      ],
+      "occurrences": 2,
+      "experiments": [
+        "E3_angular_structure",
+        "E4_selection_strategy"
+      ],
+      "metrics_identical": true
+    },
+    {
+      "key": [
+        "fixed-total",
+        "angle-concentrated",
+        "8",
+        "9"
+      ],
+      "occurrences": 2,
+      "experiments": [
+        "E3_angular_structure",
+        "E4_selection_strategy"
+      ],
+      "metrics_identical": true
+    },
+    {
+      "key": [
+        "fixed-total",
+        "angle-concentrated",
+        "8",
+        "10"
+      ],
+      "occurrences": 2,
+      "experiments": [
+        "E3_angular_structure",
+        "E4_selection_strategy"
+      ],
+      "metrics_identical": true
+    },
+    {
+      "key": [
+        "fixed-total",
+        "angle-concentrated",
+        "8",
+        "11"
+      ],
+      "occurrences": 2,
+      "experiments": [
+        "E3_angular_structure",
+        "E4_selection_strategy"
+      ],
+      "metrics_identical": true
+    },
+    {
+      "key": [
+        "fixed-total",
+        "angle-concentrated",
+        "8",
+        "12"
+      ],
+      "occurrences": 2,
+      "experiments": [
+        "E3_angular_structure",
+        "E4_selection_strategy"
+      ],
+      "metrics_identical": true
+    },
+    {
+      "key": [
+        "fixed-total",
+        "angle-concentrated",
+        "8",
+        "13"
+      ],
+      "occurrences": 2,
+      "experiments": [
+        "E3_angular_structure",
+        "E4_selection_strategy"
+      ],
+      "metrics_identical": true
+    },
+    {
+      "key": [
+        "fixed-total",
+        "angle-concentrated",
+        "8",
+        "14"
+      ],
+      "occurrences": 2,
+      "experiments": [
+        "E3_angular_structure",
+        "E4_selection_strategy"
+      ],
+      "metrics_identical": true
+    },
+    {
+      "key": [
+        "fixed-total",
+        "angle-concentrated",
+        "8",
+        "15"
+      ],
+      "occurrences": 2,
+      "experiments": [
+        "E3_angular_structure",
+        "E4_selection_strategy"
+      ],
+      "metrics_identical": true
+    },
+    {
+      "key": [
+        "fixed-total",
+        "angle-concentrated",
+        "8",
+        "16"
+      ],
+      "occurrences": 2,
+      "experiments": [
+        "E3_angular_structure",
+        "E4_selection_strategy"
+      ],
+      "metrics_identical": true
+    },
+    {
+      "key": [
+        "fixed-total",
+        "angle-concentrated",
+        "8",
+        "17"
+      ],
+      "occurrences": 2,
+      "experiments": [
+        "E3_angular_structure",
+        "E4_selection_strategy"
+      ],
+      "metrics_identical": true
+    },
+    {
+      "key": [
+        "fixed-total",
+        "angle-concentrated",
+        "8",
+        "18"
+      ],
+      "occurrences": 2,
+      "experiments": [
+        "E3_angular_structure",
+        "E4_selection_strategy"
+      ],
+      "metrics_identical": true
+    },
+    {
+      "key": [
+        "fixed-total",
+        "angle-concentrated",
+        "8",
+        "19"
+      ],
+      "occurrences": 2,
+      "experiments": [
+        "E3_angular_structure",
+        "E4_selection_strategy"
+      ],
+      "metrics_identical": true
+    },
+    {
+      "key": [
+        "fixed-total",
+        "angle-concentrated",
+        "8",
+        "20"
+      ],
+      "occurrences": 2,
+      "experiments": [
+        "E3_angular_structure",
+        "E4_selection_strategy"
+      ],
+      "metrics_identical": true
+    },
+    {
+      "key": [
+        "fixed-total",
+        "angle-dispersed",
+        "8",
+        "1"
+      ],
+      "occurrences": 2,
+      "experiments": [
+        "E3_angular_structure",
+        "E4_selection_strategy"
+      ],
+      "metrics_identical": true
+    },
+    {
+      "key": [
+        "fixed-total",
+        "angle-dispersed",
+        "8",
+        "2"
+      ],
+      "occurrences": 2,
+      "experiments": [
+        "E3_angular_structure",
+        "E4_selection_strategy"
+      ],
+      "metrics_identical": true
+    },
+    {
+      "key": [
+        "fixed-total",
+        "angle-dispersed",
+        "8",
+        "3"
+      ],
+      "occurrences": 2,
+      "experiments": [
+        "E3_angular_structure",
+        "E4_selection_strategy"
+      ],
+      "metrics_identical": true
+    },
+    {
+      "key": [
+        "fixed-total",
+        "angle-dispersed",
+        "8",
+        "4"
+      ],
+      "occurrences": 2,
+      "experiments": [
+        "E3_angular_structure",
+        "E4_selection_strategy"
+      ],
+      "metrics_identical": true
+    },
+    {
+      "key": [
+        "fixed-total",
+        "angle-dispersed",
+        "8",
+        "5"
+      ],
+      "occurrences": 2,
+      "experiments": [
+        "E3_angular_structure",
+        "E4_selection_strategy"
+      ],
+      "metrics_identical": true
+    },
+    {
+      "key": [
+        "fixed-total",
+        "angle-dispersed",
+        "8",
+        "6"
+      ],
+      "occurrences": 2,
+      "experiments": [
+        "E3_angular_structure",
+        "E4_selection_strategy"
+      ],
+      "metrics_identical": true
+    },
+    {
+      "key": [
+        "fixed-total",
+        "angle-dispersed",
+        "8",
+        "7"
+      ],
+      "occurrences": 2,
+      "experiments": [
+        "E3_angular_structure",
+        "E4_selection_strategy"
+      ],
+      "metrics_identical": true
+    },
+    {
+      "key": [
+        "fixed-total",
+        "angle-dispersed",
+        "8",
+        "8"
+      ],
+      "occurrences": 2,
+      "experiments": [
+        "E3_angular_structure",
+        "E4_selection_strategy"
+      ],
+      "metrics_identical": true
+    },
+    {
+      "key": [
+        "fixed-total",
+        "angle-dispersed",
+        "8",
+        "9"
+      ],
+      "occurrences": 2,
+      "experiments": [
+        "E3_angular_structure",
+        "E4_selection_strategy"
+      ],
+      "metrics_identical": true
+    },
+    {
+      "key": [
+        "fixed-total",
+        "angle-dispersed",
+        "8",
+        "10"
+      ],
+      "occurrences": 2,
+      "experiments": [
+        "E3_angular_structure",
+        "E4_selection_strategy"
+      ],
+      "metrics_identical": true
+    },
+    {
+      "key": [
+        "fixed-total",
+        "angle-dispersed",
+        "8",
+        "11"
+      ],
+      "occurrences": 2,
+      "experiments": [
+        "E3_angular_structure",
+        "E4_selection_strategy"
+      ],
+      "metrics_identical": true
+    },
+    {
+      "key": [
+        "fixed-total",
+        "angle-dispersed",
+        "8",
+        "12"
+      ],
+      "occurrences": 2,
+      "experiments": [
+        "E3_angular_structure",
+        "E4_selection_strategy"
+      ],
+      "metrics_identical": true
+    },
+    {
+      "key": [
+        "fixed-total",
+        "angle-dispersed",
+        "8",
+        "13"
+      ],
+      "occurrences": 2,
+      "experiments": [
+        "E3_angular_structure",
+        "E4_selection_strategy"
+      ],
+      "metrics_identical": true
+    },
+    {
+      "key": [
+        "fixed-total",
+        "angle-dispersed",
+        "8",
+        "14"
+      ],
+      "occurrences": 2,
+      "experiments": [
+        "E3_angular_structure",
+        "E4_selection_strategy"
+      ],
+      "metrics_identical": true
+    },
+    {
+      "key": [
+        "fixed-total",
+        "angle-dispersed",
+        "8",
+        "15"
+      ],
+      "occurrences": 2,
+      "experiments": [
+        "E3_angular_structure",
+        "E4_selection_strategy"
+      ],
+      "metrics_identical": true
+    },
+    {
+      "key": [
+        "fixed-total",
+        "angle-dispersed",
+        "8",
+        "16"
+      ],
+      "occurrences": 2,
+      "experiments": [
+        "E3_angular_structure",
+        "E4_selection_strategy"
+      ],
+      "metrics_identical": true
+    },
+    {
+      "key": [
+        "fixed-total",
+        "angle-dispersed",
+        "8",
+        "17"
+      ],
+      "occurrences": 2,
+      "experiments": [
+        "E3_angular_structure",
+        "E4_selection_strategy"
+      ],
+      "metrics_identical": true
+    },
+    {
+      "key": [
+        "fixed-total",
+        "angle-dispersed",
+        "8",
+        "18"
+      ],
+      "occurrences": 2,
+      "experiments": [
+        "E3_angular_structure",
+        "E4_selection_strategy"
+      ],
+      "metrics_identical": true
+    },
+    {
+      "key": [
+        "fixed-total",
+        "angle-dispersed",
+        "8",
+        "19"
+      ],
+      "occurrences": 2,
+      "experiments": [
+        "E3_angular_structure",
+        "E4_selection_strategy"
+      ],
+      "metrics_identical": true
+    },
+    {
+      "key": [
+        "fixed-total",
+        "angle-dispersed",
+        "8",
+        "20"
+      ],
+      "occurrences": 2,
+      "experiments": [
+        "E3_angular_structure",
+        "E4_selection_strategy"
+      ],
+      "metrics_identical": true
+    }
+  ],
+  "all_repeated_config_metrics_identical": true,
+  "all_algorithm_equivalent_metrics_identical": true,
+  "nonfinite_numeric_cells": 0,
+  "group_statistic_max_absolute_errors": {
+    "mean": 4.5556292072035376e-10,
+    "sd": 4.76843009522554e-11,
+    "ci95_low": 9.708660542173675e-10,
+    "ci95_high": 1.2588561304482937e-09
+  },
+  "amplitude_formula_max_error": 1.9984014443252818e-15,
+  "active_count_max_error": 0.0,
+  "balanced_and_dispersed_code_identical": true,
+  "raw_mat_count": 48,
+  "raw_seeds_by_filename": {
+    "1": 24,
+    "2": 24
+  },
+  "runner_utf16": false,
+  "runner_contains_NUL": true,
+  "original_audit_hash_checks": [
+    {
+      "declared_path": "README.md",
+      "actual_path": "run_B_E2_README.md",
+      "match": [
+        "exact",
+        "LF"
+      ],
+      "declared_bytes": 3347,
+      "actual_bytes": 3347
+    },
+    {
+      "declared_path": "B_E2_RESULT_EXPLANATION.md",
+      "actual_path": "B_E2_RESULT_EXPLANATION.md",
+      "match": [
+        "exact",
+        "LF"
+      ],
+      "declared_bytes": 2987,
+      "actual_bytes": 2987
+    },
+    {
+      "declared_path": "run_B_E2_experiments.m",
+      "actual_path": "run_B_E2_experiments.m",
+      "match": [
+        "exact",
+        "LF"
+      ],
+      "declared_bytes": 4622,
+      "actual_bytes": 4622
+    },
+    {
+      "declared_path": "simulateBGroupE2.m",
+      "actual_path": "simulateBGroupE2.m",
+      "match": [
+        "exact"
+      ],
+      "declared_bytes": 21774,
+      "actual_bytes": 21774
+    },
+    {
+      "declared_path": "results/B_E2_runs.csv",
+      "actual_path": "run_B_E2_results/B_E2_runs.csv",
+      "match": [
+        "exact",
+        "CRLF"
+      ],
+      "declared_bytes": 125715,
+      "actual_bytes": 125715
+    },
+    {
+      "declared_path": "results/B_E2_runs.mat",
+      "actual_path": "run_B_E2_results/B_E2_runs.mat",
+      "match": [
+        "exact",
+        "LF"
+      ],
+      "declared_bytes": 23159,
+      "actual_bytes": 23159
+    },
+    {
+      "declared_path": "results/B_E2_grouped_summary.csv",
+      "actual_path": "run_B_E2_results/B_E2_grouped_summary.csv",
+      "match": [
+        "exact",
+        "CRLF"
+      ],
+      "declared_bytes": 17456,
+      "actual_bytes": 17456
+    }
+  ],
+  "limitations": "CSV and static-code audit; MATLAB inspection reported separately; no population simulation or significance claim.",
+  "assertion_status": "PASS: counts, complete seed sets, finite values, bounds, duplicate consistency, moments/CI arithmetic, amplitude/count formulas, seven exact source hashes"
+}

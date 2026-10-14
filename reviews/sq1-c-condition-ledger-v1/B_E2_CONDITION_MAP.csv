@@ -1,0 +1,481 @@
+﻿source_commit,source_csv_line,experiment,strengthMode,selectionPolicy,k,seed,canonical_config_id,canonical_run_id,representative_csv_line,is_representative,reason
+63d56b51cb74bca509b0fb7dc29d1d5997d3a1ae,2,E1_strength_policy,original,random,2,1,C09,C09-S001,2,True,first representative; original labels retained
+63d56b51cb74bca509b0fb7dc29d1d5997d3a1ae,3,E1_strength_policy,original,random,2,2,C09,C09-S002,3,True,first representative; original labels retained
+63d56b51cb74bca509b0fb7dc29d1d5997d3a1ae,4,E1_strength_policy,original,random,2,3,C09,C09-S003,4,True,first representative; original labels retained
+63d56b51cb74bca509b0fb7dc29d1d5997d3a1ae,5,E1_strength_policy,original,random,2,4,C09,C09-S004,5,True,first representative; original labels retained
+63d56b51cb74bca509b0fb7dc29d1d5997d3a1ae,6,E1_strength_policy,original,random,2,5,C09,C09-S005,6,True,first representative; original labels retained
+63d56b51cb74bca509b0fb7dc29d1d5997d3a1ae,7,E1_strength_policy,original,random,2,6,C09,C09-S006,7,True,first representative; original labels retained
+63d56b51cb74bca509b0fb7dc29d1d5997d3a1ae,8,E1_strength_policy,original,random,2,7,C09,C09-S007,8,True,first representative; original labels retained
+63d56b51cb74bca509b0fb7dc29d1d5997d3a1ae,9,E1_strength_policy,original,random,2,8,C09,C09-S008,9,True,first representative; original labels retained
+63d56b51cb74bca509b0fb7dc29d1d5997d3a1ae,10,E1_strength_policy,original,random,2,9,C09,C09-S009,10,True,first representative; original labels retained
+63d56b51cb74bca509b0fb7dc29d1d5997d3a1ae,11,E1_strength_policy,original,random,2,10,C09,C09-S010,11,True,first representative; original labels retained
+63d56b51cb74bca509b0fb7dc29d1d5997d3a1ae,12,E1_strength_policy,original,random,2,11,C09,C09-S011,12,True,first representative; original labels retained
+63d56b51cb74bca509b0fb7dc29d1d5997d3a1ae,13,E1_strength_policy,original,random,2,12,C09,C09-S012,13,True,first representative; original labels retained
+63d56b51cb74bca509b0fb7dc29d1d5997d3a1ae,14,E1_strength_policy,original,random,2,13,C09,C09-S013,14,True,first representative; original labels retained
+63d56b51cb74bca509b0fb7dc29d1d5997d3a1ae,15,E1_strength_policy,original,random,2,14,C09,C09-S014,15,True,first representative; original labels retained
+63d56b51cb74bca509b0fb7dc29d1d5997d3a1ae,16,E1_strength_policy,original,random,2,15,C09,C09-S015,16,True,first representative; original labels retained
+63d56b51cb74bca509b0fb7dc29d1d5997d3a1ae,17,E1_strength_policy,original,random,2,16,C09,C09-S016,17,True,first representative; original labels retained
+63d56b51cb74bca509b0fb7dc29d1d5997d3a1ae,18,E1_strength_policy,original,random,2,17,C09,C09-S017,18,True,first representative; original labels retained
+63d56b51cb74bca509b0fb7dc29d1d5997d3a1ae,19,E1_strength_policy,original,random,2,18,C09,C09-S018,19,True,first representative; original labels retained
+63d56b51cb74bca509b0fb7dc29d1d5997d3a1ae,20,E1_strength_policy,original,random,2,19,C09,C09-S019,20,True,first representative; original labels retained
+63d56b51cb74bca509b0fb7dc29d1d5997d3a1ae,21,E1_strength_policy,original,random,2,20,C09,C09-S020,21,True,first representative; original labels retained
+63d56b51cb74bca509b0fb7dc29d1d5997d3a1ae,22,E1_strength_policy,original,random,8,1,C11,C11-S001,22,True,first representative; original labels retained
+63d56b51cb74bca509b0fb7dc29d1d5997d3a1ae,23,E1_strength_policy,original,random,8,2,C11,C11-S002,23,True,first representative; original labels retained
+63d56b51cb74bca509b0fb7dc29d1d5997d3a1ae,24,E1_strength_policy,original,random,8,3,C11,C11-S003,24,True,first representative; original labels retained
+63d56b51cb74bca509b0fb7dc29d1d5997d3a1ae,25,E1_strength_policy,original,random,8,4,C11,C11-S004,25,True,first representative; original labels retained
+63d56b51cb74bca509b0fb7dc29d1d5997d3a1ae,26,E1_strength_policy,original,random,8,5,C11,C11-S005,26,True,first representative; original labels retained
+63d56b51cb74bca509b0fb7dc29d1d5997d3a1ae,27,E1_strength_policy,original,random,8,6,C11,C11-S006,27,True,first representative; original labels retained
+63d56b51cb74bca509b0fb7dc29d1d5997d3a1ae,28,E1_strength_policy,original,random,8,7,C11,C11-S007,28,True,first representative; original labels retained
+63d56b51cb74bca509b0fb7dc29d1d5997d3a1ae,29,E1_strength_policy,original,random,8,8,C11,C11-S008,29,True,first representative; original labels retained
+63d56b51cb74bca509b0fb7dc29d1d5997d3a1ae,30,E1_strength_policy,original,random,8,9,C11,C11-S009,30,True,first representative; original labels retained
+63d56b51cb74bca509b0fb7dc29d1d5997d3a1ae,31,E1_strength_policy,original,random,8,10,C11,C11-S010,31,True,first representative; original labels retained
+63d56b51cb74bca509b0fb7dc29d1d5997d3a1ae,32,E1_strength_policy,original,random,8,11,C11,C11-S011,32,True,first representative; original labels retained
+63d56b51cb74bca509b0fb7dc29d1d5997d3a1ae,33,E1_strength_policy,original,random,8,12,C11,C11-S012,33,True,first representative; original labels retained
+63d56b51cb74bca509b0fb7dc29d1d5997d3a1ae,34,E1_strength_policy,original,random,8,13,C11,C11-S013,34,True,first representative; original labels retained
+63d56b51cb74bca509b0fb7dc29d1d5997d3a1ae,35,E1_strength_policy,original,random,8,14,C11,C11-S014,35,True,first representative; original labels retained
+63d56b51cb74bca509b0fb7dc29d1d5997d3a1ae,36,E1_strength_policy,original,random,8,15,C11,C11-S015,36,True,first representative; original labels retained
+63d56b51cb74bca509b0fb7dc29d1d5997d3a1ae,37,E1_strength_policy,original,random,8,16,C11,C11-S016,37,True,first representative; original labels retained
+63d56b51cb74bca509b0fb7dc29d1d5997d3a1ae,38,E1_strength_policy,original,random,8,17,C11,C11-S017,38,True,first representative; original labels retained
+63d56b51cb74bca509b0fb7dc29d1d5997d3a1ae,39,E1_strength_policy,original,random,8,18,C11,C11-S018,39,True,first representative; original labels retained
+63d56b51cb74bca509b0fb7dc29d1d5997d3a1ae,40,E1_strength_policy,original,random,8,19,C11,C11-S019,40,True,first representative; original labels retained
+63d56b51cb74bca509b0fb7dc29d1d5997d3a1ae,41,E1_strength_policy,original,random,8,20,C11,C11-S020,41,True,first representative; original labels retained
+63d56b51cb74bca509b0fb7dc29d1d5997d3a1ae,42,E1_strength_policy,original,random,19,1,C08,C08-S001,42,True,all 19 neighbors; original and fixed-total weights coincide
+63d56b51cb74bca509b0fb7dc29d1d5997d3a1ae,43,E1_strength_policy,original,random,19,2,C08,C08-S002,43,True,all 19 neighbors; original and fixed-total weights coincide
+63d56b51cb74bca509b0fb7dc29d1d5997d3a1ae,44,E1_strength_policy,original,random,19,3,C08,C08-S003,44,True,all 19 neighbors; original and fixed-total weights coincide
+63d56b51cb74bca509b0fb7dc29d1d5997d3a1ae,45,E1_strength_policy,original,random,19,4,C08,C08-S004,45,True,all 19 neighbors; original and fixed-total weights coincide
+63d56b51cb74bca509b0fb7dc29d1d5997d3a1ae,46,E1_strength_policy,original,random,19,5,C08,C08-S005,46,True,all 19 neighbors; original and fixed-total weights coincide
+63d56b51cb74bca509b0fb7dc29d1d5997d3a1ae,47,E1_strength_policy,original,random,19,6,C08,C08-S006,47,True,all 19 neighbors; original and fixed-total weights coincide
+63d56b51cb74bca509b0fb7dc29d1d5997d3a1ae,48,E1_strength_policy,original,random,19,7,C08,C08-S007,48,True,all 19 neighbors; original and fixed-total weights coincide
+63d56b51cb74bca509b0fb7dc29d1d5997d3a1ae,49,E1_strength_policy,original,random,19,8,C08,C08-S008,49,True,all 19 neighbors; original and fixed-total weights coincide
+63d56b51cb74bca509b0fb7dc29d1d5997d3a1ae,50,E1_strength_policy,original,random,19,9,C08,C08-S009,50,True,all 19 neighbors; original and fixed-total weights coincide
+63d56b51cb74bca509b0fb7dc29d1d5997d3a1ae,51,E1_strength_policy,original,random,19,10,C08,C08-S010,51,True,all 19 neighbors; original and fixed-total weights coincide
+63d56b51cb74bca509b0fb7dc29d1d5997d3a1ae,52,E1_strength_policy,original,random,19,11,C08,C08-S011,52,True,all 19 neighbors; original and fixed-total weights coincide
+63d56b51cb74bca509b0fb7dc29d1d5997d3a1ae,53,E1_strength_policy,original,random,19,12,C08,C08-S012,53,True,all 19 neighbors; original and fixed-total weights coincide
+63d56b51cb74bca509b0fb7dc29d1d5997d3a1ae,54,E1_strength_policy,original,random,19,13,C08,C08-S013,54,True,all 19 neighbors; original and fixed-total weights coincide
+63d56b51cb74bca509b0fb7dc29d1d5997d3a1ae,55,E1_strength_policy,original,random,19,14,C08,C08-S014,55,True,all 19 neighbors; original and fixed-total weights coincide
+63d56b51cb74bca509b0fb7dc29d1d5997d3a1ae,56,E1_strength_policy,original,random,19,15,C08,C08-S015,56,True,all 19 neighbors; original and fixed-total weights coincide
+63d56b51cb74bca509b0fb7dc29d1d5997d3a1ae,57,E1_strength_policy,original,random,19,16,C08,C08-S016,57,True,all 19 neighbors; original and fixed-total weights coincide
+63d56b51cb74bca509b0fb7dc29d1d5997d3a1ae,58,E1_strength_policy,original,random,19,17,C08,C08-S017,58,True,all 19 neighbors; original and fixed-total weights coincide
+63d56b51cb74bca509b0fb7dc29d1d5997d3a1ae,59,E1_strength_policy,original,random,19,18,C08,C08-S018,59,True,all 19 neighbors; original and fixed-total weights coincide
+63d56b51cb74bca509b0fb7dc29d1d5997d3a1ae,60,E1_strength_policy,original,random,19,19,C08,C08-S019,60,True,all 19 neighbors; original and fixed-total weights coincide
+63d56b51cb74bca509b0fb7dc29d1d5997d3a1ae,61,E1_strength_policy,original,random,19,20,C08,C08-S020,61,True,all 19 neighbors; original and fixed-total weights coincide
+63d56b51cb74bca509b0fb7dc29d1d5997d3a1ae,62,E1_strength_policy,fixed-total,random,2,1,C04,C04-S001,62,True,first representative; original labels retained
+63d56b51cb74bca509b0fb7dc29d1d5997d3a1ae,63,E1_strength_policy,fixed-total,random,2,2,C04,C04-S002,63,True,first representative; original labels retained
+63d56b51cb74bca509b0fb7dc29d1d5997d3a1ae,64,E1_strength_policy,fixed-total,random,2,3,C04,C04-S003,64,True,first representative; original labels retained
+63d56b51cb74bca509b0fb7dc29d1d5997d3a1ae,65,E1_strength_policy,fixed-total,random,2,4,C04,C04-S004,65,True,first representative; original labels retained
+63d56b51cb74bca509b0fb7dc29d1d5997d3a1ae,66,E1_strength_policy,fixed-total,random,2,5,C04,C04-S005,66,True,first representative; original labels retained
+63d56b51cb74bca509b0fb7dc29d1d5997d3a1ae,67,E1_strength_policy,fixed-total,random,2,6,C04,C04-S006,67,True,first representative; original labels retained
+63d56b51cb74bca509b0fb7dc29d1d5997d3a1ae,68,E1_strength_policy,fixed-total,random,2,7,C04,C04-S007,68,True,first representative; original labels retained
+63d56b51cb74bca509b0fb7dc29d1d5997d3a1ae,69,E1_strength_policy,fixed-total,random,2,8,C04,C04-S008,69,True,first representative; original labels retained
+63d56b51cb74bca509b0fb7dc29d1d5997d3a1ae,70,E1_strength_policy,fixed-total,random,2,9,C04,C04-S009,70,True,first representative; original labels retained
+63d56b51cb74bca509b0fb7dc29d1d5997d3a1ae,71,E1_strength_policy,fixed-total,random,2,10,C04,C04-S010,71,True,first representative; original labels retained
+63d56b51cb74bca509b0fb7dc29d1d5997d3a1ae,72,E1_strength_policy,fixed-total,random,2,11,C04,C04-S011,72,True,first representative; original labels retained
+63d56b51cb74bca509b0fb7dc29d1d5997d3a1ae,73,E1_strength_policy,fixed-total,random,2,12,C04,C04-S012,73,True,first representative; original labels retained
+63d56b51cb74bca509b0fb7dc29d1d5997d3a1ae,74,E1_strength_policy,fixed-total,random,2,13,C04,C04-S013,74,True,first representative; original labels retained
+63d56b51cb74bca509b0fb7dc29d1d5997d3a1ae,75,E1_strength_policy,fixed-total,random,2,14,C04,C04-S014,75,True,first representative; original labels retained
+63d56b51cb74bca509b0fb7dc29d1d5997d3a1ae,76,E1_strength_policy,fixed-total,random,2,15,C04,C04-S015,76,True,first representative; original labels retained
+63d56b51cb74bca509b0fb7dc29d1d5997d3a1ae,77,E1_strength_policy,fixed-total,random,2,16,C04,C04-S016,77,True,first representative; original labels retained
+63d56b51cb74bca509b0fb7dc29d1d5997d3a1ae,78,E1_strength_policy,fixed-total,random,2,17,C04,C04-S017,78,True,first representative; original labels retained
+63d56b51cb74bca509b0fb7dc29d1d5997d3a1ae,79,E1_strength_policy,fixed-total,random,2,18,C04,C04-S018,79,True,first representative; original labels retained
+63d56b51cb74bca509b0fb7dc29d1d5997d3a1ae,80,E1_strength_policy,fixed-total,random,2,19,C04,C04-S019,80,True,first representative; original labels retained
+63d56b51cb74bca509b0fb7dc29d1d5997d3a1ae,81,E1_strength_policy,fixed-total,random,2,20,C04,C04-S020,81,True,first representative; original labels retained
+63d56b51cb74bca509b0fb7dc29d1d5997d3a1ae,82,E1_strength_policy,fixed-total,random,8,1,C06,C06-S001,82,True,first representative; original labels retained
+63d56b51cb74bca509b0fb7dc29d1d5997d3a1ae,83,E1_strength_policy,fixed-total,random,8,2,C06,C06-S002,83,True,first representative; original labels retained
+63d56b51cb74bca509b0fb7dc29d1d5997d3a1ae,84,E1_strength_policy,fixed-total,random,8,3,C06,C06-S003,84,True,first representative; original labels retained
+63d56b51cb74bca509b0fb7dc29d1d5997d3a1ae,85,E1_strength_policy,fixed-total,random,8,4,C06,C06-S004,85,True,first representative; original labels retained
+63d56b51cb74bca509b0fb7dc29d1d5997d3a1ae,86,E1_strength_policy,fixed-total,random,8,5,C06,C06-S005,86,True,first representative; original labels retained
+63d56b51cb74bca509b0fb7dc29d1d5997d3a1ae,87,E1_strength_policy,fixed-total,random,8,6,C06,C06-S006,87,True,first representative; original labels retained
+63d56b51cb74bca509b0fb7dc29d1d5997d3a1ae,88,E1_strength_policy,fixed-total,random,8,7,C06,C06-S007,88,True,first representative; original labels retained
+63d56b51cb74bca509b0fb7dc29d1d5997d3a1ae,89,E1_strength_policy,fixed-total,random,8,8,C06,C06-S008,89,True,first representative; original labels retained
+63d56b51cb74bca509b0fb7dc29d1d5997d3a1ae,90,E1_strength_policy,fixed-total,random,8,9,C06,C06-S009,90,True,first representative; original labels retained
+63d56b51cb74bca509b0fb7dc29d1d5997d3a1ae,91,E1_strength_policy,fixed-total,random,8,10,C06,C06-S010,91,True,first representative; original labels retained
+63d56b51cb74bca509b0fb7dc29d1d5997d3a1ae,92,E1_strength_policy,fixed-total,random,8,11,C06,C06-S011,92,True,first representative; original labels retained
+63d56b51cb74bca509b0fb7dc29d1d5997d3a1ae,93,E1_strength_policy,fixed-total,random,8,12,C06,C06-S012,93,True,first representative; original labels retained
+63d56b51cb74bca509b0fb7dc29d1d5997d3a1ae,94,E1_strength_policy,fixed-total,random,8,13,C06,C06-S013,94,True,first representative; original labels retained
+63d56b51cb74bca509b0fb7dc29d1d5997d3a1ae,95,E1_strength_policy,fixed-total,random,8,14,C06,C06-S014,95,True,first representative; original labels retained
+63d56b51cb74bca509b0fb7dc29d1d5997d3a1ae,96,E1_strength_policy,fixed-total,random,8,15,C06,C06-S015,96,True,first representative; original labels retained
+63d56b51cb74bca509b0fb7dc29d1d5997d3a1ae,97,E1_strength_policy,fixed-total,random,8,16,C06,C06-S016,97,True,first representative; original labels retained
+63d56b51cb74bca509b0fb7dc29d1d5997d3a1ae,98,E1_strength_policy,fixed-total,random,8,17,C06,C06-S017,98,True,first representative; original labels retained
+63d56b51cb74bca509b0fb7dc29d1d5997d3a1ae,99,E1_strength_policy,fixed-total,random,8,18,C06,C06-S018,99,True,first representative; original labels retained
+63d56b51cb74bca509b0fb7dc29d1d5997d3a1ae,100,E1_strength_policy,fixed-total,random,8,19,C06,C06-S019,100,True,first representative; original labels retained
+63d56b51cb74bca509b0fb7dc29d1d5997d3a1ae,101,E1_strength_policy,fixed-total,random,8,20,C06,C06-S020,101,True,first representative; original labels retained
+63d56b51cb74bca509b0fb7dc29d1d5997d3a1ae,102,E1_strength_policy,fixed-total,random,19,1,C08,C08-S001,42,False,all 19 neighbors; original and fixed-total weights coincide; reuses canonical run; do not count as independent replication
+63d56b51cb74bca509b0fb7dc29d1d5997d3a1ae,103,E1_strength_policy,fixed-total,random,19,2,C08,C08-S002,43,False,all 19 neighbors; original and fixed-total weights coincide; reuses canonical run; do not count as independent replication
+63d56b51cb74bca509b0fb7dc29d1d5997d3a1ae,104,E1_strength_policy,fixed-total,random,19,3,C08,C08-S003,44,False,all 19 neighbors; original and fixed-total weights coincide; reuses canonical run; do not count as independent replication
+63d56b51cb74bca509b0fb7dc29d1d5997d3a1ae,105,E1_strength_policy,fixed-total,random,19,4,C08,C08-S004,45,False,all 19 neighbors; original and fixed-total weights coincide; reuses canonical run; do not count as independent replication
+63d56b51cb74bca509b0fb7dc29d1d5997d3a1ae,106,E1_strength_policy,fixed-total,random,19,5,C08,C08-S005,46,False,all 19 neighbors; original and fixed-total weights coincide; reuses canonical run; do not count as independent replication
+63d56b51cb74bca509b0fb7dc29d1d5997d3a1ae,107,E1_strength_policy,fixed-total,random,19,6,C08,C08-S006,47,False,all 19 neighbors; original and fixed-total weights coincide; reuses canonical run; do not count as independent replication
+63d56b51cb74bca509b0fb7dc29d1d5997d3a1ae,108,E1_strength_policy,fixed-total,random,19,7,C08,C08-S007,48,False,all 19 neighbors; original and fixed-total weights coincide; reuses canonical run; do not count as independent replication
+63d56b51cb74bca509b0fb7dc29d1d5997d3a1ae,109,E1_strength_policy,fixed-total,random,19,8,C08,C08-S008,49,False,all 19 neighbors; original and fixed-total weights coincide; reuses canonical run; do not count as independent replication
+63d56b51cb74bca509b0fb7dc29d1d5997d3a1ae,110,E1_strength_policy,fixed-total,random,19,9,C08,C08-S009,50,False,all 19 neighbors; original and fixed-total weights coincide; reuses canonical run; do not count as independent replication
+63d56b51cb74bca509b0fb7dc29d1d5997d3a1ae,111,E1_strength_policy,fixed-total,random,19,10,C08,C08-S010,51,False,all 19 neighbors; original and fixed-total weights coincide; reuses canonical run; do not count as independent replication
+63d56b51cb74bca509b0fb7dc29d1d5997d3a1ae,112,E1_strength_policy,fixed-total,random,19,11,C08,C08-S011,52,False,all 19 neighbors; original and fixed-total weights coincide; reuses canonical run; do not count as independent replication
+63d56b51cb74bca509b0fb7dc29d1d5997d3a1ae,113,E1_strength_policy,fixed-total,random,19,12,C08,C08-S012,53,False,all 19 neighbors; original and fixed-total weights coincide; reuses canonical run; do not count as independent replication
+63d56b51cb74bca509b0fb7dc29d1d5997d3a1ae,114,E1_strength_policy,fixed-total,random,19,13,C08,C08-S013,54,False,all 19 neighbors; original and fixed-total weights coincide; reuses canonical run; do not count as independent replication
+63d56b51cb74bca509b0fb7dc29d1d5997d3a1ae,115,E1_strength_policy,fixed-total,random,19,14,C08,C08-S014,55,False,all 19 neighbors; original and fixed-total weights coincide; reuses canonical run; do not count as independent replication
+63d56b51cb74bca509b0fb7dc29d1d5997d3a1ae,116,E1_strength_policy,fixed-total,random,19,15,C08,C08-S015,56,False,all 19 neighbors; original and fixed-total weights coincide; reuses canonical run; do not count as independent replication
+63d56b51cb74bca509b0fb7dc29d1d5997d3a1ae,117,E1_strength_policy,fixed-total,random,19,16,C08,C08-S016,57,False,all 19 neighbors; original and fixed-total weights coincide; reuses canonical run; do not count as independent replication
+63d56b51cb74bca509b0fb7dc29d1d5997d3a1ae,118,E1_strength_policy,fixed-total,random,19,17,C08,C08-S017,58,False,all 19 neighbors; original and fixed-total weights coincide; reuses canonical run; do not count as independent replication
+63d56b51cb74bca509b0fb7dc29d1d5997d3a1ae,119,E1_strength_policy,fixed-total,random,19,18,C08,C08-S018,59,False,all 19 neighbors; original and fixed-total weights coincide; reuses canonical run; do not count as independent replication
+63d56b51cb74bca509b0fb7dc29d1d5997d3a1ae,120,E1_strength_policy,fixed-total,random,19,19,C08,C08-S019,60,False,all 19 neighbors; original and fixed-total weights coincide; reuses canonical run; do not count as independent replication
+63d56b51cb74bca509b0fb7dc29d1d5997d3a1ae,121,E1_strength_policy,fixed-total,random,19,20,C08,C08-S020,61,False,all 19 neighbors; original and fixed-total weights coincide; reuses canonical run; do not count as independent replication
+63d56b51cb74bca509b0fb7dc29d1d5997d3a1ae,122,E2_neighbor_count,original,random,2,1,C09,C09-S001,2,False,reuses canonical run; do not count as independent replication
+63d56b51cb74bca509b0fb7dc29d1d5997d3a1ae,123,E2_neighbor_count,original,random,2,2,C09,C09-S002,3,False,reuses canonical run; do not count as independent replication
+63d56b51cb74bca509b0fb7dc29d1d5997d3a1ae,124,E2_neighbor_count,original,random,2,3,C09,C09-S003,4,False,reuses canonical run; do not count as independent replication
+63d56b51cb74bca509b0fb7dc29d1d5997d3a1ae,125,E2_neighbor_count,original,random,2,4,C09,C09-S004,5,False,reuses canonical run; do not count as independent replication
+63d56b51cb74bca509b0fb7dc29d1d5997d3a1ae,126,E2_neighbor_count,original,random,2,5,C09,C09-S005,6,False,reuses canonical run; do not count as independent replication
+63d56b51cb74bca509b0fb7dc29d1d5997d3a1ae,127,E2_neighbor_count,original,random,2,6,C09,C09-S006,7,False,reuses canonical run; do not count as independent replication
+63d56b51cb74bca509b0fb7dc29d1d5997d3a1ae,128,E2_neighbor_count,original,random,2,7,C09,C09-S007,8,False,reuses canonical run; do not count as independent replication
+63d56b51cb74bca509b0fb7dc29d1d5997d3a1ae,129,E2_neighbor_count,original,random,2,8,C09,C09-S008,9,False,reuses canonical run; do not count as independent replication
+63d56b51cb74bca509b0fb7dc29d1d5997d3a1ae,130,E2_neighbor_count,original,random,2,9,C09,C09-S009,10,False,reuses canonical run; do not count as independent replication
+63d56b51cb74bca509b0fb7dc29d1d5997d3a1ae,131,E2_neighbor_count,original,random,2,10,C09,C09-S010,11,False,reuses canonical run; do not count as independent replication
+63d56b51cb74bca509b0fb7dc29d1d5997d3a1ae,132,E2_neighbor_count,original,random,2,11,C09,C09-S011,12,False,reuses canonical run; do not count as independent replication
+63d56b51cb74bca509b0fb7dc29d1d5997d3a1ae,133,E2_neighbor_count,original,random,2,12,C09,C09-S012,13,False,reuses canonical run; do not count as independent replication
+63d56b51cb74bca509b0fb7dc29d1d5997d3a1ae,134,E2_neighbor_count,original,random,2,13,C09,C09-S013,14,False,reuses canonical run; do not count as independent replication
+63d56b51cb74bca509b0fb7dc29d1d5997d3a1ae,135,E2_neighbor_count,original,random,2,14,C09,C09-S014,15,False,reuses canonical run; do not count as independent replication
+63d56b51cb74bca509b0fb7dc29d1d5997d3a1ae,136,E2_neighbor_count,original,random,2,15,C09,C09-S015,16,False,reuses canonical run; do not count as independent replication
+63d56b51cb74bca509b0fb7dc29d1d5997d3a1ae,137,E2_neighbor_count,original,random,2,16,C09,C09-S016,17,False,reuses canonical run; do not count as independent replication
+63d56b51cb74bca509b0fb7dc29d1d5997d3a1ae,138,E2_neighbor_count,original,random,2,17,C09,C09-S017,18,False,reuses canonical run; do not count as independent replication
+63d56b51cb74bca509b0fb7dc29d1d5997d3a1ae,139,E2_neighbor_count,original,random,2,18,C09,C09-S018,19,False,reuses canonical run; do not count as independent replication
+63d56b51cb74bca509b0fb7dc29d1d5997d3a1ae,140,E2_neighbor_count,original,random,2,19,C09,C09-S019,20,False,reuses canonical run; do not count as independent replication
+63d56b51cb74bca509b0fb7dc29d1d5997d3a1ae,141,E2_neighbor_count,original,random,2,20,C09,C09-S020,21,False,reuses canonical run; do not count as independent replication
+63d56b51cb74bca509b0fb7dc29d1d5997d3a1ae,142,E2_neighbor_count,original,random,4,1,C10,C10-S001,142,True,first representative; original labels retained
+63d56b51cb74bca509b0fb7dc29d1d5997d3a1ae,143,E2_neighbor_count,original,random,4,2,C10,C10-S002,143,True,first representative; original labels retained
+63d56b51cb74bca509b0fb7dc29d1d5997d3a1ae,144,E2_neighbor_count,original,random,4,3,C10,C10-S003,144,True,first representative; original labels retained
+63d56b51cb74bca509b0fb7dc29d1d5997d3a1ae,145,E2_neighbor_count,original,random,4,4,C10,C10-S004,145,True,first representative; original labels retained
+63d56b51cb74bca509b0fb7dc29d1d5997d3a1ae,146,E2_neighbor_count,original,random,4,5,C10,C10-S005,146,True,first representative; original labels retained
+63d56b51cb74bca509b0fb7dc29d1d5997d3a1ae,147,E2_neighbor_count,original,random,4,6,C10,C10-S006,147,True,first representative; original labels retained
+63d56b51cb74bca509b0fb7dc29d1d5997d3a1ae,148,E2_neighbor_count,original,random,4,7,C10,C10-S007,148,True,first representative; original labels retained
+63d56b51cb74bca509b0fb7dc29d1d5997d3a1ae,149,E2_neighbor_count,original,random,4,8,C10,C10-S008,149,True,first representative; original labels retained
+63d56b51cb74bca509b0fb7dc29d1d5997d3a1ae,150,E2_neighbor_count,original,random,4,9,C10,C10-S009,150,True,first representative; original labels retained
+63d56b51cb74bca509b0fb7dc29d1d5997d3a1ae,151,E2_neighbor_count,original,random,4,10,C10,C10-S010,151,True,first representative; original labels retained
+63d56b51cb74bca509b0fb7dc29d1d5997d3a1ae,152,E2_neighbor_count,original,random,4,11,C10,C10-S011,152,True,first representative; original labels retained
+63d56b51cb74bca509b0fb7dc29d1d5997d3a1ae,153,E2_neighbor_count,original,random,4,12,C10,C10-S012,153,True,first representative; original labels retained
+63d56b51cb74bca509b0fb7dc29d1d5997d3a1ae,154,E2_neighbor_count,original,random,4,13,C10,C10-S013,154,True,first representative; original labels retained
+63d56b51cb74bca509b0fb7dc29d1d5997d3a1ae,155,E2_neighbor_count,original,random,4,14,C10,C10-S014,155,True,first representative; original labels retained
+63d56b51cb74bca509b0fb7dc29d1d5997d3a1ae,156,E2_neighbor_count,original,random,4,15,C10,C10-S015,156,True,first representative; original labels retained
+63d56b51cb74bca509b0fb7dc29d1d5997d3a1ae,157,E2_neighbor_count,original,random,4,16,C10,C10-S016,157,True,first representative; original labels retained
+63d56b51cb74bca509b0fb7dc29d1d5997d3a1ae,158,E2_neighbor_count,original,random,4,17,C10,C10-S017,158,True,first representative; original labels retained
+63d56b51cb74bca509b0fb7dc29d1d5997d3a1ae,159,E2_neighbor_count,original,random,4,18,C10,C10-S018,159,True,first representative; original labels retained
+63d56b51cb74bca509b0fb7dc29d1d5997d3a1ae,160,E2_neighbor_count,original,random,4,19,C10,C10-S019,160,True,first representative; original labels retained
+63d56b51cb74bca509b0fb7dc29d1d5997d3a1ae,161,E2_neighbor_count,original,random,4,20,C10,C10-S020,161,True,first representative; original labels retained
+63d56b51cb74bca509b0fb7dc29d1d5997d3a1ae,162,E2_neighbor_count,original,random,8,1,C11,C11-S001,22,False,reuses canonical run; do not count as independent replication
+63d56b51cb74bca509b0fb7dc29d1d5997d3a1ae,163,E2_neighbor_count,original,random,8,2,C11,C11-S002,23,False,reuses canonical run; do not count as independent replication
+63d56b51cb74bca509b0fb7dc29d1d5997d3a1ae,164,E2_neighbor_count,original,random,8,3,C11,C11-S003,24,False,reuses canonical run; do not count as independent replication
+63d56b51cb74bca509b0fb7dc29d1d5997d3a1ae,165,E2_neighbor_count,original,random,8,4,C11,C11-S004,25,False,reuses canonical run; do not count as independent replication
+63d56b51cb74bca509b0fb7dc29d1d5997d3a1ae,166,E2_neighbor_count,original,random,8,5,C11,C11-S005,26,False,reuses canonical run; do not count as independent replication
+63d56b51cb74bca509b0fb7dc29d1d5997d3a1ae,167,E2_neighbor_count,original,random,8,6,C11,C11-S006,27,False,reuses canonical run; do not count as independent replication
+63d56b51cb74bca509b0fb7dc29d1d5997d3a1ae,168,E2_neighbor_count,original,random,8,7,C11,C11-S007,28,False,reuses canonical run; do not count as independent replication
+63d56b51cb74bca509b0fb7dc29d1d5997d3a1ae,169,E2_neighbor_count,original,random,8,8,C11,C11-S008,29,False,reuses canonical run; do not count as independent replication
+63d56b51cb74bca509b0fb7dc29d1d5997d3a1ae,170,E2_neighbor_count,original,random,8,9,C11,C11-S009,30,False,reuses canonical run; do not count as independent replication
+63d56b51cb74bca509b0fb7dc29d1d5997d3a1ae,171,E2_neighbor_count,original,random,8,10,C11,C11-S010,31,False,reuses canonical run; do not count as independent replication
+63d56b51cb74bca509b0fb7dc29d1d5997d3a1ae,172,E2_neighbor_count,original,random,8,11,C11,C11-S011,32,False,reuses canonical run; do not count as independent replication
+63d56b51cb74bca509b0fb7dc29d1d5997d3a1ae,173,E2_neighbor_count,original,random,8,12,C11,C11-S012,33,False,reuses canonical run; do not count as independent replication
+63d56b51cb74bca509b0fb7dc29d1d5997d3a1ae,174,E2_neighbor_count,original,random,8,13,C11,C11-S013,34,False,reuses canonical run; do not count as independent replication
+63d56b51cb74bca509b0fb7dc29d1d5997d3a1ae,175,E2_neighbor_count,original,random,8,14,C11,C11-S014,35,False,reuses canonical run; do not count as independent replication
+63d56b51cb74bca509b0fb7dc29d1d5997d3a1ae,176,E2_neighbor_count,original,random,8,15,C11,C11-S015,36,False,reuses canonical run; do not count as independent replication
+63d56b51cb74bca509b0fb7dc29d1d5997d3a1ae,177,E2_neighbor_count,original,random,8,16,C11,C11-S016,37,False,reuses canonical run; do not count as independent replication
+63d56b51cb74bca509b0fb7dc29d1d5997d3a1ae,178,E2_neighbor_count,original,random,8,17,C11,C11-S017,38,False,reuses canonical run; do not count as independent replication
+63d56b51cb74bca509b0fb7dc29d1d5997d3a1ae,179,E2_neighbor_count,original,random,8,18,C11,C11-S018,39,False,reuses canonical run; do not count as independent replication
+63d56b51cb74bca509b0fb7dc29d1d5997d3a1ae,180,E2_neighbor_count,original,random,8,19,C11,C11-S019,40,False,reuses canonical run; do not count as independent replication
+63d56b51cb74bca509b0fb7dc29d1d5997d3a1ae,181,E2_neighbor_count,original,random,8,20,C11,C11-S020,41,False,reuses canonical run; do not count as independent replication
+63d56b51cb74bca509b0fb7dc29d1d5997d3a1ae,182,E2_neighbor_count,original,random,12,1,C12,C12-S001,182,True,first representative; original labels retained
+63d56b51cb74bca509b0fb7dc29d1d5997d3a1ae,183,E2_neighbor_count,original,random,12,2,C12,C12-S002,183,True,first representative; original labels retained
+63d56b51cb74bca509b0fb7dc29d1d5997d3a1ae,184,E2_neighbor_count,original,random,12,3,C12,C12-S003,184,True,first representative; original labels retained
+63d56b51cb74bca509b0fb7dc29d1d5997d3a1ae,185,E2_neighbor_count,original,random,12,4,C12,C12-S004,185,True,first representative; original labels retained
+63d56b51cb74bca509b0fb7dc29d1d5997d3a1ae,186,E2_neighbor_count,original,random,12,5,C12,C12-S005,186,True,first representative; original labels retained
+63d56b51cb74bca509b0fb7dc29d1d5997d3a1ae,187,E2_neighbor_count,original,random,12,6,C12,C12-S006,187,True,first representative; original labels retained
+63d56b51cb74bca509b0fb7dc29d1d5997d3a1ae,188,E2_neighbor_count,original,random,12,7,C12,C12-S007,188,True,first representative; original labels retained
+63d56b51cb74bca509b0fb7dc29d1d5997d3a1ae,189,E2_neighbor_count,original,random,12,8,C12,C12-S008,189,True,first representative; original labels retained
+63d56b51cb74bca509b0fb7dc29d1d5997d3a1ae,190,E2_neighbor_count,original,random,12,9,C12,C12-S009,190,True,first representative; original labels retained
+63d56b51cb74bca509b0fb7dc29d1d5997d3a1ae,191,E2_neighbor_count,original,random,12,10,C12,C12-S010,191,True,first representative; original labels retained
+63d56b51cb74bca509b0fb7dc29d1d5997d3a1ae,192,E2_neighbor_count,original,random,12,11,C12,C12-S011,192,True,first representative; original labels retained
+63d56b51cb74bca509b0fb7dc29d1d5997d3a1ae,193,E2_neighbor_count,original,random,12,12,C12,C12-S012,193,True,first representative; original labels retained
+63d56b51cb74bca509b0fb7dc29d1d5997d3a1ae,194,E2_neighbor_count,original,random,12,13,C12,C12-S013,194,True,first representative; original labels retained
+63d56b51cb74bca509b0fb7dc29d1d5997d3a1ae,195,E2_neighbor_count,original,random,12,14,C12,C12-S014,195,True,first representative; original labels retained
+63d56b51cb74bca509b0fb7dc29d1d5997d3a1ae,196,E2_neighbor_count,original,random,12,15,C12,C12-S015,196,True,first representative; original labels retained
+63d56b51cb74bca509b0fb7dc29d1d5997d3a1ae,197,E2_neighbor_count,original,random,12,16,C12,C12-S016,197,True,first representative; original labels retained
+63d56b51cb74bca509b0fb7dc29d1d5997d3a1ae,198,E2_neighbor_count,original,random,12,17,C12,C12-S017,198,True,first representative; original labels retained
+63d56b51cb74bca509b0fb7dc29d1d5997d3a1ae,199,E2_neighbor_count,original,random,12,18,C12,C12-S018,199,True,first representative; original labels retained
+63d56b51cb74bca509b0fb7dc29d1d5997d3a1ae,200,E2_neighbor_count,original,random,12,19,C12,C12-S019,200,True,first representative; original labels retained
+63d56b51cb74bca509b0fb7dc29d1d5997d3a1ae,201,E2_neighbor_count,original,random,12,20,C12,C12-S020,201,True,first representative; original labels retained
+63d56b51cb74bca509b0fb7dc29d1d5997d3a1ae,202,E2_neighbor_count,original,random,19,1,C08,C08-S001,42,False,all 19 neighbors; original and fixed-total weights coincide; reuses canonical run; do not count as independent replication
+63d56b51cb74bca509b0fb7dc29d1d5997d3a1ae,203,E2_neighbor_count,original,random,19,2,C08,C08-S002,43,False,all 19 neighbors; original and fixed-total weights coincide; reuses canonical run; do not count as independent replication
+63d56b51cb74bca509b0fb7dc29d1d5997d3a1ae,204,E2_neighbor_count,original,random,19,3,C08,C08-S003,44,False,all 19 neighbors; original and fixed-total weights coincide; reuses canonical run; do not count as independent replication
+63d56b51cb74bca509b0fb7dc29d1d5997d3a1ae,205,E2_neighbor_count,original,random,19,4,C08,C08-S004,45,False,all 19 neighbors; original and fixed-total weights coincide; reuses canonical run; do not count as independent replication
+63d56b51cb74bca509b0fb7dc29d1d5997d3a1ae,206,E2_neighbor_count,original,random,19,5,C08,C08-S005,46,False,all 19 neighbors; original and fixed-total weights coincide; reuses canonical run; do not count as independent replication
+63d56b51cb74bca509b0fb7dc29d1d5997d3a1ae,207,E2_neighbor_count,original,random,19,6,C08,C08-S006,47,False,all 19 neighbors; original and fixed-total weights coincide; reuses canonical run; do not count as independent replication
+63d56b51cb74bca509b0fb7dc29d1d5997d3a1ae,208,E2_neighbor_count,original,random,19,7,C08,C08-S007,48,False,all 19 neighbors; original and fixed-total weights coincide; reuses canonical run; do not count as independent replication
+63d56b51cb74bca509b0fb7dc29d1d5997d3a1ae,209,E2_neighbor_count,original,random,19,8,C08,C08-S008,49,False,all 19 neighbors; original and fixed-total weights coincide; reuses canonical run; do not count as independent replication
+63d56b51cb74bca509b0fb7dc29d1d5997d3a1ae,210,E2_neighbor_count,original,random,19,9,C08,C08-S009,50,False,all 19 neighbors; original and fixed-total weights coincide; reuses canonical run; do not count as independent replication
+63d56b51cb74bca509b0fb7dc29d1d5997d3a1ae,211,E2_neighbor_count,original,random,19,10,C08,C08-S010,51,False,all 19 neighbors; original and fixed-total weights coincide; reuses canonical run; do not count as independent replication
+63d56b51cb74bca509b0fb7dc29d1d5997d3a1ae,212,E2_neighbor_count,original,random,19,11,C08,C08-S011,52,False,all 19 neighbors; original and fixed-total weights coincide; reuses canonical run; do not count as independent replication
+63d56b51cb74bca509b0fb7dc29d1d5997d3a1ae,213,E2_neighbor_count,original,random,19,12,C08,C08-S012,53,False,all 19 neighbors; original and fixed-total weights coincide; reuses canonical run; do not count as independent replication
+63d56b51cb74bca509b0fb7dc29d1d5997d3a1ae,214,E2_neighbor_count,original,random,19,13,C08,C08-S013,54,False,all 19 neighbors; original and fixed-total weights coincide; reuses canonical run; do not count as independent replication
+63d56b51cb74bca509b0fb7dc29d1d5997d3a1ae,215,E2_neighbor_count,original,random,19,14,C08,C08-S014,55,False,all 19 neighbors; original and fixed-total weights coincide; reuses canonical run; do not count as independent replication
+63d56b51cb74bca509b0fb7dc29d1d5997d3a1ae,216,E2_neighbor_count,original,random,19,15,C08,C08-S015,56,False,all 19 neighbors; original and fixed-total weights coincide; reuses canonical run; do not count as independent replication
+63d56b51cb74bca509b0fb7dc29d1d5997d3a1ae,217,E2_neighbor_count,original,random,19,16,C08,C08-S016,57,False,all 19 neighbors; original and fixed-total weights coincide; reuses canonical run; do not count as independent replication
+63d56b51cb74bca509b0fb7dc29d1d5997d3a1ae,218,E2_neighbor_count,original,random,19,17,C08,C08-S017,58,False,all 19 neighbors; original and fixed-total weights coincide; reuses canonical run; do not count as independent replication
+63d56b51cb74bca509b0fb7dc29d1d5997d3a1ae,219,E2_neighbor_count,original,random,19,18,C08,C08-S018,59,False,all 19 neighbors; original and fixed-total weights coincide; reuses canonical run; do not count as independent replication
+63d56b51cb74bca509b0fb7dc29d1d5997d3a1ae,220,E2_neighbor_count,original,random,19,19,C08,C08-S019,60,False,all 19 neighbors; original and fixed-total weights coincide; reuses canonical run; do not count as independent replication
+63d56b51cb74bca509b0fb7dc29d1d5997d3a1ae,221,E2_neighbor_count,original,random,19,20,C08,C08-S020,61,False,all 19 neighbors; original and fixed-total weights coincide; reuses canonical run; do not count as independent replication
+63d56b51cb74bca509b0fb7dc29d1d5997d3a1ae,222,E2_neighbor_count,fixed-total,random,2,1,C04,C04-S001,62,False,reuses canonical run; do not count as independent replication
+63d56b51cb74bca509b0fb7dc29d1d5997d3a1ae,223,E2_neighbor_count,fixed-total,random,2,2,C04,C04-S002,63,False,reuses canonical run; do not count as independent replication
+63d56b51cb74bca509b0fb7dc29d1d5997d3a1ae,224,E2_neighbor_count,fixed-total,random,2,3,C04,C04-S003,64,False,reuses canonical run; do not count as independent replication
+63d56b51cb74bca509b0fb7dc29d1d5997d3a1ae,225,E2_neighbor_count,fixed-total,random,2,4,C04,C04-S004,65,False,reuses canonical run; do not count as independent replication
+63d56b51cb74bca509b0fb7dc29d1d5997d3a1ae,226,E2_neighbor_count,fixed-total,random,2,5,C04,C04-S005,66,False,reuses canonical run; do not count as independent replication
+63d56b51cb74bca509b0fb7dc29d1d5997d3a1ae,227,E2_neighbor_count,fixed-total,random,2,6,C04,C04-S006,67,False,reuses canonical run; do not count as independent replication
+63d56b51cb74bca509b0fb7dc29d1d5997d3a1ae,228,E2_neighbor_count,fixed-total,random,2,7,C04,C04-S007,68,False,reuses canonical run; do not count as independent replication
+63d56b51cb74bca509b0fb7dc29d1d5997d3a1ae,229,E2_neighbor_count,fixed-total,random,2,8,C04,C04-S008,69,False,reuses canonical run; do not count as independent replication
+63d56b51cb74bca509b0fb7dc29d1d5997d3a1ae,230,E2_neighbor_count,fixed-total,random,2,9,C04,C04-S009,70,False,reuses canonical run; do not count as independent replication
+63d56b51cb74bca509b0fb7dc29d1d5997d3a1ae,231,E2_neighbor_count,fixed-total,random,2,10,C04,C04-S010,71,False,reuses canonical run; do not count as independent replication
+63d56b51cb74bca509b0fb7dc29d1d5997d3a1ae,232,E2_neighbor_count,fixed-total,random,2,11,C04,C04-S011,72,False,reuses canonical run; do not count as independent replication
+63d56b51cb74bca509b0fb7dc29d1d5997d3a1ae,233,E2_neighbor_count,fixed-total,random,2,12,C04,C04-S012,73,False,reuses canonical run; do not count as independent replication
+63d56b51cb74bca509b0fb7dc29d1d5997d3a1ae,234,E2_neighbor_count,fixed-total,random,2,13,C04,C04-S013,74,False,reuses canonical run; do not count as independent replication
+63d56b51cb74bca509b0fb7dc29d1d5997d3a1ae,235,E2_neighbor_count,fixed-total,random,2,14,C04,C04-S014,75,False,reuses canonical run; do not count as independent replication
+63d56b51cb74bca509b0fb7dc29d1d5997d3a1ae,236,E2_neighbor_count,fixed-total,random,2,15,C04,C04-S015,76,False,reuses canonical run; do not count as independent replication
+63d56b51cb74bca509b0fb7dc29d1d5997d3a1ae,237,E2_neighbor_count,fixed-total,random,2,16,C04,C04-S016,77,False,reuses canonical run; do not count as independent replication
+63d56b51cb74bca509b0fb7dc29d1d5997d3a1ae,238,E2_neighbor_count,fixed-total,random,2,17,C04,C04-S017,78,False,reuses canonical run; do not count as independent replication
+63d56b51cb74bca509b0fb7dc29d1d5997d3a1ae,239,E2_neighbor_count,fixed-total,random,2,18,C04,C04-S018,79,False,reuses canonical run; do not count as independent replication
+63d56b51cb74bca509b0fb7dc29d1d5997d3a1ae,240,E2_neighbor_count,fixed-total,random,2,19,C04,C04-S019,80,False,reuses canonical run; do not count as independent replication
+63d56b51cb74bca509b0fb7dc29d1d5997d3a1ae,241,E2_neighbor_count,fixed-total,random,2,20,C04,C04-S020,81,False,reuses canonical run; do not count as independent replication
+63d56b51cb74bca509b0fb7dc29d1d5997d3a1ae,242,E2_neighbor_count,fixed-total,random,4,1,C05,C05-S001,242,True,first representative; original labels retained
+63d56b51cb74bca509b0fb7dc29d1d5997d3a1ae,243,E2_neighbor_count,fixed-total,random,4,2,C05,C05-S002,243,True,first representative; original labels retained
+63d56b51cb74bca509b0fb7dc29d1d5997d3a1ae,244,E2_neighbor_count,fixed-total,random,4,3,C05,C05-S003,244,True,first representative; original labels retained
+63d56b51cb74bca509b0fb7dc29d1d5997d3a1ae,245,E2_neighbor_count,fixed-total,random,4,4,C05,C05-S004,245,True,first representative; original labels retained
+63d56b51cb74bca509b0fb7dc29d1d5997d3a1ae,246,E2_neighbor_count,fixed-total,random,4,5,C05,C05-S005,246,True,first representative; original labels retained
+63d56b51cb74bca509b0fb7dc29d1d5997d3a1ae,247,E2_neighbor_count,fixed-total,random,4,6,C05,C05-S006,247,True,first representative; original labels retained
+63d56b51cb74bca509b0fb7dc29d1d5997d3a1ae,248,E2_neighbor_count,fixed-total,random,4,7,C05,C05-S007,248,True,first representative; original labels retained
+63d56b51cb74bca509b0fb7dc29d1d5997d3a1ae,249,E2_neighbor_count,fixed-total,random,4,8,C05,C05-S008,249,True,first representative; original labels retained
+63d56b51cb74bca509b0fb7dc29d1d5997d3a1ae,250,E2_neighbor_count,fixed-total,random,4,9,C05,C05-S009,250,True,first representative; original labels retained
+63d56b51cb74bca509b0fb7dc29d1d5997d3a1ae,251,E2_neighbor_count,fixed-total,random,4,10,C05,C05-S010,251,True,first representative; original labels retained
+63d56b51cb74bca509b0fb7dc29d1d5997d3a1ae,252,E2_neighbor_count,fixed-total,random,4,11,C05,C05-S011,252,True,first representative; original labels retained
+63d56b51cb74bca509b0fb7dc29d1d5997d3a1ae,253,E2_neighbor_count,fixed-total,random,4,12,C05,C05-S012,253,True,first representative; original labels retained
+63d56b51cb74bca509b0fb7dc29d1d5997d3a1ae,254,E2_neighbor_count,fixed-total,random,4,13,C05,C05-S013,254,True,first representative; original labels retained
+63d56b51cb74bca509b0fb7dc29d1d5997d3a1ae,255,E2_neighbor_count,fixed-total,random,4,14,C05,C05-S014,255,True,first representative; original labels retained
+63d56b51cb74bca509b0fb7dc29d1d5997d3a1ae,256,E2_neighbor_count,fixed-total,random,4,15,C05,C05-S015,256,True,first representative; original labels retained
+63d56b51cb74bca509b0fb7dc29d1d5997d3a1ae,257,E2_neighbor_count,fixed-total,random,4,16,C05,C05-S016,257,True,first representative; original labels retained
+63d56b51cb74bca509b0fb7dc29d1d5997d3a1ae,258,E2_neighbor_count,fixed-total,random,4,17,C05,C05-S017,258,True,first representative; original labels retained
+63d56b51cb74bca509b0fb7dc29d1d5997d3a1ae,259,E2_neighbor_count,fixed-total,random,4,18,C05,C05-S018,259,True,first representative; original labels retained
+63d56b51cb74bca509b0fb7dc29d1d5997d3a1ae,260,E2_neighbor_count,fixed-total,random,4,19,C05,C05-S019,260,True,first representative; original labels retained
+63d56b51cb74bca509b0fb7dc29d1d5997d3a1ae,261,E2_neighbor_count,fixed-total,random,4,20,C05,C05-S020,261,True,first representative; original labels retained
+63d56b51cb74bca509b0fb7dc29d1d5997d3a1ae,262,E2_neighbor_count,fixed-total,random,8,1,C06,C06-S001,82,False,reuses canonical run; do not count as independent replication
+63d56b51cb74bca509b0fb7dc29d1d5997d3a1ae,263,E2_neighbor_count,fixed-total,random,8,2,C06,C06-S002,83,False,reuses canonical run; do not count as independent replication
+63d56b51cb74bca509b0fb7dc29d1d5997d3a1ae,264,E2_neighbor_count,fixed-total,random,8,3,C06,C06-S003,84,False,reuses canonical run; do not count as independent replication
+63d56b51cb74bca509b0fb7dc29d1d5997d3a1ae,265,E2_neighbor_count,fixed-total,random,8,4,C06,C06-S004,85,False,reuses canonical run; do not count as independent replication
+63d56b51cb74bca509b0fb7dc29d1d5997d3a1ae,266,E2_neighbor_count,fixed-total,random,8,5,C06,C06-S005,86,False,reuses canonical run; do not count as independent replication
+63d56b51cb74bca509b0fb7dc29d1d5997d3a1ae,267,E2_neighbor_count,fixed-total,random,8,6,C06,C06-S006,87,False,reuses canonical run; do not count as independent replication
+63d56b51cb74bca509b0fb7dc29d1d5997d3a1ae,268,E2_neighbor_count,fixed-total,random,8,7,C06,C06-S007,88,False,reuses canonical run; do not count as independent replication
+63d56b51cb74bca509b0fb7dc29d1d5997d3a1ae,269,E2_neighbor_count,fixed-total,random,8,8,C06,C06-S008,89,False,reuses canonical run; do not count as independent replication
+63d56b51cb74bca509b0fb7dc29d1d5997d3a1ae,270,E2_neighbor_count,fixed-total,random,8,9,C06,C06-S009,90,False,reuses canonical run; do not count as independent replication
+63d56b51cb74bca509b0fb7dc29d1d5997d3a1ae,271,E2_neighbor_count,fixed-total,random,8,10,C06,C06-S010,91,False,reuses canonical run; do not count as independent replication
+63d56b51cb74bca509b0fb7dc29d1d5997d3a1ae,272,E2_neighbor_count,fixed-total,random,8,11,C06,C06-S011,92,False,reuses canonical run; do not count as independent replication
+63d56b51cb74bca509b0fb7dc29d1d5997d3a1ae,273,E2_neighbor_count,fixed-total,random,8,12,C06,C06-S012,93,False,reuses canonical run; do not count as independent replication
+63d56b51cb74bca509b0fb7dc29d1d5997d3a1ae,274,E2_neighbor_count,fixed-total,random,8,13,C06,C06-S013,94,False,reuses canonical run; do not count as independent replication
+63d56b51cb74bca509b0fb7dc29d1d5997d3a1ae,275,E2_neighbor_count,fixed-total,random,8,14,C06,C06-S014,95,False,reuses canonical run; do not count as independent replication
+63d56b51cb74bca509b0fb7dc29d1d5997d3a1ae,276,E2_neighbor_count,fixed-total,random,8,15,C06,C06-S015,96,False,reuses canonical run; do not count as independent replication
+63d56b51cb74bca509b0fb7dc29d1d5997d3a1ae,277,E2_neighbor_count,fixed-total,random,8,16,C06,C06-S016,97,False,reuses canonical run; do not count as independent replication
+63d56b51cb74bca509b0fb7dc29d1d5997d3a1ae,278,E2_neighbor_count,fixed-total,random,8,17,C06,C06-S017,98,False,reuses canonical run; do not count as independent replication
+63d56b51cb74bca509b0fb7dc29d1d5997d3a1ae,279,E2_neighbor_count,fixed-total,random,8,18,C06,C06-S018,99,False,reuses canonical run; do not count as independent replication
+63d56b51cb74bca509b0fb7dc29d1d5997d3a1ae,280,E2_neighbor_count,fixed-total,random,8,19,C06,C06-S019,100,False,reuses canonical run; do not count as independent replication
+63d56b51cb74bca509b0fb7dc29d1d5997d3a1ae,281,E2_neighbor_count,fixed-total,random,8,20,C06,C06-S020,101,False,reuses canonical run; do not count as independent replication
+63d56b51cb74bca509b0fb7dc29d1d5997d3a1ae,282,E2_neighbor_count,fixed-total,random,12,1,C07,C07-S001,282,True,first representative; original labels retained
+63d56b51cb74bca509b0fb7dc29d1d5997d3a1ae,283,E2_neighbor_count,fixed-total,random,12,2,C07,C07-S002,283,True,first representative; original labels retained
+63d56b51cb74bca509b0fb7dc29d1d5997d3a1ae,284,E2_neighbor_count,fixed-total,random,12,3,C07,C07-S003,284,True,first representative; original labels retained
+63d56b51cb74bca509b0fb7dc29d1d5997d3a1ae,285,E2_neighbor_count,fixed-total,random,12,4,C07,C07-S004,285,True,first representative; original labels retained
+63d56b51cb74bca509b0fb7dc29d1d5997d3a1ae,286,E2_neighbor_count,fixed-total,random,12,5,C07,C07-S005,286,True,first representative; original labels retained
+63d56b51cb74bca509b0fb7dc29d1d5997d3a1ae,287,E2_neighbor_count,fixed-total,random,12,6,C07,C07-S006,287,True,first representative; original labels retained
+63d56b51cb74bca509b0fb7dc29d1d5997d3a1ae,288,E2_neighbor_count,fixed-total,random,12,7,C07,C07-S007,288,True,first representative; original labels retained
+63d56b51cb74bca509b0fb7dc29d1d5997d3a1ae,289,E2_neighbor_count,fixed-total,random,12,8,C07,C07-S008,289,True,first representative; original labels retained
+63d56b51cb74bca509b0fb7dc29d1d5997d3a1ae,290,E2_neighbor_count,fixed-total,random,12,9,C07,C07-S009,290,True,first representative; original labels retained
+63d56b51cb74bca509b0fb7dc29d1d5997d3a1ae,291,E2_neighbor_count,fixed-total,random,12,10,C07,C07-S010,291,True,first representative; original labels retained
+63d56b51cb74bca509b0fb7dc29d1d5997d3a1ae,292,E2_neighbor_count,fixed-total,random,12,11,C07,C07-S011,292,True,first representative; original labels retained
+63d56b51cb74bca509b0fb7dc29d1d5997d3a1ae,293,E2_neighbor_count,fixed-total,random,12,12,C07,C07-S012,293,True,first representative; original labels retained
+63d56b51cb74bca509b0fb7dc29d1d5997d3a1ae,294,E2_neighbor_count,fixed-total,random,12,13,C07,C07-S013,294,True,first representative; original labels retained
+63d56b51cb74bca509b0fb7dc29d1d5997d3a1ae,295,E2_neighbor_count,fixed-total,random,12,14,C07,C07-S014,295,True,first representative; original labels retained
+63d56b51cb74bca509b0fb7dc29d1d5997d3a1ae,296,E2_neighbor_count,fixed-total,random,12,15,C07,C07-S015,296,True,first representative; original labels retained
+63d56b51cb74bca509b0fb7dc29d1d5997d3a1ae,297,E2_neighbor_count,fixed-total,random,12,16,C07,C07-S016,297,True,first representative; original labels retained
+63d56b51cb74bca509b0fb7dc29d1d5997d3a1ae,298,E2_neighbor_count,fixed-total,random,12,17,C07,C07-S017,298,True,first representative; original labels retained
+63d56b51cb74bca509b0fb7dc29d1d5997d3a1ae,299,E2_neighbor_count,fixed-total,random,12,18,C07,C07-S018,299,True,first representative; original labels retained
+63d56b51cb74bca509b0fb7dc29d1d5997d3a1ae,300,E2_neighbor_count,fixed-total,random,12,19,C07,C07-S019,300,True,first representative; original labels retained
+63d56b51cb74bca509b0fb7dc29d1d5997d3a1ae,301,E2_neighbor_count,fixed-total,random,12,20,C07,C07-S020,301,True,first representative; original labels retained
+63d56b51cb74bca509b0fb7dc29d1d5997d3a1ae,302,E2_neighbor_count,fixed-total,random,19,1,C08,C08-S001,42,False,all 19 neighbors; original and fixed-total weights coincide; reuses canonical run; do not count as independent replication
+63d56b51cb74bca509b0fb7dc29d1d5997d3a1ae,303,E2_neighbor_count,fixed-total,random,19,2,C08,C08-S002,43,False,all 19 neighbors; original and fixed-total weights coincide; reuses canonical run; do not count as independent replication
+63d56b51cb74bca509b0fb7dc29d1d5997d3a1ae,304,E2_neighbor_count,fixed-total,random,19,3,C08,C08-S003,44,False,all 19 neighbors; original and fixed-total weights coincide; reuses canonical run; do not count as independent replication
+63d56b51cb74bca509b0fb7dc29d1d5997d3a1ae,305,E2_neighbor_count,fixed-total,random,19,4,C08,C08-S004,45,False,all 19 neighbors; original and fixed-total weights coincide; reuses canonical run; do not count as independent replication
+63d56b51cb74bca509b0fb7dc29d1d5997d3a1ae,306,E2_neighbor_count,fixed-total,random,19,5,C08,C08-S005,46,False,all 19 neighbors; original and fixed-total weights coincide; reuses canonical run; do not count as independent replication
+63d56b51cb74bca509b0fb7dc29d1d5997d3a1ae,307,E2_neighbor_count,fixed-total,random,19,6,C08,C08-S006,47,False,all 19 neighbors; original and fixed-total weights coincide; reuses canonical run; do not count as independent replication
+63d56b51cb74bca509b0fb7dc29d1d5997d3a1ae,308,E2_neighbor_count,fixed-total,random,19,7,C08,C08-S007,48,False,all 19 neighbors; original and fixed-total weights coincide; reuses canonical run; do not count as independent replication
+63d56b51cb74bca509b0fb7dc29d1d5997d3a1ae,309,E2_neighbor_count,fixed-total,random,19,8,C08,C08-S008,49,False,all 19 neighbors; original and fixed-total weights coincide; reuses canonical run; do not count as independent replication
+63d56b51cb74bca509b0fb7dc29d1d5997d3a1ae,310,E2_neighbor_count,fixed-total,random,19,9,C08,C08-S009,50,False,all 19 neighbors; original and fixed-total weights coincide; reuses canonical run; do not count as independent replication
+63d56b51cb74bca509b0fb7dc29d1d5997d3a1ae,311,E2_neighbor_count,fixed-total,random,19,10,C08,C08-S010,51,False,all 19 neighbors; original and fixed-total weights coincide; reuses canonical run; do not count as independent replication
+63d56b51cb74bca509b0fb7dc29d1d5997d3a1ae,312,E2_neighbor_count,fixed-total,random,19,11,C08,C08-S011,52,False,all 19 neighbors; original and fixed-total weights coincide; reuses canonical run; do not count as independent replication
+63d56b51cb74bca509b0fb7dc29d1d5997d3a1ae,313,E2_neighbor_count,fixed-total,random,19,12,C08,C08-S012,53,False,all 19 neighbors; original and fixed-total weights coincide; reuses canonical run; do not count as independent replication
+63d56b51cb74bca509b0fb7dc29d1d5997d3a1ae,314,E2_neighbor_count,fixed-total,random,19,13,C08,C08-S013,54,False,all 19 neighbors; original and fixed-total weights coincide; reuses canonical run; do not count as independent replication
+63d56b51cb74bca509b0fb7dc29d1d5997d3a1ae,315,E2_neighbor_count,fixed-total,random,19,14,C08,C08-S014,55,False,all 19 neighbors; original and fixed-total weights coincide; reuses canonical run; do not count as independent replication
+63d56b51cb74bca509b0fb7dc29d1d5997d3a1ae,316,E2_neighbor_count,fixed-total,random,19,15,C08,C08-S015,56,False,all 19 neighbors; original and fixed-total weights coincide; reuses canonical run; do not count as independent replication
+63d56b51cb74bca509b0fb7dc29d1d5997d3a1ae,317,E2_neighbor_count,fixed-total,random,19,16,C08,C08-S016,57,False,all 19 neighbors; original and fixed-total weights coincide; reuses canonical run; do not count as independent replication
+63d56b51cb74bca509b0fb7dc29d1d5997d3a1ae,318,E2_neighbor_count,fixed-total,random,19,17,C08,C08-S017,58,False,all 19 neighbors; original and fixed-total weights coincide; reuses canonical run; do not count as independent replication
+63d56b51cb74bca509b0fb7dc29d1d5997d3a1ae,319,E2_neighbor_count,fixed-total,random,19,18,C08,C08-S018,59,False,all 19 neighbors; original and fixed-total weights coincide; reuses canonical run; do not count as independent replication
+63d56b51cb74bca509b0fb7dc29d1d5997d3a1ae,320,E2_neighbor_count,fixed-total,random,19,19,C08,C08-S019,60,False,all 19 neighbors; original and fixed-total weights coincide; reuses canonical run; do not count as independent replication
+63d56b51cb74bca509b0fb7dc29d1d5997d3a1ae,321,E2_neighbor_count,fixed-total,random,19,20,C08,C08-S020,61,False,all 19 neighbors; original and fixed-total weights coincide; reuses canonical run; do not count as independent replication
+63d56b51cb74bca509b0fb7dc29d1d5997d3a1ae,322,E3_angular_structure,fixed-total,angle-concentrated,8,1,C01,C01-S001,322,True,first representative; original labels retained
+63d56b51cb74bca509b0fb7dc29d1d5997d3a1ae,323,E3_angular_structure,fixed-total,angle-concentrated,8,2,C01,C01-S002,323,True,first representative; original labels retained
+63d56b51cb74bca509b0fb7dc29d1d5997d3a1ae,324,E3_angular_structure,fixed-total,angle-concentrated,8,3,C01,C01-S003,324,True,first representative; original labels retained
+63d56b51cb74bca509b0fb7dc29d1d5997d3a1ae,325,E3_angular_structure,fixed-total,angle-concentrated,8,4,C01,C01-S004,325,True,first representative; original labels retained
+63d56b51cb74bca509b0fb7dc29d1d5997d3a1ae,326,E3_angular_structure,fixed-total,angle-concentrated,8,5,C01,C01-S005,326,True,first representative; original labels retained
+63d56b51cb74bca509b0fb7dc29d1d5997d3a1ae,327,E3_angular_structure,fixed-total,angle-concentrated,8,6,C01,C01-S006,327,True,first representative; original labels retained
+63d56b51cb74bca509b0fb7dc29d1d5997d3a1ae,328,E3_angular_structure,fixed-total,angle-concentrated,8,7,C01,C01-S007,328,True,first representative; original labels retained
+63d56b51cb74bca509b0fb7dc29d1d5997d3a1ae,329,E3_angular_structure,fixed-total,angle-concentrated,8,8,C01,C01-S008,329,True,first representative; original labels retained
+63d56b51cb74bca509b0fb7dc29d1d5997d3a1ae,330,E3_angular_structure,fixed-total,angle-concentrated,8,9,C01,C01-S009,330,True,first representative; original labels retained
+63d56b51cb74bca509b0fb7dc29d1d5997d3a1ae,331,E3_angular_structure,fixed-total,angle-concentrated,8,10,C01,C01-S010,331,True,first representative; original labels retained
+63d56b51cb74bca509b0fb7dc29d1d5997d3a1ae,332,E3_angular_structure,fixed-total,angle-concentrated,8,11,C01,C01-S011,332,True,first representative; original labels retained
+63d56b51cb74bca509b0fb7dc29d1d5997d3a1ae,333,E3_angular_structure,fixed-total,angle-concentrated,8,12,C01,C01-S012,333,True,first representative; original labels retained
+63d56b51cb74bca509b0fb7dc29d1d5997d3a1ae,334,E3_angular_structure,fixed-total,angle-concentrated,8,13,C01,C01-S013,334,True,first representative; original labels retained
+63d56b51cb74bca509b0fb7dc29d1d5997d3a1ae,335,E3_angular_structure,fixed-total,angle-concentrated,8,14,C01,C01-S014,335,True,first representative; original labels retained
+63d56b51cb74bca509b0fb7dc29d1d5997d3a1ae,336,E3_angular_structure,fixed-total,angle-concentrated,8,15,C01,C01-S015,336,True,first representative; original labels retained
+63d56b51cb74bca509b0fb7dc29d1d5997d3a1ae,337,E3_angular_structure,fixed-total,angle-concentrated,8,16,C01,C01-S016,337,True,first representative; original labels retained
+63d56b51cb74bca509b0fb7dc29d1d5997d3a1ae,338,E3_angular_structure,fixed-total,angle-concentrated,8,17,C01,C01-S017,338,True,first representative; original labels retained
+63d56b51cb74bca509b0fb7dc29d1d5997d3a1ae,339,E3_angular_structure,fixed-total,angle-concentrated,8,18,C01,C01-S018,339,True,first representative; original labels retained
+63d56b51cb74bca509b0fb7dc29d1d5997d3a1ae,340,E3_angular_structure,fixed-total,angle-concentrated,8,19,C01,C01-S019,340,True,first representative; original labels retained
+63d56b51cb74bca509b0fb7dc29d1d5997d3a1ae,341,E3_angular_structure,fixed-total,angle-concentrated,8,20,C01,C01-S020,341,True,first representative; original labels retained
+63d56b51cb74bca509b0fb7dc29d1d5997d3a1ae,342,E3_angular_structure,fixed-total,random,8,1,C06,C06-S001,82,False,reuses canonical run; do not count as independent replication
+63d56b51cb74bca509b0fb7dc29d1d5997d3a1ae,343,E3_angular_structure,fixed-total,random,8,2,C06,C06-S002,83,False,reuses canonical run; do not count as independent replication
+63d56b51cb74bca509b0fb7dc29d1d5997d3a1ae,344,E3_angular_structure,fixed-total,random,8,3,C06,C06-S003,84,False,reuses canonical run; do not count as independent replication
+63d56b51cb74bca509b0fb7dc29d1d5997d3a1ae,345,E3_angular_structure,fixed-total,random,8,4,C06,C06-S004,85,False,reuses canonical run; do not count as independent replication
+63d56b51cb74bca509b0fb7dc29d1d5997d3a1ae,346,E3_angular_structure,fixed-total,random,8,5,C06,C06-S005,86,False,reuses canonical run; do not count as independent replication
+63d56b51cb74bca509b0fb7dc29d1d5997d3a1ae,347,E3_angular_structure,fixed-total,random,8,6,C06,C06-S006,87,False,reuses canonical run; do not count as independent replication
+63d56b51cb74bca509b0fb7dc29d1d5997d3a1ae,348,E3_angular_structure,fixed-total,random,8,7,C06,C06-S007,88,False,reuses canonical run; do not count as independent replication
+63d56b51cb74bca509b0fb7dc29d1d5997d3a1ae,349,E3_angular_structure,fixed-total,random,8,8,C06,C06-S008,89,False,reuses canonical run; do not count as independent replication
+63d56b51cb74bca509b0fb7dc29d1d5997d3a1ae,350,E3_angular_structure,fixed-total,random,8,9,C06,C06-S009,90,False,reuses canonical run; do not count as independent replication
+63d56b51cb74bca509b0fb7dc29d1d5997d3a1ae,351,E3_angular_structure,fixed-total,random,8,10,C06,C06-S010,91,False,reuses canonical run; do not count as independent replication
+63d56b51cb74bca509b0fb7dc29d1d5997d3a1ae,352,E3_angular_structure,fixed-total,random,8,11,C06,C06-S011,92,False,reuses canonical run; do not count as independent replication
+63d56b51cb74bca509b0fb7dc29d1d5997d3a1ae,353,E3_angular_structure,fixed-total,random,8,12,C06,C06-S012,93,False,reuses canonical run; do not count as independent replication
+63d56b51cb74bca509b0fb7dc29d1d5997d3a1ae,354,E3_angular_structure,fixed-total,random,8,13,C06,C06-S013,94,False,reuses canonical run; do not count as independent replication
+63d56b51cb74bca509b0fb7dc29d1d5997d3a1ae,355,E3_angular_structure,fixed-total,random,8,14,C06,C06-S014,95,False,reuses canonical run; do not count as independent replication
+63d56b51cb74bca509b0fb7dc29d1d5997d3a1ae,356,E3_angular_structure,fixed-total,random,8,15,C06,C06-S015,96,False,reuses canonical run; do not count as independent replication
+63d56b51cb74bca509b0fb7dc29d1d5997d3a1ae,357,E3_angular_structure,fixed-total,random,8,16,C06,C06-S016,97,False,reuses canonical run; do not count as independent replication
+63d56b51cb74bca509b0fb7dc29d1d5997d3a1ae,358,E3_angular_structure,fixed-total,random,8,17,C06,C06-S017,98,False,reuses canonical run; do not count as independent replication
+63d56b51cb74bca509b0fb7dc29d1d5997d3a1ae,359,E3_angular_structure,fixed-total,random,8,18,C06,C06-S018,99,False,reuses canonical run; do not count as independent replication
+63d56b51cb74bca509b0fb7dc29d1d5997d3a1ae,360,E3_angular_structure,fixed-total,random,8,19,C06,C06-S019,100,False,reuses canonical run; do not count as independent replication
+63d56b51cb74bca509b0fb7dc29d1d5997d3a1ae,361,E3_angular_structure,fixed-total,random,8,20,C06,C06-S020,101,False,reuses canonical run; do not count as independent replication
+63d56b51cb74bca509b0fb7dc29d1d5997d3a1ae,362,E3_angular_structure,fixed-total,angle-dispersed,8,1,C02,C02-S001,362,True,angle-dispersed is code-identical to balanced
+63d56b51cb74bca509b0fb7dc29d1d5997d3a1ae,363,E3_angular_structure,fixed-total,angle-dispersed,8,2,C02,C02-S002,363,True,angle-dispersed is code-identical to balanced
+63d56b51cb74bca509b0fb7dc29d1d5997d3a1ae,364,E3_angular_structure,fixed-total,angle-dispersed,8,3,C02,C02-S003,364,True,angle-dispersed is code-identical to balanced
+63d56b51cb74bca509b0fb7dc29d1d5997d3a1ae,365,E3_angular_structure,fixed-total,angle-dispersed,8,4,C02,C02-S004,365,True,angle-dispersed is code-identical to balanced
+63d56b51cb74bca509b0fb7dc29d1d5997d3a1ae,366,E3_angular_structure,fixed-total,angle-dispersed,8,5,C02,C02-S005,366,True,angle-dispersed is code-identical to balanced
+63d56b51cb74bca509b0fb7dc29d1d5997d3a1ae,367,E3_angular_structure,fixed-total,angle-dispersed,8,6,C02,C02-S006,367,True,angle-dispersed is code-identical to balanced
+63d56b51cb74bca509b0fb7dc29d1d5997d3a1ae,368,E3_angular_structure,fixed-total,angle-dispersed,8,7,C02,C02-S007,368,True,angle-dispersed is code-identical to balanced
+63d56b51cb74bca509b0fb7dc29d1d5997d3a1ae,369,E3_angular_structure,fixed-total,angle-dispersed,8,8,C02,C02-S008,369,True,angle-dispersed is code-identical to balanced
+63d56b51cb74bca509b0fb7dc29d1d5997d3a1ae,370,E3_angular_structure,fixed-total,angle-dispersed,8,9,C02,C02-S009,370,True,angle-dispersed is code-identical to balanced
+63d56b51cb74bca509b0fb7dc29d1d5997d3a1ae,371,E3_angular_structure,fixed-total,angle-dispersed,8,10,C02,C02-S010,371,True,angle-dispersed is code-identical to balanced
+63d56b51cb74bca509b0fb7dc29d1d5997d3a1ae,372,E3_angular_structure,fixed-total,angle-dispersed,8,11,C02,C02-S011,372,True,angle-dispersed is code-identical to balanced
+63d56b51cb74bca509b0fb7dc29d1d5997d3a1ae,373,E3_angular_structure,fixed-total,angle-dispersed,8,12,C02,C02-S012,373,True,angle-dispersed is code-identical to balanced
+63d56b51cb74bca509b0fb7dc29d1d5997d3a1ae,374,E3_angular_structure,fixed-total,angle-dispersed,8,13,C02,C02-S013,374,True,angle-dispersed is code-identical to balanced
+63d56b51cb74bca509b0fb7dc29d1d5997d3a1ae,375,E3_angular_structure,fixed-total,angle-dispersed,8,14,C02,C02-S014,375,True,angle-dispersed is code-identical to balanced
+63d56b51cb74bca509b0fb7dc29d1d5997d3a1ae,376,E3_angular_structure,fixed-total,angle-dispersed,8,15,C02,C02-S015,376,True,angle-dispersed is code-identical to balanced
+63d56b51cb74bca509b0fb7dc29d1d5997d3a1ae,377,E3_angular_structure,fixed-total,angle-dispersed,8,16,C02,C02-S016,377,True,angle-dispersed is code-identical to balanced
+63d56b51cb74bca509b0fb7dc29d1d5997d3a1ae,378,E3_angular_structure,fixed-total,angle-dispersed,8,17,C02,C02-S017,378,True,angle-dispersed is code-identical to balanced
+63d56b51cb74bca509b0fb7dc29d1d5997d3a1ae,379,E3_angular_structure,fixed-total,angle-dispersed,8,18,C02,C02-S018,379,True,angle-dispersed is code-identical to balanced
+63d56b51cb74bca509b0fb7dc29d1d5997d3a1ae,380,E3_angular_structure,fixed-total,angle-dispersed,8,19,C02,C02-S019,380,True,angle-dispersed is code-identical to balanced
+63d56b51cb74bca509b0fb7dc29d1d5997d3a1ae,381,E3_angular_structure,fixed-total,angle-dispersed,8,20,C02,C02-S020,381,True,angle-dispersed is code-identical to balanced
+63d56b51cb74bca509b0fb7dc29d1d5997d3a1ae,382,E4_selection_strategy,fixed-total,random,8,1,C06,C06-S001,82,False,reuses canonical run; do not count as independent replication
+63d56b51cb74bca509b0fb7dc29d1d5997d3a1ae,383,E4_selection_strategy,fixed-total,random,8,2,C06,C06-S002,83,False,reuses canonical run; do not count as independent replication
+63d56b51cb74bca509b0fb7dc29d1d5997d3a1ae,384,E4_selection_strategy,fixed-total,random,8,3,C06,C06-S003,84,False,reuses canonical run; do not count as independent replication
+63d56b51cb74bca509b0fb7dc29d1d5997d3a1ae,385,E4_selection_strategy,fixed-total,random,8,4,C06,C06-S004,85,False,reuses canonical run; do not count as independent replication
+63d56b51cb74bca509b0fb7dc29d1d5997d3a1ae,386,E4_selection_strategy,fixed-total,random,8,5,C06,C06-S005,86,False,reuses canonical run; do not count as independent replication
+63d56b51cb74bca509b0fb7dc29d1d5997d3a1ae,387,E4_selection_strategy,fixed-total,random,8,6,C06,C06-S006,87,False,reuses canonical run; do not count as independent replication
+63d56b51cb74bca509b0fb7dc29d1d5997d3a1ae,388,E4_selection_strategy,fixed-total,random,8,7,C06,C06-S007,88,False,reuses canonical run; do not count as independent replication
+63d56b51cb74bca509b0fb7dc29d1d5997d3a1ae,389,E4_selection_strategy,fixed-total,random,8,8,C06,C06-S008,89,False,reuses canonical run; do not count as independent replication
+63d56b51cb74bca509b0fb7dc29d1d5997d3a1ae,390,E4_selection_strategy,fixed-total,random,8,9,C06,C06-S009,90,False,reuses canonical run; do not count as independent replication
+63d56b51cb74bca509b0fb7dc29d1d5997d3a1ae,391,E4_selection_strategy,fixed-total,random,8,10,C06,C06-S010,91,False,reuses canonical run; do not count as independent replication
+63d56b51cb74bca509b0fb7dc29d1d5997d3a1ae,392,E4_selection_strategy,fixed-total,random,8,11,C06,C06-S011,92,False,reuses canonical run; do not count as independent replication
+63d56b51cb74bca509b0fb7dc29d1d5997d3a1ae,393,E4_selection_strategy,fixed-total,random,8,12,C06,C06-S012,93,False,reuses canonical run; do not count as independent replication
+63d56b51cb74bca509b0fb7dc29d1d5997d3a1ae,394,E4_selection_strategy,fixed-total,random,8,13,C06,C06-S013,94,False,reuses canonical run; do not count as independent replication
+63d56b51cb74bca509b0fb7dc29d1d5997d3a1ae,395,E4_selection_strategy,fixed-total,random,8,14,C06,C06-S014,95,False,reuses canonical run; do not count as independent replication
+63d56b51cb74bca509b0fb7dc29d1d5997d3a1ae,396,E4_selection_strategy,fixed-total,random,8,15,C06,C06-S015,96,False,reuses canonical run; do not count as independent replication
+63d56b51cb74bca509b0fb7dc29d1d5997d3a1ae,397,E4_selection_strategy,fixed-total,random,8,16,C06,C06-S016,97,False,reuses canonical run; do not count as independent replication
+63d56b51cb74bca509b0fb7dc29d1d5997d3a1ae,398,E4_selection_strategy,fixed-total,random,8,17,C06,C06-S017,98,False,reuses canonical run; do not count as independent replication
+63d56b51cb74bca509b0fb7dc29d1d5997d3a1ae,399,E4_selection_strategy,fixed-total,random,8,18,C06,C06-S018,99,False,reuses canonical run; do not count as independent replication
+63d56b51cb74bca509b0fb7dc29d1d5997d3a1ae,400,E4_selection_strategy,fixed-total,random,8,19,C06,C06-S019,100,False,reuses canonical run; do not count as independent replication
+63d56b51cb74bca509b0fb7dc29d1d5997d3a1ae,401,E4_selection_strategy,fixed-total,random,8,20,C06,C06-S020,101,False,reuses canonical run; do not count as independent replication
+63d56b51cb74bca509b0fb7dc29d1d5997d3a1ae,402,E4_selection_strategy,fixed-total,nearest,8,1,C03,C03-S001,402,True,first representative; original labels retained
+63d56b51cb74bca509b0fb7dc29d1d5997d3a1ae,403,E4_selection_strategy,fixed-total,nearest,8,2,C03,C03-S002,403,True,first representative; original labels retained
+63d56b51cb74bca509b0fb7dc29d1d5997d3a1ae,404,E4_selection_strategy,fixed-total,nearest,8,3,C03,C03-S003,404,True,first representative; original labels retained
+63d56b51cb74bca509b0fb7dc29d1d5997d3a1ae,405,E4_selection_strategy,fixed-total,nearest,8,4,C03,C03-S004,405,True,first representative; original labels retained
+63d56b51cb74bca509b0fb7dc29d1d5997d3a1ae,406,E4_selection_strategy,fixed-total,nearest,8,5,C03,C03-S005,406,True,first representative; original labels retained
+63d56b51cb74bca509b0fb7dc29d1d5997d3a1ae,407,E4_selection_strategy,fixed-total,nearest,8,6,C03,C03-S006,407,True,first representative; original labels retained
+63d56b51cb74bca509b0fb7dc29d1d5997d3a1ae,408,E4_selection_strategy,fixed-total,nearest,8,7,C03,C03-S007,408,True,first representative; original labels retained
+63d56b51cb74bca509b0fb7dc29d1d5997d3a1ae,409,E4_selection_strategy,fixed-total,nearest,8,8,C03,C03-S008,409,True,first representative; original labels retained
+63d56b51cb74bca509b0fb7dc29d1d5997d3a1ae,410,E4_selection_strategy,fixed-total,nearest,8,9,C03,C03-S009,410,True,first representative; original labels retained
+63d56b51cb74bca509b0fb7dc29d1d5997d3a1ae,411,E4_selection_strategy,fixed-total,nearest,8,10,C03,C03-S010,411,True,first representative; original labels retained
+63d56b51cb74bca509b0fb7dc29d1d5997d3a1ae,412,E4_selection_strategy,fixed-total,nearest,8,11,C03,C03-S011,412,True,first representative; original labels retained
+63d56b51cb74bca509b0fb7dc29d1d5997d3a1ae,413,E4_selection_strategy,fixed-total,nearest,8,12,C03,C03-S012,413,True,first representative; original labels retained
+63d56b51cb74bca509b0fb7dc29d1d5997d3a1ae,414,E4_selection_strategy,fixed-total,nearest,8,13,C03,C03-S013,414,True,first representative; original labels retained
+63d56b51cb74bca509b0fb7dc29d1d5997d3a1ae,415,E4_selection_strategy,fixed-total,nearest,8,14,C03,C03-S014,415,True,first representative; original labels retained
+63d56b51cb74bca509b0fb7dc29d1d5997d3a1ae,416,E4_selection_strategy,fixed-total,nearest,8,15,C03,C03-S015,416,True,first representative; original labels retained
+63d56b51cb74bca509b0fb7dc29d1d5997d3a1ae,417,E4_selection_strategy,fixed-total,nearest,8,16,C03,C03-S016,417,True,first representative; original labels retained
+63d56b51cb74bca509b0fb7dc29d1d5997d3a1ae,418,E4_selection_strategy,fixed-total,nearest,8,17,C03,C03-S017,418,True,first representative; original labels retained
+63d56b51cb74bca509b0fb7dc29d1d5997d3a1ae,419,E4_selection_strategy,fixed-total,nearest,8,18,C03,C03-S018,419,True,first representative; original labels retained
+63d56b51cb74bca509b0fb7dc29d1d5997d3a1ae,420,E4_selection_strategy,fixed-total,nearest,8,19,C03,C03-S019,420,True,first representative; original labels retained
+63d56b51cb74bca509b0fb7dc29d1d5997d3a1ae,421,E4_selection_strategy,fixed-total,nearest,8,20,C03,C03-S020,421,True,first representative; original labels retained
+63d56b51cb74bca509b0fb7dc29d1d5997d3a1ae,422,E4_selection_strategy,fixed-total,balanced,8,1,C02,C02-S001,362,False,reuses canonical run; do not count as independent replication
+63d56b51cb74bca509b0fb7dc29d1d5997d3a1ae,423,E4_selection_strategy,fixed-total,balanced,8,2,C02,C02-S002,363,False,reuses canonical run; do not count as independent replication
+63d56b51cb74bca509b0fb7dc29d1d5997d3a1ae,424,E4_selection_strategy,fixed-total,balanced,8,3,C02,C02-S003,364,False,reuses canonical run; do not count as independent replication
+63d56b51cb74bca509b0fb7dc29d1d5997d3a1ae,425,E4_selection_strategy,fixed-total,balanced,8,4,C02,C02-S004,365,False,reuses canonical run; do not count as independent replication
+63d56b51cb74bca509b0fb7dc29d1d5997d3a1ae,426,E4_selection_strategy,fixed-total,balanced,8,5,C02,C02-S005,366,False,reuses canonical run; do not count as independent replication
+63d56b51cb74bca509b0fb7dc29d1d5997d3a1ae,427,E4_selection_strategy,fixed-total,balanced,8,6,C02,C02-S006,367,False,reuses canonical run; do not count as independent replication
+63d56b51cb74bca509b0fb7dc29d1d5997d3a1ae,428,E4_selection_strategy,fixed-total,balanced,8,7,C02,C02-S007,368,False,reuses canonical run; do not count as independent replication
+63d56b51cb74bca509b0fb7dc29d1d5997d3a1ae,429,E4_selection_strategy,fixed-total,balanced,8,8,C02,C02-S008,369,False,reuses canonical run; do not count as independent replication
+63d56b51cb74bca509b0fb7dc29d1d5997d3a1ae,430,E4_selection_strategy,fixed-total,balanced,8,9,C02,C02-S009,370,False,reuses canonical run; do not count as independent replication
+63d56b51cb74bca509b0fb7dc29d1d5997d3a1ae,431,E4_selection_strategy,fixed-total,balanced,8,10,C02,C02-S010,371,False,reuses canonical run; do not count as independent replication
+63d56b51cb74bca509b0fb7dc29d1d5997d3a1ae,432,E4_selection_strategy,fixed-total,balanced,8,11,C02,C02-S011,372,False,reuses canonical run; do not count as independent replication
+63d56b51cb74bca509b0fb7dc29d1d5997d3a1ae,433,E4_selection_strategy,fixed-total,balanced,8,12,C02,C02-S012,373,False,reuses canonical run; do not count as independent replication
+63d56b51cb74bca509b0fb7dc29d1d5997d3a1ae,434,E4_selection_strategy,fixed-total,balanced,8,13,C02,C02-S013,374,False,reuses canonical run; do not count as independent replication
+63d56b51cb74bca509b0fb7dc29d1d5997d3a1ae,435,E4_selection_strategy,fixed-total,balanced,8,14,C02,C02-S014,375,False,reuses canonical run; do not count as independent replication
+63d56b51cb74bca509b0fb7dc29d1d5997d3a1ae,436,E4_selection_strategy,fixed-total,balanced,8,15,C02,C02-S015,376,False,reuses canonical run; do not count as independent replication
+63d56b51cb74bca509b0fb7dc29d1d5997d3a1ae,437,E4_selection_strategy,fixed-total,balanced,8,16,C02,C02-S016,377,False,reuses canonical run; do not count as independent replication
+63d56b51cb74bca509b0fb7dc29d1d5997d3a1ae,438,E4_selection_strategy,fixed-total,balanced,8,17,C02,C02-S017,378,False,reuses canonical run; do not count as independent replication
+63d56b51cb74bca509b0fb7dc29d1d5997d3a1ae,439,E4_selection_strategy,fixed-total,balanced,8,18,C02,C02-S018,379,False,reuses canonical run; do not count as independent replication
+63d56b51cb74bca509b0fb7dc29d1d5997d3a1ae,440,E4_selection_strategy,fixed-total,balanced,8,19,C02,C02-S019,380,False,reuses canonical run; do not count as independent replication
+63d56b51cb74bca509b0fb7dc29d1d5997d3a1ae,441,E4_selection_strategy,fixed-total,balanced,8,20,C02,C02-S020,381,False,reuses canonical run; do not count as independent replication
+63d56b51cb74bca509b0fb7dc29d1d5997d3a1ae,442,E4_selection_strategy,fixed-total,angle-concentrated,8,1,C01,C01-S001,322,False,reuses canonical run; do not count as independent replication
+63d56b51cb74bca509b0fb7dc29d1d5997d3a1ae,443,E4_selection_strategy,fixed-total,angle-concentrated,8,2,C01,C01-S002,323,False,reuses canonical run; do not count as independent replication
+63d56b51cb74bca509b0fb7dc29d1d5997d3a1ae,444,E4_selection_strategy,fixed-total,angle-concentrated,8,3,C01,C01-S003,324,False,reuses canonical run; do not count as independent replication
+63d56b51cb74bca509b0fb7dc29d1d5997d3a1ae,445,E4_selection_strategy,fixed-total,angle-concentrated,8,4,C01,C01-S004,325,False,reuses canonical run; do not count as independent replication
+63d56b51cb74bca509b0fb7dc29d1d5997d3a1ae,446,E4_selection_strategy,fixed-total,angle-concentrated,8,5,C01,C01-S005,326,False,reuses canonical run; do not count as independent replication
+63d56b51cb74bca509b0fb7dc29d1d5997d3a1ae,447,E4_selection_strategy,fixed-total,angle-concentrated,8,6,C01,C01-S006,327,False,reuses canonical run; do not count as independent replication
+63d56b51cb74bca509b0fb7dc29d1d5997d3a1ae,448,E4_selection_strategy,fixed-total,angle-concentrated,8,7,C01,C01-S007,328,False,reuses canonical run; do not count as independent replication
+63d56b51cb74bca509b0fb7dc29d1d5997d3a1ae,449,E4_selection_strategy,fixed-total,angle-concentrated,8,8,C01,C01-S008,329,False,reuses canonical run; do not count as independent replication
+63d56b51cb74bca509b0fb7dc29d1d5997d3a1ae,450,E4_selection_strategy,fixed-total,angle-concentrated,8,9,C01,C01-S009,330,False,reuses canonical run; do not count as independent replication
+63d56b51cb74bca509b0fb7dc29d1d5997d3a1ae,451,E4_selection_strategy,fixed-total,angle-concentrated,8,10,C01,C01-S010,331,False,reuses canonical run; do not count as independent replication
+63d56b51cb74bca509b0fb7dc29d1d5997d3a1ae,452,E4_selection_strategy,fixed-total,angle-concentrated,8,11,C01,C01-S011,332,False,reuses canonical run; do not count as independent replication
+63d56b51cb74bca509b0fb7dc29d1d5997d3a1ae,453,E4_selection_strategy,fixed-total,angle-concentrated,8,12,C01,C01-S012,333,False,reuses canonical run; do not count as independent replication
+63d56b51cb74bca509b0fb7dc29d1d5997d3a1ae,454,E4_selection_strategy,fixed-total,angle-concentrated,8,13,C01,C01-S013,334,False,reuses canonical run; do not count as independent replication
+63d56b51cb74bca509b0fb7dc29d1d5997d3a1ae,455,E4_selection_strategy,fixed-total,angle-concentrated,8,14,C01,C01-S014,335,False,reuses canonical run; do not count as independent replication
+63d56b51cb74bca509b0fb7dc29d1d5997d3a1ae,456,E4_selection_strategy,fixed-total,angle-concentrated,8,15,C01,C01-S015,336,False,reuses canonical run; do not count as independent replication
+63d56b51cb74bca509b0fb7dc29d1d5997d3a1ae,457,E4_selection_strategy,fixed-total,angle-concentrated,8,16,C01,C01-S016,337,False,reuses canonical run; do not count as independent replication
+63d56b51cb74bca509b0fb7dc29d1d5997d3a1ae,458,E4_selection_strategy,fixed-total,angle-concentrated,8,17,C01,C01-S017,338,False,reuses canonical run; do not count as independent replication
+63d56b51cb74bca509b0fb7dc29d1d5997d3a1ae,459,E4_selection_strategy,fixed-total,angle-concentrated,8,18,C01,C01-S018,339,False,reuses canonical run; do not count as independent replication
+63d56b51cb74bca509b0fb7dc29d1d5997d3a1ae,460,E4_selection_strategy,fixed-total,angle-concentrated,8,19,C01,C01-S019,340,False,reuses canonical run; do not count as independent replication
+63d56b51cb74bca509b0fb7dc29d1d5997d3a1ae,461,E4_selection_strategy,fixed-total,angle-concentrated,8,20,C01,C01-S020,341,False,reuses canonical run; do not count as independent replication
+63d56b51cb74bca509b0fb7dc29d1d5997d3a1ae,462,E4_selection_strategy,fixed-total,angle-dispersed,8,1,C02,C02-S001,362,False,angle-dispersed is code-identical to balanced; reuses canonical run; do not count as independent replication
+63d56b51cb74bca509b0fb7dc29d1d5997d3a1ae,463,E4_selection_strategy,fixed-total,angle-dispersed,8,2,C02,C02-S002,363,False,angle-dispersed is code-identical to balanced; reuses canonical run; do not count as independent replication
+63d56b51cb74bca509b0fb7dc29d1d5997d3a1ae,464,E4_selection_strategy,fixed-total,angle-dispersed,8,3,C02,C02-S003,364,False,angle-dispersed is code-identical to balanced; reuses canonical run; do not count as independent replication
+63d56b51cb74bca509b0fb7dc29d1d5997d3a1ae,465,E4_selection_strategy,fixed-total,angle-dispersed,8,4,C02,C02-S004,365,False,angle-dispersed is code-identical to balanced; reuses canonical run; do not count as independent replication
+63d56b51cb74bca509b0fb7dc29d1d5997d3a1ae,466,E4_selection_strategy,fixed-total,angle-dispersed,8,5,C02,C02-S005,366,False,angle-dispersed is code-identical to balanced; reuses canonical run; do not count as independent replication
+63d56b51cb74bca509b0fb7dc29d1d5997d3a1ae,467,E4_selection_strategy,fixed-total,angle-dispersed,8,6,C02,C02-S006,367,False,angle-dispersed is code-identical to balanced; reuses canonical run; do not count as independent replication
+63d56b51cb74bca509b0fb7dc29d1d5997d3a1ae,468,E4_selection_strategy,fixed-total,angle-dispersed,8,7,C02,C02-S007,368,False,angle-dispersed is code-identical to balanced; reuses canonical run; do not count as independent replication
+63d56b51cb74bca509b0fb7dc29d1d5997d3a1ae,469,E4_selection_strategy,fixed-total,angle-dispersed,8,8,C02,C02-S008,369,False,angle-dispersed is code-identical to balanced; reuses canonical run; do not count as independent replication
+63d56b51cb74bca509b0fb7dc29d1d5997d3a1ae,470,E4_selection_strategy,fixed-total,angle-dispersed,8,9,C02,C02-S009,370,False,angle-dispersed is code-identical to balanced; reuses canonical run; do not count as independent replication
+63d56b51cb74bca509b0fb7dc29d1d5997d3a1ae,471,E4_selection_strategy,fixed-total,angle-dispersed,8,10,C02,C02-S010,371,False,angle-dispersed is code-identical to balanced; reuses canonical run; do not count as independent replication
+63d56b51cb74bca509b0fb7dc29d1d5997d3a1ae,472,E4_selection_strategy,fixed-total,angle-dispersed,8,11,C02,C02-S011,372,False,angle-dispersed is code-identical to balanced; reuses canonical run; do not count as independent replication
+63d56b51cb74bca509b0fb7dc29d1d5997d3a1ae,473,E4_selection_strategy,fixed-total,angle-dispersed,8,12,C02,C02-S012,373,False,angle-dispersed is code-identical to balanced; reuses canonical run; do not count as independent replication
+63d56b51cb74bca509b0fb7dc29d1d5997d3a1ae,474,E4_selection_strategy,fixed-total,angle-dispersed,8,13,C02,C02-S013,374,False,angle-dispersed is code-identical to balanced; reuses canonical run; do not count as independent replication
+63d56b51cb74bca509b0fb7dc29d1d5997d3a1ae,475,E4_selection_strategy,fixed-total,angle-dispersed,8,14,C02,C02-S014,375,False,angle-dispersed is code-identical to balanced; reuses canonical run; do not count as independent replication
+63d56b51cb74bca509b0fb7dc29d1d5997d3a1ae,476,E4_selection_strategy,fixed-total,angle-dispersed,8,15,C02,C02-S015,376,False,angle-dispersed is code-identical to balanced; reuses canonical run; do not count as independent replication
+63d56b51cb74bca509b0fb7dc29d1d5997d3a1ae,477,E4_selection_strategy,fixed-total,angle-dispersed,8,16,C02,C02-S016,377,False,angle-dispersed is code-identical to balanced; reuses canonical run; do not count as independent replication
+63d56b51cb74bca509b0fb7dc29d1d5997d3a1ae,478,E4_selection_strategy,fixed-total,angle-dispersed,8,17,C02,C02-S017,378,False,angle-dispersed is code-identical to balanced; reuses canonical run; do not count as independent replication
+63d56b51cb74bca509b0fb7dc29d1d5997d3a1ae,479,E4_selection_strategy,fixed-total,angle-dispersed,8,18,C02,C02-S018,379,False,angle-dispersed is code-identical to balanced; reuses canonical run; do not count as independent replication
+63d56b51cb74bca509b0fb7dc29d1d5997d3a1ae,480,E4_selection_strategy,fixed-total,angle-dispersed,8,19,C02,C02-S019,380,False,angle-dispersed is code-identical to balanced; reuses canonical run; do not count as independent replication
+63d56b51cb74bca509b0fb7dc29d1d5997d3a1ae,481,E4_selection_strategy,fixed-total,angle-dispersed,8,20,C02,C02-S020,381,False,angle-dispersed is code-identical to balanced; reuses canonical run; do not count as independent replication

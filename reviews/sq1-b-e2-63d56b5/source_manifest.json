@@ -1,0 +1,533 @@
+{
+  "remote": "https://github.com/PatrickStar-cmd/Flocking_Study.git",
+  "branch": "WHQ_work",
+  "commit": "63d56b51cb74bca509b0fb7dc29d1d5997d3a1ae",
+  "scope": "Complete run_B_E2 directory, top-level MATLAB sources and research instructions",
+  "files": [
+    {
+      "path": "effective-social-input/AGENTS.md",
+      "bytes": 3755,
+      "sha256": "1389ad072e98ac83800b92cee2bf65b41ba803620b504d79dcaf0f162538c348"
+    },
+    {
+      "path": "effective-social-input/AGENT_WORK_PROTOCOL.md",
+      "bytes": 3892,
+      "sha256": "c94a8624a8f771136dfc562d9f6949817b5ee5eb4caf5f7d6b217e1d4cc62992"
+    },
+    {
+      "path": "effective-social-input/RESEARCH_ROADMAP.md",
+      "bytes": 7764,
+      "sha256": "5077fad68886086c18fdb812237b12885ee167c327fdea331314a615b5b352ce"
+    },
+    {
+      "path": "effective-social-input/analyzeDistanceWeightPilot.m",
+      "bytes": 3331,
+      "sha256": "23d3fe1063bd625233b55a8b64cf62d1d399e53594f2d09bc42b61487c0970d5"
+    },
+    {
+      "path": "effective-social-input/analyzeEffectiveInputSweep.m",
+      "bytes": 8275,
+      "sha256": "3e3b13ef0c5fbb028390c1dfe710e0e3316a22ee52fa637bc9a4ed79898ab5e1"
+    },
+    {
+      "path": "effective-social-input/analyzeTimeSeriesValidation.m",
+      "bytes": 3614,
+      "sha256": "0de3a0ddba08f83bdaf9cde4f213dfba91ee4dea7e887a4e78de6ec087232f65"
+    },
+    {
+      "path": "effective-social-input/bearingTrackStep.m",
+      "bytes": 1270,
+      "sha256": "edf48bbe5bbcb30e09d6f93422fad9c281bd95b58b67c038bdeb66d0b4c4d4c7"
+    },
+    {
+      "path": "effective-social-input/bearingTrackStepGaussMarkov.m",
+      "bytes": 1583,
+      "sha256": "f38ca97e47dcae9fbb7b9bc23a6afffc347ed9aece26fd783c537499d9b00c6f"
+    },
+    {
+      "path": "effective-social-input/blockTimeMetrics.m",
+      "bytes": 1591,
+      "sha256": "a4b40a57800283d15c55d6e7a49d8b40fbcd1e22f7ddeebb4a6f8f1c329320ad"
+    },
+    {
+      "path": "effective-social-input/buildRingConnectivity.m",
+      "bytes": 443,
+      "sha256": "7f100bb34deaa668edc8fef394bbc11e156e258c5de21bafecf3c5180ef05dd0"
+    },
+    {
+      "path": "effective-social-input/compareBearingPredictionModels.m",
+      "bytes": 5566,
+      "sha256": "581f9ee15fd567745e107ceb21c85c780c21b023983a34c9e4b0fd7d2501d13f"
+    },
+    {
+      "path": "effective-social-input/defaultEffectiveInputConfig.m",
+      "bytes": 1997,
+      "sha256": "54db3f0f147da280f0b1da2752164e0156c5540148c60ff055bcc0ec62ebd4b2"
+    },
+    {
+      "path": "effective-social-input/distanceWeight.m",
+      "bytes": 1032,
+      "sha256": "9912e1b4d1458f2b4524c1dc9bce93e37e2a6d0952a938bff9c4cee0edf2f9b4"
+    },
+    {
+      "path": "effective-social-input/generatePaperSimulationFigures.m",
+      "bytes": 9543,
+      "sha256": "486fedc7ff52fe4d883eb4700051e350d1924b92fb105ce1237344432a590351"
+    },
+    {
+      "path": "effective-social-input/occlusionInputStep.m",
+      "bytes": 2142,
+      "sha256": "a8d45de9d037019274ad4b7b16ee24a07db06a62f134511f2b40c24fe3c8a462"
+    },
+    {
+      "path": "effective-social-input/plotBearingDampedResults.m",
+      "bytes": 1305,
+      "sha256": "f800df829283d6a4cc48f88f7b38319fd1c77d71dc0bfb347b2ab273e3ed19b1"
+    },
+    {
+      "path": "effective-social-input/plotCheckpointInterventionPilot.m",
+      "bytes": 2115,
+      "sha256": "4fe6f434aced3946bed766f40fa15e5754e4e357049a15ace0798d0ec1589a25"
+    },
+    {
+      "path": "effective-social-input/plotMainstreamModelComparison.m",
+      "bytes": 1692,
+      "sha256": "522681d9264959bfc596938ab676ea09af7c630b08ce4c00eae9cf191c128912"
+    },
+    {
+      "path": "effective-social-input/plotPaperKFExtendedResults.m",
+      "bytes": 6965,
+      "sha256": "98eaa1df53dd37a41c957e738622809d242a68ef15bd75754bcd37cc6766a39e"
+    },
+    {
+      "path": "effective-social-input/plotPaperKFSimulation.m",
+      "bytes": 1446,
+      "sha256": "c006c6fa72c4460aee5355761346e56891b2c26c3ceee02064f09f8164e8d4b8"
+    },
+    {
+      "path": "effective-social-input/plotTurnOcclusionPilot.m",
+      "bytes": 2820,
+      "sha256": "38d1eba22e363e2ae7e965ce886ed7355ebba3c7aa993609cbb3820b455c670e"
+    },
+    {
+      "path": "effective-social-input/runBlockMetricPilot.m",
+      "bytes": 1820,
+      "sha256": "9b14dd02aca780e185bbb49336d3dcfd7a14fcc80aa3b142537c642889703291"
+    },
+    {
+      "path": "effective-social-input/runCheckpointInterventionPilot.m",
+      "bytes": 5250,
+      "sha256": "e9811762114e58ff3293d224f4d95087086904820d1d482423a1fb81f2e9993c"
+    },
+    {
+      "path": "effective-social-input/runDistanceWeightPilot.m",
+      "bytes": 1153,
+      "sha256": "c4aa13758dfe28e238deba5975302c4ddb9aa5e3b5719997b6e399c5cc56b786"
+    },
+    {
+      "path": "effective-social-input/runEffectiveInputControls.m",
+      "bytes": 5425,
+      "sha256": "354d4e9fa74b288bc91dc55e8e8b027c2065bf131014a8a535aab8852b0d38b6"
+    },
+    {
+      "path": "effective-social-input/runEffectiveInputSmokeTest.m",
+      "bytes": 5490,
+      "sha256": "40981b9aa122d8e231658972a1611ea41083f0b21771da372bf2095e4df9be02"
+    },
+    {
+      "path": "effective-social-input/runEffectiveInputSweep.m",
+      "bytes": 5081,
+      "sha256": "0592eabf6b88199cf29e3d973bbf12a4ac75f4e7dd323a561f1a446485117983"
+    },
+    {
+      "path": "effective-social-input/runHighRateBearingValidation.m",
+      "bytes": 4233,
+      "sha256": "37abe54556077a0598eeb23fda50fb7dd40d4d0e7950041a9b1bc4b14c8b6cd0"
+    },
+    {
+      "path": "effective-social-input/runMainstreamModelComparison.m",
+      "bytes": 6047,
+      "sha256": "3b01c9ff3e14cce99cf6b72b30047fdf01a5b4d1e6b438011202f518694637a1"
+    },
+    {
+      "path": "effective-social-input/runN20LongSweep.m",
+      "bytes": 4763,
+      "sha256": "51ea72e013e9cd86fb81e491b6caeff01ea830e5ff6d90c268daf7270dcce0ad"
+    },
+    {
+      "path": "effective-social-input/runOcclusionIntegrationPilot.m",
+      "bytes": 1257,
+      "sha256": "472dcac686f4744f1a68bebbf86da777ca06e20f62068614520daa255e959483"
+    },
+    {
+      "path": "effective-social-input/runPaperKFExtendedSimulation.m",
+      "bytes": 11905,
+      "sha256": "adfc68c1c2aed1c72ece1301f89a26ca904a6e8917af78216e09922e5fbf5ce8"
+    },
+    {
+      "path": "effective-social-input/runPaperKFSimulation.m",
+      "bytes": 3556,
+      "sha256": "bd21156af94765ae26f071e2fcfad586042c7e17f0e7577ff554f7c43270273c"
+    },
+    {
+      "path": "effective-social-input/runPersistenceEndpointSensitivity.m",
+      "bytes": 2845,
+      "sha256": "cc7f7a7f65b93299bcf0fa879ae97b0b2438cf0cdb1080ec7c08163e523e017a"
+    },
+    {
+      "path": "effective-social-input/runPersistencePilot.m",
+      "bytes": 3117,
+      "sha256": "3482e7a86fc56e7e93fd54012af4bbe1c1725b863399839aac321f6635839a9c"
+    },
+    {
+      "path": "effective-social-input/runPersistenceValidation.m",
+      "bytes": 3786,
+      "sha256": "7331ebe41d2101dc701fa37a5569b1b6dfbcaee1fb32431c52e20701d8bcc8ac"
+    },
+    {
+      "path": "effective-social-input/runTimeSeriesValidation.m",
+      "bytes": 1997,
+      "sha256": "c865b1227c4b0f4bec70639ec8898ce36989e95955814370a634bed6b480fb05"
+    },
+    {
+      "path": "effective-social-input/runTurnOcclusionPilot.m",
+      "bytes": 10529,
+      "sha256": "c1081510c24207a6cdb557bc28c5e96dde01558a643c6174fad7460a2122b9a0"
+    },
+    {
+      "path": "effective-social-input/run_B_E2/B_E2_RESULT_EXPLANATION.md",
+      "bytes": 2987,
+      "sha256": "27c2646722b783a9e61bd0f0fd660e36c1c8120da07a8d71a2fd419b151dd945"
+    },
+    {
+      "path": "effective-social-input/run_B_E2/run_B_E2_README.md",
+      "bytes": 3347,
+      "sha256": "2203ba7f9db842c8c2b656064d6941ba7ea5b1df09e66aa3c92692d1491b54ea"
+    },
+    {
+      "path": "effective-social-input/run_B_E2/run_B_E2_audit.json",
+      "bytes": 3166,
+      "sha256": "d281463dd7cb9ac4761c0e752c714b9e346963fef7005e33b313f8abe4d6523f"
+    },
+    {
+      "path": "effective-social-input/run_B_E2/run_B_E2_experiments.m",
+      "bytes": 4622,
+      "sha256": "377f10d5578d17802b90cd8acd4defd167d9c89d677dcc9c9ab6ffb10dda66ad"
+    },
+    {
+      "path": "effective-social-input/run_B_E2/run_B_E2_results/B_E2_RESULT_EXPLANATION.md",
+      "bytes": 738,
+      "sha256": "ac0e56aa6650c1285212ca621bcc8d36b31415b42a31c8ad2f77162e7f8c9d05"
+    },
+    {
+      "path": "effective-social-input/run_B_E2/run_B_E2_results/B_E2_grouped_summary.csv",
+      "bytes": 17456,
+      "sha256": "a8d3e9f828694c88c52c7f9c3b553ed09339666b095be35c64328c188f033351"
+    },
+    {
+      "path": "effective-social-input/run_B_E2/run_B_E2_results/B_E2_runs.csv",
+      "bytes": 125715,
+      "sha256": "5f6d5588f6313673de4d4b5de5c21f2eef0c0c55176d6e722ff52be8beee7b64"
+    },
+    {
+      "path": "effective-social-input/run_B_E2/run_B_E2_results/B_E2_runs.mat",
+      "bytes": 23159,
+      "sha256": "eb4dac29a4dd270e21f2870752fe988d8bd8dd635a1a53b4450b2c6e6fc71f7c"
+    },
+    {
+      "path": "effective-social-input/run_B_E2/run_B_E2_results/raw/E1_strength_policy_fixed-total_random_k19_seed1.mat",
+      "bytes": 135988,
+      "sha256": "ee92258912172e89e1bb43302224f4d741c97bcebcad66d64cb4a4c5a9e2ee29"
+    },
+    {
+      "path": "effective-social-input/run_B_E2/run_B_E2_results/raw/E1_strength_policy_fixed-total_random_k19_seed2.mat",
+      "bytes": 135990,
+      "sha256": "78bae544e21cfeeafa6574f48ce7bd8fbffa6303a9e083d2686f5eb22b780fc3"
+    },
+    {
+      "path": "effective-social-input/run_B_E2/run_B_E2_results/raw/E1_strength_policy_fixed-total_random_k2_seed1.mat",
+      "bytes": 141044,
+      "sha256": "4e4a99186f50f539dcc437f3226ac2b80caae8747631f43c719b6ee94fc8d060"
+    },
+    {
+      "path": "effective-social-input/run_B_E2/run_B_E2_results/raw/E1_strength_policy_fixed-total_random_k2_seed2.mat",
+      "bytes": 141180,
+      "sha256": "01dd93993d54269e963ba2b76ed2ce5f381850c33a96f938206d65587a095113"
+    },
+    {
+      "path": "effective-social-input/run_B_E2/run_B_E2_results/raw/E1_strength_policy_fixed-total_random_k8_seed1.mat",
+      "bytes": 139374,
+      "sha256": "f9de6692371f97e362856260d1f7763a3a380536bea31d7890d2d0f956bc4109"
+    },
+    {
+      "path": "effective-social-input/run_B_E2/run_B_E2_results/raw/E1_strength_policy_fixed-total_random_k8_seed2.mat",
+      "bytes": 139857,
+      "sha256": "cda68650d336c87b4228093730ff22d66f05dda674ee50144c2353e05cbe6bd5"
+    },
+    {
+      "path": "effective-social-input/run_B_E2/run_B_E2_results/raw/E1_strength_policy_original_random_k19_seed1.mat",
+      "bytes": 135982,
+      "sha256": "92cc9adf2e6636091b4e6672e51c74f9f798eafac6ae4281c289fa609668f977"
+    },
+    {
+      "path": "effective-social-input/run_B_E2/run_B_E2_results/raw/E1_strength_policy_original_random_k19_seed2.mat",
+      "bytes": 135988,
+      "sha256": "d402a3b129c8cc2554b73c7315aecafc29860ba6702368bf6872f798720c778b"
+    },
+    {
+      "path": "effective-social-input/run_B_E2/run_B_E2_results/raw/E1_strength_policy_original_random_k2_seed1.mat",
+      "bytes": 103428,
+      "sha256": "e095dd465c961df6a3e9d6ae920bfde6877369cc091773ea4da570a94bf5b812"
+    },
+    {
+      "path": "effective-social-input/run_B_E2/run_B_E2_results/raw/E1_strength_policy_original_random_k2_seed2.mat",
+      "bytes": 101693,
+      "sha256": "d49c2eaa54c2b24927ee1b7c9bd052cdf9ae2aaa2360baadea011102dc6f2079"
+    },
+    {
+      "path": "effective-social-input/run_B_E2/run_B_E2_results/raw/E1_strength_policy_original_random_k8_seed1.mat",
+      "bytes": 135711,
+      "sha256": "5b9e037d464b3ab21b2019d19bc608aec7dc4b567ee0e4e35887fe7cc067bb36"
+    },
+    {
+      "path": "effective-social-input/run_B_E2/run_B_E2_results/raw/E1_strength_policy_original_random_k8_seed2.mat",
+      "bytes": 136271,
+      "sha256": "ac737cd5fefa9735d21b8aaafa4c6087177675ca99084e8d97b214e4e6ef0982"
+    },
+    {
+      "path": "effective-social-input/run_B_E2/run_B_E2_results/raw/E2_neighbor_count_fixed-total_random_k12_seed1.mat",
+      "bytes": 139011,
+      "sha256": "b698b510aded4662a2f7a25c491459b7512f7d54e38b204149a57784a5dd79b9"
+    },
+    {
+      "path": "effective-social-input/run_B_E2/run_B_E2_results/raw/E2_neighbor_count_fixed-total_random_k12_seed2.mat",
+      "bytes": 139614,
+      "sha256": "baf7896c76582ac3e8ffdf58f89f6bd4a11baeab16dcb2f2fadadb740d2ae1e4"
+    },
+    {
+      "path": "effective-social-input/run_B_E2/run_B_E2_results/raw/E2_neighbor_count_fixed-total_random_k19_seed1.mat",
+      "bytes": 135988,
+      "sha256": "1a993de49d4a8d9c93650a7c33eebe8b5b43b25d4ca7d6e3bf4552843c266305"
+    },
+    {
+      "path": "effective-social-input/run_B_E2/run_B_E2_results/raw/E2_neighbor_count_fixed-total_random_k19_seed2.mat",
+      "bytes": 135990,
+      "sha256": "95f3e43236bf061d7c76251f8a19df79a523895d5ed740e6d694ce27fcdc1945"
+    },
+    {
+      "path": "effective-social-input/run_B_E2/run_B_E2_results/raw/E2_neighbor_count_fixed-total_random_k2_seed1.mat",
+      "bytes": 141044,
+      "sha256": "3aedc1de5f6357035afa391f060c03af1ac14628eb83864519ca60f60aec747a"
+    },
+    {
+      "path": "effective-social-input/run_B_E2/run_B_E2_results/raw/E2_neighbor_count_fixed-total_random_k2_seed2.mat",
+      "bytes": 141180,
+      "sha256": "45fb8f0cfae069217c4a7087bec34048433c35b65e54761b5c2abd62836621cc"
+    },
+    {
+      "path": "effective-social-input/run_B_E2/run_B_E2_results/raw/E2_neighbor_count_fixed-total_random_k4_seed1.mat",
+      "bytes": 140664,
+      "sha256": "ccdb70c5fa4dfa458007377879a1dfb8be033f3c15dbbf2c001dfaf990a7206a"
+    },
+    {
+      "path": "effective-social-input/run_B_E2/run_B_E2_results/raw/E2_neighbor_count_fixed-total_random_k4_seed2.mat",
+      "bytes": 140632,
+      "sha256": "5d84c34ae6ea9a8535c8eacf90426d9232ca13f5a29fd984e0bb109cb9e6b340"
+    },
+    {
+      "path": "effective-social-input/run_B_E2/run_B_E2_results/raw/E2_neighbor_count_fixed-total_random_k8_seed1.mat",
+      "bytes": 139374,
+      "sha256": "2eab07acaa882af36c69e9df83adc39613a4a92b59a4626adb3ef013dddfe670"
+    },
+    {
+      "path": "effective-social-input/run_B_E2/run_B_E2_results/raw/E2_neighbor_count_fixed-total_random_k8_seed2.mat",
+      "bytes": 139857,
+      "sha256": "15cca4b8c025ec8acd3c0de1863895d126a5f258677c9127abf718b715984ca0"
+    },
+    {
+      "path": "effective-social-input/run_B_E2/run_B_E2_results/raw/E2_neighbor_count_original_random_k12_seed1.mat",
+      "bytes": 138099,
+      "sha256": "05d879d450cfc3272985a371cefd4bb4ed98c3a7f07fc76ba2f522267c191a55"
+    },
+    {
+      "path": "effective-social-input/run_B_E2/run_B_E2_results/raw/E2_neighbor_count_original_random_k12_seed2.mat",
+      "bytes": 138606,
+      "sha256": "d364fa5e41fbee126f39d476a31dac71dd11f55afe641626a411beca3c495f3b"
+    },
+    {
+      "path": "effective-social-input/run_B_E2/run_B_E2_results/raw/E2_neighbor_count_original_random_k19_seed1.mat",
+      "bytes": 135982,
+      "sha256": "a20916b2ad04fea8d14133f4fc3c99d2a2dc4ef79d5dd16298520d5000c8fe51"
+    },
+    {
+      "path": "effective-social-input/run_B_E2/run_B_E2_results/raw/E2_neighbor_count_original_random_k19_seed2.mat",
+      "bytes": 135988,
+      "sha256": "3e9dd649ebc4fa62845af8d95025f263dfe0b5f0dbfddf5d52d1d35feb8dbc70"
+    },
+    {
+      "path": "effective-social-input/run_B_E2/run_B_E2_results/raw/E2_neighbor_count_original_random_k2_seed1.mat",
+      "bytes": 103428,
+      "sha256": "77f7767fb2b6d751d140949e4dba670cce2645460a2c6bb23c4f9a7ee08c8214"
+    },
+    {
+      "path": "effective-social-input/run_B_E2/run_B_E2_results/raw/E2_neighbor_count_original_random_k2_seed2.mat",
+      "bytes": 101693,
+      "sha256": "3c6b19dbb488bfee6304d688fab8504ce1137f0897217219de0813386af8640a"
+    },
+    {
+      "path": "effective-social-input/run_B_E2/run_B_E2_results/raw/E2_neighbor_count_original_random_k4_seed1.mat",
+      "bytes": 131279,
+      "sha256": "7a90bc55a34527a92c306817dd1afdd78321089f7b1159bebd3c371479840af6"
+    },
+    {
+      "path": "effective-social-input/run_B_E2/run_B_E2_results/raw/E2_neighbor_count_original_random_k4_seed2.mat",
+      "bytes": 130270,
+      "sha256": "734e6ee8596fad3365b6470b9a605e87b20fcd9d58414bf092a68efd11923fac"
+    },
+    {
+      "path": "effective-social-input/run_B_E2/run_B_E2_results/raw/E2_neighbor_count_original_random_k8_seed1.mat",
+      "bytes": 135711,
+      "sha256": "1f0c30eef6ca78d34b77a39ec6451cef66e5927c8c7536defde78ff0d24079c8"
+    },
+    {
+      "path": "effective-social-input/run_B_E2/run_B_E2_results/raw/E2_neighbor_count_original_random_k8_seed2.mat",
+      "bytes": 136271,
+      "sha256": "423f72d9caaa5015d38e53dad7bb763e3f8cc1af24dfbdce1fbdf88c9d1ce522"
+    },
+    {
+      "path": "effective-social-input/run_B_E2/run_B_E2_results/raw/E3_angular_structure_fixed-total_angle-concentrated_k8_seed1.mat",
+      "bytes": 134551,
+      "sha256": "5036d75fd612ed6fd581cc92071ca37b046e61ffd018f61613801348330c5b79"
+    },
+    {
+      "path": "effective-social-input/run_B_E2/run_B_E2_results/raw/E3_angular_structure_fixed-total_angle-concentrated_k8_seed2.mat",
+      "bytes": 135593,
+      "sha256": "286cfe099aab9fa0a76829ff43c0fc04f2c75a01b3dedea32be871efcee90453"
+    },
+    {
+      "path": "effective-social-input/run_B_E2/run_B_E2_results/raw/E3_angular_structure_fixed-total_angle-dispersed_k8_seed1.mat",
+      "bytes": 137995,
+      "sha256": "616013da607d7a3ae5f21ee6c3e600323b361af4a2d840e303bb2c726aa57a73"
+    },
+    {
+      "path": "effective-social-input/run_B_E2/run_B_E2_results/raw/E3_angular_structure_fixed-total_angle-dispersed_k8_seed2.mat",
+      "bytes": 138405,
+      "sha256": "6ef3e8bf0d7536de4921b19065fe12c646c6c90923377c1ae6855f68d6e1f297"
+    },
+    {
+      "path": "effective-social-input/run_B_E2/run_B_E2_results/raw/E3_angular_structure_fixed-total_random_k8_seed1.mat",
+      "bytes": 139374,
+      "sha256": "7d4902e971574739302b7945b504fb090f4ecd7f4d74e68005316d88336c527b"
+    },
+    {
+      "path": "effective-social-input/run_B_E2/run_B_E2_results/raw/E3_angular_structure_fixed-total_random_k8_seed2.mat",
+      "bytes": 139857,
+      "sha256": "c5a838b308b740c25b7e7d0235b0f0c4a3663498dfb37bf183f6f53799f21869"
+    },
+    {
+      "path": "effective-social-input/run_B_E2/run_B_E2_results/raw/E4_selection_strategy_fixed-total_angle-concentrated_k8_seed1.mat",
+      "bytes": 134551,
+      "sha256": "a3a1de82ff288da8b9ac249d843c87c27859d81913933a5b9bc47f67b2df9621"
+    },
+    {
+      "path": "effective-social-input/run_B_E2/run_B_E2_results/raw/E4_selection_strategy_fixed-total_angle-concentrated_k8_seed2.mat",
+      "bytes": 135593,
+      "sha256": "e89d1490c6ba3b01a5c1ed119d1965a1a705b3f53801e82e02f8d39f0e3f0ae3"
+    },
+    {
+      "path": "effective-social-input/run_B_E2/run_B_E2_results/raw/E4_selection_strategy_fixed-total_angle-dispersed_k8_seed1.mat",
+      "bytes": 137995,
+      "sha256": "79442444ccb92a62450d13751c60dba5c387e9775489d1da5b28abda2884c729"
+    },
+    {
+      "path": "effective-social-input/run_B_E2/run_B_E2_results/raw/E4_selection_strategy_fixed-total_angle-dispersed_k8_seed2.mat",
+      "bytes": 138405,
+      "sha256": "4a07dbb246907d68e0a563df96095c2b48a1eab059d0bad338d029d7feb4d6b6"
+    },
+    {
+      "path": "effective-social-input/run_B_E2/run_B_E2_results/raw/E4_selection_strategy_fixed-total_balanced_k8_seed1.mat",
+      "bytes": 137992,
+      "sha256": "382d75fab9d54ff6adcd5c941fbc5250409ac203b0b597ec12291152787a077e"
+    },
+    {
+      "path": "effective-social-input/run_B_E2/run_B_E2_results/raw/E4_selection_strategy_fixed-total_balanced_k8_seed2.mat",
+      "bytes": 138402,
+      "sha256": "b49ec6bce7dc9fade60190b983bb5d715312512e8f6be909bc65c8a0f0c4acdd"
+    },
+    {
+      "path": "effective-social-input/run_B_E2/run_B_E2_results/raw/E4_selection_strategy_fixed-total_nearest_k8_seed1.mat",
+      "bytes": 139355,
+      "sha256": "b6c3a020d09428f0b96bbd9eee7bcf773d280785c35430cba715cc4c13f8f894"
+    },
+    {
+      "path": "effective-social-input/run_B_E2/run_B_E2_results/raw/E4_selection_strategy_fixed-total_nearest_k8_seed2.mat",
+      "bytes": 139443,
+      "sha256": "b40dcb805ff8611d2415a8fc758c7adf52bd7349e3d472d55184289d6699191c"
+    },
+    {
+      "path": "effective-social-input/run_B_E2/run_B_E2_results/raw/E4_selection_strategy_fixed-total_random_k8_seed1.mat",
+      "bytes": 139374,
+      "sha256": "72114662529deb16a96b8a14ddd7ba76d5415490cc5f400613b47a49d5845d54"
+    },
+    {
+      "path": "effective-social-input/run_B_E2/run_B_E2_results/raw/E4_selection_strategy_fixed-total_random_k8_seed2.mat",
+      "bytes": 139857,
+      "sha256": "dc4487309f5ff26d4a037b769597fe56a1af180649d7d77b41536b8a9df7baeb"
+    },
+    {
+      "path": "effective-social-input/run_B_E2/simulateBGroupE2.m",
+      "bytes": 21774,
+      "sha256": "e1368e4db219127ef9c725764c686dcb11d86dde4d97ff53d62f17033265a3b8"
+    },
+    {
+      "path": "effective-social-input/scheduledOcclusionInput.m",
+      "bytes": 2636,
+      "sha256": "6a12ae87ea250b418e7afc8bb928a4c7fb4d62d763acfeb16cd218f5de136bfb"
+    },
+    {
+      "path": "effective-social-input/screenBearingPrediction.m",
+      "bytes": 2832,
+      "sha256": "0d9b2e43360dab2419876d1ed1563de3e94405b44b5c274211eab7afd8fa789a"
+    },
+    {
+      "path": "effective-social-input/simulateEffectiveSocialInput.m",
+      "bytes": 20246,
+      "sha256": "6323bf8546d23e48573757cee642679ee76f3ab8cbb3e37bff8bea5f3a89947f"
+    },
+    {
+      "path": "effective-social-input/simulateEffectiveSocialInputBeforeDistance.m",
+      "bytes": 15239,
+      "sha256": "fe8c2fa94de7f424c3fb9baad4f094c6ca91f51f4190290c9337361918034c84"
+    },
+    {
+      "path": "effective-social-input/testBearingTrackGaussMarkov.m",
+      "bytes": 1218,
+      "sha256": "26a1641e862eb65bb51fb7ca7113505f88062dd54648e76e6ee89de063d6feb7"
+    },
+    {
+      "path": "effective-social-input/testBlockTimeMetrics.m",
+      "bytes": 1395,
+      "sha256": "eeed67144e018ec8978d9a223802d8ad865cdef43bf42baca1bb4e697e0768e3"
+    },
+    {
+      "path": "effective-social-input/testCheckpointFork.m",
+      "bytes": 2027,
+      "sha256": "f21deb75a9a9bb1901d483a38373b40f6e108e65f6f145220b9f94291e8bbf28"
+    },
+    {
+      "path": "effective-social-input/testDistanceWeight.m",
+      "bytes": 1646,
+      "sha256": "8efbb1e83335474e7fb3625c193007b2843200ec34150a309aa404aa3c38e363"
+    },
+    {
+      "path": "effective-social-input/testOcclusionPrediction.m",
+      "bytes": 2572,
+      "sha256": "0d0367e93d1338e525152bd49535e802ca24d408d9fe2ca34baa282006a33774"
+    },
+    {
+      "path": "effective-social-input/testPredictionModelContract.m",
+      "bytes": 1424,
+      "sha256": "1df9ab2831349ce50ef029aee8e1d3c6ba892a851f73b63dcda68c08b20205f8"
+    }
+  ]
+}

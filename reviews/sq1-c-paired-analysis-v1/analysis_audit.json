@@ -1,0 +1,46 @@
+{
+  "B_commit": "63d56b51cb74bca509b0fb7dc29d1d5997d3a1ae",
+  "input": "D:\\Work\\Study\\UESTC资料存档\\课程\\通关项目\\coding\\reviews\\sq1-c-condition-ledger-v1\\B_E2_CANONICAL_RUNS.csv",
+  "input_sha256": "2dbd2a5b5c2fea742965623f8b5407fa8029e8a4a695eb808911c1f5c7e5f83b",
+  "simulation_seeds": [
+    1,
+    2,
+    3,
+    4,
+    5,
+    6,
+    7,
+    8,
+    9,
+    10,
+    11,
+    12,
+    13,
+    14,
+    15,
+    16,
+    17,
+    18,
+    19,
+    20
+  ],
+  "canonical_rows": 240,
+  "contrasts": 11,
+  "metrics": [
+    "meanGO",
+    "meanLO",
+    "meanPairDistanceNorm"
+  ],
+  "paired_differences": 660,
+  "bootstrap_replicates": 20000,
+  "bootstrap_rng_seed": 20260929,
+  "bootstrap_rng_seed_role": "computational resampling only, not a new simulation seed",
+  "resampling_unit": "whole seed; shared draws across all contrasts and metrics",
+  "interval": "linear-interpolated 2.5%/97.5% percentiles, pointwise, no multiplicity correction",
+  "evidence": "post-hoc exploratory analysis of previously used development seeds; no new simulation",
+  "checks": "PASS source hash, 12x20 unique pairs, difference of means identity, 33 summaries/660 deltas, direction counts",
+  "outputs": {
+    "paired_effects.csv": "ea4b1cb144f8464be9f06dca092310119fcd4d479f9be9d58cac811f43d92076",
+    "paired_seed_differences.csv": "9ecea48b55e2e7c3fd803e874722d7a9dfd44f48290d6b181760f54937ed86b1"
+  }
+}
