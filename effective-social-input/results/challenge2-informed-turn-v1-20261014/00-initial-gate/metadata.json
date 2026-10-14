@@ -1,0 +1,63 @@
+{
+  "config": {
+    "n": 20,
+    "m": 100,
+    "k": 15,
+    "dt": 0.3,
+    "arena": 1000.0,
+    "beta": 1000.0,
+    "speed_scale": 0.05,
+    "h0": 0.012,
+    "sigma": 0.4,
+    "q": 0.0001,
+    "R": 0.0001,
+    "noise_std": 0.01,
+    "max_age": 120.0,
+    "max_variance": 1.0,
+    "warm_steps": 100,
+    "lead_steps": 20,
+    "total_steps": 500,
+    "cue_amplitude": 0.08,
+    "turn_rate": 0.025,
+    "turn_angle": 0.7853981633974483,
+    "geometry_scale": 1.0
+  },
+  "seeds": [
+    2026101401,
+    2026101402,
+    2026101403
+  ],
+  "modes": [
+    "fresh",
+    "drop",
+    "drop-normalized",
+    "hold",
+    "kf-mean",
+    "kf-uncertainty"
+  ],
+  "horizons": [
+    6,
+    10.2,
+    18
+  ],
+  "evidence": "exploratory development; all three seeds retained",
+  "rng": "NumPy PCG64",
+  "python": "3.12.14",
+  "numpy": "2.3.5",
+  "branch": "YCwork",
+  "base_commit": "ff12161788f3ea079c25c011927b32f47e7a1cc4",
+  "leader_ids_1based": [
+    1,
+    2,
+    3
+  ],
+  "hidden_edges": 51,
+  "total_edges": 300,
+  "gate_rule": {
+    "fresh_final_follower_error_deg": 15,
+    "fresh_final_leader_error_deg": 10,
+    "fresh_follower_turn_min_deg": 30,
+    "drop_event_error_increase_deg": 3
+  },
+  "note": "Gate cutoffs are declared engineering diagnostics, not scientific thresholds. Initial ordered state is constructed. No seeds excluded. Fresh output reused across horizons."
+}

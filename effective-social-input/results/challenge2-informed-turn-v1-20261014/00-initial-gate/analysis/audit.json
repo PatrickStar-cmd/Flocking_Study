@@ -1,0 +1,43 @@
+{
+  "n_seeds": 3,
+  "gate_rows": 3,
+  "summary_rows": 6,
+  "raw_runs": 12,
+  "prefix_and_T0_assertions": "Passed during runner execution for all seeds and all methods",
+  "no_exclusions": true,
+  "matplotlib": "3.11.2",
+  "hashes": {
+    "manifest.csv": "f35a1c51914171822150a8d058ca755264fbba455dcdc4c750e2f53f9069a77b",
+    "metadata.json": "875e2dba2afbec361ce02ad32dfe9211114cff7722d66ce649e0526043567a41",
+    "runs\\seed-2026101401_straight_drop_T-18.csv": "8d9de12ddc92bf35f6a1a7b96a174364a2db947d18b9e307ce854ee228877943",
+    "runs\\seed-2026101401_straight_drop_T-18.npz": "3df96e9fff7938385b2dc4974c98b96cc78c8c33b8189f106b6e093ea16ab140",
+    "runs\\seed-2026101401_straight_fresh_T-0.csv": "8ad23a6e95bf77c7de1928dc045972853cc6e20296353a85023a6cf53d9d58bb",
+    "runs\\seed-2026101401_straight_fresh_T-0.npz": "46fb4a1fcc45ab7a9a5b80182fad1d235ae99f24b1bd512ff2045fcfa66a9364",
+    "runs\\seed-2026101401_turn_drop_T-18.csv": "35d851e71ab19549b6dbd02b9dbe8005745f64bd25f6fe842154a89bbfc5d9eb",
+    "runs\\seed-2026101401_turn_drop_T-18.npz": "4795dc88f769f5324f575b4bbbc0a2836ed442431b9fb9d61c769576aa113a42",
+    "runs\\seed-2026101401_turn_fresh_T-0.csv": "31ba27af78805857d70d2b4c701b9c6065dd3f3da1b7d43aba01aa14f0c966e9",
+    "runs\\seed-2026101401_turn_fresh_T-0.npz": "1c68fa9a974a70eda350243beca41fafb58fd875ce6e7d726b708a0636793153",
+    "runs\\seed-2026101402_straight_drop_T-18.csv": "f123aed264e5ff85d3990859744ecb39cebea1fdd5e98c2176a21dd097e827e1",
+    "runs\\seed-2026101402_straight_drop_T-18.npz": "0d88cfb4acee37dc280be6363eb5f7164bd33979c6a059052c3d56a7b0ab32d6",
+    "runs\\seed-2026101402_straight_fresh_T-0.csv": "4ace45fbc47a69e594c0afb6c4fc2781e407e4844f98bb09a1dcb39d1bfff5b6",
+    "runs\\seed-2026101402_straight_fresh_T-0.npz": "f4743b6742dea9234ab4a609474c09a8585af93232ecbb51303f2655b5288922",
+    "runs\\seed-2026101402_turn_drop_T-18.csv": "fa5be05afecf543be648ce0fa8c8e931ee2720b52d28508c118bbcce2f47c4a8",
+    "runs\\seed-2026101402_turn_drop_T-18.npz": "1e655ca26265bd9f3c613dfd7510fafb22ce164579c31f3da8af4b3f454d7343",
+    "runs\\seed-2026101402_turn_fresh_T-0.csv": "49893e2767bce5643c6b75dc548a808b5982ee81ba1d7d579d51ba8a5c1cfbe5",
+    "runs\\seed-2026101402_turn_fresh_T-0.npz": "3c38004090befa4a6b87c5d115c1b626ff40de62b663746a386c05b457b544a5",
+    "runs\\seed-2026101403_straight_drop_T-18.csv": "bf434e7cb8308c2525173258f9a4ce6973deb849e7d3b7c321dcd67d709db45f",
+    "runs\\seed-2026101403_straight_drop_T-18.npz": "e55094e72fe4078dad6f9e2006a0d3e1bb2e158a7a2c9375a3e94114d7b2fe85",
+    "runs\\seed-2026101403_straight_fresh_T-0.csv": "3e14aae2083b42c4f8380ccc2089a071ea5e3a4e53d91fb0c52e3b71f2d9f03c",
+    "runs\\seed-2026101403_straight_fresh_T-0.npz": "3f79f25b4ae18cfa5f73d6eb4ea33d45552ad2abd0ef41f246f78079f107c564",
+    "runs\\seed-2026101403_turn_drop_T-18.csv": "a3b5778ffa4cb9691b52fcd3cfdf1611ba7cf05717d25aa72202726bde87a4d2",
+    "runs\\seed-2026101403_turn_drop_T-18.npz": "b212f80c5feb37d84ad745ad7ddaa8003d6b6655691e8d779a5a510d44713d9d",
+    "runs\\seed-2026101403_turn_fresh_T-0.csv": "204008d8032d820a145fb9273afd544743dddfe10b39c9d09b00ecd4e0f3cfbc",
+    "runs\\seed-2026101403_turn_fresh_T-0.npz": "a47fb915e7d212432176fd6da4ef5258b3af00a7ebd36aae8cb1d8918c13ca2a"
+  },
+  "code_hashes": {
+    "analyze_results.py": "4c50731f63ced50f317e74da544f9e3df9573d3cd3b4cb8f99b574739701bd67",
+    "README.md": "c2113e5e50541c560ccec5a4bc0e6b8db734869e549863cb84b22b7a9c2a55ec",
+    "run_experiment.py": "daa57d0bd432f12ba58376b7b8de620d30c38ba9435541f62d9b35ef8681a757",
+    "validate_reference.m": "4b85e144cf7276bcd127df13d7b6f66a065e1cf08906f02e96b63c0fa9705395"
+  }
+}
