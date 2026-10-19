@@ -1,0 +1,560 @@
+[
+  {
+    "seed": 2026101401,
+    "N": 20,
+    "path": "inputs\\seed2026101401_N20.npz",
+    "sha256": "3a87c38cfe05e4a2f1e86f69d1f2d93241a3706a50e2e7c0801b4c7c2d4e11df"
+  },
+  {
+    "seed": 2026101402,
+    "N": 20,
+    "path": "inputs\\seed2026101402_N20.npz",
+    "sha256": "059e6726f922fce26606501ecbb424384b5711edae30d32cdaf13fe1a2b0f509"
+  },
+  {
+    "seed": 2026101403,
+    "N": 20,
+    "path": "inputs\\seed2026101403_N20.npz",
+    "sha256": "0222ce5b0f52b30504a6e53cd6fdb02398e3d49a3db0f774a4894259d5bdb72c"
+  },
+  {
+    "seed": 2026101501,
+    "N": 20,
+    "path": "inputs\\seed2026101501_N20.npz",
+    "sha256": "b1521e563d263fdc3597c3099a0e46bef6e7308964502c0a7fc5b9a3dde3b109"
+  },
+  {
+    "seed": 2026101501,
+    "N": 40,
+    "path": "inputs\\seed2026101501_N40.npz",
+    "sha256": "f0ef298120d1a51a2d1b66e882e68862c7fe90c3f1d81309bf6350fd793a45cd"
+  },
+  {
+    "seed": 2026101501,
+    "N": 60,
+    "path": "inputs\\seed2026101501_N60.npz",
+    "sha256": "ec4cba8e2d80977942c8311cde452db2346b11903847819d0e2715e6ec5383f6"
+  },
+  {
+    "seed": 2026101502,
+    "N": 20,
+    "path": "inputs\\seed2026101502_N20.npz",
+    "sha256": "52794959becc4dc007249c30eca25df83946d1c45e3d8d393480a85870132fb4"
+  },
+  {
+    "seed": 2026101502,
+    "N": 40,
+    "path": "inputs\\seed2026101502_N40.npz",
+    "sha256": "84db6a12122c9708739e5b93088266844d6922d36b0b0945507268405fb0b619"
+  },
+  {
+    "seed": 2026101502,
+    "N": 60,
+    "path": "inputs\\seed2026101502_N60.npz",
+    "sha256": "c27df553071fe5f47339f645d00b958f7b6b7c8e5c773c11d66baba2172494f3"
+  },
+  {
+    "seed": 2026101503,
+    "N": 20,
+    "path": "inputs\\seed2026101503_N20.npz",
+    "sha256": "2673e8993eb1ff9215c5cf9a693232c7fac5eae2bfe6902e0298a230d093e873"
+  },
+  {
+    "seed": 2026101503,
+    "N": 40,
+    "path": "inputs\\seed2026101503_N40.npz",
+    "sha256": "77b0e6b3cfb0f28dd087f0bf3afbe71cb0d002d901b711531dd6a4a366488ab6"
+  },
+  {
+    "seed": 2026101503,
+    "N": 60,
+    "path": "inputs\\seed2026101503_N60.npz",
+    "sha256": "d65417113603dfdcfd1faf0ac8ae64190d0cce9e65061e0e7c43b5d2d85fa8ae"
+  },
+  {
+    "seed": 2026101504,
+    "N": 20,
+    "path": "inputs\\seed2026101504_N20.npz",
+    "sha256": "ec5840875e5af1e0f33b2b4462873bf96e6249a3f2bee7dbdf690b254c8beca4"
+  },
+  {
+    "seed": 2026101504,
+    "N": 40,
+    "path": "inputs\\seed2026101504_N40.npz",
+    "sha256": "f513779978acea4ab778df7dce1d3b8c41cab86c6d47ca0f75bf808411fd9f7d"
+  },
+  {
+    "seed": 2026101504,
+    "N": 60,
+    "path": "inputs\\seed2026101504_N60.npz",
+    "sha256": "a7803288af3d71038b50c9b2147001d796e30d0609e0786c570f92508c7cdaf0"
+  },
+  {
+    "seed": 2026101505,
+    "N": 20,
+    "path": "inputs\\seed2026101505_N20.npz",
+    "sha256": "55c25f473718be870fa2a4bf90bf3cd187db5a2ed2db6eacc7bccb274b3a5d8c"
+  },
+  {
+    "seed": 2026101505,
+    "N": 40,
+    "path": "inputs\\seed2026101505_N40.npz",
+    "sha256": "a4a2a97f0f5ac42253874ff17bbc84d8196fa1b589aa3c8685f6a56191a14bca"
+  },
+  {
+    "seed": 2026101505,
+    "N": 60,
+    "path": "inputs\\seed2026101505_N60.npz",
+    "sha256": "87b062715e9b80b455db739b48e76afd23ead485422f271e2a381786622628c0"
+  },
+  {
+    "seed": 2026101506,
+    "N": 20,
+    "path": "inputs\\seed2026101506_N20.npz",
+    "sha256": "8c6277e3091baa93ea9375959c6ebc2f87305e653420bef206ded639610c3ed7"
+  },
+  {
+    "seed": 2026101506,
+    "N": 40,
+    "path": "inputs\\seed2026101506_N40.npz",
+    "sha256": "10f38679a84301ec90930d0a2b601fea6f4c3d68e18e35c5ec389e4bc4abbb73"
+  },
+  {
+    "seed": 2026101506,
+    "N": 60,
+    "path": "inputs\\seed2026101506_N60.npz",
+    "sha256": "d16c810bdb9635df71432520b2a495032c312ebf0244ffc2de5529adb17f2b1d"
+  },
+  {
+    "seed": 2026101507,
+    "N": 20,
+    "path": "inputs\\seed2026101507_N20.npz",
+    "sha256": "701cf33a96c36edb09aac38b11657ec16be831cc68008e7555cb645ec6253111"
+  },
+  {
+    "seed": 2026101507,
+    "N": 40,
+    "path": "inputs\\seed2026101507_N40.npz",
+    "sha256": "debff98eebfa13443e5a2cce8444b12e24de8427ec38a2e5c9505885c549abb7"
+  },
+  {
+    "seed": 2026101507,
+    "N": 60,
+    "path": "inputs\\seed2026101507_N60.npz",
+    "sha256": "71dd9ceda3251b0a570db29e04fae958096dec79764206ec6fa0764e83514019"
+  },
+  {
+    "seed": 2026101508,
+    "N": 20,
+    "path": "inputs\\seed2026101508_N20.npz",
+    "sha256": "4dc2f7118147ab3560cbed61cd33c321a52225d1968d1d03fe5e4bf1ba43e163"
+  },
+  {
+    "seed": 2026101508,
+    "N": 40,
+    "path": "inputs\\seed2026101508_N40.npz",
+    "sha256": "114f7c52126d3024058252610fc1ba813dc15e474e6aaf076afda7938835283f"
+  },
+  {
+    "seed": 2026101508,
+    "N": 60,
+    "path": "inputs\\seed2026101508_N60.npz",
+    "sha256": "6e700226dc515c9b5e5f7c1aa0255891aaa3286a2984d501fe847f1f80efa210"
+  },
+  {
+    "seed": 2026101509,
+    "N": 20,
+    "path": "inputs\\seed2026101509_N20.npz",
+    "sha256": "6bc8db393dfd0fb19e96f0b629d6f153424c3f87948a68cb2df6702b3aa6cf2b"
+  },
+  {
+    "seed": 2026101509,
+    "N": 40,
+    "path": "inputs\\seed2026101509_N40.npz",
+    "sha256": "3e6bf7a349e7e86a015c1efdc942237d13eb94c923d2b4aa6c24461efc116e14"
+  },
+  {
+    "seed": 2026101509,
+    "N": 60,
+    "path": "inputs\\seed2026101509_N60.npz",
+    "sha256": "ca2a327045773a855e4016ffe2701a860d6aa15618c42de16525f67ff260a0db"
+  },
+  {
+    "seed": 2026101510,
+    "N": 20,
+    "path": "inputs\\seed2026101510_N20.npz",
+    "sha256": "4df3520f96f1d99acbe27133e14f7db504b75170deb0b2845cc20d63e3e9aa71"
+  },
+  {
+    "seed": 2026101510,
+    "N": 40,
+    "path": "inputs\\seed2026101510_N40.npz",
+    "sha256": "ff777c8ed2eb4c8fade9bbea7667b234ecd5960f442d0fc2d401ea0000aebbe7"
+  },
+  {
+    "seed": 2026101510,
+    "N": 60,
+    "path": "inputs\\seed2026101510_N60.npz",
+    "sha256": "50085292cfc44da8b1ecb44f48e1d9696f1212e5cf6acce4a59c94b65e1e0f7e"
+  },
+  {
+    "seed": 2026101511,
+    "N": 20,
+    "path": "inputs\\seed2026101511_N20.npz",
+    "sha256": "18c650d5160ff4485820ec961a12e581e91f698fa02157cb2d62c4e0d4596b3d"
+  },
+  {
+    "seed": 2026101511,
+    "N": 40,
+    "path": "inputs\\seed2026101511_N40.npz",
+    "sha256": "6e245a9dac999e09e493800b5de7655dbe6ea343a0c5f3923b6b8430be43b474"
+  },
+  {
+    "seed": 2026101511,
+    "N": 60,
+    "path": "inputs\\seed2026101511_N60.npz",
+    "sha256": "ba210d5bd39160ef9d9793e6f0ff2a181f566694fb6c0ea8a618bca3f07b0168"
+  },
+  {
+    "seed": 2026101512,
+    "N": 20,
+    "path": "inputs\\seed2026101512_N20.npz",
+    "sha256": "89f776ab47ca51f93f9db8785b063c3ebb5d202512417d508e05a539982f4476"
+  },
+  {
+    "seed": 2026101512,
+    "N": 40,
+    "path": "inputs\\seed2026101512_N40.npz",
+    "sha256": "168e1ee99c42447221c0af952c73113be349d41a42a734f5bf7d8ac4903f3032"
+  },
+  {
+    "seed": 2026101512,
+    "N": 60,
+    "path": "inputs\\seed2026101512_N60.npz",
+    "sha256": "afde818f8ee641d234c384cfc032ef13235e76063852755dea2694d94928f678"
+  },
+  {
+    "seed": 2026101513,
+    "N": 20,
+    "path": "inputs\\seed2026101513_N20.npz",
+    "sha256": "84a4d602992597f7ab64803ca5cd460da588ed6fee76a2f383bb67490d20c0ec"
+  },
+  {
+    "seed": 2026101513,
+    "N": 40,
+    "path": "inputs\\seed2026101513_N40.npz",
+    "sha256": "a138cd0fbd5137de4983aeeb19298e6c0f8c48696597b1ffeecc2735227232df"
+  },
+  {
+    "seed": 2026101513,
+    "N": 60,
+    "path": "inputs\\seed2026101513_N60.npz",
+    "sha256": "b762edb0961c2d85702e6b7bb5a9e3202a9e83170400cb16d5c5558bdb32e0d8"
+  },
+  {
+    "seed": 2026101514,
+    "N": 20,
+    "path": "inputs\\seed2026101514_N20.npz",
+    "sha256": "e4bd9a2cfe345852995c71d928a073e5272bb28963ce7c2424876db55aa72acf"
+  },
+  {
+    "seed": 2026101514,
+    "N": 40,
+    "path": "inputs\\seed2026101514_N40.npz",
+    "sha256": "856eeb5a04edfa2db71902db4bc6ff68f63107ac7b3a6301a9f34d9ebc7b8229"
+  },
+  {
+    "seed": 2026101514,
+    "N": 60,
+    "path": "inputs\\seed2026101514_N60.npz",
+    "sha256": "fb2e8b1d220e20670aa652123d565f6402ce6c4d96b81500d40ff51aef061943"
+  },
+  {
+    "seed": 2026101515,
+    "N": 20,
+    "path": "inputs\\seed2026101515_N20.npz",
+    "sha256": "f03a20225d8a48474ba947b32eae98d0d1162c2b2aa2e703d9412a96ec5b8df3"
+  },
+  {
+    "seed": 2026101515,
+    "N": 40,
+    "path": "inputs\\seed2026101515_N40.npz",
+    "sha256": "8549a75a849e2090e5292225ff1dfdaed9c8a0cfa65bea12f35160bbef342cad"
+  },
+  {
+    "seed": 2026101515,
+    "N": 60,
+    "path": "inputs\\seed2026101515_N60.npz",
+    "sha256": "6c4e204791f2b52ad5e22636186166deaf6ab6d41589815429a1a93af9990317"
+  },
+  {
+    "seed": 2026101516,
+    "N": 20,
+    "path": "inputs\\seed2026101516_N20.npz",
+    "sha256": "29fef7a9b81dbf096e19a92bc9f7be05b0719c09095b1ca57d9bbf23bc2875b9"
+  },
+  {
+    "seed": 2026101516,
+    "N": 40,
+    "path": "inputs\\seed2026101516_N40.npz",
+    "sha256": "aaa6f3f4260b8d57a44f7e4c8200693e623806ebeb357844ed3c9a107708d415"
+  },
+  {
+    "seed": 2026101516,
+    "N": 60,
+    "path": "inputs\\seed2026101516_N60.npz",
+    "sha256": "c718493cc4bfe0b3bed4a3b41d3e12887dc24c6ab319c8fe9683b25f9edc78a9"
+  },
+  {
+    "seed": 2026101517,
+    "N": 20,
+    "path": "inputs\\seed2026101517_N20.npz",
+    "sha256": "8089dd0845b45fcbe526c19feafd119ec62e0f75481616aedd177433ad1ad8de"
+  },
+  {
+    "seed": 2026101517,
+    "N": 40,
+    "path": "inputs\\seed2026101517_N40.npz",
+    "sha256": "20ff2cf1b60db46b7c128b519a38c54e8d782c780fe75a7a70f3b9a9f0e92834"
+  },
+  {
+    "seed": 2026101517,
+    "N": 60,
+    "path": "inputs\\seed2026101517_N60.npz",
+    "sha256": "e736a88f75b15b07e2d04197911ab26bbf5b211c2828fc22442886fe0394c7f9"
+  },
+  {
+    "seed": 2026101518,
+    "N": 20,
+    "path": "inputs\\seed2026101518_N20.npz",
+    "sha256": "ea6d909abfadef2502c2dec3f8ed3f7a6da5b363b885e65e779b8fb34260c992"
+  },
+  {
+    "seed": 2026101518,
+    "N": 40,
+    "path": "inputs\\seed2026101518_N40.npz",
+    "sha256": "a2214d38245e6ffa202ebf1c352368f4961397701a7ce072f865d7d2ecc4ac59"
+  },
+  {
+    "seed": 2026101518,
+    "N": 60,
+    "path": "inputs\\seed2026101518_N60.npz",
+    "sha256": "1696bd5d5d962d7eb1acf4bef7bf233b9a4af6162b4bb060355283d85f8f3437"
+  },
+  {
+    "seed": 2026101519,
+    "N": 20,
+    "path": "inputs\\seed2026101519_N20.npz",
+    "sha256": "d821a92a52349151072728f5e638db976bc3c1bd1b6f9e936e20de278acc5296"
+  },
+  {
+    "seed": 2026101519,
+    "N": 40,
+    "path": "inputs\\seed2026101519_N40.npz",
+    "sha256": "3509d13afe00a3c05e0e9a91fcceeacbdd6a1c0b2e9bf8a330ab4a4f16032edb"
+  },
+  {
+    "seed": 2026101519,
+    "N": 60,
+    "path": "inputs\\seed2026101519_N60.npz",
+    "sha256": "1d7ffacbcea8e694089181b15082129e8ff81f57cda865239198e8c43297917f"
+  },
+  {
+    "seed": 2026101520,
+    "N": 20,
+    "path": "inputs\\seed2026101520_N20.npz",
+    "sha256": "3b9e4f80dcf635ad3442566301e5bb4b7783aa272b3035a9c0efa702ec055f76"
+  },
+  {
+    "seed": 2026101520,
+    "N": 40,
+    "path": "inputs\\seed2026101520_N40.npz",
+    "sha256": "9ca85cb7438fe715a245d081e32ca2155b31bd35f2e4251998d0bc58f8cc34e0"
+  },
+  {
+    "seed": 2026101520,
+    "N": 60,
+    "path": "inputs\\seed2026101520_N60.npz",
+    "sha256": "5ac2a2f91375575dd8e6c91ac1e21b5dbe72ca873f462c7ac60efa3a1fd506ac"
+  },
+  {
+    "seed": 2026101521,
+    "N": 20,
+    "path": "inputs\\seed2026101521_N20.npz",
+    "sha256": "ed3517fe95472629825b48f213af7381763d702d133e660eaddda107ba5466b6"
+  },
+  {
+    "seed": 2026101521,
+    "N": 40,
+    "path": "inputs\\seed2026101521_N40.npz",
+    "sha256": "bdfa79ce894f84f09f65ffba162a9baf068a3dc6c9e06a1a71db8a5aa9591a53"
+  },
+  {
+    "seed": 2026101521,
+    "N": 60,
+    "path": "inputs\\seed2026101521_N60.npz",
+    "sha256": "abc7010945f88e19f3f65e121196a845d1fdd26da7e0407a299a528243f4ff33"
+  },
+  {
+    "seed": 2026101522,
+    "N": 20,
+    "path": "inputs\\seed2026101522_N20.npz",
+    "sha256": "9eefd4ed0bc957ea5eedbc0d242af33647ee6e491836abeecf45773ae50c817e"
+  },
+  {
+    "seed": 2026101522,
+    "N": 40,
+    "path": "inputs\\seed2026101522_N40.npz",
+    "sha256": "af9d653a6f3e1b2af91c0e8d55997f14e9a762610ec55352ae334fe6f19b9298"
+  },
+  {
+    "seed": 2026101522,
+    "N": 60,
+    "path": "inputs\\seed2026101522_N60.npz",
+    "sha256": "9a33bd5fb4d52c73c1794125ea8b94fb1d44ddc8ef448685a6e862e1d33b5056"
+  },
+  {
+    "seed": 2026101523,
+    "N": 20,
+    "path": "inputs\\seed2026101523_N20.npz",
+    "sha256": "80efbfc496f848b7e54c15876edf81561b606cb4a5b5756242e8918273fc69cd"
+  },
+  {
+    "seed": 2026101523,
+    "N": 40,
+    "path": "inputs\\seed2026101523_N40.npz",
+    "sha256": "f2f5120dadfc8b9c356b5f1ca245f0d8c19c26ac1e7419bf1f3ec6ea86832503"
+  },
+  {
+    "seed": 2026101523,
+    "N": 60,
+    "path": "inputs\\seed2026101523_N60.npz",
+    "sha256": "abe8c2b23ea1f317b2eb789a6ff0510e7d0a768b5c93534949bf24c5f7422ea7"
+  },
+  {
+    "seed": 2026101524,
+    "N": 20,
+    "path": "inputs\\seed2026101524_N20.npz",
+    "sha256": "83b23b35fa896768507263a659eedad78f8ad6e62e0de64138e0b89ad8021f73"
+  },
+  {
+    "seed": 2026101524,
+    "N": 40,
+    "path": "inputs\\seed2026101524_N40.npz",
+    "sha256": "902ccb27a594bf7ed04a301b43510d125b66a668ecaa4d3b659a4450e2a55694"
+  },
+  {
+    "seed": 2026101524,
+    "N": 60,
+    "path": "inputs\\seed2026101524_N60.npz",
+    "sha256": "dce4fd61106655f9f238a08cb3f80312e6154cc673cd70f5c3e2f5f7822db6ed"
+  },
+  {
+    "seed": 2026101525,
+    "N": 20,
+    "path": "inputs\\seed2026101525_N20.npz",
+    "sha256": "ead87300c6ef8d74e799e84a3632914837f276546a0bdde944d3d061615a26d7"
+  },
+  {
+    "seed": 2026101525,
+    "N": 40,
+    "path": "inputs\\seed2026101525_N40.npz",
+    "sha256": "8d6264b9acf78b8469b62724e3812dde1784c9c85cd47b480862ef13d1fe550c"
+  },
+  {
+    "seed": 2026101525,
+    "N": 60,
+    "path": "inputs\\seed2026101525_N60.npz",
+    "sha256": "6fc58500a14f009d6d0a3bb9f8ab283533c823d3b5b148fe9dde811ce8702f6c"
+  },
+  {
+    "seed": 2026101526,
+    "N": 20,
+    "path": "inputs\\seed2026101526_N20.npz",
+    "sha256": "35470dd3a363ce84707018d2918762b76cfd668d25b3a976f0550e4fc400df3b"
+  },
+  {
+    "seed": 2026101526,
+    "N": 40,
+    "path": "inputs\\seed2026101526_N40.npz",
+    "sha256": "6a08dabdf413414869e9f7e45fc7cd4262d16075d2f1f25354c2ec740d9d842c"
+  },
+  {
+    "seed": 2026101526,
+    "N": 60,
+    "path": "inputs\\seed2026101526_N60.npz",
+    "sha256": "8d548be7d03647feccaa87d965db431467d0fb29c7a8fcdaf1a5943515992b7a"
+  },
+  {
+    "seed": 2026101527,
+    "N": 20,
+    "path": "inputs\\seed2026101527_N20.npz",
+    "sha256": "0c91ccff3c939770061347a7d0ee3705fe0d2c6d694c6dd934939b3d7aeb0a1e"
+  },
+  {
+    "seed": 2026101527,
+    "N": 40,
+    "path": "inputs\\seed2026101527_N40.npz",
+    "sha256": "76364bc65137961e11529d0ca23f66f4fac7471b15db19f0ae9c66e1ce8b838d"
+  },
+  {
+    "seed": 2026101527,
+    "N": 60,
+    "path": "inputs\\seed2026101527_N60.npz",
+    "sha256": "7b16607f0bc584556c704b79d8c3db1b16ee5725fad955b07f80a77dafd11502"
+  },
+  {
+    "seed": 2026101528,
+    "N": 20,
+    "path": "inputs\\seed2026101528_N20.npz",
+    "sha256": "c2aebb7468fd8b44034c2904cbbb569d1ef21cbabfb16b43d75acea8314e5022"
+  },
+  {
+    "seed": 2026101528,
+    "N": 40,
+    "path": "inputs\\seed2026101528_N40.npz",
+    "sha256": "91884eed183e6ff04eebb08cb74c4d48871e4c6079b49f4c4d50e5c02ea13bd6"
+  },
+  {
+    "seed": 2026101528,
+    "N": 60,
+    "path": "inputs\\seed2026101528_N60.npz",
+    "sha256": "410f513d16200deda5ba07f1068b54153f33abc23e2e4da60badee1c0105b2bc"
+  },
+  {
+    "seed": 2026101529,
+    "N": 20,
+    "path": "inputs\\seed2026101529_N20.npz",
+    "sha256": "4d2317bf6bb2de74b5cee4abbbe484565487348e9dd797e6ce1c74a4144141e4"
+  },
+  {
+    "seed": 2026101529,
+    "N": 40,
+    "path": "inputs\\seed2026101529_N40.npz",
+    "sha256": "14493c925644546d7f2756a8feff0747ab455cd563b3cd38d41dedd4846249f3"
+  },
+  {
+    "seed": 2026101529,
+    "N": 60,
+    "path": "inputs\\seed2026101529_N60.npz",
+    "sha256": "e8e6be1c2bcdb15b308b53227a3f06be046920df70bd08f5baa816bd20971c7f"
+  },
+  {
+    "seed": 2026101530,
+    "N": 20,
+    "path": "inputs\\seed2026101530_N20.npz",
+    "sha256": "d66231c2ef2bbe28f4a4b850e515903cab843bcb3f5524d6f24793aef5a5a2aa"
+  },
+  {
+    "seed": 2026101530,
+    "N": 40,
+    "path": "inputs\\seed2026101530_N40.npz",
+    "sha256": "ac43b8f8b1b8dc4facd93f73c5e0cb8be8b69bb80867490d9c633d0c95d2f6bd"
+  },
+  {
+    "seed": 2026101530,
+    "N": 60,
+    "path": "inputs\\seed2026101530_N60.npz",
+    "sha256": "92b51a882205a452dec5cd1c2e35a02741f2e5f1df0136a19c94e349276b6da8"
+  }
+]

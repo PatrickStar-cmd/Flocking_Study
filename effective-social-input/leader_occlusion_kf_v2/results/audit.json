@@ -1,0 +1,22 @@
+{
+  "status": "COMPLETE",
+  "expectedRuns": 858,
+  "completedRuns": 858,
+  "developmentRuns": 18,
+  "evaluationRuns": 840,
+  "elapsedSeconds": 578.7659108000007,
+  "workers": 6,
+  "excludedSeeds": [],
+  "independentEvaluationSeeds": 30,
+  "analysis": "COMPLETE",
+  "independentValidation": "PASS",
+  "figures": {
+    "seedTimeSeriesPDF": 183,
+    "seedTrajectoryPDF": 183
+  },
+  "primaryMeanGO": 0.0058506193114241,
+  "primaryCI95": [
+    0.0054826421329882,
+    0.0062185964898601
+  ]
+}

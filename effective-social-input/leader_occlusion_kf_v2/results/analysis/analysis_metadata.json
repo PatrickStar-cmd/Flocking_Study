@@ -1,0 +1,9 @@
+{
+  "primaryComparison": "main/occlusion/GO/kf-mean-minus-hold",
+  "nEvaluationSeeds": 30,
+  "bootstrapDraws": 10000,
+  "bootstrapSeed": 20261014,
+  "secondaryFamilySize": 4,
+  "expansionFamilySize": 5,
+  "referenceReuse": "Fresh physics reused across T; early fixed-neighbour metric recomputed"
+}

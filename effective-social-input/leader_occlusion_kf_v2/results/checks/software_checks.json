@@ -1,0 +1,77 @@
+{
+  "status": "PASS",
+  "checks": [
+    {
+      "check": "graph_counts_and_strong_connectivity",
+      "status": "PASS",
+      "seconds": 0.2891092000008939,
+      "detail": [
+        {
+          "N": 20,
+          "leaders": 3,
+          "edges": 300,
+          "hidden": 51
+        },
+        {
+          "N": 40,
+          "leaders": 6,
+          "edges": 600,
+          "hidden": 102
+        },
+        {
+          "N": 60,
+          "leaders": 9,
+          "edges": 900,
+          "hidden": 153
+        }
+      ]
+    },
+    {
+      "check": "scalar_KF_wrap_missing_Joseph",
+      "status": "PASS",
+      "seconds": 0.05648029999974824,
+      "detail": {
+        "maxDifference": 1.0842021724855044e-19
+      }
+    },
+    {
+      "check": "causal_interface_and_gates",
+      "status": "PASS",
+      "seconds": 0.011575900000025285,
+      "detail": "Hidden truth interface, cold start, age/variance gate and recovery checked"
+    },
+    {
+      "check": "linear_trend_analytic",
+      "status": "PASS",
+      "seconds": 0.0827129999997851,
+      "detail": "Zero and constant rate, wrap crossing, no forecast writes to history"
+    },
+    {
+      "check": "uncertainty_S_independent_quadrature_and_mass",
+      "status": "PASS",
+      "seconds": 0.003067100000407663,
+      "detail": {
+        "SQuadratureDifference": 1.1102230246251565e-16
+      }
+    },
+    {
+      "check": "six_methods_protocol_reference_parity",
+      "status": "PASS",
+      "seconds": 10.705746999999974,
+      "detail": {
+        "fresh": 0.0,
+        "drop": 0.0,
+        "drop-normalized": 0.0,
+        "hold": 0.0,
+        "kf-mean": 0.0,
+        "kf-uncertainty": 0.0
+      }
+    },
+    {
+      "check": "T0_seven_methods",
+      "status": "PASS",
+      "seconds": 7.017837799998233,
+      "detail": "All seven methods exactly equal when T=0"
+    }
+  ]
+}

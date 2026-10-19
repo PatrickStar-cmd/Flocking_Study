@@ -1,0 +1,35 @@
+{
+  "status": "PASS",
+  "runs": 858,
+  "checksPerRun": [
+    "GO",
+    "GO_followers",
+    "task_error",
+    "pair_distance",
+    "fixed5_distance",
+    "S",
+    "S_abs_error",
+    "social_field",
+    "shared_prefix",
+    "hidden_NaN",
+    "fresh_count",
+    "weights",
+    "KF_PSD",
+    "recovery",
+    "SHA256"
+  ],
+  "independentSeeds": 30,
+  "developmentRuns": 18,
+  "evaluationRuns": 840,
+  "maximumMetricDifference": 3.979039320256561e-13,
+  "seconds": 149.15562750000026,
+  "analysisSources": {
+    "analyze_results.py": "d4bd33518a33de05552677be41c96a16727fc6a36449f4f5b3f4533ddbc251b4",
+    "check_implementation.py": "5e52842f0a994be14f345c2cef465d2a6ace1223b9c3d880f7e65994dd590312",
+    "finalize_package.py": "5724a688c17328a51049eac3683f2c909ba19e75307f89430902ff6fddafad4d",
+    "leader_model.py": "cc560a47c325dd206e1826c181aa22b9acb5f1a95f936039f4a61e1b6237ad65",
+    "reference_run_experiment.py": "527d9c1725ddc7f94b19f7039e213f849758cdb2c9868b919837eba2bd278ca5",
+    "run_experiments.py": "ac3d141bc2dae8db51f6f006837a460b45b717c0cbbf0b2cab92a898d8a00981",
+    "verify_results.py": "9fd72ebd9da188d4e6ca9a205ac0ce7adbd53fab993bfb797b53bd5f4bbb1341"
+  }
+}
