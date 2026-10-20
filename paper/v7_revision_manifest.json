@@ -1,0 +1,82 @@
+{
+  "version": 7,
+  "date": "2026-10-20",
+  "title": "间歇观测下异中心神经场的卡尔曼滤波补偿",
+  "branch": "YCwork",
+  "base_commit": "f9c0817309758be83eb9fd6d50d5d9f0cdaf946b",
+  "pages": 35,
+  "figures": 12,
+  "files": {
+    "论文初稿_KF预测补偿.v7.tex": {
+      "sha256": "4e9e2a3f3f62573d4a8b30b8322fa854c53a7f7ab16b85ff6eae14fc796132df",
+      "bytes": 120101
+    },
+    "论文草稿_KF预测补偿.v7.pdf": {
+      "sha256": "645424be44dac5eaa32b661d879a7e1f6572a26ffb213f72baaf5d21f9fc768f",
+      "bytes": 1955662
+    },
+    "README_v7.md": {
+      "sha256": "802aa2d1300d7a26aaa70cb7ea933be9a23a3af0ad9949832d48a0994ed471b9",
+      "bytes": 3565
+    },
+    "figures/v7/fig01_empirical_selection.pdf": {
+      "sha256": "29e2323dcd5b24ae743417108c4e5cc234cbac86a558d731daaf231dbe8a8581",
+      "bytes": 23636
+    },
+    "figures/v7/fig02_empirical_test.pdf": {
+      "sha256": "f7207f54623f53f363ffdb391ce81a6e1fdb9c6ae21de8eb17bc176882c22183",
+      "bytes": 24016
+    },
+    "figures/v7/fig03_empirical_geometry.pdf": {
+      "sha256": "21c6e02790c62faf8888e5dbc7a7de1ddc431bbe5993a959a5de31fde7485412",
+      "bytes": 19546
+    },
+    "figures/v7/fig04_kf_prediction.pdf": {
+      "sha256": "929579a877c537624a17350125a0f06056dd10403d438bf3d9b78b5ef1080d7e",
+      "bytes": 21376
+    },
+    "figures/v7/fig05_kf_input_response.pdf": {
+      "sha256": "e412078d6dbff91b6d9295925f4c1da521ad97ea6608af279abf57429152748f",
+      "bytes": 47981
+    },
+    "figures/v7/fig1_input_mechanism.png": {
+      "sha256": "e855130adc98445568167d18b5e620d6b3cee9f3aec81fe3cf4840f7cc4ce455",
+      "bytes": 374577
+    },
+    "figures/v7/intervention-timeline.png": {
+      "sha256": "2ef047c7be61d61c67ed0ebbf618aa209eed8ef4ee355844415c629daa8056e0",
+      "bytes": 52415
+    },
+    "figures/v7/kf-performance-summary.png": {
+      "sha256": "eded574034617c97ddbe11a1e411a205e548f7d27412bbc07a114540ba074020",
+      "bytes": 397322
+    },
+    "figures/v7/kf-prediction-error-v4.pdf": {
+      "sha256": "c93c43cbbf8a2778d6d164cf7a452e693a58f34bbdbc7c8505913077a1da6567",
+      "bytes": 21240
+    },
+    "figures/v7/kf-uncertainty-diagnostics.png": {
+      "sha256": "cd68c1fea9a841abc8ab908ff4940301190e2d6446c6fd7fec231191d2b6922b",
+      "bytes": 301969
+    },
+    "figures/v7/kf-versus-hold.png": {
+      "sha256": "93dcaa96bae345d87a1d1d01fed8bf48a4ae58f39d4de65a26d32efd5a1356c2",
+      "bytes": 285158
+    },
+    "figures/v7/relative-degradation.png": {
+      "sha256": "592e6aa70799a4dd4f51f5cda68e78d14d9ce43a454ede48e45ca9850eea18da",
+      "bytes": 400899
+    },
+    "figures/v7/relative-degradation-layout.pdf": {
+      "sha256": "29c3acd9dbbae796e4b1ff998f28274f3327c063d6987f39f64bd5bb422f1d23",
+      "bytes": 34938
+    }
+  },
+  "evidence": "Editorial restructuring and frozen-data verification; original experiment evidence levels and parameters retained.",
+  "challenge2": "Full layered validation remains a subsequent experiment task; existing diagnostic results and complete design are retained.",
+  "challenge3": "Further conditional-boundary experiments follow challenge2 completion and a frozen prediction configuration.",
+  "review_directory": "reviews/paper-v7-structure-20261020",
+  "previous_review_directory": "reviews/paper-v7-title-20261020",
+  "latest_revision": "Three matching challenges, contributions, method sections and experiment groups; existing results precede future designs; detailed theory preserved in Appendix B; one turn figure redrawn for layout.",
+  "labels": 117
+}

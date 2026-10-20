@@ -1,0 +1,171 @@
+{
+  "version": "v7",
+  "published_date": "2026-10-20",
+  "intended_branch": "YCwork",
+  "source": "paper/论文初稿_KF预测补偿.v7.tex",
+  "pdf": "paper/论文草稿_KF预测补偿.v7.pdf",
+  "pages": 35,
+  "referenced_figures": 12,
+  "labels": 117,
+  "base_commit": "f9c0817309758be83eb9fd6d50d5d9f0cdaf946b",
+  "package_files": [
+    {
+      "path": "paper/论文初稿_KF预测补偿.v7.tex",
+      "local_sha256": "4e9e2a3f3f62573d4a8b30b8322fa854c53a7f7ab16b85ff6eae14fc796132df",
+      "git_content_sha256": "2aca721b51ed6bcb2e8a6f94c5ca8b924d3cf9f76087d5fa88f3587f00d9816c",
+      "git_blob": "04148896595d69602b3716647e6a2568a1bc0048",
+      "local_bytes": 120101,
+      "git_bytes": 118415
+    },
+    {
+      "path": "paper/论文草稿_KF预测补偿.v7.pdf",
+      "local_sha256": "645424be44dac5eaa32b661d879a7e1f6572a26ffb213f72baaf5d21f9fc768f",
+      "git_content_sha256": "645424be44dac5eaa32b661d879a7e1f6572a26ffb213f72baaf5d21f9fc768f",
+      "git_blob": "b0eef49734a0d523ceda5be676de1f9d9f8922c2",
+      "local_bytes": 1955662,
+      "git_bytes": 1955662
+    },
+    {
+      "path": "paper/README_v7.md",
+      "local_sha256": "802aa2d1300d7a26aaa70cb7ea933be9a23a3af0ad9949832d48a0994ed471b9",
+      "git_content_sha256": "802aa2d1300d7a26aaa70cb7ea933be9a23a3af0ad9949832d48a0994ed471b9",
+      "git_blob": "12fe94b94138d704ea8ab9b9c47584502f49dde5",
+      "local_bytes": 3565,
+      "git_bytes": 3565
+    },
+    {
+      "path": "paper/figures/v7/fig01_empirical_selection.pdf",
+      "local_sha256": "29e2323dcd5b24ae743417108c4e5cc234cbac86a558d731daaf231dbe8a8581",
+      "git_content_sha256": "29e2323dcd5b24ae743417108c4e5cc234cbac86a558d731daaf231dbe8a8581",
+      "git_blob": "66be12d3d2a0629b2c5126896bab335e70959363",
+      "local_bytes": 23636,
+      "git_bytes": 23636
+    },
+    {
+      "path": "paper/figures/v7/fig02_empirical_test.pdf",
+      "local_sha256": "f7207f54623f53f363ffdb391ce81a6e1fdb9c6ae21de8eb17bc176882c22183",
+      "git_content_sha256": "f7207f54623f53f363ffdb391ce81a6e1fdb9c6ae21de8eb17bc176882c22183",
+      "git_blob": "9d525064df2c549c93550e2efffdf97c91e75b6b",
+      "local_bytes": 24016,
+      "git_bytes": 24016
+    },
+    {
+      "path": "paper/figures/v7/fig03_empirical_geometry.pdf",
+      "local_sha256": "21c6e02790c62faf8888e5dbc7a7de1ddc431bbe5993a959a5de31fde7485412",
+      "git_content_sha256": "21c6e02790c62faf8888e5dbc7a7de1ddc431bbe5993a959a5de31fde7485412",
+      "git_blob": "b77a73295ef6014f8c3a5370869affcc2a75aaa1",
+      "local_bytes": 19546,
+      "git_bytes": 19546
+    },
+    {
+      "path": "paper/figures/v7/fig04_kf_prediction.pdf",
+      "local_sha256": "929579a877c537624a17350125a0f06056dd10403d438bf3d9b78b5ef1080d7e",
+      "git_content_sha256": "929579a877c537624a17350125a0f06056dd10403d438bf3d9b78b5ef1080d7e",
+      "git_blob": "494cb4912741d10b882cf04a57dc0e9fcdbc29c6",
+      "local_bytes": 21376,
+      "git_bytes": 21376
+    },
+    {
+      "path": "paper/figures/v7/fig05_kf_input_response.pdf",
+      "local_sha256": "e412078d6dbff91b6d9295925f4c1da521ad97ea6608af279abf57429152748f",
+      "git_content_sha256": "e412078d6dbff91b6d9295925f4c1da521ad97ea6608af279abf57429152748f",
+      "git_blob": "9394b7ec44fc638f794c4d98501e77db22b3135c",
+      "local_bytes": 47981,
+      "git_bytes": 47981
+    },
+    {
+      "path": "paper/figures/v7/fig1_input_mechanism.png",
+      "local_sha256": "e855130adc98445568167d18b5e620d6b3cee9f3aec81fe3cf4840f7cc4ce455",
+      "git_content_sha256": "e855130adc98445568167d18b5e620d6b3cee9f3aec81fe3cf4840f7cc4ce455",
+      "git_blob": "1ac0bc47eeddb1b88c19f5a012ae12c86c3eba76",
+      "local_bytes": 374577,
+      "git_bytes": 374577
+    },
+    {
+      "path": "paper/figures/v7/intervention-timeline.png",
+      "local_sha256": "2ef047c7be61d61c67ed0ebbf618aa209eed8ef4ee355844415c629daa8056e0",
+      "git_content_sha256": "2ef047c7be61d61c67ed0ebbf618aa209eed8ef4ee355844415c629daa8056e0",
+      "git_blob": "8756b5d04aaa506d31734ccb699d8d761e7491be",
+      "local_bytes": 52415,
+      "git_bytes": 52415
+    },
+    {
+      "path": "paper/figures/v7/kf-performance-summary.png",
+      "local_sha256": "eded574034617c97ddbe11a1e411a205e548f7d27412bbc07a114540ba074020",
+      "git_content_sha256": "eded574034617c97ddbe11a1e411a205e548f7d27412bbc07a114540ba074020",
+      "git_blob": "0144b1e051eac0d461f426e854d4adb82b9d4b1e",
+      "local_bytes": 397322,
+      "git_bytes": 397322
+    },
+    {
+      "path": "paper/figures/v7/kf-prediction-error-v4.pdf",
+      "local_sha256": "c93c43cbbf8a2778d6d164cf7a452e693a58f34bbdbc7c8505913077a1da6567",
+      "git_content_sha256": "c93c43cbbf8a2778d6d164cf7a452e693a58f34bbdbc7c8505913077a1da6567",
+      "git_blob": "3d52e43783fe5abd34939f596abcccb5c6d35651",
+      "local_bytes": 21240,
+      "git_bytes": 21240
+    },
+    {
+      "path": "paper/figures/v7/kf-uncertainty-diagnostics.png",
+      "local_sha256": "cd68c1fea9a841abc8ab908ff4940301190e2d6446c6fd7fec231191d2b6922b",
+      "git_content_sha256": "cd68c1fea9a841abc8ab908ff4940301190e2d6446c6fd7fec231191d2b6922b",
+      "git_blob": "e801191acd8c01799d914d056e9b084f708b068b",
+      "local_bytes": 301969,
+      "git_bytes": 301969
+    },
+    {
+      "path": "paper/figures/v7/kf-versus-hold.png",
+      "local_sha256": "93dcaa96bae345d87a1d1d01fed8bf48a4ae58f39d4de65a26d32efd5a1356c2",
+      "git_content_sha256": "93dcaa96bae345d87a1d1d01fed8bf48a4ae58f39d4de65a26d32efd5a1356c2",
+      "git_blob": "87aa17c993ab12c16feccda1d4619e325154ac7f",
+      "local_bytes": 285158,
+      "git_bytes": 285158
+    },
+    {
+      "path": "paper/figures/v7/relative-degradation.png",
+      "local_sha256": "592e6aa70799a4dd4f51f5cda68e78d14d9ce43a454ede48e45ca9850eea18da",
+      "git_content_sha256": "592e6aa70799a4dd4f51f5cda68e78d14d9ce43a454ede48e45ca9850eea18da",
+      "git_blob": "fa200dfcd76651f7ec4d42dd7888ff92a9f0028e",
+      "local_bytes": 400899,
+      "git_bytes": 400899
+    },
+    {
+      "path": "paper/figures/v7/relative-degradation-layout.pdf",
+      "local_sha256": "29c3acd9dbbae796e4b1ff998f28274f3327c063d6987f39f64bd5bb422f1d23",
+      "git_content_sha256": "29c3acd9dbbae796e4b1ff998f28274f3327c063d6987f39f64bd5bb422f1d23",
+      "git_blob": "322642ea67f50529758d00f256a7ea8008876c4a",
+      "local_bytes": 34938,
+      "git_bytes": 34938
+    },
+    {
+      "path": "paper/v7_revision_manifest.json",
+      "local_sha256": "a11ff27248b479b608d4fd8145f93b403ea3665f9230f316eba68d4c52934584",
+      "git_content_sha256": "a61b337dd3aa17b0b0465ad8b055a96c348b493970e49f23c92bc8ca4f8cc773",
+      "git_blob": "804e6ad8a5a249c80f1cc925d538c4cb692144c1",
+      "local_bytes": 3614,
+      "git_bytes": 3533
+    },
+    {
+      "path": "paper/figures/v7/.gitattributes",
+      "local_sha256": "9618185d97a7b73972851bc179ac276080c298f79adbc1847951e647f4254c27",
+      "git_content_sha256": "9618185d97a7b73972851bc179ac276080c298f79adbc1847951e647f4254c27",
+      "git_blob": "e08b3c97f53bcefcd2a00991c8afdbddbea0ae00",
+      "local_bytes": 26,
+      "git_bytes": 26
+    }
+  ],
+  "review": {
+    "source_sha256": "4e9e2a3f3f62573d4a8b30b8322fa854c53a7f7ab16b85ff6eae14fc796132df",
+    "pdf_sha256": "645424be44dac5eaa32b661d879a7e1f6572a26ffb213f72baaf5d21f9fc768f",
+    "compiled_and_visually_reviewed_pages": 35,
+    "verification": "Frozen statistics and 224 protected files verified in the source revision."
+  },
+  "evidence": "Artifact publication; existing scientific data, parameters, and evidence levels retained.",
+  "research_progress": {
+    "challenge2": "Full layered validation remains a subsequent experiment task; existing diagnostic results and complete design are retained.",
+    "challenge3": "Further conditional-boundary experiments follow challenge2 completion and a frozen prediction configuration."
+  },
+  "notes": "README and revision manifest preserve the preceding local revision record; this manifest records the YCwork publication package.",
+  "rollback": "Revert this publication commit on YCwork; preserve shared history.",
+  "binary_attributes": "paper/figures/v7/.gitattributes preserves PDF and PNG bytes on checkout"
+}
