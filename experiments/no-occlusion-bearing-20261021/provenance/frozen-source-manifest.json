@@ -1,0 +1,107 @@
+[
+  {
+    "file": "matlab/bearingIMMClosedLoopControllerStep.m",
+    "sha256": "851e8b8f7571ae38645f11232c79133325852518b3a89e614c8962ae10ec79e9",
+    "source": "validation64/source-snapshot/bearingIMMClosedLoopControllerStep.m"
+  },
+  {
+    "file": "matlab/bearingIMMClosedLoopInputStep.m",
+    "sha256": "937210060d75b5af0db725983d1ca330baf70b7d405d4e0d614e7a4e54e0eb17",
+    "source": "validation64/source-snapshot/bearingIMMClosedLoopInputStep.m"
+  },
+  {
+    "file": "matlab/bearingIMMTrackStep.m",
+    "sha256": "16f4cce777fb14d93b7836605d462d5ae5e68259bbcacff616130aa9020c2f3d",
+    "source": "validation64/source-snapshot/bearingIMMTrackStep.m"
+  },
+  {
+    "file": "matlab/buildRingConnectivity.m",
+    "sha256": "d0ae1f35a77fd9603b7cf975686e297317d66d884fe902ec8a2205d699bab85e",
+    "source": "validation64/source-snapshot/buildRingConnectivity.m"
+  },
+  {
+    "file": "matlab/defaultEffectiveInputConfig.m",
+    "sha256": "0f20c15232a8064781260c954d9f7ae7109c3125434e136a77d6c08920d996c7",
+    "source": "validation64/source-snapshot/defaultEffectiveInputConfig.m"
+  },
+  {
+    "file": "matlab/drawNonGaussianBearingNoise.m",
+    "sha256": "f5742fc59df9cd80a559e916e63f986056b971f36904335b17bd617ccce0fb8f",
+    "source": "validation64/source-snapshot/drawNonGaussianBearingNoise.m"
+  },
+  {
+    "file": "matlab/noisyBearingKFControllerStep.m",
+    "sha256": "ea34faf5af89614fdad9c39af9b3542d46335eaf346dc06c85406c68e61f90b6",
+    "source": "validation64/source-snapshot/noisyBearingKFControllerStep.m"
+  },
+  {
+    "file": "matlab/noisyBearingKFPilotInputStep.m",
+    "sha256": "33f5c3351f6f74e2b6aa01c6a5832c406d6d6da3738fe2926197d2342bb6becb",
+    "source": "validation64/source-snapshot/noisyBearingKFPilotInputStep.m"
+  },
+  {
+    "file": "matlab/nonGaussianBearingKFPilotInputStep.m",
+    "sha256": "f118ddf1e8c6b8d394a49225b14b11d890063792200c2d0ab160ad782c8f69d6",
+    "source": "validation64/source-snapshot/nonGaussianBearingKFPilotInputStep.m"
+  },
+  {
+    "file": "matlab/oracleBearingDiagnosticInputStep.m",
+    "sha256": "f05165b3a9042870f24679a9639ca8a63ed1a9d7fd71c0dcf7e67fb2af263a80",
+    "source": "validation64/source-snapshot/oracleBearingDiagnosticInputStep.m"
+  },
+  {
+    "file": "archive/matlab/prepareNonGaussianFourGroupValidation.m",
+    "sha256": "c69e991b5775d6515763dcb720cda500700879b2d7d0d40af13041f93b471ba0",
+    "source": "validation64/source-snapshot/prepareNonGaussianFourGroupValidation.m"
+  },
+  {
+    "file": "archive/matlab/runBearingIMMClosedLoopPilot.m",
+    "sha256": "35f6dbf80bb1724fca57e4a5ff16f2a0b6a7572c3cc36b0e0010bd07b957f1f9",
+    "source": "validation64/source-snapshot/runBearingIMMClosedLoopPilot.m"
+  },
+  {
+    "file": "archive/matlab/runNonGaussianFourGroupValidation.m",
+    "sha256": "aab7cf02eba5e11d8936330382ff1cf0e6ab8015afe6650261d6a62f3a93b9c2",
+    "source": "validation64/source-snapshot/runNonGaussianFourGroupValidation.m"
+  },
+  {
+    "file": "matlab/simulateBearingIMMClosedLoopPilot.m",
+    "sha256": "b2cd72c37d83a04961b260aa7c01135ad76a2a4345eae9eb884cef99f82df19f",
+    "source": "validation64/source-snapshot/simulateBearingIMMClosedLoopPilot.m"
+  },
+  {
+    "file": "matlab/simulateEffectiveSocialInput.m",
+    "sha256": "d9efc5b03457c463e64ac4212ad9a7dc919cb15028b3816eece2fd9d5d2077c4",
+    "source": "validation64/source-snapshot/simulateEffectiveSocialInput.m"
+  },
+  {
+    "file": "matlab/simulateNoisyBearingKFPilot.m",
+    "sha256": "77fc741cd42c131da14d7ee5429c3f6f7d690cad29cf0c4d43faf312fa956cc5",
+    "source": "validation64/source-snapshot/simulateNoisyBearingKFPilot.m"
+  },
+  {
+    "file": "matlab/simulateNonGaussianBearingKFPilot.m",
+    "sha256": "70c0daf19876749d79713320754238edd29d2c198c28c609b67b34c72a58ddfc",
+    "source": "validation64/source-snapshot/simulateNonGaussianBearingKFPilot.m"
+  },
+  {
+    "file": "matlab/simulateOracleBearingDiagnostic.m",
+    "sha256": "9ac538cec2de57f42a95c827454b7cfcdcf4bd1165d0020713c932f89c1ab098",
+    "source": "validation64/source-snapshot/simulateOracleBearingDiagnostic.m"
+  },
+  {
+    "file": "matlab/task3BatchTrack.m",
+    "sha256": "be60571894fb63134e9a02ff6019b28c647d4cbd058304269bb2d14694a897e9",
+    "source": "validation64/source-snapshot/task3BatchTrack.m"
+  },
+  {
+    "file": "matlab/task3DefaultConfig.m",
+    "sha256": "b08f8fb69b4b81b6a4425bc4525eedf265285320fd04bfd1ccf5a2a1b8d74544",
+    "source": "validation64/source-snapshot/task3DefaultConfig.m"
+  },
+  {
+    "file": "matlab/testBearingIMMClosedLoop.m",
+    "sha256": "6e1a9003f2baf116faece9d37a2040b6555dfe18f54ccd5c71144f27d9e755ae",
+    "source": "validation64/source-snapshot/testBearingIMMClosedLoop.m"
+  }
+]

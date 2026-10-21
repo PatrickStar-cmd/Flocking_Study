@@ -1,0 +1,55 @@
+{
+  "kf": {
+    "status": "PASS",
+    "zeroNoiseLegacyExact": true,
+    "truthIsolation": true,
+    "pairedInitialization": true,
+    "pairedSelection": true,
+    "pairedNoise": true,
+    "wrappedInnovation": true,
+    "covariancePSD": true
+  },
+  "nonGaussian": {
+    "status": "PASS",
+    "baseGaussianContracts": {
+      "status": "PASS",
+      "zeroNoiseLegacyExact": true,
+      "truthIsolation": true,
+      "pairedInitialization": true,
+      "pairedSelection": true,
+      "pairedNoise": true,
+      "wrappedInnovation": true,
+      "covariancePSD": true
+    },
+    "pZeroExactGaussianReduction": true,
+    "mixturePairing": true,
+    "empiricalUnitMean": 9.1407528383964757E-5,
+    "empiricalUnitVariance": 0.995827858695148,
+    "empiricalOutlierFraction": 0.04991,
+    "empiricalKurtosis": 35.583016303697462,
+    "theoreticalKurtosis": 35.839744520249667
+  },
+  "immTrack": {
+    "status": "PASS",
+    "identicalModelMaxDifference": 3.5527136788005009E-15,
+    "rotationMaxDifference": 7.4384942649885488E-15,
+    "minimumCovarianceDeterminant": 4.1705913742152605E-6,
+    "minimumVariance": 0.0026322986962265386,
+    "missingOnlyPriorTransition": true,
+    "noMeasurementNoInitialization": true,
+    "jumpLikelihoodFinite": true,
+    "controllerSignatureContainsNoTruthOrRange": true
+  },
+  "closedLoop": {
+    "status": "PASS",
+    "gaussianRawTrajectoryExact": true,
+    "mixtureRawTrajectoryExact": true,
+    "pairedInitializationSelectionNoiseAndLabels": true,
+    "truthPositionLabelIsolation": true,
+    "sameModelFieldMaxDifference": 0,
+    "observationHistoriesSameFreshMask": true
+  },
+  "oracleEqualsZeroNoiseRaw": true,
+  "status": "PASS",
+  "evidence": "software checks only"
+}

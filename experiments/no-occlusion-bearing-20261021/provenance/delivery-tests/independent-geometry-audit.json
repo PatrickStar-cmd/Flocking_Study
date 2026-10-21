@@ -1,0 +1,89 @@
+{
+  "status": "PASS",
+  "evidence": "independent geometry/software check; inference depends on run profile",
+  "uniqueMATFiles": 13,
+  "conditionRows": 16,
+  "maxIndependentMetricError": 2.220446049250313e-14,
+  "hashesAndRecomputedMetrics": {
+    "runs/seed-6299-oracle.mat": {
+      "meanGO": 0.13012201474006363,
+      "meanPairDistanceNorm": 0.38162856277196555,
+      "meanSpeed": 1.589920177125563,
+      "sha256": "ab6e29fe5564b5e39f7c30aa8736fc75261c1b8f1e84b8bf8628c6cd885faeb9"
+    },
+    "runs/gaussian-seed-6299-std-010-raw.mat": {
+      "meanGO": 0.12927042883879905,
+      "meanPairDistanceNorm": 0.3816099405850277,
+      "meanSpeed": 1.589922571835155,
+      "sha256": "0fe71503c979e1ba40521d086c55b0a43904354bfd852822ee3706a103a7ab85"
+    },
+    "runs/gaussian-seed-6299-std-010-selected-kf.mat": {
+      "meanGO": 0.12974339142569574,
+      "meanPairDistanceNorm": 0.3816142265594681,
+      "meanSpeed": 1.589922108148035,
+      "sha256": "1776ae3a6ac5239c801e89af98e1ff7ed26da8396efc8d5ca72581e075105e29"
+    },
+    "runs/gaussian-seed-6299-std-010-imm.mat": {
+      "meanGO": 0.1302312582966242,
+      "meanPairDistanceNorm": 0.38161955127468766,
+      "meanSpeed": 1.5899249148423389,
+      "sha256": "7a5c08d27dd965e0ab53d8a0c4bf4c4c6d702d2da2039dcb300193f2a68759f4"
+    },
+    "runs/gaussian-seed-6299-std-100-raw.mat": {
+      "meanGO": 0.12714679510300825,
+      "meanPairDistanceNorm": 0.38154158144236894,
+      "meanSpeed": 1.5900830011112561,
+      "sha256": "d3a1a819e26584bd3d6e4cf31820044e55e04e1428267cad58d52d96f91398aa"
+    },
+    "runs/gaussian-seed-6299-std-100-selected-kf.mat": {
+      "meanGO": 0.1241499399226826,
+      "meanPairDistanceNorm": 0.38153599387472037,
+      "meanSpeed": 1.5900629053292321,
+      "sha256": "eb7f59172ae87c9227cd76fa17285bcb63ccccbbfec40bcb5862b28c1e8b77c0"
+    },
+    "runs/gaussian-seed-6299-std-100-imm.mat": {
+      "meanGO": 0.12585546661592475,
+      "meanPairDistanceNorm": 0.38155270096699545,
+      "meanSpeed": 1.5900226249819773,
+      "sha256": "949c9a7b512420296240a259523c3a1c3d7c2d5e2e5365ea166d54f40536bf94"
+    },
+    "runs/mixture-seed-6299-std-010-raw.mat": {
+      "meanGO": 0.12693399897902405,
+      "meanPairDistanceNorm": 0.38162636722236876,
+      "meanSpeed": 1.5899233851271795,
+      "sha256": "b9065438af6d77999fdcf7384d2ff244453c6e1a4b04258d20b370825a3417fc"
+    },
+    "runs/mixture-seed-6299-std-010-selected-kf.mat": {
+      "meanGO": 0.1269713057614316,
+      "meanPairDistanceNorm": 0.38162669144125333,
+      "meanSpeed": 1.5899243556527234,
+      "sha256": "af9f7d367c7f9715815fc157c9d4bec0f1b11514160a118219b91e5bfe31ea09"
+    },
+    "runs/mixture-seed-6299-std-010-imm.mat": {
+      "meanGO": 0.12722615676548593,
+      "meanPairDistanceNorm": 0.38162789149325393,
+      "meanSpeed": 1.589920582327855,
+      "sha256": "8972763037f4822aba1f0f146bbf12ddde901b7e254cc22417adddeb6c01a461"
+    },
+    "runs/mixture-seed-6299-std-100-raw.mat": {
+      "meanGO": 0.13293416348348297,
+      "meanPairDistanceNorm": 0.3815484254625185,
+      "meanSpeed": 1.5899851746554097,
+      "sha256": "dcd4db9649b737c59de02e752a3b6ec6ae45167f5f1418e8d6b64dbba7bb80bb"
+    },
+    "runs/mixture-seed-6299-std-100-selected-kf.mat": {
+      "meanGO": 0.1309149211891151,
+      "meanPairDistanceNorm": 0.3815281305643406,
+      "meanSpeed": 1.5899850424436375,
+      "sha256": "b662c90cfff725678c41a1db635ec7da3d1f444148d855443fbe037a2ed877a6"
+    },
+    "runs/mixture-seed-6299-std-100-imm.mat": {
+      "meanGO": 0.1304397032875583,
+      "meanPairDistanceNorm": 0.38152433192360385,
+      "meanSpeed": 1.5899893720998528,
+      "sha256": "b2858d653cff3d980eca9895d9aa5da322798de1a9718e22cf6473a140a3bd15"
+    }
+  },
+  "inference": "six GO comparisons per distribution/sigma, Bonferroni simultaneous95 intervals and Holm6; no inference at n1",
+  "warning": "pilot/validation64 profiles reuse archived seeds; smoke is not scientific evidence"
+}

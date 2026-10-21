@@ -1,0 +1,19 @@
+{
+  "coverage": "11/11 reviewed",
+  "status": "PROTOCOL_REVIEWED_BEFORE_FINAL_EFFECT_ANALYSIS",
+  "checks": {
+    "Simpson": "One fixed noise condition; methods kept separate; no pooling across different conditions.",
+    "Ecological": "Inference concerns seed-level simulated groups, not individual animal biology or independent edges.",
+    "Berkson": "All64 prespecified seeds retained; conclusions restricted to the pilot-selected condition.",
+    "Collider": "No adjustment or exclusion using post-treatment GO, RMSE, geometry or cohesion.",
+    "BaseRate": "No diagnostic-classification or universal success-probability claim.",
+    "RegressionToMean": "Earlier6 seeds selected the promising condition; independent new seeds alone determine formal inference; do not merge old data.",
+    "Survivorship": "Require all256 trajectories and64 four-arm markers, with all failures retained.",
+    "LookElsewhere": "Report all six contrasts, Holm6 p and Bonferroni simultaneous intervals; secondary metrics descriptive.",
+    "ForkingPaths": "Sample size, seeds, parameters, endpoints, contrasts and margins frozen before new outcomes; no effect-based stopping.",
+    "CorrelationCausation": "Paired intervention estimates a total policy effect in this model; does not identify error mediation or neural-denoising mechanism.",
+    "ReverseCausality": "Closed-loop trajectories affect subsequent bearings and errors; lower own-trajectory RMSE is not assumed to cause higher GO."
+  },
+  "uncertainty": "Paired t intervals assume suitable seed-level mean behavior; paired bootstrap is sensitivity analysis, not a guarantee. Practical margin0.05 is operational, not biological.",
+  "newScientificEffectStatisticsInspected": false
+}

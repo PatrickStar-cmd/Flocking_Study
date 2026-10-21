@@ -1,0 +1,12 @@
+{
+  "status": "PASS",
+  "gaussianRawTrajectoryExact": true,
+  "mixtureRawTrajectoryExact": true,
+  "pairedInitializationSelectionNoiseAndLabels": true,
+  "truthPositionLabelIsolation": true,
+  "sameModelFieldMaxDifference": 0,
+  "observationHistoriesSameFreshMask": true,
+  "oracleZeroNoiseExact": true,
+  "oracleNoFilterState": true,
+  "fullArchived8000StepMixtureRawExact": true
+}

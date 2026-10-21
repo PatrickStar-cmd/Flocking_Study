@@ -1,0 +1,97 @@
+{
+  "status": "PASS",
+  "date": "2026-10-21",
+  "scienceRuns": 256,
+  "seeds": 64,
+  "excluded": 0,
+  "newSeedOnly": true,
+  "old6201to6206NotPooled": true,
+  "frozenParametersAndAnalysis": true,
+  "newCodeFiles": [
+    {
+      "path": "effective-social-input/prepareNonGaussianFourGroupValidation.m",
+      "SHA256": "c69e991b5775d6515763dcb720cda500700879b2d7d0d40af13041f93b471ba0",
+      "whitespace": "PASS"
+    },
+    {
+      "path": "effective-social-input/runNonGaussianFourGroupValidation.m",
+      "SHA256": "aab7cf02eba5e11d8936330382ff1cf0e6ab8015afe6650261d6a62f3a93b9c2",
+      "whitespace": "PASS"
+    },
+    {
+      "path": "handoff/analyzeNonGaussianFourGroupValidation.py",
+      "SHA256": "4440fac8af08c7977e7f898076d3e13de61ddbff8290b9b5ffb72c4078c6bbaa",
+      "whitespace": "PASS"
+    },
+    {
+      "path": "handoff/non-gaussian-four-group-validation-20261021-plan.md",
+      "SHA256": "6cd9ddb2a7656cbb32f62ee9b152ad1551dfde1239aca70d6d7d0b16860cd1b8",
+      "whitespace": "PASS"
+    },
+    {
+      "path": "handoff/plotNonGaussianValidationSummary.py",
+      "SHA256": "086d4923bff0aa1bbe9f6b14fdaefa17cdaa78cc23bec9fcd454799ec3df8d2d",
+      "whitespace": "PASS"
+    }
+  ],
+  "protectedTrackedHashesUnchanged": true,
+  "snapshotHashesVerified": true,
+  "nativePowerShellMeanAndSDMaxDifference": 3.885780586188048e-16,
+  "maxIndependentMetricErrors": {
+    "GO": 3.33510996597397e-13,
+    "LO": 3.930189507173054e-14,
+    "distance": 7.216449660063518e-16,
+    "speed": 9.992007221626409e-14,
+    "observedAngleStepRMSE": 2.8392316870752246e-16,
+    "usedAngleStepRMSE": 2.8392316870752246e-16,
+    "archivedInputField": 8.326672684688674e-17,
+    "archivedInputRMS": 9.75781955236954e-19,
+    "generatedNoise": 0.0
+  },
+  "filterStateReplay": [
+    {
+      "seed": 73001,
+      "method": "selected-kf",
+      "steps": 8000,
+      "maxAngleError": 1.7763568394002505e-15,
+      "maxProbabilityError": 0.0
+    },
+    {
+      "seed": 73001,
+      "method": "imm",
+      "steps": 8000,
+      "maxAngleError": 8.43769498715119e-15,
+      "maxProbabilityError": 7.845946115025981e-13
+    },
+    {
+      "seed": 73064,
+      "method": "selected-kf",
+      "steps": 8000,
+      "maxAngleError": 1.7763568394002505e-15,
+      "maxProbabilityError": 0.0
+    },
+    {
+      "seed": 73064,
+      "method": "imm",
+      "steps": 8000,
+      "maxAngleError": 1.3100631690576847e-14,
+      "maxProbabilityError": 8.710809851208978e-13
+    }
+  ],
+  "independentFigures": 72,
+  "presentationFigures": 1,
+  "originalFiguresRetained": true,
+  "presentationChange": "Legend moved outside axes in separately saved figure; statistics unchanged.",
+  "branch": "exp/non-gaussian-four-group-validation-v1",
+  "HEAD": "f8b73cf8502b78e1ba432a4b38a3a011e9001bce",
+  "trackedDiffNumstat": "1\t0\teffective-social-input/defaultEffectiveInputConfig.m\n22\t4\teffective-social-input/scheduledOcclusionInput.m\n70\t21\teffective-social-input/simulateEffectiveSocialInput.m\n75\t3\teffective-social-input/task3BatchInputStep.m",
+  "commitPushMerge": false,
+  "evidence": "conditional new-seed independent validation; pilot-selected condition, not across-parameter confirmation",
+  "limitations": [
+    "Fixed N20/k15/neural parameters/periodic arena/no explicit occlusion",
+    "No equivalence or confirmed direction between groups",
+    "Small GO benefits remain possible; current CI excludes gains>=0.10 for KF/IMM vs raw",
+    "No neural-mechanism identification; own-geometry RMSE is not pure estimator causal effect"
+  ],
+  "recommendation": "Keep experimental branch; do not replace main algorithm based on this study. Review code before integration. Revert only new implementation, keep all data."
+}

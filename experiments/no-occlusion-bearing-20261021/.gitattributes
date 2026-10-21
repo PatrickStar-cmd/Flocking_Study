@@ -1,0 +1,3 @@
+# Preserve archived source bytes so SHA256 verification is portable.
+* -text whitespace=blank-at-eol,space-before-tab,cr-at-eol,-blank-at-eof
+# Original archives retain their final blank lines for provenance hashes.

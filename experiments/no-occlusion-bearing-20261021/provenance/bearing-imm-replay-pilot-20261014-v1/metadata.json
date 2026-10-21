@@ -1,0 +1,78 @@
+{
+  "date": "2026-10-14",
+  "schema": "bearing-imm-replay-pilot-v1",
+  "matlabVersion": "25.1.0.2943329 (R2025a)",
+  "branch": "exp/bearing-imm-replay-pilot-v1",
+  "sourceCommit": "f8b73cf8502b78e1ba432a4b38a3a011e9001bce",
+  "developmentSeeds": [
+    5101,
+    5102,
+    5103,
+    5104,
+    5105,
+    5106
+  ],
+  "validationSeeds": [
+    6101,
+    6102,
+    6103,
+    6104,
+    6105,
+    6106
+  ],
+  "noiseStd": [
+    0.01,
+    0.1
+  ],
+  "distributions": [
+    "gaussian",
+    "mixture"
+  ],
+  "highQGrid": [
+    0.01,
+    0.1,
+    1,
+    10
+  ],
+  "lowQ": 0.0001,
+  "transitionPerModelStep": [
+    [
+      0.98,
+      0.02
+    ],
+    [
+      0.1,
+      0.9
+    ]
+  ],
+  "sourceHashes": {
+    "defaultEffectiveInputConfig_m": "0f20c15232a8064781260c954d9f7ae7109c3125434e136a77d6c08920d996c7",
+    "task3DefaultConfig_m": "b08f8fb69b4b81b6a4425bc4525eedf265285320fd04bfd1ccf5a2a1b8d74544",
+    "buildRingConnectivity_m": "d0ae1f35a77fd9603b7cf975686e297317d66d884fe902ec8a2205d699bab85e",
+    "simulateEffectiveSocialInput_m": "d9efc5b03457c463e64ac4212ad9a7dc919cb15028b3816eece2fd9d5d2077c4",
+    "task3BatchTrack_m": "be60571894fb63134e9a02ff6019b28c647d4cbd058304269bb2d14694a897e9",
+    "simulateNoisyBearingKFPilot_m": "77fc741cd42c131da14d7ee5429c3f6f7d690cad29cf0c4d43faf312fa956cc5",
+    "noisyBearingKFPilotInputStep_m": "33f5c3351f6f74e2b6aa01c6a5832c406d6d6da3738fe2926197d2342bb6becb",
+    "noisyBearingKFControllerStep_m": "ea34faf5af89614fdad9c39af9b3542d46335eaf346dc06c85406c68e61f90b6",
+    "drawNonGaussianBearingNoise_m": "f5742fc59df9cd80a559e916e63f986056b971f36904335b17bd617ccce0fb8f",
+    "simulateNonGaussianBearingKFPilot_m": "70c0daf19876749d79713320754238edd29d2c198c28c609b67b34c72a58ddfc",
+    "nonGaussianBearingKFPilotInputStep_m": "f118ddf1e8c6b8d394a49225b14b11d890063792200c2d0ab160ad782c8f69d6",
+    "testNoisyBearingKFPilot_m": "6f3611b6cd1e491cd29f4c681ab87ef8c993011ef46699f29a2f30333e23d003",
+    "bearingIMMTrackStep_m": "16f4cce777fb14d93b7836605d462d5ae5e68259bbcacff616130aa9020c2f3d",
+    "testBearingIMMTrack_m": "6bfb13964141da154de989b8203e79cacf150412bcd4bd39a5684688c14281f0",
+    "buildBearingReplaySequence_m": "fcd13bebb3a225dafbba2f20756775a4752d4ac01e8513f64e7915c33a4263a8",
+    "replayBearingModels_m": "fca47fa770b199274862bf7176665d1567af056ceaceb55e5307c55a014328a6",
+    "runBearingIMMReplayPilot_m": "047dd7ef61a4b1f273aee1c234715ef9a2220f30d4a981a64fb8144103727d89"
+  },
+  "preexistingTrackedFileHashes": {
+    "defaultEffectiveInputConfig_m": "0f20c15232a8064781260c954d9f7ae7109c3125434e136a77d6c08920d996c7",
+    "scheduledOcclusionInput_m": "f323e70f0927a565c8b08388a9e5ec8fdbc56ea0f71e954faba49cec1deedd89",
+    "simulateEffectiveSocialInput_m": "d9efc5b03457c463e64ac4212ad9a7dc919cb15028b3816eece2fd9d5d2077c4",
+    "task3BatchInputStep_m": "e4ce2fbf56793c7739f7a47c25a1e1f7961e7110ee0a30600016e9210f9418d6"
+  },
+  "gaussianRoot": "effective-social-input/results/noisy-bearing-kf-pilot-20261014-v2",
+  "mixtureRoot": "effective-social-input/results/non-gaussian-bearing-kf-pilot-20261014-v1",
+  "reference": "raw-observation-controlled trajectory; identical observations for all offline estimators",
+  "primary": "IMM minus development-selected best single-Q KF RMSE in four conditions; seed paired t CI, Holm four comparisons",
+  "evidence": "development selection followed by new-seed small-sample test, not a closed-loop experiment"
+}
