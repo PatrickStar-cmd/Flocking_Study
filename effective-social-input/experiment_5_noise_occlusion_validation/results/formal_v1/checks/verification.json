@@ -1,0 +1,11 @@
+{
+  "status": "PASS",
+  "expected_runs": 160,
+  "completed_runs": 160,
+  "run_hashes": "PASS",
+  "rows_per_run": 600,
+  "blackout_windows": "PASS: three windows, nine hidden edges per follower",
+  "noise_scaling": "PASS: shared standard-normal tensor, R=sigma^2",
+  "pre_first_window_prefix": "PASS",
+  "independent_seed_count": 20
+}

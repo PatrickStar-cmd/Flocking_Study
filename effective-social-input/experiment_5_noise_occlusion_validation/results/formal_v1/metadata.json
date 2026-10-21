@@ -1,0 +1,75 @@
+{
+  "status": "COMPLETE",
+  "experiment": "Moderate observation noise and repeated short occlusion validation",
+  "n": 30,
+  "leaders": 6,
+  "followers": 24,
+  "k_neighbors": 15,
+  "hidden_edges_per_follower": 9,
+  "occlusion_windows": [
+    [
+      180,
+      200
+    ],
+    [
+      300,
+      320
+    ],
+    [
+      420,
+      440
+    ]
+  ],
+  "total_steps": 600,
+  "noise_levels": [
+    0.01,
+    0.035
+  ],
+  "R_values": [
+    0.0001,
+    0.0012250000000000002
+  ],
+  "q": 0.0001,
+  "methods": [
+    "drop",
+    "hold",
+    "kf-mean"
+  ],
+  "conditions": [
+    "tracking"
+  ],
+  "masks": [
+    "leader_loss"
+  ],
+  "seeds": [
+    2026105001,
+    2026105002,
+    2026105003,
+    2026105004,
+    2026105005,
+    2026105006,
+    2026105007,
+    2026105008,
+    2026105009,
+    2026105010,
+    2026105011,
+    2026105012,
+    2026105013,
+    2026105014,
+    2026105015,
+    2026105016,
+    2026105017,
+    2026105018,
+    2026105019,
+    2026105020
+  ],
+  "planned_runs": 160,
+  "primary_metric": "follower_target_error_deg",
+  "paired_design": "Same initial state and standard-normal observation noise tensor within each seed; noise levels differ only by scale",
+  "rng": "NumPy Generator(PCG64)",
+  "python": "3.11.8",
+  "numpy": "2.3.5",
+  "completed_runs": 160,
+  "analysis": "COMPLETE",
+  "integrity_checks": "PASS"
+}

@@ -1,0 +1,26 @@
+{
+  "status": "PASS",
+  "tested_seed": 2026105001,
+  "expected_runs": 160,
+  "n": 30,
+  "leaders": 6,
+  "hidden_edges_per_follower": 9,
+  "noise_levels": [
+    0.01,
+    0.035
+  ],
+  "R_values": [
+    0.0001,
+    0.0012250000000000002
+  ],
+  "topology_edges": 450,
+  "hidden_edges": 216,
+  "checks": [
+    "common initial state across noise levels",
+    "common standard-normal observation noise scaled by sigma",
+    "R equals sigma squared at each noise level",
+    "three 20-step windows with 100-step gaps",
+    "nine hidden edges per follower",
+    "no method differences before first blackout"
+  ]
+}

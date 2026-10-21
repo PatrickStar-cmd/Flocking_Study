@@ -1,0 +1,4 @@
+__pycache__/
+*.py[cod]
+results/formal_v1/inputs/
+results/formal_v1/runs/

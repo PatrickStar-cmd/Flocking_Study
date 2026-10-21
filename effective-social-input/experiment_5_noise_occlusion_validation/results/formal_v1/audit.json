@@ -1,0 +1,10 @@
+{
+  "status": "COMPLETE",
+  "expected_runs": 160,
+  "completed_runs": 160,
+  "failed_runs": 0,
+  "independent_seed_count": 20,
+  "preflight": "PASS",
+  "analysis": "COMPLETE",
+  "integrity_checks": "PASS"
+}
