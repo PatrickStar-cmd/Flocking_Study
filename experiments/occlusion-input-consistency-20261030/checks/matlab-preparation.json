@@ -1,0 +1,30 @@
+{
+  "status": "PASS",
+  "matlab": "24.2.0.2712019 (R2024b)",
+  "model_steps_executed": 0,
+  "model_trajectories_executed": 0,
+  "static_parse_errors": 0,
+  "aligned": [
+    1,
+    1,
+    1
+  ],
+  "opposite_local_clusters": [
+    0,
+    1,
+    0
+  ],
+  "stationary": [
+    0,
+    0,
+    0
+  ],
+  "time_pairing_check": 0,
+  "plan_only_check": true,
+  "diagnostics": {
+    "runOcclusionConsistency": [],
+    "movementConsistency": [],
+    "summarizeConsistency": [],
+    "checkPreparation": []
+  }
+}
