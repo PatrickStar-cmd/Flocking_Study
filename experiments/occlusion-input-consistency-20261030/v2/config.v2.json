@@ -1,0 +1,21 @@
+{
+  "version":"v2",
+  "date":"2026-10-30",
+  "status":"planned_not_run",
+  "physical_protocol":"../config.v1.json",
+  "physical_protocol_base_commit":"6fe205d2c6a3b7d85df48617e57e01d3836c1397",
+  "definition_source":"paper/论文初稿_KF预测补偿_v3.tex, eq:total_social_input and eq:social_factorization",
+  "social_input":"S_i=sum_j w_ij*exp(kappa*(cos(theta_ij-phi_i)-1))=n_i*mean_weight_i*C_i",
+  "kappa":1.0,
+  "reference_heading":"common checkpoint heading immediately before occlusion, frozen for every remaining-count branch",
+  "position_information":"relative bearing only",
+  "population_axis":"S0=mean_i S_i immediately after masking, before the first model update",
+  "strength_control":"A0=mean_i sum_j w_ij, stored as initialTotalStrength",
+  "coherence_outcome":"parent protocol: terminal mean of per-time min(GO,LO)",
+  "main_plot":"all primary seed-condition points against S0, plus prespecified input bins and seed-cluster bootstrap intervals",
+  "bins":{"positive_width":0.012,"maximum":0.228,"zero_input":"separate exact-zero group","pooling":"case-weighted within each input bin; all cases from each seed stay together in bootstrap"},
+  "bootstrap_repeats":10000,
+  "bootstrap_seed":2026103999,
+  "candidate_selection_note":"kappa=1 restores the early definition; optional future positive nonconstant forms are compared as scalar descriptors with seed-grouped splits; A alone is a strength baseline",
+  "models_executed":0
+}
