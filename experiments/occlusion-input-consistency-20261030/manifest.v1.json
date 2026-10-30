@@ -1,0 +1,125 @@
+{
+  "status": "prepared_not_run",
+  "date": "2026-10-30",
+  "repository": "PatrickStar-cmd/Flocking_Study",
+  "branch": "YCwork",
+  "base_commit": "6f1ee7b2e48c8e1b129343f8249b4d313697c3d1",
+  "base_tree": "1e06fcd522fc92f1bc9babb4cafa315f1aa7afbb",
+  "local_main": "1a80814c0a84e6f24510e92c945050aa8f4011c5",
+  "python": "3.12.10",
+  "model_steps_executed": 0,
+  "model_trajectories_executed": 0,
+  "input_definition": "paper v7 eq:chosen_empirical_formula, q*=1, S_i*=sum_j w_ij; population mean immediately after masking",
+  "model_parameters": {
+    "N": 20,
+    "M": 100,
+    "dt": 0.3,
+    "L": 1000,
+    "beta": 1000,
+    "speed_scale": 0.05,
+    "kernel_sigma": 0.4,
+    "connection_exponent": 0.5,
+    "global_inhibition": 0,
+    "single_edge_weight": 0.012,
+    "full_neighbors": 19
+  },
+  "prospective_trajectories": {
+    "primary": 10000,
+    "history_controls": 4000,
+    "total": 14000
+  },
+  "terminal_measure": "mean of per-time min(GO,LO), last1000 of6000 steps",
+  "working_tracked_diff_sha256": "b72c94edb3943efea0d9ab9a68264e7db519d67c321571ffdd8a263362b48e65",
+  "protected_sha256": {
+    "allocentric-flocking-original/MainFlockingNeuralField.m": "a38a0e0f715100cff175b7b98994230732457708f65fec38a88aab7feac1b11f",
+    "allocentric-flocking-original/MainFlockingNeuralFieldSwitch.m": "e7d8537d60ed40d584160461cd2d3b425fea1e853447d81ae9985db6c430a1a5",
+    "allocentric-flocking-original/MainIndividualMovementNeuralField.m": "54f062587b9e8f6b23c7c0874f8531f1d74ea50285b263b7bcfe0de9ac541243",
+    "allocentric-flocking-original/ReadMe.txt": "20811de0f351d78807bba949b39eff6ce9fa4755e6b4170c88567bf87cbcfdbe",
+    "allocentric-flocking-original/SamplerunCollectiveMovement.mat": "3dac0a60e37003a23508cf22e8f53857c28d3a12db7e05a7093418f2d3aab2f3",
+    "allocentric-flocking-original/SamplerunCollectiveMovementSwitch.mat": "fa39f35c3d151ff403d8243a663d5902bbd7f9944dfcbbb83e3529568299a2d7",
+    "allocentric-flocking-original/SamplerunIndividualMovement.mat": "f843c8f58ccb874df411a872d6c9f2ec8714a8f5399efe36d557e28a8fea0a92",
+    "allocentric-flocking-original/simulateCollectiveFlockingNeuralField.m": "af5b27e19ccd39913ce34984f6784bd23bdd1ff3731f22d67418d97eacf182c6",
+    "allocentric-flocking-original/simulateCollectiveFlockingNeuralFieldAlloEgoSwitch.m": "331d0543570a200cb003fdcf315783e8e1cce7c359936365fe6aab4efeebf1f5",
+    "allocentric-flocking-original/simulateIndividualMovementNeuralField.asv": "58daae14f76982c3cf0072046a771c5a6885b0f6cda1ee229b29a96751ba308b",
+    "allocentric-flocking-original/simulateIndividualMovementNeuralField.m": "702e6ac112a2873f4cc8d07af87220d2e4ff0f09d89e92df4648686f8d618ec7",
+    "paper/论文初稿_KF预测补偿.v7.tex": "1b3b78121cb2b9f53de8b1f63d1f69f094b79b5fc1ee642dce99d980b0deba61",
+    "paper/论文草稿_KF预测补偿.v7.pdf": "58e1d21ab4447bfbdb7f63d9ef10ba281fd19f14a931fcd6e3254a5e780c1c35"
+  },
+  "package_files": [
+    {
+      "path": "experiments/occlusion-input-consistency-20261030/.gitattributes",
+      "sha256": "a79691a93b46e49ce460c26ef22afcc03d6eca1e63bf2edbc20e96159510f6c9",
+      "bytes": 14
+    },
+    {
+      "path": "experiments/occlusion-input-consistency-20261030/.gitignore",
+      "sha256": "6b32230d737c382df4b5a1866862fd6b05cb569355b4f52ebda9ba89177f0240",
+      "bytes": 34
+    },
+    {
+      "path": "experiments/occlusion-input-consistency-20261030/analyze.py",
+      "sha256": "f6bacb500a25f3faeae397fdb9d76ff154fa33295408b0d0f5357cdcb48f4979",
+      "bytes": 8047
+    },
+    {
+      "path": "experiments/occlusion-input-consistency-20261030/checkPreparation.m",
+      "sha256": "73e96b17683953d3ccd010a045ae29d6f175d2751d2c4f6b4a817ba643ec2cce",
+      "bytes": 2183
+    },
+    {
+      "path": "experiments/occlusion-input-consistency-20261030/checks/matlab-preparation.json",
+      "sha256": "fc5357eb570e80197c68179490b36f39a7a02bcf9d32972ec9f51c41559b98e2",
+      "bytes": 496
+    },
+    {
+      "path": "experiments/occlusion-input-consistency-20261030/checks/python-preparation.json",
+      "sha256": "39548cf374e369232efa0b62f88d2efcfb81926a1d318ac4ee0585c2ade52d89",
+      "bytes": 529
+    },
+    {
+      "path": "experiments/occlusion-input-consistency-20261030/config.v1.json",
+      "sha256": "1923fba44dd8b1b6ac0e49d5e3a0a712206ae22fc7d503dac21caa76c59a9348",
+      "bytes": 2367
+    },
+    {
+      "path": "experiments/occlusion-input-consistency-20261030/movementConsistency.m",
+      "sha256": "424e8dc29531a94179ee445185a7cff05e31b0a416bca02bdfda4053690e7281",
+      "bytes": 954
+    },
+    {
+      "path": "experiments/occlusion-input-consistency-20261030/prepare_package.py",
+      "sha256": "fa22d96b7a296df94aada4f909d1a0a06f6ca44a2f3eb33df77790277dd0b8ac",
+      "bytes": 2795
+    },
+    {
+      "path": "experiments/occlusion-input-consistency-20261030/README.txt",
+      "sha256": "fe4110dc3f17f22a5d8a96de5b15da7b7fd3b84b2ba96fd9397f8d95155534f4",
+      "bytes": 2075
+    },
+    {
+      "path": "experiments/occlusion-input-consistency-20261030/requirements.txt",
+      "sha256": "c96199ef81ade15361474fd4c6479ea611eb85997230bef8b702a042ad8e62ba",
+      "bytes": 52
+    },
+    {
+      "path": "experiments/occlusion-input-consistency-20261030/runOcclusionConsistency.m",
+      "sha256": "bee2ab3dc552f4df0f153ff76e239e36375d55c001e2453875261a0bcab70a62",
+      "bytes": 9646
+    },
+    {
+      "path": "experiments/occlusion-input-consistency-20261030/summarizeConsistency.m",
+      "sha256": "8db51eb9022a80b9033d3d0c266717dfa0b3289a53bf37e45bc4db9ec49a0178",
+      "bytes": 432
+    },
+    {
+      "path": "experiments/occlusion-input-consistency-20261030/test_preparation.py",
+      "sha256": "d0a0104adb8e9c77df5e8d120a052e9d73ab31928697448ec58730bc6ee4a43a",
+      "bytes": 2331
+    },
+    {
+      "path": "experiments/occlusion-input-consistency-20261030/实验方案.v1.txt",
+      "sha256": "993a5cd4baaeb9f8eb3ad07c91b9c9fb13fbba6473f69bdc145d6b7b09575e54",
+      "bytes": 7376
+    }
+  ]
+}

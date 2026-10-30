@@ -1,0 +1,19 @@
+{
+  "status": "PASS",
+  "evidence": "constructed metric and aggregation fixtures only",
+  "model_steps_executed": 0,
+  "model_trajectories_executed": 0,
+  "artificial_rows": 14000,
+  "planned_primary_seeds": 500,
+  "planned_primary_trajectories": 10000,
+  "planned_control_trajectories": 4000,
+  "aggregate_conditions": 60,
+  "rejected_invalid_tables": 3,
+  "independent_fixture_mean": 0.4,
+  "input_axis_endpoints": [
+    0,
+    0.228
+  ],
+  "coherence_endpoint": "mean of per-time min(GO,LO)",
+  "Python_source_parse": "PASS"
+}
