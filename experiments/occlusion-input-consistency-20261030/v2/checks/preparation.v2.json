@@ -1,0 +1,23 @@
+{
+  "status": "PASS",
+  "model_steps_executed": 0,
+  "model_trajectories_executed": 0,
+  "fixture_type": "analytic bearings and constructed summary/checkpoint tables",
+  "four_neighbor_input_front_side_back": [
+    0.048,
+    0.017658213176229235,
+    0.00649609359535741
+  ],
+  "factorization": true,
+  "strength_homogeneity": true,
+  "count_additivity": true,
+  "frame_rotation_invariance": true,
+  "zero_input_exact": true,
+  "mask_monotonicity": true,
+  "event_heading_used": true,
+  "legacy_strength_retained": true,
+  "constructed_rows": 480,
+  "bin_cases_retained": 480,
+  "independent_fixture_mean": 0.4,
+  "static_parse": "PASS"
+}
