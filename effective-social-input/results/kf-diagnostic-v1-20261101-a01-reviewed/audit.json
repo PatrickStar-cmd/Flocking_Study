@@ -1,0 +1,32 @@
+{
+  "branch": "exp/haoli-kf-diagnostic-20261101",
+  "commit": "f0b797220db5d6f2b6ed883e3838614e67cebbe5",
+  "dirty": "?? experiments/kf-diagnostic-20261101/\n",
+  "matlabVersion": "25.1.0.2943329 (R2025a)",
+  "platform": "PCWIN64",
+  "seeds": [
+    2.026110101E+9,
+    2.026110102E+9,
+    2.026110103E+9,
+    2.026110104E+9,
+    2.026110105E+9
+  ],
+  "N": 20,
+  "k": 15,
+  "hiddenCount": 7,
+  "maskRule": "index-fixed",
+  "evidence": "exploratory-development",
+  "p0Report": "p0-reviewed-p1-v2.json",
+  "modelChanged": false,
+  "instrumentation": "passive copies; exact stock regressions in review/",
+  "stateIndexing": "uRecord(:,:,t) is state after t-1; checkpoint at pre-update t0",
+  "windowPre": [
+    1201,
+    1400
+  ],
+  "windowCommon": [
+    1401,
+    1920
+  ],
+  "recoverySteps": 400
+}

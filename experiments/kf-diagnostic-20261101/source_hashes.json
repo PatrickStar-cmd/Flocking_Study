@@ -1,0 +1,38 @@
+{
+  "stock_sources": {
+    "simulator": {
+      "path": "effective-social-input/simulateEffectiveSocialInput.m",
+      "sha256": "79576b13115434bca6a0bfb990050259e3967d85b63ccba9c3d3cbb95c960906"
+    },
+    "scheduled_sensor": {
+      "path": "effective-social-input/scheduledOcclusionInput.m",
+      "sha256": "4966c50b2120de5a073ea4707cbc0a576bf4df903003be9c1ace369eb27c55de"
+    },
+    "step_sensor": {
+      "path": "effective-social-input/occlusionInputStep.m",
+      "sha256": "d553ca0a1ae747ed0208a234290f14562f265ad33b2fc90a252374862a1c9b10"
+    },
+    "bearing_track": {
+      "path": "effective-social-input/bearingTrackStep.m",
+      "sha256": "1fd72107c93cdd3413dd4b0aed137632cbce2ad60dbe44db09fd47ab9e85305f"
+    }
+  },
+  "instrumented_copies": {
+    "occlusionInputStepInstrumented": {
+      "path": "experiments/kf-diagnostic-20261101/occlusionInputStepInstrumented.m",
+      "sha256": "7b90882bdc79b9f5e8e2a69a23a64d6cf55843e0f6fecfbe7805e5006fab1617"
+    },
+    "scheduledOcclusionInputInstrumented": {
+      "path": "experiments/kf-diagnostic-20261101/scheduledOcclusionInputInstrumented.m",
+      "sha256": "00ec019777fdec080298b62b7670a474057a0ac8ee967c3a15b560a744c4b159"
+    },
+    "simulateEffectiveSocialInputInstrumented": {
+      "path": "experiments/kf-diagnostic-20261101/simulateEffectiveSocialInputInstrumented.m",
+      "sha256": "fd08a343c1f3956f644d16d80bf1aabe5ffee5a7535f0c8b067b950c2f7b5314"
+    }
+  },
+  "diff": {
+    "path": "experiments/kf-diagnostic-20261101/instrumentation.diff",
+    "sha256": "c78792d0647ab87e299e537ac14840936565890cdab5ca4cef9a5bffb611a71c"
+  }
+}

@@ -1,0 +1,19 @@
+{
+  "status": "PASS",
+  "modes": [
+    "none",
+    "hold",
+    "kf-mean",
+    "kalman"
+  ],
+  "shortSeconds": [
+    0.4619867,
+    0.3873768,
+    0.378518,
+    0.4144668
+  ],
+  "fullSteps": 2200,
+  "fullMode": "kalman",
+  "fullSeconds": 10.3012217,
+  "comparison": "Exact isequaln for all stock result fields and observation fields"
+}

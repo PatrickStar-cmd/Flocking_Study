@@ -1,0 +1,9 @@
+MATLAB 25.1.0.2943329 (R2025a)
+PASS: missing-update contract, reacquisition age, shared observation noise, RNG isolation
+PASS: equal and exponential distance weights
+PASS: exact equal-mode regression, fixed mass, zero neighbors, periodic distance
+PASS: wrapped innovation, PSD, hidden-state isolation, schedule, no-event equality
+PASS: circular mass conservation, peak reduction, covariance cutoff
+PASS: complete checkpoint, T=0 equality, common pre-event path, deterministic replay
+BASE_CONTRACT_SECONDS 3.069
+STOCK_N20_80STEP_SECONDS 1.179

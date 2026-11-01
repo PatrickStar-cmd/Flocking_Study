@@ -1,0 +1,21 @@
+{
+  "python": "3.11.4",
+  "numpy": "2.3.5",
+  "scipy": "1.16.3",
+  "pandas": "2.3.3",
+  "matplotlib": "3.10.8",
+  "analysis_sources": [
+    {
+      "file": "sources\\analysis\\analyze_kf_diagnostics.py",
+      "sha256": "4c722d73af67fbf7ab8fc8d67c055479caa2193e1a2367175cedc7c1f7f9493a"
+    },
+    {
+      "file": "sources\\analysis\\plot_kf_diagnostics.py",
+      "sha256": "a7475b2c116ca5f78fb677aad87fd986aeef6edca111e3888686aa2cb4c945f6"
+    }
+  ],
+  "official_figures": 8,
+  "links_checked": 14,
+  "raw_mat_count": 45,
+  "raw_bytes": 3802119993
+}

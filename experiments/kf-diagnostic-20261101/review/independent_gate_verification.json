@@ -1,0 +1,9 @@
+{
+  "pass": true,
+  "covariance_max_error": 5.551115123125783e-17,
+  "cutoff_reason_counts": {
+    "13": 100,
+    "22": 20
+  },
+  "matches_independent_Riccati": true
+}

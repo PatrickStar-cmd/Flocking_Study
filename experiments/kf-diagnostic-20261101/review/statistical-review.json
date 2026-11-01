@@ -1,0 +1,20 @@
+{
+  "coverage": "11/11 checked",
+  "overall": "CAUTION: five developmental seeds, pointwise unadjusted intervals, evolving pre-event states",
+  "items": [
+    {"type": "Simpson paradox", "status": "checked", "finding": "D20 and D120 remain stratified; no pooled-duration performance claim."},
+    {"type": "Ecological fallacy", "status": "checked", "finding": "Inference unit is a seed-level whole flock; no individual-agent generalization."},
+    {"type": "Berkson selection bias", "status": "checked", "finding": "Five fixed seeds, no selection on GO, success, or predictor advantage."},
+    {"type": "Collider bias", "status": "not applicable", "finding": "No regression adjustment on post-intervention variables."},
+    {"type": "Base-rate neglect", "status": "not applicable", "finding": "No diagnostic classification, prevalence, or reliability guarantee is claimed."},
+    {"type": "Regression to mean", "status": "checked", "finding": "Event time fixed across seeds; matched same-seed Fresh controls retained."},
+    {"type": "Survivorship bias", "status": "checked", "finding": "45/45 completed, no exclusions; original negative contrasts retained."},
+    {"type": "Look-elsewhere effect", "status": "CAUTION", "finding": "126 pointwise intervals retained without family correction; only developmental interpretation, no best-case promotion."},
+    {"type": "Garden of forking paths", "status": "NOTE", "finding": "Parameters/seeds/windows fixed before batch; software/statistical bugs corrected transparently; this is not independent confirmatory validation."},
+    {"type": "Correlation versus causation", "status": "CAUTION", "finding": "Paired computational interventions compare policies locally. Each policy's own closed-loop estimation errors do not isolate estimator or neural mediation; P2/P3 remain necessary."},
+    {"type": "Reverse causality", "status": "checked with limitation", "finding": "Estimator and geometry interact in feedback. No directional mechanism is inferred solely from co-occurring error/GO changes."}
+  ],
+  "primary": "Two duration-specific exploratory Hold-minus-KFmean occlusion pair-distance contrasts",
+  "confidence_interval_note": "Student-t interval assumptions are not established with n=5; clustered bootstrap is a sensitivity view, not a cure for small samples.",
+  "equivalence": "No equivalence, universal ineffectiveness, stability, safety, or two-dimensional position recovery claim."
+}

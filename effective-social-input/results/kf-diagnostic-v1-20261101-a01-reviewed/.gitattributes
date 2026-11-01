@@ -1,0 +1,4 @@
+# Frozen provenance SHA256 values refer to exact bytes, including line endings.
+* -text whitespace=cr-at-eol
+# Byte-exact historical source snapshots are evidence, not reformatted sources.
+/sources/** -whitespace

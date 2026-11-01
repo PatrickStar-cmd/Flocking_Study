@@ -1,0 +1,394 @@
+--- effective-social-input/occlusionInputStep.m
++++ experiments/kf-diagnostic-20261101/occlusionInputStepInstrumented.m
+@@ -1,54 +1,135 @@
+-function [input,state,diag] = occlusionInputStep(observation,alpha,state,opt)
+-% Only sanitized observations enter here: hidden bearing/weight MUST be NaN.
+-n=size(observation.fresh,1); ns=size(alpha,2);
++function [input,state,diag] = occlusionInputStepInstrumented(observation,alpha,state,opt)
++%OCCLUSIONINPUTSTEPINSTRUMENTED Mechanically identical to stock occlusionInputStep,
++% with added PASSIVE diagnostic recording (raw P, age, x, innovation, NIS, cutoffReason).
++% Numerical paths, random state, and dynamics are 100% UNCHANGED.
++%
++% Cutoff reason codes:
++%   -1: edge not selected
++%   10: active fresh observation
++%   11: active hold memory
++%   12: active kf-mean memory
++%   13: active kalman memory
++%   20: truncated by 'none' mode during occlusion
++%   21: truncated by age (> maxAge)
++%   22: truncated by variance (P(1,1) > maxVariance)
++%   23: truncated jointly by age and variance
++
++n = size(observation.fresh, 1);
++ns = size(alpha, 2);
+ if isempty(state)
+- state.tracks=cell(n); state.bearing=nan(n); state.weight=nan(n); state.age=inf(n);
++    state.tracks = cell(n);
++    state.bearing = nan(n);
++    state.weight = nan(n);
++    state.age = inf(n);
+ end
+-input=zeros(ns,n); diag.active=zeros(n); diag.variance=nan(n); diag.center=nan(n);
+-for i=1:n
+- for j=find(observation.selected(i,:))
+-  fresh=observation.fresh(i,j);
+-  if fresh
+-   y=observation.bearing(i,j); w=observation.weight(i,j);
+-   assert(isfinite(y)&&isfinite(w)); state.bearing(i,j)=y; state.weight(i,j)=w; state.age(i,j)=0;
+-  else
+-   assert(isnan(observation.bearing(i,j))&&isnan(observation.weight(i,j)));
+-   y=[]; state.age(i,j)=state.age(i,j)+opt.dt;
+-  end
+-  if strcmp(opt.mode,'kalman-gm')
+-   track=bearingTrackStepGaussMarkov(state.tracks{i,j},y,opt.dt,opt.gmQ,opt.R,opt.velocityTau);
+-  else
+-   track=bearingTrackStep(state.tracks{i,j},y,opt.dt,opt.q,opt.R);
+-  end
+-  state.tracks{i,j}=track;
+-  if isempty(track), continue; end
+-  if fresh
+-   center=y; variance=0;
+-  elseif strcmp(opt.mode,'none') || state.age(i,j)>opt.maxAge
+-   continue;
+-  elseif strcmp(opt.mode,'hold')
+-   center=state.bearing(i,j); variance=0;
+-  elseif strcmp(opt.mode,'mean') || strcmp(opt.mode,'kf-mean')
+-   if track.P(1,1)>opt.maxVariance, continue; end
+-   center=track.x(1); variance=0;
+-  elseif strcmp(opt.mode,'kalman') || strcmp(opt.mode,'kalman-gm')
+-   if track.P(1,1)>opt.maxVariance, continue; end
+-   center=track.x(1); variance=track.P(1,1);
+-  else
+-   error('Unknown prediction mode: %s',opt.mode);
+-  end
+-  diag.center(i,j)=center;
+-  delta=atan2(sin(alpha(i,:)-center),cos(alpha(i,:)-center));
+-  kernel=exp(-.5*(delta/opt.sigma).^2);
+-  if variance>0
+-   % Circular heat convolution: preserves discrete mass, tends to uniform.
+-   frequency=[0:floor(ns/2),-ceil(ns/2)+1:-1];
+-   kernel=real(ifft(fft(kernel).*exp(-.5*variance*frequency.^2)));
+-   kernel=max(0,kernel);
+-  end
+-  input(:,i)=input(:,i)+opt.h0*state.weight(i,j)*kernel';
+-  diag.active(i,j)=1; diag.variance(i,j)=track.P(1,1);
+- end
++
++input = zeros(ns, n);
++% Stock diagnostic fields (retained identically for 100% compatibility):
++diag.active = zeros(n);
++diag.variance = nan(n);
++diag.center = nan(n);
++
++% Passive diagnostic instrumentation fields:
++diag.rawVariance = nan(n);
++diag.rawP22 = nan(n);
++diag.rawP12 = nan(n);
++diag.rawP21 = nan(n);
++diag.rawX = nan(n, n, 2);
++diag.rawAge = nan(n);
++diag.rawInnovation = nan(n);
++diag.rawNis = nan(n);
++diag.cutoffReason = repmat(-1, n, n);
++
++for i = 1:n
++    for j = find(observation.selected(i, :))
++        fresh = observation.fresh(i, j);
++        if fresh
++            y = observation.bearing(i, j);
++            w = observation.weight(i, j);
++            assert(isfinite(y) && isfinite(w));
++            state.bearing(i, j) = y;
++            state.weight(i, j) = w;
++            state.age(i, j) = 0;
++        else
++            assert(isnan(observation.bearing(i, j)) && isnan(observation.weight(i, j)));
++            y = [];
++            state.age(i, j) = state.age(i, j) + opt.dt;
++        end
++
++        if strcmp(opt.mode, 'kalman-gm')
++            track = bearingTrackStepGaussMarkov(state.tracks{i, j}, y, opt.dt, opt.gmQ, opt.R, opt.velocityTau);
++        else
++            track = bearingTrackStep(state.tracks{i, j}, y, opt.dt, opt.q, opt.R);
++        end
++        state.tracks{i, j} = track;
++        if isempty(track), continue; end
++
++        % Record passive filter metrics regardless of whether edge is later active or truncated:
++        diag.rawVariance(i, j) = track.P(1, 1);
++        diag.rawP22(i, j) = track.P(2, 2);
++        diag.rawP12(i, j) = track.P(1, 2);
++        diag.rawP21(i, j) = track.P(2, 1);
++        diag.rawX(i, j, 1) = track.x(1);
++        diag.rawX(i, j, 2) = track.x(2);
++        diag.rawAge(i, j) = state.age(i, j);
++        diag.rawInnovation(i, j) = track.innovation;
++        diag.rawNis(i, j) = track.nis;
++
++        ageExceeded = (state.age(i, j) > opt.maxAge);
++        varExceeded = (track.P(1, 1) > opt.maxVariance);
++
++        if fresh
++            diag.cutoffReason(i, j) = 10;
++            center = y;
++            variance = 0;
++        elseif strcmp(opt.mode, 'none')
++            diag.cutoffReason(i, j) = 20;
++            continue;
++        elseif state.age(i, j) > opt.maxAge
++            if varExceeded && any(strcmp(opt.mode, {'mean','kf-mean','kalman','kalman-gm'}))
++                diag.cutoffReason(i, j) = 23; % Joint age and variance cutoff
++            else
++                diag.cutoffReason(i, j) = 21; % Age cutoff
++            end
++            continue;
++        elseif strcmp(opt.mode, 'hold')
++            diag.cutoffReason(i, j) = 11;
++            center = state.bearing(i, j);
++            variance = 0;
++        elseif strcmp(opt.mode, 'mean') || strcmp(opt.mode, 'kf-mean')
++            if track.P(1, 1) > opt.maxVariance
++                diag.cutoffReason(i, j) = 22; % Variance cutoff
++                continue;
++            end
++            diag.cutoffReason(i, j) = 12;
++            center = track.x(1);
++            variance = 0;
++        elseif strcmp(opt.mode, 'kalman') || strcmp(opt.mode, 'kalman-gm')
++            if track.P(1, 1) > opt.maxVariance
++                diag.cutoffReason(i, j) = 22; % Variance cutoff
++                continue;
++            end
++            diag.cutoffReason(i, j) = 13;
++            center = track.x(1);
++            variance = track.P(1, 1);
++        else
++            error('Unknown prediction mode: %s', opt.mode);
++        end
++
++        diag.center(i, j) = center;
++        delta = atan2(sin(alpha(i, :) - center), cos(alpha(i, :) - center));
++        kernel = exp(-0.5 * (delta / opt.sigma).^2);
++        if variance > 0
++            % Circular heat convolution: preserves discrete mass, tends to uniform.
++            frequency = [0:floor(ns/2), -ceil(ns/2)+1:-1];
++            kernel = real(ifft(fft(kernel) .* exp(-0.5 * variance * frequency.^2)));
++            kernel = max(0, kernel);
++        end
++        input(:, i) = input(:, i) + opt.h0 * state.weight(i, j) * kernel';
++        diag.active(i, j) = 1;
++        diag.variance(i, j) = track.P(1, 1);
++    end
+ end
+-diag.age=state.age; diag.weight=state.weight;
++diag.age = state.age;
++diag.weight = state.weight;
+ end
+
+
+--- effective-social-input/scheduledOcclusionInput.m
++++ experiments/kf-diagnostic-20261101/scheduledOcclusionInputInstrumented.m
+@@ -1,51 +1,82 @@
+-function [input,state,adj,m,record] = scheduledOcclusionInput(position,alpha,state,cfg,step)
+-% Simulator-side sensor. Hidden truth is not passed to the controller.
++function [input,state,adj,m,record] = scheduledOcclusionInputInstrumented(position,alpha,state,cfg,step)
++%SCHEDULEDOCCLUSIONINPUTINSTRUMENTED Mechanically identical to stock
++% scheduledOcclusionInput, with added PASSIVE diagnostic recording.
++% Hidden truth is NEVER passed to the controller.
++
+ if isempty(state)
+-    stream=RandStream('mt19937ar','Seed',cfg.seed);
+-    sensorNoise=cfg.bearingMeasurementStd*randn(stream,cfg.NAgents,cfg.NAgents,cfg.NSteps);
++    stream = RandStream('mt19937ar', 'Seed', cfg.seed);
++    sensorNoise = cfg.bearingMeasurementStd * randn(stream, cfg.NAgents, cfg.NAgents, cfg.NSteps);
+ else
+-    sensorNoise=state.sensorNoise;
++    sensorNoise = state.sensorNoise;
+ end
+-n=cfg.NAgents; selected=false(n); fresh=false(n); bearings=nan(n); weights=nan(n); trueBearings=nan(n);
+-hidden=step>=cfg.occlusionStartStep && step<cfg.occlusionStartStep+cfg.occlusionDurationSteps;
+-for i=1:n
+- ids=mod(i-1+(1:cfg.neighborCount),n)+1; selected(i,ids)=true;
+- count=min(cfg.occlusionHiddenCount,numel(ids));
+- visible=ids;
+- if hidden
+-  if isempty(cfg.occlusionHiddenIds)
+-   visible=ids(count+1:end);
+-  else
+-   hiddenIds=cfg.occlusionHiddenIds(i,1:count);
+-   visible=ids(~ismember(ids,hiddenIds));
+-  end
+- end
+- fresh(i,visible)=true;
+- dx=position(:,visible)-position(:,i); dx=dx-cfg.arenaSize*round(dx/cfg.arenaSize);
+- bearings(i,visible)=mod(atan2(dx(2,:),dx(1,:))+sensorNoise(i,visible,step),2*pi);
+- weights(i,visible)=distanceWeight(hypot(dx(1,:),dx(2,:)),cfg);
+- dxAll=position(:,ids)-position(:,i); dxAll=dxAll-cfg.arenaSize*round(dxAll/cfg.arenaSize);
+- trueBearings(i,ids)=mod(atan2(dxAll(2,:),dxAll(1,:)),2*pi);
++
++n = cfg.NAgents;
++selected = false(n);
++fresh = false(n);
++bearings = nan(n);
++weights = nan(n);
++trueBearings = nan(n);
++hidden = step >= cfg.occlusionStartStep && step < cfg.occlusionStartStep + cfg.occlusionDurationSteps;
++
++for i = 1:n
++    ids = mod(i - 1 + (1:cfg.neighborCount), n) + 1;
++    selected(i, ids) = true;
++    count = min(cfg.occlusionHiddenCount, numel(ids));
++    visible = ids;
++    if hidden
++        if isempty(cfg.occlusionHiddenIds)
++            visible = ids(count + 1:end);
++        else
++            hiddenIds = cfg.occlusionHiddenIds(i, 1:count);
++            visible = ids(~ismember(ids, hiddenIds));
++        end
++    end
++    fresh(i, visible) = true;
++    dx = position(:, visible) - position(:, i);
++    dx = dx - cfg.arenaSize * round(dx / cfg.arenaSize);
++    bearings(i, visible) = mod(atan2(dx(2, :), dx(1, :)) + sensorNoise(i, visible, step), 2*pi);
++    weights(i, visible) = distanceWeight(hypot(dx(1, :), dx(2, :)), cfg);
++    dxAll = position(:, ids) - position(:, i);
++    dxAll = dxAll - cfg.arenaSize * round(dxAll / cfg.arenaSize);
++    trueBearings(i, ids) = mod(atan2(dxAll(2, :), dxAll(1, :)), 2*pi);
+ end
+-obs=struct('selected',selected,'fresh',fresh,'bearing',bearings,'weight',weights);
+-opt=struct('dt',cfg.dt,'q',cfg.bearingProcessNoise, ...
+- 'gmQ',cfg.bearingGaussMarkovProcessNoise,'velocityTau',cfg.bearingVelocityTau, ...
+- 'R',cfg.bearingObservationVariance, ...
+- 'mode',cfg.predictionMode,'maxAge',cfg.predictionMaxAge,'maxVariance',cfg.predictionMaxVariance, ...
+- 'sigma',cfg.receptiveFieldWidth,'h0',cfg.totalSocialAttraction/n);
+-if ~isempty(state), state=rmfield(state,'sensorNoise'); end
+-[input,state,d]=occlusionInputStep(obs,alpha,state,opt); adj=d.active;
+-state.sensorNoise=sensorNoise;
+-m.visibleCount=sum(fresh,2); m.activeCount=sum(adj,2);
+-m.amplitudeSum=sum(adj.*fillmissing(state.weight,'constant',0),2)*opt.h0;
+-m.inputMass=sum(input,1)'*2*pi/cfg.NNeurons;
+-m.fieldPeak=max(input,[],1)';
+-m.distanceWeight=sum(adj.*fillmissing(state.weight,'constant',0),2)./max(1,m.activeCount);
+-% Diagnostics of the actual injected field, not hidden true bearings.
+-z=sum(input.*exp(1i*alpha'),1); m.inputConcentration=abs(z)'./max(eps,sum(input,1)');
+-m.angularCoverage=nan(n,1); % Deliberately unavailable: no true-state shortcut.
+-record=struct('fresh',fresh,'active',logical(adj),'variance',d.variance,'age',d.age,'weight',d.weight);
+-record.observedBearing=bearings;
+-record.injectedBearing=d.center;
+-record.trueBearing=trueBearings;
++
++obs = struct('selected', selected, 'fresh', fresh, 'bearing', bearings, 'weight', weights);
++opt = struct('dt', cfg.dt, 'q', cfg.bearingProcessNoise, ...
++    'gmQ', cfg.bearingGaussMarkovProcessNoise, 'velocityTau', cfg.bearingVelocityTau, ...
++    'R', cfg.bearingObservationVariance, ...
++    'mode', cfg.predictionMode, 'maxAge', cfg.predictionMaxAge, 'maxVariance', cfg.predictionMaxVariance, ...
++    'sigma', cfg.receptiveFieldWidth, 'h0', cfg.totalSocialAttraction / n);
++
++if ~isempty(state), state = rmfield(state, 'sensorNoise'); end
++[input, state, d] = occlusionInputStepInstrumented(obs, alpha, state, opt);
++adj = d.active;
++state.sensorNoise = sensorNoise;
++
++m.visibleCount = sum(fresh, 2);
++m.activeCount = sum(adj, 2);
++m.amplitudeSum = sum(adj .* fillmissing(state.weight, 'constant', 0), 2) * opt.h0;
++m.inputMass = sum(input, 1)' * 2 * pi / cfg.NNeurons;
++m.fieldPeak = max(input, [], 1)';
++m.distanceWeight = sum(adj .* fillmissing(state.weight, 'constant', 0), 2) ./ max(1, m.activeCount);
++z = sum(input .* exp(1i * alpha'), 1);
++m.inputConcentration = abs(z)' ./ max(eps, sum(input, 1)');
++m.angularCoverage = nan(n, 1);
++
++% Stock record fields (100% backward compatible):
++record = struct('fresh', fresh, 'active', logical(adj), 'variance', d.variance, 'age', d.age, 'weight', d.weight);
++record.observedBearing = bearings;
++record.injectedBearing = d.center;
++record.trueBearing = trueBearings;
++
++% Passive diagnostic fields:
++record.rawVariance = d.rawVariance;
++record.rawP22 = d.rawP22;
++record.rawP12 = d.rawP12;
++record.rawP21 = d.rawP21;
++record.rawX = d.rawX;
++record.rawAge = d.rawAge;
++record.rawInnovation = d.rawInnovation;
++record.rawNis = d.rawNis;
++record.cutoffReason = d.cutoffReason;
+ end
+
+
+--- effective-social-input/simulateEffectiveSocialInput.m
++++ experiments/kf-diagnostic-20261101/simulateEffectiveSocialInputInstrumented.m
+@@ -1,4 +1,7 @@
+-function result = simulateEffectiveSocialInput(cfg)
++function result = simulateEffectiveSocialInputInstrumented(cfg)
++%SIMULATEEFFECTIVESOCIALINPUTINSTRUMENTED Passive instrumented version of simulateEffectiveSocialInput.
++% Retains exact identical dynamics while passively recording full uRecord, positionsRecord,
++% headingsRecord, stateFingerprints, preOcclusionCheckpoint, and full observation records.
+ %SIMULATEEFFECTIVESOCIALINPUT Allocentric flocking with controlled bearing inputs.
+ %
+ % This implementation follows the neural-field update in Salahshour and
+@@ -81,11 +84,41 @@
+ cosAlpha = cos(alpha).';
+ sinAlpha = sin(alpha).';
+ 
++% --- PASSIVE DIAGNOSTIC ALLOCATION ---
++uRecord = zeros(nS, n, T);
++positionsRecord = zeros(2, n, T);
++headingsRecord = zeros(n, T);
++stateFingerprints = zeros(T, 1);
++preOcclusionCheckpoint = struct();
++hasRecordedCheckpoint = false;
++
++
+ for t = 1:T
++    % --- PASSIVE DIAGNOSTIC STEP RECORDING (pre-dynamics of step t) ---
++    positionsRecord(:, :, t) = positions;
++    headingsRecord(:, t) = headings;
++    uRecord(:, :, t) = u;
++    % Deterministic fingerprint of (positions, headings, u)
++    stateVec = [positions(:); headings(:); u(:)];
++    stateFingerprints(t) = sum(stateVec .* sin((1:numel(stateVec))' * 0.1));
++
++    if cfg.scheduledOcclusion && t == cfg.occlusionStartStep && ~hasRecordedCheckpoint
++        preOcclusionCheckpoint.step = t;
++        preOcclusionCheckpoint.stateAfterStep = t - 1;
++        preOcclusionCheckpoint.rngState = rng;
++        preOcclusionCheckpoint.positions = positions;
++        preOcclusionCheckpoint.headings = headings;
++        preOcclusionCheckpoint.u = u;
++        preOcclusionCheckpoint.alpha = alpha;
++        if exist('observationState', 'var') && ~isempty(observationState)
++            preOcclusionCheckpoint.observationState = observationState;
++        end
++        hasRecordedCheckpoint = true;
++    end
+     if cfg.scheduledOcclusion
+         if t==1, observationState=[]; observationRecords=cell(T,1); end
+         [externalInput,observationState,adjacency,inputMetrics,observationRecords{t}]= ...
+-            scheduledOcclusionInput(positions,alpha,observationState,cfg,t);
++            scheduledOcclusionInputInstrumented(positions,alpha,observationState,cfg,t);
+     else
+         [externalInput, adjacency, inputMetrics] = buildSocialInput( ...
+         positions, headings, alpha, cfg);
+@@ -194,6 +227,15 @@
+ result.finalHeadings = headings;
+ result.finalNeuralState = u;
+ result.finalPreferredDirections = alpha;
++% --- PASSIVE DIAGNOSTIC RESULTS ---
++result.uRecord = uRecord;
++result.positionsRecord = positionsRecord;
++result.headingsRecord = headingsRecord;
++result.stateFingerprints = stateFingerprints;
++result.preOcclusionCheckpoint = preOcclusionCheckpoint;
++if cfg.scheduledOcclusion && exist('observationState', 'var') && isfield(observationState, 'sensorNoise')
++    result.sensorNoise = observationState.sensorNoise;
++end
+ if cfg.storeMeanAdjacency
+     result.meanAdjacency = meanAdjacency;
+ end
+

@@ -1,0 +1,5 @@
+PASS passive instrumentation short mode=none seconds=0.462
+PASS passive instrumentation short mode=hold seconds=0.387
+PASS passive instrumentation short mode=kf-mean seconds=0.379
+PASS passive instrumentation short mode=kalman seconds=0.414
+PASS full instrumented versus stock, exact; seconds=10.301

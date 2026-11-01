@@ -1,0 +1,17 @@
+{
+  "unique_trajectories": 45,
+  "seeds": [
+    2026110101,
+    2026110102,
+    2026110103,
+    2026110104,
+    2026110105
+  ],
+  "primary": "occ benefitPair: Hold pair minus KFmean pair",
+  "bootstrap_seed": 20261101,
+  "bootstrap_replicates": 10000,
+  "resampling_unit": "whole seed, identical index matrix across all contrasts and D",
+  "intervals": "exploratory, pointwise 95%; no simultaneous or confirmatory claim",
+  "AUC": "dt * sum of 520 post-update step samples",
+  "evidence": "developmental exploratory"
+}

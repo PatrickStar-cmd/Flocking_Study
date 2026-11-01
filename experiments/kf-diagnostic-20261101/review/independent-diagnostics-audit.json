@@ -1,0 +1,218 @@
+{
+  "status": "PASS",
+  "rows_checked": 2800,
+  "max_absolute_error": 5.684341886080802e-14,
+  "note": "atan2(sin(error),cos(error)) independently reconstructs own-trajectory errors",
+  "per_seed_whole_window_errors": [
+    {
+      "seed": 2026110101,
+      "D": 120,
+      "mode": "hold",
+      "whole_occ_RMSE_rad": 0.5403576632388014,
+      "whole_occ_MAE_rad": 0.2708091545482382
+    },
+    {
+      "seed": 2026110101,
+      "D": 20,
+      "mode": "hold",
+      "whole_occ_RMSE_rad": 0.10539554539879097,
+      "whole_occ_MAE_rad": 0.045060122606833036
+    },
+    {
+      "seed": 2026110101,
+      "D": 120,
+      "mode": "kalman",
+      "whole_occ_RMSE_rad": 0.4388461971166324,
+      "whole_occ_MAE_rad": 0.1989945045685801
+    },
+    {
+      "seed": 2026110101,
+      "D": 20,
+      "mode": "kalman",
+      "whole_occ_RMSE_rad": 0.041292473135970384,
+      "whole_occ_MAE_rad": 0.023236544501634104
+    },
+    {
+      "seed": 2026110101,
+      "D": 120,
+      "mode": "kf-mean",
+      "whole_occ_RMSE_rad": 0.4379490399315713,
+      "whole_occ_MAE_rad": 0.19870855473815469
+    },
+    {
+      "seed": 2026110101,
+      "D": 20,
+      "mode": "kf-mean",
+      "whole_occ_RMSE_rad": 0.04129189952367222,
+      "whole_occ_MAE_rad": 0.02323613830881786
+    },
+    {
+      "seed": 2026110102,
+      "D": 120,
+      "mode": "hold",
+      "whole_occ_RMSE_rad": 0.984551611682239,
+      "whole_occ_MAE_rad": 0.5766370494875734
+    },
+    {
+      "seed": 2026110102,
+      "D": 20,
+      "mode": "hold",
+      "whole_occ_RMSE_rad": 0.14026934531416504,
+      "whole_occ_MAE_rad": 0.07799305487031
+    },
+    {
+      "seed": 2026110102,
+      "D": 120,
+      "mode": "kalman",
+      "whole_occ_RMSE_rad": 0.8029851868635787,
+      "whole_occ_MAE_rad": 0.40941920931690395
+    },
+    {
+      "seed": 2026110102,
+      "D": 20,
+      "mode": "kalman",
+      "whole_occ_RMSE_rad": 0.14212733751621107,
+      "whole_occ_MAE_rad": 0.04078132115500111
+    },
+    {
+      "seed": 2026110102,
+      "D": 120,
+      "mode": "kf-mean",
+      "whole_occ_RMSE_rad": 0.8023282474004703,
+      "whole_occ_MAE_rad": 0.4092887100225325
+    },
+    {
+      "seed": 2026110102,
+      "D": 20,
+      "mode": "kf-mean",
+      "whole_occ_RMSE_rad": 0.14212738848388975,
+      "whole_occ_MAE_rad": 0.04078160182015482
+    },
+    {
+      "seed": 2026110103,
+      "D": 120,
+      "mode": "hold",
+      "whole_occ_RMSE_rad": 0.47670454903497217,
+      "whole_occ_MAE_rad": 0.15816113009848562
+    },
+    {
+      "seed": 2026110103,
+      "D": 20,
+      "mode": "hold",
+      "whole_occ_RMSE_rad": 0.18663142592548848,
+      "whole_occ_MAE_rad": 0.028735732148378774
+    },
+    {
+      "seed": 2026110103,
+      "D": 120,
+      "mode": "kalman",
+      "whole_occ_RMSE_rad": 0.4957946434078679,
+      "whole_occ_MAE_rad": 0.172600167719243
+    },
+    {
+      "seed": 2026110103,
+      "D": 20,
+      "mode": "kalman",
+      "whole_occ_RMSE_rad": 0.25315569092847057,
+      "whole_occ_MAE_rad": 0.042271741762731144
+    },
+    {
+      "seed": 2026110103,
+      "D": 120,
+      "mode": "kf-mean",
+      "whole_occ_RMSE_rad": 0.49483528958507333,
+      "whole_occ_MAE_rad": 0.172175324344624
+    },
+    {
+      "seed": 2026110103,
+      "D": 20,
+      "mode": "kf-mean",
+      "whole_occ_RMSE_rad": 0.25315569267640303,
+      "whole_occ_MAE_rad": 0.042271804585150625
+    },
+    {
+      "seed": 2026110104,
+      "D": 120,
+      "mode": "hold",
+      "whole_occ_RMSE_rad": 0.45656235997349753,
+      "whole_occ_MAE_rad": 0.18194408172162355
+    },
+    {
+      "seed": 2026110104,
+      "D": 20,
+      "mode": "hold",
+      "whole_occ_RMSE_rad": 0.06075601636672397,
+      "whole_occ_MAE_rad": 0.020295019156547967
+    },
+    {
+      "seed": 2026110104,
+      "D": 120,
+      "mode": "kalman",
+      "whole_occ_RMSE_rad": 0.46026422213331725,
+      "whole_occ_MAE_rad": 0.1800967750062054
+    },
+    {
+      "seed": 2026110104,
+      "D": 20,
+      "mode": "kalman",
+      "whole_occ_RMSE_rad": 0.16387366168985698,
+      "whole_occ_MAE_rad": 0.02972661804754668
+    },
+    {
+      "seed": 2026110104,
+      "D": 120,
+      "mode": "kf-mean",
+      "whole_occ_RMSE_rad": 0.4585126589683174,
+      "whole_occ_MAE_rad": 0.17942007087911252
+    },
+    {
+      "seed": 2026110104,
+      "D": 20,
+      "mode": "kf-mean",
+      "whole_occ_RMSE_rad": 0.16387383331608474,
+      "whole_occ_MAE_rad": 0.029727300285693745
+    },
+    {
+      "seed": 2026110105,
+      "D": 120,
+      "mode": "hold",
+      "whole_occ_RMSE_rad": 0.4074660678858074,
+      "whole_occ_MAE_rad": 0.1538591380045289
+    },
+    {
+      "seed": 2026110105,
+      "D": 20,
+      "mode": "hold",
+      "whole_occ_RMSE_rad": 0.2302610032072728,
+      "whole_occ_MAE_rad": 0.03898604620627443
+    },
+    {
+      "seed": 2026110105,
+      "D": 120,
+      "mode": "kalman",
+      "whole_occ_RMSE_rad": 0.4317748194159569,
+      "whole_occ_MAE_rad": 0.15990869503637753
+    },
+    {
+      "seed": 2026110105,
+      "D": 20,
+      "mode": "kalman",
+      "whole_occ_RMSE_rad": 0.27101247062992245,
+      "whole_occ_MAE_rad": 0.04766792680320191
+    },
+    {
+      "seed": 2026110105,
+      "D": 120,
+      "mode": "kf-mean",
+      "whole_occ_RMSE_rad": 0.43199917186218934,
+      "whole_occ_MAE_rad": 0.15997677058713178
+    },
+    {
+      "seed": 2026110105,
+      "D": 20,
+      "mode": "kf-mean",
+      "whole_occ_RMSE_rad": 0.27101241246102414,
+      "whole_occ_MAE_rad": 0.047667395149455824
+    }
+  ]
+}

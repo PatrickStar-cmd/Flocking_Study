@@ -1,0 +1,5 @@
+# Keep exact source/audit bytes across Windows and Unix checkouts.
+* -text whitespace=cr-at-eol
+# Frozen diffs and raw console logs retain original diagnostic whitespace.
+/instrumentation.diff -whitespace
+/review/*.log -whitespace

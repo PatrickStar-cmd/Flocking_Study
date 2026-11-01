@@ -1,0 +1,21 @@
+{
+  "allocation_date": "2026-11-01",
+  "branch": "exp/haoli-kf-diagnostic-20261101",
+  "base_commit": "f0b797220db5d6f2b6ed883e3838614e67cebbe5",
+  "development_seeds": [
+    2026110101,
+    2026110102,
+    2026110103,
+    2026110104,
+    2026110105
+  ],
+  "allocation_check": {
+    "performed_by": "Codex primary reviewer",
+    "method": "Literal rg search of candidate seed values in the available repository JSON/CSV/Markdown/MATLAB/Python text before implementation",
+    "matches_before_allocation": 0,
+    "scope_limit": "Does not certify absence from unshared teammate data or binary-only archives"
+  },
+  "use": "Exploratory development P0/P1; seed 2026110101 is also used for software regressions and fixed first-seed pipeline checks",
+  "independent_units": "Five seed-level runs; repeated P0/reference trajectories and fixture hardlinks do not increase the sample size",
+  "confirmatory_status": "Not a confirmatory or fresh external validation set"
+}

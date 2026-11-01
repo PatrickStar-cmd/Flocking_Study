@@ -1,0 +1,11 @@
+{
+  "status": "PASS_saved_trajectory_audit",
+  "model_seconds": 28.5466462,
+  "seed": 2026110101,
+  "D_steps": 120,
+  "first_P_cutoff_missing_step": 101,
+  "eligible_hidden_edge_steps": 16800,
+  "P_truncated_hidden_edge_steps": 2800,
+  "P_truncation_fraction": 0.16666666666666666,
+  "note": "Original MATLAB metadata export used unsupported fopen x mode after MAT was saved. Fixed exporter; independently verified saved MAT without rerunning or changing trajectories."
+}

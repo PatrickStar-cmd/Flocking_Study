@@ -1,0 +1,8 @@
+{错误使用 fopen
+权限无效。
+
+出错 runStockReference (第 32 行)
+jsonPath=fullfile(here,'stock_full_reference.json');
+    ^
+} 
+ERROR: MATLAB error Exit Status: 0x00000001

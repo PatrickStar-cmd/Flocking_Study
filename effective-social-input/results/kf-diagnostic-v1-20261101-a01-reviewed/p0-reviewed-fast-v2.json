@@ -1,0 +1,56 @@
+{
+  "profile": "fast",
+  "status": "PASS",
+  "matlabVersion": "25.1.0.2943329 (R2025a)",
+  "evidence": "software test",
+  "timestamp": "2026-11-01 23:20:35",
+  "commit": "f0b797220db5d6f2b6ed883e3838614e67cebbe5",
+  "branch": "exp/haoli-kf-diagnostic-20261101",
+  "dirty": "?? experiments/kf-diagnostic-20261101/\n",
+  "coreHashes": {
+    "simulateEffectiveSocialInput_m": "79576b13115434bca6a0bfb990050259e3967d85b63ccba9c3d3cbb95c960906",
+    "scheduledOcclusionInput_m": "4966c50b2120de5a073ea4707cbc0a576bf4df903003be9c1ace369eb27c55de",
+    "occlusionInputStep_m": "d553ca0a1ae747ed0208a234290f14562f265ad33b2fc90a252374862a1c9b10",
+    "bearingTrackStep_m": "1fd72107c93cdd3413dd4b0aed137632cbce2ad60dbe44db09fd47ab9e85305f",
+    "defaultEffectiveInputConfig_m": "ab54ddfb85a1a28ae1980b163e44973dd0efa27403c277a4f7c3982716fbd52a"
+  },
+  "checks": {
+    "P0_1": {
+      "passed": true,
+      "detail": "Actual Git/environment/core SHA256 recorded"
+    },
+    "P0_2": {
+      "passed": true,
+      "detail": "Exact repeat and all original result fields"
+    },
+    "P0_3": {
+      "passed": true,
+      "detail": "D0 all four modes, full physical/neural/filter records"
+    },
+    "P0_4": {
+      "passed": true,
+      "detail": "All four prefixes including last fresh state and complete tracker/sensor/RNG checkpoint"
+    },
+    "P0_5": {
+      "passed": true,
+      "detail": "Hidden truth poison ignored; non-NaN hidden observation rejected; stock hidden-position contract"
+    },
+    "P0_6": {
+      "passed": true,
+      "maxMassError": 7.7715611723760958E-16,
+      "detail": "Selected15 fresh8; expected mass per active edge and heat-convolution contract"
+    },
+    "P0_7": {
+      "passed": true,
+      "minimumCovarianceEigenvalue": 1.9885950624369482E-5,
+      "maximumCovarianceAsymmetry": 0,
+      "R": 0.0001
+    },
+    "P0_8": {
+      "passed": true,
+      "detail": "Age-only/P-only/joint/Hold-ignore-P explicit fixtures; full-profile checks D120 timing"
+    }
+  },
+  "overallPassed": true,
+  "seconds": 5.7066303
+}

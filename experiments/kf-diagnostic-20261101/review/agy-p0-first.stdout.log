@@ -1,0 +1,39 @@
+========================================================================
+STARTING P0 AUDIT (FAST SUITE)
+Date/Time: 01-Nov-2026 23:11:36
+MATLAB: 25.1.0.2943329 (R2025a), Platform: PCWIN64
+========================================================================
+
+[Check 1/8] Verifying Environment, Hashes, and Non-shadowing...
+  PASS: Environment and distinct namespace verified.
+
+[Check 2/8] Verifying Determinism (Same seed repeated yields bit-for-bit identity)...
+  PASS: Bit-for-bit determinism and exact stock regression confirmed.
+
+[Check 3/8] Verifying D=0 Equivalence Across all memory modes (none, hold, kf-mean, kalman)...
+  PASS: Under D=0, all modes yield bit-for-bit identical trajectories and neural state.
+
+[Check 4/8] Verifying Pre-occlusion Prefix Consistency for D>0 (steps 1..t0-1)...
+  PASS: Steps 1..30 identical across all 4 modes (positions, headings, u, sensor noise, checkpoint).
+
+[Check 5/8] Verifying Observation Sanitization & Controller Isolation...
+    Confirmed assertion triggered on non-sanitized observation: 断言失败。
+  PASS: Hidden truth strictly isolated; non-sanitized inputs rejected.
+
+[Check 6/8] Verifying Edge Selection (k=15, fresh=8, active rules, inputMass)...
+  PASS: selected=15, fresh=8, active rules and inputMass fully verified.
+
+[Check 7/8] Verifying Filter Mathematical Validity (P symmetric PSD, innovation wrapping)...
+    Theoretical R: 1e-4, Empirical noise variance: 1.001571e-04
+  PASS: P is symmetric PSD, sensor noise variance matches R, innovation wrapping correct.
+
+[Check 8/8] Verifying Truncation Reason Bookkeeping...
+    D=20 occlusion window: Active Kalman edges=2800, Var cutoffs=0, Age cutoffs=0
+    Riccati P11 after 1400 fresh steps: 4.3631522532735623e-05
+    First missing step where P11 > 1.0: step 101 (P11=1.0134)
+  PASS: Truncation reasons correctly recorded; Riccati prediction step 101 confirmed.
+
+========================================================================
+ALL 8 P0 AUDIT CHECKS PASSED WITH STRICT MATHEMATICAL ASSERTIONS!
+========================================================================
+Saved audit report to: D:\大二下专业课\卓越计划\Flocking_Study_KF_diagnostic_20261101\experiments\kf-diagnostic-20261101\p0_audit_fast_report.json

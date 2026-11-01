@@ -1,0 +1,12 @@
+PASS: missing-update contract, reacquisition age, shared observation noise, RNG isolation
+PASS: equal and exponential distance weights
+PASS: exact equal-mode regression, fixed mass, zero neighbors, periodic distance
+PASS: wrapped innovation, PSD, hidden-state isolation, schedule, no-event equality
+PASS: circular mass conservation, peak reduction, covariance cutoff
+PASS REVIEWED P0 fast seconds=5.707
+PASS: missing-update contract, reacquisition age, shared observation noise, RNG isolation
+PASS: equal and exponential distance weights
+PASS: exact equal-mode regression, fixed mass, zero neighbors, periodic distance
+PASS: wrapped innovation, PSD, hidden-state isolation, schedule, no-event equality
+PASS: circular mass conservation, peak reduction, covariance cutoff
+PASS REVIEWED P0 p1 seconds=127.909

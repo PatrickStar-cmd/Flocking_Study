@@ -1,0 +1,262 @@
+[
+  {
+    "relativePath": "sources/core/analyzeDistanceWeightPilot.m",
+    "sha256": "f28f72fc100aa5b4812f01b707a1c25c7cc33ab154c6af724a31077e0bbb076b"
+  },
+  {
+    "relativePath": "sources/core/analyzeEffectiveInputSweep.m",
+    "sha256": "307feea2813d8873e864feb0c7eea5bda7a155419742c87125e66b3c8b1af785"
+  },
+  {
+    "relativePath": "sources/core/analyzeTimeSeriesValidation.m",
+    "sha256": "4e814845f2715b9470ad14fcf7fdbe4e29d3dfcf1b74148849b0d17e982f4c40"
+  },
+  {
+    "relativePath": "sources/core/bearingTrackStep.m",
+    "sha256": "1fd72107c93cdd3413dd4b0aed137632cbce2ad60dbe44db09fd47ab9e85305f"
+  },
+  {
+    "relativePath": "sources/core/bearingTrackStepGaussMarkov.m",
+    "sha256": "6db5673c2e3025d8e1b28b61abbe239d0530412c89097ca430679a821ba2976e"
+  },
+  {
+    "relativePath": "sources/core/blockTimeMetrics.m",
+    "sha256": "274efee97b5ce4a07a352da1fce7c1f70d3542b4ed4b9a85d1e097ca819ba02f"
+  },
+  {
+    "relativePath": "sources/core/buildRingConnectivity.m",
+    "sha256": "d0ae1f35a77fd9603b7cf975686e297317d66d884fe902ec8a2205d699bab85e"
+  },
+  {
+    "relativePath": "sources/core/compareBearingPredictionModels.m",
+    "sha256": "cd55b6a9dcc5b1354c3a617e644755d91642fc2ff8540f70a70569b9d435c79a"
+  },
+  {
+    "relativePath": "sources/core/defaultEffectiveInputConfig.m",
+    "sha256": "ab54ddfb85a1a28ae1980b163e44973dd0efa27403c277a4f7c3982716fbd52a"
+  },
+  {
+    "relativePath": "sources/core/distanceWeight.m",
+    "sha256": "37b9c2d4452982bea672a7199fde41ff22196b0dd8139873850b9cf2c47b1f58"
+  },
+  {
+    "relativePath": "sources/core/generatePaperSimulationFigures.m",
+    "sha256": "159dd25f8d860813ca14eecf10d60406a6d1c1c1cbc44f02b0097096a054d513"
+  },
+  {
+    "relativePath": "sources/core/localSocialInputMetrics.m",
+    "sha256": "506579a5684ed2760ca1c75776a3b35868bbcdaa4dfa7a0bb86eb130b70a5a45"
+  },
+  {
+    "relativePath": "sources/core/occlusionInputStep.m",
+    "sha256": "d553ca0a1ae747ed0208a234290f14562f265ad33b2fc90a252374862a1c9b10"
+  },
+  {
+    "relativePath": "sources/core/plotBearingDampedResults.m",
+    "sha256": "2bf6522b8613934d345425da52df66a288244de489f70b1331c1cc2b6939dc94"
+  },
+  {
+    "relativePath": "sources/core/plotCheckpointInterventionPilot.m",
+    "sha256": "f3a1ace8eeda0fbf6e352cecbf4d7fa901a64de2c5776e53820071e45b0363fe"
+  },
+  {
+    "relativePath": "sources/core/plotMainstreamModelComparison.m",
+    "sha256": "d926dc41daa19f4fc5184609232bb7f5c343cb0764167ddd685b254157ea7df1"
+  },
+  {
+    "relativePath": "sources/core/plotPaperKFExtendedResults.m",
+    "sha256": "08503ff5fa551028bf851b8d2de5b14ffa15b89ee5995205c387908b04464fa9"
+  },
+  {
+    "relativePath": "sources/core/plotPaperKFSimulation.m",
+    "sha256": "1c91ac97516da5d92a6d1a7195e5ce4c1a628d6097a4d01f07cdb845e2f87a85"
+  },
+  {
+    "relativePath": "sources/core/plotSq1LocalE1.m",
+    "sha256": "1f41b9a2ae6d662270155cecc759e00c321141b4203f299d32d6031bbba53fa2"
+  },
+  {
+    "relativePath": "sources/core/plotTurnOcclusionPilot.m",
+    "sha256": "2cccf173936bcfbb79aa953e7d73970f09cdece3baa345d8f047e61f86955b4a"
+  },
+  {
+    "relativePath": "sources/core/replayLocalSocialInput.m",
+    "sha256": "9d71e5720173ba50a7485c347ddcb0b0393e87d6819a73aa5cfd19a3c806540e"
+  },
+  {
+    "relativePath": "sources/core/runBlockMetricPilot.m",
+    "sha256": "cb9a261137c4448eb60f932d1cfc0f80cf85d4352a673ead621fb9d27e811298"
+  },
+  {
+    "relativePath": "sources/core/runCheckpointInterventionPilot.m",
+    "sha256": "910e7a0a4183adf94c237e29504b421189a8c5f0356b3428fd76ea177187e34c"
+  },
+  {
+    "relativePath": "sources/core/runDistanceWeightPilot.m",
+    "sha256": "c45480862aa1d741e7a1b5f6121c24841abf769849da8e5597d32fc6ca1c93e9"
+  },
+  {
+    "relativePath": "sources/core/runEffectiveInputControls.m",
+    "sha256": "1e38139323387fd6f90cbad3ff64e72c2d3d32f618ebfd554d407acba0e9bddf"
+  },
+  {
+    "relativePath": "sources/core/runEffectiveInputSmokeTest.m",
+    "sha256": "7727e19e9b5b6fcdda494f099c0ccb951f8c54d50f2ce6f158f5382c481c454c"
+  },
+  {
+    "relativePath": "sources/core/runEffectiveInputSweep.m",
+    "sha256": "82b56cc235d62eed0b4e65c5afe8adfeefa89a99ab470ca8b6a5c7e989866a6b"
+  },
+  {
+    "relativePath": "sources/core/runHighRateBearingValidation.m",
+    "sha256": "61414cb7d48ae555ed898b480e15e476a495ebeefe0ff0abd50a9c3160ba6ba5"
+  },
+  {
+    "relativePath": "sources/core/runMainstreamModelComparison.m",
+    "sha256": "9bded1b394c2fa8be94b2f3b53834feeaebc139a804a4599cb844104f48d57b4"
+  },
+  {
+    "relativePath": "sources/core/runN20LongSweep.m",
+    "sha256": "a2880c2e1e83120d915b41acb26ad1855250aba14173a83436b7433bcdf6702c"
+  },
+  {
+    "relativePath": "sources/core/runOcclusionIntegrationPilot.m",
+    "sha256": "7ce41968e9dec9ac53e689331298c00d50bab82bc4b032a7a18631dea576e2c7"
+  },
+  {
+    "relativePath": "sources/core/runPaperKFExtendedSimulation.m",
+    "sha256": "9d4889c6043863334e13106fc275f6abeda521759f9a172b9884cf71c176a6f3"
+  },
+  {
+    "relativePath": "sources/core/runPaperKFSimulation.m",
+    "sha256": "14f6e0108229fdd74b8d8fef8e3ada5bf04bf2216aa174a99e8571a76ec4ebf0"
+  },
+  {
+    "relativePath": "sources/core/runPersistenceEndpointSensitivity.m",
+    "sha256": "6f5a40f3d9f2da3d4c9cb3c8618e3cfc89d4b5b480bbca4d23a2f9d073000011"
+  },
+  {
+    "relativePath": "sources/core/runPersistencePilot.m",
+    "sha256": "3130eafb687a288c7f85701b3f676043ddc6d7f45d6c99c7756214047c53afd8"
+  },
+  {
+    "relativePath": "sources/core/runPersistenceValidation.m",
+    "sha256": "877cb8f5fc6ccbdf0d82fdfc52c9dded9b2ebc1c87e1e48898de346b5eaa6fc4"
+  },
+  {
+    "relativePath": "sources/core/runSq1LocalE1.m",
+    "sha256": "2af3c6e5d5d452242b62924c0656f8ac15ed2707752a6ed227d62d16dcb9a40a"
+  },
+  {
+    "relativePath": "sources/core/runTimeSeriesValidation.m",
+    "sha256": "9e7cc3de266adca5f03f944a507c257885ef9f93d7b3d34f97d702ff18a5cf2c"
+  },
+  {
+    "relativePath": "sources/core/runTurnOcclusionPilot.m",
+    "sha256": "26d185d96b1d436ddd0003875136e69636d201976c2a8a8003f3b7a1833b9525"
+  },
+  {
+    "relativePath": "sources/core/scheduledOcclusionInput.m",
+    "sha256": "4966c50b2120de5a073ea4707cbc0a576bf4df903003be9c1ace369eb27c55de"
+  },
+  {
+    "relativePath": "sources/core/screenBearingPrediction.m",
+    "sha256": "cca2ddb8bc13a896d2eb48f7d46f9c2b60d829c2e3b76170d36eff718d7289f4"
+  },
+  {
+    "relativePath": "sources/core/simulateEffectiveSocialInput.m",
+    "sha256": "79576b13115434bca6a0bfb990050259e3967d85b63ccba9c3d3cbb95c960906"
+  },
+  {
+    "relativePath": "sources/core/simulateEffectiveSocialInputBeforeDistance.m",
+    "sha256": "70e0b791a04c0c2f476a7e8ed67667b6f58b8ac8151d672d62b8110bcddcec23"
+  },
+  {
+    "relativePath": "sources/core/testBearingTrackGaussMarkov.m",
+    "sha256": "501155e7aada84ec5f6b70285491762410f3401007205b815020b01cec5cd022"
+  },
+  {
+    "relativePath": "sources/core/testBlockTimeMetrics.m",
+    "sha256": "81e5c9d121b327bacf2382cf2cd685f51940676a49b068a736c9dab4065a3b16"
+  },
+  {
+    "relativePath": "sources/core/testCheckpointFork.m",
+    "sha256": "1b6cc1b01db03f247625286a8d4fff37119b65aa224f7a29f4c9cb1a72047ba8"
+  },
+  {
+    "relativePath": "sources/core/testDistanceWeight.m",
+    "sha256": "c0ce761e0d783896b96186f922fadb1700180c98404df05eecb437803981b2bb"
+  },
+  {
+    "relativePath": "sources/core/testLocalSocialInput.m",
+    "sha256": "5ecc485cdd84d06b0597ae97dd7701191176eac9b8b920e5204e9d1c60b7c50c"
+  },
+  {
+    "relativePath": "sources/core/testOcclusionPrediction.m",
+    "sha256": "45c29cfdc8e12acf21ae1f068a6afed3f65d70c6988e0a526fe30c2d0bc70dd0"
+  },
+  {
+    "relativePath": "sources/core/testPredictionModelContract.m",
+    "sha256": "ff34b1ca84e34106ea4029e744ef1657fd6b031726ee97dcbfc303707ac4f3f6"
+  },
+  {
+    "relativePath": "sources/diagnostic/assertDiagnosticPrefix.m",
+    "sha256": "beb6ff45b1f8ef5168ec8ccdfd004956c2c1f1291db2e6809e8131cba2de4659"
+  },
+  {
+    "relativePath": "sources/diagnostic/benchmarkRunner.m",
+    "sha256": "11a63477a32e1578b1a82d988887519b31ca3ad2d3a1ac3c5ee95662ae9a7311"
+  },
+  {
+    "relativePath": "sources/diagnostic/diagnosticConfig.m",
+    "sha256": "75ee7913d75b5577c3fca192d28603c960ec16ed9ff8bf7bb44bc2417bf6e754"
+  },
+  {
+    "relativePath": "sources/diagnostic/diagnosticJson.m",
+    "sha256": "057b68d213dcba5c0b6cec3103cae20007c048e34ba56bb54761e9a415649288"
+  },
+  {
+    "relativePath": "sources/diagnostic/diagnosticSha256.m",
+    "sha256": "e06061a3f277d5a523f09c37dc536f01d874e4489ea60d598e38c59dddaa2ad1"
+  },
+  {
+    "relativePath": "sources/diagnostic/occlusionInputStepInstrumented.m",
+    "sha256": "7b90882bdc79b9f5e8e2a69a23a64d6cf55843e0f6fecfbe7805e5006fab1617"
+  },
+  {
+    "relativePath": "sources/diagnostic/runKFDiagnosticBatch.m",
+    "sha256": "c9d2dd4944594ffcdfae5dd3b0aae861917c3768213e50095e87ad4f9d1c1879"
+  },
+  {
+    "relativePath": "sources/diagnostic/runP0Audit.m",
+    "sha256": "ec04076485b0205f6db0964bf4e0306ecd65cb8b7adc5c8aaa7699ca5bddc5c5"
+  },
+  {
+    "relativePath": "sources/diagnostic/runP0AuditFast.m",
+    "sha256": "d80191cd26dbc734a24ce011534b11549c571b892eba9f6bd20b20876d0c0c6d"
+  },
+  {
+    "relativePath": "sources/diagnostic/runP0AuditFullSingleSeed.m",
+    "sha256": "1e7bcc71c4a8faefd84ea7fe5705e02ac9a4a2fe6be9e77d6272f69c9647e5a0"
+  },
+  {
+    "relativePath": "sources/diagnostic/runReviewedBatch.m",
+    "sha256": "8956d5a989f79a9b5b8ac7e6dea1c5fa1dd13b58d21a5150622f8009abdace5a"
+  },
+  {
+    "relativePath": "sources/diagnostic/runReviewedP0.m",
+    "sha256": "afe1c31ab8fbc2f688b4e8ffffad5910958c5c1eed8b561c4745bec41a793990"
+  },
+  {
+    "relativePath": "sources/diagnostic/runSingleSeedFull.m",
+    "sha256": "83fd806a0800dbf0eb808d2605c6b38425103bd0e1e86e6070890942609d6a99"
+  },
+  {
+    "relativePath": "sources/diagnostic/scheduledOcclusionInputInstrumented.m",
+    "sha256": "00ec019777fdec080298b62b7670a474057a0ac8ee967c3a15b560a744c4b159"
+  },
+  {
+    "relativePath": "sources/diagnostic/simulateEffectiveSocialInputInstrumented.m",
+    "sha256": "fd08a343c1f3956f644d16d80bf1aabe5ffee5a7535f0c8b067b950c2f7b5314"
+  }
+]
