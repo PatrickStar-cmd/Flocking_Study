@@ -9,7 +9,7 @@ from scipy.io import loadmat
 def sha(path):return hashlib.file_digest(path.open('rb'),'sha256').hexdigest()
 
 
-def position_labels(x,starts,D):
+def position_labels(x,starts,D,return_rates=False):
     p=x['positions'];i=x['observer_id'].astype(int)-1;j=x['target_id'].astype(int)-1
     dx=(p[:,j,:]-p[:,i,:]).transpose(2,1,0)
     rounded=np.copysign(np.floor(np.abs(dx/1000)+.5),dx)
@@ -20,15 +20,20 @@ def position_labels(x,starts,D):
     change[1:]=np.arctan2(np.sin(angle[1:]-angle[:-1]),np.cos(angle[1:]-angle[:-1]))
     near=distance<5;boundary=np.min(500-np.abs(delta),axis=-1)<10
     alias=np.abs(change)>=.9*np.pi
-    label=[]
+    rate=change/.3;rate[0]=np.nan
+    rate[1:][jump[1:]|near[1:]|near[:-1]]=np.nan
+    label=[];rates=[]
     for t0 in starts:
         s=int(t0)-1;z=np.full(140,'G-ambiguous',dtype='U16')
         switch=jump[s:s+D].any(axis=0);close=near[s:s+D].any(axis=0)
         clean=~jump[s-200:s+D].any(axis=0)&~alias[s-200:s+D].any(axis=0)&~boundary[s:s+D].any(axis=0)&~close
         z[clean]='G-clean';z[close]='G-close';z[switch]='G-switch';label.append(z)
+        block=rate[s:s+D]**2;valid=np.isfinite(block);den=valid.sum(axis=0)
+        average=np.divide(np.nansum(block,axis=0),den,out=np.full(140,np.nan),where=den>0)
+        rates.append(np.sqrt(average))
     actual=x['true_bearing'];error=np.arctan2(np.sin(angle-actual),np.cos(angle-actual))
     assert np.abs(error).max()<2e-12
-    return np.array(label)
+    return (np.array(label),np.array(rates)) if return_rates else np.array(label)
 
 
 def audit(stage):
@@ -45,7 +50,7 @@ def audit(stage):
     definitions=stage/('GEOMETRY_FROZEN.json' if 'development' in stage.name else 'GEOMETRY_APPLIED.json')
     cuts=json.loads(definitions.read_text(encoding='utf-8'))['rate_cutpoints']
     methods=sorted({a['method'] for a in raw_manifest['files']})
-    n_rows=0;maximum_error=0.;min_eigen=np.inf
+    n_rows=0;maximum_error=0.;min_eigen=np.inf;independent_rate_pool=[]
     for item in inputs['inputs']:
         path=stage/item['source'];assert sha(path)==item['sha256']
         x=loadmat(path,simplify_cells=True);seed=int(item['seed']);scenario=item['scenario'];stem=path.stem
@@ -62,7 +67,10 @@ def audit(stage):
             with np.load(stage/'labels'/f'{stem}_D{D}.npz') as label_file:
                 labels=label_file['labels'];rates=label_file['rates'];starts=label_file['starts']
             assert np.array_equal(starts,np.arange(1201,1682,20))
-            assert np.array_equal(labels,position_labels(x,starts,D))
+            independent_labels,independent_rates=position_labels(x,starts,D,return_rates=True)
+            assert np.array_equal(labels,independent_labels)
+            assert np.allclose(rates,independent_rates,atol=2e-12,rtol=1e-10,equal_nan=True)
+            independent_rate_pool.extend(independent_rates[(labels=='G-clean')&np.isfinite(independent_rates)].tolist())
             truth=x['true_bearing'][starts[None,:]-1+np.arange(D)[:,None]]
             for method in methods:
                 with np.load(stage/'raw/replay'/f'{stem}_{method}_fresh.npz') as full:
@@ -88,6 +96,8 @@ def audit(stage):
                         assert difference<1e-12
                         n_rows+=1
         print('AUDIT PASS',stem,flush=True)
+    if 'development' in stage.name:
+        assert np.allclose(np.quantile(independent_rate_pool,[1/3,2/3]),cuts,atol=2e-12,rtol=1e-10)
     report={'status':'PASS','all_raw_sha_verified':len(raw_manifest['files']),'physical_inputs':len(inputs['inputs']),
         'independent_seeds':len(inputs['seeds']),'nonempty_window_RMSE_rows_independently_recomputed':n_rows,
         'max_RMSE_difference':maximum_error,'minimum_covariance_eigenvalue':min_eigen,
