@@ -11,6 +11,8 @@ def sha(path):return hashlib.file_digest(path.open('rb'),'sha256').hexdigest()
 def choose(stage):
     assert 'development' in stage.name
     target=stage/'FROZEN_DECISION.json';assert not target.exists()
+    reviewed=json.loads((stage/'review/independent_audit.json').read_text(encoding='utf-8'))
+    assert reviewed['status']=='PASS' and reviewed['independent_seeds']==12
     frame=pd.read_csv(stage/'analysis/seed_metrics.csv');frame=frame[frame.scenario=='combined']
     coverage=pd.read_csv(stage/'analysis/coverage_by_age.csv.gz')
     cuts=json.loads((stage/'GEOMETRY_FROZEN.json').read_text(encoding='utf-8'))['rate_cutpoints']
