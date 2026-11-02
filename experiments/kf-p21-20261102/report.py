@@ -88,6 +88,8 @@ raw/input保留物理位置与方位观测。raw/replay采用共享全前缀+flo
 
 G0审计、G1机理、开发选择和可能的独立验证证据分开。KF能否被神经场利用：**本轮不回答**。KF能否提高GO：**本轮不回答**。不声称二维位置可观测性、闭环稳定性或安全保证。
 
+正式G0全量尾部图为review/figures/G0_full_tails.png：全部5seed样本排序后仅对绘图坐标抽稀，没有使用初版绘图中的前50000样本上限。G0-r02原尾部图保留为绘图QA历史，不能用于全样本分布主张。正式G1机理年龄图为review/figures/G1_mechanism_age.png，修正旧图标题画布裁切，数值未改。
+
 ## 文件保护、发布与回退
 
 仅新增P2.1目录；原始allocentric-flocking-original、effective-social-input既有模型、P1/P2脚本和历史结果未改。新结果位于kf-p21-v1-20261102-r01，分阶段目录与QA记录均保留。当前任务分支{ subprocess.check_output(['git','branch','--show-current'],text=True).strip() }。发布前逐文件核验，远端写入遵照用户授权；本报告不把本地完成写成已上传。公共回退使用对应提交git revert，不强推、不改main。
