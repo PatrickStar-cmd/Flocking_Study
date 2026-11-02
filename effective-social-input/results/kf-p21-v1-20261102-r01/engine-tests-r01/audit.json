@@ -1,0 +1,9 @@
+{
+  "status": "PASS",
+  "models_checked": 6,
+  "warm_start_cases_per_model": 2,
+  "all_q_Joseph_PSD": true,
+  "missing_observation_invariance": true,
+  "lossless_XOR_roundtrip": true,
+  "max_difference_from_untouched_P2": 2.8421709430404007e-13
+}

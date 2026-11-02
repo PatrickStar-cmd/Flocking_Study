@@ -1,0 +1,8 @@
+=== P2.1 G0 Baseline Audit & Geometric Decoupling ===
+Old P2 Directory: D:\�����רҵ��\׿Խ�ƻ�\Flocking_Study_KF_diagnostic_20261101\effective-social-input\results\kf-p2-v1-20261102-reviewed
+New G0 Directory: D:\�����רҵ��\׿Խ�ƻ�\Flocking_Study_KF_diagnostic_20261101\effective-social-input\results\kf-p21-v1-20261102-r01\g0-r02
+Audited 270 baseline rows. All match P2 summary: True
+Max RMSE difference: 1.110e-16
+Max NIS difference:  7.105e-15
+G0 Pilot Clean Rate Terciles (descriptive only): q1=0.002764, q2=0.007997
+=== G0 Audit Completed Successfully ===

@@ -1,0 +1,378 @@
+{
+  "status": "FROZEN_GEOMETRY",
+  "rate_cutpoints": [
+    0.002606820109411625,
+    0.007400135918977204
+  ],
+  "development_clean_edge_windows": 149734,
+  "rule": "pooled development truth-only clean rates; slow<=q1,mid<=q2,fast>q2",
+  "labels": [
+    {
+      "file": "seed2026111001_base_D20.npz",
+      "sha256": "15204ca65474434bac3886aa068544e6fffc3b2db2e45ed750cc9010d4d399db",
+      "seed": 2026111001,
+      "scenario": "base",
+      "D": 20
+    },
+    {
+      "file": "seed2026111001_base_D120.npz",
+      "sha256": "5db5d4b940295351e035f116086a6cb738854fc17776d4e3707f7c2a554393fc",
+      "seed": 2026111001,
+      "scenario": "base",
+      "D": 120
+    },
+    {
+      "file": "seed2026111001_turn_D20.npz",
+      "sha256": "4faf7e4213e9a53ad0597a17311dd34384d94d6c2eb180a97b283c1207127df7",
+      "seed": 2026111001,
+      "scenario": "turn",
+      "D": 20
+    },
+    {
+      "file": "seed2026111001_turn_D120.npz",
+      "sha256": "a52ade40d15d46a56244fc820b446a6075e063995e917b2413c970665a55bf03",
+      "seed": 2026111001,
+      "scenario": "turn",
+      "D": 120
+    },
+    {
+      "file": "seed2026111002_base_D20.npz",
+      "sha256": "e2cf50186fa21a5aa851bc406c2854b183c869403321b561c404825a687740bf",
+      "seed": 2026111002,
+      "scenario": "base",
+      "D": 20
+    },
+    {
+      "file": "seed2026111002_base_D120.npz",
+      "sha256": "1a9b76435327b227d8b8561b0376a94ec3b2503e744f11b9523c133f7061e3f6",
+      "seed": 2026111002,
+      "scenario": "base",
+      "D": 120
+    },
+    {
+      "file": "seed2026111002_turn_D20.npz",
+      "sha256": "1d392f600d7974a968cdd03d60403fc79d56ada433d4c09f14d1e8accfba9703",
+      "seed": 2026111002,
+      "scenario": "turn",
+      "D": 20
+    },
+    {
+      "file": "seed2026111002_turn_D120.npz",
+      "sha256": "e10025b68987fb1d5aff763aea5b5a9590536e854b9d82d9b19a736cabbcc98d",
+      "seed": 2026111002,
+      "scenario": "turn",
+      "D": 120
+    },
+    {
+      "file": "seed2026111003_base_D20.npz",
+      "sha256": "6b45d576d4bc86e0e1eb7de975efea5c3343fc31f609d74df890b5794fc9437b",
+      "seed": 2026111003,
+      "scenario": "base",
+      "D": 20
+    },
+    {
+      "file": "seed2026111003_base_D120.npz",
+      "sha256": "9a114cfee688cde839f692d5c74b8d870751de530da39224e6df1422f02c9906",
+      "seed": 2026111003,
+      "scenario": "base",
+      "D": 120
+    },
+    {
+      "file": "seed2026111003_turn_D20.npz",
+      "sha256": "b33d56a604a5452bdcf0f9e2fd185f489c6fe8eba8136c6c70880f6b030584fe",
+      "seed": 2026111003,
+      "scenario": "turn",
+      "D": 20
+    },
+    {
+      "file": "seed2026111003_turn_D120.npz",
+      "sha256": "543891df94bf293a557ed435c619ed1333e0e3d053866fe10ff968b2dfaf36af",
+      "seed": 2026111003,
+      "scenario": "turn",
+      "D": 120
+    },
+    {
+      "file": "seed2026111004_base_D20.npz",
+      "sha256": "83a4b387f46df6655e6744f643ba1f8fbfb8273827f47c0a3d08b14bad243543",
+      "seed": 2026111004,
+      "scenario": "base",
+      "D": 20
+    },
+    {
+      "file": "seed2026111004_base_D120.npz",
+      "sha256": "1b2e7e6c7ef6c67281bdc1fafff95e2bab003caa98c7be0a912c46c769502c1f",
+      "seed": 2026111004,
+      "scenario": "base",
+      "D": 120
+    },
+    {
+      "file": "seed2026111004_turn_D20.npz",
+      "sha256": "27727ec736c9e8d8adbb3727a5f348e15706012cbced20f942d5b2c5ae05818e",
+      "seed": 2026111004,
+      "scenario": "turn",
+      "D": 20
+    },
+    {
+      "file": "seed2026111004_turn_D120.npz",
+      "sha256": "66229daa2423546d700cbf0e712b46e93c3a160627432c0c19a709da4dbb77e8",
+      "seed": 2026111004,
+      "scenario": "turn",
+      "D": 120
+    },
+    {
+      "file": "seed2026111005_base_D20.npz",
+      "sha256": "4e3174fec8d441901ed4166c434fb90318d34d2406f521fc6a31340f0affce95",
+      "seed": 2026111005,
+      "scenario": "base",
+      "D": 20
+    },
+    {
+      "file": "seed2026111005_base_D120.npz",
+      "sha256": "22b36cca2bdbeebbf26924a60a3da3270a0b602e1248853dd1e55c83ac95e142",
+      "seed": 2026111005,
+      "scenario": "base",
+      "D": 120
+    },
+    {
+      "file": "seed2026111005_turn_D20.npz",
+      "sha256": "344c89ca3eed7e7c2e7199e33f45fa5c732cc9d4a319376efe9152179a0fd3e8",
+      "seed": 2026111005,
+      "scenario": "turn",
+      "D": 20
+    },
+    {
+      "file": "seed2026111005_turn_D120.npz",
+      "sha256": "309bbb2b1f49e0e83fb374c1087d2f3653924a5df0a57969ed18287a72f5678e",
+      "seed": 2026111005,
+      "scenario": "turn",
+      "D": 120
+    },
+    {
+      "file": "seed2026111006_base_D20.npz",
+      "sha256": "710517187be5a2cd39c466cd1ff0a7300b8dc8dac8026b6bad65cd34aa40d774",
+      "seed": 2026111006,
+      "scenario": "base",
+      "D": 20
+    },
+    {
+      "file": "seed2026111006_base_D120.npz",
+      "sha256": "b2cd1abf182f44c597565c2aa02174bc70ba7ac44f7bb0cc9aadb667fa90d1d5",
+      "seed": 2026111006,
+      "scenario": "base",
+      "D": 120
+    },
+    {
+      "file": "seed2026111006_turn_D20.npz",
+      "sha256": "57721b25960109217c605e31bdf767bae6316d980cc2d0c5baf0a4da922d8276",
+      "seed": 2026111006,
+      "scenario": "turn",
+      "D": 20
+    },
+    {
+      "file": "seed2026111006_turn_D120.npz",
+      "sha256": "41d5ad21b40b2f74ee16e0a1878aed759766b9ce16b91f410e4ecffb00660a27",
+      "seed": 2026111006,
+      "scenario": "turn",
+      "D": 120
+    },
+    {
+      "file": "seed2026111007_base_D20.npz",
+      "sha256": "b56649262ed6699cedf728d687bc457d991514a34578e917b5db633e8af9eb9a",
+      "seed": 2026111007,
+      "scenario": "base",
+      "D": 20
+    },
+    {
+      "file": "seed2026111007_base_D120.npz",
+      "sha256": "2d7957a39601929b9a03adccfe42b02ab55ec029ddf76ed03aefc5b5fd61d8c7",
+      "seed": 2026111007,
+      "scenario": "base",
+      "D": 120
+    },
+    {
+      "file": "seed2026111007_turn_D20.npz",
+      "sha256": "2b589045311559c3006b9e36909f21249a0b4f4275c7fa51c1721ee59948d4ab",
+      "seed": 2026111007,
+      "scenario": "turn",
+      "D": 20
+    },
+    {
+      "file": "seed2026111007_turn_D120.npz",
+      "sha256": "57461f957b37ab8540f87ed8b6940af44910f69d9c6957304a918693bb8fabe3",
+      "seed": 2026111007,
+      "scenario": "turn",
+      "D": 120
+    },
+    {
+      "file": "seed2026111008_base_D20.npz",
+      "sha256": "c30cb13ae7d14cae7ea674b45c35b6f3a8e75650683985ef8d53a2c289069321",
+      "seed": 2026111008,
+      "scenario": "base",
+      "D": 20
+    },
+    {
+      "file": "seed2026111008_base_D120.npz",
+      "sha256": "d5a3a78071bc0c0b770c0f26b67c286fc19e77671eb02cada432e349749bbdbf",
+      "seed": 2026111008,
+      "scenario": "base",
+      "D": 120
+    },
+    {
+      "file": "seed2026111008_turn_D20.npz",
+      "sha256": "39e3bd05022fa1d496db3c57cca3c284e690d628a9fe434b3595affe19421778",
+      "seed": 2026111008,
+      "scenario": "turn",
+      "D": 20
+    },
+    {
+      "file": "seed2026111008_turn_D120.npz",
+      "sha256": "a778d5c3a9ee37913586d5e514ef2ab344aad96fd8dcf8f1568b6ce599f673aa",
+      "seed": 2026111008,
+      "scenario": "turn",
+      "D": 120
+    },
+    {
+      "file": "seed2026111009_base_D20.npz",
+      "sha256": "c3568b7bb9fe5c00abc24a6eda95d380a6dfc3e801e59a7ba08fcaf5f0f47942",
+      "seed": 2026111009,
+      "scenario": "base",
+      "D": 20
+    },
+    {
+      "file": "seed2026111009_base_D120.npz",
+      "sha256": "59ddad554f5e3f150751effad605ff25641f926f922c92b4b5c00653855b9030",
+      "seed": 2026111009,
+      "scenario": "base",
+      "D": 120
+    },
+    {
+      "file": "seed2026111009_turn_D20.npz",
+      "sha256": "50d3e951cf4d6f5d88af20cc48d9e54651ec67a4e43f0255747fffa5ad244d2a",
+      "seed": 2026111009,
+      "scenario": "turn",
+      "D": 20
+    },
+    {
+      "file": "seed2026111009_turn_D120.npz",
+      "sha256": "764c4ce9c735d80d2d6f72036481833417e5eefb90ecca20075c127769718e52",
+      "seed": 2026111009,
+      "scenario": "turn",
+      "D": 120
+    },
+    {
+      "file": "seed2026111010_base_D20.npz",
+      "sha256": "96048dee9832568b1d9d5c562b7fb08b0989b135bab37c6d292c6bdbade6e40a",
+      "seed": 2026111010,
+      "scenario": "base",
+      "D": 20
+    },
+    {
+      "file": "seed2026111010_base_D120.npz",
+      "sha256": "72b078daac578221c9560d3cc78fd606007c4927a277036b0f9e4ba185cb236f",
+      "seed": 2026111010,
+      "scenario": "base",
+      "D": 120
+    },
+    {
+      "file": "seed2026111010_turn_D20.npz",
+      "sha256": "797bd423d0842eedd3447f99993a7cc8e42888e89e6360bf6538524e01868932",
+      "seed": 2026111010,
+      "scenario": "turn",
+      "D": 20
+    },
+    {
+      "file": "seed2026111010_turn_D120.npz",
+      "sha256": "0b4c60d70120c2eeedf6e00bec2f8b521f362b01d5216a16d90aedb918621641",
+      "seed": 2026111010,
+      "scenario": "turn",
+      "D": 120
+    },
+    {
+      "file": "seed2026111011_base_D20.npz",
+      "sha256": "decdc8963793b2a8252933b4003a74f110eb5e95ced31dd1d5a511bb0edbda4b",
+      "seed": 2026111011,
+      "scenario": "base",
+      "D": 20
+    },
+    {
+      "file": "seed2026111011_base_D120.npz",
+      "sha256": "06c72592627201f13d85d2bc72bf44ef343e8e3fb0e308ff418ffe8ba7020a87",
+      "seed": 2026111011,
+      "scenario": "base",
+      "D": 120
+    },
+    {
+      "file": "seed2026111011_turn_D20.npz",
+      "sha256": "0bd553c2dcdce2b42ac1e049dc94a18e616035d2aea855b30afda5e52b97c445",
+      "seed": 2026111011,
+      "scenario": "turn",
+      "D": 20
+    },
+    {
+      "file": "seed2026111011_turn_D120.npz",
+      "sha256": "b99ccfc0a71f8459a68f1a79089101652846a048ecaa190745da0378c3349a25",
+      "seed": 2026111011,
+      "scenario": "turn",
+      "D": 120
+    },
+    {
+      "file": "seed2026111012_base_D20.npz",
+      "sha256": "678a8ba4d252e0025dfd286ee9fe8e9a0ab5ed3810447f6ce233ce5dfc8d4710",
+      "seed": 2026111012,
+      "scenario": "base",
+      "D": 20
+    },
+    {
+      "file": "seed2026111012_base_D120.npz",
+      "sha256": "4365ede4f429acc9c26f22133558e7314023aee5f0d4cb23b35754adc60946e2",
+      "seed": 2026111012,
+      "scenario": "base",
+      "D": 120
+    },
+    {
+      "file": "seed2026111012_turn_D20.npz",
+      "sha256": "b258b7adcca949652433eab9d887bc8fb7082f52ca0b76712ba05b0e4c36c15e",
+      "seed": 2026111012,
+      "scenario": "turn",
+      "D": 20
+    },
+    {
+      "file": "seed2026111012_turn_D120.npz",
+      "sha256": "819fb2e4eb2e293f4d43e20de75a5522cc7fa991958a4f08b679f06f8c7531f1",
+      "seed": 2026111012,
+      "scenario": "turn",
+      "D": 120
+    }
+  ],
+  "starts": [
+    1201,
+    1221,
+    1241,
+    1261,
+    1281,
+    1301,
+    1321,
+    1341,
+    1361,
+    1381,
+    1401,
+    1421,
+    1441,
+    1461,
+    1481,
+    1501,
+    1521,
+    1541,
+    1561,
+    1581,
+    1601,
+    1621,
+    1641,
+    1661,
+    1681
+  ],
+  "durations": [
+    20,
+    120
+  ]
+}

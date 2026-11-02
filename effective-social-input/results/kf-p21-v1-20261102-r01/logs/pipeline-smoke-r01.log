@@ -1,0 +1,8 @@
+PASS 1/1 seed2026110101_base Hold
+PASS 1/1 seed2026110101_base CV_q1e-06
+PASS 1/1 seed2026110101_base CV_q1e-05
+PASS 1/1 seed2026110101_base CV_q0.0001
+PASS 1/1 seed2026110101_base CV_q0.001
+PASS 1/1 seed2026110101_base CV_q0.01
+PASS 1/1 seed2026110101_base GM_default
+COMPLETE effective-social-input\results\kf-p21-v1-20261102-r01\pipeline-smoke-r01

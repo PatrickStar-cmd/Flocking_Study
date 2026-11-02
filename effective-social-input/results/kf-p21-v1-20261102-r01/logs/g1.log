@@ -1,0 +1,12 @@
+=== Synthetic Bearings Verification (G1) ===
+Output directory: D:\�����רҵ��\׿Խ�ƻ�\Flocking_Study_KF_diagnostic_20261101\effective-social-input\results\kf-p21-v1-20261102-r01\g1
+Seeds: 20 streams (2026113001..2026113020)
+Configs: 8 (A1, B1, B2, B3, C1, C2, D1, E1)
+Durations: [20, 120]
+Total conditions: 320
+=== Geometry Verification Summary ===
+D1 Near-range verified: all min_dist < 5: True
+D1 Image switches: 0 (expected 0)
+E1 Image switches: all >= 1 switch in occ: True
+E1 Near-range counts: 0 (expected 0)
+=== Synthetic Bearings Completed Successfully ===

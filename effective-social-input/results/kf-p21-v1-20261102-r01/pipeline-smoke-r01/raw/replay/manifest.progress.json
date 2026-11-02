@@ -1,0 +1,180 @@
+{
+  "status": "RUNNING",
+  "files": [
+    {
+      "file": "seed2026110101_base_Hold_fresh.npz",
+      "sha256": "789ff3595caf4d95a877650ff50ef70ee57d5518b1088d049279fb6b89ce01d0",
+      "kind": "shared-fresh",
+      "source": "raw/input/seed2026110101_base.mat",
+      "method": "Hold"
+    },
+    {
+      "file": "seed2026110101_base_Hold_D20.npz",
+      "sha256": "df051546279d665f6857f21caf7e861aa948380f6ec64c8cd0c916fd3ad3d9e4",
+      "kind": "XOR-branch",
+      "fresh_file": "seed2026110101_base_Hold_fresh.npz",
+      "source": "raw/input/seed2026110101_base.mat",
+      "method": "Hold",
+      "D": 20
+    },
+    {
+      "file": "seed2026110101_base_Hold_D120.npz",
+      "sha256": "1cf9f098e677c8596eee9cb17c2384242a8185b7512e114908561c8423ec54f9",
+      "kind": "XOR-branch",
+      "fresh_file": "seed2026110101_base_Hold_fresh.npz",
+      "source": "raw/input/seed2026110101_base.mat",
+      "method": "Hold",
+      "D": 120
+    },
+    {
+      "file": "seed2026110101_base_CV_q1e-06_fresh.npz",
+      "sha256": "1fe8b994bdca3c00cc4a189731660b7a0ee2db2cbec4ccfbee9be1c0c0cff89e",
+      "kind": "shared-fresh",
+      "source": "raw/input/seed2026110101_base.mat",
+      "method": "CV_q1e-06"
+    },
+    {
+      "file": "seed2026110101_base_CV_q1e-06_D20.npz",
+      "sha256": "ff4d4570fea11b4f91e19e406107d949f7a86f651a67eb3112b1c2a4382ce9c4",
+      "kind": "XOR-branch",
+      "fresh_file": "seed2026110101_base_CV_q1e-06_fresh.npz",
+      "source": "raw/input/seed2026110101_base.mat",
+      "method": "CV_q1e-06",
+      "D": 20
+    },
+    {
+      "file": "seed2026110101_base_CV_q1e-06_D120.npz",
+      "sha256": "e6a5556aee83da7657f9344ac47a26920bd68314b625cc26ad94e408262dc7b7",
+      "kind": "XOR-branch",
+      "fresh_file": "seed2026110101_base_CV_q1e-06_fresh.npz",
+      "source": "raw/input/seed2026110101_base.mat",
+      "method": "CV_q1e-06",
+      "D": 120
+    },
+    {
+      "file": "seed2026110101_base_CV_q1e-05_fresh.npz",
+      "sha256": "673c0f9d2bb5137016a30277a8bb00f2c5e24a1378c1bd5002d90b1fed5db933",
+      "kind": "shared-fresh",
+      "source": "raw/input/seed2026110101_base.mat",
+      "method": "CV_q1e-05"
+    },
+    {
+      "file": "seed2026110101_base_CV_q1e-05_D20.npz",
+      "sha256": "838ba83e6130fde450c570594f3552ca073f33234e59e5ecf28032844662ac6b",
+      "kind": "XOR-branch",
+      "fresh_file": "seed2026110101_base_CV_q1e-05_fresh.npz",
+      "source": "raw/input/seed2026110101_base.mat",
+      "method": "CV_q1e-05",
+      "D": 20
+    },
+    {
+      "file": "seed2026110101_base_CV_q1e-05_D120.npz",
+      "sha256": "593d0d1caff47ff28d74121eac2a80d068339071de6575aab30275f750049c29",
+      "kind": "XOR-branch",
+      "fresh_file": "seed2026110101_base_CV_q1e-05_fresh.npz",
+      "source": "raw/input/seed2026110101_base.mat",
+      "method": "CV_q1e-05",
+      "D": 120
+    },
+    {
+      "file": "seed2026110101_base_CV_q0.0001_fresh.npz",
+      "sha256": "bb92e1a5fde5a044ddd86a78d76c748c7c010b3ff387aa8cf1d97586c98dbb6e",
+      "kind": "shared-fresh",
+      "source": "raw/input/seed2026110101_base.mat",
+      "method": "CV_q0.0001"
+    },
+    {
+      "file": "seed2026110101_base_CV_q0.0001_D20.npz",
+      "sha256": "5b171943e3bd679d753dbdf62889140d8a3876cbf5d486101da9dc6af9384cb1",
+      "kind": "XOR-branch",
+      "fresh_file": "seed2026110101_base_CV_q0.0001_fresh.npz",
+      "source": "raw/input/seed2026110101_base.mat",
+      "method": "CV_q0.0001",
+      "D": 20
+    },
+    {
+      "file": "seed2026110101_base_CV_q0.0001_D120.npz",
+      "sha256": "13e2b1339353347a78ce9ef1361ecafdea63eff2d93aadd25da67b3a004f8ada",
+      "kind": "XOR-branch",
+      "fresh_file": "seed2026110101_base_CV_q0.0001_fresh.npz",
+      "source": "raw/input/seed2026110101_base.mat",
+      "method": "CV_q0.0001",
+      "D": 120
+    },
+    {
+      "file": "seed2026110101_base_CV_q0.001_fresh.npz",
+      "sha256": "8812485a65f3ee3f6c16156ab52d231643390368aebb1e9d714f61adf95ddefb",
+      "kind": "shared-fresh",
+      "source": "raw/input/seed2026110101_base.mat",
+      "method": "CV_q0.001"
+    },
+    {
+      "file": "seed2026110101_base_CV_q0.001_D20.npz",
+      "sha256": "4fa17d97736452719d6bd66b4cf63149787c62ded779a5d44a8c4d52eddd64e7",
+      "kind": "XOR-branch",
+      "fresh_file": "seed2026110101_base_CV_q0.001_fresh.npz",
+      "source": "raw/input/seed2026110101_base.mat",
+      "method": "CV_q0.001",
+      "D": 20
+    },
+    {
+      "file": "seed2026110101_base_CV_q0.001_D120.npz",
+      "sha256": "895068fbf34d3ea84e61e24c6b371c761008f4236b3569c57cbf179e838e37a6",
+      "kind": "XOR-branch",
+      "fresh_file": "seed2026110101_base_CV_q0.001_fresh.npz",
+      "source": "raw/input/seed2026110101_base.mat",
+      "method": "CV_q0.001",
+      "D": 120
+    },
+    {
+      "file": "seed2026110101_base_CV_q0.01_fresh.npz",
+      "sha256": "69aae7c26c0858fbdb392c7186cb4f8ba38dceb2af318017518bd5b1b5779891",
+      "kind": "shared-fresh",
+      "source": "raw/input/seed2026110101_base.mat",
+      "method": "CV_q0.01"
+    },
+    {
+      "file": "seed2026110101_base_CV_q0.01_D20.npz",
+      "sha256": "1e121f249410712fc62e15434463e048b0a9ad0a77f861545a3ceeae92f11f58",
+      "kind": "XOR-branch",
+      "fresh_file": "seed2026110101_base_CV_q0.01_fresh.npz",
+      "source": "raw/input/seed2026110101_base.mat",
+      "method": "CV_q0.01",
+      "D": 20
+    },
+    {
+      "file": "seed2026110101_base_CV_q0.01_D120.npz",
+      "sha256": "58d21dca650de20b539c76e1d192d63817f1b6ecb7c9f97b8b0f359bd1623595",
+      "kind": "XOR-branch",
+      "fresh_file": "seed2026110101_base_CV_q0.01_fresh.npz",
+      "source": "raw/input/seed2026110101_base.mat",
+      "method": "CV_q0.01",
+      "D": 120
+    },
+    {
+      "file": "seed2026110101_base_GM_default_fresh.npz",
+      "sha256": "ed14c46ff846f98e9d3a36e78b0e27629c68dd849bdaaccd54cb8beaca83405d",
+      "kind": "shared-fresh",
+      "source": "raw/input/seed2026110101_base.mat",
+      "method": "GM_default"
+    },
+    {
+      "file": "seed2026110101_base_GM_default_D20.npz",
+      "sha256": "88171a5c6ee0fb020cb53064b537e84ece01a547e0a4897839fd43c81c489542",
+      "kind": "XOR-branch",
+      "fresh_file": "seed2026110101_base_GM_default_fresh.npz",
+      "source": "raw/input/seed2026110101_base.mat",
+      "method": "GM_default",
+      "D": 20
+    },
+    {
+      "file": "seed2026110101_base_GM_default_D120.npz",
+      "sha256": "2e58f804ebae2865441e8385ca4438aa68380b4b85c217e7f00ee885b658e22e",
+      "kind": "XOR-branch",
+      "fresh_file": "seed2026110101_base_GM_default_fresh.npz",
+      "source": "raw/input/seed2026110101_base.mat",
+      "method": "GM_default",
+      "D": 120
+    }
+  ]
+}

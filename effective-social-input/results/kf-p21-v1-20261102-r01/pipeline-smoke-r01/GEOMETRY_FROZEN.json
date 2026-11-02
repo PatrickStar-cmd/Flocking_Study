@@ -1,0 +1,33 @@
+{
+  "status": "FROZEN_GEOMETRY",
+  "rate_cutpoints": [
+    0.0031436112671623896,
+    0.011065160824287495
+  ],
+  "development_clean_edge_windows": 526,
+  "rule": "pooled development truth-only clean rates; slow<=q1,mid<=q2,fast>q2",
+  "labels": [
+    {
+      "file": "seed2026110101_base_D20.npz",
+      "sha256": "8687fcc66e91fbf6be110843a50cc31b00f42d9eed68a445bbc186b21787bc93",
+      "seed": 2026110101,
+      "scenario": "base",
+      "D": 20
+    },
+    {
+      "file": "seed2026110101_base_D120.npz",
+      "sha256": "fb0adb22dfe6f53fdb4194a1bf2f639206c1bf48609a118ea1e28fd2bdbefcce",
+      "seed": 2026110101,
+      "scenario": "base",
+      "D": 120
+    }
+  ],
+  "starts": [
+    1201,
+    1401
+  ],
+  "durations": [
+    20,
+    120
+  ]
+}

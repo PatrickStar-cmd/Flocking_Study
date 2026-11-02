@@ -1,0 +1,11 @@
+{
+  "status": "PASS",
+  "all_raw_sha_verified": 504,
+  "physical_inputs": 24,
+  "independent_seeds": 12,
+  "nonempty_window_RMSE_rows_independently_recomputed": 58555,
+  "max_RMSE_difference": 4.440892098500626e-16,
+  "minimum_covariance_eigenvalue": 1.5042698713146001e-06,
+  "position_labels_independently_recomputed": true,
+  "base_turn_prefix_and_noise_matched": true
+}

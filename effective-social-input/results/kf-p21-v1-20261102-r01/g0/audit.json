@@ -1,0 +1,16 @@
+{
+  "status": "PASS",
+  "rows_audited": 270,
+  "expected_rows": 270,
+  "max_rmse_difference": 1.1102230246251565e-16,
+  "max_nis_difference": 7.105427357601002e-15,
+  "threshold": 1e-10,
+  "input_sha_verified": true,
+  "replay_sha_verified": true,
+  "g0_pilot_clean_rate_terciles": {
+    "note": "Derived purely from old P2 5 pilot seeds for descriptive exploration. Strictly prohibited for development q calibration.",
+    "q1_33pct": 0.0027639320163376654,
+    "q2_67pct": 0.00799691109594189,
+    "n_clean_edges": 3677
+  }
+}

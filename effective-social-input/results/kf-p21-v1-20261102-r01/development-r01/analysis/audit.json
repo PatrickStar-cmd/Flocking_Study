@@ -1,0 +1,41 @@
+{
+  "status": "PASS",
+  "input_count": 24,
+  "seed_count": 12,
+  "candidate_starts": [
+    1201,
+    1221,
+    1241,
+    1261,
+    1281,
+    1301,
+    1321,
+    1341,
+    1361,
+    1381,
+    1401,
+    1421,
+    1441,
+    1461,
+    1481,
+    1501,
+    1521,
+    1541,
+    1561,
+    1581,
+    1601,
+    1621,
+    1641,
+    1661,
+    1681
+  ],
+  "model_count": 7,
+  "window_metric_rows": 67200,
+  "raw_files": 504,
+  "rate_cutpoints": [
+    0.002606820109411625,
+    0.007400135918977204
+  ],
+  "all_geometry_retained": true,
+  "thresholds_do_not_remove_errors": true
+}

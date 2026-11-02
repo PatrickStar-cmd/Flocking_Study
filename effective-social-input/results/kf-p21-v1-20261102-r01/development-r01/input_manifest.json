@@ -1,0 +1,264 @@
+{
+  "status": "COMPLETED",
+  "stage": "development",
+  "seeds": [
+    2.026111001E+9,
+    2.026111002E+9,
+    2.026111003E+9,
+    2.026111004E+9,
+    2.026111005E+9,
+    2.026111006E+9,
+    2.026111007E+9,
+    2.026111008E+9,
+    2.026111009E+9,
+    2.02611101E+9,
+    2.026111011E+9,
+    2.026111012E+9
+  ],
+  "inputs": [
+    {
+      "source": "raw/input/seed2026111001_base.mat",
+      "sha256": "8884c664cbe80cc1670f7440058edd3f2eeb7823afd32543f0ac1670573862e7",
+      "seed": 2.026111001E+9,
+      "scenario": "base",
+      "bytes": 5.382727E+6
+    },
+    {
+      "source": "raw/input/seed2026111001_turn.mat",
+      "sha256": "84db823b3970ec5064c5f0da34f915c194998763f5976757e40cd6d0437b981e",
+      "seed": 2.026111001E+9,
+      "scenario": "turn",
+      "bytes": 5.400406E+6
+    },
+    {
+      "source": "raw/input/seed2026111002_base.mat",
+      "sha256": "b953c2fe8de6c601a65f49b2625eba60e0391b3ebc09521e7615a94dcb3d6a83",
+      "seed": 2.026111002E+9,
+      "scenario": "base",
+      "bytes": 5.359777E+6
+    },
+    {
+      "source": "raw/input/seed2026111002_turn.mat",
+      "sha256": "835bffa1a48f306b268b6d132b4489dc2e4e878022ef533a9218ad1754450159",
+      "seed": 2.026111002E+9,
+      "scenario": "turn",
+      "bytes": 5.367877E+6
+    },
+    {
+      "source": "raw/input/seed2026111003_base.mat",
+      "sha256": "12b52f591bd90715c0ea16c3fe5f44b365743022c4d122cc2a5bee9378be1c3d",
+      "seed": 2.026111003E+9,
+      "scenario": "base",
+      "bytes": 5.352405E+6
+    },
+    {
+      "source": "raw/input/seed2026111003_turn.mat",
+      "sha256": "9e3d27abdf03bf133bf01222cac5a95f24f9ce9a11ddfbafce6a04208c0554a8",
+      "seed": 2.026111003E+9,
+      "scenario": "turn",
+      "bytes": 5.370047E+6
+    },
+    {
+      "source": "raw/input/seed2026111004_base.mat",
+      "sha256": "1f20c0aa64f5707486eee88c34338ed4f8f60198a32e5c95f9124432eadc5c17",
+      "seed": 2.026111004E+9,
+      "scenario": "base",
+      "bytes": 5.397114E+6
+    },
+    {
+      "source": "raw/input/seed2026111004_turn.mat",
+      "sha256": "e88af54b21ffd809ece0ef509bbb680192d4c1b38a39c80334ddae7b4dd7d39f",
+      "seed": 2.026111004E+9,
+      "scenario": "turn",
+      "bytes": 5.444938E+6
+    },
+    {
+      "source": "raw/input/seed2026111005_base.mat",
+      "sha256": "96d9ad41968185991e60a0cdd9afe8c5e8888923dd593abced5cba4d93489382",
+      "seed": 2.026111005E+9,
+      "scenario": "base",
+      "bytes": 5.383933E+6
+    },
+    {
+      "source": "raw/input/seed2026111005_turn.mat",
+      "sha256": "e9518dba51836280d808143a5446375587a82330248eab6b6e544b7772339699",
+      "seed": 2.026111005E+9,
+      "scenario": "turn",
+      "bytes": 5.39743E+6
+    },
+    {
+      "source": "raw/input/seed2026111006_base.mat",
+      "sha256": "09597d6e6ab5606ca8b80ed814f25c75a5798977b2f287ed9a1bbca166c2903c",
+      "seed": 2.026111006E+9,
+      "scenario": "base",
+      "bytes": 5.346687E+6
+    },
+    {
+      "source": "raw/input/seed2026111006_turn.mat",
+      "sha256": "108137c9dce094c73bdf0267bcdf90ba2e61f07fc145ec13fefb53fbf4dcfd25",
+      "seed": 2.026111006E+9,
+      "scenario": "turn",
+      "bytes": 5.349958E+6
+    },
+    {
+      "source": "raw/input/seed2026111007_base.mat",
+      "sha256": "cccc52e0c9f97f9db7075fb43492f9bcc43713a74afbdd18353d05b478210dc4",
+      "seed": 2.026111007E+9,
+      "scenario": "base",
+      "bytes": 5.350458E+6
+    },
+    {
+      "source": "raw/input/seed2026111007_turn.mat",
+      "sha256": "9f3966a20dd656d044732b25ec3294c84a22d0a580112f218078e25fd4b119bd",
+      "seed": 2.026111007E+9,
+      "scenario": "turn",
+      "bytes": 5.38365E+6
+    },
+    {
+      "source": "raw/input/seed2026111008_base.mat",
+      "sha256": "85a0eb09ead9070b23af99ffc8904ca43fa3cc38235ecd40967bf5ffa24b9d05",
+      "seed": 2.026111008E+9,
+      "scenario": "base",
+      "bytes": 5.358856E+6
+    },
+    {
+      "source": "raw/input/seed2026111008_turn.mat",
+      "sha256": "a43fabfdb518db9521bb40ecf32f003ac511892126461afebc34c6985d529d31",
+      "seed": 2.026111008E+9,
+      "scenario": "turn",
+      "bytes": 5.356099E+6
+    },
+    {
+      "source": "raw/input/seed2026111009_base.mat",
+      "sha256": "4399805446e07d0e0983855a134bb5e8b0cfb98974f6642e18722d72c2abf743",
+      "seed": 2.026111009E+9,
+      "scenario": "base",
+      "bytes": 5.399399E+6
+    },
+    {
+      "source": "raw/input/seed2026111009_turn.mat",
+      "sha256": "24a9344ce23cceba17ad0324439dcbddb34cf5e070a8bb9f85998cdfac08de54",
+      "seed": 2.026111009E+9,
+      "scenario": "turn",
+      "bytes": 5.421964E+6
+    },
+    {
+      "source": "raw/input/seed2026111010_base.mat",
+      "sha256": "31c09339ebdca116e470b5dd65ec785617b92751c13db822b01d992f2e9c34ef",
+      "seed": 2.02611101E+9,
+      "scenario": "base",
+      "bytes": 5.355841E+6
+    },
+    {
+      "source": "raw/input/seed2026111010_turn.mat",
+      "sha256": "e3748648591c20c09b5109f854d73908402f06a776fadaec8a0cbf2de3e48739",
+      "seed": 2.02611101E+9,
+      "scenario": "turn",
+      "bytes": 5.363758E+6
+    },
+    {
+      "source": "raw/input/seed2026111011_base.mat",
+      "sha256": "9727cef842c388af4fefe5d187e1edb2e572325c93acd00145cb63b25945a28e",
+      "seed": 2.026111011E+9,
+      "scenario": "base",
+      "bytes": 5.361007E+6
+    },
+    {
+      "source": "raw/input/seed2026111011_turn.mat",
+      "sha256": "52a5edcb179f04b1ad2300cd9176059c0d86b0fa1d24d07fdb2b063948beb886",
+      "seed": 2.026111011E+9,
+      "scenario": "turn",
+      "bytes": 5.387946E+6
+    },
+    {
+      "source": "raw/input/seed2026111012_base.mat",
+      "sha256": "0d0b2c5486108e89ebbcf5ece5873dd901f31a55e88ed7c83bafd8ea6a90e989",
+      "seed": 2.026111012E+9,
+      "scenario": "base",
+      "bytes": 5.393688E+6
+    },
+    {
+      "source": "raw/input/seed2026111012_turn.mat",
+      "sha256": "18eb42374d052a89512a3b1bb21a9581147370df289271ae5e5dd0f1166491af",
+      "seed": 2.026111012E+9,
+      "scenario": "turn",
+      "bytes": 5.400236E+6
+    }
+  ],
+  "pairing": [
+    {
+      "seed": 2.026111001E+9,
+      "prefix_equal": true,
+      "sensor_noise_equal": true,
+      "heading_change_rms": 0.79737200766597915
+    },
+    {
+      "seed": 2.026111002E+9,
+      "prefix_equal": true,
+      "sensor_noise_equal": true,
+      "heading_change_rms": 0.43709706941125215
+    },
+    {
+      "seed": 2.026111003E+9,
+      "prefix_equal": true,
+      "sensor_noise_equal": true,
+      "heading_change_rms": 0.5722346256441333
+    },
+    {
+      "seed": 2.026111004E+9,
+      "prefix_equal": true,
+      "sensor_noise_equal": true,
+      "heading_change_rms": 0.8271046634247452
+    },
+    {
+      "seed": 2.026111005E+9,
+      "prefix_equal": true,
+      "sensor_noise_equal": true,
+      "heading_change_rms": 0.63688286902637792
+    },
+    {
+      "seed": 2.026111006E+9,
+      "prefix_equal": true,
+      "sensor_noise_equal": true,
+      "heading_change_rms": 0.48990018904854149
+    },
+    {
+      "seed": 2.026111007E+9,
+      "prefix_equal": true,
+      "sensor_noise_equal": true,
+      "heading_change_rms": 0.85326202228125436
+    },
+    {
+      "seed": 2.026111008E+9,
+      "prefix_equal": true,
+      "sensor_noise_equal": true,
+      "heading_change_rms": 0.71331930299071156
+    },
+    {
+      "seed": 2.026111009E+9,
+      "prefix_equal": true,
+      "sensor_noise_equal": true,
+      "heading_change_rms": 0.66607736998256639
+    },
+    {
+      "seed": 2.02611101E+9,
+      "prefix_equal": true,
+      "sensor_noise_equal": true,
+      "heading_change_rms": 0.4536515864455703
+    },
+    {
+      "seed": 2.026111011E+9,
+      "prefix_equal": true,
+      "sensor_noise_equal": true,
+      "heading_change_rms": 0.54732811634851364
+    },
+    {
+      "seed": 2.026111012E+9,
+      "prefix_equal": true,
+      "sensor_noise_equal": true,
+      "heading_change_rms": 0.64743714450089629
+    }
+  ],
+  "matlab_version": "25.1.0.2943329 (R2025a)",
+  "source_commit": "cf2208eda04fbb6bcea0f1b8d9fb05da3c986bbd"
+}

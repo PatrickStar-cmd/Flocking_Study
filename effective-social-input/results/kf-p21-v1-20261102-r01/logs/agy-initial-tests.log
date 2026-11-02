@@ -1,0 +1,16 @@
+======================================================================
+Running P2.1 Standalone Test Suite (No pytest dependency)
+======================================================================
+[PASS] Test 1: Angle wrap 359 vs 1 deg
+[PASS] Test 2: Non-anticipation & no future leak
+[PASS] Test 3: Hidden truth isolation
+[PASS] Test 4: All 5 CV q maintain Joseph PSD
+[PASS] Test 5: Stock P2 reference import CV & GM
+[PASS] Test 6: MATLAB round ties +/-0.5, +/-1.5
+[PASS] Test 7: Synthetic min-image crossing & no false wrap
+[PASS] Test 8: Classification mutual exclusivity
+[PASS] Test 9: 140 edges shape contracts & derivative bounds
+[PASS] Test 10: Gating units in model time & prediction retention
+======================================================================
+Results: 10/10 tests passed.
+======================================================================

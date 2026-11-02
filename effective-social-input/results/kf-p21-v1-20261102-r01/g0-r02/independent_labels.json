@@ -1,0 +1,12 @@
+{
+  "status": "PASS",
+  "position_event_rows_independently_verified": 2814000,
+  "all_case_edge_labels_verified": true,
+  "coordinate_output_rounding_tolerance": 5.1e-05,
+  "pilot_only_rate_cutpoints": [
+    0.002763939725783001,
+    0.007996882529678574
+  ],
+  "missing_support_explicit_NaN": true,
+  "development_thresholds_not_selected_from_old_seeds": true
+}

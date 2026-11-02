@@ -1,0 +1,16 @@
+# Baseline A gate: PASS
+
+P2 frozen source/artifact hashes, all 270 window-level RMSE and fresh mean NIS recovered. No old files modified.
+
+{
+  "status": "PASS",
+  "baseline_commit": "81e0080c8ffc00134c64f407521974a32a950767",
+  "published_artifacts_sha_verified": 144,
+  "summary_rows_recovered": 270,
+  "max_rmse_difference": 1.1102230246251565e-16,
+  "max_nis_difference": 7.105427357601002e-15,
+  "python": "3.11.4 (tags/v3.11.4:d2340ef, Jun  7 2023, 05:45:37) [MSC v.1934 64 bit (AMD64)]",
+  "numpy": "2.3.5",
+  "scipy": "1.16.3",
+  "platform": "Windows-10-10.0.26200-SP0"
+}

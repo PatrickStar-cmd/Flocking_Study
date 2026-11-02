@@ -1,0 +1,13 @@
+method     geometry  n_edge_times      sum_NIS  fraction_edge_times  fraction_NIS_sum
+ KF-CV  G-ambiguous         49227 9.597072e+06             0.019535          0.196112
+ KF-CV      G-clean       2457971 2.544826e+06             0.975385          0.052002
+ KF-CV      G-close          7928 1.610801e+06             0.003146          0.032916
+ KF-CV          all       2520000 4.893666e+07             1.000000          1.000000
+ KF-CV switch_event           977 2.937480e+07             0.000388          0.600262
+ KF-CV switch_near2          3897 5.809157e+06             0.001546          0.118708
+ KF-GM  G-ambiguous         49227 1.278787e+07             0.019535          0.142225
+ KF-GM      G-clean       2457971 6.005260e+06             0.975385          0.066790
+ KF-GM      G-close          7928 4.384397e+06             0.003146          0.048763
+ KF-GM          all       2520000 8.991311e+07             1.000000          1.000000
+ KF-GM switch_event           977 3.888029e+07             0.000388          0.432421
+ KF-GM switch_near2          3897 2.785529e+07             0.001546          0.309802

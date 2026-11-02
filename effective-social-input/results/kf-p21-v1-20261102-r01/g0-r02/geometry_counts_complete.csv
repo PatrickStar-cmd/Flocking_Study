@@ -1,0 +1,17 @@
+geometry,D,n_seeds,edge_windows,edge_times,nonempty_cases
+G-ambiguous,20,4,186,3720,12
+G-ambiguous,120,4,182,21840,12
+G-clean,20,5,1887,37740,15
+G-clean,120,5,1790,214800,15
+G-close,20,2,10,200,4
+G-close,120,3,38,4560,9
+G-switch,20,4,17,340,8
+G-switch,120,4,90,10800,11
+all,20,5,2100,42000,15
+all,120,5,2100,252000,15
+clean-fast,20,5,596,11920,15
+clean-fast,120,5,630,75600,15
+clean-mid,20,5,643,12860,15
+clean-mid,120,5,582,69840,15
+clean-slow,20,5,648,12960,15
+clean-slow,120,5,578,69360,15

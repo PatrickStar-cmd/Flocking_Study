@@ -1,0 +1,25 @@
+AUDIT PASS seed2026111001_base
+AUDIT PASS seed2026111001_turn
+AUDIT PASS seed2026111002_base
+AUDIT PASS seed2026111002_turn
+AUDIT PASS seed2026111003_base
+AUDIT PASS seed2026111003_turn
+AUDIT PASS seed2026111004_base
+AUDIT PASS seed2026111004_turn
+AUDIT PASS seed2026111005_base
+AUDIT PASS seed2026111005_turn
+AUDIT PASS seed2026111006_base
+AUDIT PASS seed2026111006_turn
+AUDIT PASS seed2026111007_base
+AUDIT PASS seed2026111007_turn
+AUDIT PASS seed2026111008_base
+AUDIT PASS seed2026111008_turn
+AUDIT PASS seed2026111009_base
+AUDIT PASS seed2026111009_turn
+AUDIT PASS seed2026111010_base
+AUDIT PASS seed2026111010_turn
+AUDIT PASS seed2026111011_base
+AUDIT PASS seed2026111011_turn
+AUDIT PASS seed2026111012_base
+AUDIT PASS seed2026111012_turn
+{"status": "PASS", "all_raw_sha_verified": 504, "physical_inputs": 24, "independent_seeds": 12, "nonempty_window_RMSE_rows_independently_recomputed": 58555, "max_RMSE_difference": 4.440892098500626e-16, "minimum_covariance_eigenvalue": 1.5042698713146001e-06, "position_labels_independently_recomputed": true, "base_turn_prefix_and_noise_matched": true}

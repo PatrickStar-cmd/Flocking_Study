@@ -1,0 +1,9 @@
+{
+  "status": "PASS",
+  "raw_conditions": 320,
+  "summary_rows_recomputed": 960,
+  "noise_matched_across_D": true,
+  "D_close_passage_verified": true,
+  "E_single_image_switch_verified": true,
+  "evidence": "software and synthetic mechanisms, not physical group validation"
+}

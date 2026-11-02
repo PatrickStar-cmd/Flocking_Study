@@ -1,0 +1,18 @@
+{
+  "status": "PASS",
+  "input_count": 1,
+  "seed_count": 1,
+  "candidate_starts": [
+    1201,
+    1401
+  ],
+  "model_count": 7,
+  "window_metric_rows": 224,
+  "raw_files": 21,
+  "rate_cutpoints": [
+    0.0031436112671623896,
+    0.011065160824287495
+  ],
+  "all_geometry_retained": true,
+  "thresholds_do_not_remove_errors": true
+}

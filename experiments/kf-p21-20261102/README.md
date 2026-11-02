@@ -1,5 +1,7 @@
 # P2.1 几何解耦与KF校准
 
+本次实测已在全局Q选择门槛停止，未使用独立验证seed。正式结论与停止依据见[完整报告](../../effective-social-input/results/kf-p21-v1-20261102-r01/P21_FINAL_REPORT.md)及[判定说明](../../effective-social-input/results/kf-p21-v1-20261102-r01/DECISION_INTERPRETATION.md)，不把补充工作阈值混为原计划硬指标。
+
 计划全文：PROTOCOL.md。运行前细则：RUN_RULES.md。基线Hao_L@81e0080。旧模型、P1/P2脚本和结果只读；不执行P3/P4。
 
 执行顺序：baseline_audit.py → audit_p2_geometry.py → review_g0.py → test_p21.py → synthetic_bearings.py → review_g1.py → generateP21Inputs('development',2026111001:2026111012,'r01') → replay_q_grid.py → audit_independent.py → choose_q.py。若无可信全局q，冻结停止原因，不能强行选择最小训练误差的q。

@@ -1,0 +1,7 @@
+{
+  "status": "PASS",
+  "raw_calibration_band_rows_verified": 18000,
+  "max_coverage_difference": 1.1102230246251565e-16,
+  "all_Q_screening_coverage_min_max_independently_verified": true,
+  "no_criteria_changed_after_development_outcomes": true
+}
