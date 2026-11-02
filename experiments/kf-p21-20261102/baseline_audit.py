@@ -10,7 +10,9 @@ def main(out):
     here=Path(__file__).resolve().parent;repo=here.parent.parent
     old=repo/'effective-social-input/results/kf-p2-v1-20261102-reviewed'
     assert not out.exists();out.mkdir(parents=True)
-    assert subprocess.check_output(['git','rev-parse','HEAD'],text=True).strip()=='81e0080c8ffc00134c64f407521974a32a950767'
+    # A reproduction checkout includes new experiment commits, but the frozen
+    # original baseline must remain its ancestor and all old bytes unchanged.
+    subprocess.run(['git','merge-base','--is-ancestor','81e0080c8ffc00134c64f407521974a32a950767','HEAD'],check=True)
     audit=json.loads((old/'review/publication_audit.json').read_text(encoding='utf-8'))
     for f in audit['artifacts_sha256']:
         path=repo/f['path']
