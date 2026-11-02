@@ -14,6 +14,7 @@ def check(path):
     frozen=json.loads(path.read_text(encoding='utf-8'))
     here=Path(__file__).resolve().parent
     for name,digest in frozen['source_hashes'].items():assert sha(here/name)==digest,('Frozen source changed',name)
+    for name,digest in frozen['upstream_source_hashes'].items():assert sha(here.parent.parent/name)==digest,('Frozen upstream source changed',name)
     return frozen
 
 

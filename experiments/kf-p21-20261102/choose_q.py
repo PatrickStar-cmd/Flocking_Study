@@ -57,11 +57,14 @@ def choose(stage):
     else:q=None;sd=None;n=0;validation_seeds=[];reason='No globally admissible q under the predeclared protection, support and severe-miscalibration constraints; validation gate remains closed.'
     here=Path(__file__).resolve().parent
     source_hashes={p.name:sha(p) for p in sorted(here.iterdir()) if p.suffix in {'.py','.m'} or p.name in {'PROTOCOL.md','RUN_RULES.md'}}
+    repo=here.parent.parent
+    upstream=list((repo/'effective-social-input').glob('*.m'))+list((repo/'experiments/kf-diagnostic-20261101').glob('*.m'))+[repo/'experiments/kf-p2-20261102/replay.py']
+    upstream_hashes={p.relative_to(repo).as_posix():sha(p) for p in sorted(upstream)}
     decision={'status':'FROZEN' if q is not None else 'STOP_NO_ADMISSIBLE_Q','q_star':q,
         'reason':reason,'q_grid':[1e-6,1e-5,1e-4,1e-3,1e-2],'rate_cutpoints':cuts,
         'geometry':{'near_range':5,'half_box_margin':10,'aliasing_delta':.9*np.pi,'round':'MATLAB ties away from zero'},
         'source_commit':subprocess.check_output(['git','rev-parse','HEAD'],text=True).strip(),
-        'source_hashes':source_hashes,'development_q_sweep_sha256':sha(stage/'analysis/q_sweep.csv'),
+        'source_hashes':source_hashes,'upstream_source_hashes':upstream_hashes,'development_q_sweep_sha256':sha(stage/'analysis/q_sweep.csv'),
         'validation_n':n,'validation_seeds':validation_seeds,'development_paired_sd':sd,
         'desired_CI_halfwidth':.025,'minimum_scientific_difference_rad':.02,
         'primary':{'geometry':'clean-fast','D':120,'scenario':'combined','contrast':'CV(q*) - Hold, mean of within-seed window RMSE differences'},
