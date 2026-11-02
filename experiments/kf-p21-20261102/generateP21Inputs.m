@@ -1,11 +1,13 @@
-function out=generateP21Inputs(stage,seeds,suffix)
+function out=generateP21Inputs(stage,seeds,suffix,runRoot)
 % New Fresh references only, identical physical configuration to frozen P2.
 assert(any(strcmp(stage,{'development','validation'})));
 if nargin<3,suffix='r01';end
+assert(ischar(suffix) && ~isempty(regexp(suffix,'^[A-Za-z0-9_-]+$','once')));
 here=fileparts(mfilename('fullpath'));root=fileparts(fileparts(here));
 src=fullfile(root,'effective-social-input');p1=fullfile(root,'experiments','kf-diagnostic-20261101');
 addpath(src);addpath(p1);
 parent=fullfile(src,'results','kf-p21-v1-20261102-r01');
+if nargin>=4,parent=char(runRoot);end
 assert(isfile(fullfile(parent,'g0-r02','audit.json')),'G0 required.');
 g=jsondecode(fileread(fullfile(parent,'g0-r02','audit.json')));assert(strcmp(g.status,'PASS'));
 assert(isfile(fullfile(parent,'g0-r02','independent_labels.json')),'Independent G0 label audit required.');

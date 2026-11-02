@@ -6,7 +6,7 @@
 
 只有FROZEN_DECISION.json及SHA写定、开发和源代码核验后，才生成冻结seed列表的validation参考轨迹，用replay_q_grid.py --frozen及validate_frozen.py做一次不调参的独立检验。验证n从开发配对差SD、0.025rad目标CI半宽计算，最少30。
 
-Python3.11与P2的NumPy/SciPy/pandas/Matplotlib；MATLAB R2025a。仓库根执行。结果根effective-social-input/results/kf-p21-v1-20261102-r01。正式G0采用g0-r02；初版g0只保留QA历史（时间单位标签错误）。复现必须新run-id，不覆盖已有目录。
+Python3.11与P2的NumPy/SciPy/pandas/Matplotlib；MATLAB R2025a。仓库根执行。结果根effective-social-input/results/kf-p21-v1-20261102-r01。正式G0采用g0-r02；初版g0只保留QA历史（时间单位标签错误）。复现必须新run-id，不覆盖已有目录。generateP21Inputs的第四个可选参数runRoot可指定新结果根，先在该根通过G0/G1，再使用stage后缀r01；所有Python命令则显式传入对应新路径。无需修改冻结模型或覆盖旧文件。
 
 ## 原始预测的无损存储
 
