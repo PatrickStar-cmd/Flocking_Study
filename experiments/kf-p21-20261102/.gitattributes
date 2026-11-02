@@ -1,1 +1,4 @@
 * -text whitespace=cr-at-eol
+# Preserve the original plan and embedded Markdown hard line breaks verbatim.
+/PROTOCOL.md -whitespace
+/audit_p2_geometry.py -whitespace
