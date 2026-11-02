@@ -20,13 +20,18 @@ def check(path):
 
 def describe(values):
     values=np.asarray(values,dtype=float)
-    if not len(values):return {'n_seeds':0,'mean':None,'median':None,'sd':None,'ci_lower':None,'ci_upper':None}
+    finite=values[np.isfinite(values)]
+    if not len(finite):return {'n_seeds':0,'mean':None,'median':None,'sd':None,'ci_lower':None,'ci_upper':None}
     rng=np.random.default_rng(2026112100)
-    bootstrap=values[rng.integers(0,len(values),size=(10000,len(values)))].mean(axis=1)
-    return {'n_seeds':len(values),'mean':float(values.mean()),'median':float(np.median(values)),
-        'sd':float(values.std(ddof=1)) if len(values)>1 else None,
-        'ci_lower':float(np.quantile(bootstrap,.025)),'ci_upper':float(np.quantile(bootstrap,.975)),
-        'fraction_KF_worse':float((values>0).mean())}
+    draws=values[rng.integers(0,len(values),size=(10000,len(values)))]
+    count=np.isfinite(draws).sum(axis=1)
+    bootstrap=np.divide(np.nansum(draws,axis=1),count,out=np.full(10000,np.nan),where=count>0)
+    valid_bootstrap=bootstrap[np.isfinite(bootstrap)]
+    return {'n_seeds':len(finite),'n_predeclared_seeds':len(values),'all_missing_bootstrap_draws':int((count==0).sum()),
+        'mean':float(finite.mean()),'median':float(np.median(finite)),
+        'sd':float(finite.std(ddof=1)) if len(finite)>1 else None,
+        'ci_lower':float(np.quantile(valid_bootstrap,.025)),'ci_upper':float(np.quantile(valid_bootstrap,.975)),
+        'fraction_KF_worse':float((finite>0).mean())}
 
 
 def evaluate(stage,frozen_path):
@@ -46,7 +51,8 @@ def evaluate(stage,frozen_path):
                 'Hold_RMSE':hold.loc[seed].rmse,'model_RMSE':model.loc[seed].rmse,'edge_windows':model.loc[seed].edge_windows,
                 'relative_change':value/hold.loc[seed].rmse})
             grouped.append({'geometry':geometry,'D':D,'scenario':scenario,'method':method,
-                'mean_relative_improvement':float((hold.loc[ids].rmse-model.loc[ids].rmse).mean()/hold.loc[ids].rmse.mean()),**describe(delta.values)})
+                'mean_relative_improvement':float((hold.loc[ids].rmse-model.loc[ids].rmse).mean()/hold.loc[ids].rmse.mean()),
+                **describe(delta.reindex(d['validation_seeds']).to_numpy())})
     contrast=pd.DataFrame(all_contrasts);group=pd.DataFrame(grouped)
     out=stage/'analysis/validation_contrasts.csv';assert not out.exists();contrast.to_csv(out,index=False)
     group.to_csv(stage/'analysis/validation_summary.csv',index=False)
