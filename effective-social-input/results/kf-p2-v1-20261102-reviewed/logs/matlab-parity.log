@@ -1,0 +1,1 @@
+{"status": "PASS", "method_case_count": 12, "edges_per_case": 3, "steps_per_edge": 2200, "reference": "stock MATLAB bearingTrackStep and bearingTrackStepGaussMarkov", "max_absolute_errors": {"theta": 9.701614511747891e-14, "p11": 1.1102230246251565e-16, "p12": 6.938893903907228e-18, "p22": 2.168404344971009e-19, "nis": 3.2741809263825417e-11, "age": 0.0}}

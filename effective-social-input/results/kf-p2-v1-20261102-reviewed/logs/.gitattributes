@@ -1,0 +1,2 @@
+# Preserve raw console whitespace as recorded evidence.
+*.log -whitespace

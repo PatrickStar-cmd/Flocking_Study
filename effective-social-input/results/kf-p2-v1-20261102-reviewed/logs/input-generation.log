@@ -1,0 +1,11 @@
+Generating matched turn record seed 2026110101
+PASS paired source seed 2026110101, S t0=1201 V t0=1501, headRMS=0.655168
+Generating matched turn record seed 2026110102
+PASS paired source seed 2026110102, S t0=1581 V t0=1381, headRMS=1.13821
+Generating matched turn record seed 2026110103
+PASS paired source seed 2026110103, S t0=1681 V t0=1581, headRMS=0.44548
+Generating matched turn record seed 2026110104
+PASS paired source seed 2026110104, S t0=1681 V t0=1501, headRMS=0.543243
+Generating matched turn record seed 2026110105
+PASS paired source seed 2026110105, S t0=1381 V t0=1261, headRMS=0.541816
+PASS 10 sources, 15 fixed cases: D:\大二下专业课\卓越计划\Flocking_Study_KF_diagnostic_20261101\effective-social-input\results\kf-p2-v1-20261102-reviewed

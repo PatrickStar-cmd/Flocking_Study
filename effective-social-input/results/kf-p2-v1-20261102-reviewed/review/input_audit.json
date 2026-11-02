@@ -1,0 +1,11 @@
+{
+  "status": "PASS",
+  "input_count": 10,
+  "case_count": 15,
+  "independent_seeds": 5,
+  "directed_hidden_edges": 140,
+  "geometry_max_wrapped_error_rad": 1.133107779529596e-15,
+  "matched_noise_max_error_rad": 1.7832957333041577e-15,
+  "truth_only_selection_independently_reproduced": true,
+  "prefix_positions_headings_observations_exact_through_step": 1401
+}

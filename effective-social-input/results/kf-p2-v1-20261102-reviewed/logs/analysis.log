@@ -1,0 +1,22 @@
+=== P2 Analyzer: Reading npz files from D:\�����רҵ��\׿Խ�ƻ�\Flocking_Study_KF_diagnostic_20261101\effective-social-input\results\kf-p2-v1-20261102-reviewed\raw\replay ===
+Output analysis directory: D:\�����רҵ��\׿Խ�ƻ�\Flocking_Study_KF_diagnostic_20261101\effective-social-input\results\kf-p2-v1-20261102-reviewed\analysis
+Loaded 30 replay files for analysis.
+[WROTE CSV] summary.csv (270 rows)
+[WROTE CSV] age_metrics.csv (6300 rows)
+[WROTE CSV] contrasts.csv (30 rows)
+[WROTE CSV] grouped.csv (36 rows)
+[WROTE CSV] calibration.csv (22 rows)
+[WROTE FIG] fig1_rmse_vs_age.png
+[WROTE FIG] fig2_p_vs_squared_error.png
+[WROTE FIG] fig3_coverage_vs_age.png
+[WROTE FIG] fig4_fresh_nis.png
+[WROTE FIG] fig5_cutoff_fraction_vs_age.png
+[WROTE FIG] fig6_paired_rmse_diff_per_seed.png
+[WROTE FIG] fig7_representative_case_trajectories.png
+[WROTE AUDIT] audit.json
+=== Analysis Complete ===
+Summary rows: 270
+Age metric rows: 6300
+Contrast rows: 30
+Grouped rows: 36
+Calibration rows: 22

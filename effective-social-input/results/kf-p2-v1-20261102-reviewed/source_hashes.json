@@ -1,0 +1,117 @@
+{
+  "base_commit": "c0ab184d9e7f631ac1e99c0fb9ee32fc6e9f624c",
+  "branch": "exp/haoli-kf-p2-20261102",
+  "status_before_replay": "?? effective-social-input/results/kf-p2-v1-20261102-reviewed/\n?? experiments/kf-p2-20261102/\n",
+  "sources": [
+    {
+      "path": "sources/assertDiagnosticPrefix.m",
+      "sha256": "beb6ff45b1f8ef5168ec8ccdfd004956c2c1f1291db2e6809e8131cba2de4659",
+      "bytes": 927
+    },
+    {
+      "path": "sources/bearingTrackStep.m",
+      "sha256": "1fd72107c93cdd3413dd4b0aed137632cbce2ad60dbe44db09fd47ab9e85305f",
+      "bytes": 1296
+    },
+    {
+      "path": "sources/bearingTrackStepGaussMarkov.m",
+      "sha256": "6db5673c2e3025d8e1b28b61abbe239d0530412c89097ca430679a821ba2976e",
+      "bytes": 1634
+    },
+    {
+      "path": "sources/defaultEffectiveInputConfig.m",
+      "sha256": "ab54ddfb85a1a28ae1980b163e44973dd0efa27403c277a4f7c3982716fbd52a",
+      "bytes": 2063
+    },
+    {
+      "path": "sources/diagnosticConfig.m",
+      "sha256": "75ee7913d75b5577c3fca192d28603c960ec16ed9ff8bf7bb44bc2417bf6e754",
+      "bytes": 1192
+    },
+    {
+      "path": "sources/diagnosticJson.m",
+      "sha256": "057b68d213dcba5c0b6cec3103cae20007c048e34ba56bb54761e9a415649288",
+      "bytes": 263
+    },
+    {
+      "path": "sources/diagnosticSha256.m",
+      "sha256": "e06061a3f277d5a523f09c37dc536f01d874e4489ea60d598e38c59dddaa2ad1",
+      "bytes": 355
+    },
+    {
+      "path": "sources/generateP2Inputs.m",
+      "sha256": "06b8fe2466d27d173ce49c1e256ecb6d5bac82db7491c9e1b2127a2036e0f6e4",
+      "bytes": 7973
+    },
+    {
+      "path": "sources/occlusionInputStepInstrumented.m",
+      "sha256": "7b90882bdc79b9f5e8e2a69a23a64d6cf55843e0f6fecfbe7805e5006fab1617",
+      "bytes": 5065
+    },
+    {
+      "path": "sources/p2/analyze.py",
+      "sha256": "18e62d37fbf4c07a6bc298907d896aecef01564857816e350097cf71cbc0e8b6",
+      "bytes": 36065
+    },
+    {
+      "path": "sources/p2/audit_geometry.py",
+      "sha256": "9ad59b3595ecde7005846e119200f70bbcfda454d447d7d79f884117b8c64a88",
+      "bytes": 2054
+    },
+    {
+      "path": "sources/p2/audit_inputs.py",
+      "sha256": "b7b05e35c8d5cf5550706f5e78d8f6bfb1a2b5a1e938e6813e4f6a01a17b495a",
+      "bytes": 3642
+    },
+    {
+      "path": "sources/p2/freeze_sources.py",
+      "sha256": "b549334288c2387e6a730c0fecd0aba992960feb2a39ea224cce06eda39cdbe7",
+      "bytes": 1346
+    },
+    {
+      "path": "sources/p2/generateP2Inputs.m",
+      "sha256": "06b8fe2466d27d173ce49c1e256ecb6d5bac82db7491c9e1b2127a2036e0f6e4",
+      "bytes": 7973
+    },
+    {
+      "path": "sources/p2/matlabParityReference.m",
+      "sha256": "be852c08f93a124eb2c3dcaf517101a25cd115713e65c32c96302f1827d4ac34",
+      "bytes": 1742
+    },
+    {
+      "path": "sources/p2/replay.py",
+      "sha256": "781b021cb270361786bba13a995cf11cf63b638dc1d2a2bb562e430670856ce1",
+      "bytes": 26928
+    },
+    {
+      "path": "sources/p2/requirements.txt",
+      "sha256": "dab8f6c58eda03fbb74c1d7c5000c9500fa7158ce7f586a54786ccfaa4f34830",
+      "bytes": 60
+    },
+    {
+      "path": "sources/p2/review_parity.py",
+      "sha256": "7443b4bf9f396db21494b23ecb80fc8f839cb26ed3ff91015f47ad6fcf72f2fc",
+      "bytes": 2281
+    },
+    {
+      "path": "sources/p2/review_stats.py",
+      "sha256": "0ee292d5bc987334a463e5f1ee1f7c0e7454c03a9ab5515f0d28adc38d49cd96",
+      "bytes": 8327
+    },
+    {
+      "path": "sources/p2/test_replay.py",
+      "sha256": "afb46b919d9f7f3646276d487b2d3433ac10802af20c82c1bbb30d3b3d4ab5fb",
+      "bytes": 12761
+    },
+    {
+      "path": "sources/scheduledOcclusionInputInstrumented.m",
+      "sha256": "00ec019777fdec080298b62b7670a474057a0ac8ee967c3a15b560a744c4b159",
+      "bytes": 3422
+    },
+    {
+      "path": "sources/simulateEffectiveSocialInputInstrumented.m",
+      "sha256": "fd08a343c1f3956f644d16d80bf1aabe5ffee5a7535f0c8b067b950c2f7b5314",
+      "bytes": 22783
+    }
+  ]
+}

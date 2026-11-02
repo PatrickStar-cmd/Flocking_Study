@@ -1,0 +1,113 @@
+{
+  "status": "COMPLETED",
+  "count": 10,
+  "inputs": [
+    {
+      "source": "raw/input/seed2026110101_base.mat",
+      "sha256": "a0cb31a6077ebaf389f3f55e1d27741e773aa6b21e04f761f1f0cbc079bee7b5",
+      "bytes": 5.379565E+6,
+      "upstream_mat": "D:\\大二下专业课\\卓越计划\\Flocking_Study_KF_diagnostic_20261101\\effective-social-input\\results\\kf-diagnostic-v1-20261101-a01-reviewed\\raw\\seed2026110101_mode_fresh_D0.mat",
+      "upstream_sha256": "3793e0df65f8e42e3fbb88ed66e5a7234432d7e5b50576854abea524410dc60a"
+    },
+    {
+      "source": "raw/input/seed2026110101_turn.mat",
+      "sha256": "c9b17da422c03731410fb9a316b555e41ad226ef541d4064e12c795680b89bdf",
+      "bytes": 5.403423E+6,
+      "upstream_mat": "D:\\大二下专业课\\卓越计划\\Flocking_Study_KF_diagnostic_20261101\\effective-social-input\\results\\kf-diagnostic-v1-20261101-a01-reviewed\\raw\\seed2026110101_mode_fresh_D0.mat",
+      "upstream_sha256": "3793e0df65f8e42e3fbb88ed66e5a7234432d7e5b50576854abea524410dc60a"
+    },
+    {
+      "source": "raw/input/seed2026110102_base.mat",
+      "sha256": "db531110cd26fba0ded9cc1b1ba34e693741a3d84871175bebfdfe7679b8fce4",
+      "bytes": 5.384846E+6,
+      "upstream_mat": "D:\\大二下专业课\\卓越计划\\Flocking_Study_KF_diagnostic_20261101\\effective-social-input\\results\\kf-diagnostic-v1-20261101-a01-reviewed\\raw\\seed2026110102_mode_fresh_D0.mat",
+      "upstream_sha256": "d4c6cdc0b06b5de1ec7ed2170e1adb8755ff65a3fd096ba0024dc095e70b2f7f"
+    },
+    {
+      "source": "raw/input/seed2026110102_turn.mat",
+      "sha256": "54f7a3c05fa680f918bca0fca7f3e1a9d66d9b27cc61747ef36012a789fd1ca9",
+      "bytes": 5.435076E+6,
+      "upstream_mat": "D:\\大二下专业课\\卓越计划\\Flocking_Study_KF_diagnostic_20261101\\effective-social-input\\results\\kf-diagnostic-v1-20261101-a01-reviewed\\raw\\seed2026110102_mode_fresh_D0.mat",
+      "upstream_sha256": "d4c6cdc0b06b5de1ec7ed2170e1adb8755ff65a3fd096ba0024dc095e70b2f7f"
+    },
+    {
+      "source": "raw/input/seed2026110103_base.mat",
+      "sha256": "0c04157d4defc331581fab128ab7427684af78a9e3dae54feb475b9b1ecad6ee",
+      "bytes": 5.319101E+6,
+      "upstream_mat": "D:\\大二下专业课\\卓越计划\\Flocking_Study_KF_diagnostic_20261101\\effective-social-input\\results\\kf-diagnostic-v1-20261101-a01-reviewed\\raw\\seed2026110103_mode_fresh_D0.mat",
+      "upstream_sha256": "3175f4f619d54814b59442ddc5b46f6e5649175b2ca1e19de2e7e82265ed1249"
+    },
+    {
+      "source": "raw/input/seed2026110103_turn.mat",
+      "sha256": "f2588294bc3e35606914b1741826c8f96253fc77cbc836b92321db1370a09d1a",
+      "bytes": 5.322476E+6,
+      "upstream_mat": "D:\\大二下专业课\\卓越计划\\Flocking_Study_KF_diagnostic_20261101\\effective-social-input\\results\\kf-diagnostic-v1-20261101-a01-reviewed\\raw\\seed2026110103_mode_fresh_D0.mat",
+      "upstream_sha256": "3175f4f619d54814b59442ddc5b46f6e5649175b2ca1e19de2e7e82265ed1249"
+    },
+    {
+      "source": "raw/input/seed2026110104_base.mat",
+      "sha256": "51e78f188180d2c11cc7c7eb855c352fe02a0af3f269a79eff41f9568749eff1",
+      "bytes": 5.327651E+6,
+      "upstream_mat": "D:\\大二下专业课\\卓越计划\\Flocking_Study_KF_diagnostic_20261101\\effective-social-input\\results\\kf-diagnostic-v1-20261101-a01-reviewed\\raw\\seed2026110104_mode_fresh_D0.mat",
+      "upstream_sha256": "b0f75676effc97b3369eab320b7b46393d0b483ecb2aaf20ba3d74b03ffd4511"
+    },
+    {
+      "source": "raw/input/seed2026110104_turn.mat",
+      "sha256": "d3cf33f8258887b44e963728238370614816a8fab5bcb610458ea774f20b1631",
+      "bytes": 5.333585E+6,
+      "upstream_mat": "D:\\大二下专业课\\卓越计划\\Flocking_Study_KF_diagnostic_20261101\\effective-social-input\\results\\kf-diagnostic-v1-20261101-a01-reviewed\\raw\\seed2026110104_mode_fresh_D0.mat",
+      "upstream_sha256": "b0f75676effc97b3369eab320b7b46393d0b483ecb2aaf20ba3d74b03ffd4511"
+    },
+    {
+      "source": "raw/input/seed2026110105_base.mat",
+      "sha256": "0da698413d6ec2b7da047ecff06106a33066fd957b7135c0736e4837c50818fe",
+      "bytes": 5.354741E+6,
+      "upstream_mat": "D:\\大二下专业课\\卓越计划\\Flocking_Study_KF_diagnostic_20261101\\effective-social-input\\results\\kf-diagnostic-v1-20261101-a01-reviewed\\raw\\seed2026110105_mode_fresh_D0.mat",
+      "upstream_sha256": "5559e9c6afc64950d47a3f4216d727d136f7f372ad7b3de8e5627a2d48ff9f3c"
+    },
+    {
+      "source": "raw/input/seed2026110105_turn.mat",
+      "sha256": "c710ded12a6717eebcd978f500a0e3a38d19b34bb49574970c07905ab64f40da",
+      "bytes": 5.354121E+6,
+      "upstream_mat": "D:\\大二下专业课\\卓越计划\\Flocking_Study_KF_diagnostic_20261101\\effective-social-input\\results\\kf-diagnostic-v1-20261101-a01-reviewed\\raw\\seed2026110105_mode_fresh_D0.mat",
+      "upstream_sha256": "5559e9c6afc64950d47a3f4216d727d136f7f372ad7b3de8e5627a2d48ff9f3c"
+    }
+  ],
+  "pairing": [
+    {
+      "seed": 2.026110101E+9,
+      "exact_prefix_steps": 1400,
+      "noise_equal": true,
+      "turn_heading_change_rms": 0.65516751428337083,
+      "turn_bearing_change_rms": 0.40122706414200288
+    },
+    {
+      "seed": 2.026110102E+9,
+      "exact_prefix_steps": 1400,
+      "noise_equal": true,
+      "turn_heading_change_rms": 1.1382106159328711,
+      "turn_bearing_change_rms": 0.60522208821053969
+    },
+    {
+      "seed": 2.026110103E+9,
+      "exact_prefix_steps": 1400,
+      "noise_equal": true,
+      "turn_heading_change_rms": 0.445479892600911,
+      "turn_bearing_change_rms": 0.37408539414748582
+    },
+    {
+      "seed": 2.026110104E+9,
+      "exact_prefix_steps": 1400,
+      "noise_equal": true,
+      "turn_heading_change_rms": 0.5432426928815679,
+      "turn_bearing_change_rms": 0.25605818508561495
+    },
+    {
+      "seed": 2.026110105E+9,
+      "exact_prefix_steps": 1400,
+      "noise_equal": true,
+      "turn_heading_change_rms": 0.54181631624793458,
+      "turn_bearing_change_rms": 0.27542500042403023
+    }
+  ]
+}

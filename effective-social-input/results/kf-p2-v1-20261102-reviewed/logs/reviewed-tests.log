@@ -1,0 +1,13 @@
+=== Running deterministic replay test suite ===
+[PASS] test_cv_gm_tau_inf_equality
+[PASS] test_circular_wrap_near_pi
+[PASS] test_constant_angle_hidden_prediction
+[PASS] test_constant_omega_hidden_prediction_vs_hold
+[PASS] test_joseph_covariance_psd_and_symmetry
+[PASS] test_first_step_initialization_no_predict
+[PASS] test_age_dt_units
+[PASS] test_no_future_or_hidden_observation_leakage
+[PASS] test_gate_first_100_active_101_cutoff
+[PASS] test_initial_missing_has_no_observation_leakage
+[PASS] test_no_future_observation_leakage
+=== Results: 11/11 tests passed ===

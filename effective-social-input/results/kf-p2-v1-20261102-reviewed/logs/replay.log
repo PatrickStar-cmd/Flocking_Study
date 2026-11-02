@@ -1,0 +1,36 @@
+=== Replay: 15 cases x 2 durations = 30 runs ===
+Result dir: D:\�����רҵ��\׿Խ�ƻ�\Flocking_Study_KF_diagnostic_20261101\effective-social-input\results\kf-p2-v1-20261102-reviewed
+Parameters: dt=0.3, R=0.0001, q_cv=0.0001, q_gm=1e-05, tau=10.0
+Thresholds: max_age=120.0 (model time), max_variance=1.0
+[1/15] Case S_seed2026110101 D=20 -> case_S_seed2026110101_D_20.npz (SHA256: 21e720fffb...)
+[1/15] Case S_seed2026110101 D=120 -> case_S_seed2026110101_D_120.npz (SHA256: 79db0d2872...)
+[2/15] Case V_seed2026110101 D=20 -> case_V_seed2026110101_D_20.npz (SHA256: 221867f354...)
+[2/15] Case V_seed2026110101 D=120 -> case_V_seed2026110101_D_120.npz (SHA256: 80525db7bd...)
+[3/15] Case T_seed2026110101 D=20 -> case_T_seed2026110101_D_20.npz (SHA256: 7303c30bdf...)
+[3/15] Case T_seed2026110101 D=120 -> case_T_seed2026110101_D_120.npz (SHA256: 32a4a85e5c...)
+[4/15] Case S_seed2026110102 D=20 -> case_S_seed2026110102_D_20.npz (SHA256: 6b50df986a...)
+[4/15] Case S_seed2026110102 D=120 -> case_S_seed2026110102_D_120.npz (SHA256: d8ad24250d...)
+[5/15] Case V_seed2026110102 D=20 -> case_V_seed2026110102_D_20.npz (SHA256: 3e726fe97b...)
+[5/15] Case V_seed2026110102 D=120 -> case_V_seed2026110102_D_120.npz (SHA256: a32237d890...)
+[6/15] Case T_seed2026110102 D=20 -> case_T_seed2026110102_D_20.npz (SHA256: 0f752939e2...)
+[6/15] Case T_seed2026110102 D=120 -> case_T_seed2026110102_D_120.npz (SHA256: b981e96508...)
+[7/15] Case S_seed2026110103 D=20 -> case_S_seed2026110103_D_20.npz (SHA256: 11d5c84d50...)
+[7/15] Case S_seed2026110103 D=120 -> case_S_seed2026110103_D_120.npz (SHA256: f7ab3d6e4f...)
+[8/15] Case V_seed2026110103 D=20 -> case_V_seed2026110103_D_20.npz (SHA256: a9e741833f...)
+[8/15] Case V_seed2026110103 D=120 -> case_V_seed2026110103_D_120.npz (SHA256: 1d3d6c2acb...)
+[9/15] Case T_seed2026110103 D=20 -> case_T_seed2026110103_D_20.npz (SHA256: 6179e257c6...)
+[9/15] Case T_seed2026110103 D=120 -> case_T_seed2026110103_D_120.npz (SHA256: c5af7953f9...)
+[10/15] Case S_seed2026110104 D=20 -> case_S_seed2026110104_D_20.npz (SHA256: 4eea59bd47...)
+[10/15] Case S_seed2026110104 D=120 -> case_S_seed2026110104_D_120.npz (SHA256: 4b4488c410...)
+[11/15] Case V_seed2026110104 D=20 -> case_V_seed2026110104_D_20.npz (SHA256: 1c1d703c9b...)
+[11/15] Case V_seed2026110104 D=120 -> case_V_seed2026110104_D_120.npz (SHA256: 4c1d898748...)
+[12/15] Case T_seed2026110104 D=20 -> case_T_seed2026110104_D_20.npz (SHA256: 643af6aa41...)
+[12/15] Case T_seed2026110104 D=120 -> case_T_seed2026110104_D_120.npz (SHA256: f0450f06ab...)
+[13/15] Case S_seed2026110105 D=20 -> case_S_seed2026110105_D_20.npz (SHA256: 8f9d6a48ab...)
+[13/15] Case S_seed2026110105 D=120 -> case_S_seed2026110105_D_120.npz (SHA256: c2b329d0c3...)
+[14/15] Case V_seed2026110105 D=20 -> case_V_seed2026110105_D_20.npz (SHA256: bf345c5071...)
+[14/15] Case V_seed2026110105 D=120 -> case_V_seed2026110105_D_120.npz (SHA256: 050fdd60a3...)
+[15/15] Case T_seed2026110105 D=20 -> case_T_seed2026110105_D_20.npz (SHA256: d720641806...)
+[15/15] Case T_seed2026110105 D=120 -> case_T_seed2026110105_D_120.npz (SHA256: 89d0eb3c81...)
+=== Replay Finished: 30 completed, 0 skipped, 0 errors ===
+Manifest written to: D:\�����רҵ��\׿Խ�ƻ�\Flocking_Study_KF_diagnostic_20261101\effective-social-input\results\kf-p2-v1-20261102-reviewed\raw\replay\manifest.json

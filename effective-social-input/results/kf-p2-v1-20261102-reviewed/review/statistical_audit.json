@@ -1,0 +1,11 @@
+{
+  "status": "PASS",
+  "raw_replays": 30,
+  "summary_rows_independently_recomputed": 270,
+  "age_rmse_rows_independently_recomputed": 6300,
+  "paired_contrast_rows": 30,
+  "bootstrap_group_rows": 36,
+  "minimum_covariance_eigenvalue": 6.43411732206967e-06,
+  "all_sha256_verified": true,
+  "independent_seeds_per_stratum": 5
+}
