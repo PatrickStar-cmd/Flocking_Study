@@ -1,0 +1,30 @@
+{
+  "version": "v1",
+  "date": "2026-10-30",
+  "status": "planned_not_run",
+  "model": {"N":20,"M":100,"dt":0.3,"L":1000,"beta":1000,"speed_scale":0.05,"kernel_sigma":0.4,"connection_exponent":0.5,"global_inhibition":0,"single_edge_weight":0.012,"full_neighbors":19},
+  "primary": {"profile":"short_history","pre_steps":200,"seeds_first":2026103001,"seed_count":500},
+  "history_controls": [
+    {"profile":"formation","pre_steps":0,"seeds_first":2026103001,"seed_count":100},
+    {"profile":"long_history","pre_steps":5200,"seeds_first":2026103001,"seed_count":100}
+  ],
+  "fresh_counts": [0,1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19],
+  "post_steps":6000,
+  "terminal_steps":1000,
+  "sensitivity_terminal_steps":[500,2000],
+  "measurement_noise_sd":0,
+  "occlusion":"fixed nested visible-ID sets, permanent after the event, fixed original single-edge weight",
+  "prediction":"none; missing edges contribute zero; no hold and no normalization",
+  "input_definition":"paper v7 eq:chosen_empirical_formula: q*(delta)=1; S_i*=A_i=sum_j w_ij; S0=mean_i S_i*(event before first update)",
+  "reference_axis":"initial heading, fixed throughout; retained for Vx/Vy diagnostics",
+  "primary_outcome":"mean_t min(GO(t), LO(t)) over post steps 5001..6000",
+  "LO_neighborhood":"self plus five nearest agents under periodic distance, total six, recomputed each step",
+  "stop_speed_epsilon":1e-12,
+  "secondary_outcomes":["terminal mean GO","terminal mean LO","joint consistency time quantile 0.1","fraction of terminal times with GO>=0.9 and LO>=0.9","active-moving fraction","mean speed","mean pair distance/L"],
+  "rng":{"initial":"MATLAB twister, seed; legacy per-agent draw order","mask":"independent mt19937ar stream seed+100000; nested deletion order shared across profiles","bootstrap_seed":2026103999},
+  "statistics":{"unit":"seed, all remaining-count conditions resampled together","bootstrap_repeats":10000,"interval":"pointwise 95% percentile intervals","trend":"raw condition means; no forced monotonic fit; no prespecified universal input threshold"},
+  "workers":4,
+  "trajectory_counts":{"primary":10000,"history_controls":4000,"total":14000},
+  "default_action":"plan; execute requires an explicit execute action and a fresh run_id",
+  "evidence":"prospectively specified simulation design; metrics-only software checks; model experiment not executed"
+}

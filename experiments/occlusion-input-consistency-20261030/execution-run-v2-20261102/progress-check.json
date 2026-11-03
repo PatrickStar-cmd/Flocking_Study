@@ -1,0 +1,12 @@
+{
+  "status": "model_running",
+  "checked": "2026-11-02T14:47:10.264653",
+  "completed_trajectory_files": 132,
+  "completed_seed_groups": 0,
+  "expected_trajectories": 14000,
+  "mat_gb_so_far": 0.358805221,
+  "protected_existing_files": 3193,
+  "only_changed_existing_file": "experiments/occlusion-input-consistency-20261030/runOcclusionConsistency.m",
+  "head": "06b1e07a5961bc894c516683eb8088206e3fab5d",
+  "main_unchanged": "1a80814c0a84e6f24510e92c945050aa8f4011c5"
+}

@@ -1,0 +1,7 @@
+{
+  "status": "complete",
+  "trajectories": 14000,
+  "seed_count": 500,
+  "bootstrap_repeats": 10000,
+  "report": "\u5b9e\u9a8c\u62a5\u544a.v1.md"
+}

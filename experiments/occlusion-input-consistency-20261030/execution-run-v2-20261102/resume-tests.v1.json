@@ -1,0 +1,7 @@
+{
+  "status": "PASS",
+  "completed_seed_skipped": true,
+  "partial_seed_reused_existing_file_exact_bytes": true,
+  "resumed_missing_trajectory_position_velocity_metrics_exact": true,
+  "model_steps_in_software_test": 25
+}

@@ -1,0 +1,13 @@
+diff --git a/experiments/occlusion-input-consistency-20261030/runOcclusionConsistency.m b/experiments/occlusion-input-consistency-20261030/runOcclusionConsistency.m
+index d94b17f..ea439cb 100644
+--- a/experiments/occlusion-input-consistency-20261030/runOcclusionConsistency.m
++++ b/experiments/occlusion-input-consistency-20261030/runOcclusionConsistency.m
+@@ -113,7 +113,7 @@ for p=1:numel(profiles)
+             ss=summarizeConsistency(series(:,1),series(:,2),window);
+             row.(sprintf('C_last%d',window))=ss.finalConsistency;
+         end
+-        rows(end+1)=row; %#ok<AGROW>
++        if isempty(rows), rows=row; else, rows(end+1)=row; end %#ok<AGROW>
+         meta=struct('seed',seed,'profile',profile.profile,'remaining',r,'visible',visible, ...
+             'initialSocialInputPerAgent',initialInput,'initialVectorX',vectorX,'initialVectorY',vectorY, ...
+             'initialFieldMassPerAgent',initialMass,'seriesColumns',{{'GO','LO','C','movingFraction','meanSpeed','pairDistanceNorm','fieldMass'}}, ...

@@ -1,0 +1,7 @@
+{
+  "matlab": "24.2.0.2712019 (R2024b)",
+  "started": "2026-11-02 14:43:15",
+  "runId": "run-v2-20261102",
+  "seedOverride": [],
+  "evidence": "scheduled fixed-protocol simulation; every seed and occlusion level retained"
+}

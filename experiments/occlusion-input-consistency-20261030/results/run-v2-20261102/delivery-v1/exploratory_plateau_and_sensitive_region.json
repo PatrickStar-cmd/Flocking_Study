@@ -1,0 +1,13 @@
+{
+  "high_input_difference_interval": [
+    0.03802016681791247,
+    0.11278999074384148
+  ],
+  "exploratory_plateau_tolerance": 0.02,
+  "approximate_plateau": false,
+  "sensitive_location_bootstrap_interval": [
+    0.0599941474296626,
+    0.0841253234772138
+  ],
+  "method": "largest adjacent supported-bin increase, reselected in each seed-cluster resample; bin means used as location coordinates"
+}

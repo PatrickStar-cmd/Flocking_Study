@@ -1,0 +1,8 @@
+{
+  "time": "2026-11-02T20:24:24.422731",
+  "reason": "Previous orchestrator and MATLAB processes absent; last saved trajectory at 18:23; no explicit user pause. Resume original authorized experiment.",
+  "valid_saved_trajectories": 7031,
+  "complete_seed_summaries": 236,
+  "partial_seed_mat_checks": "PASS, series shape (6000,7)",
+  "runner_sha256": "fce4fd2baec54985db2ac0fa7a0c7362efad877525abf5c9eb16304021f5cbe0"
+}

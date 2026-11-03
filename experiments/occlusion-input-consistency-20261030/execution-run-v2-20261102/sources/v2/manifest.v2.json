@@ -1,0 +1,70 @@
+{
+  "version": "v2",
+  "date": "2026-10-30",
+  "status": "prepared_not_run",
+  "base_commit": "6fe205d2c6a3b7d85df48617e57e01d3836c1397",
+  "local_main": "1a80814c0a84e6f24510e92c945050aa8f4011c5",
+  "model_steps_executed": 0,
+  "model_trajectories_executed": 0,
+  "definition": "early v3: sum w*exp(cos(theta-event_heading)-1)=n*mean_weight*angular_weight",
+  "change_scope": "v2 input definition and analysis only; parent physical simulation unchanged",
+  "source_files": [
+    {
+      "path": "experiments/occlusion-input-consistency-20261030/v2/analyze_v2.py",
+      "sha256": "7cf5899650b4d7e7d57de93f2fa0077df990c86885031adc18ccb6063904d27c",
+      "bytes": 7430
+    },
+    {
+      "path": "experiments/occlusion-input-consistency-20261030/v2/checks/preparation.v2.json",
+      "sha256": "a43e544330c629a532cc8d08324edb94ff6ff2b1a455357037167501dc7037f3",
+      "bytes": 640
+    },
+    {
+      "path": "experiments/occlusion-input-consistency-20261030/v2/config.v2.json",
+      "sha256": "2c88acc8f00fa8437927437bb62d17a6d5b32520a830a7b6431b9827126972c9",
+      "bytes": 1451
+    },
+    {
+      "path": "experiments/occlusion-input-consistency-20261030/v2/README.txt",
+      "sha256": "3808f2ba2973cc5bffeda720b9e967cb66d1cbd48fbc875c25931c53a93bdc8f",
+      "bytes": 1474
+    },
+    {
+      "path": "experiments/occlusion-input-consistency-20261030/v2/test_v2.py",
+      "sha256": "09615412cdcfb370a90e15564306cddbd8e2f3daf936d33ed2f6236dd7e89f08",
+      "bytes": 3570
+    },
+    {
+      "path": "experiments/occlusion-input-consistency-20261030/v2/three_factor_input.py",
+      "sha256": "17cd5a116e5254f7d012180b9ac035d083cbd2050707c11feaae670ec344f9d1",
+      "bytes": 1838
+    },
+    {
+      "path": "experiments/occlusion-input-consistency-20261030/v2/社会输入三因素修订方案.v2.txt",
+      "sha256": "074f68829a92670270723ec01b31e0babc725dc3315e59bc4f6be42a7dc24a62",
+      "bytes": 5406
+    }
+  ],
+  "protected_sha256": {
+    "experiments/occlusion-input-consistency-20261030/.gitattributes": "a79691a93b46e49ce460c26ef22afcc03d6eca1e63bf2edbc20e96159510f6c9",
+    "experiments/occlusion-input-consistency-20261030/.gitignore": "6b32230d737c382df4b5a1866862fd6b05cb569355b4f52ebda9ba89177f0240",
+    "experiments/occlusion-input-consistency-20261030/README.txt": "fe4110dc3f17f22a5d8a96de5b15da7b7fd3b84b2ba96fd9397f8d95155534f4",
+    "experiments/occlusion-input-consistency-20261030/analyze.py": "f6bacb500a25f3faeae397fdb9d76ff154fa33295408b0d0f5357cdcb48f4979",
+    "experiments/occlusion-input-consistency-20261030/checkPreparation.m": "73e96b17683953d3ccd010a045ae29d6f175d2751d2c4f6b4a817ba643ec2cce",
+    "experiments/occlusion-input-consistency-20261030/checks/matlab-preparation.json": "fc5357eb570e80197c68179490b36f39a7a02bcf9d32972ec9f51c41559b98e2",
+    "experiments/occlusion-input-consistency-20261030/checks/python-preparation.json": "39548cf374e369232efa0b62f88d2efcfb81926a1d318ac4ee0585c2ade52d89",
+    "experiments/occlusion-input-consistency-20261030/config.v1.json": "1923fba44dd8b1b6ac0e49d5e3a0a712206ae22fc7d503dac21caa76c59a9348",
+    "experiments/occlusion-input-consistency-20261030/manifest.v1.json": "ef91267240338ddf413f1a034edcd9956624819faf2f19f7efff389a87744641",
+    "experiments/occlusion-input-consistency-20261030/movementConsistency.m": "424e8dc29531a94179ee445185a7cff05e31b0a416bca02bdfda4053690e7281",
+    "experiments/occlusion-input-consistency-20261030/prepare_package.py": "fa22d96b7a296df94aada4f909d1a0a06f6ca44a2f3eb33df77790277dd0b8ac",
+    "experiments/occlusion-input-consistency-20261030/requirements.txt": "c96199ef81ade15361474fd4c6479ea611eb85997230bef8b702a042ad8e62ba",
+    "experiments/occlusion-input-consistency-20261030/runOcclusionConsistency.m": "bee2ab3dc552f4df0f153ff76e239e36375d55c001e2453875261a0bcab70a62",
+    "experiments/occlusion-input-consistency-20261030/summarizeConsistency.m": "8db51eb9022a80b9033d3d0c266717dfa0b3289a53bf37e45bc4db9ec49a0178",
+    "experiments/occlusion-input-consistency-20261030/test_preparation.py": "d0a0104adb8e9c77df5e8d120a052e9d73ab31928697448ec58730bc6ee4a43a",
+    "experiments/occlusion-input-consistency-20261030/实验方案.v1.txt": "993a5cd4baaeb9f8eb3ad07c91b9c9fb13fbba6473f69bdc145d6b7b09575e54",
+    "paper/论文初稿_KF预测补偿_v3.tex": "ec112b2758408609a131183d91e35ee309238ed355e462598407824bf72622e9",
+    "paper/论文初稿_KF预测补偿.v7.tex": "1b3b78121cb2b9f53de8b1f63d1f69f094b79b5fc1ee642dce99d980b0deba61",
+    "paper/论文草稿_KF预测补偿.v7.pdf": "58e1d21ab4447bfbdb7f63d9ef10ba281fd19f14a931fcd6e3254a5e780c1c35"
+  },
+  "existing_diff_sha256": "b72c94edb3943efea0d9ab9a68264e7db519d67c321571ffdd8a263362b48e65"
+}

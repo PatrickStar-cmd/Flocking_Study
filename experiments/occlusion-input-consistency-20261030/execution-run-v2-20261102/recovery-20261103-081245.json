@@ -1,0 +1,12 @@
+{
+  "time": "2026-11-03T08:12:45.827068",
+  "reason": "Orchestrator and MATLAB processes absent; last trajectory 2026-11-03 00:03:38; resume original authorized experiment.",
+  "saved_trajectories": 13752,
+  "complete_seeds": 487,
+  "partial_validated": [
+    [
+      "seed-2026103277",
+      12
+    ]
+  ]
+}

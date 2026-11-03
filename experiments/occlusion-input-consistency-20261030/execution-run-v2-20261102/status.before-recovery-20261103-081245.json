@@ -1,0 +1,27 @@
+{
+  "status": "model_running",
+  "run_id": "run-v2-20261102",
+  "started": "2026-11-02T14:43:10.025080",
+  "head": "06b1e07a5961bc894c516683eb8088206e3fab5d",
+  "origin_main": "2a13fad5aa2ed85222b55cbf9355485b5af24b2f",
+  "sources": {
+    "checkPreparation.m": "73e96b17683953d3ccd010a045ae29d6f175d2751d2c4f6b4a817ba643ec2cce",
+    "config.v1.json": "1923fba44dd8b1b6ac0e49d5e3a0a712206ae22fc7d503dac21caa76c59a9348",
+    "deliver_results.py": "06fd3cb4d58abc6b44976832835f89bbd148ae46e9dcf94401eebe462c8413ae",
+    "execute_and_deliver.py": "3e35c2ea5d2700c718a03e541b09e859870fec0700c1e50003865d3a9fcd14c3",
+    "movementConsistency.m": "424e8dc29531a94179ee445185a7cff05e31b0a416bca02bdfda4053690e7281",
+    "runOcclusionConsistency.m": "c10caa4d1dccd964861c08e47b13ef51a925cf61ff5d1442bcfda62d5400a5a3",
+    "summarizeConsistency.m": "8db51eb9022a80b9033d3d0c266717dfa0b3289a53bf37e45bc4db9ec49a0178",
+    "v2\\analyze_v2.py": "7cf5899650b4d7e7d57de93f2fa0077df990c86885031adc18ccb6063904d27c",
+    "v2\\config.v2.json": "2c88acc8f00fa8437927437bb62d17a6d5b32520a830a7b6431b9827126972c9",
+    "v2\\manifest.v2.json": "afef22aad165d170c816a122552481bd558d10a113a338d534b578ea7f383abd",
+    "v2\\README.txt": "3808f2ba2973cc5bffeda720b9e967cb66d1cbd48fbc875c25931c53a93bdc8f",
+    "v2\\test_v2.py": "09615412cdcfb370a90e15564306cddbd8e2f3daf936d33ed2f6236dd7e89f08",
+    "v2\\three_factor_input.py": "17cd5a116e5254f7d012180b9ac035d083cbd2050707c11feaae670ec344f9d1",
+    "v2\\社会输入三因素修订方案.v2.txt": "074f68829a92670270723ec01b31e0babc725dc3315e59bc4f6be42a7dc24a62",
+    "v2\\checks\\preparation.v2.json": "a43e544330c629a532cc8d08324edb94ff6ff2b1a455357037167501dc7037f3"
+  },
+  "updated": "2026-11-02T20:24:24.575888",
+  "paused_at": "2026-11-02T16:34:13.090211",
+  "recovery_prepared_at": "2026-11-02T20:24:24.436065"
+}

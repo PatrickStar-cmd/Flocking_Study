@@ -1,0 +1,56 @@
+[
+  {
+    "ProcessId": 12432,
+    "ParentProcessId": 4580,
+    "Name": "python.exe",
+    "CommandLine": "\"D:\\Work\\Study\\UESTC资料存档\\课程\\通关项目\\coding\\experiments\\no-occlusion-bearing-20261021\\local\\.venv\\Scripts\\python.exe\" -u \"D:\\Work\\Study\\UESTC资料存档\\课程\\通关项目\\coding\\experiments\\occlusion-input-consistency-20261030\\execute_and_deliver.py\" --run run-v2-20261102"
+  },
+  {
+    "ProcessId": 5724,
+    "ParentProcessId": 12432,
+    "Name": "conhost.exe",
+    "CommandLine": "\\??\\C:\\WINDOWS\\system32\\conhost.exe 0x4"
+  },
+  {
+    "ProcessId": 27592,
+    "ParentProcessId": 12432,
+    "Name": "python.exe",
+    "CommandLine": "\"C:\\Users\\yangc\\.cache\\codex-runtimes\\codex-primary-runtime\\dependencies\\python\\python.exe\" -u \"D:\\Work\\Study\\UESTC资料存档\\课程\\通关项目\\coding\\experiments\\occlusion-input-consistency-20261030\\execute_and_deliver.py\" --run run-v2-20261102"
+  },
+  {
+    "ProcessId": 18484,
+    "ParentProcessId": 27592,
+    "Name": "matlab.exe",
+    "CommandLine": "\"D:/Program/MatLab/MATLAB R2024b/bin/matlab.exe\" -wait -singleCompThread -batch addpath('experiments/occlusion-input-consistency-20261030');runOcclusionConsistency('execute','run-v2-20261102');delete(gcp('nocreate'));exit(0,'force'); -logfile D:\\Work\\Study\\UESTC资料存档\\课程\\通关项目\\coding\\experiments\\occlusion-input-consistency-20261030\\execution-run-v2-20261102\\matlab.log"
+  },
+  {
+    "ProcessId": 24856,
+    "ParentProcessId": 18484,
+    "Name": "MATLAB.exe",
+    "CommandLine": "\"D:\\Program\\MatLab\\MATLAB R2024b\\bin\\win64\\MATLAB.exe\" \"-singleCompThread\" \"-batch\" \"addpath('experiments/occlusion-input-consistency-20261030');runOcclusionConsistency('execute','run-v2-20261102');delete(gcp('nocreate'));exit(0,'force');\" \"-logfile\" \"D:\\Work\\Study\\UESTC资料存档\\课程\\通关项目\\coding\\experiments\\occlusion-input-consistency-20261030\\execution-run-v2-20261102\\matlab.log\" "
+  },
+  {
+    "ProcessId": 30560,
+    "ParentProcessId": 24856,
+    "Name": "MATLAB.exe",
+    "CommandLine": "\"D:\\Program\\MatLab\\MATLAB R2024b\\bin\\win64\\MATLAB.exe\" -parallelserver -noFigureWindows   -r distcomp_evaluate_filetask -licmode file -c \"C:\\Users\\yangc\\AppData\\Roaming\\MathWorks\\MATLAB\\R2024b_licenses;D:\\Program\\MatLab\\MATLAB R2024b\\licenses\\license.dat;D:\\Program\\MatLab\\MATLAB R2024b\\licenses\\license_比奇堡诗人派大星_968398_R2024b.lic\" "
+  },
+  {
+    "ProcessId": 15748,
+    "ParentProcessId": 24856,
+    "Name": "MATLAB.exe",
+    "CommandLine": "\"D:\\Program\\MatLab\\MATLAB R2024b\\bin\\win64\\MATLAB.exe\" -parallelserver -noFigureWindows   -r distcomp_evaluate_filetask -licmode file -c \"C:\\Users\\yangc\\AppData\\Roaming\\MathWorks\\MATLAB\\R2024b_licenses;D:\\Program\\MatLab\\MATLAB R2024b\\licenses\\license.dat;D:\\Program\\MatLab\\MATLAB R2024b\\licenses\\license_比奇堡诗人派大星_968398_R2024b.lic\" "
+  },
+  {
+    "ProcessId": 9840,
+    "ParentProcessId": 24856,
+    "Name": "MATLAB.exe",
+    "CommandLine": "\"D:\\Program\\MatLab\\MATLAB R2024b\\bin\\win64\\MATLAB.exe\" -parallelserver -noFigureWindows   -r distcomp_evaluate_filetask -licmode file -c \"C:\\Users\\yangc\\AppData\\Roaming\\MathWorks\\MATLAB\\R2024b_licenses;D:\\Program\\MatLab\\MATLAB R2024b\\licenses\\license.dat;D:\\Program\\MatLab\\MATLAB R2024b\\licenses\\license_比奇堡诗人派大星_968398_R2024b.lic\" "
+  },
+  {
+    "ProcessId": 16960,
+    "ParentProcessId": 24856,
+    "Name": "MATLAB.exe",
+    "CommandLine": "\"D:\\Program\\MatLab\\MATLAB R2024b\\bin\\win64\\MATLAB.exe\" -parallelserver -noFigureWindows   -r distcomp_evaluate_filetask -licmode file -c \"C:\\Users\\yangc\\AppData\\Roaming\\MathWorks\\MATLAB\\R2024b_licenses;D:\\Program\\MatLab\\MATLAB R2024b\\licenses\\license.dat;D:\\Program\\MatLab\\MATLAB R2024b\\licenses\\license_比奇堡诗人派大星_968398_R2024b.lic\" "
+  }
+]

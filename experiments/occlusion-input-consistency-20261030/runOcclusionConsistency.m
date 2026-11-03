@@ -13,15 +13,25 @@ plan=struct('status','planned_not_run', ...
  'primaryTrajectories',cfg.trajectory_counts.primary,'controlTrajectories',cfg.trajectory_counts.history_controls, ...
  'S0',cfg.model.single_edge_weight*cfg.fresh_counts(:).','profiles',{profiles});
 if strcmp(action,'plan'), disp(plan); return; end
-assert(any(strcmp(action,{'execute','model-smoke'})),'Use plan, execute, or model-smoke.');
+assert(any(strcmp(action,{'execute','model-smoke','resume'})),'Use plan, execute, model-smoke, or resume.');
 assert(nargin>=2 && ~isempty(regexp(runId,'^[A-Za-z0-9][A-Za-z0-9_-]*$','once')),'Provide a fresh run ID.');
 if nargin<3, seedOverride=[]; end
-out=fullfile(root,'results',runId); assert(~exist(out,'dir'),'A run ID is immutable; use a new ID.'); mkdir(out);
-sourceDir=fullfile(out,'sources'); mkdir(sourceDir);
+resuming=strcmp(action,'resume'); out=fullfile(root,'results',runId);
+if resuming
+    assert(exist(out,'dir')==7,'Resume requires an existing run.');
+    assert(isequaln(jsondecode(fileread(fullfile(out,'config.json'))),cfg),'Frozen configuration changed.');
+    sourceDir=fullfile(out,'sources',['resume-' char(datetime('now','Format','yyyyMMdd-HHmmss'))]);
+else
+    assert(~exist(out,'dir'),'A run ID is immutable; use a new ID.'); mkdir(out);
+    sourceDir=fullfile(out,'sources');
+end
+mkdir(sourceDir);
 for name={'runOcclusionConsistency.m','movementConsistency.m','summarizeConsistency.m','config.v1.json','analyze.py','requirements.txt'}
     copyfile(fullfile(root,name{1}),fullfile(sourceDir,name{1}));
 end
-fid=fopen(fullfile(out,'config.json'),'w'); fprintf(fid,'%s',jsonencode(cfg,'PrettyPrint',true)); fclose(fid);
+if ~resuming
+    fid=fopen(fullfile(out,'config.json'),'w'); fprintf(fid,'%s',jsonencode(cfg,'PrettyPrint',true)); fclose(fid);
+end
 info=struct('matlab',version,'started',char(datetime('now','Format','yyyy-MM-dd HH:mm:ss')),'runId',runId,'seedOverride',seedOverride, ...
  'evidence','scheduled fixed-protocol simulation; every seed and occlusion level retained');
 fid=fopen(fullfile(out,'execution.json'),'w'); fprintf(fid,'%s',jsonencode(info,'PrettyPrint',true)); fclose(fid);
@@ -33,7 +43,7 @@ if ~isempty(seedOverride)
     seeds=seedOverride(:).';
 end
 parfor si=1:numel(seeds)
-    runSeed(seeds(si),cfg,profiles,out);
+    runSeed(seeds(si),cfg,profiles,out,resuming);
 end
 info.finished=char(datetime('now','Format','yyyy-MM-dd HH:mm:ss')); info.status='complete';
 fid=fopen(fullfile(out,'execution.json'),'w'); fprintf(fid,'%s',jsonencode(info,'PrettyPrint',true)); fclose(fid);
@@ -60,7 +70,16 @@ audit=struct('status','PASS','evidence','future model software smoke','neuralErr
 fid=fopen(fullfile(out,'model-smoke-checks.json'),'w');fprintf(fid,'%s',jsonencode(audit,'PrettyPrint',true));fclose(fid);
 end
 
-function runSeed(seed,cfg,profiles,out)
+function runSeed(seed,cfg,profiles,out,resuming)
+seedDir=fullfile(out,sprintf('seed-%d',seed)); summaryFile=fullfile(seedDir,'summary.csv');
+if resuming && exist(summaryFile,'file')
+    existing=readtable(summaryFile); expected=sum(arrayfun(@(p)seed>=p.seeds_first && seed<p.seeds_first+p.seed_count,profiles))*numel(cfg.fresh_counts);
+    assert(height(existing)==expected && all(existing.seed==seed));
+    for name=unique(existing.profile).'
+        assert(isequal(sort(existing.remaining(strcmp(existing.profile,name{1}))),sort(cfg.fresh_counts(:))));
+    end
+    fprintf('seed %d reused complete (%d trajectories)\n',seed,height(existing)); return;
+end
 c=cfg.model; n=c.N; m=c.M; c.ids=mod((0:n-1).'+(1:c.full_neighbors),n)+1;
 grid=(0:m-1)'*2*pi/m; d=abs(grid-grid.'); d=min(d,2*pi-d);
 W=cos(pi*(d/pi).^c.connection_exponent); c.Wfft=fft(W(:,1));
@@ -70,8 +89,10 @@ initial.alpha=mod(grid+initial.heading,2*pi); initial.referenceAxis=initial.head
 stream=RandStream('mt19937ar','Seed',seed+100000); order=zeros(n,c.full_neighbors);
 for i=1:n, order(i,:)=randperm(stream,c.full_neighbors); end
 initial.maskOrder=order; state=initial; previousStep=0; rows=struct([]);
-seedDir=fullfile(out,sprintf('seed-%d',seed)); mkdir(seedDir);
-save(fullfile(seedDir,'initial.mat'),'initial','-v7');
+if ~exist(seedDir,'dir'), mkdir(seedDir); end
+initialFile=fullfile(seedDir,'initial.mat');
+if exist(initialFile,'file'), saved=load(initialFile,'initial'); assert(isequaln(saved.initial,initial));
+else, save(initialFile,'initial','-v7'); end
 for p=1:numel(profiles)
     profile=profiles(p); if seed>=profile.seeds_first+profile.seed_count, continue; end
     assert(profile.pre_steps>=previousStep);
@@ -81,7 +102,11 @@ for p=1:numel(profiles)
     end
     previousStep=profile.pre_steps; checkpoint=state; checkpoint.step=profile.pre_steps;
     checkpoint.maskOrder=order; checkpoint.rng=rng;
-    save(fullfile(seedDir,[profile.profile '-checkpoint.mat']),'checkpoint','-v7');
+    checkpointFile=fullfile(seedDir,[profile.profile '-checkpoint.mat']);
+    if exist(checkpointFile,'file')
+        saved=load(checkpointFile,'checkpoint');
+        for field={'position','u','heading','alpha'}, assert(isequaln(saved.checkpoint.(field{1}),checkpoint.(field{1}))); end
+    else, save(checkpointFile,'checkpoint','-v7'); end
     for r=cfg.fresh_counts(:).'
         visible=false(n,c.full_neighbors);
         for i=1:n, visible(i,order(i,1:r))=true; end
@@ -91,6 +116,12 @@ for p=1:numel(profiles)
         vectorX=sum(w.*cos(delta),2); vectorY=sum(w.*sin(delta),2);
         field0=socialField(x.position,x.alpha,visible,c);
         initialMass=sum(field0,1).'*2*pi/m;
+        trajectoryFile=fullfile(seedDir,sprintf('%s-r%02d.mat',profile.profile,r));
+        reuse=resuming && exist(trajectoryFile,'file');
+        if reuse
+            saved=load(trajectoryFile,'meta','series'); series=saved.series;
+            assert(isequal(size(series),[cfg.post_steps,7]) && isequal(saved.meta.visible,visible));
+        else
         series=zeros(cfg.post_steps,7); velocity=zeros(2,n,cfg.post_steps);
         position=zeros(2,n,cfg.post_steps+1); position(:,:,1)=x.position;
         for t=1:cfg.post_steps
@@ -98,6 +129,7 @@ for p=1:numel(profiles)
             q=movementConsistency(x.position,v,c.L);
             series(t,:)=[q.GO q.LO q.C q.movingFraction q.meanSpeed q.pairDistance mean(sum(I,1)*2*pi/m)];
             velocity(:,:,t)=v; position(:,:,t+1)=x.position;
+        end
         end
         s=summarizeConsistency(series(:,1),series(:,2),cfg.terminal_steps);
         row=struct('seed',seed,'profile',profile.profile,'preSteps',profile.pre_steps,'remaining',r, ...
@@ -113,14 +145,16 @@ for p=1:numel(profiles)
             ss=summarizeConsistency(series(:,1),series(:,2),window);
             row.(sprintf('C_last%d',window))=ss.finalConsistency;
         end
-        rows(end+1)=row; %#ok<AGROW>
+        if isempty(rows), rows=row; else, rows(end+1)=row; end %#ok<AGROW>
         meta=struct('seed',seed,'profile',profile.profile,'remaining',r,'visible',visible, ...
             'initialSocialInputPerAgent',initialInput,'initialVectorX',vectorX,'initialVectorY',vectorY, ...
             'initialFieldMassPerAgent',initialMass,'seriesColumns',{{'GO','LO','C','movingFraction','meanSpeed','pairDistanceNorm','fieldMass'}}, ...
             'measurementNoise',0,'postSteps',cfg.post_steps,'terminalSteps',cfg.terminal_steps);
+        if ~reuse
         finalState=x;
-        save(fullfile(seedDir,sprintf('%s-r%02d.mat',profile.profile,r)), ...
+        save(trajectoryFile, ...
             'meta','series','velocity','position','finalState','-v7');
+        end
     end
 end
 writetable(struct2table(rows),fullfile(seedDir,'summary.csv'));

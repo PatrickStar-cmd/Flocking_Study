@@ -1,0 +1,6 @@
+{
+  "reason": "supplemental requested figures, paired history contrasts, uncertainty summaries; fixture-tested; mathtext axis glyph fix",
+  "source": "D:\\Work\\Study\\UESTC资料存档\\课程\\通关项目\\coding\\experiments\\occlusion-input-consistency-20261030\\deliver_results.py",
+  "sha256": "1b19640677a7dadb09455394526adddb9ea2a38de9cdeddfdaa02648d2007a0f",
+  "fixture_test": "PASS: synthetic replicated benchmark fixture only; not additional scientific observations"
+}
