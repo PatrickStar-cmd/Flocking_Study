@@ -1,0 +1,13 @@
+{
+  "bootstrap.py": "e60d9627163005066b99d0d9ab3672d1c28ff174922b2eb6532099390b39e117",
+  "common.py": "aa6bc4c95840b0e0169e1e1b9b763904ef6a6ebde313a1274ee53e8338b68b5c",
+  "design.py": "9b5f9d800fe9b7b1abd6dc85d24a11650552f8a755b3c7b524ef46ef49507d0c",
+  "model.py": "71a52f61467ec5ed548c97e21dda8628b3eb37dbc14d65ea51b5c0cef538c186",
+  "metrics.py": "54761299b3c8d2c228abc08a05a1e83144d0094bd483b7f0e601f83c4f519e46",
+  "kf_reference_core.py": "dbdae3879162c59fc2dae1b72818769ed31d6da40c4f315fc9bfaaa3d578e061",
+  "run_experiment.py": "638d208f786d8f81dd134a56ecbb5d84ea45e4207b4ac4cbe9b9cc902af6ca2e",
+  "experiment_config.json": "f91f19d0cb7abd91754eb7fc64535cb6fc5145081cd0918a1713eb22c07be7ed",
+  "EXPERIMENT_PROTOCOL.md": "90fae327d518be9ac2d9b4fda1d6c62abdfb271edaa0e80b423f172fee483d2b",
+  "SOURCE_PROVENANCE.json": "23e9dbb049dd47e420f536650f0168439934e93959e1db494fdcf2138fd30da3",
+  "requirements.lock.txt": "1955d86fe392a76dd853f374cbd56ec6f45a19a0e6b3e02bc4cff5de256ccf57"
+}

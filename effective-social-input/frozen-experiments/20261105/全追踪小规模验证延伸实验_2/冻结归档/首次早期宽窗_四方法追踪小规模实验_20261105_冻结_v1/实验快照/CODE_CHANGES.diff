@@ -1,0 +1,326 @@
+--- prior/design.py
++++ new/design.py
+@@ -15,9 +15,6 @@
+ DURATIONS = tuple(SETTINGS['durations_steps'])
+ STARTS = tuple(SETTINGS['occlusion_starts_zero_based'])
+ METHODS = tuple(SETTINGS['methods'])
+-SCOPES = ('occlusion', 'fixed_blocks', 'full_horizon', 'event1', 'event2', 'event3', 'event4')
+-CONTRASTS = (('drop', 'fresh'), ('hold', 'fresh'), ('kf-mean', 'fresh'),
+-             ('kf-mean', 'drop'), ('kf-mean', 'hold'))
+ 
+ 
+ def config():
+@@ -74,30 +71,14 @@
+     return xy, headings, alpha, u, noise
+ 
+ 
+-def windows(duration):
+-    steps = np.arange(STEPS)
+-    return np.logical_or.reduce([(steps >= s) & (steps < s + duration) for s in STARTS])
+-
+-
+-def scope_mask(scope, duration):
+-    steps = np.arange(STEPS)
+-    if scope == 'occlusion':
+-        return windows(duration)
+-    if scope == 'fixed_blocks':
+-        return np.logical_or.reduce([(steps >= a) & (steps < b)
+-                                     for a, b in SETTINGS['fixed_blocks_zero_based_half_open']])
+-    if scope == 'full_horizon':
+-        a, b = SETTINGS['full_evaluation_scope_zero_based_half_open']
+-        return (steps >= a) & (steps < b)
+-    start = STARTS[int(scope[-1]) - 1]
+-    return (steps >= start) & (steps < start + duration)
++def windows(duration, start):
++    steps=np.arange(STEPS)
++    return (steps>=start)&(steps<start+duration)
+ 
+ 
+ def jobs():
+-    return [(s, p, m, duration) for s in SEEDS for p in PROFILES
+-            for m, duration in [('fresh', 0)] +
+-            [(m, duration) for duration in DURATIONS for m in METHODS if m != 'fresh']]
++    return [(s,m,a,w) for s in SEEDS for m,a,w in [('fresh',0,0)]+[(m,a,w) for a in STARTS for w in DURATIONS for m in METHODS if m!='fresh']]
+ 
+ 
+-def run_id(seed, profile, method, duration):
+-    return f'{seed}_{profile}_{method}_D{duration:02d}'
++def run_id(seed, method, start, duration):
++    return f'{seed}_S{start:03d}_D{duration:03d}_{method}'
+--- prior/model.py
++++ new/model.py
+@@ -5,7 +5,7 @@
+ import kf_reference_core as ref
+ 
+ 
+-def simulate(seed, profile, method, duration):
++def simulate(seed, profile, method, duration, start):
+     c = d.config()
+     xy, heading, alpha, u, noise = d.initial(seed)
+     initial_xy, initial_u = xy.copy(), u.copy()
+@@ -14,7 +14,7 @@
+     scales = d.edge_scales()
+     memory = ref.Memory(selected, c, scales)
+     ring = ref.ring(c.m)
+-    blocked = d.windows(duration) if method != 'fresh' else d.windows(0)
++    blocked = d.windows(duration, start) if method != 'fresh' else np.zeros(d.STEPS, dtype=bool)
+     positions = np.empty((d.STEPS + 1, d.N, 2))
+     headings = np.empty((d.STEPS + 1, d.N))
+     velocities = np.empty((d.STEPS, d.N, 2))
+@@ -58,7 +58,7 @@
+     assert np.isfinite(positions).all() and np.isfinite(velocities).all()
+     assert np.all(positions >= 0.) and np.all(positions < c.arena), 'Boundary crossing'
+     return dict(seed=np.array(seed), profile=np.array(profile), method=np.array(method),
+-                duration=np.array(duration), positions=positions, headings=headings,
++                duration=np.array(duration), occlusion_start=np.array(start), positions=positions, headings=headings,
+                 velocities=velocities, goals=goals, alpha=alpha, initial_xy=initial_xy,
+                 initial_u=initial_u, final_u=u, noise=noise, selected=selected, hidden=hidden,
+                 blocked=blocked, observations=observations, centers=centers, active=active,
+--- prior/metrics.py
++++ new/metrics.py
+@@ -29,17 +29,3 @@
+                 fresh_edges=run['fresh'].sum((1, 2)), active_edges=run['active'].sum((1, 2)),
+                 mean_social_mass=run['input_mass'][:, d.FOLLOWERS].mean(1),
+                 mean_effective_social_input=run['effective_social_input'][:, d.FOLLOWERS].mean(1))
+-
+-
+-def endpoints(values, duration):
+-    rows = []
+-    for scope in d.SCOPES:
+-        mask = d.scope_mask(scope, duration)
+-        for metric in ('angle_deg', 'distance'):
+-            values_here = values[metric][mask]
+-            finite = np.isfinite(values_here)
+-            x = values_here[finite]
+-            rows.append(dict(scope=scope, metric=metric, steps=int(mask.sum()),
+-                             valid_steps=int(finite.sum()), mean=float(x.mean()) if len(x) else float('nan'),
+-                             sum_abs=float(x.sum()), auc=float(x.sum() * d.DT)))
+-    return rows
+--- prior/experiment_config.json
++++ new/experiment_config.json
+@@ -1,9 +1,4 @@
+ {
+-  "status": "EXECUTION_PROTOCOL_FIXED",
+-  "version": "width_extension_v1",
+-  "date": "2026-11-04",
+-  "frozen_baseline_id": "FRESH_DROP_KF_STRONG_LEADER_RANDOM_HEADING_20261104_v1",
+-  "baseline_source": "C:\\Users\\WHQ\\Studying\\大三上学期\\无人机群\\11.2周\\全追踪小规模验证延伸实验_1\\强领航随机初向_FreshDrop验证_20261104",
+   "n": 12,
+   "leader_index": 0,
+   "follower_count": 11,
+@@ -39,110 +34,16 @@
+     "ordinary": 3
+   },
+   "topology_rule": "reuse frozen design.topology",
+-  "steps": 300,
+   "dt": 0.3,
+   "time_unit": "un-calibrated model time",
+-  "target_profiles": [
+-    {
+-      "name": "static",
+-      "type": "static",
+-      "position": [
+-        235,
+-        200
+-      ]
+-    },
+-    {
+-      "name": "moving_slow",
+-      "type": "forward_sine",
+-      "x0": 235,
+-      "y0": 200,
+-      "vx": 0.6,
+-      "amplitude_y": 4.0,
+-      "period": 48.0,
+-      "phase": 0.0
+-    },
+-    {
+-      "name": "moving_moderate",
+-      "type": "forward_sine",
+-      "x0": 235,
+-      "y0": 200,
+-      "vx": 0.6,
+-      "amplitude_y": 4.0,
+-      "period": 24.0,
+-      "phase": 0.0
+-    }
+-  ],
+-  "occlusion_starts_zero_based": [
+-    40,
+-    110,
+-    180,
+-    250
+-  ],
+-  "durations_steps": [
+-    5,
+-    10,
+-    15,
+-    20,
+-    25,
+-    30,
+-    40
+-  ],
+-  "occlusion_interval_convention": "[start, start + duration)",
+-  "primary_scope": "union of actually occluded update indices",
+-  "fixed_blocks_zero_based_half_open": [
+-    [
+-      40,
+-      80
+-    ],
+-    [
+-      110,
+-      150
+-    ],
+-    [
+-      180,
+-      220
+-    ],
+-    [
+-      250,
+-      290
+-    ]
+-  ],
+-  "full_evaluation_scope_zero_based_half_open": [
+-    40,
+-    300
+-  ],
+-  "primary_comparison": {
+-    "profile": "moving_moderate",
+-    "contrast": "hold - fresh",
+-    "scope": "occlusion",
+-    "duration_steps": "all prespecified widths"
+-  },
+   "methods": [
+     "fresh",
+     "drop",
+     "hold",
+     "kf-mean"
+   ],
+-  "pilot_seeds": [
+-    970001,
+-    970002,
+-    970003
+-  ],
+-  "prospective_validation_seeds_if_later_authorized": [
+-    971001,
+-    971002,
+-    971003,
+-    971004,
+-    971005
+-  ],
+   "primary_metric": "mean follower absolute wrapped heading-to-current-target angle in degrees",
+   "co_primary_metric": "mean follower current-target Euclidean distance in model length units",
+-  "auxiliary_metrics": [
+-    "leader tracking distance",
+-    "leader-edge bearing reconstruction error on identical Fresh reference trajectory",
+-    "KF prediction active coverage",
+-    "stationary and angle-undefined fractions"
+-  ],
+   "kf": {
+     "state": [
+       "relative_bearing",
+@@ -162,39 +63,73 @@
+     "arena": 1000.0
+   },
+   "observation_noise_std_rad": 0.01,
++  "date": "2026-11-05",
++  "version": "early_single_window_pilot_v1",
++  "steps": 120,
++  "target_profiles": [
++    {
++      "name": "moving_moderate",
++      "type": "forward_sine",
++      "x0": 235,
++      "y0": 200,
++      "vx": 0.6,
++      "amplitude_y": 4.0,
++      "period": 24.0,
++      "phase": 0.0
++    }
++  ],
++  "occlusion_starts_zero_based": [
++    20,
++    40
++  ],
++  "durations_steps": [
++    30,
++    40
++  ],
++  "pilot_seeds": [
++    971001,
++    971002,
++    971003,
++    971004,
++    971005
++  ],
++  "windows_per_trajectory": 1,
++  "occlusion_interval_convention": "[start,start+duration)",
++  "primary_condition": {
++    "start": 40,
++    "duration": 40
++  },
++  "primary_scope": "occlusion_mean",
++  "primary_comparisons": [
++    "kf-mean - hold",
++    "kf-mean - drop"
++  ],
++  "auxiliary_scopes": [
++    "pre20_mean",
++    "occlusion_last",
++    "occlusion_last3",
++    "post20_mean",
++    "fixed80_mean",
++    "full_mean"
++  ],
+   "unique_runs": {
+-    "fresh": 9,
+-    "occluded_methods": 189,
+-    "total": 198,
+-    "logical_factor_cells": 252
++    "fresh": 5,
++    "occluded_methods": 60,
++    "total": 65,
++    "logical_factor_cells": 80
+   },
++  "source_experiment_folder": "C:\\Users\\WHQ\\Studying\\大三上学期\\无人机群\\11.2周\\全追踪小规模验证延伸实验_2\\遮挡窗宽扩展_FreshHold验证_20261104",
++  "execution_folder": "C:\\Users\\WHQ\\Studying\\大三上学期\\无人机群\\11.2周\\全追踪小规模验证延伸实验_2\\首次早期宽窗_四方法追踪小规模实验_20261105",
+   "analysis_rules": [
+-    "seed is the independent sample unit",
+-    "no signed angular cancellation",
+-    "do not take absolute value of method differences",
+-    "same-step reference at t_(k+1) for post-update tracking scores",
+-    "Fresh reused only across durations within the same seed and profile",
+-    "report all profiles durations windows and seeds",
+-    "no tuning q R leader weights or follower cue in this pilot"
+-  ],
+-  "frozen_source_sha256": {
+-    "design.py": "388cca6a2c0eebe4115ccd7d581faaf936722ae60352541953760d900ca46efe",
+-    "model.py": "9c4b6eb1678c17a487989e7194ad2c8b38d2d84ceab9cbbe67b08d9fa3e01f41",
+-    "kf_reference_core.py": "dbdae3879162c59fc2dae1b72818769ed31d6da40c4f315fc9bfaaa3d578e061",
+-    "DELIVERY_MANIFEST.csv": "950253ec07b99e8bc1d19f610f71fc10db8c8f07e69e77ba866af809674b71cc"
+-  },
+-  "execution_folder": "C:\\Users\\WHQ\\Studying\\大三上学期\\无人机群\\11.2周\\全追踪小规模验证延伸实验_2\\遮挡窗宽扩展_FreshHold验证_20261104",
+-  "source_experiment_folder": "C:\\Users\\WHQ\\Studying\\大三上学期\\无人机群\\11.2周\\全追踪小规模验证延伸实验_2\\运动目标_遮挡窗宽_闭环小规模实验_20261104",
+-  "width_hypothesis": "Hold minus Fresh tracking error increases with width; positive favors Fresh; no guarantee of monotonicity",
+-  "extension_analysis_rules": [
+-    "same target trajectories; periodicity not varied or analyzed",
+-    "primary: moving_moderate, all-window mean absolute angle and distance",
+-    "secondary: last occluded update; last three updates; fixed 40-step blocks; full fixed horizon",
+-    "first window analyzed separately, including common prefixes across durations",
+-    "adjacent paired-width increments and OLS slope over all seven widths, seed is sample unit",
+-    "positive advantage at each width and increasing advantage are different claims",
+-    "do not select favorable intervals post hoc as confirmatory evidence",
+-    "n=3 exploratory; raw cumulative errors are duration-confounded across widths",
+-    "independent rerun all 198 trajectories; compare 117 old conditions array-by-array"
++    "five previously unused seeds; no seed selection",
++    "seed is independent sample; time steps and aircraft are not independent replicates",
++    "report all four start-width cells and both metrics",
++    "primary S40D40 fixed before simulation based on previous exploratory first-window evidence",
++    "same positions, initial directions, noise and target across methods within each seed",
++    "no tuning parameters after results",
++    "Fresh directly uses noisy current observations; it is not an optimal controller",
++    "angle and distance are follower-only scores; leader scores retained separately",
++    "target periodicity unchanged and not an experimental factor",
++    "changing initial randomness is not tested in this experiment"
+   ]
+ }

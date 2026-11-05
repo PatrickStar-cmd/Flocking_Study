@@ -1,0 +1,14 @@
+{
+  "status": "PASS",
+  "checked_at_local": "2026-11-04T19:34:21.635590+08:00",
+  "source_delivery_manifest_entries_verified": {
+    "primary": 423,
+    "baseline_dependency": 167
+  },
+  "archived_payload_files": 592,
+  "all_payload_files_actually_extracted": true,
+  "extracted_sizes_and_sha256_all_match": true,
+  "source_files_and_file_sets_unchanged": true,
+  "simulation_rerun": false,
+  "dependencies_binaries_bundled": false
+}

@@ -1,0 +1,135 @@
+{
+  "n": 12,
+  "leader_index": 0,
+  "follower_count": 11,
+  "leader_start": [
+    200,
+    200
+  ],
+  "initial_target": [
+    235,
+    200
+  ],
+  "follower_initial_x_range": [
+    187,
+    193
+  ],
+  "follower_initial_y_range": [
+    194,
+    206
+  ],
+  "initial_follower_heading": "independent uniform [-pi, pi)",
+  "heading_rng_offset": 1104000,
+  "leader_max_speed": 1.5,
+  "leader_rule": "pursue current target, min(vmax, distance/dt), no social input",
+  "leader_edge_amplitude": 0.24,
+  "ordinary_edge_amplitude": 0.012,
+  "follower_goal_cue": 0.0,
+  "selected_edges_per_follower": {
+    "leader": 1,
+    "ordinary": 6
+  },
+  "hidden_edges_per_follower": {
+    "leader": 1,
+    "ordinary": 3
+  },
+  "topology_rule": "reuse frozen design.topology",
+  "dt": 0.3,
+  "time_unit": "un-calibrated model time",
+  "methods": [
+    "fresh",
+    "drop",
+    "hold",
+    "kf-mean"
+  ],
+  "primary_metric": "mean follower absolute wrapped heading-to-current-target angle in degrees",
+  "co_primary_metric": "mean follower current-target Euclidean distance in model length units",
+  "kf": {
+    "state": [
+      "relative_bearing",
+      "relative_bearing_rate"
+    ],
+    "q": 0.0001,
+    "R": 0.0001,
+    "max_age": 120.0,
+    "max_variance": 1.0,
+    "fresh_observations_pass_through": true
+  },
+  "controller": {
+    "neurons": 100,
+    "beta": 1000,
+    "speed_scale": 0.05,
+    "sigma_rad": 0.4,
+    "arena": 1000.0
+  },
+  "observation_noise_std_rad": 0.01,
+  "date": "2026-11-05",
+  "version": "early_single_window_pilot_v1",
+  "steps": 120,
+  "target_profiles": [
+    {
+      "name": "moving_moderate",
+      "type": "forward_sine",
+      "x0": 235,
+      "y0": 200,
+      "vx": 0.6,
+      "amplitude_y": 4.0,
+      "period": 24.0,
+      "phase": 0.0
+    }
+  ],
+  "occlusion_starts_zero_based": [
+    20,
+    40
+  ],
+  "durations_steps": [
+    30,
+    40
+  ],
+  "pilot_seeds": [
+    971001,
+    971002,
+    971003,
+    971004,
+    971005
+  ],
+  "windows_per_trajectory": 1,
+  "occlusion_interval_convention": "[start,start+duration)",
+  "primary_condition": {
+    "start": 40,
+    "duration": 40
+  },
+  "primary_scope": "occlusion_mean",
+  "primary_comparisons": [
+    "kf-mean - hold",
+    "kf-mean - drop"
+  ],
+  "auxiliary_scopes": [
+    "pre20_mean",
+    "occlusion_last",
+    "occlusion_last3",
+    "post20_mean",
+    "fixed80_mean",
+    "full_mean"
+  ],
+  "unique_runs": {
+    "fresh": 5,
+    "occluded_methods": 60,
+    "total": 65,
+    "logical_factor_cells": 80
+  },
+  "source_experiment_folder": "C:\\Users\\WHQ\\Studying\\大三上学期\\无人机群\\11.2周\\全追踪小规模验证延伸实验_2\\遮挡窗宽扩展_FreshHold验证_20261104",
+  "execution_folder": "C:\\Users\\WHQ\\Studying\\大三上学期\\无人机群\\11.2周\\全追踪小规模验证延伸实验_2\\首次早期宽窗_四方法追踪小规模实验_20261105",
+  "analysis_rules": [
+    "five previously unused seeds; no seed selection",
+    "seed is independent sample; time steps and aircraft are not independent replicates",
+    "report all four start-width cells and both metrics",
+    "primary S40D40 fixed before simulation based on previous exploratory first-window evidence",
+    "same positions, initial directions, noise and target across methods within each seed",
+    "no tuning parameters after results",
+    "Fresh directly uses noisy current observations; it is not an optimal controller",
+    "angle and distance are follower-only scores; leader scores retained separately",
+    "target periodicity unchanged and not an experimental factor",
+    "changing initial randomness is not tested in this experiment"
+  ]
+}

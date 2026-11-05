@@ -1,0 +1,10 @@
+{
+  "status": "PASS",
+  "all_fixed_conditions_retained": true,
+  "all_seeds_retained": true,
+  "scientific_sources_frozen": true,
+  "independent_motion_filter_and_score_audit": true,
+  "previous_package_untouched": true,
+  "statistics_unit": "seed",
+  "exploratory_only": true
+}

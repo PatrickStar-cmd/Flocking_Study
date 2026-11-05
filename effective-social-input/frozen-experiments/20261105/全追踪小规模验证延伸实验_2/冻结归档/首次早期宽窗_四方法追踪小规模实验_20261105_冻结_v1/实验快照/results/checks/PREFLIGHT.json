@@ -1,0 +1,15 @@
+{
+  "status": "PASS",
+  "planned_trajectories": 65,
+  "source_folder_present": true,
+  "previous_experiment_unchanged": true,
+  "old_seed_prefix_regression_methods": [
+    "fresh",
+    "drop",
+    "hold",
+    "kf-mean"
+  ],
+  "old_seed_is_not_an_experimental_sample": true,
+  "single_window_unclipped": true,
+  "reference_core_unchanged": true
+}

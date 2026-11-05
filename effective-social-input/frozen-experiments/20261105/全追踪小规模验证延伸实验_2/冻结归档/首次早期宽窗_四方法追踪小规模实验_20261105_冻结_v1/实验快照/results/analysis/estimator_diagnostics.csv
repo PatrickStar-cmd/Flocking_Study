@@ -1,0 +1,61 @@
+﻿seed,start,duration,method,interpretation,leader_bearing_mae_deg,leader_bearing_last_mae_deg,hidden_active_coverage,maximum_hidden_angle_variance
+971001,20,30,drop,no prediction; missing inputs removed,,,0.0,0.03246319999255486
+971001,20,30,hold,"estimation error on this method own closed-loop trajectory, not common geometry",6.883015433179312,12.445344703325672,1.0,0.03246319999255486
+971001,20,30,kf-mean,"estimation error on this method own closed-loop trajectory, not common geometry",3.27767283667084,7.811487518237985,1.0,0.03246319999255486
+971001,20,40,drop,no prediction; missing inputs removed,,,0.0,0.0717494295175658
+971001,20,40,hold,"estimation error on this method own closed-loop trajectory, not common geometry",8.797076330708025,16.22498547803985,1.0,0.0717494295175658
+971001,20,40,kf-mean,"estimation error on this method own closed-loop trajectory, not common geometry",5.011452751817903,12.271360088891724,1.0,0.0717494295175658
+971001,40,30,drop,no prediction; missing inputs removed,,,0.0,0.03246305806336796
+971001,40,30,hold,"estimation error on this method own closed-loop trajectory, not common geometry",5.586917204784049,10.562457722249114,1.0,0.03246305806336796
+971001,40,30,kf-mean,"estimation error on this method own closed-loop trajectory, not common geometry",2.3837401228504644,5.573155944542831,1.0,0.03246305806336796
+971001,40,40,drop,no prediction; missing inputs removed,,,0.0,0.07174918814754348
+971001,40,40,hold,"estimation error on this method own closed-loop trajectory, not common geometry",7.106926402536111,12.325003053655543,1.0,0.07174918814754348
+971001,40,40,kf-mean,"estimation error on this method own closed-loop trajectory, not common geometry",3.5391959059261375,8.200795303733262,1.0,0.07174918814754348
+971002,20,30,drop,no prediction; missing inputs removed,,,0.0,0.03246319999255486
+971002,20,30,hold,"estimation error on this method own closed-loop trajectory, not common geometry",6.374320052479587,11.04695385591579,1.0,0.03246319999255486
+971002,20,30,kf-mean,"estimation error on this method own closed-loop trajectory, not common geometry",5.238180573623556,12.498275716246654,1.0,0.03246319999255486
+971002,20,40,drop,no prediction; missing inputs removed,,,0.0,0.0717494295175658
+971002,20,40,hold,"estimation error on this method own closed-loop trajectory, not common geometry",7.884792082936908,13.458667960059762,1.0,0.0717494295175658
+971002,20,40,kf-mean,"estimation error on this method own closed-loop trajectory, not common geometry",8.078813833637565,20.26436701138098,1.0,0.0717494295175658
+971002,40,30,drop,no prediction; missing inputs removed,,,0.0,0.03246305806336796
+971002,40,30,hold,"estimation error on this method own closed-loop trajectory, not common geometry",5.651639550347036,11.396206410341097,1.0,0.03246305806336796
+971002,40,30,kf-mean,"estimation error on this method own closed-loop trajectory, not common geometry",3.0458146906092622,7.107633774161403,1.0,0.03246305806336796
+971002,40,40,drop,no prediction; missing inputs removed,,,0.0,0.07174918814754348
+971002,40,40,hold,"estimation error on this method own closed-loop trajectory, not common geometry",7.533282768228262,14.406472523610024,1.0,0.07174918814754348
+971002,40,40,kf-mean,"estimation error on this method own closed-loop trajectory, not common geometry",4.626925039719341,11.348305402376702,1.0,0.07174918814754348
+971003,20,30,drop,no prediction; missing inputs removed,,,0.0,0.03246319999255486
+971003,20,30,hold,"estimation error on this method own closed-loop trajectory, not common geometry",6.329847062182445,10.358080017422774,1.0,0.03246319999255486
+971003,20,30,kf-mean,"estimation error on this method own closed-loop trajectory, not common geometry",3.850382731922274,9.864492691056057,1.0,0.03246319999255486
+971003,20,40,drop,no prediction; missing inputs removed,,,0.0,0.0717494295175658
+971003,20,40,hold,"estimation error on this method own closed-loop trajectory, not common geometry",7.563243607832233,11.961977551928946,1.0,0.0717494295175658
+971003,20,40,kf-mean,"estimation error on this method own closed-loop trajectory, not common geometry",6.284799146270325,16.872377988523656,1.0,0.0717494295175658
+971003,40,30,drop,no prediction; missing inputs removed,,,0.0,0.03246305806336796
+971003,40,30,hold,"estimation error on this method own closed-loop trajectory, not common geometry",2.531008888503729,4.411629384703461,1.0,0.03246305806336796
+971003,40,30,kf-mean,"estimation error on this method own closed-loop trajectory, not common geometry",3.730543846026821,8.236458299711398,1.0,0.03246305806336796
+971003,40,40,drop,no prediction; missing inputs removed,,,0.0,0.07174918814754348
+971003,40,40,hold,"estimation error on this method own closed-loop trajectory, not common geometry",3.1386069811506485,5.366463872490962,1.0,0.07174918814754348
+971003,40,40,kf-mean,"estimation error on this method own closed-loop trajectory, not common geometry",5.270514609516851,11.05947559959683,1.0,0.07174918814754348
+971004,20,30,drop,no prediction; missing inputs removed,,,0.0,0.03246319999255486
+971004,20,30,hold,"estimation error on this method own closed-loop trajectory, not common geometry",7.329921368089484,12.090746133053813,1.0,0.03246319999255486
+971004,20,30,kf-mean,"estimation error on this method own closed-loop trajectory, not common geometry",5.762423263710857,14.61366836211713,1.0,0.03246319999255486
+971004,20,40,drop,no prediction; missing inputs removed,,,0.0,0.0717494295175658
+971004,20,40,hold,"estimation error on this method own closed-loop trajectory, not common geometry",8.85369450712355,14.448406100536078,1.0,0.0717494295175658
+971004,20,40,kf-mean,"estimation error on this method own closed-loop trajectory, not common geometry",9.267399892441418,24.393513784595175,1.0,0.0717494295175658
+971004,40,30,drop,no prediction; missing inputs removed,,,0.0,0.03246305806336796
+971004,40,30,hold,"estimation error on this method own closed-loop trajectory, not common geometry",3.71749285927223,7.060421307051124,1.0,0.03246305806336796
+971004,40,30,kf-mean,"estimation error on this method own closed-loop trajectory, not common geometry",3.522147225151882,8.182391482056593,1.0,0.03246305806336796
+971004,40,40,drop,no prediction; missing inputs removed,,,0.0,0.07174918814754348
+971004,40,40,hold,"estimation error on this method own closed-loop trajectory, not common geometry",4.860243853637617,9.231246740749008,1.0,0.07174918814754348
+971004,40,40,kf-mean,"estimation error on this method own closed-loop trajectory, not common geometry",5.236600261543889,12.206766700491347,1.0,0.07174918814754348
+971005,20,30,drop,no prediction; missing inputs removed,,,0.0,0.03246319999255486
+971005,20,30,hold,"estimation error on this method own closed-loop trajectory, not common geometry",9.843254357156798,15.648960977160016,1.0,0.03246319999255486
+971005,20,30,kf-mean,"estimation error on this method own closed-loop trajectory, not common geometry",7.1407664434135905,17.718949718088023,1.0,0.03246319999255486
+971005,20,40,drop,no prediction; missing inputs removed,,,0.0,0.0717494295175658
+971005,20,40,hold,"estimation error on this method own closed-loop trajectory, not common geometry",11.569446309038325,17.519777573099567,1.0,0.0717494295175658
+971005,20,40,kf-mean,"estimation error on this method own closed-loop trajectory, not common geometry",11.275967125026746,28.944814447978672,1.0,0.0717494295175658
+971005,40,30,drop,no prediction; missing inputs removed,,,0.0,0.03246305806336796
+971005,40,30,hold,"estimation error on this method own closed-loop trajectory, not common geometry",2.8443319286051882,4.4449347200284235,1.0,0.03246305806336796
+971005,40,30,kf-mean,"estimation error on this method own closed-loop trajectory, not common geometry",4.7293999242546505,10.971229314677649,1.0,0.03246305806336796
+971005,40,40,drop,no prediction; missing inputs removed,,,0.0,0.07174918814754348
+971005,40,40,hold,"estimation error on this method own closed-loop trajectory, not common geometry",3.375838980908155,5.603491892857948,1.0,0.07174918814754348
+971005,40,40,kf-mean,"estimation error on this method own closed-loop trajectory, not common geometry",7.048118503875195,16.521734553871976,1.0,0.07174918814754348

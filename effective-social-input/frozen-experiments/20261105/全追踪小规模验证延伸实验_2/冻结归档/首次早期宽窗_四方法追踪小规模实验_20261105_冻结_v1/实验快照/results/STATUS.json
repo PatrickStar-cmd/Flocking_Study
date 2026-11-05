@@ -1,0 +1,10 @@
+{
+  "stage": "COMPLETE",
+  "planned": 65,
+  "completed": 65,
+  "seeds": 5,
+  "conditions": 4,
+  "independent_verification": "PASS",
+  "visual_qa": "PASS",
+  "raw_data_preserved": true
+}

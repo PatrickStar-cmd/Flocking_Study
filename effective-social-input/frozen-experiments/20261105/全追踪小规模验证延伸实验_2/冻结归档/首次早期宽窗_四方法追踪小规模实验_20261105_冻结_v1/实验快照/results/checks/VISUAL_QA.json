@@ -1,0 +1,19 @@
+{
+  "status": "PASS",
+  "method": "All four full-size rendered figures inspected using view_image",
+  "figure_sha256": {
+    "01_four_method_tracking.png": "a37778a7cc98ffd3a2a921d40911a65303abab6467ed2743cb54c28bb32492f1",
+    "02_KF_paired_comparisons.png": "05927b2ad2077a9ec879bd2a9555cef7800019f4e959deb7a258ead755a8a49a",
+    "03_primary_error_timeseries.png": "259be0b28548e10ba2578dcdd4b7f0057201bc038487d52415dee0278454b12c",
+    "04_primary_trajectories.png": "926d1c486c0c22c45e4e97859b38f9c084466258bac27ad4b45fc460fd177a49"
+  },
+  "checks": [
+    "readable axes and model units",
+    "no title or label clipping",
+    "bar-chart zero baselines",
+    "paired differences and five seeds shown",
+    "negative contrast means KF better",
+    "same axes for trajectory comparisons",
+    "uncertainty bands labeled as SD not CI"
+  ]
+}

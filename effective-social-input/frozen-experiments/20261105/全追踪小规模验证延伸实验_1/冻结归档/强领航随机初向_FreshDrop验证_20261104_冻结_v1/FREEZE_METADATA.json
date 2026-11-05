@@ -1,0 +1,81 @@
+{
+  "archive_id": "FRESH_DROP_KF_STRONG_LEADER_RANDOM_HEADING_20261104_v1",
+  "status": "FROZEN",
+  "frozen_at_local": "2026-11-04T19:34:21.543974+08:00",
+  "timezone": "Asia/Shanghai",
+  "source_experiment": "C:\\Users\\WHQ\\Studying\\大三上学期\\无人机群\\11.2周\\全追踪小规模验证延伸实验_1\\强领航随机初向_FreshDrop验证_20261104",
+  "archive_file": "FRESH_DROP_KF_FROZEN_v1_20261104.zip",
+  "archive_bytes": 110710557,
+  "archive_sha256": "338c112f7ac62be7515381892371718cb13ce8adfa541fe709122b5f37b0bed8",
+  "payload_file_count": 592,
+  "payload_bytes": 114617227,
+  "source_checks": [
+    {
+      "role": "primary",
+      "path": "C:\\Users\\WHQ\\Studying\\大三上学期\\无人机群\\11.2周\\全追踪小规模验证延伸实验_1\\强领航随机初向_FreshDrop验证_20261104",
+      "delivery_manifest_entries_verified": 423,
+      "delivery_manifest_sha256": "950253ec07b99e8bc1d19f610f71fc10db8c8f07e69e77ba866af809674b71cc"
+    },
+    {
+      "role": "baseline_dependency",
+      "path": "C:\\Users\\WHQ\\Studying\\大三上学期\\无人机群\\11.2周\\全追踪小规模验证延伸实验_1\\单领航无跟随者目标输入_消融预实验_20261104",
+      "delivery_manifest_entries_verified": 167,
+      "delivery_manifest_sha256": "27dea5c39f9e44dd7cc5de3b46fb1228420a9021983147dfe7912e29939d2672"
+    }
+  ],
+  "source_unchanged_after_freeze": true,
+  "restoration_test": "PASS: extracted every archived payload file and verified size and SHA-256",
+  "environment": {
+    "python": "3.12.14 (main, Aug 25 2026, 14:01:42) [MSC v.1944 64 bit (AMD64)]",
+    "executable": "C:\\Users\\WHQ\\.cache\\codex-runtimes\\codex-primary-runtime\\dependencies\\python\\python.exe",
+    "platform": "Windows-11-10.0.26200-SP0",
+    "packages": {
+      "numpy": "2.5.4",
+      "matplotlib": "3.11.2"
+    },
+    "third_party_binaries_bundled": false
+  },
+  "design": {
+    "n": 12,
+    "leaders": 1,
+    "followers": 11,
+    "leader_edge_amplitude": 0.24,
+    "ordinary_edge_amplitude": 0.012,
+    "leader_gain": 20,
+    "follower_goal_cue": 0,
+    "initial_follower_heading": "independent uniform [-pi, pi)",
+    "steps": 160,
+    "dt": 0.3,
+    "occlusion_starts_zero_based": [
+      10,
+      30,
+      50
+    ],
+    "occlusion_durations": [
+      5,
+      10,
+      15
+    ],
+    "goal_distances": [
+      35,
+      120
+    ],
+    "development_seeds": [
+      950001,
+      950002,
+      950003
+    ],
+    "validation_seeds": [
+      960001,
+      960002,
+      960003,
+      960004,
+      960005
+    ],
+    "main_unique_simulations": 160,
+    "new_ablation_unique_simulations": 24,
+    "new_unique_simulations_total": 184
+  },
+  "claim_scope": "Exploratory n=5 validation; primary conclusion concerns tracking errors during occlusion.",
+  "relocation_note": "SOURCE_PROVENANCE.json retains original absolute paths. In a separately copied working version only, update baseline_folder and reference_path before relocating full audits. This creates a descendant version."
+}

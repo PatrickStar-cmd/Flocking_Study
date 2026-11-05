@@ -1,0 +1,22 @@
+{
+  "status": "PASS",
+  "unique_trajectories": 65,
+  "tracking_aircraft_update_samples": 85800,
+  "scalar_filter_edge_updates": 600600,
+  "raw_output_hashes_verified": 130,
+  "maximum_tracking_metric_error": 2.842170943040401e-14,
+  "maximum_displacement_error": 1.4210854715202004e-14,
+  "maximum_scalar_KF_error": 1.1191048088221578e-13,
+  "maximum_covariance_error": 7.936359902593892e-17,
+  "maximum_input_center_error": 3.6415315207705135e-14,
+  "maximum_neural_control_replay_error": 3.3288649614604537e-13,
+  "maximum_statistic_error": 1.8189894035458565e-12,
+  "paired_initial_histories_identical": true,
+  "hidden_observations_nan": true,
+  "all_primary_angle_samples_valid": true,
+  "previous_package_unchanged": true,
+  "endpoint_rows": 1120,
+  "paired_rows": 1400,
+  "summary_rows": 280,
+  "performance_rows": 224
+}

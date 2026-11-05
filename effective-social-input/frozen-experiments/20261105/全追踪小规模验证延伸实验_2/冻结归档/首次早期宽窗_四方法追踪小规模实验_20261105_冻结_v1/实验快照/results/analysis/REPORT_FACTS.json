@@ -1,0 +1,10 @@
+{
+  "status": "PASS",
+  "primary_start": 40,
+  "primary_width": 40,
+  "every_fixed_cell_two_metrics_KF_beats_Hold_and_Drop_in_all_five_seeds": true,
+  "primary_is_not_reselected_after_results": true,
+  "initial_randomness_causal_claim": false,
+  "long_term_generalization_claim": false,
+  "distance_improvement_is_small": true
+}
