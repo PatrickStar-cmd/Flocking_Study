@@ -1,0 +1,60 @@
+{
+  "status": "COMPLETE",
+  "selected_schedule": "occ100_obs50",
+  "development_gate": "pass",
+  "expected_test_seeds": 24,
+  "test_seeds": 24,
+  "rows": 384,
+  "bootstrap_repeats": 4000,
+  "primary_remaining": 5,
+  "primary_metric": "C_occ_tail",
+  "degradation_confirmed": true,
+  "primary_Fresh_minus_Drop": {
+    "remaining": 5,
+    "method": "Fresh",
+    "reference": "Drop",
+    "metric": "C_occ_tail",
+    "n_seeds": 24,
+    "mean_delta": 0.2676889618265969,
+    "ci95_low": 0.137032069617154,
+    "ci95_high": 0.3995479436480229,
+    "n_positive": 19
+  },
+  "inference": "Exploratory pointwise paired bootstrap intervals; no multiple-comparison adjustment.",
+  "provenance": {
+    "verified_seed_count": 24,
+    "verified_seeds": [
+      2026111107,
+      2026111108,
+      2026111109,
+      2026111110,
+      2026111111,
+      2026111112,
+      2026111113,
+      2026111114,
+      2026111115,
+      2026111116,
+      2026111117,
+      2026111118,
+      2026111119,
+      2026111120,
+      2026111121,
+      2026111122,
+      2026111123,
+      2026111124,
+      2026111125,
+      2026111126,
+      2026111127,
+      2026111128,
+      2026111129,
+      2026111130
+    ],
+    "sha256": {
+      "config.json": "f833bb1e6f6ca5070fe811d0c413dfbe76508e3333e592276242fc1b3d22f0b4",
+      "runConsistencyCompensation2.m": "e09ef21dcc8022cac50418bf5cd44c2f8e7721437ec88a1eb95f9a4a18c17dd9",
+      "results/test/forecast_params.json": "33ae168e995ef0ee8c61148d6762e9f82ad7ab35c50ed3279755ee22684d8710",
+      "results/test/completion.json": "767ce3a68a274bbd70dda75b7c084aeae9c391c7bc05db5a2115b9250dcacd7a"
+    }
+  },
+  "raw_trace_cells_verified": 384
+}

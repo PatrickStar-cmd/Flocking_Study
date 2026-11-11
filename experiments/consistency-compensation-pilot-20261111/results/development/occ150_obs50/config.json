@@ -1,0 +1,38 @@
+{
+  "version": "intermittent_consistency_pilot_v1",
+  "source_branch": "YCwork",
+  "source_commit_checked": "31b0274989fb428f741a072a942adbfe885033b3",
+  "source_experiment": "experiments/occlusion-input-consistency-20261030",
+  "seed_first": 2026111101,
+  "seed_count": 30,
+  "development_seeds": 6,
+  "pre_steps": 200,
+  "history_steps": 50,
+  "remaining_counts": [5, 8],
+  "primary_remaining": 5,
+  "schedule_candidates": [
+    {"name": "occ100_obs50", "occlusion_steps": 100, "refresh_steps": 50, "cycles": 40},
+    {"name": "occ150_obs50", "occlusion_steps": 150, "refresh_steps": 50, "cycles": 30}
+  ],
+  "tail_steps": 1000,
+  "gate": {"min_mean_delta": 0.05, "min_positive_seeds": 5, "selection": "shortest passing schedule, primary_remaining only"},
+  "methods": ["Fresh", "Drop", "Hold", "Linear", "DampedHolt", "SG", "KF", "StrengthOnly"],
+  "model": {
+    "N": 20,
+    "M": 100,
+    "dt": 0.3,
+    "L": 1000,
+    "beta": 1000,
+    "speed_scale": 0.05,
+    "kernel_sigma": 0.4,
+    "connection_exponent": 0.5,
+    "global_inhibition": 0,
+    "single_edge_weight": 0.012,
+    "full_neighbors": 19
+  },
+  "kappa": 1.0,
+  "observation_noise_sd": 0,
+  "forecast_edge_weight": "same fixed 0.012 for actual and predicted edges; StrengthOnly rescales visible weights to full nominal total",
+  "primary_outcome": "mean_t min(GO(t),LO(t)) over occluded steps in the last 1000 post-checkpoint steps",
+  "secondary_outcomes": ["GO and LO on the same occluded steps", "C over all final 1000 steps", "C over all occluded steps", "hidden bearing MAE", "same-branch oracle neural-field input RMSE"]
+}

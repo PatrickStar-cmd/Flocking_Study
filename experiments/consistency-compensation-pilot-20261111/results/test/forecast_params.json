@@ -1,0 +1,16 @@
+{
+  "alpha": 0.8,
+  "beta": 0.2,
+  "phi": 0.6,
+  "q": 0.0001,
+  "r": 1E-6,
+  "historySteps": 50,
+  "calibrationHoltMSE": 0.31160892304941396,
+  "calibrationKFMSE": 0.32929909063472285,
+  "calibrationSeeds": 6,
+  "calibrationHorizons": [
+    50,
+    100
+  ],
+  "schedule": "occ100_obs50"
+}

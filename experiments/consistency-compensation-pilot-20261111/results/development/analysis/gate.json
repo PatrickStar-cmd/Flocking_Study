@@ -1,0 +1,56 @@
+{
+  "status": "pass",
+  "selected_schedule": "occ100_obs50",
+  "primary_remaining": 5,
+  "development_seed_count": 6,
+  "criteria": {
+    "min_mean_delta": 0.05,
+    "min_positive_seeds": 5,
+    "selection": "shortest passing schedule, primary_remaining only"
+  },
+  "metric": "C_occ_tail",
+  "rows": 48,
+  "schedule_results": [
+    {
+      "schedule": "occ100_obs50",
+      "remaining": 5,
+      "n_seeds": 6,
+      "mean_Fresh_minus_Drop": 0.3773439530667413,
+      "ci95_low": 0.2917023658265378,
+      "ci95_high": 0.45759220982283294,
+      "n_positive": 6,
+      "passes_development_gate": true
+    },
+    {
+      "schedule": "occ100_obs50",
+      "remaining": 8,
+      "n_seeds": 6,
+      "mean_Fresh_minus_Drop": 0.14324956081287535,
+      "ci95_low": -0.023967370095384494,
+      "ci95_high": 0.30734840905100896,
+      "n_positive": 4,
+      "passes_development_gate": false
+    },
+    {
+      "schedule": "occ150_obs50",
+      "remaining": 5,
+      "n_seeds": 6,
+      "mean_Fresh_minus_Drop": 0.2620005672197124,
+      "ci95_low": 0.12328599742095118,
+      "ci95_high": 0.3701503375212072,
+      "n_positive": 5,
+      "passes_development_gate": true
+    },
+    {
+      "schedule": "occ150_obs50",
+      "remaining": 8,
+      "n_seeds": 6,
+      "mean_Fresh_minus_Drop": 0.1612431929806392,
+      "ci95_low": 0.04245060816735269,
+      "ci95_high": 0.2898645038944945,
+      "n_positive": 5,
+      "passes_development_gate": false
+    }
+  ],
+  "note": "Selection uses Fresh-Drop only; no compensation performance was inspected."
+}

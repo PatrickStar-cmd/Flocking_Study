@@ -1,0 +1,10 @@
+{
+  "status": "PASS",
+  "seed": 2.026111101E+9,
+  "steps": 300,
+  "blackoutSteps": 200,
+  "allVisibleEqualFresh": true,
+  "S0_r5": 0.028750816847924875,
+  "S0_r8": 0.045146947133016181,
+  "ownRefreshHistory": true
+}
